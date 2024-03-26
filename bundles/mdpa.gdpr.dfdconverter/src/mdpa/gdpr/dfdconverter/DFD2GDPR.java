@@ -154,10 +154,10 @@ public class DFD2GDPR {
 		String type = filteredLabels.get(0).replace("GDPR::ofType:", "").replace("Impl", "");
 			
 		
-		if (type.equals(Useage.class.getSimpleName())) {
-			return gdprFactory.createUseage();
-		} else if (type.equals(Transfering.class.getSimpleName())) {
-			return gdprFactory.createTransfering();
+		if (type.equals(Usage.class.getSimpleName())) {
+			return gdprFactory.createUsage();
+		} else if (type.equals(Transferring.class.getSimpleName())) {
+			return gdprFactory.createTransferring();
 		} else if (type.equals(Storing.class.getSimpleName())) {
 			return gdprFactory.createStoring();
 		} else if (type.equals(Collecting.class.getSimpleName())) {
@@ -282,8 +282,8 @@ public class DFD2GDPR {
 		} else if (type.equals(Obligation.class.getSimpleName())) {
 			entity = gdprFactory.createObligation();
 			laf.getLegalBases().add((LegalBasis)entity);
-		} else if (type.equals(ExerciceOfPublicAuthority.class.getSimpleName())) {
-			entity = gdprFactory.createExerciceOfPublicAuthority();
+		} else if (type.equals(ExerciseOfPublicAuthority.class.getSimpleName())) {
+			entity = gdprFactory.createExerciseOfPublicAuthority();
 			laf.getLegalBases().add((LegalBasis)entity);
 		} else if (type.equals(Data.class.getSimpleName())) {
 			entity = gdprFactory.createData();

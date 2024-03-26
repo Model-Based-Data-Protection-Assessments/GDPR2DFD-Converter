@@ -230,9 +230,9 @@ public class GDPR2DFD {
 			node = dfdFactory.createExternal();;
 		} else if (processing instanceof Storing) {
 			node = dfdFactory.createStore();
-		} else if (processing instanceof Useage) {
+		} else if (processing instanceof Usage) {
 			node = dfdFactory.createProcess();
-		} else if (processing instanceof Transfering) {
+		} else if (processing instanceof Transferring) {
 			node = dfdFactory.createProcess();
 		} else {
 			node = dfdFactory.createProcess();
