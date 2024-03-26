@@ -123,8 +123,8 @@ public class DFD2GDPR {
 		});		
 		dd.getLabelTypes().removeAll(gdprLabels);
 		
-		Resource gdprResource = createAndAddResource(gdprFile, new String[] {"dataflowdiagram"} ,rs);
-		Resource tmResource = createAndAddResource(traceModelFile, new String[] {"dataflowdiagram"} ,rs);
+		Resource gdprResource = createAndAddResource(gdprFile, new String[] {"gdpr"} ,rs);
+		Resource tmResource = createAndAddResource(traceModelFile, new String[] {"tracemodel"} ,rs);
 		
 		gdprResource.getContents().add(laf);
 		tmResource.getContents().add(tracemodel);
