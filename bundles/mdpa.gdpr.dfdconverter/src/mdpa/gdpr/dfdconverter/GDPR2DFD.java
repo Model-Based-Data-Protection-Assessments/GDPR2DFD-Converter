@@ -258,12 +258,12 @@ public class GDPR2DFD {
 		
 		processing.getInputData().stream().forEach(iD -> {
 			node.getProperties().add(createElementLabel(iD, "InputData"));
-			node.getProperties().addAll(mapElementToLinkageLabels.get(iD));
+			node.getProperties().addAll(mapElementToLinkageLabels.getOrDefault(iD, new ArrayList<>()));
 		});
 		
 		processing.getOutputData().stream().forEach(oD -> {
 			node.getProperties().add(createElementLabel(oD, "OutputData"));
-			node.getProperties().addAll(mapElementToLinkageLabels.get(oD));
+			node.getProperties().addAll(mapElementToLinkageLabels.getOrDefault(oD, new ArrayList<>()));
 		});
 		
 		if (processing.getResponsible() != null)
