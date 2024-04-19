@@ -103,6 +103,7 @@ public class GDPR2DFD {
 	 * Performs the transformation with the information provided in the constructor
 	 */
 	public void transform() {
+		dfd.setId(laf.getId());
 		createLabelTypes();
 		
 		if (tracemodel != null) handleTraceModel();

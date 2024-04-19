@@ -83,6 +83,8 @@ public class DFD2GDPR {
 	 * Performs the transformation on the models provided in the Constructor
 	 */
 	public void transform() {
+		laf.setId(dfd.getId());
+		
 		dfd.getNodes().stream().forEach(node -> {
 			Processing processing = resolveProcessingTypeLabel(node);
 			resolveElementLabel(processing, node.getProperties());
@@ -114,6 +116,14 @@ public class DFD2GDPR {
 			tracemodel.getTracesList().add(trace);
 		});
 		
+		dfd.getNodes().forEach(n -> {
+			n.getProperties().removeAll(
+					n.getProperties().stream().filter(l -> {
+						String name = ((LabelType)l.eContainer()).getEntityName();
+						return name.equals("GDPRElement") || name.equals("GDPRNode") || name.equals("GDPRLink");
+					}).toList()
+			);
+		});
 		
 		List<LabelType> gdprLabels = new ArrayList<>();
 		dd.getLabelTypes().forEach(lt -> {
@@ -122,6 +132,11 @@ public class DFD2GDPR {
 				gdprLabels.add(lt);
 		});		
 		dd.getLabelTypes().removeAll(gdprLabels);
+		
+		dfd.getNodes().forEach(n -> {
+			var properties = n.getProperties();
+			
+		});
 		
 		Resource gdprResource = createAndAddResource(gdprFile, new String[] {"gdpr"} ,rs);
 		Resource tmResource = createAndAddResource(traceModelFile, new String[] {"tracemodel"} ,rs);
@@ -296,15 +311,12 @@ public class DFD2GDPR {
 			laf.getPurposes().add((Purpose)entity);
 		} else if (type.equals(Controller.class.getSimpleName())) {			
 			entity = gdprFactory.createController();
-			((Role)entity).setName(name);
 			laf.getInvolvedParties().add((Role)entity);
 		} else if (type.equals(NaturalPerson.class.getSimpleName())) {
 			entity = gdprFactory.createNaturalPerson();
-			((Role)entity).setName(name);
 			laf.getInvolvedParties().add((Role)entity);
 		} else if (type.equals(ThirdParty.class.getSimpleName())) {
 			entity = gdprFactory.createThirdParty();
-			((Role)entity).setName(name);
 			laf.getInvolvedParties().add((Role)entity);
 		} else {
 			throw new IllegalArgumentException("Element Label Type does not match any reference class");

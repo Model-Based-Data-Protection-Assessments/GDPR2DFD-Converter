@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:datadictionary="http://www.example.org/datadictionary" id="_FKR94f5PEe61qsIdnY6koQ">
+  
+  <behaviour id="_FKYrmf5PEe61qsIdnY6koQ" entityName="Usage Behaviour">
+    <inPin id="_FKbH2f5PEe61qsIdnY6koQ"/>
+    <outPin id="_FKbH0f5PEe61qsIdnY6koQ"/>
+  </behaviour>
+  <behaviour id="_FKZ5sv5PEe61qsIdnY6koQ" entityName="Transferring Behaviour">
+    <inPin id="_FKbH0P5PEe61qsIdnY6koQ"/>
+    <outPin id="_FKbH1P5PEe61qsIdnY6koQ"/>
+  </behaviour>
+  <behaviour id="_FKZ5tv5PEe61qsIdnY6koQ" entityName="Storage Behaviour">
+    <inPin id="_FKbH0_5PEe61qsIdnY6koQ"/>
+    <outPin id="_FKbH1_5PEe61qsIdnY6koQ"/>
+  </behaviour>
+  <behaviour id="_FKagwv5PEe61qsIdnY6koQ" entityName="Processing Behaviour">
+    <inPin id="_FKbH1v5PEe61qsIdnY6koQ"/>
+  </behaviour>
+  <behaviour id="_FKagxf5PEe61qsIdnY6koQ" entityName="Collecting Behaviour">
+    <outPin id="_FKbH2v5PEe61qsIdnY6koQ"/>
+  </behaviour>
+  <behaviour id="_tHRbY_5PEe6XE7MQPecC1A" entityName="Usage Behaviour"/>
+  <behaviour id="_tHRbaP5PEe6XE7MQPecC1A" entityName="Transferring Behaviour"/>
+  <behaviour id="_tHRbbP5PEe6XE7MQPecC1A" entityName="Storage Behaviour"/>
+  <behaviour id="_tHSCc_5PEe6XE7MQPecC1A" entityName="Processing Behaviour"/>
+  <behaviour id="_tHSCdv5PEe6XE7MQPecC1A" entityName="Collecting Behaviour"/>
+</datadictionary:DataDictionary>

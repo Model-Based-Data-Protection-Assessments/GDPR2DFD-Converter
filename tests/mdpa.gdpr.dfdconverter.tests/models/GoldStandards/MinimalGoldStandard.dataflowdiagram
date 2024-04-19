@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dataflowdiagram:DataFlowDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://www.example.org/dataflowdiagram" id="_tt-9EPHNEe62x6SamO9Dsg">
+  <flows id="_qyY2YP5JEe6ggdNb9JF74g" sourceNode="xvpuf8" destinationNode="kqcy12">
+    <destinationPin href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyY2Yf5JEe6ggdNb9JF74g"/>
+    <sourcePin href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyY2Yv5JEe6ggdNb9JF74g"/>
+  </flows>
+  <flows id="_qyZdcP5JEe6ggdNb9JF74g" sourceNode="kqcy12" destinationNode="fas8l">
+    <destinationPin href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyZdcf5JEe6ggdNb9JF74g"/>
+    <sourcePin href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyZdcv5JEe6ggdNb9JF74g"/>
+  </flows>
+  <flows id="_qyZdc_5JEe6ggdNb9JF74g" sourceNode="fas8l" destinationNode="1liryp">
+    <destinationPin href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyZddP5JEe6ggdNb9JF74g"/>
+    <sourcePin href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyZddf5JEe6ggdNb9JF74g"/>
+  </flows>
+  <flows id="_qyZddv5JEe6ggdNb9JF74g" sourceNode="g4z568" destinationNode="xvpuf8">
+    <destinationPin href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyZdd_5JEe6ggdNb9JF74g"/>
+    <sourcePin href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyZdeP5JEe6ggdNb9JF74g"/>
+  </flows>
+  <nodes xsi:type="dataflowdiagram:Process" id="xvpuf8" entityName="Usage">
+    <behaviour href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyVzEP5JEe6ggdNb9JF74g"/>
+    <properties href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyUk8f5JEe6ggdNb9JF74g"/>
+    <properties href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyVzEf5JEe6ggdNb9JF74g"/>
+    <properties href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qySvwP5JEe6ggdNb9JF74g"/>
+    <properties href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qySvwf5JEe6ggdNb9JF74g"/>
+    <properties href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyWaIP5JEe6ggdNb9JF74g"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Process" id="kqcy12" entityName="Transferring">
+    <behaviour href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyWaI_5JEe6ggdNb9JF74g"/>
+    <properties href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyWaIv5JEe6ggdNb9JF74g"/>
+    <properties href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyWaJP5JEe6ggdNb9JF74g"/>
+    <properties href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qySvwv5JEe6ggdNb9JF74g"/>
+    <properties href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyWaIP5JEe6ggdNb9JF74g"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Store" id="fas8l" entityName="Storage">
+    <behaviour href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyXoQP5JEe6ggdNb9JF74g"/>
+    <properties href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyXBMf5JEe6ggdNb9JF74g"/>
+    <properties href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyXoQf5JEe6ggdNb9JF74g"/>
+    <properties href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qySvw_5JEe6ggdNb9JF74g"/>
+    <properties href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyWaIP5JEe6ggdNb9JF74g"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Process" id="1liryp" entityName="Processing">
+    <behaviour href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyXoRP5JEe6ggdNb9JF74g"/>
+    <properties href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyXoQ_5JEe6ggdNb9JF74g"/>
+    <properties href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyXoQf5JEe6ggdNb9JF74g"/>
+    <properties href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qySvw_5JEe6ggdNb9JF74g"/>
+    <properties href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyWaIP5JEe6ggdNb9JF74g"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:External" id="g4z568" entityName="Collecting">
+    <behaviour href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyYPUv5JEe6ggdNb9JF74g"/>
+    <properties href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyYPUf5JEe6ggdNb9JF74g"/>
+    <properties href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyYPU_5JEe6ggdNb9JF74g"/>
+    <properties href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyTW0P5JEe6ggdNb9JF74g"/>
+    <properties href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyTW0f5JEe6ggdNb9JF74g"/>
+    <properties href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyTW0v5JEe6ggdNb9JF74g"/>
+    <properties href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyTW0_5JEe6ggdNb9JF74g"/>
+    <properties href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyWaIP5JEe6ggdNb9JF74g"/>
+    <properties href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyYPVP5JEe6ggdNb9JF74g"/>
+    <properties href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qySIsP5JEe6ggdNb9JF74g"/>
+    <properties href="models/GoldStandards/MinimalGoldStandard.datadictionary#_qyYPVf5JEe6ggdNb9JF74g"/>
+  </nodes>
+</dataflowdiagram:DataFlowDiagram>

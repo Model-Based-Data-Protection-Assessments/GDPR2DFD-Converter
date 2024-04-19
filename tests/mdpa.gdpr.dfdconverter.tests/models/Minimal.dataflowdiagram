@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dataflowdiagram:DataFlowDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://www.example.org/dataflowdiagram" id="_tt-9EPHNEe62x6SamO9Dsg">
+  <flows id="_FKagyf5PEe61qsIdnY6koQ" sourceNode="xvpuf8" destinationNode="kqcy12">
+    <destinationPin href="models/Minimal.datadictionary#_FKbH0P5PEe61qsIdnY6koQ"/>
+    <sourcePin href="models/Minimal.datadictionary#_FKbH0f5PEe61qsIdnY6koQ"/>
+  </flows>
+  <flows id="_FKbH0v5PEe61qsIdnY6koQ" sourceNode="kqcy12" destinationNode="fas8l">
+    <destinationPin href="models/Minimal.datadictionary#_FKbH0_5PEe61qsIdnY6koQ"/>
+    <sourcePin href="models/Minimal.datadictionary#_FKbH1P5PEe61qsIdnY6koQ"/>
+  </flows>
+  <flows id="_FKbH1f5PEe61qsIdnY6koQ" sourceNode="fas8l" destinationNode="1liryp">
+    <destinationPin href="models/Minimal.datadictionary#_FKbH1v5PEe61qsIdnY6koQ"/>
+    <sourcePin href="models/Minimal.datadictionary#_FKbH1_5PEe61qsIdnY6koQ"/>
+  </flows>
+  <flows id="_FKbH2P5PEe61qsIdnY6koQ" sourceNode="g4z568" destinationNode="xvpuf8">
+    <destinationPin href="models/Minimal.datadictionary#_FKbH2f5PEe61qsIdnY6koQ"/>
+    <sourcePin href="models/Minimal.datadictionary#_FKbH2v5PEe61qsIdnY6koQ"/>
+  </flows>
+  <nodes xsi:type="dataflowdiagram:Process" id="xvpuf8" entityName="Usage">
+    <behaviour href="models/Minimal.datadictionary#_FKYrmf5PEe61qsIdnY6koQ"/>
+    <properties href="models/Minimal.datadictionary#_FKYrmP5PEe61qsIdnY6koQ"/>
+    <properties href="models/Minimal.datadictionary#_FKZSoP5PEe61qsIdnY6koQ"/>
+    <properties href="models/Minimal.datadictionary#_FKYEgP5PEe61qsIdnY6koQ"/>
+    <properties href="models/Minimal.datadictionary#_FKYrkP5PEe61qsIdnY6koQ"/>
+    <properties href="models/Minimal.datadictionary#_FKZSof5PEe61qsIdnY6koQ"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Process" id="kqcy12" entityName="Transferring">
+    <behaviour href="models/Minimal.datadictionary#_FKZ5sv5PEe61qsIdnY6koQ"/>
+    <properties href="models/Minimal.datadictionary#_FKZ5sf5PEe61qsIdnY6koQ"/>
+    <properties href="models/Minimal.datadictionary#_FKZ5s_5PEe61qsIdnY6koQ"/>
+    <properties href="models/Minimal.datadictionary#_FKYrkf5PEe61qsIdnY6koQ"/>
+    <properties href="models/Minimal.datadictionary#_FKZSof5PEe61qsIdnY6koQ"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Store" id="fas8l" entityName="Storage">
+    <behaviour href="models/Minimal.datadictionary#_FKZ5tv5PEe61qsIdnY6koQ"/>
+    <properties href="models/Minimal.datadictionary#_FKZ5tf5PEe61qsIdnY6koQ"/>
+    <properties href="models/Minimal.datadictionary#_FKZ5t_5PEe61qsIdnY6koQ"/>
+    <properties href="models/Minimal.datadictionary#_FKYrkv5PEe61qsIdnY6koQ"/>
+    <properties href="models/Minimal.datadictionary#_FKZSof5PEe61qsIdnY6koQ"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Process" id="1liryp" entityName="Processing">
+    <behaviour href="models/Minimal.datadictionary#_FKagwv5PEe61qsIdnY6koQ"/>
+    <properties href="models/Minimal.datadictionary#_FKagwf5PEe61qsIdnY6koQ"/>
+    <properties href="models/Minimal.datadictionary#_FKZ5t_5PEe61qsIdnY6koQ"/>
+    <properties href="models/Minimal.datadictionary#_FKYrkv5PEe61qsIdnY6koQ"/>
+    <properties href="models/Minimal.datadictionary#_FKZSof5PEe61qsIdnY6koQ"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:External" id="g4z568" entityName="Collecting">
+    <behaviour href="models/Minimal.datadictionary#_FKagxf5PEe61qsIdnY6koQ"/>
+    <properties href="models/Minimal.datadictionary#_FKagxP5PEe61qsIdnY6koQ"/>
+    <properties href="models/Minimal.datadictionary#_FKagxv5PEe61qsIdnY6koQ"/>
+    <properties href="models/Minimal.datadictionary#_FKYrk_5PEe61qsIdnY6koQ"/>
+    <properties href="models/Minimal.datadictionary#_FKYrlP5PEe61qsIdnY6koQ"/>
+    <properties href="models/Minimal.datadictionary#_FKYrlf5PEe61qsIdnY6koQ"/>
+    <properties href="models/Minimal.datadictionary#_FKYrlv5PEe61qsIdnY6koQ"/>
+    <properties href="models/Minimal.datadictionary#_FKZSof5PEe61qsIdnY6koQ"/>
+    <properties href="models/Minimal.datadictionary#_FKagx_5PEe61qsIdnY6koQ"/>
+    <properties href="models/Minimal.datadictionary#_FKXdcP5PEe61qsIdnY6koQ"/>
+    <properties href="models/Minimal.datadictionary#_FKagyP5PEe61qsIdnY6koQ"/>
+  </nodes>
+</dataflowdiagram:DataFlowDiagram>
