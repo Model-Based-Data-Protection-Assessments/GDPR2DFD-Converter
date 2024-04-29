@@ -1,11 +1,9 @@
 package mdpa.gdpr.dfdconverter;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.Scanner;
 import java.util.stream.Stream;
 
-import mdpa.gdpr.metamodel.GDPR.*;
 public class Main {
 
 	public static void main(String[] args) {

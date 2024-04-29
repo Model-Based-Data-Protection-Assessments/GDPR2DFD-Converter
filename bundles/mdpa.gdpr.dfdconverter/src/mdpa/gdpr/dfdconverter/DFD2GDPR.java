@@ -55,6 +55,7 @@ public class DFD2GDPR {
 	private ResourceSet rs;
 	
 	private Resource ddResource;
+	private Resource dfdResource;
 	
 	public DFD2GDPR(String dfdFile, String ddFile, String gdprFile, String traceModelFile) {
 		this.gdprFile = gdprFile;
@@ -71,7 +72,7 @@ public class DFD2GDPR {
 		traceModelFactory = TracemodelFactory.eINSTANCE;
 		tracemodel = traceModelFactory.createTraceModel();
 		
-		Resource dfdResource = rs.getResource(URI.createFileURI(dfdFile), true);
+		dfdResource = rs.getResource(URI.createFileURI(dfdFile), true);
 		ddResource = rs.getResource(URI.createFileURI(ddFile), true);
 		
 		dd = (DataDictionary) ddResource.getContents().get(0);
@@ -116,14 +117,10 @@ public class DFD2GDPR {
 			tracemodel.getTracesList().add(trace);
 		});
 		
-		dfd.getNodes().forEach(n -> {
-			n.getProperties().removeAll(
-					n.getProperties().stream().filter(l -> {
-						String name = ((LabelType)l.eContainer()).getEntityName();
-						return name.equals("GDPRElement") || name.equals("GDPRNode") || name.equals("GDPRLink");
-					}).toList()
-			);
-		});
+		for (var node : dfd.getNodes()) {
+			 node.getProperties().clear();
+		}
+		
 		
 		List<LabelType> gdprLabels = new ArrayList<>();
 		dd.getLabelTypes().forEach(lt -> {
@@ -133,10 +130,7 @@ public class DFD2GDPR {
 		});		
 		dd.getLabelTypes().removeAll(gdprLabels);
 		
-		dfd.getNodes().forEach(n -> {
-			var properties = n.getProperties();
-			
-		});
+		
 		
 		Resource gdprResource = createAndAddResource(gdprFile, new String[] {"gdpr"} ,rs);
 		Resource tmResource = createAndAddResource(traceModelFile, new String[] {"tracemodel"} ,rs);
@@ -147,6 +141,7 @@ public class DFD2GDPR {
 		saveResource(gdprResource);
 		saveResource(tmResource);
 		saveResource(ddResource);
+		saveResource(dfdResource);
 	}
 	
 	/**
@@ -331,26 +326,26 @@ public class DFD2GDPR {
 	}
 	
 	//Copied from https://sdq.kastel.kit.edu/wiki/Creating_EMF_Model_instances_programmatically
-			@SuppressWarnings({ "rawtypes", "unchecked" })
-			private Resource createAndAddResource(String outputFile, String[] fileextensions, ResourceSet rs) {
-			     for (String fileext : fileextensions) {
-			        rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put(fileext, new XMLResourceFactoryImpl());
-			     }		
-			     URI uri = URI.createFileURI(outputFile);
-			     Resource resource = rs.createResource(uri);
-			     ((ResourceImpl)resource).setIntrinsicIDToEObjectMap(new HashMap());
-			     return resource;
-			  }
-			
-			@SuppressWarnings({"unchecked", "rawtypes"})
-			 private void saveResource(Resource resource) {
-			     Map saveOptions = ((XMLResource)resource).getDefaultSaveOptions();
-			     saveOptions.put(XMLResource.OPTION_CONFIGURATION_CACHE, Boolean.TRUE);
-			     saveOptions.put(XMLResource.OPTION_USE_CACHED_LOOKUP_TABLE, new ArrayList());
-			     try {
-			        resource.save(saveOptions);
-			     } catch (IOException e) {
-			        throw new RuntimeException(e);
-			     }
-			}
+	@SuppressWarnings({ "rawtypes", "unchecked" })
+	private Resource createAndAddResource(String outputFile, String[] fileextensions, ResourceSet rs) {
+	     for (String fileext : fileextensions) {
+	        rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put(fileext, new XMLResourceFactoryImpl());
+	     }		
+	     URI uri = URI.createFileURI(outputFile);
+	     Resource resource = rs.createResource(uri);
+	     ((ResourceImpl)resource).setIntrinsicIDToEObjectMap(new HashMap());
+	     return resource;
+	  }
+	
+	@SuppressWarnings({"unchecked", "rawtypes"})
+	 private void saveResource(Resource resource) {
+	     Map saveOptions = ((XMLResource)resource).getDefaultSaveOptions();
+	     saveOptions.put(XMLResource.OPTION_CONFIGURATION_CACHE, Boolean.TRUE);
+	     saveOptions.put(XMLResource.OPTION_USE_CACHED_LOOKUP_TABLE, new ArrayList());
+	     try {
+	        resource.save(saveOptions);
+	     } catch (IOException e) {
+	        throw new RuntimeException(e);
+	     }
+	}
 }

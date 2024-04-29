@@ -2,13 +2,7 @@ package mdpa.gdpr.dfdconverter.tests;
 
 import mdpa.gdpr.dfdconverter.GDPR2DFD;
 import mdpa.gdpr.metamodel.GDPR.LegalAssessmentFacts;
-import tools.mdsd.modelingfoundations.identifier.Entity;
 import mdpa.gdpr.dfdconverter.DFD2GDPR;
-
-import org.eclipse.emf.ecore.util.EcoreUtil.EqualityHelper;
-import org.eclipse.emf.ecore.util.EcoreUtil;
-
-import static org.junit.Assert.assertEquals;
 
 import java.nio.file.Paths;
 
@@ -21,9 +15,9 @@ import org.dataflowanalysis.dfd.datadictionary.Behaviour;
 import org.dataflowanalysis.dfd.datadictionary.Pin;
 import org.dataflowanalysis.dfd.datadictionary.DataDictionary;
 import org.dataflowanalysis.dfd.datadictionary.Label;
+import org.dataflowanalysis.dfd.datadictionary.LabelType;
 import org.dataflowanalysis.dfd.dataflowdiagram.DataFlowDiagram;
 import org.dataflowanalysis.dfd.dataflowdiagram.Flow;
-import org.dataflowanalysis.dfd.dataflowdiagram.Node;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EObject;
@@ -37,17 +31,15 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 public class MinimalTest {
-	private static final String DFD_MODEL_PATH = "minimal.dataflowdiagram";
-	private static final String DD_MODEL_PATH = "minimal.datadictionary";
-	private static final String TM_MODEL_PATH = "minimal.tracemodel";
-	private static final String GDPR_MODEL_PATH = "minimal.gdpr";
 	
 	private ResourceSet rs = new ResourceSetImpl();
-	private EqualityHelper eh = new EqualityHelper();
 	
 	private Map<Pin, Pin> pinCompareMap;
 	private Map<Behaviour, Behaviour> behaviourCompareMap;
 	
+	/**
+	 * Register relevant factories
+	 */
 	@BeforeAll
 	public static void setUpBeforeAll() {
 		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put("dataflowdiagram", new XMIResourceFactoryImpl());
@@ -56,23 +48,29 @@ public class MinimalTest {
 		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put("gdpr", new XMIResourceFactoryImpl());
 	}
 	
+	/**
+	 * Reset maps for Pin/Behaviour Comparison
+	 */
 	@BeforeEach
 	public void cleanUp() {
 		pinCompareMap = new HashMap<>();
 		behaviourCompareMap = new HashMap<>();
 	}
 	
+	/**
+	 * Test the GDPR2DFD transformation by transforming an example instance and comparing it to a manually created Gold Standard
+	 */
 	@Test
-	public void testGDPR2DFDForFirstIteration() {
-		String gdprFile = Paths.get("models", "Minimal.gdpr").toString();
-		String dfdFile = Paths.get("models", "MinimalResult.dataflowdiagram").toString();
-		String ddFile = Paths.get("models", "MinimalResult.datadictionary").toString();
+	public void testGDPR2DFD() {
+		String gdprFileString = Paths.get("models", "Minimal.gdpr").toString();
+		String dfdFileString = Paths.get("models", "MinimalResult.dataflowdiagram").toString();
+		String ddFileString = Paths.get("models", "MinimalResult.datadictionary").toString();
 		
-		GDPR2DFD trans = new GDPR2DFD(gdprFile, dfdFile, ddFile);
-		trans.transform();
+		GDPR2DFD transformation = new GDPR2DFD(gdprFileString, dfdFileString, ddFileString);
+		transformation.transform();
 		
-		Resource dfdResultResource = rs.getResource(URI.createFileURI(dfdFile), true);
-		Resource ddResultResource = rs.getResource(URI.createFileURI(ddFile), true);
+		Resource dfdResultResource = rs.getResource(URI.createFileURI(dfdFileString), true);
+		Resource ddResultResource = rs.getResource(URI.createFileURI(ddFileString), true);
 		Resource dfdGoldStandardResource = rs.getResource(URI.createFileURI(Paths.get("models","GoldStandards", "MinimalGoldStandard.dataflowdiagram").toString()), true);
 		Resource ddGoldStandardResource = rs.getResource(URI.createFileURI(Paths.get("models","GoldStandards", "MinimalGoldStandard.datadictionary").toString()), true);
 		
@@ -84,15 +82,17 @@ public class MinimalTest {
 		assert(equals(dfdResult, dfdGoldStandard));
 		assert(equals(ddResult, ddGoldStandard));
 		
-		File fileDFDResult = new File(Paths.get("models", "MinimalResult.dataflowdiagram").toString());
-		File fileDDResult = new File(Paths.get("models", "MinimalResult.datadictionary").toString());
+		File dfdResultFile = new File(Paths.get("models", "MinimalResult.dataflowdiagram").toString());
+		File ddResultFile = new File(Paths.get("models", "MinimalResult.datadictionary").toString());
 		
-		fileDFDResult.delete();
-		fileDDResult.delete();		
+		dfdResultFile.delete();
+		ddResultFile.delete();		
 	}
 	
 	
-	
+	/**
+	 * Test the DFD2GDPR transformation by transforming an example instance and comparing it to a manually created Gold Standard
+	 */
 	@Test
 	public void testDFD2GDPR() {
 		String gdprFile = Paths.get("models", "MinimalResult.gdpr").toString();
@@ -100,8 +100,8 @@ public class MinimalTest {
 		String ddFile = Paths.get("models", "Minimal.datadictionary").toString();
 		String tmFile = Paths.get("models", "MinimalResult.tracemodel").toString();
 		
-		DFD2GDPR trans = new DFD2GDPR(dfdFile, ddFile, gdprFile, tmFile);
-		trans.transform();
+		DFD2GDPR transformation = new DFD2GDPR(dfdFile, ddFile, gdprFile, tmFile);
+		transformation.transform();
 		
 		Resource gdprResultResource = rs.getResource(URI.createFileURI(gdprFile), true);
 		Resource gdprGoldStandardResource = rs.getResource(URI.createFileURI(Paths.get("models", "GoldStandards", "MinimalGoldStandard.gdpr").toString()), true);
@@ -121,11 +121,18 @@ public class MinimalTest {
 		gdpr.delete();
 		tm.delete();
 		
-		GDPR2DFD trans2 = new GDPR2DFD(Paths.get("models", "Minimal.gdpr").toString(), dfdFile, ddFile);
-		trans2.transform();
+		//The transformation deletes the GDPR specific information from the DFD/DD instance, which need to be recreated.
+		GDPR2DFD transformation2 = new GDPR2DFD(Paths.get("models", "Minimal.gdpr").toString(), dfdFile, ddFile);
+		transformation2.transform();
 	}
 				
 	
+	/**
+	 * Compares two EObjects on functional Equality
+	 * @param obj1
+	 * @param obj2
+	 * @return Whether the objects are functionally equal
+	 */
 	 private boolean equals(EObject obj1, EObject obj2) {
 		    if (obj1 == null || obj2 == null) {
 		    	return false;
@@ -135,20 +142,21 @@ public class MinimalTest {
 			   return false;
 		    }
 		    
-		    if (obj1 instanceof DataDictionary) return true;
 		    
-		    if (obj1 instanceof Pin) {
+		    if (obj1 instanceof Pin) { //Pin instances dont share the same idea and are compared with a map
 		    	if (pinCompareMap.containsKey(obj1)) {
 		    		if (!pinCompareMap.getOrDefault(obj1, null).equals(obj2)) return false;		    		
 		    	} else pinCompareMap.put((Pin) obj1,(Pin) obj2);
-		    } else if (obj1 instanceof Behaviour) {		    
+		    } else if (obj1 instanceof Behaviour) {		//Behaviour instances dont share the same idea and are compared with a map    
 	    		if (behaviourCompareMap.containsKey(obj1)) {
 		    		if (!behaviourCompareMap.getOrDefault(obj1, null).equals(obj2)) return false;		    		
 		    	} else behaviourCompareMap.put((Behaviour) obj1,(Behaviour) obj2);		    	
-		    } else if (obj1 instanceof Label) {
+		    } else if (obj1 instanceof Label) { //Label instances dont share the same idea and are only compared on their entity name
 		    	return ((Label)obj1).getEntityName().equals(((Label)obj2).getEntityName());
+		    } else if (obj1 instanceof LabelType) { //LabelTypes instances dont share the same idea and are only compared on their entity name
+		    	return ((LabelType)obj1).getEntityName().equals(((LabelType)obj2).getEntityName());
 		    }		    
-		    else if (!(obj1 instanceof Flow)){
+		    else if (!(obj1 instanceof Flow || obj1 instanceof DataDictionary)){ //Flows and DD are only compared on References not attributes
 		    // Compare attributes
 			    for (EAttribute attribute : obj1.eClass().getEAllAttributes()) {
 			      Object value1 = obj1.eGet(attribute);
@@ -175,7 +183,15 @@ public class MinimalTest {
 		    return true;
 		  }
 	 
-	 private boolean compareReferences(EObject obj1, EObject obj2, EReference reference) {
+	 /**
+		 * Compares the reference of two EObjects on equality
+		 * @param obj1
+		 * @param obj2
+		 * @param reference To be compared for
+		 * @return Whether the values for the named reference are equal for both EObjects
+		 */
+	 @SuppressWarnings("unchecked")
+	private boolean compareReferences(EObject obj1, EObject obj2, EReference reference) {
 		    Object values1Object =  obj1.eGet(reference);
 		    Object values2Object =  obj2.eGet(reference);
 		    

@@ -376,26 +376,26 @@ public class GDPR2DFD {
 	}
 	
 	//Copied from https://sdq.kastel.kit.edu/wiki/Creating_EMF_Model_instances_programmatically
-		@SuppressWarnings({ "rawtypes", "unchecked" })
-		private Resource createAndAddResource(String outputFile, String[] fileextensions, ResourceSet rs) {
-		     for (String fileext : fileextensions) {
-		        rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put(fileext, new XMLResourceFactoryImpl());
-		     }		
-		     URI uri = URI.createFileURI(outputFile);
-		     Resource resource = rs.createResource(uri);
-		     ((ResourceImpl)resource).setIntrinsicIDToEObjectMap(new HashMap());
-		     return resource;
-		  }
-		
-		@SuppressWarnings({"unchecked", "rawtypes"})
-		 private void saveResource(Resource resource) {
-		     Map saveOptions = ((XMLResource)resource).getDefaultSaveOptions();
-		     saveOptions.put(XMLResource.OPTION_CONFIGURATION_CACHE, Boolean.TRUE);
-		     saveOptions.put(XMLResource.OPTION_USE_CACHED_LOOKUP_TABLE, new ArrayList());
-		     try {
-		        resource.save(saveOptions);
-		     } catch (IOException e) {
-		        throw new RuntimeException(e);
-		     }
-		}
+	@SuppressWarnings({ "rawtypes", "unchecked" })
+	private Resource createAndAddResource(String outputFile, String[] fileextensions, ResourceSet rs) {
+	     for (String fileext : fileextensions) {
+	        rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put(fileext, new XMLResourceFactoryImpl());
+	     }		
+	     URI uri = URI.createFileURI(outputFile);
+	     Resource resource = rs.createResource(uri);
+	     ((ResourceImpl)resource).setIntrinsicIDToEObjectMap(new HashMap());
+	     return resource;
+	  }
+	
+	@SuppressWarnings({"unchecked", "rawtypes"})
+	 private void saveResource(Resource resource) {
+	     Map saveOptions = ((XMLResource)resource).getDefaultSaveOptions();
+	     saveOptions.put(XMLResource.OPTION_CONFIGURATION_CACHE, Boolean.TRUE);
+	     saveOptions.put(XMLResource.OPTION_USE_CACHED_LOOKUP_TABLE, new ArrayList());
+	     try {
+	        resource.save(saveOptions);
+	     } catch (IOException e) {
+	        throw new RuntimeException(e);
+	     }
+	}
 }

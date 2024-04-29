@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="mdpa.dfd.gdprconverter.feature"
+      id="mdpa.gdpr.dfdconverter.feature"
       label="GDPR and DFD Converter Feature"
       version="1.0.0.qualifier"
-      plugin="mdpa.gdpr.gdprconverter.branding"
+      plugin="mdpa.gdpr.dfdconverter.branding"
       license-feature="org.palladiosimulator.license.epl2"
       license-feature-version="1.0.0">
 
    <plugin
-         id="mdpa.gdpr.gdprconverter"
+         id="mdpa.gdpr.dfdconverter"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-      
+
 </feature>
