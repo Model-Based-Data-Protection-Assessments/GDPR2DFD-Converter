@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="ASCII"?>
-<datadictionary:DataDictionary xmlns:datadictionary="http://www.example.org/datadictionary" id="_rLT7MQY1Ee-gkqDUwJIlzQ">
-  <labelTypes id="_rLW-gAY1Ee-gkqDUwJIlzQ" entityName="GDPRElement">
-    <label id="_rLYMqQY1Ee-gkqDUwJIlzQ" entityName="GDPR::LegalBasis::ConsentImpl:Consent:772yn"/>
-    <label id="_rLYMqgY1Ee-gkqDUwJIlzQ" entityName="GDPR::Purpose::PurposeImpl:Purpose:8k3v"/>
-    <label id="_rLYzswY1Ee-gkqDUwJIlzQ" entityName="GDPR::LegalBasis::ExerciseOfPublicAuthorityImpl:Public Authority:y7y8dg"/>
-    <label id="_rLYztwY1Ee-gkqDUwJIlzQ" entityName="GDPR::LegalBasis::ObligationImpl:Obligation:quu8ak"/>
-    <label id="_rLYzvgY1Ee-gkqDUwJIlzQ" entityName="GDPR::LegalBasis::PerformanceOfContractImpl:Contract:f7dnl"/>
-    <label id="_rLYzvwY1Ee-gkqDUwJIlzQ" entityName="GDPR::InputData::PersonalDataImpl:Personal Data:fi6k6x"/>
-    <label id="_rLYzwAY1Ee-gkqDUwJIlzQ" entityName="GDPR::OutputData::DataImpl:Data:mnpnio"/>
+<datadictionary:DataDictionary xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary/1.0" id="_nRK8cQu9Ee-TdcMLiBMivw">
+  <labelTypes id="_nRNYsAu9Ee-TdcMLiBMivw" entityName="GDPRElement">
+    <label id="_nRNYvwu9Ee-TdcMLiBMivw" entityName="GDPR::LegalBasis::ConsentImpl:Consent:772yn"/>
+    <label id="_nRNYwAu9Ee-TdcMLiBMivw" entityName="GDPR::Purpose::PurposeImpl:Purpose:8k3v"/>
+    <label id="_nRNYxAu9Ee-TdcMLiBMivw" entityName="GDPR::LegalBasis::ExerciseOfPublicAuthorityImpl:Public Authority:y7y8dg"/>
+    <label id="_nRNYyAu9Ee-TdcMLiBMivw" entityName="GDPR::LegalBasis::ObligationImpl:Obligation:quu8ak"/>
+    <label id="_nRN_xgu9Ee-TdcMLiBMivw" entityName="GDPR::LegalBasis::PerformanceOfContractImpl:Contract:f7dnl"/>
+    <label id="_nRN_xwu9Ee-TdcMLiBMivw" entityName="GDPR::InputData::PersonalDataImpl:Personal Data:fi6k6x"/>
+    <label id="_nRN_yAu9Ee-TdcMLiBMivw" entityName="GDPR::OutputData::DataImpl:Data:mnpnio"/>
   </labelTypes>
-  <labelTypes id="_rLW-gQY1Ee-gkqDUwJIlzQ" entityName="GDPRNode">
-    <label id="_rLYMpwY1Ee-gkqDUwJIlzQ" entityName="GDPR::ofType:UsageImpl"/>
-    <label id="_rLYzsQY1Ee-gkqDUwJIlzQ" entityName="GDPR::ofType:TransferringImpl"/>
-    <label id="_rLYztQY1Ee-gkqDUwJIlzQ" entityName="GDPR::ofType:StoringImpl"/>
-    <label id="_rLYzuQY1Ee-gkqDUwJIlzQ" entityName="GDPR::ofType:ProcessingImpl"/>
-    <label id="_rLYzvAY1Ee-gkqDUwJIlzQ" entityName="GDPR::ofType:CollectingImpl"/>
+  <labelTypes id="_nRNYsQu9Ee-TdcMLiBMivw" entityName="GDPRNode">
+    <label id="_nRNYvQu9Ee-TdcMLiBMivw" entityName="GDPR::ofType:UsageImpl"/>
+    <label id="_nRNYwgu9Ee-TdcMLiBMivw" entityName="GDPR::ofType:TransferringImpl"/>
+    <label id="_nRNYxgu9Ee-TdcMLiBMivw" entityName="GDPR::ofType:StoringImpl"/>
+    <label id="_nRN_wQu9Ee-TdcMLiBMivw" entityName="GDPR::ofType:ProcessingImpl"/>
+    <label id="_nRN_xAu9Ee-TdcMLiBMivw" entityName="GDPR::ofType:CollectingImpl"/>
   </labelTypes>
-  <labelTypes id="_rLW-ggY1Ee-gkqDUwJIlzQ" entityName="GDPRLink">
-    <label id="_rLXlkAY1Ee-gkqDUwJIlzQ" entityName="GDPR::PersonalDataImpl:Personal Data:fi6k6x::Reference::NaturalPersonImpl:Natural Person:m0b8x"/>
-    <label id="_rLXlkQY1Ee-gkqDUwJIlzQ" entityName="GDPR::ConsentImpl:Consent:772yn::Consentee::NaturalPersonImpl:Natural Person:m0b8x"/>
-    <label id="_rLXlkgY1Ee-gkqDUwJIlzQ" entityName="GDPR::ConsentImpl:Consent:772yn::ForPurpose::PurposeImpl:Purpose:8k3v"/>
-    <label id="_rLYMoAY1Ee-gkqDUwJIlzQ" entityName="GDPR::ExerciseOfPublicAuthorityImpl:Public Authority:y7y8dg::ForPurpose::PurposeImpl:Purpose:8k3v"/>
-    <label id="_rLYMoQY1Ee-gkqDUwJIlzQ" entityName="GDPR::ObligationImpl:Obligation:quu8ak::ForPurpose::PurposeImpl:Purpose:8k3v"/>
-    <label id="_rLYMogY1Ee-gkqDUwJIlzQ" entityName="GDPR::PerformanceOfContractImpl:Contract:f7dnl::ContractParty::ControllerImpl:Controller:c9bird"/>
-    <label id="_rLYMowY1Ee-gkqDUwJIlzQ" entityName="GDPR::PerformanceOfContractImpl:Contract:f7dnl::ContractParty::ThirdPartyImpl:Third Party:cadfg"/>
-    <label id="_rLYMpAY1Ee-gkqDUwJIlzQ" entityName="GDPR::PerformanceOfContractImpl:Contract:f7dnl::ContractParty::NaturalPersonImpl:Natural Person:m0b8x"/>
-    <label id="_rLYMpQY1Ee-gkqDUwJIlzQ" entityName="GDPR::PerformanceOfContractImpl:Contract:f7dnl::ForPurpose::PurposeImpl:Purpose:8k3v"/>
+  <labelTypes id="_nRNYsgu9Ee-TdcMLiBMivw" entityName="GDPRLink">
+    <label id="_nRNYswu9Ee-TdcMLiBMivw" entityName="GDPR::PersonalDataImpl:Personal Data:fi6k6x::Reference::NaturalPersonImpl:Natural Person:m0b8x"/>
+    <label id="_nRNYtAu9Ee-TdcMLiBMivw" entityName="GDPR::ConsentImpl:Consent:772yn::Consentee::NaturalPersonImpl:Natural Person:m0b8x"/>
+    <label id="_nRNYtQu9Ee-TdcMLiBMivw" entityName="GDPR::ConsentImpl:Consent:772yn::ForPurpose::PurposeImpl:Purpose:8k3v"/>
+    <label id="_nRNYtgu9Ee-TdcMLiBMivw" entityName="GDPR::ExerciseOfPublicAuthorityImpl:Public Authority:y7y8dg::ForPurpose::PurposeImpl:Purpose:8k3v"/>
+    <label id="_nRNYtwu9Ee-TdcMLiBMivw" entityName="GDPR::ObligationImpl:Obligation:quu8ak::ForPurpose::PurposeImpl:Purpose:8k3v"/>
+    <label id="_nRNYuAu9Ee-TdcMLiBMivw" entityName="GDPR::PerformanceOfContractImpl:Contract:f7dnl::ContractParty::ControllerImpl:Controller:c9bird"/>
+    <label id="_nRNYuQu9Ee-TdcMLiBMivw" entityName="GDPR::PerformanceOfContractImpl:Contract:f7dnl::ContractParty::ThirdPartyImpl:Third Party:cadfg"/>
+    <label id="_nRNYugu9Ee-TdcMLiBMivw" entityName="GDPR::PerformanceOfContractImpl:Contract:f7dnl::ContractParty::NaturalPersonImpl:Natural Person:m0b8x"/>
+    <label id="_nRNYuwu9Ee-TdcMLiBMivw" entityName="GDPR::PerformanceOfContractImpl:Contract:f7dnl::ForPurpose::PurposeImpl:Purpose:8k3v"/>
   </labelTypes>
-  <behaviour id="_rLYMqAY1Ee-gkqDUwJIlzQ" entityName="Usage Behaviour">
-    <inPin id="_rLZaygY1Ee-gkqDUwJIlzQ"/>
-    <outPin id="_rLZawgY1Ee-gkqDUwJIlzQ"/>
+  <behaviour id="_nRNYvgu9Ee-TdcMLiBMivw" entityName="Usage Behaviour">
+    <inPin id="_nRN_0wu9Ee-TdcMLiBMivw"/>
+    <outPin id="_nRN_ywu9Ee-TdcMLiBMivw"/>
   </behaviour>
-  <behaviour id="_rLYzsgY1Ee-gkqDUwJIlzQ" entityName="Transferring Behaviour">
-    <inPin id="_rLZawQY1Ee-gkqDUwJIlzQ"/>
-    <outPin id="_rLZaxQY1Ee-gkqDUwJIlzQ"/>
+  <behaviour id="_nRNYwwu9Ee-TdcMLiBMivw" entityName="Transferring Behaviour">
+    <inPin id="_nRN_ygu9Ee-TdcMLiBMivw"/>
+    <outPin id="_nRN_zgu9Ee-TdcMLiBMivw"/>
   </behaviour>
-  <behaviour id="_rLYztgY1Ee-gkqDUwJIlzQ" entityName="Storage Behaviour">
-    <inPin id="_rLZaxAY1Ee-gkqDUwJIlzQ"/>
-    <outPin id="_rLZayAY1Ee-gkqDUwJIlzQ"/>
+  <behaviour id="_nRNYxwu9Ee-TdcMLiBMivw" entityName="Storage Behaviour">
+    <inPin id="_nRN_zQu9Ee-TdcMLiBMivw"/>
+    <outPin id="_nRN_0Qu9Ee-TdcMLiBMivw"/>
   </behaviour>
-  <behaviour id="_rLYzugY1Ee-gkqDUwJIlzQ" entityName="Processing Behaviour">
-    <inPin id="_rLZaxwY1Ee-gkqDUwJIlzQ"/>
+  <behaviour id="_nRN_wgu9Ee-TdcMLiBMivw" entityName="Processing Behaviour">
+    <inPin id="_nRN_0Au9Ee-TdcMLiBMivw"/>
   </behaviour>
-  <behaviour id="_rLYzvQY1Ee-gkqDUwJIlzQ" entityName="Collecting Behaviour">
-    <outPin id="_rLZaywY1Ee-gkqDUwJIlzQ"/>
+  <behaviour id="_nRN_xQu9Ee-TdcMLiBMivw" entityName="Collecting Behaviour">
+    <outPin id="_nRN_1Au9Ee-TdcMLiBMivw"/>
   </behaviour>
 </datadictionary:DataDictionary>
