@@ -29,12 +29,9 @@ import org.eclipse.emf.ecore.xmi.XMLResource;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMLResourceFactoryImpl;
 
+import mdpa.gdpr.dfdconverter.tracemodel.tracemodel.*;
 import mdpa.gdpr.metamodel.GDPR.*;
 import tools.mdsd.modelingfoundations.identifier.Entity;
-import tracemodel.FlowElement;
-import tracemodel.Trace;
-import tracemodel.TraceModel;
-import tracemodel.TracemodelFactory;
 
 public class DFD2GDPR {	
 	private DataFlowDiagram dfd;

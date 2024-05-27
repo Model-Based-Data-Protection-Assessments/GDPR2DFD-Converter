@@ -13,8 +13,7 @@ import org.eclipse.emf.ecore.xmi.impl.XMLResourceFactoryImpl;
 
 import mdpa.gdpr.metamodel.GDPR.*;
 import tools.mdsd.modelingfoundations.identifier.Entity;
-import tracemodel.TraceModel;
-import tracemodel.TracemodelPackage;
+import mdpa.gdpr.dfdconverter.tracemodel.tracemodel.*;
 
 import java.util.Map;
 import java.util.HashMap;
