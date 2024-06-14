@@ -11,10 +11,11 @@ import org.eclipse.emf.ecore.xmi.XMLResource;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMLResourceFactoryImpl;
 
+import mdpa.gdpr.dfdconverter.tracemodel.tracemodel.TraceModel;
+import mdpa.gdpr.dfdconverter.tracemodel.tracemodel.TracemodelFactory;
+import mdpa.gdpr.dfdconverter.tracemodel.tracemodel.TracemodelPackage;
 import mdpa.gdpr.metamodel.GDPR.*;
 import tools.mdsd.modelingfoundations.identifier.Entity;
-import tracemodel.TraceModel;
-import tracemodel.TracemodelPackage;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -42,6 +43,8 @@ public class GDPR2DFD {
 	private String dfdFile;
 	private String ddFile;
 	
+	private boolean shouldSave;
+	
 	private ResourceSet rs;
 	
 	private Resource ddResource;
@@ -56,6 +59,7 @@ public class GDPR2DFD {
 	public GDPR2DFD(String gdprFile, String dfdFile, String ddFile, String traceModelFile) {
 		this.dfdFile = dfdFile;
 		this.ddFile = ddFile;
+		this.shouldSave = true;
 		
 		rs = new ResourceSetImpl();
 		rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put(Resource.Factory.Registry.DEFAULT_EXTENSION, new XMIResourceFactoryImpl());
@@ -84,6 +88,7 @@ public class GDPR2DFD {
 	public GDPR2DFD(String gdprFile, String dfdFile, String ddFile) {
 		this.dfdFile = dfdFile;
 		this.ddFile = ddFile;
+		this.shouldSave = true;
 		
 		rs = new ResourceSetImpl();
 		rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put(Resource.Factory.Registry.DEFAULT_EXTENSION, new XMIResourceFactoryImpl());
@@ -99,10 +104,20 @@ public class GDPR2DFD {
 		laf = (LegalAssessmentFacts) gdprResource.getContents().get(0);					
 	}
 	
+	public GDPR2DFD(LegalAssessmentFacts laf) {
+		this.laf = laf;
+		this.dfdFactory = dataflowdiagramFactory.eINSTANCE;
+		this.ddFactory = datadictionaryFactory.eINSTANCE;
+		this.dfd = dfdFactory.createDataFlowDiagram();
+		this.dd = ddFactory.createDataDictionary();	
+		this.tracemodel = TracemodelFactory.eINSTANCE.createTraceModel();
+		this.shouldSave = false;
+	}
+	
 	/**
 	 * Performs the transformation with the information provided in the constructor
 	 */
-	public void transform() {
+	public DFDAndTracemodel transform() {
 		dfd.setId(laf.getId());
 		createLabelTypes();
 		
@@ -126,16 +141,19 @@ public class GDPR2DFD {
 			dfd.getFlows().addAll(createFlows(p));
 		});
 		
-		Resource dfdResource = createAndAddResource(dfdFile, new String[] {"dataflowdiagram"} ,rs);
-		if (ddResource == null)  {
-			ddResource = createAndAddResource(ddFile, new String[] {"datadictionary"} ,rs);
-			ddResource.getContents().add(dd);
+		if (shouldSave) {
+			Resource dfdResource = createAndAddResource(dfdFile, new String[] {"dataflowdiagram"} ,rs);
+			if (ddResource == null)  {
+				ddResource = createAndAddResource(ddFile, new String[] {"datadictionary"} ,rs);
+				ddResource.getContents().add(dd);
+			}
+			
+			dfdResource.getContents().add(dfd);		
+			
+			saveResource(dfdResource);
+			saveResource(ddResource);
 		}
-		
-		dfdResource.getContents().add(dfd);		
-		
-		saveResource(dfdResource);
-		saveResource(ddResource);
+		return new DFDAndTracemodel(this.dfd, this.dd, this.tracemodel);
 	}
 	
 	
