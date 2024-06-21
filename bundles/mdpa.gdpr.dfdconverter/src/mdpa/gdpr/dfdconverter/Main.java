@@ -22,15 +22,17 @@ public class Main {
 					String fileOut = (dirOut.endsWith("\\") ? dirOut : dirOut + "\\") + removeFileEnding(m);
 					
 					for (File model : models) {
-						if (model.getName().equals(removeFileEnding(m) + ".tracemodel")) {
-							GDPR2DFD gdpr2dfd = new GDPR2DFD(m.getAbsolutePath(), fileOut + ".dataflowdiagram", fileOut + ".datadictionary", model.getAbsolutePath());
-							gdpr2dfd.transform();
+						if (model.getName().endsWith(".dfd2gdpr.tracemodel")) {
+							GDPR2DFD gdpr2dfd = new GDPR2DFD(m.getAbsolutePath(), fileOut + ".datadictionary", model.getAbsolutePath());
+							gdpr2dfd.transform();		
+							gdpr2dfd.save(fileOut + ".dataflowdiagram", fileOut + ".datadictionary", fileOut + ".gdpr2dfd.tracemodel");
 							return;
 						}
 					}
 					
-					GDPR2DFD gdpr2dfd = new GDPR2DFD(m.getAbsolutePath(), fileOut + ".dataflowdiagram", fileOut + ".datadictionary");
+					GDPR2DFD gdpr2dfd = new GDPR2DFD(m.getAbsolutePath());
 					gdpr2dfd.transform();
+					gdpr2dfd.save(fileOut + ".dataflowdiagram", fileOut + ".datadictionary", fileOut + ".gdpr2dfd.tracemodel");
 				}
 				
 				else if (m.getAbsolutePath().endsWith("dataflowdiagram")) {
@@ -38,8 +40,9 @@ public class Main {
 					
 					for (File model : models) {
 						if (model.getName().equals(removeFileEnding(m) + ".datadictionary")) {
-							DFD2GDPR dfd2gdpr = new DFD2GDPR(m.getAbsolutePath(), model.getAbsolutePath(), fileOut + ".gdpr", fileOut + ".tracemodel");
+							DFD2GDPR dfd2gdpr = new DFD2GDPR(m.getAbsolutePath(), model.getAbsolutePath());
 							dfd2gdpr.transform();
+							dfd2gdpr.save(fileOut + ".gdpr", fileOut + ".dfd2gdpr.tracemodel");
 							return;
 						}
 					}

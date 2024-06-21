@@ -65,9 +65,11 @@ public class MinimalTest {
 		String gdprFileString = Paths.get("models", "Minimal.gdpr").toString();
 		String dfdFileString = Paths.get("models", "MinimalResult.dataflowdiagram").toString();
 		String ddFileString = Paths.get("models", "MinimalResult.datadictionary").toString();
+		String tmFile = Paths.get("models", "MinimalResult.tracemodel").toString();
 		
-		GDPR2DFD transformation = new GDPR2DFD(gdprFileString, dfdFileString, ddFileString);
+		GDPR2DFD transformation = new GDPR2DFD(gdprFileString);
 		transformation.transform();
+		transformation.save(dfdFileString, ddFileString, tmFile);
 		
 		Resource dfdResultResource = rs.getResource(URI.createFileURI(dfdFileString), true);
 		Resource ddResultResource = rs.getResource(URI.createFileURI(ddFileString), true);
@@ -84,9 +86,11 @@ public class MinimalTest {
 		
 		File dfdResultFile = new File(Paths.get("models", "MinimalResult.dataflowdiagram").toString());
 		File ddResultFile = new File(Paths.get("models", "MinimalResult.datadictionary").toString());
+		File tmResultFile = new File(Paths.get("models", "MinimalResult.tracemodel").toString());
 		
 		dfdResultFile.delete();
-		ddResultFile.delete();		
+		ddResultFile.delete();	
+		tmResultFile.delete();
 	}
 	
 	
@@ -100,8 +104,9 @@ public class MinimalTest {
 		String ddFile = Paths.get("models", "Minimal.datadictionary").toString();
 		String tmFile = Paths.get("models", "MinimalResult.tracemodel").toString();
 		
-		DFD2GDPR transformation = new DFD2GDPR(dfdFile, ddFile, gdprFile, tmFile);
+		DFD2GDPR transformation = new DFD2GDPR(dfdFile, ddFile);
 		transformation.transform();
+		transformation.save(gdprFile, tmFile);
 		
 		Resource gdprResultResource = rs.getResource(URI.createFileURI(gdprFile), true);
 		Resource gdprGoldStandardResource = rs.getResource(URI.createFileURI(Paths.get("models", "GoldStandards", "MinimalGoldStandard.gdpr").toString()), true);
@@ -122,8 +127,9 @@ public class MinimalTest {
 		tm.delete();
 		
 		//The transformation deletes the GDPR specific information from the DFD/DD instance, which need to be recreated.
-		GDPR2DFD transformation2 = new GDPR2DFD(Paths.get("models", "Minimal.gdpr").toString(), dfdFile, ddFile);
+		GDPR2DFD transformation2 = new GDPR2DFD(Paths.get("models", "Minimal.gdpr").toString());
 		transformation2.transform();
+		transformation.save(dfdFile, ddFile);
 	}
 				
 	

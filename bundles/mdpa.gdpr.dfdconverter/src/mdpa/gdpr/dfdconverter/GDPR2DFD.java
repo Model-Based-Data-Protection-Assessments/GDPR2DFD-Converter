@@ -25,10 +25,12 @@ public class GDPR2DFD {
 	private DataFlowDiagram dfd;
 	private DataDictionary dd;
 	private LegalAssessmentFacts laf;
-	private TraceModel tracemodel;
+	private TraceModel dfd2gdprTrace;
+	private TraceModel gdpr2dfdTrace;
 	
 	private dataflowdiagramFactory dfdFactory;
 	private datadictionaryFactory ddFactory;
+	private TracemodelFactory tmFactory;
 	
 	private LabelType gdprElementsLabelType;
 	private LabelType gdprNodeLabelType;
@@ -38,8 +40,6 @@ public class GDPR2DFD {
 	private Map<String, Label> mapElementIdAndReferenceToLabel = new HashMap<>();
 	private Map<Entity, List<Label>> mapElementToLinkageLabels = new HashMap<>();
 	
-	private String dfdFile;
-	private String ddFile;
 	
 	private ResourceSet rs;
 	
@@ -52,10 +52,7 @@ public class GDPR2DFD {
 	 * @param ddFile Location of the Data Dictionary instance
 	 * @param traceModelFile Location of the TraceModel instance
 	 */
-	public GDPR2DFD(String gdprFile, String dfdFile, String ddFile, String traceModelFile) {
-		this.dfdFile = dfdFile;
-		this.ddFile = ddFile;
-		
+	public GDPR2DFD(String gdprFile, String ddFile, String traceModelFile) {		
 		rs = new ResourceSetImpl();
 		rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put(Resource.Factory.Registry.DEFAULT_EXTENSION, new XMIResourceFactoryImpl());
 		rs.getPackageRegistry().put(GDPRPackage.eNS_URI, GDPRPackage.eINSTANCE);
@@ -63,7 +60,10 @@ public class GDPR2DFD {
 		
 		dfdFactory = dataflowdiagramFactory.eINSTANCE;
 		ddFactory = datadictionaryFactory.eINSTANCE;
-		dfd = dfdFactory.createDataFlowDiagram();
+		tmFactory = TracemodelFactory.eINSTANCE;
+		
+		dfd = dfdFactory.createDataFlowDiagram();		
+		gdpr2dfdTrace = tmFactory.createTraceModel();
 		
 		Resource gdprResource = rs.getResource(URI.createFileURI(gdprFile), true);
 		Resource ddResource = rs.getResource(URI.createFileURI(ddFile), true);
@@ -71,7 +71,20 @@ public class GDPR2DFD {
 		
 		laf = (LegalAssessmentFacts) gdprResource.getContents().get(0);
 		dd = (DataDictionary) ddResource.getContents().get(0);		
-		tracemodel = (TraceModel) tmResource.getContents().get(0);
+		dfd2gdprTrace = (TraceModel) tmResource.getContents().get(0);
+	}
+	
+	public GDPR2DFD(LegalAssessmentFacts laf, DataDictionary dd, TraceModel tm) {				
+		dfdFactory = dataflowdiagramFactory.eINSTANCE;
+		ddFactory = datadictionaryFactory.eINSTANCE;
+		tmFactory = TracemodelFactory.eINSTANCE;
+		
+		dfd = dfdFactory.createDataFlowDiagram();		
+		gdpr2dfdTrace = tmFactory.createTraceModel();
+
+		this.laf = laf;
+		this.dd = dd;
+		this.dfd2gdprTrace = tm;
 	}
 	
 	/**
@@ -80,22 +93,37 @@ public class GDPR2DFD {
 	 * @param dfdFile Location of where to save the new DFD instance
 	 * @param ddFileLocation of where to save the new DD instance
 	 */
-	public GDPR2DFD(String gdprFile, String dfdFile, String ddFile) {
-		this.dfdFile = dfdFile;
-		this.ddFile = ddFile;
-		
+	public GDPR2DFD(String gdprFile) {		
 		rs = new ResourceSetImpl();
 		rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put(Resource.Factory.Registry.DEFAULT_EXTENSION, new XMIResourceFactoryImpl());
 		rs.getPackageRegistry().put(GDPRPackage.eNS_URI, GDPRPackage.eINSTANCE);
 		
 		dfdFactory = dataflowdiagramFactory.eINSTANCE;
 		ddFactory = datadictionaryFactory.eINSTANCE;
+		tmFactory = TracemodelFactory.eINSTANCE;
 		dfd = dfdFactory.createDataFlowDiagram();
 		dd = ddFactory.createDataDictionary();	
+		gdpr2dfdTrace = tmFactory.createTraceModel();
 		
 		Resource gdprResource = rs.getResource(URI.createFileURI(gdprFile), true);
 		
 		laf = (LegalAssessmentFacts) gdprResource.getContents().get(0);					
+	}
+	
+	public void save(String dfdFile, String ddFile, String traceModelFile) {
+		Resource dfdResource = createAndAddResource(dfdFile, new String[] {"dataflowdiagram"} ,rs);
+		Resource gdpr2dfdTraceResource = createAndAddResource(traceModelFile, new String[] {"tracemodel"} ,rs);
+		if (ddResource == null)  {
+			ddResource = createAndAddResource(ddFile, new String[] {"datadictionary"} ,rs);
+			ddResource.getContents().add(dd);
+		}
+		
+		dfdResource.getContents().add(dfd);		
+		gdpr2dfdTraceResource.getContents().add(gdpr2dfdTrace);
+		
+		saveResource(gdpr2dfdTraceResource);
+		saveResource(dfdResource);
+		saveResource(ddResource);
 	}
 	
 	/**
@@ -105,7 +133,7 @@ public class GDPR2DFD {
 		dfd.setId(laf.getId());
 		createLabelTypes();
 		
-		if (tracemodel != null) handleTraceModel();
+		if (dfd2gdprTrace != null) handleTraceModel();
 		
 		laf.getData().stream().filter(d -> d instanceof PersonalData).forEach(pd -> {
 			fillLinkageLabelMapForPersonalData((PersonalData)pd);
@@ -125,16 +153,6 @@ public class GDPR2DFD {
 			dfd.getFlows().addAll(createFlows(p));
 		});
 		
-		Resource dfdResource = createAndAddResource(dfdFile, new String[] {"dataflowdiagram"} ,rs);
-		if (ddResource == null)  {
-			ddResource = createAndAddResource(ddFile, new String[] {"datadictionary"} ,rs);
-			ddResource.getContents().add(dd);
-		}
-		
-		dfdResource.getContents().add(dfd);		
-		
-		saveResource(dfdResource);
-		saveResource(ddResource);
 	}
 	
 	
@@ -161,8 +179,8 @@ public class GDPR2DFD {
 	 * @return All flows going out from the source node
 	 */
 	private List<Flow> createFlows(Processing processing) {
-		if (tracemodel != null) {
-			return tracemodel.getFlowList()
+		if (dfd2gdprTrace != null) {
+			return dfd2gdprTrace.getFlowList()
 					.stream()
 					.filter(fe -> fe.getSourceID().equals(processing.getId()))
 					.map(fe -> fe.getFlow())
@@ -177,8 +195,8 @@ public class GDPR2DFD {
 			
 			List<Flow> individualFlows = new ArrayList<>();
 			
-			if (tracemodel != null) {
-				individualFlows = tracemodel.getFlowList().stream().filter(fE -> {
+			if (dfd2gdprTrace != null) {
+				individualFlows = dfd2gdprTrace.getFlowList().stream().filter(fE -> {
 					return fE.getSourceID().equals(sourceNode.getId()) && fE.getDestinationID().equals(destinationNode.getId());
 				}).map(fE -> fE.getFlow()).toList();
 			}
@@ -209,7 +227,7 @@ public class GDPR2DFD {
 	 * Fills the processingToNode Map in case the tracemodel is present
 	 */
 	private void handleTraceModel() {
-		tracemodel.getTracesList().forEach(t -> {
+		dfd2gdprTrace.getTracesList().forEach(t -> {
 			mapProcessingToNode.put(t.getProcessing(), t.getNode());
 		});
 	}
@@ -271,6 +289,11 @@ public class GDPR2DFD {
 		
 		node.setId(processing.getId());
 		node.setEntityName(name);
+		
+		var trace = tmFactory.createTrace();
+		trace.setNode(node);
+		trace.setProcessing(processing);
+		gdpr2dfdTrace.getTracesList().add(trace);
 		
 		return node;		
 	}
@@ -397,4 +420,20 @@ public class GDPR2DFD {
 	        throw new RuntimeException(e);
 	     }
 	}
+
+	public DataFlowDiagram getDfd() {
+		return dfd;
+	}
+
+	public DataDictionary getDd() {
+		return dd;
+	}
+
+	public LegalAssessmentFacts getLaf() {
+		return laf;
+	}
+
+	public TraceModel getTm() {
+		return dfd2gdprTrace;
+	}	
 }

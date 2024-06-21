@@ -34,6 +34,7 @@ import mdpa.gdpr.metamodel.GDPR.*;
 import tools.mdsd.modelingfoundations.identifier.Entity;
 
 public class DFD2GDPR {	
+
 	private DataFlowDiagram dfd;
 	private DataDictionary dd;
 	private LegalAssessmentFacts laf;
@@ -45,19 +46,13 @@ public class DFD2GDPR {
 	private Map<String, Entity> mapIdToElement = new HashMap<>();
 	
 	private Set<Label> resolvedLinkageLabel = new HashSet<>();
-	
-	private String gdprFile;
-	private String traceModelFile;
-	
+		
 	private ResourceSet rs;
 	
 	private Resource ddResource;
 	private Resource dfdResource;
 	
-	public DFD2GDPR(String dfdFile, String ddFile, String gdprFile, String traceModelFile) {
-		this.gdprFile = gdprFile;
-		this.traceModelFile = traceModelFile;
-		
+	public DFD2GDPR(String dfdFile, String ddFile) {
 		rs = new ResourceSetImpl();
 		rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put(Resource.Factory.Registry.DEFAULT_EXTENSION, new XMIResourceFactoryImpl());
 		rs.getPackageRegistry().put(dataflowdiagramPackage.eNS_URI, dataflowdiagramPackage.eINSTANCE);
@@ -73,8 +68,17 @@ public class DFD2GDPR {
 		ddResource = rs.getResource(URI.createFileURI(ddFile), true);
 		
 		dd = (DataDictionary) ddResource.getContents().get(0);
-		dfd = (DataFlowDiagram) dfdResource.getContents().get(0);	
+		dfd = (DataFlowDiagram) dfdResource.getContents().get(0);			
+	}
+	
+	public DFD2GDPR(DataFlowDiagram dfd, DataDictionary dd) {
+		gdprFactory = GDPRFactory.eINSTANCE;
+		laf = gdprFactory.createLegalAssessmentFacts();
 		
+		traceModelFactory = TracemodelFactory.eINSTANCE;
+		tracemodel = traceModelFactory.createTraceModel();
+		this.dfd = dfd;
+		this.dd = dd;
 	}
 	
 	/**
@@ -125,10 +129,10 @@ public class DFD2GDPR {
 			if (name.equals("GDPRElement") || name.equals("GDPRNode") || name.equals("GDPRLink"))
 				gdprLabels.add(lt);
 		});		
-		dd.getLabelTypes().removeAll(gdprLabels);
-		
-		
-		
+		dd.getLabelTypes().removeAll(gdprLabels);	
+	}
+	
+	public void save(String gdprFile, String traceModelFile) {
 		Resource gdprResource = createAndAddResource(gdprFile, new String[] {"gdpr"} ,rs);
 		Resource tmResource = createAndAddResource(traceModelFile, new String[] {"tracemodel"} ,rs);
 		
@@ -344,5 +348,22 @@ public class DFD2GDPR {
 	     } catch (IOException e) {
 	        throw new RuntimeException(e);
 	     }
+	}
+	
+
+	public DataFlowDiagram getDfd() {
+		return dfd;
+	}
+
+	public DataDictionary getDd() {
+		return dd;
+	}
+
+	public LegalAssessmentFacts getLaf() {
+		return laf;
+	}
+
+	public TraceModel getTracemodel() {
+		return tracemodel;
 	}
 }

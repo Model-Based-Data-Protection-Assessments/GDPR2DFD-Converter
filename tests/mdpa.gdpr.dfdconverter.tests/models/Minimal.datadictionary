@@ -1,32 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<datadictionary:DataDictionary xmlns:datadictionary="http://www.example.org/datadictionary" id="_7GrUERwgEe-pQ-doEL5KHA">
-  <labelTypes id="_7GtJQBwgEe-pQ-doEL5KHA" entityName="GDPRElement">
-    <label id="_7GtJTxwgEe-pQ-doEL5KHA" entityName="GDPR::LegalBasis::ConsentImpl:Consent:772yn"/>
-    <label id="_7GtJUBwgEe-pQ-doEL5KHA" entityName="GDPR::Purpose::PurposeImpl:Purpose:8k3v"/>
-    <label id="_7GtJVBwgEe-pQ-doEL5KHA" entityName="GDPR::LegalBasis::ExerciseOfPublicAuthorityImpl:Public Authority:y7y8dg"/>
-    <label id="_7GtJWBwgEe-pQ-doEL5KHA" entityName="GDPR::LegalBasis::ObligationImpl:Obligation:quu8ak"/>
-    <label id="_7GtJXxwgEe-pQ-doEL5KHA" entityName="GDPR::LegalBasis::PerformanceOfContractImpl:Contract:f7dnl"/>
-    <label id="_7GtJYBwgEe-pQ-doEL5KHA" entityName="GDPR::InputData::PersonalDataImpl:Personal Data:fi6k6x"/>
-    <label id="_7GtJYRwgEe-pQ-doEL5KHA" entityName="GDPR::OutputData::DataImpl:Data:mnpnio"/>
-  </labelTypes>
-  <labelTypes id="_7GtJQRwgEe-pQ-doEL5KHA" entityName="GDPRNode">
-    <label id="_7GtJTRwgEe-pQ-doEL5KHA" entityName="GDPR::ofType:UsageImpl"/>
-    <label id="_7GtJUhwgEe-pQ-doEL5KHA" entityName="GDPR::ofType:TransferringImpl"/>
-    <label id="_7GtJVhwgEe-pQ-doEL5KHA" entityName="GDPR::ofType:StoringImpl"/>
-    <label id="_7GtJWhwgEe-pQ-doEL5KHA" entityName="GDPR::ofType:ProcessingImpl"/>
-    <label id="_7GtJXRwgEe-pQ-doEL5KHA" entityName="GDPR::ofType:CollectingImpl"/>
-  </labelTypes>
-  <labelTypes id="_7GtJQhwgEe-pQ-doEL5KHA" entityName="GDPRLink">
-    <label id="_7GtJQxwgEe-pQ-doEL5KHA" entityName="GDPR::PersonalDataImpl:Personal Data:fi6k6x::Reference::NaturalPersonImpl:Natural Person:m0b8x"/>
-    <label id="_7GtJRBwgEe-pQ-doEL5KHA" entityName="GDPR::ConsentImpl:Consent:772yn::Consentee::NaturalPersonImpl:Natural Person:m0b8x"/>
-    <label id="_7GtJRRwgEe-pQ-doEL5KHA" entityName="GDPR::ConsentImpl:Consent:772yn::ForPurpose::PurposeImpl:Purpose:8k3v"/>
-    <label id="_7GtJRhwgEe-pQ-doEL5KHA" entityName="GDPR::ExerciseOfPublicAuthorityImpl:Public Authority:y7y8dg::ForPurpose::PurposeImpl:Purpose:8k3v"/>
-    <label id="_7GtJRxwgEe-pQ-doEL5KHA" entityName="GDPR::ObligationImpl:Obligation:quu8ak::ForPurpose::PurposeImpl:Purpose:8k3v"/>
-    <label id="_7GtJSBwgEe-pQ-doEL5KHA" entityName="GDPR::PerformanceOfContractImpl:Contract:f7dnl::ContractParty::ControllerImpl:Controller:c9bird"/>
-    <label id="_7GtJSRwgEe-pQ-doEL5KHA" entityName="GDPR::PerformanceOfContractImpl:Contract:f7dnl::ContractParty::ThirdPartyImpl:Third Party:cadfg"/>
-    <label id="_7GtJShwgEe-pQ-doEL5KHA" entityName="GDPR::PerformanceOfContractImpl:Contract:f7dnl::ContractParty::NaturalPersonImpl:Natural Person:m0b8x"/>
-    <label id="_7GtJSxwgEe-pQ-doEL5KHA" entityName="GDPR::PerformanceOfContractImpl:Contract:f7dnl::ForPurpose::PurposeImpl:Purpose:8k3v"/>
-  </labelTypes>
+<datadictionary:DataDictionary xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:datadictionary="http://www.example.org/datadictionary" id="_7GrUERwgEe-pQ-doEL5KHA">
   <behaviour id="_7GtJThwgEe-pQ-doEL5KHA" entityName="Usage Behaviour">
     <inPin id="_7GtJbBwgEe-pQ-doEL5KHA"/>
     <outPin id="_7GtJZBwgEe-pQ-doEL5KHA"/>
