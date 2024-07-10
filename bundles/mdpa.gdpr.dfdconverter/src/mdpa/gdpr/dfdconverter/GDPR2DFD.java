@@ -175,27 +175,29 @@ public class GDPR2DFD {
 	private void createLabels() {
 		laf.getInvolvedParties().forEach(role -> {
 			Label label = ddFactory.createLabel();
-			label.setEntityName(role.getEntityName());
+			label.setEntityName(getClassName(role) + ":" + role.getEntityName());
 			roleLabelType.getLabel().add(label);
 		});
 		
 		laf.getLegalBases().forEach(legalBasis -> {
 			Label label = ddFactory.createLabel();
-			label.setEntityName(legalBasis.getEntityName());
+			label.setEntityName(getClassName(legalBasis) + ":" + legalBasis.getEntityName());
 			legalBasisLabelType.getLabel().add(label);
 		});
 		
 		laf.getPurposes().forEach(purpose -> {
 			Label label = ddFactory.createLabel();
-			label.setEntityName(purpose.getEntityName());
+			label.setEntityName(getClassName(purpose) + ":" + purpose.getEntityName());
 			purposeLabelType.getLabel().add(label);
 		});
 		
 		laf.getData().forEach(data -> {
 			Label label = ddFactory.createLabel();
-			label.setEntityName(data.getEntityName());
+			label.setEntityName(getClassName(data) + ":" + data.getEntityName());
 			dataLabelType.getLabel().add(label);
 		});
+		
+		
 	}
 	
 	/**
@@ -387,6 +389,14 @@ public class GDPR2DFD {
 	     } catch (IOException e) {
 	        throw new RuntimeException(e);
 	     }
+	}
+	
+	private String getClassName(Entity entity) {
+		String className = entity.getClass().getSimpleName();
+		if (className.endsWith("Impl")) {
+			className = className.substring(0, className.lastIndexOf("Impl"));
+		}
+		return className;
 	}
 
 	public DataFlowDiagram getDfd() {
