@@ -1,6 +1,7 @@
 package mdpa.gdpr.dfdconverter;
 
 import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -38,7 +39,8 @@ public class DFD2GDPR {
 	private DataFlowDiagram dfd;
 	private DataDictionary dd;
 	private LegalAssessmentFacts laf;
-	private TraceModel tracemodel;
+	private TraceModel dfd2gdprTrace;
+	private TraceModel gdpr2dfdTrace;
 	
 	private GDPRFactory gdprFactory;
 	private TracemodelFactory traceModelFactory;
@@ -46,39 +48,47 @@ public class DFD2GDPR {
 	private Map<String, Entity> mapIdToElement = new HashMap<>();
 	
 	private Set<Label> resolvedLinkageLabel = new HashSet<>();
+	
+	private Map<Label, Entity> labelToEntityMap = new HashMap<>();
 		
 	private ResourceSet rs;
 	
 	private Resource ddResource;
 	private Resource dfdResource;
+	private Resource tmResource;
 	
-	public DFD2GDPR(String dfdFile, String ddFile) {
+	public DFD2GDPR(String dfdFile, String ddFile, String traceModelFile) {
 		rs = new ResourceSetImpl();
 		rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put(Resource.Factory.Registry.DEFAULT_EXTENSION, new XMIResourceFactoryImpl());
 		rs.getPackageRegistry().put(dataflowdiagramPackage.eNS_URI, dataflowdiagramPackage.eINSTANCE);
 		rs.getPackageRegistry().put(datadictionaryPackage.eNS_URI, datadictionaryPackage.eINSTANCE);
+		rs.getPackageRegistry().put(TracemodelPackage.eNS_URI, TracemodelPackage.eINSTANCE);
 		
 		gdprFactory = GDPRFactory.eINSTANCE;
 		laf = gdprFactory.createLegalAssessmentFacts();
 		
 		traceModelFactory = TracemodelFactory.eINSTANCE;
-		tracemodel = traceModelFactory.createTraceModel();
+		dfd2gdprTrace = traceModelFactory.createTraceModel();
 		
+		
+		tmResource = rs.getResource(URI.createFileURI(traceModelFile), true);
 		dfdResource = rs.getResource(URI.createFileURI(dfdFile), true);
 		ddResource = rs.getResource(URI.createFileURI(ddFile), true);
 		
 		dd = (DataDictionary) ddResource.getContents().get(0);
-		dfd = (DataFlowDiagram) dfdResource.getContents().get(0);			
+		dfd = (DataFlowDiagram) dfdResource.getContents().get(0);	
+		gdpr2dfdTrace = (TraceModel) tmResource.getContents().get(0);
 	}
 	
-	public DFD2GDPR(DataFlowDiagram dfd, DataDictionary dd) {
+	public DFD2GDPR(DataFlowDiagram dfd, DataDictionary dd, TraceModel gdpr2dfdTrace) {
 		gdprFactory = GDPRFactory.eINSTANCE;
 		laf = gdprFactory.createLegalAssessmentFacts();
 		
 		traceModelFactory = TracemodelFactory.eINSTANCE;
-		tracemodel = traceModelFactory.createTraceModel();
+		dfd2gdprTrace = traceModelFactory.createTraceModel();
 		this.dfd = dfd;
 		this.dd = dd;
+		this.gdpr2dfdTrace = gdpr2dfdTrace;
 	}
 	
 	/**
@@ -86,18 +96,20 @@ public class DFD2GDPR {
 	 */
 	public void transform() {
 		laf.setId(dfd.getId());
+		handleTraceModel();
+		
 		
 		dfd.getNodes().stream().forEach(node -> {
-			Processing processing = resolveProcessingTypeLabel(node);
-			resolveElementLabel(processing, node.getProperties());
-			resolveLinkLabel(node.getProperties());
-
-			processing.setEntityName(node.getEntityName());
-			processing.setId(node.getId());
+			Processing processing = mapNodeToProcessing.getOrDefault(node, null);
+			if (processing == null) {
+				processing = gdprFactory.createProcessing();
+				processing.setEntityName(node.getEntityName());
+				processing.setResponsible(getControllerFromNode(node));
+				processing.getOnTheBasisOf().addAll(getLegalBasesFromNode(node));
+				processing.getPurpose().addAll(getPurposesFromNode(node));			
+			}
 			
-			mapNodeToProcessing.put(node, processing);
 			
-			laf.getProcessing().add(processing);
 		});
 		
 		
@@ -108,14 +120,14 @@ public class DFD2GDPR {
 			flowElement.setFlow(flow);
 			flowElement.setDestinationID(flow.getDestinationNode().getId());
 			flowElement.setSourceID(flow.getSourceNode().getId());
-			tracemodel.getFlowList().add(flowElement);
+			dfd2gdprTrace.getFlowList().add(flowElement);
 		});
 		
 		mapNodeToProcessing.forEach((node, processing) -> {
 			Trace trace = traceModelFactory.createTrace();
 			trace.setNode(node);
 			trace.setProcessing(processing);
-			tracemodel.getTracesList().add(trace);
+			dfd2gdprTrace.getTracesList().add(trace);
 		});
 		
 		for (var node : dfd.getNodes()) {
@@ -130,6 +142,8 @@ public class DFD2GDPR {
 				gdprLabels.add(lt);
 		});		
 		dd.getLabelTypes().removeAll(gdprLabels);	
+		
+		
 	}
 	
 	public void save(String gdprFile, String traceModelFile) {
@@ -137,13 +151,153 @@ public class DFD2GDPR {
 		Resource tmResource = createAndAddResource(traceModelFile, new String[] {"tracemodel"} ,rs);
 		
 		gdprResource.getContents().add(laf);
-		tmResource.getContents().add(tracemodel);
+		tmResource.getContents().add(dfd2gdprTrace);
 		
 		saveResource(gdprResource);
 		saveResource(tmResource);
 		saveResource(ddResource);
 		saveResource(dfdResource);
 	}
+	
+	private void handleTraceModel() {
+		gdpr2dfdTrace.getTracesList().forEach(trace -> {
+			var node = trace.getNode();
+			var processing = trace.getProcessing();
+			mapNodeToProcessing.put(node, processing);
+			
+			processing.getOnTheBasisOf().clear();
+			processing.getOnTheBasisOf().addAll(getLegalBasesFromNode(node));
+			
+			processing.getPurpose().clear();
+			processing.getPurpose().addAll(getPurposesFromNode(node));
+			
+			processing.setResponsible(getControllerFromNode(node));
+		});
+	}
+	
+	private void parseLabels() {
+		dd.getLabelTypes().forEach(labelType -> {
+			if (labelType.getEntityName().equals("Roles")) {
+				labelType.getLabel().forEach(label -> {
+					Role role;
+					if (labelType.getEntityName().startsWith(Controller.class.getSimpleName())) {
+						role = gdprFactory.createController();
+					} else if (labelType.getEntityName().startsWith(NaturalPerson.class.getSimpleName())) {
+						role = gdprFactory.createNaturalPerson();
+					} else {
+						role = gdprFactory.createNaturalPerson(); //TODO Change once LAF model is changed
+					}
+					if (label.getEntityName().contains(":")) {
+						role.setEntityName(label.getEntityName().split(":")[1]);
+					} else {
+						role.setEntityName(label.getEntityName());
+					}
+					
+					labelToEntityMap.put(label, role);
+					laf.getInvolvedParties().add(role);
+				});
+			}
+			if (labelType.getEntityName().equals("LegalBases")) {
+				labelType.getLabel().forEach(label -> {
+					LegalBasis legalBasis;
+					if (labelType.getEntityName().startsWith(Consent.class.getSimpleName())) {
+						legalBasis = gdprFactory.createConsent();
+					} else if (labelType.getEntityName().startsWith(PerformanceOfContract.class.getSimpleName())) {
+						legalBasis = gdprFactory.createPerformanceOfContract();
+					} else if (labelType.getEntityName().startsWith(ExerciseOfPublicAuthority.class.getSimpleName())) {
+						legalBasis = gdprFactory.createExerciseOfPublicAuthority();
+					} else if (labelType.getEntityName().startsWith(Obligation.class.getSimpleName())) {
+						legalBasis = gdprFactory.createObligation();
+					} else {
+						legalBasis = gdprFactory.createLegalBasis(); //TODO Change once LAF model is changed
+					}
+					if (label.getEntityName().contains(":")) {
+						legalBasis.setEntityName(label.getEntityName().split(":")[1]);
+					} else {
+						legalBasis.setEntityName(label.getEntityName());
+					}
+					
+					labelToEntityMap.put(label, legalBasis);
+					laf.getLegalBases().add(legalBasis);
+				});
+			}
+			if (labelType.getEntityName().equals("Purposes")) {
+				labelType.getLabel().forEach(label -> {
+					var purpose = gdprFactory.createPurpose();
+					if (label.getEntityName().contains(":")) {
+						purpose.setEntityName(label.getEntityName().split(":")[1]);
+					} else {
+						purpose.setEntityName(label.getEntityName());
+					}
+					labelToEntityMap.put(label, purpose);
+					laf.getPurposes().add(purpose);
+				});			
+			}
+			if (labelType.getEntityName().equals("Data")) {
+				labelType.getLabel().forEach(label -> {
+					Data data;
+					if (labelType.getEntityName().startsWith(Data.class.getSimpleName())) {
+						data = gdprFactory.createData();
+					} else if (labelType.getEntityName().startsWith(PersonalData.class.getSimpleName())) {
+						data = gdprFactory.createPersonalData();
+					} else {
+						data = gdprFactory.createData(); //TODO Change once LAF model is changed
+					}
+					if (label.getEntityName().contains(":")) {
+						data.setEntityName(label.getEntityName().split(":")[1]);
+					} else {
+						data.setEntityName(label.getEntityName());
+					}
+					
+					labelToEntityMap.put(label, data);
+					laf.getData().add(data);
+				});			
+			}
+		});
+	}
+	
+	private Controller getControllerFromNode(Node node) {			
+		for (Label label : node.getProperties()) {
+			var entity = labelToEntityMap.getOrDefault(label, null);
+			if (entity != null && entity instanceof Controller controller) {
+				return controller;
+			}
+		}
+	}
+	
+	private List<Purpose> getPurposesFromNode(Node node) {
+		List<Purpose> purposes = new ArrayList<>();
+		node.getProperties().forEach(label -> {
+			var entity = labelToEntityMap.getOrDefault(label, null);
+			if (entity != null && entity instanceof Purpose purpose) {
+				purposes.add(purpose);
+			}
+		});
+		return purposes;
+	}
+
+	private List<LegalBasis> getLegalBasesFromNode(Node node) {
+		List<LegalBasis> legalBases = new ArrayList<>();
+		node.getProperties().forEach(label -> {
+			var entity = labelToEntityMap.getOrDefault(label, null);
+			if (entity != null && entity instanceof LegalBasis legalBasis) {
+				legalBases.add(legalBasis);
+			}
+		});
+		return legalBases;
+	}
+
+	private List<Data> getDataFromNode(Node node) {
+		List<Data> dataElements = new ArrayList<>();
+		node.getProperties().forEach(label -> {
+			var entity = labelToEntityMap.getOrDefault(label, null);
+			if (entity != null && entity instanceof Data data) {
+				dataElements.add(data);
+			}
+		});
+		return dataElements;
+	}
+	
 	
 	/**
 	 * Creates a Processing of the right type through using the descriptor label or through node type if no label is present
@@ -191,140 +345,7 @@ public class DFD2GDPR {
 		source.getFollowingProcessing().add(destination);
 	}
 	
-	/**
-	 * Fills the references of Objects held by the processing and creates the refence objects if necessary
-	 * @param properties All labels present on the node including the reference labels
-	 */
-	private void resolveLinkLabel (List<Label> properties) {
-		properties.stream()
-		.filter(label -> label.getEntityName().startsWith("GDPR::"))
-		.forEach(label -> {
-			if (resolvedLinkageLabel.contains(label)) return;
-			
-			String[] substring = label.getEntityName().replace("GDPR::", "").split("::");
-			if (substring.length != 3) return;
-			
-			Entity firstElement = resolveAndCreateElementType(substring[0]);
-			Entity secondElement = resolveAndCreateElementType(substring[2]);
-			String reference = substring[1];
-			
-			switch (reference) {
-				case "Consentee":
-					((Consent)firstElement).setConsentee((NaturalPerson)secondElement);
-					break;
-				case "ContractParty":
-					((PerformanceOfContract)firstElement).getContractingParty().add((Role)secondElement);
-					break;
-				case "ForPurpose":
-					((LegalBasis)firstElement).getForPurpose().add((Purpose)secondElement);
-					break;
-				case "ForData":
-					((LegalBasis)firstElement).setPersonalData((PersonalData)secondElement);
-					break;
-				case "Reference":
-					((PersonalData)firstElement).getDataReferences().add((NaturalPerson)secondElement);
-					break;
-				default:
-					throw new IllegalArgumentException("GPDPR link label reference does not match any references");
-			}
-			
-			resolvedLinkageLabel.add(label);
-		});
-	}
-	
-	/**
-	 * Fills the references of the processing element. Creates the referenced objects if necessary
-	 * @param processing Processing element to be filled
-	 * @param properties All Node labels present on the Node including the ELement labels
-	 */
-	private void resolveElementLabel(Processing processing, List<Label> properties) {
-		properties.stream()
-		.filter(label -> ((LabelType)label.eContainer()).getEntityName().equals("GDPRElement"))
-		.forEach(label -> {
-			String string = label.getEntityName().replaceFirst("GDPR::", "");
-			String[] substring = string.split("::");
-			String reference = substring[0];
-			
-			Entity entity = resolveAndCreateElementType(substring[1]);
-			
-			switch (reference) {
-				case "InputData":
-					processing.getInputData().add((Data)entity);
-					break;
-				case "OutputData":
-					processing.getOutputData().add((Data)entity);
-					break;
-				case "LegalBasis":
-					processing.getOnTheBasisOf().add((LegalBasis)entity);
-					break;
-				case "Purpose":
-					processing.getPurpose().add((Purpose)entity);
-					break;
-				case "Responsible":
-					processing.setResponsible((Role)entity);
-					break;
-				default:
-					throw new IllegalArgumentException("Element Label reference does not match any reference");
-			}			
-		});		
-	}
-	
-	/**
-	 * Creates an entity based on the label description or returns the Object if it was already created
-	 * @param string Label name that descibes the entity with Prefixes removed
-	 * @return The created Entity
-	 */
-	private Entity resolveAndCreateElementType(String string) {
-		String[] substring = string.split(":");
-		String type = substring[0].replace("Impl", "");
-		String name = substring[1];
-		String id = substring[2];
 		
-		if (mapIdToElement.containsKey(id)) return mapIdToElement.get(id);
-		
-		Entity entity; 	
-		
-		if (type.equals(Consent.class.getSimpleName())) {
-			entity = gdprFactory.createConsent();
-			laf.getLegalBases().add((LegalBasis)entity);
-		} else if (type.equals(PerformanceOfContract.class.getSimpleName())) {
-			entity = gdprFactory.createPerformanceOfContract();
-			laf.getLegalBases().add((LegalBasis)entity);
-		} else if (type.equals(Obligation.class.getSimpleName())) {
-			entity = gdprFactory.createObligation();
-			laf.getLegalBases().add((LegalBasis)entity);
-		} else if (type.equals(ExerciseOfPublicAuthority.class.getSimpleName())) {
-			entity = gdprFactory.createExerciseOfPublicAuthority();
-			laf.getLegalBases().add((LegalBasis)entity);
-		} else if (type.equals(Data.class.getSimpleName())) {
-			entity = gdprFactory.createData();
-			laf.getData().add((Data)entity);
-		} else if (type.equals(PersonalData.class.getSimpleName())) {
-			entity = gdprFactory.createPersonalData();
-			laf.getData().add((Data)entity);
-		} else if (type.equals(Purpose.class.getSimpleName())) {
-			entity = gdprFactory.createPurpose();
-			laf.getPurposes().add((Purpose)entity);
-		} else if (type.equals(Controller.class.getSimpleName())) {			
-			entity = gdprFactory.createController();
-			laf.getInvolvedParties().add((Role)entity);
-		} else if (type.equals(NaturalPerson.class.getSimpleName())) {
-			entity = gdprFactory.createNaturalPerson();
-			laf.getInvolvedParties().add((Role)entity);
-		} else if (type.equals(ThirdParty.class.getSimpleName())) {
-			entity = gdprFactory.createThirdParty();
-			laf.getInvolvedParties().add((Role)entity);
-		} else {
-			throw new IllegalArgumentException("Element Label Type does not match any reference class");
-		}
-		
-		entity.setEntityName(name);
-		entity.setId(id);
-		
-		mapIdToElement.put(id, entity);
-		
-		return entity;
-	}
 	
 	//Copied from https://sdq.kastel.kit.edu/wiki/Creating_EMF_Model_instances_programmatically
 	@SuppressWarnings({ "rawtypes", "unchecked" })
@@ -364,6 +385,6 @@ public class DFD2GDPR {
 	}
 
 	public TraceModel getTracemodel() {
-		return tracemodel;
+		return dfd2gdprTrace;
 	}
 }

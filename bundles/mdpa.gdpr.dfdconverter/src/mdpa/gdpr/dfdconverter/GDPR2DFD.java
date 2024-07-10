@@ -32,13 +32,13 @@ public class GDPR2DFD {
 	private datadictionaryFactory ddFactory;
 	private TracemodelFactory tmFactory;
 	
-	private LabelType gdprElementsLabelType;
-	private LabelType gdprNodeLabelType;
-	private LabelType gdprLinkLabelType;
+	private LabelType dataLabelType;
+	private LabelType legalBasisLabelType;
+	private LabelType purposeLabelType;
+	private LabelType roleLabelType;
 	
-	private Map<Processing, Node> mapProcessingToNode = new HashMap<>();	
-	private Map<String, Label> mapElementIdAndReferenceToLabel = new HashMap<>();
-	private Map<Entity, List<Label>> mapElementToLinkageLabels = new HashMap<>();
+	private Map<Processing, Node> processingToNodeMap = new HashMap<>();		
+	private Map<Entity, Label> entityToLabelMap = new HashMap<>();
 	
 	
 	private ResourceSet rs;
@@ -132,20 +132,13 @@ public class GDPR2DFD {
 	public void transform() {
 		dfd.setId(laf.getId());
 		createLabelTypes();
+		createLabels();
 		
 		if (dfd2gdprTrace != null) handleTraceModel();
-		
-		laf.getData().stream().filter(d -> d instanceof PersonalData).forEach(pd -> {
-			fillLinkageLabelMapForPersonalData((PersonalData)pd);
-		});
-		
-		laf.getLegalBases().stream().forEach(lb -> {
-			fillLinkageLabelMapForLegalBasis(lb);
-		});
-		
+				
 		laf.getProcessing().stream().forEach(p -> {
 			Node node = convertProcessing(p);
-			mapProcessingToNode.put(p, node);
+			processingToNodeMap.put(p, node);
 			dfd.getNodes().add(node);
 		});
 		
@@ -153,6 +146,9 @@ public class GDPR2DFD {
 			dfd.getFlows().addAll(createFlows(p));
 		});
 		
+		laf.getProcessing().stream().forEach(p -> {
+			annotateBehaviour(p);
+		});
 	}
 	
 	
@@ -160,17 +156,46 @@ public class GDPR2DFD {
 	 * Creates the labeltypes that hold the GDPR instance specific information
 	 */
 	private void createLabelTypes() {
-		gdprElementsLabelType = ddFactory.createLabelType();
-		gdprNodeLabelType = ddFactory.createLabelType();
-		gdprLinkLabelType = ddFactory.createLabelType();
+		dataLabelType = ddFactory.createLabelType();
+		legalBasisLabelType = ddFactory.createLabelType();
+		roleLabelType = ddFactory.createLabelType();
+		purposeLabelType = ddFactory.createLabelType();
 		
-		gdprElementsLabelType.setEntityName("GDPRElement");
-		gdprNodeLabelType.setEntityName("GDPRNode");
-		gdprLinkLabelType.setEntityName("GDPRLink");
+		dataLabelType.setEntityName("DataElements");
+		legalBasisLabelType.setEntityName("LegalBases");
+		roleLabelType.setEntityName("Roles");
+		purposeLabelType.setEntityName("Purposes");
 		
-		dd.getLabelTypes().add(gdprElementsLabelType);
-		dd.getLabelTypes().add(gdprNodeLabelType);
-		dd.getLabelTypes().add(gdprLinkLabelType);
+		dd.getLabelTypes().add(dataLabelType);
+		dd.getLabelTypes().add(legalBasisLabelType);
+		dd.getLabelTypes().add(roleLabelType);
+		dd.getLabelTypes().add(purposeLabelType);
+	}
+	
+	private void createLabels() {
+		laf.getInvolvedParties().forEach(role -> {
+			Label label = ddFactory.createLabel();
+			label.setEntityName(role.getEntityName());
+			roleLabelType.getLabel().add(label);
+		});
+		
+		laf.getLegalBases().forEach(legalBasis -> {
+			Label label = ddFactory.createLabel();
+			label.setEntityName(legalBasis.getEntityName());
+			legalBasisLabelType.getLabel().add(label);
+		});
+		
+		laf.getPurposes().forEach(purpose -> {
+			Label label = ddFactory.createLabel();
+			label.setEntityName(purpose.getEntityName());
+			purposeLabelType.getLabel().add(label);
+		});
+		
+		laf.getData().forEach(data -> {
+			Label label = ddFactory.createLabel();
+			label.setEntityName(data.getEntityName());
+			dataLabelType.getLabel().add(label);
+		});
 	}
 	
 	/**
@@ -189,35 +214,39 @@ public class GDPR2DFD {
 		
 		List<Flow> flows = new ArrayList<>();
 		
-		Node sourceNode = mapProcessingToNode.get(processing);
+		Node sourceNode = processingToNodeMap.get(processing);
 		for (Processing followingProcessing : processing.getFollowingProcessing()) {
-			Node destinationNode = mapProcessingToNode.get(followingProcessing);
+			Node destinationNode = processingToNodeMap.get(followingProcessing);
 			
-			List<Flow> individualFlows = new ArrayList<>();
-			
-			if (dfd2gdprTrace != null) {
-				individualFlows = dfd2gdprTrace.getFlowList().stream().filter(fE -> {
-					return fE.getSourceID().equals(sourceNode.getId()) && fE.getDestinationID().equals(destinationNode.getId());
-				}).map(fE -> fE.getFlow()).toList();
-			}
-			
-			if (individualFlows.isEmpty()) {
-				Flow flow = dfdFactory.createFlow();			
+			List<Data> dataSent = intersection(processing.getOutputData(), followingProcessing.getInputData());
+			dataSent.forEach(data -> {
+				String dataName = data.getEntityName();
 				
-				Pin inputPin = ddFactory.createPin();
-				Pin outputPin = ddFactory.createPin();
-				sourceNode.getBehaviour().getOutPin().add(outputPin);
-				destinationNode.getBehaviour().getInPin().add(inputPin);
+				Flow flow = dfdFactory.createFlow();
+				flow.setEntityName(dataName);
 				
-				flow.setSourceNode(sourceNode);
+				Pin outPin = sourceNode.getBehaviour().getOutPin().stream().filter(pin -> pin.getEntityName().equals(dataName)).findAny().orElse(null);
+				if (outPin == null) {
+					outPin = ddFactory.createPin();
+					outPin.setEntityName(dataName);
+					sourceNode.getBehaviour().getOutPin().add(outPin);
+				}
+				
+				Pin inPin = destinationNode.getBehaviour().getInPin().stream().filter(pin -> pin.getEntityName().equals(dataName)).findAny().orElse(null);
+				if (inPin == null) {
+					inPin = ddFactory.createPin();
+					inPin.setEntityName(dataName);
+					destinationNode.getBehaviour().getInPin().add(inPin);
+				}
+				
 				flow.setDestinationNode(destinationNode);
-				flow.setSourcePin(outputPin);
-				flow.setDestinationPin(inputPin);
+				flow.setSourceNode(sourceNode);
+				flow.setDestinationPin(inPin);
+				flow.setSourcePin(outPin);
 				
 				flows.add(flow);
-			} else {
-				flows.addAll(individualFlows);
-			}
+			});
+			
 		}
 		
 		return flows;
@@ -228,7 +257,7 @@ public class GDPR2DFD {
 	 */
 	private void handleTraceModel() {
 		dfd2gdprTrace.getTracesList().forEach(t -> {
-			mapProcessingToNode.put(t.getProcessing(), t.getNode());
+			processingToNodeMap.put(t.getProcessing(), t.getNode());
 		});
 	}
 	
@@ -242,8 +271,8 @@ public class GDPR2DFD {
 		
 		String name = processing.getEntityName();
 		
-		if (mapProcessingToNode.containsKey(processing)) {
-			node = mapProcessingToNode.get(processing);
+		if (processingToNodeMap.containsKey(processing)) {
+			node = processingToNodeMap.get(processing);
 		} else if (processing instanceof Collecting) {
 			node = dfdFactory.createExternal();;
 		} else if (processing instanceof Storing) {
@@ -256,7 +285,7 @@ public class GDPR2DFD {
 			node = dfdFactory.createProcess();
 		}
 		
-		node.getProperties().add(createTypeLabel(processing));
+		node.getProperties().addAll(createTypeLabel(processing));
 		
 		if (node.getBehaviour() == null) {
 			Behaviour behaviour = ddFactory.createBehaviour();
@@ -264,29 +293,7 @@ public class GDPR2DFD {
 			node.setBehaviour(behaviour);
 			dd.getBehaviour().add(behaviour);
 		}
-		
-		processing.getOnTheBasisOf().stream().forEach(lb -> {
-			node.getProperties().add(createElementLabel(lb, "LegalBasis"));
-			node.getProperties().addAll(mapElementToLinkageLabels.get(lb));
-		});
-		
-		processing.getPurpose().stream().forEach(p -> {
-			node.getProperties().add(createElementLabel(p, "Purpose"));
-		});
-		
-		processing.getInputData().stream().forEach(iD -> {
-			node.getProperties().add(createElementLabel(iD, "InputData"));
-			node.getProperties().addAll(mapElementToLinkageLabels.getOrDefault(iD, new ArrayList<>()));
-		});
-		
-		processing.getOutputData().stream().forEach(oD -> {
-			node.getProperties().add(createElementLabel(oD, "OutputData"));
-			node.getProperties().addAll(mapElementToLinkageLabels.getOrDefault(oD, new ArrayList<>()));
-		});
-		
-		if (processing.getResponsible() != null)
-		node.getProperties().add(createElementLabel(processing.getResponsible(), "Responsible"));
-		
+				
 		node.setId(processing.getId());
 		node.setEntityName(name);
 		
@@ -298,44 +305,33 @@ public class GDPR2DFD {
 		return node;		
 	}
 	
-	/**
-	 * Created the linkage labels for the legal basis and saves it in the map
-	 * @param legalBasis The legal basis for which the labels are created
-	 */
-	private void fillLinkageLabelMapForLegalBasis(LegalBasis legalBasis) {
-		List<Label> labels = new ArrayList<>();
-		if (legalBasis instanceof Consent) {
-			labels.add(createLinkageLabel(legalBasis, ((Consent)legalBasis).getConsentee(), "Consentee"));
-		} else if (legalBasis instanceof PerformanceOfContract) {
-			((PerformanceOfContract)legalBasis).getContractingParty().stream().forEach(cp -> {
-				labels.add(createLinkageLabel(legalBasis, cp, "ContractParty"));
-			});
-		}
+	private void annotateBehaviour(Processing processing) {
+		Node node = processingToNodeMap.get(processing);
 		
-		legalBasis.getForPurpose().stream().forEach(p -> {
-			labels.add(createLinkageLabel(legalBasis, p, "ForPurpose"));
+		processing.getOutputData().forEach(data -> {
+			if (data instanceof PersonalData personalData) {
+				if (processing.getInputData().contains(personalData)) {
+					var assignment = ddFactory.createForwardingAssignment();
+					assignment.getInputPins().add(node.getBehaviour().getInPin().stream().filter(pin -> pin.getEntityName().equals(personalData.getEntityName())).findAny().orElseThrow());
+					assignment.setOutputPin(node.getBehaviour().getOutPin().stream().filter(pin -> pin.getEntityName().equals(personalData.getEntityName())).findAny().orElseThrow());
+					
+					assignment.setEntityName("Forward " + personalData.getEntityName());
+					node.getBehaviour().getAssignment().add(assignment);
+				} else {
+					var assignment = ddFactory.createAssignment();
+					assignment.setOutputPin(node.getBehaviour().getOutPin().stream().filter(pin -> pin.getEntityName().equals(personalData.getEntityName())).findAny().orElseThrow());
+					assignment.setTerm(ddFactory.createTRUE());
+					personalData.getDataReferences().forEach(person -> {
+						assignment.getOutputLabels().add(entityToLabelMap.get(person));
+					});
+					
+					assignment.setEntityName("Send " + personalData.getEntityName());
+					node.getBehaviour().getAssignment().add(assignment);
+				}
+			}
 		});
-		
-		if (legalBasis.getPersonalData() != null) {
-			labels.add(createLinkageLabel(legalBasis, legalBasis.getPersonalData(), "ForData"));
-		}
-		
-		mapElementToLinkageLabels.put(legalBasis, labels);
 	}
 	
-	/**
-	 * Created the linkage labels for the personal data and saves it in the map
-	 * @param PersonalData The legal basis for which the labels are created
-	 */
-	private void fillLinkageLabelMapForPersonalData(PersonalData personalData) {
-		List<Label> labels = new ArrayList<>();
-		
-		personalData.getDataReferences().stream().forEach(dr -> {
-			labels.add(createLinkageLabel(personalData, dr, "Reference"));
-		});
-		
-		mapElementToLinkageLabels.put(personalData, labels);
-	}
 	
 	
 	/**
@@ -343,11 +339,22 @@ public class GDPR2DFD {
 	 * @param processing Processing whichs type is stored
 	 * @return Label storing the type
 	 */
-	private Label createTypeLabel(Processing processing) {
-		Label label = ddFactory.createLabel();		
-		label.setEntityName("GDPR::ofType:" + processing.getClass().getSimpleName());
-		gdprNodeLabelType.getLabel().add(label);
-		return label;
+	private List<Label> createTypeLabel(Processing processing) {
+		var labels = new ArrayList<Label>();
+		
+		processing.getOnTheBasisOf().forEach(legalBasis -> {
+			Label label = entityToLabelMap.get(legalBasis);
+			labels.add(label);
+		});
+		
+		processing.getPurpose().forEach(purpose -> {
+			Label label = entityToLabelMap.get(purpose);
+			labels.add(label);
+		});
+		
+		if (processing.getResponsible() != null) labels.add(entityToLabelMap.get(processing.getResponsible()));		
+		
+		return labels;
 	}
 	
 	/**
@@ -356,46 +363,7 @@ public class GDPR2DFD {
 	 * @param reference Reference representing the entiy and its relationship
 	 * @return Creatd Label
 	 */
-	private Label createElementLabel(Entity entity, String reference) {
-		if (mapElementIdAndReferenceToLabel.containsKey(entity.getId() + reference)) {
-			return mapElementIdAndReferenceToLabel.get(entity.getId() + reference);		
-		}
-		
-		Label label = ddFactory.createLabel();	
-		StringBuilder builder = new StringBuilder();
-		builder.append("GDPR::");
-		builder.append(reference);
-		builder.append("::");
-		builder.append(entity.getClass().getSimpleName() + ":" + entity.getEntityName() + ":" + entity.getId());
-		label.setEntityName(builder.toString());
-		
-		gdprElementsLabelType.getLabel().add(label);
-		mapElementIdAndReferenceToLabel.put(entity.getId() + reference, label);
-		
-		return label;
-	}
 	
-	/**
-	 * Creates linkage label between two entities.
-	 * @param firstEntity Entity holding the reference
-	 * @param secondEntity References Entity
-	 * @param linkType Type of reference
-	 * @return Created Label
-	 */
-	private Label createLinkageLabel(Entity firstEntity, Entity secondEntity, String linkType) {
-		Label label = ddFactory.createLabel();		
-		StringBuilder builder = new StringBuilder();
-		builder.append("GDPR::");
-		builder.append(firstEntity.getClass().getSimpleName() + ":" + firstEntity.getEntityName() + ":" + firstEntity.getId());
-		builder.append("::").append(linkType).append("::");
-		builder.append(secondEntity.getClass().getSimpleName() + ":" + secondEntity.getEntityName() + ":" + secondEntity.getId());
-		
-		label.setEntityName(builder.toString());
-		
-		gdprLinkLabelType.getLabel().add(label);
-		
-		return label;
-	}
 	
 	//Copied from https://sdq.kastel.kit.edu/wiki/Creating_EMF_Model_instances_programmatically
 	@SuppressWarnings({ "rawtypes", "unchecked" })
@@ -436,4 +404,11 @@ public class GDPR2DFD {
 	public TraceModel getTm() {
 		return dfd2gdprTrace;
 	}	
+	
+	public List<Data> intersection(List<Data> list1, List<Data> list2) {
+		return list1.stream()
+				  .distinct()
+				  .filter(list2::contains)
+				  .toList();
+	}
 }
