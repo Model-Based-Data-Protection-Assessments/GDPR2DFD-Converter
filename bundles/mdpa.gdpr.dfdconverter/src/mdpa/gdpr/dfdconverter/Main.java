@@ -17,9 +17,9 @@ public class Main {
 			
 			File file = new File(dir);
 			File[] models = file.listFiles();
-			Stream.of(models).parallel().forEach((m) -> {
+			Stream.of(models).forEach((m) -> {
 				if (m.getAbsolutePath().endsWith("gdpr")) {
-					String fileOut = (dirOut.endsWith("\\") ? dirOut : dirOut + "\\") + removeFileEnding(m);
+					String fileOut = (dirOut.endsWith("\\") ? dirOut : dirOut + "\\") + removeFileEnding(m.getName());
 					
 					for (File model : models) {
 						if (model.getName().endsWith(".dfd2gdpr.tracemodel")) {
@@ -36,11 +36,12 @@ public class Main {
 				}
 				
 				else if (m.getAbsolutePath().endsWith("dataflowdiagram")) {
-					String fileOut = (dirOut.endsWith("\\") ? dirOut : dirOut + "\\") + removeFileEnding(m);
+					String fileOut = (dirOut.endsWith("\\") ? dirOut : dirOut + "\\") + removeFileEnding(m.getName());
 					
 					for (File model : models) {
-						if (model.getName().equals(removeFileEnding(m) + ".datadictionary")) {
-							DFD2GDPR dfd2gdpr = new DFD2GDPR(m.getAbsolutePath(), model.getAbsolutePath());
+						if (model.getName().equals(removeFileEnding(m.getName()) + ".datadictionary")) {
+							
+							DFD2GDPR dfd2gdpr = new DFD2GDPR(m.getAbsolutePath(), model.getAbsolutePath(), removeFileEnding(m.getAbsolutePath()) + ".gdpr2dfd.tracemodel");
 							dfd2gdpr.transform();
 							dfd2gdpr.save(fileOut + ".gdpr", fileOut + ".dfd2gdpr.tracemodel");
 							return;
@@ -61,8 +62,7 @@ public class Main {
 	 * @param file File whichs ending need to be removed
 	 * @return file path without file ending
 	 */
-	private static String removeFileEnding(File file) {
-		String fileName = file.getName();
+	private static String removeFileEnding(String fileName) {
 		if (fileName.indexOf(".") > 0) {
 			   return fileName.substring(0, fileName.lastIndexOf("."));
 			} else {

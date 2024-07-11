@@ -13,6 +13,7 @@ import java.util.HashSet;
 import org.dataflowanalysis.dfd.datadictionary.DataDictionary;
 import org.dataflowanalysis.dfd.datadictionary.Label;
 import org.dataflowanalysis.dfd.datadictionary.LabelType;
+import org.dataflowanalysis.dfd.datadictionary.Pin;
 import org.dataflowanalysis.dfd.datadictionary.datadictionaryPackage;
 import org.dataflowanalysis.dfd.dataflowdiagram.DataFlowDiagram;
 import org.dataflowanalysis.dfd.dataflowdiagram.External;
@@ -26,6 +27,7 @@ import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceImpl;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
+import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.xmi.XMLResource;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMLResourceFactoryImpl;
@@ -69,10 +71,12 @@ public class DFD2GDPR {
 		
 		traceModelFactory = TracemodelFactory.eINSTANCE;
 		dfd2gdprTrace = traceModelFactory.createTraceModel();
+
+		System.out.println(traceModelFile);
+		System.out.println(dfdFile);
 		
-		
+		dfdResource = rs.getResource(URI.createFileURI(dfdFile), true);		
 		tmResource = rs.getResource(URI.createFileURI(traceModelFile), true);
-		dfdResource = rs.getResource(URI.createFileURI(dfdFile), true);
 		ddResource = rs.getResource(URI.createFileURI(ddFile), true);
 		
 		dd = (DataDictionary) ddResource.getContents().get(0);
@@ -96,23 +100,13 @@ public class DFD2GDPR {
 	 */
 	public void transform() {
 		laf.setId(dfd.getId());
+		
+		parseLabels();
+		
 		handleTraceModel();
 		
-		
-		dfd.getNodes().stream().forEach(node -> {
-			Processing processing = mapNodeToProcessing.getOrDefault(node, null);
-			if (processing == null) {
-				processing = gdprFactory.createProcessing();
-				processing.setEntityName(node.getEntityName());
-				processing.setResponsible(getControllerFromNode(node));
-				processing.getOnTheBasisOf().addAll(getLegalBasesFromNode(node));
-				processing.getPurpose().addAll(getPurposesFromNode(node));			
-			}
-			
-			
-		});
-		
-		
+		dfd.getNodes().forEach(this::annotateData);
+				
 		dfd.getFlows().stream().forEach(flow -> transformFlow(flow));
 		
 		dfd.getFlows().stream().forEach(flow -> {
@@ -130,18 +124,7 @@ public class DFD2GDPR {
 			dfd2gdprTrace.getTracesList().add(trace);
 		});
 		
-		for (var node : dfd.getNodes()) {
-			 node.getProperties().clear();
-		}
-		
-		
-		List<LabelType> gdprLabels = new ArrayList<>();
-		dd.getLabelTypes().forEach(lt -> {
-			String name = lt.getEntityName();
-			if (name.equals("GDPRElement") || name.equals("GDPRNode") || name.equals("GDPRLink"))
-				gdprLabels.add(lt);
-		});		
-		dd.getLabelTypes().removeAll(gdprLabels);	
+			
 		
 		
 	}
@@ -162,16 +145,11 @@ public class DFD2GDPR {
 	private void handleTraceModel() {
 		gdpr2dfdTrace.getTracesList().forEach(trace -> {
 			var node = trace.getNode();
-			var processing = trace.getProcessing();
-			mapNodeToProcessing.put(node, processing);
+			var processingFromTrace = trace.getProcessing();
+			var processing = EcoreUtil.copy(processingFromTrace);
 			
-			processing.getOnTheBasisOf().clear();
-			processing.getOnTheBasisOf().addAll(getLegalBasesFromNode(node));
 			
-			processing.getPurpose().clear();
-			processing.getPurpose().addAll(getPurposesFromNode(node));
-			
-			processing.setResponsible(getControllerFromNode(node));
+			mapNodeToProcessing.put(node, processing);		
 		});
 	}
 	
@@ -233,7 +211,7 @@ public class DFD2GDPR {
 					laf.getPurposes().add(purpose);
 				});			
 			}
-			if (labelType.getEntityName().equals("Data")) {
+			if (labelType.getEntityName().equals("DataElements")) {
 				labelType.getLabel().forEach(label -> {
 					Data data;
 					if (labelType.getEntityName().startsWith(Data.class.getSimpleName())) {
@@ -263,6 +241,7 @@ public class DFD2GDPR {
 				return controller;
 			}
 		}
+		return null;
 	}
 	
 	private List<Purpose> getPurposesFromNode(Node node) {
@@ -298,41 +277,39 @@ public class DFD2GDPR {
 		return dataElements;
 	}
 	
-	
-	/**
-	 * Creates a Processing of the right type through using the descriptor label or through node type if no label is present
-	 * @param node Node to be transformed into a Processing element
-	 * @return created processing element
-	 */
-	private Processing resolveProcessingTypeLabel(Node node) {
-		List<String> filteredLabels = node.getProperties().stream()
-				.map(label -> label.getEntityName())
-				.filter(name -> name.startsWith("GDPR::ofType:"))
-				.toList();
-		
-		if (filteredLabels.size() == 0) {
-			if (node instanceof Store) return gdprFactory.createStoring();
-			if (node instanceof External) return gdprFactory.createCollecting();
-			if (node instanceof Process) return gdprFactory.createProcessing();
-		}	
-		
-		String type = filteredLabels.get(0).replace("GDPR::ofType:", "").replace("Impl", "");
-			
-		
-		if (type.equals(Usage.class.getSimpleName())) {
-			return gdprFactory.createUsage();
-		} else if (type.equals(Transferring.class.getSimpleName())) {
-			return gdprFactory.createTransferring();
-		} else if (type.equals(Storing.class.getSimpleName())) {
-			return gdprFactory.createStoring();
-		} else if (type.equals(Collecting.class.getSimpleName())) {
-			return gdprFactory.createCollecting();
-		} else if (type.equals(Processing.class.getSimpleName())) {
-			return gdprFactory.createProcessing();
-		} else {
-			throw new IllegalArgumentException("Processing Type Label contains invalid Type");
+	private void annotateData(Node node) {
+		var processing = mapNodeToProcessing.getOrDefault(node, null);
+		laf.getProcessing().add(processing);
+		if (processing == null) {
+			processing = gdprFactory.createProcessing();
+			processing.setEntityName(node.getEntityName());
+			processing.setId(node.getId());
+			mapNodeToProcessing.put(node, processing);
 		}
+		for (Pin pin : node.getBehaviour().getInPin()) {
+			var name = pin.getEntityName();
+			Data data = laf.getData().stream().filter(it -> it.getEntityName().equals(name)).findAny().orElseThrow();
+			processing.getInputData().add(data);
+		}
+		for (Pin pin : node.getBehaviour().getOutPin()) {
+			var name = pin.getEntityName();
+			Data data = laf.getData().stream().filter(it -> it.getEntityName().equals(name)).findAny().orElseThrow();
+			processing.getOutputData().add(data);
+		}
+			
+		processing.getOnTheBasisOf().clear();
+		processing.getOnTheBasisOf().addAll(getLegalBasesFromNode(node));
+		
+		processing.getPurpose().clear();
+		processing.getPurpose().addAll(getPurposesFromNode(node));
+		
+		processing.setResponsible(getControllerFromNode(node));
+		
+		
 	}
+	
+	
+	
 	
 	/**
 	 * Transforms a flow into the following processing attribute of processing
@@ -342,7 +319,7 @@ public class DFD2GDPR {
 		Processing source = mapNodeToProcessing.get(flow.getSourceNode());
 		Processing destination = mapNodeToProcessing.get(flow.getDestinationNode());
 		
-		source.getFollowingProcessing().add(destination);
+		if(!source.getFollowingProcessing().contains(destination))source.getFollowingProcessing().add(destination);
 	}
 	
 		
