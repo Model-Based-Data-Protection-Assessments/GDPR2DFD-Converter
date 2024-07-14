@@ -59,6 +59,8 @@ public class DFD2GDPR {
 	private Resource dfdResource;
 	private Resource tmResource;
 	
+	private Map<Entity, Entity> mapCopiesForTraceModelContainment = new HashMap<>();
+	
 	public DFD2GDPR(String dfdFile, String ddFile, String traceModelFile) {
 		rs = new ResourceSetImpl();
 		rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put(Resource.Factory.Registry.DEFAULT_EXTENSION, new XMIResourceFactoryImpl());
@@ -71,9 +73,6 @@ public class DFD2GDPR {
 		
 		traceModelFactory = TracemodelFactory.eINSTANCE;
 		dfd2gdprTrace = traceModelFactory.createTraceModel();
-
-		System.out.println(traceModelFile);
-		System.out.println(dfdFile);
 		
 		dfdResource = rs.getResource(URI.createFileURI(dfdFile), true);		
 		tmResource = rs.getResource(URI.createFileURI(traceModelFile), true);
@@ -143,14 +142,127 @@ public class DFD2GDPR {
 	}
 	
 	private void handleTraceModel() {
+		
 		gdpr2dfdTrace.getTracesList().forEach(trace -> {
 			var node = trace.getNode();
 			var processingFromTrace = trace.getProcessing();
-			var processing = EcoreUtil.copy(processingFromTrace);
+			var processing = cloneProcessing(processingFromTrace);
+			
+			processing.setId(node.getId());
+			processing.setEntityName(node.getEntityName());
 			
 			
 			mapNodeToProcessing.put(node, processing);		
 		});
+		
+		gdpr2dfdTrace.getTracesList().forEach(trace -> {
+			var processing = (Processing) mapCopiesForTraceModelContainment.get(trace.getProcessing());
+			for (var followingProcessing : trace.getProcessing().getFollowingProcessing()) {
+				processing.getFollowingProcessing().add((Processing) mapCopiesForTraceModelContainment.get(followingProcessing));
+			}
+			
+				
+		});
+	}
+	
+	private Data cloneData(Data data) {
+		if (mapCopiesForTraceModelContainment.containsKey(data)) return (Data) mapCopiesForTraceModelContainment.get(data);
+		
+		Data clone;
+		if (data instanceof PersonalData personalData) {
+			clone = GDPRFactory.eINSTANCE.createPersonalData();
+			personalData.getDataReferences().forEach(reference -> {
+				((PersonalData)clone).getDataReferences().add((NaturalPerson)cloneRole(reference));
+			});
+		} else clone = GDPRFactory.eINSTANCE.createData();
+		clone.setEntityName(data.getEntityName());
+		clone.setId(data.getId());
+		
+		mapCopiesForTraceModelContainment.put(data, clone);
+		
+		return clone;
+	}
+	
+	private Role cloneRole(Role role) {
+		if (mapCopiesForTraceModelContainment.containsKey(role)) return (Role) mapCopiesForTraceModelContainment.get(role);
+		
+		Role clone;
+		if (role instanceof Controller) clone = GDPRFactory.eINSTANCE.createController();
+		else clone = GDPRFactory.eINSTANCE.createNaturalPerson();
+		if (role.getName() != null) clone.setName(role.getName());
+		clone.setEntityName(role.getEntityName());
+		
+		mapCopiesForTraceModelContainment.put(role, clone);
+		
+		return clone;
+	}
+	
+	private Purpose clonePurpose(Purpose purpose) {
+		if (mapCopiesForTraceModelContainment.containsKey(purpose)) return (Purpose) mapCopiesForTraceModelContainment.get(purpose);
+	
+		Purpose clone = GDPRFactory.eINSTANCE.createPurpose();
+		clone.setEntityName(purpose.getEntityName());
+		clone.setId(purpose.getId());
+		
+		mapCopiesForTraceModelContainment.put(purpose, clone);
+		
+		return clone;
+	}
+	
+	private LegalBasis cloneLegalBasis(LegalBasis legalBasis) {
+		if(mapCopiesForTraceModelContainment.containsKey(legalBasis)) return (LegalBasis) mapCopiesForTraceModelContainment.get(legalBasis);
+		
+		LegalBasis clone;
+		if (legalBasis instanceof Consent consent) {
+			clone = GDPRFactory.eINSTANCE.createConsent();
+			((Consent)clone).setConsentee((NaturalPerson)mapCopiesForTraceModelContainment.get(consent.getConsentee()));
+		} else if (legalBasis instanceof PerformanceOfContract contract) {
+			clone = GDPRFactory.eINSTANCE.createPerformanceOfContract();
+			contract.getContractingParty().forEach(party -> {
+				((PerformanceOfContract)clone).getContractingParty().add((Role)mapCopiesForTraceModelContainment.get(party));
+			});
+		} else if (legalBasis instanceof ExerciseOfPublicAuthority) {
+			clone = GDPRFactory.eINSTANCE.createExerciseOfPublicAuthority();
+		} else if (legalBasis instanceof Obligation) {
+			clone = GDPRFactory.eINSTANCE.createObligation();
+		} else clone = GDPRFactory.eINSTANCE.createLegalBasis();
+		
+		legalBasis.getForPurpose().forEach(purpose -> {
+			clone.getForPurpose().add((Purpose)mapCopiesForTraceModelContainment.get(purpose));
+		});
+		
+		if (legalBasis.getPersonalData() != null) clone.setPersonalData((PersonalData) mapCopiesForTraceModelContainment.get(legalBasis.getPersonalData()));
+	
+		clone.setEntityName(legalBasis.getEntityName());
+		clone.setId(legalBasis.getId());
+		
+		mapCopiesForTraceModelContainment.put(legalBasis, clone);
+		
+		return clone;
+	}
+	
+	private Processing cloneProcessing(Processing processing) {
+		if (mapCopiesForTraceModelContainment.containsKey(processing)) return (Processing) mapCopiesForTraceModelContainment.get(processing);
+	
+		Processing clone;
+		if ( processing instanceof Collecting) clone= GDPRFactory.eINSTANCE.createCollecting();
+		else if (processing instanceof Storing) clone = GDPRFactory.eINSTANCE.createStoring();
+		else if (processing instanceof Transferring) clone = GDPRFactory.eINSTANCE.createTransferring();
+		else if (processing instanceof Usage) clone = GDPRFactory.eINSTANCE.createUsage();
+		else clone = GDPRFactory.eINSTANCE.createProcessing();
+		
+		
+		if(processing.getResponsible() != null) clone.setResponsible((Role)cloneRole(processing.getResponsible()));
+		
+		processing.getInputData().forEach(data -> clone.getInputData().add(cloneData(data)));
+		processing.getOutputData().forEach(data -> clone.getInputData().add(cloneData(data)));
+		processing.getOnTheBasisOf().forEach(legalBasis -> clone.getOnTheBasisOf().add(cloneLegalBasis(legalBasis)));
+		processing.getPurpose().forEach(purpose -> clone.getPurpose().add(clonePurpose(purpose)));
+		
+		
+		mapCopiesForTraceModelContainment.put(processing, clone);
+		
+		return clone;
 	}
 	
 	private void parseLabels() {

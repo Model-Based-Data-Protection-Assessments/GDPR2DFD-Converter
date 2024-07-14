@@ -39,7 +39,6 @@ public class GDPR2DFD {
 	
 	private Map<Processing, Node> processingToNodeMap = new HashMap<>();		
 	private Map<Entity, Label> entityToLabelMap = new HashMap<>();
-	private Map<Entity, Entity> mapCopiesForTraceModelContainment = new HashMap<>();
 	
 	private ResourceSet rs;
 	
@@ -133,7 +132,6 @@ public class GDPR2DFD {
 		dfd.setId(laf.getId());
 		createLabelTypes();
 		createLabels();
-		cloneAllProcessingForTraceModel();
 		
 		if (dfd2gdprTrace != null) handleTraceModel();
 				
@@ -205,96 +203,7 @@ public class GDPR2DFD {
 		
 	}
 	
-	private void cloneAllProcessingForTraceModel() {
-		laf.getInvolvedParties().forEach(role -> {
-			Role clone;
-			if (role instanceof Controller) clone = GDPRFactory.eINSTANCE.createController();
-			else clone = GDPRFactory.eINSTANCE.createNaturalPerson();
-			if (role.getName() != null) clone.setName(role.getName());
-			clone.setEntityName(role.getEntityName());
-			
-			mapCopiesForTraceModelContainment.put(role, clone);
-		});
-		
-		laf.getData().forEach(data -> {
-			Data clone;
-			if (data instanceof PersonalData personalData) {
-				clone = GDPRFactory.eINSTANCE.createPersonalData();
-				personalData.getDataReferences().forEach(reference -> {
-					((PersonalData)clone).getDataReferences().add((NaturalPerson) mapCopiesForTraceModelContainment.get(reference));
-				});
-			} else clone = GDPRFactory.eINSTANCE.createData();
-			clone.setEntityName(data.getEntityName());
-			clone.setId(data.getId());
-			
-			mapCopiesForTraceModelContainment.put(data, clone);
-		});
-		
-		laf.getPurposes().forEach(purpose -> {
-			Purpose clone = GDPRFactory.eINSTANCE.createPurpose();
-			clone.setEntityName(purpose.getEntityName());
-			clone.setId(purpose.getId());
-			
-			mapCopiesForTraceModelContainment.put(purpose, clone);
-		});
-		
-		laf.getLegalBases().forEach(legalBasis -> {
-			LegalBasis clone;
-			if (legalBasis instanceof Consent consent) {
-				clone = GDPRFactory.eINSTANCE.createConsent();
-				((Consent)clone).setConsentee((NaturalPerson)mapCopiesForTraceModelContainment.get(consent.getConsentee()));
-			} else if (legalBasis instanceof PerformanceOfContract contract) {
-				clone = GDPRFactory.eINSTANCE.createPerformanceOfContract();
-				contract.getContractingParty().forEach(party -> {
-					((PerformanceOfContract)clone).getContractingParty().add((Role)mapCopiesForTraceModelContainment.get(party));
-				});
-			} else if (legalBasis instanceof ExerciseOfPublicAuthority) {
-				clone = GDPRFactory.eINSTANCE.createExerciseOfPublicAuthority();
-			} else if (legalBasis instanceof Obligation) {
-				clone = GDPRFactory.eINSTANCE.createObligation();
-			} else clone = GDPRFactory.eINSTANCE.createLegalBasis();
-			
-			legalBasis.getForPurpose().forEach(purpose -> {
-				clone.getForPurpose().add((Purpose)mapCopiesForTraceModelContainment.get(purpose));
-			});
-			
-			if (legalBasis.getPersonalData() != null) clone.setPersonalData((PersonalData) mapCopiesForTraceModelContainment.get(legalBasis.getPersonalData()));
-		
-			clone.setEntityName(legalBasis.getEntityName());
-			clone.setId(legalBasis.getId());
-			
-			mapCopiesForTraceModelContainment.put(legalBasis, clone);
-		});
-
-		
-		for (Processing p : laf.getProcessing()) {
-			Processing newProcessing;
- 			if (p instanceof Collecting) newProcessing= GDPRFactory.eINSTANCE.createCollecting();
-			else if (p instanceof Storing) newProcessing = GDPRFactory.eINSTANCE.createStoring();
-			else if (p instanceof Transferring) newProcessing = GDPRFactory.eINSTANCE.createTransferring();
-			else if (p instanceof Usage) newProcessing = GDPRFactory.eINSTANCE.createUsage();
-			else newProcessing = GDPRFactory.eINSTANCE.createProcessing();
-			
-			newProcessing.setId(p.getId());
-			newProcessing.setEntityName(p.getEntityName());
-			if(p.getResponsible() != null) newProcessing.setResponsible((Role)mapCopiesForTraceModelContainment.get(p.getResponsible()));
-			
-			p.getInputData().forEach(data -> newProcessing.getInputData().add((Data)mapCopiesForTraceModelContainment.get(data)));
-			p.getOutputData().forEach(data -> newProcessing.getInputData().add((Data)mapCopiesForTraceModelContainment.get(data)));
-			p.getOnTheBasisOf().forEach(legalBasis -> newProcessing.getOnTheBasisOf().add((LegalBasis)mapCopiesForTraceModelContainment.get(legalBasis)));
-			p.getPurpose().forEach(purpose -> newProcessing.getPurpose().add((Purpose)mapCopiesForTraceModelContainment.get(purpose)));
-			
-			
-			mapCopiesForTraceModelContainment.put(p, newProcessing);
-		}
-		
-		for (Processing p : laf.getProcessing()) {
-			Processing newProcessing = (Processing) mapCopiesForTraceModelContainment.get(p);
-			for (var followingProcessing : p.getFollowingProcessing()) {
-				newProcessing.getFollowingProcessing().add((Processing) mapCopiesForTraceModelContainment.get(followingProcessing));
-			}
-		}
-	}
+	
 	
 	/**
 	 * Creates all flows outgoing from a processing from following processing or pulls them from the tracemodel if present
@@ -399,7 +308,7 @@ public class GDPR2DFD {
 		
 		var trace = tmFactory.createTrace();
 		trace.setNode(node);
-		trace.setProcessing((Processing) mapCopiesForTraceModelContainment.get(processing));
+		trace.setProcessing(processing);
 		gdpr2dfdTrace.getTracesList().add(trace);
 		
 		return node;		
