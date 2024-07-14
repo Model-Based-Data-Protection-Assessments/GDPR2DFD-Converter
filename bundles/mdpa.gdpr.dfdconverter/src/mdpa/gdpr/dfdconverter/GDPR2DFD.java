@@ -419,7 +419,7 @@ public class GDPR2DFD {
 	}
 
 	public TraceModel getTm() {
-		return dfd2gdprTrace;
+		return gdpr2dfdTrace;
 	}	
 	
 	public List<Data> intersection(List<Data> list1, List<Data> list2) {

@@ -215,11 +215,11 @@ public class DFD2GDPR {
 		LegalBasis clone;
 		if (legalBasis instanceof Consent consent) {
 			clone = GDPRFactory.eINSTANCE.createConsent();
-			((Consent)clone).setConsentee((NaturalPerson)mapCopiesForTraceModelContainment.get(consent.getConsentee()));
+			((Consent)clone).setConsentee((NaturalPerson)cloneRole(consent.getConsentee()));
 		} else if (legalBasis instanceof PerformanceOfContract contract) {
 			clone = GDPRFactory.eINSTANCE.createPerformanceOfContract();
 			contract.getContractingParty().forEach(party -> {
-				((PerformanceOfContract)clone).getContractingParty().add((Role)mapCopiesForTraceModelContainment.get(party));
+				((PerformanceOfContract)clone).getContractingParty().add(cloneRole(party));
 			});
 		} else if (legalBasis instanceof ExerciseOfPublicAuthority) {
 			clone = GDPRFactory.eINSTANCE.createExerciseOfPublicAuthority();
@@ -228,10 +228,10 @@ public class DFD2GDPR {
 		} else clone = GDPRFactory.eINSTANCE.createLegalBasis();
 		
 		legalBasis.getForPurpose().forEach(purpose -> {
-			clone.getForPurpose().add((Purpose)mapCopiesForTraceModelContainment.get(purpose));
+			clone.getForPurpose().add(clonePurpose(purpose));
 		});
 		
-		if (legalBasis.getPersonalData() != null) clone.setPersonalData((PersonalData) mapCopiesForTraceModelContainment.get(legalBasis.getPersonalData()));
+		if (legalBasis.getPersonalData() != null) clone.setPersonalData((PersonalData)cloneData(legalBasis.getPersonalData()));
 	
 		clone.setEntityName(legalBasis.getEntityName());
 		clone.setId(legalBasis.getId());
