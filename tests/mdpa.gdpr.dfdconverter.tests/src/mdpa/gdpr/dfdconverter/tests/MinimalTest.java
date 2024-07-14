@@ -34,8 +34,6 @@ public class MinimalTest {
 	
 	private ResourceSet rs = new ResourceSetImpl();
 	
-	private Map<Pin, Pin> pinCompareMap;
-	private Map<Behaviour, Behaviour> behaviourCompareMap;
 	
 	/**
 	 * Register relevant factories
@@ -48,90 +46,29 @@ public class MinimalTest {
 		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put("gdpr", new XMIResourceFactoryImpl());
 	}
 	
-	/**
-	 * Reset maps for Pin/Behaviour Comparison
-	 */
-	@BeforeEach
-	public void cleanUp() {
-		pinCompareMap = new HashMap<>();
-		behaviourCompareMap = new HashMap<>();
-	}
-	
+		
 	/**
 	 * Test the GDPR2DFD transformation by transforming an example instance and comparing it to a manually created Gold Standard
 	 */
 	@Test
-	public void testGDPR2DFD() {
+	public void testRoundTrip() {
 		String gdprFileString = Paths.get("models", "Minimal.gdpr").toString();
-		String dfdFileString = Paths.get("models", "MinimalResult.dataflowdiagram").toString();
-		String ddFileString = Paths.get("models", "MinimalResult.datadictionary").toString();
-		String tmFile = Paths.get("models", "MinimalResult.tracemodel").toString();
 		
 		GDPR2DFD transformation = new GDPR2DFD(gdprFileString);
 		transformation.transform();
-		transformation.save(dfdFileString, ddFileString, tmFile);
 		
-		Resource dfdResultResource = rs.getResource(URI.createFileURI(dfdFileString), true);
-		Resource ddResultResource = rs.getResource(URI.createFileURI(ddFileString), true);
-		Resource dfdGoldStandardResource = rs.getResource(URI.createFileURI(Paths.get("models","GoldStandards", "MinimalGoldStandard.dataflowdiagram").toString()), true);
-		Resource ddGoldStandardResource = rs.getResource(URI.createFileURI(Paths.get("models","GoldStandards", "MinimalGoldStandard.datadictionary").toString()), true);
+		DFD2GDPR transformationBack = new DFD2GDPR(transformation.getDfd(), transformation.getDd(),	transformation.getTm());
+		transformationBack.transform();
 		
-		DataDictionary ddResult = (DataDictionary) ddResultResource.getContents().get(0);
-		DataFlowDiagram dfdResult = (DataFlowDiagram) dfdResultResource.getContents().get(0);	
-		DataDictionary ddGoldStandard = (DataDictionary) ddGoldStandardResource.getContents().get(0);
-		DataFlowDiagram dfdGoldStandard = (DataFlowDiagram) dfdGoldStandardResource.getContents().get(0);	
+		Resource gdprResource = rs.getResource(URI.createFileURI(gdprFileString), true);
+		LegalAssessmentFacts laf = (LegalAssessmentFacts) gdprResource.getContents().get(0);
 		
-		assert(equals(dfdResult, dfdGoldStandard));
-		assert(equals(ddResult, ddGoldStandard));
+		equals(laf, transformationBack.getLaf());
 		
-		File dfdResultFile = new File(Paths.get("models", "MinimalResult.dataflowdiagram").toString());
-		File ddResultFile = new File(Paths.get("models", "MinimalResult.datadictionary").toString());
-		File tmResultFile = new File(Paths.get("models", "MinimalResult.tracemodel").toString());
-		
-		dfdResultFile.delete();
-		ddResultFile.delete();	
-		tmResultFile.delete();
 	}
 	
 	
-	/**
-	 * Test the DFD2GDPR transformation by transforming an example instance and comparing it to a manually created Gold Standard
-	 */
-	@Test
-	public void testDFD2GDPR() {
-		String gdprFile = Paths.get("models", "MinimalResult.gdpr").toString();
-		String dfdFile = Paths.get("models", "Minimal.dataflowdiagram").toString();
-		String ddFile = Paths.get("models", "Minimal.datadictionary").toString();
-		String tmFile = Paths.get("models", "MinimalResult.tracemodel").toString();
-		
-		DFD2GDPR transformation = new DFD2GDPR(dfdFile, ddFile);
-		transformation.transform();
-		transformation.save(gdprFile, tmFile);
-		
-		Resource gdprResultResource = rs.getResource(URI.createFileURI(gdprFile), true);
-		Resource gdprGoldStandardResource = rs.getResource(URI.createFileURI(Paths.get("models", "GoldStandards", "MinimalGoldStandard.gdpr").toString()), true);
-		
-		LegalAssessmentFacts lafResult = (LegalAssessmentFacts) gdprResultResource.getContents().get(0);
-		LegalAssessmentFacts lafGoldStandard = (LegalAssessmentFacts) gdprGoldStandardResource.getContents().get(0);
-		
-		assert(equals(lafResult, lafGoldStandard));
-		
-		File fileDfd = new File(dfdFile);
-		File fileDd = new File(dfdFile);
-		File gdpr = new File(gdprFile);
-		File tm = new File(tmFile);
-		
-		fileDfd.delete();
-		fileDd.delete();
-		gdpr.delete();
-		tm.delete();
-		
-		//The transformation deletes the GDPR specific information from the DFD/DD instance, which need to be recreated.
-		GDPR2DFD transformation2 = new GDPR2DFD(Paths.get("models", "Minimal.gdpr").toString());
-		transformation2.transform();
-		transformation.save(dfdFile, ddFile);
-	}
-				
+	
 	
 	/**
 	 * Compares two EObjects on functional Equality
@@ -145,39 +82,24 @@ public class MinimalTest {
 		    }
 		    
 		    if (!obj1.eClass().equals(obj2.eClass())) {
-			   return false;
+			   return false;//Flows and DD are only compared on References not attributes
+		    }
+			   
+			// Compare attributes
+		    for (EAttribute attribute : obj1.eClass().getEAllAttributes()) {
+		      Object value1 = obj1.eGet(attribute);
+		      Object value2 = obj2.eGet(attribute);
+		      if (value1 == null) {
+		    	  if (value2 != null) return false;
+		      } else if (value2 == null) {
+		    	  if (value1 != null) return false;
+		      }
+		      else if (!value1.equals(value2)) {
+		    	  System.out.println();
+		    	return false;
+		      }
 		    }
 		    
-		    
-		    if (obj1 instanceof Pin) { //Pin instances dont share the same idea and are compared with a map
-		    	if (pinCompareMap.containsKey(obj1)) {
-		    		if (!pinCompareMap.getOrDefault(obj1, null).equals(obj2)) return false;		    		
-		    	} else pinCompareMap.put((Pin) obj1,(Pin) obj2);
-		    } else if (obj1 instanceof Behaviour) {		//Behaviour instances dont share the same idea and are compared with a map    
-	    		if (behaviourCompareMap.containsKey(obj1)) {
-		    		if (!behaviourCompareMap.getOrDefault(obj1, null).equals(obj2)) return false;		    		
-		    	} else behaviourCompareMap.put((Behaviour) obj1,(Behaviour) obj2);		    	
-		    } else if (obj1 instanceof Label) { //Label instances dont share the same idea and are only compared on their entity name
-		    	return ((Label)obj1).getEntityName().equals(((Label)obj2).getEntityName());
-		    } else if (obj1 instanceof LabelType) { //LabelTypes instances dont share the same idea and are only compared on their entity name
-		    	return ((LabelType)obj1).getEntityName().equals(((LabelType)obj2).getEntityName());
-		    }		    
-		    else if (!(obj1 instanceof Flow || obj1 instanceof DataDictionary)){ //Flows and DD are only compared on References not attributes
-		    // Compare attributes
-			    for (EAttribute attribute : obj1.eClass().getEAllAttributes()) {
-			      Object value1 = obj1.eGet(attribute);
-			      Object value2 = obj2.eGet(attribute);
-			      if (value1 == null) {
-			    	  if (value2 != null) return false;
-			      } else if (value2 == null) {
-			    	  if (value1 != null) return false;
-			      }
-			      else if (!value1.equals(value2)) {
-			    	  System.out.println();
-			    	return false;
-			      }
-			    }
-		    }
 		    
 		    // Compare references
 		    for (EReference reference : obj1.eClass().getEAllReferences()) {

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="ASCII"?>
 <GDPR:LegalAssessmentFacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" id="_tt-9EPHNEe62x6SamO9Dsg">
-  <processing xsi:type="GDPR:Usage" id="xvpuf8" entityName="Usage" purpose="8k3v" onTheBasisOf="772yn" followingProcessing="kqcy12"/>
-  <processing xsi:type="GDPR:Transferring" id="kqcy12" entityName="Transferring" purpose="8k3v" onTheBasisOf="y7y8dg" followingProcessing="fas8l"/>
-  <processing xsi:type="GDPR:Storing" id="fas8l" entityName="Storage" purpose="8k3v" onTheBasisOf="quu8ak" followingProcessing="1liryp"/>
-  <processing id="1liryp" entityName="Processing" purpose="8k3v" onTheBasisOf="quu8ak"/>
+  <processing xsi:type="GDPR:Usage" id="xvpuf8" entityName="Usage" purpose="8k3v" onTheBasisOf="772yn" followingProcessing="kqcy12" inputData="mnpnio" outputData="mnpnio"/>
+  <processing xsi:type="GDPR:Transferring" id="kqcy12" entityName="Transferring" purpose="8k3v" onTheBasisOf="y7y8dg" followingProcessing="fas8l" inputData="mnpnio" outputData="mnpnio"/>
+  <processing xsi:type="GDPR:Storing" id="fas8l" entityName="Storage" purpose="8k3v" onTheBasisOf="quu8ak" followingProcessing="1liryp" inputData="mnpnio"/>
+  <processing id="1liryp" entityName="Processing" purpose="8k3v" onTheBasisOf="quu8ak" inputData="mnpnio" outputData="mnpnio"/>
   <processing xsi:type="GDPR:Collecting" id="g4z568" entityName="Collecting" inputData="fi6k6x" outputData="mnpnio" purpose="8k3v" onTheBasisOf="f7dnl" followingProcessing="xvpuf8"/>
   <purposes id="8k3v" entityName="Purpose"/>
   <data xsi:type="GDPR:PersonalData" id="fi6k6x" entityName="Personal Data" dataReferences="m0b8x"/>
