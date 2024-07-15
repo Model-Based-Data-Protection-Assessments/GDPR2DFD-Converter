@@ -33,9 +33,18 @@ public class GDPR2DFD {
 	private TracemodelFactory tmFactory;
 	
 	private LabelType dataLabelType;
-	private LabelType legalBasisLabelType;
+	private LabelType personalDataLabelType;
+	
+	private LabelType consentLabelType;
+	private LabelType obligationLabelType;
+	private LabelType contractLabelType;
+	private LabelType authorityLabelType;
+	
+	private LabelType personLabelType;
+	private LabelType controllerLabelType;
+	
+	
 	private LabelType purposeLabelType;
-	private LabelType roleLabelType;
 	
 	private Map<Processing, Node> processingToNodeMap = new HashMap<>();		
 	private Map<Entity, Label> entityToLabelMap = new HashMap<>();
@@ -156,47 +165,84 @@ public class GDPR2DFD {
 	 */
 	private void createLabelTypes() {
 		dataLabelType = ddFactory.createLabelType();
-		legalBasisLabelType = ddFactory.createLabelType();
-		roleLabelType = ddFactory.createLabelType();
+		personalDataLabelType = ddFactory.createLabelType();
+		
+		obligationLabelType  = ddFactory.createLabelType();
+		consentLabelType = ddFactory.createLabelType();
+		contractLabelType = ddFactory.createLabelType();
+		authorityLabelType = ddFactory.createLabelType();
+		
+		personLabelType = ddFactory.createLabelType();
+		controllerLabelType = ddFactory.createLabelType();
+		
 		purposeLabelType = ddFactory.createLabelType();
 		
-		dataLabelType.setEntityName("DataElements");
-		legalBasisLabelType.setEntityName("LegalBases");
-		roleLabelType.setEntityName("Roles");
-		purposeLabelType.setEntityName("Purposes");
 		
+		dataLabelType.setEntityName("Data");
+		personalDataLabelType.setEntityName("PersonalData");
+		
+		obligationLabelType.setEntityName("Obligation");
+		consentLabelType.setEntityName("Consent");
+		contractLabelType.setEntityName("Contract");
+		authorityLabelType.setEntityName("PublicAuthority");
+		
+		personLabelType.setEntityName("NaturalPerson");
+		controllerLabelType.setEntityName("Controller");
+		
+		purposeLabelType.setEntityName("Purposes");
+
+
 		dd.getLabelTypes().add(dataLabelType);
-		dd.getLabelTypes().add(legalBasisLabelType);
-		dd.getLabelTypes().add(roleLabelType);
+		dd.getLabelTypes().add(personalDataLabelType);
+		
+		dd.getLabelTypes().add(obligationLabelType);
+		dd.getLabelTypes().add(consentLabelType);
+		dd.getLabelTypes().add(contractLabelType);
+		dd.getLabelTypes().add(authorityLabelType);
+		
+		dd.getLabelTypes().add(personLabelType);
+		dd.getLabelTypes().add(controllerLabelType);
+		
 		dd.getLabelTypes().add(purposeLabelType);
 	}
 	
 	private void createLabels() {
 		laf.getInvolvedParties().forEach(role -> {
 			Label label = ddFactory.createLabel();
-			label.setEntityName(getClassName(role) + ":" + role.getEntityName());
-			roleLabelType.getLabel().add(label);
+			label.setEntityName(role.getEntityName());
+			
+			if (role instanceof NaturalPerson) personLabelType.getLabel().add(label);
+			else if (role instanceof Controller) contractLabelType.getLabel().add(label);
+					
 			entityToLabelMap.put(role, label);
 		});
 		
 		laf.getLegalBases().forEach(legalBasis -> {
 			Label label = ddFactory.createLabel();
-			label.setEntityName(getClassName(legalBasis) + ":" + legalBasis.getEntityName());
-			legalBasisLabelType.getLabel().add(label);
+			label.setEntityName(legalBasis.getEntityName());
+			
+			if (legalBasis instanceof Consent) consentLabelType.getLabel().add(label);
+			else if (legalBasis instanceof Obligation) obligationLabelType.getLabel().add(label);
+			else if (legalBasis instanceof PerformanceOfContract) contractLabelType.getLabel().add(label);
+			else if (legalBasis instanceof ExerciseOfPublicAuthority) authorityLabelType.getLabel().add(label);
+						
 			entityToLabelMap.put(legalBasis, label);
 		});
 		
 		laf.getPurposes().forEach(purpose -> {
 			Label label = ddFactory.createLabel();
-			label.setEntityName(getClassName(purpose) + ":" + purpose.getEntityName());
+			label.setEntityName(purpose.getEntityName());
 			purposeLabelType.getLabel().add(label);
 			entityToLabelMap.put(purpose, label);
 		});
 		
 		laf.getData().forEach(data -> {
 			Label label = ddFactory.createLabel();
-			label.setEntityName(getClassName(data) + ":" + data.getEntityName());
-			dataLabelType.getLabel().add(label);
+			label.setEntityName(data.getEntityName());
+			
+			if (data instanceof PersonalData personalData) personalDataLabelType.getLabel().add(label);
+			else dataLabelType.getLabel().add(label);
+			
 			entityToLabelMap.put(data, label);
 		});
 		

@@ -6,28 +6,21 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
-import java.util.HashSet;
 
 
 import org.dataflowanalysis.dfd.datadictionary.DataDictionary;
 import org.dataflowanalysis.dfd.datadictionary.Label;
-import org.dataflowanalysis.dfd.datadictionary.LabelType;
 import org.dataflowanalysis.dfd.datadictionary.Pin;
 import org.dataflowanalysis.dfd.datadictionary.datadictionaryPackage;
 import org.dataflowanalysis.dfd.dataflowdiagram.DataFlowDiagram;
-import org.dataflowanalysis.dfd.dataflowdiagram.External;
 import org.dataflowanalysis.dfd.dataflowdiagram.Flow;
 import org.dataflowanalysis.dfd.dataflowdiagram.Node;
-import org.dataflowanalysis.dfd.dataflowdiagram.Process;
-import org.dataflowanalysis.dfd.dataflowdiagram.Store;
 import org.dataflowanalysis.dfd.dataflowdiagram.dataflowdiagramPackage;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceImpl;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
-import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.xmi.XMLResource;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMLResourceFactoryImpl;
@@ -47,9 +40,6 @@ public class DFD2GDPR {
 	private GDPRFactory gdprFactory;
 	private TracemodelFactory traceModelFactory;
 	private Map<Node, Processing> mapNodeToProcessing = new HashMap<>();
-	private Map<String, Entity> mapIdToElement = new HashMap<>();
-	
-	private Set<Label> resolvedLinkageLabel = new HashSet<>();
 	
 	private Map<Label, Entity> labelToEntityMap = new HashMap<>();
 		
@@ -267,82 +257,70 @@ public class DFD2GDPR {
 	
 	private void parseLabels() {
 		dd.getLabelTypes().forEach(labelType -> {
-			if (labelType.getEntityName().equals("Roles")) {
-				labelType.getLabel().forEach(label -> {
-					Role role;
-					if (labelType.getEntityName().startsWith(Controller.class.getSimpleName())) {
-						role = gdprFactory.createController();
-					} else if (labelType.getEntityName().startsWith(NaturalPerson.class.getSimpleName())) {
-						role = gdprFactory.createNaturalPerson();
-					} else {
-						role = gdprFactory.createNaturalPerson(); //TODO Change once LAF model is changed
-					}
-					if (label.getEntityName().contains(":")) {
-						role.setEntityName(label.getEntityName().split(":")[1]);
-					} else {
-						role.setEntityName(label.getEntityName());
-					}
-					
-					labelToEntityMap.put(label, role);
-					laf.getInvolvedParties().add(role);
-				});
-			}
-			if (labelType.getEntityName().equals("LegalBases")) {
-				labelType.getLabel().forEach(label -> {
-					LegalBasis legalBasis;
-					if (labelType.getEntityName().startsWith(Consent.class.getSimpleName())) {
-						legalBasis = gdprFactory.createConsent();
-					} else if (labelType.getEntityName().startsWith(PerformanceOfContract.class.getSimpleName())) {
-						legalBasis = gdprFactory.createPerformanceOfContract();
-					} else if (labelType.getEntityName().startsWith(ExerciseOfPublicAuthority.class.getSimpleName())) {
-						legalBasis = gdprFactory.createExerciseOfPublicAuthority();
-					} else if (labelType.getEntityName().startsWith(Obligation.class.getSimpleName())) {
-						legalBasis = gdprFactory.createObligation();
-					} else {
-						legalBasis = gdprFactory.createLegalBasis(); //TODO Change once LAF model is changed
-					}
-					if (label.getEntityName().contains(":")) {
-						legalBasis.setEntityName(label.getEntityName().split(":")[1]);
-					} else {
-						legalBasis.setEntityName(label.getEntityName());
-					}
-					
-					labelToEntityMap.put(label, legalBasis);
-					laf.getLegalBases().add(legalBasis);
-				});
-			}
-			if (labelType.getEntityName().equals("Purposes")) {
-				labelType.getLabel().forEach(label -> {
-					var purpose = gdprFactory.createPurpose();
-					if (label.getEntityName().contains(":")) {
-						purpose.setEntityName(label.getEntityName().split(":")[1]);
-					} else {
-						purpose.setEntityName(label.getEntityName());
-					}
-					labelToEntityMap.put(label, purpose);
-					laf.getPurposes().add(purpose);
-				});			
-			}
-			if (labelType.getEntityName().equals("DataElements")) {
-				labelType.getLabel().forEach(label -> {
-					Data data;
-					if (labelType.getEntityName().startsWith(Data.class.getSimpleName())) {
-						data = gdprFactory.createData();
-					} else if (labelType.getEntityName().startsWith(PersonalData.class.getSimpleName())) {
-						data = gdprFactory.createPersonalData();
-					} else {
-						data = gdprFactory.createData(); //TODO Change once LAF model is changed
-					}
-					if (label.getEntityName().contains(":")) {
-						data.setEntityName(label.getEntityName().split(":")[1]);
-					} else {
-						data.setEntityName(label.getEntityName());
-					}
-					
-					labelToEntityMap.put(label, data);
-					laf.getData().add(data);
-				});			
-			}
+			if (labelType.getEntityName().equals("Controller")) {
+	            labelType.getLabel().forEach(label -> {
+	                Controller controller = gdprFactory.createController();
+	                controller.setEntityName(label.getEntityName());
+	                labelToEntityMap.put(label, controller);
+	                laf.getInvolvedParties().add(controller);
+	            });
+	        } else if (labelType.getEntityName().equals("NaturalPerson")) {
+	            labelType.getLabel().forEach(label -> {
+	                NaturalPerson naturalPerson = gdprFactory.createNaturalPerson();
+	                naturalPerson.setEntityName(label.getEntityName());
+	                labelToEntityMap.put(label, naturalPerson);
+	                laf.getInvolvedParties().add(naturalPerson);
+	            });
+	        } else if (labelType.getEntityName().equals("Consent")) {
+	            labelType.getLabel().forEach(label -> {
+	                Consent consent = gdprFactory.createConsent();
+	                consent.setEntityName(label.getEntityName());
+	                labelToEntityMap.put(label, consent);
+	                laf.getLegalBases().add(consent);
+	            });
+	        } else if (labelType.getEntityName().equals("Obligation")) {
+	            labelType.getLabel().forEach(label -> {
+	                Obligation obligation = gdprFactory.createObligation();
+	                obligation.setEntityName(label.getEntityName());
+	                labelToEntityMap.put(label, obligation);
+	                laf.getLegalBases().add(obligation);
+	            });
+	        } else if (labelType.getEntityName().equals("Contract")) {
+	            labelType.getLabel().forEach(label -> {
+	                PerformanceOfContract contract = gdprFactory.createPerformanceOfContract();
+	                contract.setEntityName(label.getEntityName());
+	                labelToEntityMap.put(label, contract);
+	                laf.getLegalBases().add(contract);
+	            });
+	        } else if (labelType.getEntityName().equals("PublicAuthority")) {
+	            labelType.getLabel().forEach(label -> {
+	                ExerciseOfPublicAuthority authority = gdprFactory.createExerciseOfPublicAuthority();
+	                authority.setEntityName(label.getEntityName());
+	                labelToEntityMap.put(label, authority);
+	                laf.getLegalBases().add(authority);
+	            });
+	        } else if (labelType.getEntityName().equals("Purposes")) {
+	            labelType.getLabel().forEach(label -> {
+	                Purpose purpose = gdprFactory.createPurpose();
+	                purpose.setEntityName(label.getEntityName());
+	                labelToEntityMap.put(label, purpose);
+	                laf.getPurposes().add(purpose);
+	            });
+	        } else if (labelType.getEntityName().equals("Data")) {
+	            labelType.getLabel().forEach(label -> {
+	                Data data = gdprFactory.createData();
+	                data.setEntityName(label.getEntityName());
+	                labelToEntityMap.put(label, data);
+	                laf.getData().add(data);
+	            });
+	        } else if (labelType.getEntityName().equals("PersonalData")) {
+	            labelType.getLabel().forEach(label -> {
+	                PersonalData personalData = gdprFactory.createPersonalData();
+	                personalData.setEntityName(label.getEntityName());
+	                labelToEntityMap.put(label, personalData);
+	                laf.getData().add(personalData);
+	            });
+	        }
 		});
 	}
 	
