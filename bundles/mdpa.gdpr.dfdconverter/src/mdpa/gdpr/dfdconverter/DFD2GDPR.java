@@ -39,17 +39,16 @@ public class DFD2GDPR {
 	
 	private GDPRFactory gdprFactory;
 	private TracemodelFactory traceModelFactory;
-	private Map<Node, Processing> mapNodeToProcessing = new HashMap<>();
 	
+	private Map<Node, Processing> mapNodeToProcessing = new HashMap<>();	
 	private Map<Label, Entity> labelToEntityMap = new HashMap<>();
+	private Map<Entity, Entity> mapCopiesForTraceModelContainment = new HashMap<>();
 		
 	private ResourceSet rs;
 	
 	private Resource ddResource;
 	private Resource dfdResource;
-	private Resource tmResource;
-	
-	private Map<Entity, Entity> mapCopiesForTraceModelContainment = new HashMap<>();
+	private Resource tmResource;	
 	
 	public DFD2GDPR(String dfdFile, String ddFile, String traceModelFile) {
 		rs = new ResourceSetImpl();
@@ -111,13 +110,14 @@ public class DFD2GDPR {
 			trace.setNode(node);
 			trace.setProcessing(processing);
 			dfd2gdprTrace.getTracesList().add(trace);
-		});
-		
-			
-		
-		
+		});			
 	}
 	
+	/**
+	 * Saves the created Model instances at the provided locations
+	 * @param gdprFile Location where gdpr instance is to be saved
+	 * @param traceModelFile Location where the traceModel instance is to be saved
+	 */
 	public void save(String gdprFile, String traceModelFile) {
 		Resource gdprResource = createAndAddResource(gdprFile, new String[] {"gdpr"} ,rs);
 		Resource tmResource = createAndAddResource(traceModelFile, new String[] {"tracemodel"} ,rs);
@@ -131,8 +131,10 @@ public class DFD2GDPR {
 		saveResource(dfdResource);
 	}
 	
-	private void handleTraceModel() {
-		
+	/**
+	 * Restores information from tracemodel
+	 */
+	private void handleTraceModel() {		
 		gdpr2dfdTrace.getTracesList().forEach(trace -> {
 			var node = trace.getNode();
 			var processingFromTrace = trace.getProcessing();
@@ -155,6 +157,7 @@ public class DFD2GDPR {
 		});
 	}
 	
+	//Cloning because of ECore Containment
 	private Data cloneData(Data data) {
 		if (mapCopiesForTraceModelContainment.containsKey(data)) return (Data) mapCopiesForTraceModelContainment.get(data);
 		
@@ -255,6 +258,9 @@ public class DFD2GDPR {
 		return clone;
 	}
 	
+	/**
+	 * Creates the GDPR specific objects from the labels holding the information
+	 */
 	private void parseLabels() {
 		dd.getLabelTypes().forEach(labelType -> {
 			if (labelType.getEntityName().equals("Controller")) {
@@ -324,6 +330,9 @@ public class DFD2GDPR {
 		});
 	}
 	
+	
+	//Parse Processing properties and annotate corresponding GDPR information
+	
 	private Controller getControllerFromNode(Node node) {			
 		for (Label label : node.getProperties()) {
 			var entity = labelToEntityMap.getOrDefault(label, null);
@@ -356,17 +365,10 @@ public class DFD2GDPR {
 		return legalBases;
 	}
 
-	private List<Data> getDataFromNode(Node node) {
-		List<Data> dataElements = new ArrayList<>();
-		node.getProperties().forEach(label -> {
-			var entity = labelToEntityMap.getOrDefault(label, null);
-			if (entity != null && entity instanceof Data data) {
-				dataElements.add(data);
-			}
-		});
-		return dataElements;
-	}
-	
+	/**
+	 * Infer input and output data from DFD flows and pins
+	 * @param node
+	 */
 	private void annotateData(Node node) {
 		var processing = mapNodeToProcessing.getOrDefault(node, null);
 		laf.getProcessing().add(processing);
@@ -439,19 +441,19 @@ public class DFD2GDPR {
 	}
 	
 
-	public DataFlowDiagram getDfd() {
+	public DataFlowDiagram getDataFlowDiagram() {
 		return dfd;
 	}
 
-	public DataDictionary getDd() {
+	public DataDictionary getDataDictionary() {
 		return dd;
 	}
 
-	public LegalAssessmentFacts getLaf() {
+	public LegalAssessmentFacts getLegalAssessmentFacts() {
 		return laf;
 	}
 
-	public TraceModel getTracemodel() {
+	public TraceModel getDFD2GDPRTraceModel() {
 		return dfd2gdprTrace;
 	}
 }

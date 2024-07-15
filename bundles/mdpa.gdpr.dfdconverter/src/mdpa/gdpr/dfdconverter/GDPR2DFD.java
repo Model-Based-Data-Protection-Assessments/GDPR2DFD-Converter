@@ -56,7 +56,6 @@ public class GDPR2DFD {
 	/**
 	 * Creates Transformation with tracemodel to recreate DFD instance
 	 * @param gdprFile Location of the GDPR instance
-	 * @param dfdFile Location of where to save the new DFD instance
 	 * @param ddFile Location of the Data Dictionary instance
 	 * @param traceModelFile Location of the TraceModel instance
 	 */
@@ -82,6 +81,12 @@ public class GDPR2DFD {
 		dfd2gdprTrace = (TraceModel) tmResource.getContents().get(0);
 	}
 	
+	/**
+	 * Creates Transformation with tracemodel to recreate DFD instance
+	 * @param gdprFile GDPR instance
+	 * @param ddFile Data Dictionary instance
+	 * @param traceModelFile TraceModel instance
+	 */
 	public GDPR2DFD(LegalAssessmentFacts laf, DataDictionary dd, TraceModel tm) {				
 		dfdFactory = dataflowdiagramFactory.eINSTANCE;
 		ddFactory = datadictionaryFactory.eINSTANCE;
@@ -98,8 +103,6 @@ public class GDPR2DFD {
 	/**
 	 * Creates Transformation for initial transformations from the GDPR into the DFD metamodel
 	 * @param gdprFile Location of the gdpr instance
-	 * @param dfdFile Location of where to save the new DFD instance
-	 * @param ddFileLocation of where to save the new DD instance
 	 */
 	public GDPR2DFD(String gdprFile) {		
 		rs = new ResourceSetImpl();
@@ -118,6 +121,12 @@ public class GDPR2DFD {
 		laf = (LegalAssessmentFacts) gdprResource.getContents().get(0);					
 	}
 	
+	/**
+	 * Saves the created model instances at the provided locations
+	 * @param dfdFile Location of where to save the new DFD instance
+	 * @param ddFile Location of where to save the new DD instance
+	 * @param traceModelFile Location of where to save the new TM instance
+	 */
 	public void save(String dfdFile, String ddFile, String traceModelFile) {
 		Resource dfdResource = createAndAddResource(dfdFile, new String[] {"dataflowdiagram"} ,rs);
 		Resource gdpr2dfdTraceResource = createAndAddResource(traceModelFile, new String[] {"tracemodel"} ,rs);
@@ -206,6 +215,9 @@ public class GDPR2DFD {
 		dd.getLabelTypes().add(purposeLabelType);
 	}
 	
+	/**
+	 * Creates all Labels to hold GDPR specific information
+	 */
 	private void createLabels() {
 		laf.getInvolvedParties().forEach(role -> {
 			Label label = ddFactory.createLabel();
@@ -360,6 +372,10 @@ public class GDPR2DFD {
 		return node;		
 	}
 	
+	/**
+	 * Annotates the behaviour of the node associated with processing with the corresponding assignments
+	 * @param processing processing whichs corresponding node needs to be annotated
+	 */
 	private void annotateBehaviour(Processing processing) {
 		Node node = processingToNodeMap.get(processing);
 		
@@ -444,27 +460,20 @@ public class GDPR2DFD {
 	     }
 	}
 	
-	private String getClassName(Entity entity) {
-		String className = entity.getClass().getSimpleName();
-		if (className.endsWith("Impl")) {
-			className = className.substring(0, className.lastIndexOf("Impl"));
-		}
-		return className;
-	}
 
-	public DataFlowDiagram getDfd() {
+	public DataFlowDiagram getDataFlowDiagram() {
 		return dfd;
 	}
 
-	public DataDictionary getDd() {
+	public DataDictionary getDataDictionary() {
 		return dd;
 	}
 
-	public LegalAssessmentFacts getLaf() {
+	public LegalAssessmentFacts getLegalAssessmentFacts() {
 		return laf;
 	}
 
-	public TraceModel getTm() {
+	public TraceModel getGDPR2DFDTraceModel() {
 		return gdpr2dfdTrace;
 	}	
 	

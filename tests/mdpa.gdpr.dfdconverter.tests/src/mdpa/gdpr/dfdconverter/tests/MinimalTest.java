@@ -6,18 +6,7 @@ import mdpa.gdpr.dfdconverter.DFD2GDPR;
 
 import java.nio.file.Paths;
 
-import java.io.File;
 import java.util.List;
-import java.util.Map;
-import java.util.HashMap;
-
-import org.dataflowanalysis.dfd.datadictionary.Behaviour;
-import org.dataflowanalysis.dfd.datadictionary.Pin;
-import org.dataflowanalysis.dfd.datadictionary.DataDictionary;
-import org.dataflowanalysis.dfd.datadictionary.Label;
-import org.dataflowanalysis.dfd.datadictionary.LabelType;
-import org.dataflowanalysis.dfd.dataflowdiagram.DataFlowDiagram;
-import org.dataflowanalysis.dfd.dataflowdiagram.Flow;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EObject;
@@ -26,7 +15,6 @@ import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -48,7 +36,7 @@ public class MinimalTest {
 	
 		
 	/**
-	 * Test the GDPR2DFD transformation by transforming an example instance and comparing it to a manually created Gold Standard
+	 * Transforms an example GDPR model instance into a DFD one and test whether all information is restored on the transformation back
 	 */
 	@Test
 	public void testRoundTrip() {
@@ -57,13 +45,13 @@ public class MinimalTest {
 		GDPR2DFD transformation = new GDPR2DFD(gdprFileString);
 		transformation.transform();
 		
-		DFD2GDPR transformationBack = new DFD2GDPR(transformation.getDfd(), transformation.getDd(),	transformation.getTm());
+		DFD2GDPR transformationBack = new DFD2GDPR(transformation.getDataFlowDiagram(), transformation.getDataDictionary(),	transformation.getGDPR2DFDTraceModel());
 		transformationBack.transform();
 		
 		Resource gdprResource = rs.getResource(URI.createFileURI(gdprFileString), true);
 		LegalAssessmentFacts laf = (LegalAssessmentFacts) gdprResource.getContents().get(0);
 		
-		equals(laf, transformationBack.getLaf());
+		equals(laf, transformationBack.getLegalAssessmentFacts());
 		
 	}
 	
