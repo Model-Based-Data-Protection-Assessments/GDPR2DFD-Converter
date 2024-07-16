@@ -72,6 +72,26 @@ public class DFD2GDPR {
 		gdpr2dfdTrace = (TraceModel) tmResource.getContents().get(0);
 	}
 	
+	public DFD2GDPR(String dfdFile, String ddFile) {
+		rs = new ResourceSetImpl();
+		rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put(Resource.Factory.Registry.DEFAULT_EXTENSION, new XMIResourceFactoryImpl());
+		rs.getPackageRegistry().put(dataflowdiagramPackage.eNS_URI, dataflowdiagramPackage.eINSTANCE);
+		rs.getPackageRegistry().put(datadictionaryPackage.eNS_URI, datadictionaryPackage.eINSTANCE);
+		rs.getPackageRegistry().put(TracemodelPackage.eNS_URI, TracemodelPackage.eINSTANCE);
+		
+		gdprFactory = GDPRFactory.eINSTANCE;
+		laf = gdprFactory.createLegalAssessmentFacts();
+		
+		traceModelFactory = TracemodelFactory.eINSTANCE;
+		dfd2gdprTrace = traceModelFactory.createTraceModel();
+		
+		dfdResource = rs.getResource(URI.createFileURI(dfdFile), true);		
+		ddResource = rs.getResource(URI.createFileURI(ddFile), true);
+		
+		dd = (DataDictionary) ddResource.getContents().get(0);
+		dfd = (DataFlowDiagram) dfdResource.getContents().get(0);	
+	}
+	
 	public DFD2GDPR(DataFlowDiagram dfd, DataDictionary dd, TraceModel gdpr2dfdTrace) {
 		gdprFactory = GDPRFactory.eINSTANCE;
 		laf = gdprFactory.createLegalAssessmentFacts();
@@ -83,6 +103,16 @@ public class DFD2GDPR {
 		this.gdpr2dfdTrace = gdpr2dfdTrace;
 	}
 	
+	public DFD2GDPR(DataFlowDiagram dfd, DataDictionary dd) {
+		gdprFactory = GDPRFactory.eINSTANCE;
+		laf = gdprFactory.createLegalAssessmentFacts();
+		
+		traceModelFactory = TracemodelFactory.eINSTANCE;
+		dfd2gdprTrace = traceModelFactory.createTraceModel();
+		this.dfd = dfd;
+		this.dd = dd;
+	}
+	
 	/**
 	 * Performs the transformation on the models provided in the Constructor
 	 */
@@ -91,7 +121,7 @@ public class DFD2GDPR {
 		
 		parseLabels();
 		
-		handleTraceModel();
+		if (gdpr2dfdTrace != null) handleTraceModel();
 		
 		dfd.getNodes().forEach(this::annotateData);
 				
@@ -371,7 +401,6 @@ public class DFD2GDPR {
 	 */
 	private void annotateData(Node node) {
 		var processing = mapNodeToProcessing.getOrDefault(node, null);
-		laf.getProcessing().add(processing);
 		if (processing == null) {
 			processing = gdprFactory.createProcessing();
 			processing.setEntityName(node.getEntityName());
@@ -395,9 +424,9 @@ public class DFD2GDPR {
 		processing.getPurpose().clear();
 		processing.getPurpose().addAll(getPurposesFromNode(node));
 		
-		processing.setResponsible(getControllerFromNode(node));
-		
-		
+		processing.setResponsible(getControllerFromNode(node));		
+
+		laf.getProcessing().add(processing);
 	}
 	
 	
