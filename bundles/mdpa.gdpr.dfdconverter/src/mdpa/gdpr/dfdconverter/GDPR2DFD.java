@@ -434,14 +434,6 @@ public class GDPR2DFD {
 	 * @return All flows going out from the source node
 	 */
 	private List<Flow> createFlows(Processing processing) {
-//		if (dfd2gdprTrace != null) {
-//			return dfd2gdprTrace.getFlowList()
-//					.stream()
-//					.filter(fe -> fe.getSourceID().equals(processing.getId()))
-//					.map(fe -> fe.getFlow())
-//					.toList();
-//		}
-		
 		List<Flow> flows = new ArrayList<>();
 		
 		Node sourceNode = processingToNodeMap.get(processing);
@@ -474,7 +466,7 @@ public class GDPR2DFD {
 					}
 					
 					Flow flow = createNewFlow(dataName, sourceNode, outPin, destinationNode, inPin);
-					addFlowTrace(flow, followingProcessing, processing, data);
+					addFlowTrace(flow, processing, followingProcessing, data);
 					flows.add(flow);
 				}
 			});
@@ -528,29 +520,33 @@ public class GDPR2DFD {
 			
 			if (optAt.isPresent()) {
 				AssignmentTrace at = optAt.get();
-				node.getBehaviour().getAssignment().add(at.getAssignment());
+//				node.getBehaviour().getAssignment().add(at.getAssignment());
 				outTrace.getAssignmentTraces().add(at);
 			} else {
 				if (processing.getInputData().contains(data)) {
-					// the same data is set as input and output the labels are simply forwarded.
-					var assignment = ddFactory.createForwardingAssignment();
-					assignment.getInputPins().add(node.getBehaviour().getInPin().stream().filter(pin -> pin.getEntityName().equals(data.getEntityName())).findAny().orElseThrow());
-					assignment.setOutputPin(node.getBehaviour().getOutPin().stream().filter(pin -> pin.getEntityName().equals(data.getEntityName())).findAny().orElseThrow());
-					
-					assignment.setEntityName("Forward " + data.getEntityName());
-					node.getBehaviour().getAssignment().add(assignment);
+					if (!containsAssignment(node.getBehaviour(), data.getEntityName(), data)) {
+						// the same data is set as input and output the labels are simply forwarded.
+						var assignment = ddFactory.createForwardingAssignment();
+						assignment.getInputPins().add(node.getBehaviour().getInPin().stream().filter(pin -> pin.getEntityName().equals(data.getEntityName())).findAny().orElseThrow());
+						assignment.setOutputPin(node.getBehaviour().getOutPin().stream().filter(pin -> pin.getEntityName().equals(data.getEntityName())).findAny().orElseThrow());
+						
+						assignment.setEntityName("Forward " + data.getEntityName());
+						node.getBehaviour().getAssignment().add(assignment);
+					}
 				} else {
 					// if data is not forwarded AND the data is of type PersonalData, the label of the corresponding natural person is set.
 					if (data instanceof PersonalData personalData) {
-						var assignment = ddFactory.createAssignment();
-						assignment.setOutputPin(node.getBehaviour().getOutPin().stream().filter(pin -> pin.getEntityName().equals(personalData.getEntityName())).findAny().orElseThrow());
-						assignment.setTerm(ddFactory.createTRUE());
-						personalData.getDataReferences().forEach(person -> {
-							assignment.getOutputLabels().add(entityToLabelMap.get(person));
-						});
-						
-						assignment.setEntityName("Send " + personalData.getEntityName());
-						node.getBehaviour().getAssignment().add(assignment);
+						if (!containsAssignment(node.getBehaviour(), data)) {
+							var assignment = ddFactory.createAssignment();
+							assignment.setOutputPin(node.getBehaviour().getOutPin().stream().filter(pin -> pin.getEntityName().equals(personalData.getEntityName())).findAny().orElseThrow());
+							assignment.setTerm(ddFactory.createTRUE());
+							personalData.getDataReferences().forEach(person -> {
+								assignment.getOutputLabels().add(entityToLabelMap.get(person));
+							});
+							
+							assignment.setEntityName("Send " + personalData.getEntityName());
+							node.getBehaviour().getAssignment().add(assignment);
+						}
 					} else {
 						// Special case, here no assignment is set. It is up to the developer in the DFD/DD to decide what happens in this node.
 						// Once this is done in the DFD/DD, the trace keeps it up to date.
@@ -558,6 +554,17 @@ public class GDPR2DFD {
 				}
 			}
 		});
+	}
+	
+	private boolean containsAssignment(Behaviour behaviour, String inputPinName, Data data) {
+		return behaviour.getAssignment().stream().anyMatch(
+				ass -> ass.getOutputPin().getEntityName().equals(data.getEntityName()) &&
+				ass.getInputPins().stream().anyMatch(pin -> pin.getEntityName().equals(inputPinName))
+				);
+	}
+	
+	private boolean containsAssignment(Behaviour behaviour, Data data) {
+		return behaviour.getAssignment().stream().anyMatch(ass -> ass.getOutputPin().getEntityName().equals(data.getEntityName()));
 	}
 	
 	private Optional<AssignmentTrace> assignmentTraceLookup(Processing processing, Data outputData, Node node) {
@@ -573,11 +580,6 @@ public class GDPR2DFD {
 							  			ass -> ass.getEntityName().equals(at.getAssignment().getEntityName())))
 				.findAny();
 	}
-	
-//	// cloning, as otherwise behavior is not correctly transferred to the new dd 
-//	private Node cloneNode(Node node) {
-//		
-//	}
 	
 	//Copied from https://sdq.kastel.kit.edu/wiki/Creating_EMF_Model_instances_programmatically
 	@SuppressWarnings({ "rawtypes", "unchecked" })

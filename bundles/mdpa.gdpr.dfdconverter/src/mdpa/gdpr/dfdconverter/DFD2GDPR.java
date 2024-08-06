@@ -167,30 +167,6 @@ public class DFD2GDPR {
 		saveResource(tmResource);
 	}
 	
-//	/**
-//	 * Restores information from tracemodel
-//	 */
-//	private void handleTraceModel() {		
-//		gdpr2dfdTrace.getTracesList().forEach(trace -> {
-//			var node = trace.getNode();
-//			var processingFromTrace = trace.getProcessing();
-//			var processing = cloneProcessing(processingFromTrace);
-//			
-//			processing.setId(node.getId());
-//			processing.setEntityName(node.getEntityName());
-//			
-//			
-//			mapNodeToProcessing.put(node, processing);		
-//		});
-//		
-//		gdpr2dfdTrace.getTracesList().forEach(trace -> {
-//			var processing = (Processing) gdprElementClonesMap.get(trace.getProcessing());
-//			for (var followingProcessing : trace.getProcessing().getFollowingProcessing()) {
-//				processing.getFollowingProcessing().add((Processing) gdprElementClonesMap.get(followingProcessing));
-//			}
-//		});
-//	}
-	
 	/**
 	 * Creates the GDPR specific objects from the labels holding the information
 	 */
@@ -207,6 +183,7 @@ public class DFD2GDPR {
 			LabelTrace lt = optLt.get();
 			// Put element in map
 			AbstractGDPRElement gdprElement = cloneGDPRElement(lt.getGdprElement());
+			//AbstractGDPRElement gdprElement = lt.getGdprElement();
 	        labelToEntityMap.put(label, gdprElement);
 	        lt.setGdprElement(gdprElement);
 	        outTrace.getLabelTraces().add(lt);

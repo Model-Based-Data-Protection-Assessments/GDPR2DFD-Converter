@@ -44,13 +44,11 @@
     <inPin id="_eQYUUVMtEe-T-uv37riEow" entityName="Data"/>
     <outPin id="_eQYUU1MtEe-T-uv37riEow" entityName="Data"/>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="_eQZicFMtEe-T-uv37riEow" entityName="Forward Data" inputPins="_eQYUUVMtEe-T-uv37riEow" outputPin="_eQYUU1MtEe-T-uv37riEow"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_eRjZAFMtEe-T-uv37riEow" entityName="Forward Data" inputPins="_eQYUUVMtEe-T-uv37riEow" outputPin="_eQYUU1MtEe-T-uv37riEow"/>
   </behaviour>
   <behaviour id="_eQUp81MtEe-T-uv37riEow" entityName="Usage Behaviour">
     <inPin id="_eQYUVFMtEe-T-uv37riEow" entityName="Data"/>
     <outPin id="_eQYUVlMtEe-T-uv37riEow" entityName="Data"/>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="_eQZicVMtEe-T-uv37riEow" entityName="Forward Data" inputPins="_eQYUVFMtEe-T-uv37riEow" outputPin="_eQYUVlMtEe-T-uv37riEow"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_eRjZAVMtEe-T-uv37riEow" entityName="Forward Data" inputPins="_eQYUVFMtEe-T-uv37riEow" outputPin="_eQYUVlMtEe-T-uv37riEow"/>
   </behaviour>
   <behaviour id="_eQUp9VMtEe-T-uv37riEow" entityName="Storage Behaviour">
     <inPin id="_eQYUV1MtEe-T-uv37riEow" entityName="Data"/>
@@ -59,9 +57,6 @@
     <outPin id="_eQYUWVMtEe-T-uv37riEow" entityName="Personal Data"/>
     <assignment xsi:type="datadictionary:Assignment" id="_eQZiclMtEe-T-uv37riEow" entityName="Send Personal Data" outputPin="_eQYUWVMtEe-T-uv37riEow" outputLabels="m0b8x">
       <term xsi:type="datadictionary:TRUE" id="_eQaJgFMtEe-T-uv37riEow"/>
-    </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="_eRjZAlMtEe-T-uv37riEow" entityName="Send Personal Data" outputPin="_eQYUWVMtEe-T-uv37riEow" outputLabels="m0b8x">
-      <term xsi:type="datadictionary:TRUE" id="_eRjZA1MtEe-T-uv37riEow"/>
     </assignment>
   </behaviour>
 </datadictionary:DataDictionary>

@@ -2,7 +2,6 @@ package mdpa.gdpr.dfdconverter.tests;
 
 import mdpa.gdpr.dfdconverter.GDPR2DFD;
 import mdpa.gdpr.metamodel.GDPR.LegalAssessmentFacts;
-import tools.mdsd.modelingfoundations.identifier.Entity;
 import mdpa.gdpr.dfdconverter.DFD2GDPR;
 import mdpa.gdpr.dfdconverter.tracemodel.tracemodel.TraceModel;
 
@@ -115,7 +114,6 @@ public class MinimalTest {
 		String gdprFilePath = Paths.get("models", "GDPR", "minimal.gdpr").toString();
 		String traceFilePath = Paths.get("models", "GDPR", "minimal.tracemodel").toString();
 		
-		System.out.println("First pass --------------------------------------------------------------------");
 		// First Pass, GDPR->DFD->GDPR, check GDPR and trace <- trace might be wrong
 		GDPR2DFD gdpr2dfd = new GDPR2DFD(gdprFilePath);
 		gdpr2dfd.transform();
@@ -132,15 +130,12 @@ public class MinimalTest {
 		EcoreUtil.resolveAll(gdprResource);
 		EcoreUtil.resolveAll(tmResource);
 		
-		System.out.println("----- Compare GDPR ---------------------------------------------------------------");
 		equals(laf, dfd2gdpr.getLegalAssessmentFacts());
-		System.out.println("----- Compare Trace ---------------------------------------------------------------");
 		equals(traceModel, dfd2gdpr.getDFD2GDPRTrace());
 		
 		dfd2gdpr.save(gdprFilePath, traceFilePath);
 
 		// Second pass, GDPR->DFD, with trace and input DD, check DFD, DD and TraceModel
-		System.out.println("Second pass --------------------------------------------------------------------");
 		gdpr2dfd = new GDPR2DFD(gdprFilePath, ddFilePath, traceFilePath);
 		gdpr2dfd.transform();
 		
@@ -155,17 +150,13 @@ public class MinimalTest {
 		EcoreUtil.resolveAll(dfdResource);
 		EcoreUtil.resolveAll(tmResource);
 
-		System.out.println("----- Compare DD ---------------------------------------------------------------");
 		equals(dd, gdpr2dfd.getDataDictionary());
-		System.out.println("----- Compare DFD ---------------------------------------------------------------");
 		equals(dfd, gdpr2dfd.getDataFlowDiagram());
-		System.out.println("----- Compare Trace ---------------------------------------------------------------");
 		equals(traceModel, gdpr2dfd.getGDPR2DFDTrace());
 
 		gdpr2dfd.save(dfdFilePath, ddFilePath, traceFilePath);
 
 		// Third pass, DFD->GDPR, with trace, check GDPR and TraceModel
-		System.out.println("Third pass --------------------------------------------------------------------");
 		dfd2gdpr = new DFD2GDPR(dfdFilePath, ddFilePath, traceFilePath);
 		dfd2gdpr.transform();
 		
@@ -177,9 +168,7 @@ public class MinimalTest {
 		EcoreUtil.resolveAll(gdprResource);
 		EcoreUtil.resolveAll(tmResource);
 		
-		System.out.println("----- Compare GDPR ---------------------------------------------------------------");
 		equals(laf, dfd2gdpr.getLegalAssessmentFacts());
-		System.out.println("----- Compare Trace ---------------------------------------------------------------");
 		equals(traceModel, dfd2gdpr.getDFD2GDPRTrace());
 
 		dfd2gdpr.save(gdprFilePath, traceFilePath);
@@ -206,14 +195,6 @@ public class MinimalTest {
 		    if (!obj1.eClass().equals(obj2.eClass())) {
 			   return false;//Flows and DD are only compared on References not attributes
 		    }
-		    
-		    if(obj1 instanceof Entity element1) {
-		    	Entity element2 = (Entity) obj2;
-			    System.out.println(String.format("Comparing Object %s: %s to %s!", obj1.getClass().getName() ,element2.getEntityName(), element2.getEntityName()));
-
-		    } else {
-		    	 System.out.println("Comparing: " + obj1.getClass().getName());
-		    }
 			
 			// Compare attributes
 		    for (EAttribute attribute : obj1.eClass().getEAllAttributes()) {
@@ -236,13 +217,6 @@ public class MinimalTest {
 		      }
 		    }
 		    
-		    if(obj1 instanceof Entity element1) {
-		    	Entity element2 = (Entity) obj2;
-			    System.out.println(String.format("Objects match: %s is equal to %s!", element2.getEntityName(), element2.getEntityName()));
-		    } else {
-			    System.out.println(String.format("Objects match %s: %s is equal to %s!", obj1.eClass().getName(), obj1.toString(), obj2.toString()));
-		    }
-		    
 		    return true;
 		  }
 	 
@@ -259,7 +233,6 @@ public class MinimalTest {
 		    Object values2Object =  obj2.eGet(reference);
 		    
 		    if (values1Object instanceof EObject) {
-		    	//System.out.println(String.format("Reference is of type EObject: %s", reference.getName()));
 		    	return equals((EObject)values1Object, (EObject)values2Object);
 		    }
 		    
