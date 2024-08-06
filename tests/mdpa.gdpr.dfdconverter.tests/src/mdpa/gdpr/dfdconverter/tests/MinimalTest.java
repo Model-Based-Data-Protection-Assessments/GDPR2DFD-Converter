@@ -178,7 +178,8 @@ public class MinimalTest {
 	public void missingTests() {
 		//Missing Tests:
 		// 1. GDPR -> DFD with trace (trace contains previously modified/added assignments as node behavior)
-		// 2. DFD -> GDPR with trace (trace contains correct GDPR LegalBases that can not directly be derived from the DFD)
+		// 2. DFD -> GDPR -> DFD with or without trace (DFD contains a changed or unrelated assignment, that is kept after transformation)
+		// 3. DFD -> GDPR with trace (trace contains correct GDPR LegalBases that can not directly be derived from the DFD)
 	}
 		
 	/**
