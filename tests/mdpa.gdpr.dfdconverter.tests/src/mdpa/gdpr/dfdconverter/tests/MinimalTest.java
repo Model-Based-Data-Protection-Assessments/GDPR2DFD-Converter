@@ -3,21 +3,15 @@ package mdpa.gdpr.dfdconverter.tests;
 import mdpa.gdpr.dfdconverter.GDPR2DFD;
 import mdpa.gdpr.metamodel.GDPR.LegalAssessmentFacts;
 import mdpa.gdpr.dfdconverter.DFD2GDPR;
+import mdpa.gdpr.dfdconverter.tracemodel.tracemodel.TraceModel;
+
 
 import java.nio.file.Paths;
 
-import java.io.File;
 import java.util.List;
-import java.util.Map;
-import java.util.HashMap;
 
-import org.dataflowanalysis.dfd.datadictionary.Behaviour;
-import org.dataflowanalysis.dfd.datadictionary.Pin;
 import org.dataflowanalysis.dfd.datadictionary.DataDictionary;
-import org.dataflowanalysis.dfd.datadictionary.Label;
-import org.dataflowanalysis.dfd.datadictionary.LabelType;
 import org.dataflowanalysis.dfd.dataflowdiagram.DataFlowDiagram;
-import org.dataflowanalysis.dfd.dataflowdiagram.Flow;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EObject;
@@ -25,8 +19,8 @@ import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
+import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -34,105 +28,160 @@ public class MinimalTest {
 	
 	private ResourceSet rs = new ResourceSetImpl();
 	
-	private Map<Pin, Pin> pinCompareMap;
-	private Map<Behaviour, Behaviour> behaviourCompareMap;
 	
 	/**
 	 * Register relevant factories
 	 */
 	@BeforeAll
 	public static void setUpBeforeAll() {
-		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put("dataflowdiagram", new XMIResourceFactoryImpl());
-		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put("datadictionary", new XMIResourceFactoryImpl());
+		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put("dfd", new XMIResourceFactoryImpl());
+		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put("dd", new XMIResourceFactoryImpl());
 		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put("tracemodel", new XMIResourceFactoryImpl());
 		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put("gdpr", new XMIResourceFactoryImpl());
 	}
 	
-	/**
-	 * Reset maps for Pin/Behaviour Comparison
-	 */
-	@BeforeEach
-	public void cleanUp() {
-		pinCompareMap = new HashMap<>();
-		behaviourCompareMap = new HashMap<>();
-	}
-	
-	/**
-	 * Test the GDPR2DFD transformation by transforming an example instance and comparing it to a manually created Gold Standard
-	 */
 	@Test
-	public void testGDPR2DFD() {
-		String gdprFileString = Paths.get("models", "Minimal.gdpr").toString();
-		String dfdFileString = Paths.get("models", "MinimalResult.dataflowdiagram").toString();
-		String ddFileString = Paths.get("models", "MinimalResult.datadictionary").toString();
-		String tmFile = Paths.get("models", "MinimalResult.tracemodel").toString();
+	public void testDFDStart() {
+		String dfdFilePath = Paths.get("models", "DFD", "minimal.dfd").toString();
+		String ddFilePath = Paths.get("models", "DFD", "minimal.dd").toString();
+		String gdprFilePath = Paths.get("models", "DFD", "minimal.gdpr").toString();
+		String traceFilePath = Paths.get("models", "DFD", "minimal.tracemodel").toString();
 		
-		GDPR2DFD transformation = new GDPR2DFD(gdprFileString);
-		transformation.transform();
-		transformation.save(dfdFileString, ddFileString, tmFile);
+		// First Pass, DFD->GDPR->DFD, check DFD and DD
+		DFD2GDPR dfd2gdpr = new DFD2GDPR(dfdFilePath, ddFilePath);
+		dfd2gdpr.transform();
+		dfd2gdpr.save(gdprFilePath, traceFilePath);
+
+		GDPR2DFD gdpr2dfd = new GDPR2DFD(gdprFilePath, ddFilePath, traceFilePath);
+		gdpr2dfd.transform();
 		
-		Resource dfdResultResource = rs.getResource(URI.createFileURI(dfdFileString), true);
-		Resource ddResultResource = rs.getResource(URI.createFileURI(ddFileString), true);
-		Resource dfdGoldStandardResource = rs.getResource(URI.createFileURI(Paths.get("models","GoldStandards", "MinimalGoldStandard.dataflowdiagram").toString()), true);
-		Resource ddGoldStandardResource = rs.getResource(URI.createFileURI(Paths.get("models","GoldStandards", "MinimalGoldStandard.datadictionary").toString()), true);
+		Resource dfdResource = rs.getResource(URI.createFileURI(dfdFilePath), true);
+		DataFlowDiagram dfd = (DataFlowDiagram) dfdResource.getContents().get(0);
+		Resource ddResource = rs.getResource(URI.createFileURI(ddFilePath), true);
+		DataDictionary dd = (DataDictionary) ddResource.getContents().get(0);
 		
-		DataDictionary ddResult = (DataDictionary) ddResultResource.getContents().get(0);
-		DataFlowDiagram dfdResult = (DataFlowDiagram) dfdResultResource.getContents().get(0);	
-		DataDictionary ddGoldStandard = (DataDictionary) ddGoldStandardResource.getContents().get(0);
-		DataFlowDiagram dfdGoldStandard = (DataFlowDiagram) dfdGoldStandardResource.getContents().get(0);	
+		EcoreUtil.resolveAll(ddResource);
+		EcoreUtil.resolveAll(dfdResource);
+
+		equals(dd, gdpr2dfd.getDataDictionary());
+		equals(dfd, gdpr2dfd.getDataFlowDiagram());
 		
-		assert(equals(dfdResult, dfdGoldStandard));
-		assert(equals(ddResult, ddGoldStandard));
+		gdpr2dfd.save(dfdFilePath, ddFilePath, traceFilePath);
+
+		// Second pass, DFD->GDPR, check GDPR and TraceModel
+		dfd2gdpr = new DFD2GDPR(dfdFilePath, ddFilePath, traceFilePath);
+		dfd2gdpr.transform();
 		
-		File dfdResultFile = new File(Paths.get("models", "MinimalResult.dataflowdiagram").toString());
-		File ddResultFile = new File(Paths.get("models", "MinimalResult.datadictionary").toString());
-		File tmResultFile = new File(Paths.get("models", "MinimalResult.tracemodel").toString());
+		Resource gdprResource = rs.getResource(URI.createFileURI(gdprFilePath), true);
+		LegalAssessmentFacts laf = (LegalAssessmentFacts) gdprResource.getContents().get(0);
+		Resource tmResource = rs.getResource(URI.createFileURI(traceFilePath), true);
+		TraceModel traceModel = (TraceModel) tmResource.getContents().get(0);
 		
-		dfdResultFile.delete();
-		ddResultFile.delete();	
-		tmResultFile.delete();
+		EcoreUtil.resolveAll(gdprResource);
+		EcoreUtil.resolveAll(tmResource);
+		
+		equals(laf, dfd2gdpr.getLegalAssessmentFacts());
+		equals(traceModel, dfd2gdpr.getDFD2GDPRTrace());
+
+		dfd2gdpr.save(gdprFilePath, traceFilePath);
+		
+		// Third pass, GDPR->DFD, check DFD, DD and TraceModel
+		gdpr2dfd = new GDPR2DFD(gdprFilePath, ddFilePath, traceFilePath);
+		gdpr2dfd.transform();
+		
+		dfdResource = rs.getResource(URI.createFileURI(dfdFilePath), true);
+		dfd = (DataFlowDiagram) dfdResource.getContents().get(0);
+		ddResource = rs.getResource(URI.createFileURI(ddFilePath), true);
+		dd = (DataDictionary) ddResource.getContents().get(0);
+		tmResource = rs.getResource(URI.createFileURI(traceFilePath), true);
+		traceModel = (TraceModel) tmResource.getContents().get(0);
+		
+		EcoreUtil.resolveAll(ddResource);
+		EcoreUtil.resolveAll(dfdResource);
+		EcoreUtil.resolveAll(tmResource);
+
+		equals(dd, gdpr2dfd.getDataDictionary());
+		equals(dfd, gdpr2dfd.getDataFlowDiagram());
+		equals(traceModel, gdpr2dfd.getGDPR2DFDTrace());
+
+		gdpr2dfd.save(dfdFilePath, ddFilePath, traceFilePath);
 	}
 	
-	
-	/**
-	 * Test the DFD2GDPR transformation by transforming an example instance and comparing it to a manually created Gold Standard
-	 */
 	@Test
-	public void testDFD2GDPR() {
-		String gdprFile = Paths.get("models", "MinimalResult.gdpr").toString();
-		String dfdFile = Paths.get("models", "Minimal.dataflowdiagram").toString();
-		String ddFile = Paths.get("models", "Minimal.datadictionary").toString();
-		String tmFile = Paths.get("models", "MinimalResult.tracemodel").toString();
+	public void testGDPRStart() {
+		String dfdFilePath = Paths.get("models", "GDPR", "minimal.dfd").toString();
+		String ddFilePath = Paths.get("models", "GDPR", "minimal.dd").toString();
+		String gdprFilePath = Paths.get("models", "GDPR", "minimal.gdpr").toString();
+		String traceFilePath = Paths.get("models", "GDPR", "minimal.tracemodel").toString();
 		
-		DFD2GDPR transformation = new DFD2GDPR(dfdFile, ddFile);
-		transformation.transform();
-		transformation.save(gdprFile, tmFile);
+		// First Pass, GDPR->DFD->GDPR, check GDPR and trace <- trace might be wrong
+		GDPR2DFD gdpr2dfd = new GDPR2DFD(gdprFilePath);
+		gdpr2dfd.transform();
+		gdpr2dfd.save(dfdFilePath, ddFilePath, traceFilePath);
 		
-		Resource gdprResultResource = rs.getResource(URI.createFileURI(gdprFile), true);
-		Resource gdprGoldStandardResource = rs.getResource(URI.createFileURI(Paths.get("models", "GoldStandards", "MinimalGoldStandard.gdpr").toString()), true);
+		DFD2GDPR dfd2gdpr = new DFD2GDPR(dfdFilePath, ddFilePath, traceFilePath);
+		dfd2gdpr.transform();
 		
-		LegalAssessmentFacts lafResult = (LegalAssessmentFacts) gdprResultResource.getContents().get(0);
-		LegalAssessmentFacts lafGoldStandard = (LegalAssessmentFacts) gdprGoldStandardResource.getContents().get(0);
+		Resource gdprResource = rs.getResource(URI.createFileURI(gdprFilePath), true);
+		LegalAssessmentFacts laf = (LegalAssessmentFacts) gdprResource.getContents().get(0);
+		Resource tmResource = rs.getResource(URI.createFileURI(traceFilePath), true);
+		TraceModel traceModel = (TraceModel) tmResource.getContents().get(0);
 		
-		assert(equals(lafResult, lafGoldStandard));
+		EcoreUtil.resolveAll(gdprResource);
+		EcoreUtil.resolveAll(tmResource);
 		
-		File fileDfd = new File(dfdFile);
-		File fileDd = new File(dfdFile);
-		File gdpr = new File(gdprFile);
-		File tm = new File(tmFile);
+		equals(laf, dfd2gdpr.getLegalAssessmentFacts());
+		equals(traceModel, dfd2gdpr.getDFD2GDPRTrace());
 		
-		fileDfd.delete();
-		fileDd.delete();
-		gdpr.delete();
-		tm.delete();
+		dfd2gdpr.save(gdprFilePath, traceFilePath);
+
+		// Second pass, GDPR->DFD, with trace and input DD, check DFD, DD and TraceModel
+		gdpr2dfd = new GDPR2DFD(gdprFilePath, ddFilePath, traceFilePath);
+		gdpr2dfd.transform();
 		
-		//The transformation deletes the GDPR specific information from the DFD/DD instance, which need to be recreated.
-		GDPR2DFD transformation2 = new GDPR2DFD(Paths.get("models", "Minimal.gdpr").toString());
-		transformation2.transform();
-		transformation.save(dfdFile, ddFile);
+		Resource dfdResource = rs.getResource(URI.createFileURI(dfdFilePath), true);
+		DataFlowDiagram dfd = (DataFlowDiagram) dfdResource.getContents().get(0);
+		Resource ddResource = rs.getResource(URI.createFileURI(ddFilePath), true);
+		DataDictionary dd = (DataDictionary) ddResource.getContents().get(0);
+		tmResource = rs.getResource(URI.createFileURI(traceFilePath), true);
+		traceModel = (TraceModel) tmResource.getContents().get(0);
+		
+		EcoreUtil.resolveAll(ddResource);
+		EcoreUtil.resolveAll(dfdResource);
+		EcoreUtil.resolveAll(tmResource);
+
+		equals(dd, gdpr2dfd.getDataDictionary());
+		equals(dfd, gdpr2dfd.getDataFlowDiagram());
+		equals(traceModel, gdpr2dfd.getGDPR2DFDTrace());
+
+		gdpr2dfd.save(dfdFilePath, ddFilePath, traceFilePath);
+
+		// Third pass, DFD->GDPR, with trace, check GDPR and TraceModel
+		dfd2gdpr = new DFD2GDPR(dfdFilePath, ddFilePath, traceFilePath);
+		dfd2gdpr.transform();
+		
+		gdprResource = rs.getResource(URI.createFileURI(gdprFilePath), true);
+		laf = (LegalAssessmentFacts) gdprResource.getContents().get(0);
+		tmResource = rs.getResource(URI.createFileURI(traceFilePath), true);
+		traceModel = (TraceModel) tmResource.getContents().get(0);
+		
+		EcoreUtil.resolveAll(gdprResource);
+		EcoreUtil.resolveAll(tmResource);
+		
+		equals(laf, dfd2gdpr.getLegalAssessmentFacts());
+		equals(traceModel, dfd2gdpr.getDFD2GDPRTrace());
+
+		dfd2gdpr.save(gdprFilePath, traceFilePath);
 	}
-				
 	
+	@Test
+	public void missingTests() {
+		//Missing Tests:
+		// 1. GDPR -> DFD with trace (trace contains previously modified/added assignments as node behavior)
+		// 2. DFD -> GDPR -> DFD with or without trace (DFD contains a changed or unrelated assignment, that is kept after transformation)
+		// 3. DFD -> GDPR with trace (trace contains correct GDPR LegalBases that can not directly be derived from the DFD)
+	}
+		
 	/**
 	 * Compares two EObjects on functional Equality
 	 * @param obj1
@@ -145,38 +194,21 @@ public class MinimalTest {
 		    }
 		    
 		    if (!obj1.eClass().equals(obj2.eClass())) {
-			   return false;
+			   return false;//Flows and DD are only compared on References not attributes
 		    }
-		    
-		    
-		    if (obj1 instanceof Pin) { //Pin instances dont share the same idea and are compared with a map
-		    	if (pinCompareMap.containsKey(obj1)) {
-		    		if (!pinCompareMap.getOrDefault(obj1, null).equals(obj2)) return false;		    		
-		    	} else pinCompareMap.put((Pin) obj1,(Pin) obj2);
-		    } else if (obj1 instanceof Behaviour) {		//Behaviour instances dont share the same idea and are compared with a map    
-	    		if (behaviourCompareMap.containsKey(obj1)) {
-		    		if (!behaviourCompareMap.getOrDefault(obj1, null).equals(obj2)) return false;		    		
-		    	} else behaviourCompareMap.put((Behaviour) obj1,(Behaviour) obj2);		    	
-		    } else if (obj1 instanceof Label) { //Label instances dont share the same idea and are only compared on their entity name
-		    	return ((Label)obj1).getEntityName().equals(((Label)obj2).getEntityName());
-		    } else if (obj1 instanceof LabelType) { //LabelTypes instances dont share the same idea and are only compared on their entity name
-		    	return ((LabelType)obj1).getEntityName().equals(((LabelType)obj2).getEntityName());
-		    }		    
-		    else if (!(obj1 instanceof Flow || obj1 instanceof DataDictionary)){ //Flows and DD are only compared on References not attributes
-		    // Compare attributes
-			    for (EAttribute attribute : obj1.eClass().getEAllAttributes()) {
-			      Object value1 = obj1.eGet(attribute);
-			      Object value2 = obj2.eGet(attribute);
-			      if (value1 == null) {
-			    	  if (value2 != null) return false;
-			      } else if (value2 == null) {
-			    	  if (value1 != null) return false;
-			      }
-			      else if (!value1.equals(value2)) {
-			    	  System.out.println();
-			    	return false;
-			      }
-			    }
+			
+			// Compare attributes
+		    for (EAttribute attribute : obj1.eClass().getEAllAttributes()) {
+		      Object value1 = obj1.eGet(attribute);
+		      Object value2 = obj2.eGet(attribute);
+		      if (value1 == null) {
+		    	  if (value2 != null) return false;
+		      } else if (value2 == null) {
+		    	  if (value1 != null) return false;
+		      }
+		      else if (!value1.equals(value2)) {
+		    	  return false;
+		      }
 		    }
 		    
 		    // Compare references
@@ -201,24 +233,25 @@ public class MinimalTest {
 		    Object values1Object =  obj1.eGet(reference);
 		    Object values2Object =  obj2.eGet(reference);
 		    
-		    if (values1Object instanceof EObject) return equals((EObject)values1Object, (EObject)values2Object);
+		    if (values1Object instanceof EObject) {
+		    	return equals((EObject)values1Object, (EObject)values2Object);
+		    }
 		    
 		    List<EObject> values1 = (List<EObject>) values1Object;
 		    List<EObject> values2 = (List<EObject>) values2Object;
 		   
-		    if (values1 == null && values2 == null) return true;
+		    if (values1 == null && values2 == null) {
+		    	return true;
+		    }
 		    
 		    if (values1.size() != values2.size()) {
 		    	return false;
 		    }
 		    
-		    
 		    for (var value1 : values1) {
 		    	if (values2.stream().noneMatch(v2 -> equals(v2, value1))) {
-		    		System.out.println();
 		    		return false;
 		    	}
-		    		
 		    }
 		    
 		    return true;

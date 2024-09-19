@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dataflowdiagram:DataFlowDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" id="_tt-9EPHNEe62x6SamO9Dsg">
+  <flows id="_eRix8FMtEe-T-uv37riEow" entityName="Data" sourceNode="xvpuf8" destinationNode="kqcy12">
+    <destinationPin href="models/DFD/minimal.dd#_eQYUUVMtEe-T-uv37riEow"/>
+    <sourcePin href="models/DFD/minimal.dd#_eQYUUFMtEe-T-uv37riEow"/>
+  </flows>
+  <flows id="_eRix8VMtEe-T-uv37riEow" entityName="Data" sourceNode="kqcy12" destinationNode="fas8l">
+    <destinationPin href="models/DFD/minimal.dd#_eQYUVFMtEe-T-uv37riEow"/>
+    <sourcePin href="models/DFD/minimal.dd#_eQYUU1MtEe-T-uv37riEow"/>
+  </flows>
+  <flows id="_eRix8lMtEe-T-uv37riEow" entityName="Data" sourceNode="fas8l" destinationNode="1liryp">
+    <destinationPin href="models/DFD/minimal.dd#_eQYUV1MtEe-T-uv37riEow"/>
+    <sourcePin href="models/DFD/minimal.dd#_eQYUVlMtEe-T-uv37riEow"/>
+  </flows>
+  <flows id="_eRix81MtEe-T-uv37riEow" entityName="Personal Data" sourceNode="g4z568" destinationNode="xvpuf8">
+    <destinationPin href="models/DFD/minimal.dd#_eQYUWlMtEe-T-uv37riEow"/>
+    <sourcePin href="models/DFD/minimal.dd#_eQYUWVMtEe-T-uv37riEow"/>
+  </flows>
+  <nodes xsi:type="dataflowdiagram:Process" id="xvpuf8" entityName="Anonymization">
+    <behaviour href="models/DFD/minimal.dd#_eQUC4VMtEe-T-uv37riEow"/>
+    <properties href="models/DFD/minimal.dd#772yn"/>
+    <properties href="models/DFD/minimal.dd#8k3v"/>
+    <properties href="models/DFD/minimal.dd#_eQWfIlMtEe-T-uv37riEow"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Process" id="kqcy12" entityName="Transferring">
+    <behaviour href="models/DFD/minimal.dd#_eQUp8VMtEe-T-uv37riEow"/>
+    <properties href="models/DFD/minimal.dd#y7y8dg"/>
+    <properties href="models/DFD/minimal.dd#8k3v"/>
+    <properties href="models/DFD/minimal.dd#_eQWfI1MtEe-T-uv37riEow"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Process" id="fas8l" entityName="Usage">
+    <behaviour href="models/DFD/minimal.dd#_eQUp81MtEe-T-uv37riEow"/>
+    <properties href="models/DFD/minimal.dd#quu8ak"/>
+    <properties href="models/DFD/minimal.dd#8k3v"/>
+    <properties href="models/DFD/minimal.dd#_eQWfIlMtEe-T-uv37riEow"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Store" id="1liryp" entityName="Storage">
+    <behaviour href="models/DFD/minimal.dd#_eQUp9VMtEe-T-uv37riEow"/>
+    <properties href="models/DFD/minimal.dd#quu8ak"/>
+    <properties href="models/DFD/minimal.dd#8k3v"/>
+    <properties href="models/DFD/minimal.dd#_eQWfIVMtEe-T-uv37riEow"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:External" id="g4z568" entityName="Collecting">
+    <behaviour href="models/DFD/minimal.dd#_eQUp91MtEe-T-uv37riEow"/>
+    <properties href="models/DFD/minimal.dd#f7dnl"/>
+    <properties href="models/DFD/minimal.dd#8k3v"/>
+    <properties href="models/DFD/minimal.dd#_eQWfIFMtEe-T-uv37riEow"/>
+  </nodes>
+</dataflowdiagram:DataFlowDiagram>
