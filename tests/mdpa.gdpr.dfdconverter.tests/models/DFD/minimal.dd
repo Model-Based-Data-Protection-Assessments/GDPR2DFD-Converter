@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_eQTb0FMtEe-T-uv37riEow">
+  <labelTypes id="_eQUp-FMtEe-T-uv37riEow" entityName="ProcessingType">
+    <label id="_eQWfIFMtEe-T-uv37riEow" entityName="Collecting"/>
+    <label id="_eQWfIVMtEe-T-uv37riEow" entityName="Storing"/>
+    <label id="_eQWfIlMtEe-T-uv37riEow" entityName="Usage"/>
+    <label id="_eQWfI1MtEe-T-uv37riEow" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_eQUp-VMtEe-T-uv37riEow" entityName="Data">
+    <label id="mnpnio" entityName="Data"/>
+  </labelTypes>
+  <labelTypes id="_eQUp-lMtEe-T-uv37riEow" entityName="PersonalData">
+    <label id="fi6k6x" entityName="Personal Data"/>
+  </labelTypes>
+  <labelTypes id="_eQUp-1MtEe-T-uv37riEow" entityName="Obligation">
+    <label id="quu8ak" entityName="Obligation"/>
+  </labelTypes>
+  <labelTypes id="_eQVRAFMtEe-T-uv37riEow" entityName="Consent">
+    <label id="772yn" entityName="Consent"/>
+  </labelTypes>
+  <labelTypes id="_eQVRAVMtEe-T-uv37riEow" entityName="Contract">
+    <label id="f7dnl" entityName="Contract"/>
+  </labelTypes>
+  <labelTypes id="_eQVRAlMtEe-T-uv37riEow" entityName="PublicAuthority">
+    <label id="y7y8dg" entityName="Public Authority"/>
+  </labelTypes>
+  <labelTypes id="_eQVRA1MtEe-T-uv37riEow" entityName="NaturalPerson">
+    <label id="m0b8x" entityName="Natural Person"/>
+  </labelTypes>
+  <labelTypes id="_eQVRBFMtEe-T-uv37riEow" entityName="Controller">
+    <label id="c9bird" entityName="Controller"/>
+  </labelTypes>
+  <labelTypes id="_eQVRBVMtEe-T-uv37riEow" entityName="ThirdParty">
+    <label id="cadfg" entityName="Third Party"/>
+  </labelTypes>
+  <labelTypes id="_eQVRBlMtEe-T-uv37riEow" entityName="Purposes">
+    <label id="8k3v" entityName="Purpose"/>
+  </labelTypes>
+  <behaviour id="_eQUC4VMtEe-T-uv37riEow" entityName="Anonymization Behaviour">
+    <inPin id="_eQYUWlMtEe-T-uv37riEow" entityName="Personal Data"/>
+    <outPin id="_eQYUUFMtEe-T-uv37riEow" entityName="Data"/>
+  </behaviour>
+  <behaviour id="_eQUp8VMtEe-T-uv37riEow" entityName="Transferring Behaviour">
+    <inPin id="_eQYUUVMtEe-T-uv37riEow" entityName="Data"/>
+    <outPin id="_eQYUU1MtEe-T-uv37riEow" entityName="Data"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_eQZicFMtEe-T-uv37riEow" entityName="Forward Data" inputPins="_eQYUUVMtEe-T-uv37riEow" outputPin="_eQYUU1MtEe-T-uv37riEow"/>
+  </behaviour>
+  <behaviour id="_eQUp81MtEe-T-uv37riEow" entityName="Usage Behaviour">
+    <inPin id="_eQYUVFMtEe-T-uv37riEow" entityName="Data"/>
+    <outPin id="_eQYUVlMtEe-T-uv37riEow" entityName="Data"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_eQZicVMtEe-T-uv37riEow" entityName="Forward Data" inputPins="_eQYUVFMtEe-T-uv37riEow" outputPin="_eQYUVlMtEe-T-uv37riEow"/>
+  </behaviour>
+  <behaviour id="_eQUp9VMtEe-T-uv37riEow" entityName="Storage Behaviour">
+    <inPin id="_eQYUV1MtEe-T-uv37riEow" entityName="Data"/>
+  </behaviour>
+  <behaviour id="_eQUp91MtEe-T-uv37riEow" entityName="Collecting Behaviour">
+    <outPin id="_eQYUWVMtEe-T-uv37riEow" entityName="Personal Data"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_eQZiclMtEe-T-uv37riEow" entityName="Send Personal Data" outputPin="_eQYUWVMtEe-T-uv37riEow" outputLabels="m0b8x">
+      <term xsi:type="datadictionary:TRUE" id="_eQaJgFMtEe-T-uv37riEow"/>
+    </assignment>
+  </behaviour>
+</datadictionary:DataDictionary>
