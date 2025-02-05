@@ -9,4 +9,5 @@ Export-Package: mdpa.gdpr.dfdconverter
 Require-Bundle: org.dataflowanalysis.dfd.dataflowdiagram,
  mdpa.gdpr.metamodel,
  mdpa.gdpr.dfdconverter.tracemodel,
- org.eclipse.emf.ecore.xmi
+ org.eclipse.emf.ecore.xmi,
+ org.apache.log4j;bundle-version="1.2.24"

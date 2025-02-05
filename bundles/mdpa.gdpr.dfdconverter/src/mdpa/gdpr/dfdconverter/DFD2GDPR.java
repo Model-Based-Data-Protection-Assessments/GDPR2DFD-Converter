@@ -357,13 +357,13 @@ public class DFD2GDPR {
 	private void createProcessingReferences(Node node) {
 		var processing = mapNodeToProcessing.get(node);
 		
-		for (Pin pin : node.getBehaviour().getInPin()) {
+		for (Pin pin : node.getBehavior().getInPin()) {
 			Data data = getDataFromPin(pin);
 			if(processing.getInputData().stream().noneMatch(d -> d.getId().equals(data.getId()))) {
 				processing.getInputData().add(data);
 			}
 		}
-		for (Pin pin : node.getBehaviour().getOutPin()) {
+		for (Pin pin : node.getBehavior().getOutPin()) {
 			Data data = getDataFromPin(pin);
 			if(processing.getOutputData().stream().noneMatch(d -> d.getId().equals(data.getId()))) {
 				processing.getOutputData().add(data);
