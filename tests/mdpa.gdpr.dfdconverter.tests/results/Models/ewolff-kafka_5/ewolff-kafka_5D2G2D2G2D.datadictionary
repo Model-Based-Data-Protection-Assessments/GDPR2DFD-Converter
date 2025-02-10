@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_agThZOCNEe-LfM-jfeWyyA">
+  <labelTypes id="_agThfeCNEe-LfM-jfeWyyA" entityName="ProcessingType">
+    <label id="_agThiuCNEe-LfM-jfeWyyA" entityName="Collecting"/>
+    <label id="_agThjOCNEe-LfM-jfeWyyA" entityName="Storing"/>
+    <label id="_agThjeCNEe-LfM-jfeWyyA" entityName="Usage"/>
+    <label id="_agThj-CNEe-LfM-jfeWyyA" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_agThfuCNEe-LfM-jfeWyyA" entityName="Data"/>
+  <labelTypes id="_agThf-CNEe-LfM-jfeWyyA" entityName="PersonalData"/>
+  <labelTypes id="_agThgOCNEe-LfM-jfeWyyA" entityName="Obligation"/>
+  <labelTypes id="_agThgeCNEe-LfM-jfeWyyA" entityName="Consent"/>
+  <labelTypes id="_agThg-CNEe-LfM-jfeWyyA" entityName="Contract"/>
+  <labelTypes id="_agThhOCNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
+  <labelTypes id="_agThheCNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
+  <labelTypes id="_agThhuCNEe-LfM-jfeWyyA" entityName="Controller"/>
+  <labelTypes id="_agThh-CNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
+  <labelTypes id="_agThiOCNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <behavior id="_agThaOCNEe-LfM-jfeWyyA" entityName="user Behavior"/>
+  <behavior id="_agThauCNEe-LfM-jfeWyyA" entityName="zookeeper Behavior"/>
+  <behavior id="_agThbeCNEe-LfM-jfeWyyA" entityName="kafka Behavior"/>
+  <behavior id="_agThb-CNEe-LfM-jfeWyyA" entityName="order Behavior"/>
+  <behavior id="_agThceCNEe-LfM-jfeWyyA" entityName="invoicing Behavior"/>
+  <behavior id="_agThdeCNEe-LfM-jfeWyyA" entityName="shipping Behavior"/>
+  <behavior id="_agThd-CNEe-LfM-jfeWyyA" entityName="apache Behavior"/>
+  <behavior id="_agTheuCNEe-LfM-jfeWyyA" entityName="postgres Behavior"/>
+  <behavior id="_agThfOCNEe-LfM-jfeWyyA" entityName="authorization_server Behavior"/>
+</datadictionary:DataDictionary>

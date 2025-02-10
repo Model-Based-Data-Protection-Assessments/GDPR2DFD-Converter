@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_amAgv-CNEe-LfM-jfeWyyA">
+  <labelTypes id="_amAg5eCNEe-LfM-jfeWyyA" entityName="ProcessingType">
+    <label id="_amAhA-CNEe-LfM-jfeWyyA" entityName="Collecting"/>
+    <label id="_amAhCeCNEe-LfM-jfeWyyA" entityName="Storing"/>
+    <label id="_amAhCuCNEe-LfM-jfeWyyA" entityName="Usage"/>
+    <label id="_amAhC-CNEe-LfM-jfeWyyA" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_amAg5uCNEe-LfM-jfeWyyA" entityName="Data"/>
+  <labelTypes id="_amAg5-CNEe-LfM-jfeWyyA" entityName="PersonalData"/>
+  <labelTypes id="_amAg6eCNEe-LfM-jfeWyyA" entityName="Obligation"/>
+  <labelTypes id="_amAg6uCNEe-LfM-jfeWyyA" entityName="Consent"/>
+  <labelTypes id="_amAg6-CNEe-LfM-jfeWyyA" entityName="Contract"/>
+  <labelTypes id="_amAg8eCNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
+  <labelTypes id="_amAg9OCNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
+  <labelTypes id="_amAg9eCNEe-LfM-jfeWyyA" entityName="Controller"/>
+  <labelTypes id="_amAg-OCNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
+  <labelTypes id="_amAg-uCNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <behavior id="_amAgweCNEe-LfM-jfeWyyA" entityName="user Behavior"/>
+  <behavior id="_amAgw-CNEe-LfM-jfeWyyA" entityName="admin_dashboard Behavior"/>
+  <behavior id="_amAgxeCNEe-LfM-jfeWyyA" entityName="eureka_server Behavior"/>
+  <behavior id="_amAgx-CNEe-LfM-jfeWyyA" entityName="rabbitmq Behavior"/>
+  <behavior id="_amAgyeCNEe-LfM-jfeWyyA" entityName="config_server Behavior"/>
+  <behavior id="_amAgy-CNEe-LfM-jfeWyyA" entityName="hystrix_dashboard Behavior"/>
+  <behavior id="_amAgz-CNEe-LfM-jfeWyyA" entityName="service_a Behavior"/>
+  <behavior id="_amAg1eCNEe-LfM-jfeWyyA" entityName="service_b Behavior"/>
+  <behavior id="_amAg2uCNEe-LfM-jfeWyyA" entityName="zuul Behavior"/>
+  <behavior id="_amAg4eCNEe-LfM-jfeWyyA" entityName="zipkin Behavior"/>
+  <behavior id="_amAg4-CNEe-LfM-jfeWyyA" entityName="logging_server Behavior"/>
+</datadictionary:DataDictionary>

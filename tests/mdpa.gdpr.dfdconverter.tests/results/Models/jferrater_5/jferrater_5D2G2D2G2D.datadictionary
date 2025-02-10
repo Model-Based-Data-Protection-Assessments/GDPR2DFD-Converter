@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_afC9ReCNEe-LfM-jfeWyyA">
+  <labelTypes id="_afC9W-CNEe-LfM-jfeWyyA" entityName="ProcessingType">
+    <label id="_afC9ZuCNEe-LfM-jfeWyyA" entityName="Collecting"/>
+    <label id="_afC9Z-CNEe-LfM-jfeWyyA" entityName="Storing"/>
+    <label id="_afC9aOCNEe-LfM-jfeWyyA" entityName="Usage"/>
+    <label id="_afC9aeCNEe-LfM-jfeWyyA" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_afC9XOCNEe-LfM-jfeWyyA" entityName="Data"/>
+  <labelTypes id="_afC9XeCNEe-LfM-jfeWyyA" entityName="PersonalData"/>
+  <labelTypes id="_afC9XuCNEe-LfM-jfeWyyA" entityName="Obligation"/>
+  <labelTypes id="_afC9X-CNEe-LfM-jfeWyyA" entityName="Consent"/>
+  <labelTypes id="_afC9YOCNEe-LfM-jfeWyyA" entityName="Contract"/>
+  <labelTypes id="_afC9YeCNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
+  <labelTypes id="_afC9YuCNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
+  <labelTypes id="_afC9Y-CNEe-LfM-jfeWyyA" entityName="Controller"/>
+  <labelTypes id="_afC9ZOCNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
+  <labelTypes id="_afC9ZeCNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <behavior id="_afC9SOCNEe-LfM-jfeWyyA" entityName="github_repository Behavior"/>
+  <behavior id="_afC9SuCNEe-LfM-jfeWyyA" entityName="discovery_service Behavior"/>
+  <behavior id="_afC9TOCNEe-LfM-jfeWyyA" entityName="config_service Behavior"/>
+  <behavior id="_afC9TuCNEe-LfM-jfeWyyA" entityName="account_service Behavior"/>
+  <behavior id="_afC9UOCNEe-LfM-jfeWyyA" entityName="customer_service Behavior"/>
+  <behavior id="_afC9UuCNEe-LfM-jfeWyyA" entityName="store_service Behavior"/>
+  <behavior id="_afC9VOCNEe-LfM-jfeWyyA" entityName="item_service Behavior"/>
+  <behavior id="_afC9VuCNEe-LfM-jfeWyyA" entityName="price_service Behavior"/>
+  <behavior id="_afC9WOCNEe-LfM-jfeWyyA" entityName="foodtray_service Behavior"/>
+  <behavior id="_afC9WuCNEe-LfM-jfeWyyA" entityName="authorization_server Behavior"/>
+</datadictionary:DataDictionary>

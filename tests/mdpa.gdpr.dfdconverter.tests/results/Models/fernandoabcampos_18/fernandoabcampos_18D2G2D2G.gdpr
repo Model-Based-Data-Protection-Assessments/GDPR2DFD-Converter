@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<GDPR:LegalAssessmentFacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" id="0">
+  <processing xsi:type="GDPR:Usage" id="2" entityName="github_repository"/>
+  <processing xsi:type="GDPR:Usage" id="3" entityName="user"/>
+  <processing xsi:type="GDPR:Usage" id="4" entityName="config_server"/>
+  <processing xsi:type="GDPR:Usage" id="5" entityName="discovery_service"/>
+  <processing xsi:type="GDPR:Usage" id="6" entityName="rabbitmq"/>
+  <processing xsi:type="GDPR:Usage" id="7" entityName="monitor_dashboard"/>
+  <processing xsi:type="GDPR:Usage" id="8" entityName="turbine"/>
+  <processing xsi:type="GDPR:Usage" id="9" entityName="statement_service"/>
+  <processing xsi:type="GDPR:Usage" id="10" entityName="card_service"/>
+  <processing xsi:type="GDPR:Usage" id="11" entityName="card_statement_composite"/>
+  <processing xsi:type="GDPR:Usage" id="12" entityName="edge_server"/>
+  <processing xsi:type="GDPR:Usage" id="13" entityName="secret_manager"/>
+</GDPR:LegalAssessmentFacts>

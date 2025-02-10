@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_anDCguCNEe-LfM-jfeWyyA">
+  <labelTypes id="_anDCpuCNEe-LfM-jfeWyyA" entityName="ProcessingType">
+    <label id="_anDCseCNEe-LfM-jfeWyyA" entityName="Collecting"/>
+    <label id="_anDCsuCNEe-LfM-jfeWyyA" entityName="Storing"/>
+    <label id="_anDCs-CNEe-LfM-jfeWyyA" entityName="Usage"/>
+    <label id="_anDCtOCNEe-LfM-jfeWyyA" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_anDCp-CNEe-LfM-jfeWyyA" entityName="Data"/>
+  <labelTypes id="_anDCqOCNEe-LfM-jfeWyyA" entityName="PersonalData"/>
+  <labelTypes id="_anDCqeCNEe-LfM-jfeWyyA" entityName="Obligation"/>
+  <labelTypes id="_anDCquCNEe-LfM-jfeWyyA" entityName="Consent"/>
+  <labelTypes id="_anDCq-CNEe-LfM-jfeWyyA" entityName="Contract"/>
+  <labelTypes id="_anDCrOCNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
+  <labelTypes id="_anDCreCNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
+  <labelTypes id="_anDCruCNEe-LfM-jfeWyyA" entityName="Controller"/>
+  <labelTypes id="_anDCr-CNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
+  <labelTypes id="_anDCsOCNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <behavior id="_anDChOCNEe-LfM-jfeWyyA" entityName="mail_server Behavior"/>
+  <behavior id="_anDChuCNEe-LfM-jfeWyyA" entityName="external_website Behavior"/>
+  <behavior id="_anDCieCNEe-LfM-jfeWyyA" entityName="user Behavior"/>
+  <behavior id="_anDCi-CNEe-LfM-jfeWyyA" entityName="config Behavior"/>
+  <behavior id="_anDCjeCNEe-LfM-jfeWyyA" entityName="registry Behavior"/>
+  <behavior id="_anDCj-CNEe-LfM-jfeWyyA" entityName="monitoring Behavior"/>
+  <behavior id="_anDCkeCNEe-LfM-jfeWyyA" entityName="turbine_stream_service Behavior"/>
+  <behavior id="_anDCk-CNEe-LfM-jfeWyyA" entityName="rabbitmq Behavior"/>
+  <behavior id="_anDCleCNEe-LfM-jfeWyyA" entityName="auth_service Behavior"/>
+  <behavior id="_anDCl-CNEe-LfM-jfeWyyA" entityName="account_service Behavior"/>
+  <behavior id="_anDCmeCNEe-LfM-jfeWyyA" entityName="notification_service Behavior"/>
+  <behavior id="_anDCm-CNEe-LfM-jfeWyyA" entityName="statistics_service Behavior"/>
+  <behavior id="_anDCneCNEe-LfM-jfeWyyA" entityName="auth_mongodb Behavior"/>
+  <behavior id="_anDCn-CNEe-LfM-jfeWyyA" entityName="account_mongodb Behavior"/>
+  <behavior id="_anDCoeCNEe-LfM-jfeWyyA" entityName="statistics_mongodb Behavior"/>
+  <behavior id="_anDCo-CNEe-LfM-jfeWyyA" entityName="notification_mongodb Behavior"/>
+  <behavior id="_anDCpeCNEe-LfM-jfeWyyA" entityName="gateway Behavior"/>
+</datadictionary:DataDictionary>

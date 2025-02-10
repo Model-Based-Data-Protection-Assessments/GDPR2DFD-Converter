@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_ag27jeCNEe-LfM-jfeWyyA">
+  <labelTypes id="_ag3iI-CNEe-LfM-jfeWyyA" entityName="ProcessingType">
+    <label id="_ag3iMeCNEe-LfM-jfeWyyA" entityName="Collecting"/>
+    <label id="_ag3iOuCNEe-LfM-jfeWyyA" entityName="Storing"/>
+    <label id="_ag3iO-CNEe-LfM-jfeWyyA" entityName="Usage"/>
+    <label id="_ag3iPOCNEe-LfM-jfeWyyA" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_ag3iJOCNEe-LfM-jfeWyyA" entityName="Data"/>
+  <labelTypes id="_ag3iJeCNEe-LfM-jfeWyyA" entityName="PersonalData"/>
+  <labelTypes id="_ag3iJuCNEe-LfM-jfeWyyA" entityName="Obligation"/>
+  <labelTypes id="_ag3iJ-CNEe-LfM-jfeWyyA" entityName="Consent"/>
+  <labelTypes id="_ag3iKOCNEe-LfM-jfeWyyA" entityName="Contract"/>
+  <labelTypes id="_ag3iKeCNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
+  <labelTypes id="_ag3iKuCNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
+  <labelTypes id="_ag3iLOCNEe-LfM-jfeWyyA" entityName="Controller"/>
+  <labelTypes id="_ag3iLuCNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
+  <labelTypes id="_ag3iL-CNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <behavior id="_ag27keCNEe-LfM-jfeWyyA" entityName="github_repository Behavior"/>
+  <behavior id="_ag3iCeCNEe-LfM-jfeWyyA" entityName="discovery_service Behavior"/>
+  <behavior id="_ag3iEOCNEe-LfM-jfeWyyA" entityName="config_service Behavior"/>
+  <behavior id="_ag3iFuCNEe-LfM-jfeWyyA" entityName="account_service Behavior"/>
+  <behavior id="_ag3iGeCNEe-LfM-jfeWyyA" entityName="customer_service Behavior"/>
+  <behavior id="_ag3iHOCNEe-LfM-jfeWyyA" entityName="store_service Behavior"/>
+  <behavior id="_ag3iHuCNEe-LfM-jfeWyyA" entityName="item_service Behavior"/>
+  <behavior id="_ag3iIOCNEe-LfM-jfeWyyA" entityName="price_service Behavior"/>
+  <behavior id="_ag3iIuCNEe-LfM-jfeWyyA" entityName="foodtray_service Behavior"/>
+</datadictionary:DataDictionary>

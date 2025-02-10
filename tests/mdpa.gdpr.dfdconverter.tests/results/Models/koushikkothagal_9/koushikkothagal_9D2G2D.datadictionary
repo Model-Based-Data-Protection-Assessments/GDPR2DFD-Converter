@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_ai6JZuCNEe-LfM-jfeWyyA">
+  <labelTypes id="_ai6JZ-CNEe-LfM-jfeWyyA" entityName="ProcessingType">
+    <label id="_ai6JcuCNEe-LfM-jfeWyyA" entityName="Collecting"/>
+    <label id="_ai6Jc-CNEe-LfM-jfeWyyA" entityName="Storing"/>
+    <label id="_ai6JdOCNEe-LfM-jfeWyyA" entityName="Usage"/>
+    <label id="_ai6JdeCNEe-LfM-jfeWyyA" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_ai6JaOCNEe-LfM-jfeWyyA" entityName="Data"/>
+  <labelTypes id="_ai6JaeCNEe-LfM-jfeWyyA" entityName="PersonalData"/>
+  <labelTypes id="_ai6JauCNEe-LfM-jfeWyyA" entityName="Obligation"/>
+  <labelTypes id="_ai6Ja-CNEe-LfM-jfeWyyA" entityName="Consent"/>
+  <labelTypes id="_ai6JbOCNEe-LfM-jfeWyyA" entityName="Contract"/>
+  <labelTypes id="_ai6JbeCNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
+  <labelTypes id="_ai6JbuCNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
+  <labelTypes id="_ai6Jb-CNEe-LfM-jfeWyyA" entityName="Controller"/>
+  <labelTypes id="_ai6JcOCNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
+  <labelTypes id="_ai6JceCNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <behavior id="30">
+    <outPin id="57"/>
+    <assignment xsi:type="datadictionary:Assignment" id="80" outputPin="57">
+      <term xsi:type="datadictionary:TRUE" id="81"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_9.datadictionary#32"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_9.datadictionary#53"/>
+    </assignment>
+  </behavior>
+  <behavior id="35">
+    <inPin id="50"/>
+  </behavior>
+  <behavior id="44">
+    <inPin id="62"/>
+    <outPin id="51"/>
+    <assignment xsi:type="datadictionary:Assignment" id="82" outputPin="51" inputPins="62">
+      <term xsi:type="datadictionary:TRUE" id="83"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_9.datadictionary#12"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_9.datadictionary#53"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="85" outputPin="51" inputPins="62"/>
+  </behavior>
+  <behavior id="10">
+    <inPin id="56"/>
+    <outPin id="54"/>
+    <assignment xsi:type="datadictionary:Assignment" id="70" outputPin="54" inputPins="56">
+      <term xsi:type="datadictionary:TRUE" id="71"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_9.datadictionary#12"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_9.datadictionary#53"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="84" outputPin="54" inputPins="56"/>
+  </behavior>
+  <behavior id="18">
+    <outPin id="59"/>
+    <outPin id="63"/>
+    <outPin id="65"/>
+    <assignment xsi:type="datadictionary:Assignment" id="72" outputPin="59">
+      <term xsi:type="datadictionary:TRUE" id="73"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_9.datadictionary#12"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_9.datadictionary#20"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_9.datadictionary#53"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_9.datadictionary#61"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="74" outputPin="63">
+      <term xsi:type="datadictionary:TRUE" id="75"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_9.datadictionary#12"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_9.datadictionary#20"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_9.datadictionary#53"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_9.datadictionary#61"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="76" outputPin="65">
+      <term xsi:type="datadictionary:TRUE" id="77"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_9.datadictionary#12"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_9.datadictionary#20"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_9.datadictionary#53"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_9.datadictionary#61"/>
+    </assignment>
+  </behavior>
+  <behavior id="41">
+    <inPin id="67"/>
+  </behavior>
+  <behavior id="26">
+    <outPin id="68"/>
+    <assignment xsi:type="datadictionary:Assignment" id="78" outputPin="68">
+      <term xsi:type="datadictionary:TRUE" id="79"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_9.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_9.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_9.datadictionary#53"/>
+    </assignment>
+  </behavior>
+</datadictionary:DataDictionary>

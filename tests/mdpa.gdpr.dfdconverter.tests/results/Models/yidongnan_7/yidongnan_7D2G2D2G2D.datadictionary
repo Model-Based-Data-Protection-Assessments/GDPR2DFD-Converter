@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_alVLeOCNEe-LfM-jfeWyyA">
+  <labelTypes id="_alVLu-CNEe-LfM-jfeWyyA" entityName="ProcessingType">
+    <label id="_alVL1OCNEe-LfM-jfeWyyA" entityName="Collecting"/>
+    <label id="_alVL1-CNEe-LfM-jfeWyyA" entityName="Storing"/>
+    <label id="_alVL2eCNEe-LfM-jfeWyyA" entityName="Usage"/>
+    <label id="_alVL2uCNEe-LfM-jfeWyyA" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_alVLveCNEe-LfM-jfeWyyA" entityName="Data"/>
+  <labelTypes id="_alVLv-CNEe-LfM-jfeWyyA" entityName="PersonalData"/>
+  <labelTypes id="_alVLwOCNEe-LfM-jfeWyyA" entityName="Obligation"/>
+  <labelTypes id="_alVLwuCNEe-LfM-jfeWyyA" entityName="Consent"/>
+  <labelTypes id="_alVLxOCNEe-LfM-jfeWyyA" entityName="Contract"/>
+  <labelTypes id="_alVLx-CNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
+  <labelTypes id="_alVLyOCNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
+  <labelTypes id="_alVLyuCNEe-LfM-jfeWyyA" entityName="Controller"/>
+  <labelTypes id="_alVLy-CNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
+  <labelTypes id="_alVLzeCNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <behavior id="_alVLeuCNEe-LfM-jfeWyyA" entityName="user Behavior"/>
+  <behavior id="_alVLgeCNEe-LfM-jfeWyyA" entityName="admin_dashboard Behavior"/>
+  <behavior id="_alVLhOCNEe-LfM-jfeWyyA" entityName="eureka_server Behavior"/>
+  <behavior id="_alVLiOCNEe-LfM-jfeWyyA" entityName="rabbitmq Behavior"/>
+  <behavior id="_alVLi-CNEe-LfM-jfeWyyA" entityName="config_server Behavior"/>
+  <behavior id="_alVLj-CNEe-LfM-jfeWyyA" entityName="hystrix_dashboard Behavior"/>
+  <behavior id="_alVLpeCNEe-LfM-jfeWyyA" entityName="service_a Behavior"/>
+  <behavior id="_alVLq-CNEe-LfM-jfeWyyA" entityName="service_b Behavior"/>
+  <behavior id="_alVLs-CNEe-LfM-jfeWyyA" entityName="zuul Behavior"/>
+  <behavior id="_alVLtuCNEe-LfM-jfeWyyA" entityName="zipkin Behavior"/>
+</datadictionary:DataDictionary>

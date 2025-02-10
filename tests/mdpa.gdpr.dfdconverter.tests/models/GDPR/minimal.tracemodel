@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="ASCII"?>
+<tracemodel:TraceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" xmlns:tracemodel="http://www.example.org/tracemodel">
+  <nodeTraces>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="models/GDPR/minimal.dfd#xvpuf8"/>
+    <gdprProcessing href="models/GDPR/minimal.gdpr#xvpuf8"/>
+  </nodeTraces>
+  <nodeTraces>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="models/GDPR/minimal.dfd#kqcy12"/>
+    <gdprProcessing href="models/GDPR/minimal.gdpr#kqcy12"/>
+  </nodeTraces>
+  <nodeTraces>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="models/GDPR/minimal.dfd#fas8l"/>
+    <gdprProcessing href="models/GDPR/minimal.gdpr#fas8l"/>
+  </nodeTraces>
+  <nodeTraces>
+    <dfdNode xsi:type="dataflowdiagram:Store" href="models/GDPR/minimal.dfd#1liryp"/>
+    <gdprProcessing href="models/GDPR/minimal.gdpr#1liryp"/>
+  </nodeTraces>
+  <nodeTraces>
+    <dfdNode xsi:type="dataflowdiagram:External" href="models/GDPR/minimal.dfd#g4z568"/>
+    <gdprProcessing href="models/GDPR/minimal.gdpr#g4z568"/>
+  </nodeTraces>
+  <labelTraces>
+    <label href="models/GDPR/minimal.dd#mnpnio"/>
+    <labelType href="models/GDPR/minimal.dd#_h32lgd7_Ee-R1eq1ckyHWA"/>
+    <gdprElement xsi:type="GDPR:Data" href="models/GDPR/minimal.gdpr#mnpnio"/>
+  </labelTraces>
+  <labelTraces>
+    <label href="models/GDPR/minimal.dd#fi6k6x"/>
+    <labelType href="models/GDPR/minimal.dd#_h32lgt7_Ee-R1eq1ckyHWA"/>
+    <gdprElement xsi:type="GDPR:PersonalData" href="models/GDPR/minimal.gdpr#fi6k6x"/>
+  </labelTraces>
+  <labelTraces>
+    <label href="models/GDPR/minimal.dd#quu8ak"/>
+    <labelType href="models/GDPR/minimal.dd#_h32lg97_Ee-R1eq1ckyHWA"/>
+    <gdprElement xsi:type="GDPR:Obligation" href="models/GDPR/minimal.gdpr#quu8ak"/>
+  </labelTraces>
+  <labelTraces>
+    <label href="models/GDPR/minimal.dd#772yn"/>
+    <labelType href="models/GDPR/minimal.dd#_h32lhN7_Ee-R1eq1ckyHWA"/>
+    <gdprElement xsi:type="GDPR:Consent" href="models/GDPR/minimal.gdpr#772yn"/>
+  </labelTraces>
+  <labelTraces>
+    <label href="models/GDPR/minimal.dd#f7dnl"/>
+    <labelType href="models/GDPR/minimal.dd#_h32lhd7_Ee-R1eq1ckyHWA"/>
+    <gdprElement xsi:type="GDPR:PerformanceOfContract" href="models/GDPR/minimal.gdpr#f7dnl"/>
+  </labelTraces>
+  <labelTraces>
+    <label href="models/GDPR/minimal.dd#y7y8dg"/>
+    <labelType href="models/GDPR/minimal.dd#_h32lht7_Ee-R1eq1ckyHWA"/>
+    <gdprElement xsi:type="GDPR:ExerciseOfPublicAuthority" href="models/GDPR/minimal.gdpr#y7y8dg"/>
+  </labelTraces>
+  <labelTraces>
+    <label href="models/GDPR/minimal.dd#m0b8x"/>
+    <labelType href="models/GDPR/minimal.dd#_h32lh97_Ee-R1eq1ckyHWA"/>
+    <gdprElement xsi:type="GDPR:NaturalPerson" href="models/GDPR/minimal.gdpr#m0b8x"/>
+  </labelTraces>
+  <labelTraces>
+    <label href="models/GDPR/minimal.dd#c9bird"/>
+    <labelType href="models/GDPR/minimal.dd#_h32liN7_Ee-R1eq1ckyHWA"/>
+    <gdprElement xsi:type="GDPR:Controller" href="models/GDPR/minimal.gdpr#c9bird"/>
+  </labelTraces>
+  <labelTraces>
+    <label href="models/GDPR/minimal.dd#cadfg"/>
+    <labelType href="models/GDPR/minimal.dd#_h32lid7_Ee-R1eq1ckyHWA"/>
+    <gdprElement xsi:type="GDPR:ThirdParty" href="models/GDPR/minimal.gdpr#cadfg"/>
+  </labelTraces>
+  <labelTraces>
+    <label href="models/GDPR/minimal.dd#8k3v"/>
+    <labelType href="models/GDPR/minimal.dd#_h32lit7_Ee-R1eq1ckyHWA"/>
+    <gdprElement xsi:type="GDPR:Purpose" href="models/GDPR/minimal.gdpr#8k3v"/>
+  </labelTraces>
+  <flowTraces>
+    <dataFlow href="models/GDPR/minimal.dfd#_h35Bwt7_Ee-R1eq1ckyHWA"/>
+    <source href="models/GDPR/minimal.gdpr#xvpuf8"/>
+    <dest href="models/GDPR/minimal.gdpr#kqcy12"/>
+    <data href="models/GDPR/minimal.gdpr#mnpnio"/>
+  </flowTraces>
+  <flowTraces>
+    <dataFlow href="models/GDPR/minimal.dfd#_h35o0t7_Ee-R1eq1ckyHWA"/>
+    <source href="models/GDPR/minimal.gdpr#kqcy12"/>
+    <dest href="models/GDPR/minimal.gdpr#fas8l"/>
+    <data href="models/GDPR/minimal.gdpr#mnpnio"/>
+  </flowTraces>
+  <flowTraces>
+    <dataFlow href="models/GDPR/minimal.dfd#_h35o1d7_Ee-R1eq1ckyHWA"/>
+    <source href="models/GDPR/minimal.gdpr#fas8l"/>
+    <dest href="models/GDPR/minimal.gdpr#1liryp"/>
+    <data href="models/GDPR/minimal.gdpr#mnpnio"/>
+  </flowTraces>
+  <flowTraces>
+    <dataFlow href="models/GDPR/minimal.dfd#_h35o2N7_Ee-R1eq1ckyHWA"/>
+    <source href="models/GDPR/minimal.gdpr#g4z568"/>
+    <dest href="models/GDPR/minimal.gdpr#xvpuf8"/>
+    <data href="models/GDPR/minimal.gdpr#fi6k6x"/>
+  </flowTraces>
+</tracemodel:TraceModel>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dataflowdiagram:DataFlowDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" id="0">
+  <nodes xsi:type="dataflowdiagram:External" id="2" entityName="github_repository">
+    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_7/jferrater_7D2G2D.datadictionary#51"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#53"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#54"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#56"/>
+    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_7/jferrater_7D2G2D.datadictionary#_affpI-CNEe-LfM-jfeWyyA"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Process" id="3" entityName="discovery_service">
+    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_7/jferrater_7D2G2D.datadictionary#12"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#14"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#15"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#17"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#19"/>
+    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_7/jferrater_7D2G2D.datadictionary#_affpI-CNEe-LfM-jfeWyyA"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Process" id="4" entityName="config_service">
+    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_7/jferrater_7D2G2D.datadictionary#57"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#59"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#15"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#17"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#61"/>
+    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_7/jferrater_7D2G2D.datadictionary#_affpI-CNEe-LfM-jfeWyyA"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Process" id="5" entityName="account_service">
+    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_7/jferrater_7D2G2D.datadictionary#20"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#22"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#24"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#25"/>
+    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_7/jferrater_7D2G2D.datadictionary#_affpI-CNEe-LfM-jfeWyyA"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Process" id="6" entityName="customer_service">
+    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_7/jferrater_7D2G2D.datadictionary#30"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#22"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#32"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#33"/>
+    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_7/jferrater_7D2G2D.datadictionary#_affpI-CNEe-LfM-jfeWyyA"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Process" id="7" entityName="store_service">
+    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_7/jferrater_7D2G2D.datadictionary#62"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#22"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#64"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#65"/>
+    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_7/jferrater_7D2G2D.datadictionary#_affpI-CNEe-LfM-jfeWyyA"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Process" id="8" entityName="item_service">
+    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_7/jferrater_7D2G2D.datadictionary#26"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#22"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#28"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#29"/>
+    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_7/jferrater_7D2G2D.datadictionary#_affpI-CNEe-LfM-jfeWyyA"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Process" id="9" entityName="price_service">
+    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_7/jferrater_7D2G2D.datadictionary#34"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#22"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#36"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#37"/>
+    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_7/jferrater_7D2G2D.datadictionary#_affpI-CNEe-LfM-jfeWyyA"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Process" id="10" entityName="foodtray_service">
+    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_7/jferrater_7D2G2D.datadictionary#38"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#15"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#40"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#41"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#43"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#44"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#45"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#46"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#47"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#49"/>
+    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_7.datadictionary#50"/>
+    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_7/jferrater_7D2G2D.datadictionary#_affpI-CNEe-LfM-jfeWyyA"/>
+  </nodes>
+</dataflowdiagram:DataFlowDiagram>

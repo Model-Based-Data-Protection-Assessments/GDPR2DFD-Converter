@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_al-rsOCNEe-LfM-jfeWyyA">
+  <labelTypes id="_al-rzOCNEe-LfM-jfeWyyA" entityName="ProcessingType">
+    <label id="_al-r3OCNEe-LfM-jfeWyyA" entityName="Collecting"/>
+    <label id="_al-r3eCNEe-LfM-jfeWyyA" entityName="Storing"/>
+    <label id="_al-r3uCNEe-LfM-jfeWyyA" entityName="Usage"/>
+    <label id="_al-r4OCNEe-LfM-jfeWyyA" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_al-rzeCNEe-LfM-jfeWyyA" entityName="Data"/>
+  <labelTypes id="_al-rzuCNEe-LfM-jfeWyyA" entityName="PersonalData"/>
+  <labelTypes id="_al-rz-CNEe-LfM-jfeWyyA" entityName="Obligation"/>
+  <labelTypes id="_al-r0OCNEe-LfM-jfeWyyA" entityName="Consent"/>
+  <labelTypes id="_al-r0eCNEe-LfM-jfeWyyA" entityName="Contract"/>
+  <labelTypes id="_al-r0uCNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
+  <labelTypes id="_al-r1eCNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
+  <labelTypes id="_al-r1-CNEe-LfM-jfeWyyA" entityName="Controller"/>
+  <labelTypes id="_al-r2eCNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
+  <labelTypes id="_al-r2uCNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <behavior id="_al-rtOCNEe-LfM-jfeWyyA" entityName="user Behavior"/>
+  <behavior id="_al-rt-CNEe-LfM-jfeWyyA" entityName="admin_dashboard Behavior"/>
+  <behavior id="_al-rueCNEe-LfM-jfeWyyA" entityName="eureka_server Behavior"/>
+  <behavior id="_al-ru-CNEe-LfM-jfeWyyA" entityName="rabbitmq Behavior"/>
+  <behavior id="_al-rveCNEe-LfM-jfeWyyA" entityName="config_server Behavior"/>
+  <behavior id="_al-rwOCNEe-LfM-jfeWyyA" entityName="hystrix_dashboard Behavior"/>
+  <behavior id="_al-rwuCNEe-LfM-jfeWyyA" entityName="service_a Behavior"/>
+  <behavior id="_al-rxeCNEe-LfM-jfeWyyA" entityName="service_b Behavior"/>
+  <behavior id="_al-rx-CNEe-LfM-jfeWyyA" entityName="zuul Behavior"/>
+  <behavior id="_al-ryeCNEe-LfM-jfeWyyA" entityName="zipkin Behavior"/>
+  <behavior id="_al-ry-CNEe-LfM-jfeWyyA" entityName="authorization_server Behavior"/>
+</datadictionary:DataDictionary>

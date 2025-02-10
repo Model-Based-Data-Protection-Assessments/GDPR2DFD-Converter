@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_afBH8-CNEe-LfM-jfeWyyA">
+  <labelTypes id="_afBIDOCNEe-LfM-jfeWyyA" entityName="ProcessingType">
+    <label id="_afBIF-CNEe-LfM-jfeWyyA" entityName="Collecting"/>
+    <label id="_afBIGOCNEe-LfM-jfeWyyA" entityName="Storing"/>
+    <label id="_afBIGeCNEe-LfM-jfeWyyA" entityName="Usage"/>
+    <label id="_afBIGuCNEe-LfM-jfeWyyA" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_afBIDeCNEe-LfM-jfeWyyA" entityName="Data"/>
+  <labelTypes id="_afBIDuCNEe-LfM-jfeWyyA" entityName="PersonalData"/>
+  <labelTypes id="_afBID-CNEe-LfM-jfeWyyA" entityName="Obligation"/>
+  <labelTypes id="_afBIEOCNEe-LfM-jfeWyyA" entityName="Consent"/>
+  <labelTypes id="_afBIEeCNEe-LfM-jfeWyyA" entityName="Contract"/>
+  <labelTypes id="_afBIEuCNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
+  <labelTypes id="_afBIE-CNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
+  <labelTypes id="_afBIFOCNEe-LfM-jfeWyyA" entityName="Controller"/>
+  <labelTypes id="_afBIFeCNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
+  <labelTypes id="_afBIFuCNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <behavior id="_afBH9eCNEe-LfM-jfeWyyA" entityName="github_repository Behavior"/>
+  <behavior id="_afBH9-CNEe-LfM-jfeWyyA" entityName="user Behavior"/>
+  <behavior id="_afBH-eCNEe-LfM-jfeWyyA" entityName="configserver Behavior"/>
+  <behavior id="_afBH--CNEe-LfM-jfeWyyA" entityName="webservice_registry Behavior"/>
+  <behavior id="_afBH_eCNEe-LfM-jfeWyyA" entityName="zipkin_tracing Behavior"/>
+  <behavior id="_afBH_-CNEe-LfM-jfeWyyA" entityName="mysqldb Behavior"/>
+  <behavior id="_afBIAeCNEe-LfM-jfeWyyA" entityName="auth_server Behavior"/>
+  <behavior id="_afBIA-CNEe-LfM-jfeWyyA" entityName="web_portal Behavior"/>
+  <behavior id="_afBIBeCNEe-LfM-jfeWyyA" entityName="user_webservice Behavior"/>
+  <behavior id="_afBIB-CNEe-LfM-jfeWyyA" entityName="comments_webservice Behavior"/>
+  <behavior id="_afBICeCNEe-LfM-jfeWyyA" entityName="task_webservice Behavior"/>
+  <behavior id="_afBIC-CNEe-LfM-jfeWyyA" entityName="api_gateway Behavior"/>
+</datadictionary:DataDictionary>

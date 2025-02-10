@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_ag6laOCNEe-LfM-jfeWyyA">
+  <labelTypes id="_ag6lf-CNEe-LfM-jfeWyyA" entityName="ProcessingType">
+    <label id="_ag7zduCNEe-LfM-jfeWyyA" entityName="Collecting"/>
+    <label id="_ag7zeOCNEe-LfM-jfeWyyA" entityName="Storing"/>
+    <label id="_ag7zeuCNEe-LfM-jfeWyyA" entityName="Usage"/>
+    <label id="_ag7zguCNEe-LfM-jfeWyyA" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_ag6lgOCNEe-LfM-jfeWyyA" entityName="Data"/>
+  <labelTypes id="_ag6lgeCNEe-LfM-jfeWyyA" entityName="PersonalData"/>
+  <labelTypes id="_ag6lguCNEe-LfM-jfeWyyA" entityName="Obligation"/>
+  <labelTypes id="_ag6lieCNEe-LfM-jfeWyyA" entityName="Consent"/>
+  <labelTypes id="_ag6li-CNEe-LfM-jfeWyyA" entityName="Contract"/>
+  <labelTypes id="_ag6ljOCNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
+  <labelTypes id="_ag6ljuCNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
+  <labelTypes id="_ag6lj-CNEe-LfM-jfeWyyA" entityName="Controller"/>
+  <labelTypes id="_ag7NCOCNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
+  <labelTypes id="_ag7NCuCNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <behavior id="38">
+    <inPin id="80"/>
+    <outPin id="77"/>
+    <assignment xsi:type="datadictionary:Assignment" id="109" outputPin="77" inputPins="80">
+      <term xsi:type="datadictionary:TRUE" id="110"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#40"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#41"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#42"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#54"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#79"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="125" outputPin="77" inputPins="80"/>
+  </behavior>
+  <behavior id="20">
+    <outPin id="52"/>
+    <assignment xsi:type="datadictionary:Assignment" id="103" outputPin="52">
+      <term xsi:type="datadictionary:TRUE" id="104"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#15"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#54"/>
+    </assignment>
+  </behavior>
+  <behavior id="30">
+    <inPin id="51"/>
+    <outPin id="61"/>
+    <outPin id="67"/>
+    <assignment xsi:type="datadictionary:Assignment" id="105" outputPin="61" inputPins="51">
+      <term xsi:type="datadictionary:TRUE" id="106"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#32"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#15"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#54"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#63"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#65"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="107" outputPin="67" inputPins="51">
+      <term xsi:type="datadictionary:TRUE" id="108"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#32"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#15"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#54"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#63"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#65"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="123" outputPin="61" inputPins="51"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="124" outputPin="67" inputPins="51"/>
+  </behavior>
+  <behavior id="47">
+    <inPin id="69"/>
+    <outPin id="55"/>
+    <assignment xsi:type="datadictionary:Assignment" id="117" outputPin="55" inputPins="69">
+      <term xsi:type="datadictionary:TRUE" id="118"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#54"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#57"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#59"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="126" outputPin="55" inputPins="69"/>
+  </behavior>
+  <behavior id="36">
+    <inPin id="60"/>
+  </behavior>
+  <behavior id="25">
+    <inPin id="66"/>
+  </behavior>
+  <behavior id="11">
+    <inPin id="76"/>
+    <outPin id="70"/>
+    <outPin id="72"/>
+    <outPin id="74"/>
+    <outPin id="81"/>
+    <assignment xsi:type="datadictionary:Assignment" id="95" outputPin="70" inputPins="76">
+      <term xsi:type="datadictionary:TRUE" id="96"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#13"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#14"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#15"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#54"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="97" outputPin="72" inputPins="76">
+      <term xsi:type="datadictionary:TRUE" id="98"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#13"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#14"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#15"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#54"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="99" outputPin="74" inputPins="76">
+      <term xsi:type="datadictionary:TRUE" id="100"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#13"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#14"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#15"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#54"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="101" outputPin="81" inputPins="76">
+      <term xsi:type="datadictionary:TRUE" id="102"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#13"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#14"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#15"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#54"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#79"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="119" outputPin="70" inputPins="76"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="120" outputPin="72" inputPins="76"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="121" outputPin="74" inputPins="76"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="122" outputPin="81" inputPins="76"/>
+  </behavior>
+  <behavior id="43">
+    <outPin id="83"/>
+    <outPin id="91"/>
+    <outPin id="93"/>
+    <assignment xsi:type="datadictionary:Assignment" id="111" outputPin="83">
+      <term xsi:type="datadictionary:TRUE" id="112"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#85"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#86"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#88"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#90"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="113" outputPin="91">
+      <term xsi:type="datadictionary:TRUE" id="114"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#85"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#86"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#88"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#90"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="115" outputPin="93">
+      <term xsi:type="datadictionary:TRUE" id="116"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#85"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#86"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#88"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.datadictionary#90"/>
+    </assignment>
+  </behavior>
+</datadictionary:DataDictionary>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dataflowdiagram:DataFlowDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" id="0">
+  <nodes xsi:type="dataflowdiagram:Process" id="2" entityName="user">
+    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mudigal-technologies_7/mudigal-technologies_7D2G2D2G2D.datadictionary#_aj0JC-CNEe-LfM-jfeWyyA"/>
+    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mudigal-technologies_7/mudigal-technologies_7D2G2D2G2D.datadictionary#_aj0vYeCNEe-LfM-jfeWyyA"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Process" id="3" entityName="consul">
+    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mudigal-technologies_7/mudigal-technologies_7D2G2D2G2D.datadictionary#_aj0JEeCNEe-LfM-jfeWyyA"/>
+    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mudigal-technologies_7/mudigal-technologies_7D2G2D2G2D.datadictionary#_aj0vYeCNEe-LfM-jfeWyyA"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Process" id="4" entityName="consul2">
+    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mudigal-technologies_7/mudigal-technologies_7D2G2D2G2D.datadictionary#_aj0JE-CNEe-LfM-jfeWyyA"/>
+    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mudigal-technologies_7/mudigal-technologies_7D2G2D2G2D.datadictionary#_aj0vYeCNEe-LfM-jfeWyyA"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Process" id="5" entityName="consul3">
+    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mudigal-technologies_7/mudigal-technologies_7D2G2D2G2D.datadictionary#_aj0JFeCNEe-LfM-jfeWyyA"/>
+    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mudigal-technologies_7/mudigal-technologies_7D2G2D2G2D.datadictionary#_aj0vYeCNEe-LfM-jfeWyyA"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Process" id="6" entityName="elasticsearch">
+    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mudigal-technologies_7/mudigal-technologies_7D2G2D2G2D.datadictionary#_aj0JGOCNEe-LfM-jfeWyyA"/>
+    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mudigal-technologies_7/mudigal-technologies_7D2G2D2G2D.datadictionary#_aj0vYeCNEe-LfM-jfeWyyA"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Process" id="7" entityName="logstash">
+    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mudigal-technologies_7/mudigal-technologies_7D2G2D2G2D.datadictionary#_aj0JGuCNEe-LfM-jfeWyyA"/>
+    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mudigal-technologies_7/mudigal-technologies_7D2G2D2G2D.datadictionary#_aj0vYeCNEe-LfM-jfeWyyA"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Process" id="8" entityName="kibana">
+    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mudigal-technologies_7/mudigal-technologies_7D2G2D2G2D.datadictionary#_aj0JHeCNEe-LfM-jfeWyyA"/>
+    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mudigal-technologies_7/mudigal-technologies_7D2G2D2G2D.datadictionary#_aj0vYeCNEe-LfM-jfeWyyA"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Process" id="9" entityName="rabbit">
+    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mudigal-technologies_7/mudigal-technologies_7D2G2D2G2D.datadictionary#_aj0JH-CNEe-LfM-jfeWyyA"/>
+    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mudigal-technologies_7/mudigal-technologies_7D2G2D2G2D.datadictionary#_aj0vYeCNEe-LfM-jfeWyyA"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Process" id="10" entityName="service_one">
+    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mudigal-technologies_7/mudigal-technologies_7D2G2D2G2D.datadictionary#_aj0JIeCNEe-LfM-jfeWyyA"/>
+    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mudigal-technologies_7/mudigal-technologies_7D2G2D2G2D.datadictionary#_aj0vYeCNEe-LfM-jfeWyyA"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Process" id="11" entityName="service_two">
+    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mudigal-technologies_7/mudigal-technologies_7D2G2D2G2D.datadictionary#_aj0JI-CNEe-LfM-jfeWyyA"/>
+    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mudigal-technologies_7/mudigal-technologies_7D2G2D2G2D.datadictionary#_aj0vYeCNEe-LfM-jfeWyyA"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Process" id="12" entityName="service_one_db">
+    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mudigal-technologies_7/mudigal-technologies_7D2G2D2G2D.datadictionary#_aj0JJuCNEe-LfM-jfeWyyA"/>
+    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mudigal-technologies_7/mudigal-technologies_7D2G2D2G2D.datadictionary#_aj0vYeCNEe-LfM-jfeWyyA"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Process" id="13" entityName="service_two_db">
+    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mudigal-technologies_7/mudigal-technologies_7D2G2D2G2D.datadictionary#_aj0JKOCNEe-LfM-jfeWyyA"/>
+    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mudigal-technologies_7/mudigal-technologies_7D2G2D2G2D.datadictionary#_aj0vYeCNEe-LfM-jfeWyyA"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Process" id="14" entityName="api_gateway">
+    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mudigal-technologies_7/mudigal-technologies_7D2G2D2G2D.datadictionary#_aj0JKuCNEe-LfM-jfeWyyA"/>
+    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mudigal-technologies_7/mudigal-technologies_7D2G2D2G2D.datadictionary#_aj0vYeCNEe-LfM-jfeWyyA"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Process" id="15" entityName="web_application">
+    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mudigal-technologies_7/mudigal-technologies_7D2G2D2G2D.datadictionary#_aj0JLOCNEe-LfM-jfeWyyA"/>
+    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mudigal-technologies_7/mudigal-technologies_7D2G2D2G2D.datadictionary#_aj0vYeCNEe-LfM-jfeWyyA"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Process" id="16" entityName="scope">
+    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mudigal-technologies_7/mudigal-technologies_7D2G2D2G2D.datadictionary#_aj0JL-CNEe-LfM-jfeWyyA"/>
+    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mudigal-technologies_7/mudigal-technologies_7D2G2D2G2D.datadictionary#_aj0vYeCNEe-LfM-jfeWyyA"/>
+  </nodes>
+</dataflowdiagram:DataFlowDiagram>

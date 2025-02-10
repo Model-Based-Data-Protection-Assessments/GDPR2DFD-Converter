@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_al5zKeCNEe-LfM-jfeWyyA">
+  <labelTypes id="_al5zRuCNEe-LfM-jfeWyyA" entityName="ProcessingType">
+    <label id="_al5zXeCNEe-LfM-jfeWyyA" entityName="Collecting"/>
+    <label id="_al5zYOCNEe-LfM-jfeWyyA" entityName="Storing"/>
+    <label id="_al5zYuCNEe-LfM-jfeWyyA" entityName="Usage"/>
+    <label id="_al5zZOCNEe-LfM-jfeWyyA" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_al5zSOCNEe-LfM-jfeWyyA" entityName="Data"/>
+  <labelTypes id="_al5zSuCNEe-LfM-jfeWyyA" entityName="PersonalData"/>
+  <labelTypes id="_al5zS-CNEe-LfM-jfeWyyA" entityName="Obligation"/>
+  <labelTypes id="_al5zTeCNEe-LfM-jfeWyyA" entityName="Consent"/>
+  <labelTypes id="_al5zTuCNEe-LfM-jfeWyyA" entityName="Contract"/>
+  <labelTypes id="_al5zUOCNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
+  <labelTypes id="_al5zUuCNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
+  <labelTypes id="_al5zVOCNEe-LfM-jfeWyyA" entityName="Controller"/>
+  <labelTypes id="_al5zVuCNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
+  <labelTypes id="_al5zWOCNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <behavior id="65">
+    <inPin id="125"/>
+    <outPin id="129"/>
+    <assignment xsi:type="datadictionary:Assignment" id="243" outputPin="129" inputPins="125">
+      <term xsi:type="datadictionary:TRUE" id="244"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#67"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#68"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#69"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="275" outputPin="129" inputPins="125"/>
+  </behavior>
+  <behavior id="44">
+    <inPin id="154"/>
+    <outPin id="86"/>
+    <outPin id="95"/>
+    <outPin id="98"/>
+    <outPin id="103"/>
+    <outPin id="114"/>
+    <outPin id="144"/>
+    <outPin id="146"/>
+    <assignment xsi:type="datadictionary:Assignment" id="209" outputPin="86" inputPins="154">
+      <term xsi:type="datadictionary:TRUE" id="210"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#46"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="211" outputPin="95" inputPins="154">
+      <term xsi:type="datadictionary:TRUE" id="212"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#46"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="213" outputPin="98" inputPins="154">
+      <term xsi:type="datadictionary:TRUE" id="214"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#46"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="215" outputPin="103" inputPins="154">
+      <term xsi:type="datadictionary:TRUE" id="216"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#46"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="217" outputPin="114" inputPins="154">
+      <term xsi:type="datadictionary:TRUE" id="218"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#46"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="219" outputPin="144" inputPins="154">
+      <term xsi:type="datadictionary:TRUE" id="220"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#46"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="221" outputPin="146" inputPins="154">
+      <term xsi:type="datadictionary:TRUE" id="222"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#46"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="258" outputPin="86" inputPins="154"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="259" outputPin="95" inputPins="154"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="260" outputPin="98" inputPins="154"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="261" outputPin="103" inputPins="154"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="262" outputPin="114" inputPins="154"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="263" outputPin="144" inputPins="154"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="264" outputPin="146" inputPins="154"/>
+  </behavior>
+  <behavior id="38">
+    <inPin id="89"/>
+    <outPin id="133"/>
+    <assignment xsi:type="datadictionary:Assignment" id="207" outputPin="133" inputPins="89">
+      <term xsi:type="datadictionary:TRUE" id="208"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#40"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="257" outputPin="133" inputPins="89"/>
+  </behavior>
+  <behavior id="70">
+    <inPin id="92"/>
+    <outPin id="136"/>
+    <assignment xsi:type="datadictionary:Assignment" id="245" outputPin="136" inputPins="92">
+      <term xsi:type="datadictionary:TRUE" id="246"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#72"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="276" outputPin="136" inputPins="92"/>
+  </behavior>
+  <behavior id="32">
+    <inPin id="85"/>
+    <outPin id="90"/>
+    <outPin id="93"/>
+    <outPin id="107"/>
+    <outPin id="118"/>
+    <assignment xsi:type="datadictionary:Assignment" id="199" outputPin="90" inputPins="85">
+      <term xsi:type="datadictionary:TRUE" id="200"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#34"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="201" outputPin="93" inputPins="85">
+      <term xsi:type="datadictionary:TRUE" id="202"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#34"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="203" outputPin="107" inputPins="85">
+      <term xsi:type="datadictionary:TRUE" id="204"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#34"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="205" outputPin="118" inputPins="85">
+      <term xsi:type="datadictionary:TRUE" id="206"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#34"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="253" outputPin="90" inputPins="85"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="254" outputPin="93" inputPins="85"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="255" outputPin="107" inputPins="85"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="256" outputPin="118" inputPins="85"/>
+  </behavior>
+  <behavior id="76">
+    <inPin id="97"/>
+    <outPin id="100"/>
+    <assignment xsi:type="datadictionary:Assignment" id="247" outputPin="100" inputPins="97">
+      <term xsi:type="datadictionary:TRUE" id="248"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#78"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#79"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="277" outputPin="100" inputPins="97"/>
+  </behavior>
+  <behavior id="50">
+    <inPin id="102"/>
+    <outPin id="105"/>
+    <outPin id="109"/>
+    <outPin id="111"/>
+    <outPin id="122"/>
+    <outPin id="142"/>
+    <assignment xsi:type="datadictionary:Assignment" id="223" outputPin="105" inputPins="102">
+      <term xsi:type="datadictionary:TRUE" id="224"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#21"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#52"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="225" outputPin="109" inputPins="102">
+      <term xsi:type="datadictionary:TRUE" id="226"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#21"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#52"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="227" outputPin="111" inputPins="102">
+      <term xsi:type="datadictionary:TRUE" id="228"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#21"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#52"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="229" outputPin="122" inputPins="102">
+      <term xsi:type="datadictionary:TRUE" id="230"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#21"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#52"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#124"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="231" outputPin="142" inputPins="102">
+      <term xsi:type="datadictionary:TRUE" id="232"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#21"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#52"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="265" outputPin="105" inputPins="102"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="266" outputPin="109" inputPins="102"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="267" outputPin="111" inputPins="102"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="268" outputPin="122" inputPins="102"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="269" outputPin="142" inputPins="102"/>
+  </behavior>
+  <behavior id="19">
+    <inPin id="113"/>
+    <outPin id="116"/>
+    <outPin id="120"/>
+    <outPin id="138"/>
+    <outPin id="140"/>
+    <assignment xsi:type="datadictionary:Assignment" id="191" outputPin="116" inputPins="113">
+      <term xsi:type="datadictionary:TRUE" id="192"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#21"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="193" outputPin="120" inputPins="113">
+      <term xsi:type="datadictionary:TRUE" id="194"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#21"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="195" outputPin="138" inputPins="113">
+      <term xsi:type="datadictionary:TRUE" id="196"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#21"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="197" outputPin="140" inputPins="113">
+      <term xsi:type="datadictionary:TRUE" id="198"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#21"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="249" outputPin="116" inputPins="113"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="250" outputPin="120" inputPins="113"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="251" outputPin="138" inputPins="113"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="252" outputPin="140" inputPins="113"/>
+  </behavior>
+  <behavior id="56">
+    <inPin id="128"/>
+    <outPin id="126"/>
+    <outPin id="131"/>
+    <outPin id="148"/>
+    <outPin id="150"/>
+    <outPin id="152"/>
+    <assignment xsi:type="datadictionary:Assignment" id="233" outputPin="126" inputPins="128">
+      <term xsi:type="datadictionary:TRUE" id="234"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#58"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#59"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="235" outputPin="131" inputPins="128">
+      <term xsi:type="datadictionary:TRUE" id="236"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#58"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#59"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="237" outputPin="148" inputPins="128">
+      <term xsi:type="datadictionary:TRUE" id="238"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#58"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#59"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="239" outputPin="150" inputPins="128">
+      <term xsi:type="datadictionary:TRUE" id="240"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#58"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#59"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="241" outputPin="152" inputPins="128">
+      <term xsi:type="datadictionary:TRUE" id="242"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#58"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#59"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="270" outputPin="126" inputPins="128"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="271" outputPin="131" inputPins="128"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="272" outputPin="148" inputPins="128"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="273" outputPin="150" inputPins="128"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="274" outputPin="152" inputPins="128"/>
+  </behavior>
+  <behavior id="26">
+    <inPin id="135"/>
+  </behavior>
+  <behavior id="14">
+    <outPin id="155"/>
+    <outPin id="157"/>
+    <outPin id="159"/>
+    <outPin id="161"/>
+    <outPin id="163"/>
+    <outPin id="165"/>
+    <outPin id="167"/>
+    <outPin id="169"/>
+    <outPin id="171"/>
+    <assignment xsi:type="datadictionary:Assignment" id="173" outputPin="155">
+      <term xsi:type="datadictionary:TRUE" id="174"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#17"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="175" outputPin="157">
+      <term xsi:type="datadictionary:TRUE" id="176"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#17"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="177" outputPin="159">
+      <term xsi:type="datadictionary:TRUE" id="178"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#17"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="179" outputPin="161">
+      <term xsi:type="datadictionary:TRUE" id="180"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#17"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="181" outputPin="163">
+      <term xsi:type="datadictionary:TRUE" id="182"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#17"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="183" outputPin="165">
+      <term xsi:type="datadictionary:TRUE" id="184"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#17"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="185" outputPin="167">
+      <term xsi:type="datadictionary:TRUE" id="186"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#17"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="187" outputPin="169">
+      <term xsi:type="datadictionary:TRUE" id="188"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#17"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="189" outputPin="171">
+      <term xsi:type="datadictionary:TRUE" id="190"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#17"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_6.datadictionary#88"/>
+    </assignment>
+  </behavior>
+</datadictionary:DataDictionary>

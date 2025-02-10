@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_ajZ4s-CNEe-LfM-jfeWyyA">
+  <labelTypes id="_ajZ4t-CNEe-LfM-jfeWyyA" entityName="ProcessingType">
+    <label id="_ajZ4wuCNEe-LfM-jfeWyyA" entityName="Collecting"/>
+    <label id="_ajZ4w-CNEe-LfM-jfeWyyA" entityName="Storing"/>
+    <label id="_ajZ4xOCNEe-LfM-jfeWyyA" entityName="Usage"/>
+    <label id="_ajZ4xeCNEe-LfM-jfeWyyA" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_ajZ4uOCNEe-LfM-jfeWyyA" entityName="Data"/>
+  <labelTypes id="_ajZ4ueCNEe-LfM-jfeWyyA" entityName="PersonalData"/>
+  <labelTypes id="_ajZ4uuCNEe-LfM-jfeWyyA" entityName="Obligation"/>
+  <labelTypes id="_ajZ4u-CNEe-LfM-jfeWyyA" entityName="Consent"/>
+  <labelTypes id="_ajZ4vOCNEe-LfM-jfeWyyA" entityName="Contract"/>
+  <labelTypes id="_ajZ4veCNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
+  <labelTypes id="_ajZ4vuCNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
+  <labelTypes id="_ajZ4v-CNEe-LfM-jfeWyyA" entityName="Controller"/>
+  <labelTypes id="_ajZ4wOCNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
+  <labelTypes id="_ajZ4weCNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <behavior id="85">
+    <inPin id="163"/>
+    <outPin id="160"/>
+    <assignment xsi:type="datadictionary:Assignment" id="249" outputPin="160" inputPins="163">
+      <term xsi:type="datadictionary:TRUE" id="250"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#87"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#88"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#45"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#162"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="286" outputPin="160" inputPins="163"/>
+  </behavior>
+  <behavior id="42">
+    <inPin id="170"/>
+  </behavior>
+  <behavior id="60">
+    <inPin id="96"/>
+    <outPin id="101"/>
+    <outPin id="109"/>
+    <outPin id="114"/>
+    <outPin id="128"/>
+    <outPin id="141"/>
+    <outPin id="150"/>
+    <outPin id="185"/>
+    <assignment xsi:type="datadictionary:Assignment" id="223" outputPin="101" inputPins="96">
+      <term xsi:type="datadictionary:TRUE" id="224"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="225" outputPin="109" inputPins="96">
+      <term xsi:type="datadictionary:TRUE" id="226"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="227" outputPin="114" inputPins="96">
+      <term xsi:type="datadictionary:TRUE" id="228"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="229" outputPin="128" inputPins="96">
+      <term xsi:type="datadictionary:TRUE" id="230"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="231" outputPin="141" inputPins="96">
+      <term xsi:type="datadictionary:TRUE" id="232"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="233" outputPin="150" inputPins="96">
+      <term xsi:type="datadictionary:TRUE" id="234"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="235" outputPin="185" inputPins="96">
+      <term xsi:type="datadictionary:TRUE" id="236"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#162"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="273" outputPin="101" inputPins="96"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="274" outputPin="109" inputPins="96"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="275" outputPin="114" inputPins="96"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="276" outputPin="128" inputPins="96"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="277" outputPin="141" inputPins="96"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="278" outputPin="150" inputPins="96"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="279" outputPin="185" inputPins="96"/>
+  </behavior>
+  <behavior id="33">
+    <inPin id="103"/>
+    <outPin id="97"/>
+    <outPin id="107"/>
+    <outPin id="112"/>
+    <outPin id="126"/>
+    <outPin id="139"/>
+    <outPin id="157"/>
+    <outPin id="183"/>
+    <assignment xsi:type="datadictionary:Assignment" id="197" outputPin="97" inputPins="103">
+      <term xsi:type="datadictionary:TRUE" id="198"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#35"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="199" outputPin="107" inputPins="103">
+      <term xsi:type="datadictionary:TRUE" id="200"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#35"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="201" outputPin="112" inputPins="103">
+      <term xsi:type="datadictionary:TRUE" id="202"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#35"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="203" outputPin="126" inputPins="103">
+      <term xsi:type="datadictionary:TRUE" id="204"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#35"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="205" outputPin="139" inputPins="103">
+      <term xsi:type="datadictionary:TRUE" id="206"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#35"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="207" outputPin="157" inputPins="103">
+      <term xsi:type="datadictionary:TRUE" id="208"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#35"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="209" outputPin="183" inputPins="103">
+      <term xsi:type="datadictionary:TRUE" id="210"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#35"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#162"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="260" outputPin="97" inputPins="103"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="261" outputPin="107" inputPins="103"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="262" outputPin="112" inputPins="103"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="263" outputPin="126" inputPins="103"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="264" outputPin="139" inputPins="103"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="265" outputPin="157" inputPins="103"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="266" outputPin="183" inputPins="103"/>
+  </behavior>
+  <behavior id="70">
+    <inPin id="100"/>
+    <outPin id="104"/>
+    <outPin id="137"/>
+    <outPin id="177"/>
+    <assignment xsi:type="datadictionary:Assignment" id="239" outputPin="104" inputPins="100">
+      <term xsi:type="datadictionary:TRUE" id="240"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#72"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="241" outputPin="137" inputPins="100">
+      <term xsi:type="datadictionary:TRUE" id="242"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#72"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="243" outputPin="177" inputPins="100">
+      <term xsi:type="datadictionary:TRUE" id="244"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#72"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#162"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="281" outputPin="104" inputPins="100"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="282" outputPin="137" inputPins="100"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="283" outputPin="177" inputPins="100"/>
+  </behavior>
+  <behavior id="55">
+    <inPin id="106"/>
+    <outPin id="173"/>
+    <assignment xsi:type="datadictionary:Assignment" id="221" outputPin="173" inputPins="106">
+      <term xsi:type="datadictionary:TRUE" id="222"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#20"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#162"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="272" outputPin="173" inputPins="106"/>
+  </behavior>
+  <behavior id="64">
+    <inPin id="130"/>
+    <outPin id="118"/>
+    <assignment xsi:type="datadictionary:Assignment" id="237" outputPin="118" inputPins="130">
+      <term xsi:type="datadictionary:TRUE" id="238"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#66"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#120"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#122"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="280" outputPin="118" inputPins="130"/>
+  </behavior>
+  <behavior id="39">
+    <inPin id="111"/>
+    <outPin id="116"/>
+    <outPin id="187"/>
+    <assignment xsi:type="datadictionary:Assignment" id="211" outputPin="116" inputPins="111">
+      <term xsi:type="datadictionary:TRUE" id="212"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#20"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#23"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="213" outputPin="187" inputPins="111">
+      <term xsi:type="datadictionary:TRUE" id="214"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#20"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#23"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#162"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="267" outputPin="116" inputPins="111"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="268" outputPin="187" inputPins="111"/>
+  </behavior>
+  <behavior id="21">
+    <inPin id="125"/>
+    <outPin id="123"/>
+    <outPin id="131"/>
+    <outPin id="175"/>
+    <assignment xsi:type="datadictionary:Assignment" id="189" outputPin="123" inputPins="125">
+      <term xsi:type="datadictionary:TRUE" id="190"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#20"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#23"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="191" outputPin="131" inputPins="125">
+      <term xsi:type="datadictionary:TRUE" id="192"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#20"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#23"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#133"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#135"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="193" outputPin="175" inputPins="125">
+      <term xsi:type="datadictionary:TRUE" id="194"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#20"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#23"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#162"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="257" outputPin="123" inputPins="125"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="258" outputPin="131" inputPins="125"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="259" outputPin="175" inputPins="125"/>
+  </behavior>
+  <behavior id="76">
+    <inPin id="136"/>
+    <outPin id="143"/>
+    <outPin id="179"/>
+    <assignment xsi:type="datadictionary:Assignment" id="245" outputPin="143" inputPins="136">
+      <term xsi:type="datadictionary:TRUE" id="246"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#78"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#79"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#80"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#81"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#145"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#146"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#148"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="247" outputPin="179" inputPins="136">
+      <term xsi:type="datadictionary:TRUE" id="248"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#78"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#79"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#80"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#81"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#162"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="284" outputPin="143" inputPins="136"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="285" outputPin="179" inputPins="136"/>
+  </behavior>
+  <behavior id="89">
+    <inPin id="149"/>
+    <outPin id="152"/>
+    <outPin id="155"/>
+    <outPin id="181"/>
+    <assignment xsi:type="datadictionary:Assignment" id="251" outputPin="152" inputPins="149">
+      <term xsi:type="datadictionary:TRUE" id="252"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#91"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#92"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#79"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#154"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#145"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#146"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#148"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="253" outputPin="155" inputPins="149">
+      <term xsi:type="datadictionary:TRUE" id="254"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#91"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#92"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#79"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="255" outputPin="181" inputPins="149">
+      <term xsi:type="datadictionary:TRUE" id="256"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#91"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#92"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#79"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#162"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="287" outputPin="152" inputPins="149"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="288" outputPin="155" inputPins="149"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="289" outputPin="181" inputPins="149"/>
+  </behavior>
+  <behavior id="49">
+    <inPin id="159"/>
+    <outPin id="164"/>
+    <outPin id="166"/>
+    <outPin id="171"/>
+    <assignment xsi:type="datadictionary:Assignment" id="215" outputPin="164" inputPins="159">
+      <term xsi:type="datadictionary:TRUE" id="216"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#51"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#162"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="217" outputPin="166" inputPins="159">
+      <term xsi:type="datadictionary:TRUE" id="218"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#51"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="219" outputPin="171" inputPins="159">
+      <term xsi:type="datadictionary:TRUE" id="220"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#51"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#162"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="269" outputPin="164" inputPins="159"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="270" outputPin="166" inputPins="159"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="271" outputPin="171" inputPins="159"/>
+  </behavior>
+  <behavior id="26">
+    <outPin id="168"/>
+    <assignment xsi:type="datadictionary:Assignment" id="195" outputPin="168">
+      <term xsi:type="datadictionary:TRUE" id="196"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/apssouza22/apssouza22_7.datadictionary#99"/>
+    </assignment>
+  </behavior>
+  <behavior id="58"/>
+  <behavior id="18"/>
+</datadictionary:DataDictionary>

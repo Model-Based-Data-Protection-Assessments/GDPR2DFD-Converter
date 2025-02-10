@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_aiYlNeCNEe-LfM-jfeWyyA">
+  <labelTypes id="_aiYlU-CNEe-LfM-jfeWyyA" entityName="ProcessingType">
+    <label id="_aiYlZOCNEe-LfM-jfeWyyA" entityName="Collecting"/>
+    <label id="_aiYlZuCNEe-LfM-jfeWyyA" entityName="Storing"/>
+    <label id="_aiYlaOCNEe-LfM-jfeWyyA" entityName="Usage"/>
+    <label id="_aiYlauCNEe-LfM-jfeWyyA" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_aiYlVOCNEe-LfM-jfeWyyA" entityName="Data"/>
+  <labelTypes id="_aiYlVeCNEe-LfM-jfeWyyA" entityName="PersonalData"/>
+  <labelTypes id="_aiYlVuCNEe-LfM-jfeWyyA" entityName="Obligation"/>
+  <labelTypes id="_aiYlWOCNEe-LfM-jfeWyyA" entityName="Consent"/>
+  <labelTypes id="_aiYlWeCNEe-LfM-jfeWyyA" entityName="Contract"/>
+  <labelTypes id="_aiYlW-CNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
+  <labelTypes id="_aiYlXeCNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
+  <labelTypes id="_aiYlX-CNEe-LfM-jfeWyyA" entityName="Controller"/>
+  <labelTypes id="_aiYlYeCNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
+  <labelTypes id="_aiYlY-CNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <behavior id="_aiYlN-CNEe-LfM-jfeWyyA" entityName="github_repository Behavior"/>
+  <behavior id="_aiYlOeCNEe-LfM-jfeWyyA" entityName="database_movie_service Behavior"/>
+  <behavior id="_aiYlO-CNEe-LfM-jfeWyyA" entityName="database_user_service Behavior"/>
+  <behavior id="_aiYlPeCNEe-LfM-jfeWyyA" entityName="database_recommendation_service Behavior"/>
+  <behavior id="_aiYlP-CNEe-LfM-jfeWyyA" entityName="user Behavior"/>
+  <behavior id="_aiYlQeCNEe-LfM-jfeWyyA" entityName="config_service Behavior"/>
+  <behavior id="_aiYlQ-CNEe-LfM-jfeWyyA" entityName="eureka_service Behavior"/>
+  <behavior id="_aiYlReCNEe-LfM-jfeWyyA" entityName="movie_service Behavior"/>
+  <behavior id="_aiYlR-CNEe-LfM-jfeWyyA" entityName="user_service Behavior"/>
+  <behavior id="_aiYlSeCNEe-LfM-jfeWyyA" entityName="recommendation_service Behavior"/>
+  <behavior id="_aiYlTOCNEe-LfM-jfeWyyA" entityName="recommendation_client Behavior"/>
+  <behavior id="_aiYlT-CNEe-LfM-jfeWyyA" entityName="authorization_server Behavior"/>
+</datadictionary:DataDictionary>

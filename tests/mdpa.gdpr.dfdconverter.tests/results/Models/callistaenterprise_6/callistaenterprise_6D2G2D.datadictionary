@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_aep7neCNEe-LfM-jfeWyyA">
+  <labelTypes id="_aes_deCNEe-LfM-jfeWyyA" entityName="ProcessingType">
+    <label id="_aewpWOCNEe-LfM-jfeWyyA" entityName="Collecting"/>
+    <label id="_aewpWeCNEe-LfM-jfeWyyA" entityName="Storing"/>
+    <label id="_aewpWuCNEe-LfM-jfeWyyA" entityName="Usage"/>
+    <label id="_aewpW-CNEe-LfM-jfeWyyA" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_aes_duCNEe-LfM-jfeWyyA" entityName="Data"/>
+  <labelTypes id="_aes_d-CNEe-LfM-jfeWyyA" entityName="PersonalData"/>
+  <labelTypes id="_aes_eOCNEe-LfM-jfeWyyA" entityName="Obligation"/>
+  <labelTypes id="_aes_eeCNEe-LfM-jfeWyyA" entityName="Consent"/>
+  <labelTypes id="_aes_euCNEe-LfM-jfeWyyA" entityName="Contract"/>
+  <labelTypes id="_aes_e-CNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
+  <labelTypes id="_aes_fOCNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
+  <labelTypes id="_aes_feCNEe-LfM-jfeWyyA" entityName="Controller"/>
+  <labelTypes id="_aetl4OCNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
+  <labelTypes id="_aetl4eCNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <behavior id="101">
+    <outPin id="136"/>
+    <assignment xsi:type="datadictionary:Assignment" id="266" outputPin="136">
+      <term xsi:type="datadictionary:TRUE" id="267"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#103"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#104"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#131"/>
+    </assignment>
+  </behavior>
+  <behavior id="111">
+    <inPin id="196"/>
+    <outPin id="200"/>
+    <assignment xsi:type="datadictionary:Assignment" id="268" outputPin="200" inputPins="196">
+      <term xsi:type="datadictionary:TRUE" id="269"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#113"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#104"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#114"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#131"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="301" outputPin="200" inputPins="196"/>
+  </behavior>
+  <behavior id="57">
+    <inPin id="132"/>
+    <outPin id="129"/>
+    <assignment xsi:type="datadictionary:Assignment" id="224" outputPin="129" inputPins="132">
+      <term xsi:type="datadictionary:TRUE" id="225"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#59"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#131"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="280" outputPin="129" inputPins="132"/>
+  </behavior>
+  <behavior id="107">
+    <inPin id="128"/>
+  </behavior>
+  <behavior id="51">
+    <outPin id="133"/>
+    <assignment xsi:type="datadictionary:Assignment" id="222" outputPin="133">
+      <term xsi:type="datadictionary:TRUE" id="223"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#53"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#131"/>
+    </assignment>
+  </behavior>
+  <behavior id="42">
+    <inPin id="141"/>
+    <outPin id="153"/>
+    <outPin id="162"/>
+    <assignment xsi:type="datadictionary:Assignment" id="216" outputPin="153" inputPins="141">
+      <term xsi:type="datadictionary:TRUE" id="217"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#44"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#131"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="218" outputPin="162" inputPins="141">
+      <term xsi:type="datadictionary:TRUE" id="219"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#44"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#131"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="277" outputPin="153" inputPins="141"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="278" outputPin="162" inputPins="141"/>
+  </behavior>
+  <behavior id="83">
+    <inPin id="138"/>
+    <outPin id="204"/>
+    <assignment xsi:type="datadictionary:Assignment" id="258" outputPin="204" inputPins="138">
+      <term xsi:type="datadictionary:TRUE" id="259"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#85"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#86"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#131"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="297" outputPin="204" inputPins="138"/>
+  </behavior>
+  <behavior id="77">
+    <inPin id="135"/>
+    <outPin id="139"/>
+    <outPin id="142"/>
+    <outPin id="145"/>
+    <outPin id="148"/>
+    <outPin id="157"/>
+    <outPin id="165"/>
+    <outPin id="170"/>
+    <outPin id="175"/>
+    <outPin id="180"/>
+    <outPin id="206"/>
+    <assignment xsi:type="datadictionary:Assignment" id="238" outputPin="139" inputPins="135">
+      <term xsi:type="datadictionary:TRUE" id="239"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#79"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#131"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="240" outputPin="142" inputPins="135">
+      <term xsi:type="datadictionary:TRUE" id="241"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#79"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#131"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="242" outputPin="145" inputPins="135">
+      <term xsi:type="datadictionary:TRUE" id="243"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#79"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#131"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="244" outputPin="148" inputPins="135">
+      <term xsi:type="datadictionary:TRUE" id="245"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#79"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#131"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="246" outputPin="157" inputPins="135">
+      <term xsi:type="datadictionary:TRUE" id="247"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#79"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#131"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="248" outputPin="165" inputPins="135">
+      <term xsi:type="datadictionary:TRUE" id="249"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#79"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#131"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="250" outputPin="170" inputPins="135">
+      <term xsi:type="datadictionary:TRUE" id="251"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#79"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#131"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="252" outputPin="175" inputPins="135">
+      <term xsi:type="datadictionary:TRUE" id="253"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#79"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#131"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="254" outputPin="180" inputPins="135">
+      <term xsi:type="datadictionary:TRUE" id="255"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#79"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#131"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="256" outputPin="206" inputPins="135">
+      <term xsi:type="datadictionary:TRUE" id="257"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#79"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#131"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="287" outputPin="139" inputPins="135"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="288" outputPin="142" inputPins="135"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="289" outputPin="145" inputPins="135"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="290" outputPin="148" inputPins="135"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="291" outputPin="157" inputPins="135"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="292" outputPin="165" inputPins="135"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="293" outputPin="170" inputPins="135"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="294" outputPin="175" inputPins="135"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="295" outputPin="180" inputPins="135"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="296" outputPin="206" inputPins="135"/>
+  </behavior>
+  <behavior id="115">
+    <inPin id="144"/>
+    <outPin id="182"/>
+    <assignment xsi:type="datadictionary:Assignment" id="270" outputPin="182" inputPins="144">
+      <term xsi:type="datadictionary:TRUE" id="271"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#117"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#73"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#86"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#118"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#131"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="302" outputPin="182" inputPins="144"/>
+  </behavior>
+  <behavior id="63">
+    <inPin id="147"/>
+    <outPin id="150"/>
+    <assignment xsi:type="datadictionary:Assignment" id="226" outputPin="150" inputPins="147">
+      <term xsi:type="datadictionary:TRUE" id="227"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#65"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#131"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="281" outputPin="150" inputPins="147"/>
+  </behavior>
+  <behavior id="36">
+    <inPin id="152"/>
+    <outPin id="155"/>
+    <outPin id="159"/>
+    <assignment xsi:type="datadictionary:Assignment" id="212" outputPin="155" inputPins="152">
+      <term xsi:type="datadictionary:TRUE" id="213"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#38"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#131"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="214" outputPin="159" inputPins="152">
+      <term xsi:type="datadictionary:TRUE" id="215"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#38"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#131"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="275" outputPin="155" inputPins="152"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="276" outputPin="159" inputPins="152"/>
+  </behavior>
+  <behavior id="20">
+    <inPin id="161"/>
+  </behavior>
+  <behavior id="125">
+    <inPin id="164"/>
+    <outPin id="167"/>
+    <assignment xsi:type="datadictionary:Assignment" id="272" outputPin="167" inputPins="164">
+      <term xsi:type="datadictionary:TRUE" id="273"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#30"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#131"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="303" outputPin="167" inputPins="164"/>
+  </behavior>
+  <behavior id="28">
+    <inPin id="169"/>
+    <outPin id="172"/>
+    <assignment xsi:type="datadictionary:Assignment" id="210" outputPin="172" inputPins="169">
+      <term xsi:type="datadictionary:TRUE" id="211"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#30"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#131"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="274" outputPin="172" inputPins="169"/>
+  </behavior>
+  <behavior id="48">
+    <inPin id="174"/>
+    <outPin id="177"/>
+    <assignment xsi:type="datadictionary:Assignment" id="220" outputPin="177" inputPins="174">
+      <term xsi:type="datadictionary:TRUE" id="221"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#30"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#131"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="279" outputPin="177" inputPins="174"/>
+  </behavior>
+  <behavior id="69">
+    <inPin id="179"/>
+    <outPin id="184"/>
+    <outPin id="188"/>
+    <outPin id="190"/>
+    <outPin id="192"/>
+    <outPin id="194"/>
+    <assignment xsi:type="datadictionary:Assignment" id="228" outputPin="184" inputPins="179">
+      <term xsi:type="datadictionary:TRUE" id="229"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#30"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#71"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#72"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#73"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#131"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#186"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#187"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="230" outputPin="188" inputPins="179">
+      <term xsi:type="datadictionary:TRUE" id="231"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#30"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#71"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#72"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#73"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#131"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="232" outputPin="190" inputPins="179">
+      <term xsi:type="datadictionary:TRUE" id="233"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#30"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#71"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#72"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#73"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#131"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#187"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="234" outputPin="192" inputPins="179">
+      <term xsi:type="datadictionary:TRUE" id="235"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#30"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#71"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#72"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#73"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#131"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#187"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="236" outputPin="194" inputPins="179">
+      <term xsi:type="datadictionary:TRUE" id="237"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#30"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#71"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#72"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#73"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#131"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#187"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="282" outputPin="184" inputPins="179"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="283" outputPin="188" inputPins="179"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="284" outputPin="190" inputPins="179"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="285" outputPin="192" inputPins="179"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="286" outputPin="194" inputPins="179"/>
+  </behavior>
+  <behavior id="94">
+    <inPin id="199"/>
+    <outPin id="197"/>
+    <outPin id="202"/>
+    <outPin id="208"/>
+    <assignment xsi:type="datadictionary:Assignment" id="260" outputPin="197" inputPins="199">
+      <term xsi:type="datadictionary:TRUE" id="261"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#96"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#73"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#72"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#71"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#131"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="262" outputPin="202" inputPins="199">
+      <term xsi:type="datadictionary:TRUE" id="263"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#96"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#73"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#72"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#71"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#131"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#186"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="264" outputPin="208" inputPins="199">
+      <term xsi:type="datadictionary:TRUE" id="265"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#22"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#96"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#73"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#72"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#71"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/callistaenterprise/callistaenterprise_6.datadictionary#131"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="298" outputPin="197" inputPins="199"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="299" outputPin="202" inputPins="199"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="300" outputPin="208" inputPins="199"/>
+  </behavior>
+</datadictionary:DataDictionary>

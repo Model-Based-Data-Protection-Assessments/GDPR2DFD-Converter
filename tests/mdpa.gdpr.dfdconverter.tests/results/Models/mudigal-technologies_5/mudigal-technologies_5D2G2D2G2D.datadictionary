@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_amC9OeCNEe-LfM-jfeWyyA">
+  <labelTypes id="_amDkJOCNEe-LfM-jfeWyyA" entityName="ProcessingType">
+    <label id="_amDkMuCNEe-LfM-jfeWyyA" entityName="Collecting"/>
+    <label id="_amDkM-CNEe-LfM-jfeWyyA" entityName="Storing"/>
+    <label id="_amDkNOCNEe-LfM-jfeWyyA" entityName="Usage"/>
+    <label id="_amDkNeCNEe-LfM-jfeWyyA" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_amDkJeCNEe-LfM-jfeWyyA" entityName="Data"/>
+  <labelTypes id="_amDkJuCNEe-LfM-jfeWyyA" entityName="PersonalData"/>
+  <labelTypes id="_amDkJ-CNEe-LfM-jfeWyyA" entityName="Obligation"/>
+  <labelTypes id="_amDkKeCNEe-LfM-jfeWyyA" entityName="Consent"/>
+  <labelTypes id="_amDkKuCNEe-LfM-jfeWyyA" entityName="Contract"/>
+  <labelTypes id="_amDkK-CNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
+  <labelTypes id="_amDkLOCNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
+  <labelTypes id="_amDkL-CNEe-LfM-jfeWyyA" entityName="Controller"/>
+  <labelTypes id="_amDkMOCNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
+  <labelTypes id="_amDkMeCNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <behavior id="_amC9PuCNEe-LfM-jfeWyyA" entityName="user Behavior"/>
+  <behavior id="_amC9RuCNEe-LfM-jfeWyyA" entityName="consul Behavior"/>
+  <behavior id="_amC9SOCNEe-LfM-jfeWyyA" entityName="consul2 Behavior"/>
+  <behavior id="_amC9SuCNEe-LfM-jfeWyyA" entityName="consul3 Behavior"/>
+  <behavior id="_amC9TuCNEe-LfM-jfeWyyA" entityName="elasticsearch Behavior"/>
+  <behavior id="_amC9U-CNEe-LfM-jfeWyyA" entityName="logstash Behavior"/>
+  <behavior id="_amC9VeCNEe-LfM-jfeWyyA" entityName="kibana Behavior"/>
+  <behavior id="_amC9WOCNEe-LfM-jfeWyyA" entityName="rabbit Behavior"/>
+  <behavior id="_amDkAOCNEe-LfM-jfeWyyA" entityName="service_one Behavior"/>
+  <behavior id="_amDkAuCNEe-LfM-jfeWyyA" entityName="service_two Behavior"/>
+  <behavior id="_amDkDeCNEe-LfM-jfeWyyA" entityName="service_one_db Behavior"/>
+  <behavior id="_amDkEeCNEe-LfM-jfeWyyA" entityName="service_two_db Behavior"/>
+  <behavior id="_amDkHeCNEe-LfM-jfeWyyA" entityName="api_gateway Behavior"/>
+  <behavior id="_amDkH-CNEe-LfM-jfeWyyA" entityName="web_application Behavior"/>
+  <behavior id="_amDkIeCNEe-LfM-jfeWyyA" entityName="scope Behavior"/>
+  <behavior id="_amDkI-CNEe-LfM-jfeWyyA" entityName="authorization_server Behavior"/>
+</datadictionary:DataDictionary>

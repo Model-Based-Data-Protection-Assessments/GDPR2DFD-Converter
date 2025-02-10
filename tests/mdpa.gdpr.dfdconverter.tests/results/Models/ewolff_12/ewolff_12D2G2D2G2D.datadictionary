@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_aiFqFuCNEe-LfM-jfeWyyA">
+  <labelTypes id="_aiFqKeCNEe-LfM-jfeWyyA" entityName="ProcessingType">
+    <label id="_aiFqNOCNEe-LfM-jfeWyyA" entityName="Collecting"/>
+    <label id="_aiFqNeCNEe-LfM-jfeWyyA" entityName="Storing"/>
+    <label id="_aiFqNuCNEe-LfM-jfeWyyA" entityName="Usage"/>
+    <label id="_aiFqN-CNEe-LfM-jfeWyyA" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_aiFqKuCNEe-LfM-jfeWyyA" entityName="Data"/>
+  <labelTypes id="_aiFqK-CNEe-LfM-jfeWyyA" entityName="PersonalData"/>
+  <labelTypes id="_aiFqLOCNEe-LfM-jfeWyyA" entityName="Obligation"/>
+  <labelTypes id="_aiFqLeCNEe-LfM-jfeWyyA" entityName="Consent"/>
+  <labelTypes id="_aiFqLuCNEe-LfM-jfeWyyA" entityName="Contract"/>
+  <labelTypes id="_aiFqL-CNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
+  <labelTypes id="_aiFqMOCNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
+  <labelTypes id="_aiFqMeCNEe-LfM-jfeWyyA" entityName="Controller"/>
+  <labelTypes id="_aiFqMuCNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
+  <labelTypes id="_aiFqM-CNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <behavior id="_aiFqGOCNEe-LfM-jfeWyyA" entityName="user Behavior"/>
+  <behavior id="_aiFqGuCNEe-LfM-jfeWyyA" entityName="eureka Behavior"/>
+  <behavior id="_aiFqHOCNEe-LfM-jfeWyyA" entityName="zuul Behavior"/>
+  <behavior id="_aiFqHuCNEe-LfM-jfeWyyA" entityName="turbine Behavior"/>
+  <behavior id="_aiFqIOCNEe-LfM-jfeWyyA" entityName="catalog Behavior"/>
+  <behavior id="_aiFqIuCNEe-LfM-jfeWyyA" entityName="customer Behavior"/>
+  <behavior id="_aiFqJOCNEe-LfM-jfeWyyA" entityName="order Behavior"/>
+  <behavior id="_aiFqJuCNEe-LfM-jfeWyyA" entityName="message_broker Behavior"/>
+  <behavior id="_aiFqKOCNEe-LfM-jfeWyyA" entityName="logging_server Behavior"/>
+</datadictionary:DataDictionary>

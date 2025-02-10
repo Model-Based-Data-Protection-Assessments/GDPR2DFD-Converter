@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_aiVhueCNEe-LfM-jfeWyyA">
+  <labelTypes id="_aiVhyOCNEe-LfM-jfeWyyA" entityName="ProcessingType">
+    <label id="_aiVh2OCNEe-LfM-jfeWyyA" entityName="Collecting"/>
+    <label id="_aiVh2eCNEe-LfM-jfeWyyA" entityName="Storing"/>
+    <label id="_aiVh2-CNEe-LfM-jfeWyyA" entityName="Usage"/>
+    <label id="_aiVh3eCNEe-LfM-jfeWyyA" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_aiVhyeCNEe-LfM-jfeWyyA" entityName="Data"/>
+  <labelTypes id="_aiVhyuCNEe-LfM-jfeWyyA" entityName="PersonalData"/>
+  <labelTypes id="_aiVhzOCNEe-LfM-jfeWyyA" entityName="Obligation"/>
+  <labelTypes id="_aiVhzuCNEe-LfM-jfeWyyA" entityName="Consent"/>
+  <labelTypes id="_aiVhz-CNEe-LfM-jfeWyyA" entityName="Contract"/>
+  <labelTypes id="_aiVh0OCNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
+  <labelTypes id="_aiVh0eCNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
+  <labelTypes id="_aiVh0-CNEe-LfM-jfeWyyA" entityName="Controller"/>
+  <labelTypes id="_aiVh1eCNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
+  <labelTypes id="_aiVh1uCNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <behavior id="89">
+    <outPin id="106"/>
+    <assignment xsi:type="datadictionary:Assignment" id="197" outputPin="106">
+      <term xsi:type="datadictionary:TRUE" id="198"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#91"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#60"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#108"/>
+    </assignment>
+  </behavior>
+  <behavior id="94">
+    <outPin id="117"/>
+    <assignment xsi:type="datadictionary:Assignment" id="199" outputPin="117">
+      <term xsi:type="datadictionary:TRUE" id="200"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#60"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#59"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#61"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#119"/>
+    </assignment>
+  </behavior>
+  <behavior id="79">
+    <outPin id="125"/>
+    <assignment xsi:type="datadictionary:Assignment" id="191" outputPin="125">
+      <term xsi:type="datadictionary:TRUE" id="192"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#60"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#59"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#61"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#62"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#119"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#127"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#81"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#69"/>
+    </assignment>
+  </behavior>
+  <behavior id="57">
+    <outPin id="133"/>
+    <assignment xsi:type="datadictionary:Assignment" id="185" outputPin="133">
+      <term xsi:type="datadictionary:TRUE" id="186"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#59"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#60"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#61"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#62"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#119"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#127"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#64"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#69"/>
+    </assignment>
+  </behavior>
+  <behavior id="102">
+    <inPin id="140"/>
+    <outPin id="138"/>
+    <assignment xsi:type="datadictionary:Assignment" id="213" outputPin="138" inputPins="140">
+      <term xsi:type="datadictionary:TRUE" id="214"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#104"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#60"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#59"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#108"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="234" outputPin="138" inputPins="140"/>
+  </behavior>
+  <behavior id="96">
+    <inPin id="105"/>
+    <outPin id="110"/>
+    <outPin id="115"/>
+    <outPin id="123"/>
+    <outPin id="131"/>
+    <outPin id="143"/>
+    <outPin id="155"/>
+    <assignment xsi:type="datadictionary:Assignment" id="201" outputPin="110" inputPins="105">
+      <term xsi:type="datadictionary:TRUE" id="202"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#98"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#108"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="203" outputPin="115" inputPins="105">
+      <term xsi:type="datadictionary:TRUE" id="204"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#98"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#108"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="205" outputPin="123" inputPins="105">
+      <term xsi:type="datadictionary:TRUE" id="206"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#98"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#108"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="207" outputPin="131" inputPins="105">
+      <term xsi:type="datadictionary:TRUE" id="208"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#98"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#108"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="209" outputPin="143" inputPins="105">
+      <term xsi:type="datadictionary:TRUE" id="210"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#98"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#108"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="211" outputPin="155" inputPins="105">
+      <term xsi:type="datadictionary:TRUE" id="212"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#98"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#108"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="228" outputPin="110" inputPins="105"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="229" outputPin="115" inputPins="105"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="230" outputPin="123" inputPins="105"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="231" outputPin="131" inputPins="105"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="232" outputPin="143" inputPins="105"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="233" outputPin="155" inputPins="105"/>
+  </behavior>
+  <behavior id="24">
+    <inPin id="109"/>
+    <outPin id="136"/>
+    <outPin id="157"/>
+    <assignment xsi:type="datadictionary:Assignment" id="171" outputPin="136" inputPins="109">
+      <term xsi:type="datadictionary:TRUE" id="172"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#26"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#108"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="173" outputPin="157" inputPins="109">
+      <term xsi:type="datadictionary:TRUE" id="174"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#26"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#108"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="217" outputPin="136" inputPins="109"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="218" outputPin="157" inputPins="109"/>
+  </behavior>
+  <behavior id="84">
+    <inPin id="114"/>
+    <outPin id="112"/>
+    <outPin id="159"/>
+    <assignment xsi:type="datadictionary:Assignment" id="193" outputPin="112" inputPins="114">
+      <term xsi:type="datadictionary:TRUE" id="194"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#17"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#108"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="195" outputPin="159" inputPins="114">
+      <term xsi:type="datadictionary:TRUE" id="196"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#17"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#108"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="226" outputPin="112" inputPins="114"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="227" outputPin="159" inputPins="114"/>
+  </behavior>
+  <behavior id="15">
+    <inPin id="122"/>
+    <outPin id="120"/>
+    <outPin id="161"/>
+    <assignment xsi:type="datadictionary:Assignment" id="167" outputPin="120" inputPins="122">
+      <term xsi:type="datadictionary:TRUE" id="168"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#17"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#108"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="169" outputPin="161" inputPins="122">
+      <term xsi:type="datadictionary:TRUE" id="170"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#17"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#108"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="215" outputPin="120" inputPins="122"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="216" outputPin="161" inputPins="122"/>
+  </behavior>
+  <behavior id="70">
+    <inPin id="130"/>
+    <outPin id="128"/>
+    <outPin id="163"/>
+    <assignment xsi:type="datadictionary:Assignment" id="187" outputPin="128" inputPins="130">
+      <term xsi:type="datadictionary:TRUE" id="188"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#17"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#108"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="189" outputPin="163" inputPins="130">
+      <term xsi:type="datadictionary:TRUE" id="190"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#17"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#108"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="224" outputPin="128" inputPins="130"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="225" outputPin="163" inputPins="130"/>
+  </behavior>
+  <behavior id="34">
+    <inPin id="135"/>
+    <outPin id="141"/>
+    <outPin id="145"/>
+    <outPin id="150"/>
+    <outPin id="152"/>
+    <outPin id="165"/>
+    <assignment xsi:type="datadictionary:Assignment" id="175" outputPin="141" inputPins="135">
+      <term xsi:type="datadictionary:TRUE" id="176"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#36"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#37"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#38"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#39"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#40"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#108"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="177" outputPin="145" inputPins="135">
+      <term xsi:type="datadictionary:TRUE" id="178"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#36"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#37"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#38"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#39"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#40"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#108"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#147"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#148"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#149"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#51"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#56"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="179" outputPin="150" inputPins="135">
+      <term xsi:type="datadictionary:TRUE" id="180"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#36"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#37"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#38"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#39"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#40"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#108"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#147"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#148"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#149"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#51"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#56"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="181" outputPin="152" inputPins="135">
+      <term xsi:type="datadictionary:TRUE" id="182"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#36"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#37"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#38"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#39"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#40"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#108"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#148"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#147"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#149"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#51"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#56"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="183" outputPin="165" inputPins="135">
+      <term xsi:type="datadictionary:TRUE" id="184"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#36"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#37"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#38"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#39"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#40"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#108"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="219" outputPin="141" inputPins="135"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="220" outputPin="145" inputPins="135"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="221" outputPin="150" inputPins="135"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="222" outputPin="152" inputPins="135"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="223" outputPin="165" inputPins="135"/>
+  </behavior>
+  <behavior id="31">
+    <inPin id="154"/>
+  </behavior>
+</datadictionary:DataDictionary>

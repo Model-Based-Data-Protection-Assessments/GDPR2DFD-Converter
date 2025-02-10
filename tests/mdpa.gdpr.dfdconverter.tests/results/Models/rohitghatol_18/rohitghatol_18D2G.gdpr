@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<GDPR:LegalAssessmentFacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" id="0">
+  <processing xsi:type="GDPR:Usage" id="2" entityName="github_repository" followingProcessing="5"/>
+  <processing xsi:type="GDPR:Usage" id="3" entityName="database_auth_server" followingProcessing="7 12"/>
+  <processing xsi:type="GDPR:Usage" id="4" entityName="user" followingProcessing="12"/>
+  <processing xsi:type="GDPR:Usage" id="5" entityName="configserver" followingProcessing="6 7 8 9 10 11 12 13"/>
+  <processing xsi:type="GDPR:Usage" id="6" entityName="webservice_registry" followingProcessing="12 13"/>
+  <processing xsi:type="GDPR:Usage" id="7" entityName="auth_server" followingProcessing="6 9 10 11 13"/>
+  <processing xsi:type="GDPR:Usage" id="8" entityName="web_portal" followingProcessing="6 13"/>
+  <processing xsi:type="GDPR:Usage" id="9" entityName="user_webservice" followingProcessing="6 13"/>
+  <processing xsi:type="GDPR:Usage" id="10" entityName="comments_webservice" followingProcessing="6 13"/>
+  <processing xsi:type="GDPR:Usage" id="11" entityName="task_webservice" followingProcessing="6 10 13"/>
+  <processing xsi:type="GDPR:Usage" id="12" entityName="api_gateway" followingProcessing="4 7 9 11 8 13"/>
+  <processing xsi:type="GDPR:Usage" id="13" entityName="secret_manager"/>
+</GDPR:LegalAssessmentFacts>

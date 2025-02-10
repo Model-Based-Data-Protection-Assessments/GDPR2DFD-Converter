@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="ASCII"?>
 <GDPR:LegalAssessmentFacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" id="_tt-9EPHNEe62x6SamO9Dsg">
-  <processing xsi:type="GDPR:Usage" id="xvpuf8" entityName="Anonymization" purpose="8k3v" onTheBasisOf="772yn" followingProcessing="kqcy12" 
-  inputData="fi6k6x" 
-  outputData="mnpnio"
-  />
-  <processing xsi:type="GDPR:Transferring" id="kqcy12" entityName="Transferring" purpose="8k3v" onTheBasisOf="y7y8dg" followingProcessing="fas8l" 
-  inputData="mnpnio" 
-  outputData="mnpnio"
-  />
-  <processing xsi:type="GDPR:Usage" id="fas8l" entityName="Usage" purpose="8k3v" onTheBasisOf="quu8ak" followingProcessing="1liryp" 
-  inputData="mnpnio" 
-  outputData="mnpnio"
-  />
-  <processing xsi:type="GDPR:Storing" id="1liryp" entityName="Storage" purpose="8k3v" onTheBasisOf="quu8ak" 
-  inputData="mnpnio"
-  />
-  <processing xsi:type="GDPR:Collecting" id="g4z568" entityName="Collecting" purpose="8k3v" onTheBasisOf="f7dnl" followingProcessing="xvpuf8" 
-  outputData="fi6k6x"
-  />
+  <processing xsi:type="GDPR:Usage" id="xvpuf8" entityName="Anonymization" purpose="8k3v" onTheBasisOf="772yn" followingProcessing="kqcy12">
+    <inputData href="models/GDPR/minimal.gdpr#fi6k6x"/>
+    <outputData href="models/GDPR/minimal.gdpr#mnpnio"/>
+  </processing>
+  <processing xsi:type="GDPR:Transferring" id="kqcy12" entityName="Transferring" purpose="8k3v" onTheBasisOf="y7y8dg" followingProcessing="fas8l">
+    <inputData href="models/GDPR/minimal.gdpr#mnpnio"/>
+    <outputData href="models/GDPR/minimal.gdpr#mnpnio"/>
+  </processing>
+  <processing xsi:type="GDPR:Usage" id="fas8l" entityName="Usage" purpose="8k3v" onTheBasisOf="quu8ak" followingProcessing="1liryp">
+    <inputData href="models/GDPR/minimal.gdpr#mnpnio"/>
+    <outputData href="models/GDPR/minimal.gdpr#mnpnio"/>
+  </processing>
+  <processing xsi:type="GDPR:Storing" id="1liryp" entityName="Storage" purpose="8k3v" onTheBasisOf="quu8ak">
+    <inputData href="models/GDPR/minimal.gdpr#mnpnio"/>
+  </processing>
+  <processing xsi:type="GDPR:Collecting" id="g4z568" entityName="Collecting" purpose="8k3v" onTheBasisOf="f7dnl" followingProcessing="xvpuf8">
+    <outputData href="models/GDPR/minimal.gdpr#fi6k6x"/>
+  </processing>
   <purposes id="8k3v" entityName="Purpose"/>
   <data id="mnpnio" entityName="Data"/>
   <data xsi:type="GDPR:PersonalData" id="fi6k6x" entityName="Personal Data" dataReferences="m0b8x"/>

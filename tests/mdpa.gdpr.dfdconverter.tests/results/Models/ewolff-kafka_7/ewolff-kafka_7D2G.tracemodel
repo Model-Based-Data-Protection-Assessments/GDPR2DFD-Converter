@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="ASCII"?>
+<tracemodel:TraceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" xmlns:tracemodel="http://www.example.org/tracemodel">
+  <nodeTraces>
+    <dfdNode xsi:type="dataflowdiagram:External" href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.dataflowdiagram#2"/>
+    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_7/ewolff-kafka_7D2G.gdpr#2"/>
+  </nodeTraces>
+  <nodeTraces>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.dataflowdiagram#3"/>
+    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_7/ewolff-kafka_7D2G.gdpr#3"/>
+  </nodeTraces>
+  <nodeTraces>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.dataflowdiagram#4"/>
+    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_7/ewolff-kafka_7D2G.gdpr#4"/>
+  </nodeTraces>
+  <nodeTraces>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.dataflowdiagram#5"/>
+    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_7/ewolff-kafka_7D2G.gdpr#5"/>
+  </nodeTraces>
+  <nodeTraces>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.dataflowdiagram#6"/>
+    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_7/ewolff-kafka_7D2G.gdpr#6"/>
+  </nodeTraces>
+  <nodeTraces>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.dataflowdiagram#7"/>
+    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_7/ewolff-kafka_7D2G.gdpr#7"/>
+  </nodeTraces>
+  <nodeTraces>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.dataflowdiagram#8"/>
+    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_7/ewolff-kafka_7D2G.gdpr#8"/>
+  </nodeTraces>
+  <nodeTraces>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.dataflowdiagram#9"/>
+    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_7/ewolff-kafka_7D2G.gdpr#9"/>
+  </nodeTraces>
+  <flowTraces>
+    <dataFlow href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.dataflowdiagram#53"/>
+    <source href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_7/ewolff-kafka_7D2G.gdpr#3"/>
+    <dest href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_7/ewolff-kafka_7D2G.gdpr#4"/>
+  </flowTraces>
+  <flowTraces>
+    <dataFlow href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.dataflowdiagram#56"/>
+    <source href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_7/ewolff-kafka_7D2G.gdpr#5"/>
+    <dest href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_7/ewolff-kafka_7D2G.gdpr#4"/>
+  </flowTraces>
+  <flowTraces>
+    <dataFlow href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.dataflowdiagram#62"/>
+    <source href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_7/ewolff-kafka_7D2G.gdpr#4"/>
+    <dest href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_7/ewolff-kafka_7D2G.gdpr#6"/>
+  </flowTraces>
+  <flowTraces>
+    <dataFlow href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.dataflowdiagram#68"/>
+    <source href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_7/ewolff-kafka_7D2G.gdpr#4"/>
+    <dest href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_7/ewolff-kafka_7D2G.gdpr#7"/>
+  </flowTraces>
+  <flowTraces>
+    <dataFlow href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.dataflowdiagram#71"/>
+    <source href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_7/ewolff-kafka_7D2G.gdpr#8"/>
+    <dest href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_7/ewolff-kafka_7D2G.gdpr#5"/>
+  </flowTraces>
+  <flowTraces>
+    <dataFlow href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.dataflowdiagram#73"/>
+    <source href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_7/ewolff-kafka_7D2G.gdpr#8"/>
+    <dest href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_7/ewolff-kafka_7D2G.gdpr#7"/>
+  </flowTraces>
+  <flowTraces>
+    <dataFlow href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.dataflowdiagram#75"/>
+    <source href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_7/ewolff-kafka_7D2G.gdpr#8"/>
+    <dest href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_7/ewolff-kafka_7D2G.gdpr#6"/>
+  </flowTraces>
+  <flowTraces>
+    <dataFlow href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.dataflowdiagram#78"/>
+    <source href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_7/ewolff-kafka_7D2G.gdpr#2"/>
+    <dest href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_7/ewolff-kafka_7D2G.gdpr#8"/>
+  </flowTraces>
+  <flowTraces>
+    <dataFlow href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.dataflowdiagram#82"/>
+    <source href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_7/ewolff-kafka_7D2G.gdpr#8"/>
+    <dest href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_7/ewolff-kafka_7D2G.gdpr#2"/>
+  </flowTraces>
+  <flowTraces>
+    <dataFlow href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.dataflowdiagram#84"/>
+    <source href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_7/ewolff-kafka_7D2G.gdpr#9"/>
+    <dest href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_7/ewolff-kafka_7D2G.gdpr#5"/>
+  </flowTraces>
+  <flowTraces>
+    <dataFlow href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.dataflowdiagram#92"/>
+    <source href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_7/ewolff-kafka_7D2G.gdpr#9"/>
+    <dest href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_7/ewolff-kafka_7D2G.gdpr#7"/>
+  </flowTraces>
+  <flowTraces>
+    <dataFlow href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff-kafka/ewolff-kafka_7.dataflowdiagram#94"/>
+    <source href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_7/ewolff-kafka_7D2G.gdpr#9"/>
+    <dest href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_7/ewolff-kafka_7D2G.gdpr#6"/>
+  </flowTraces>
+</tracemodel:TraceModel>

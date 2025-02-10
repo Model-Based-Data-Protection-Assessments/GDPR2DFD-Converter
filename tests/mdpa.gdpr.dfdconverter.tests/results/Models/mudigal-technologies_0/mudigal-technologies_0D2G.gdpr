@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ASCII"?>
+<GDPR:LegalAssessmentFacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" id="0">
+  <processing xsi:type="GDPR:Usage" id="2" entityName="user" followingProcessing="15"/>
+  <processing xsi:type="GDPR:Usage" id="3" entityName="consul" followingProcessing="10 11 14 16"/>
+  <processing xsi:type="GDPR:Usage" id="4" entityName="consul2" followingProcessing="3 16"/>
+  <processing xsi:type="GDPR:Usage" id="5" entityName="consul3" followingProcessing="3 4 16"/>
+  <processing xsi:type="GDPR:Usage" id="6" entityName="elasticsearch" followingProcessing="8 16"/>
+  <processing xsi:type="GDPR:Usage" id="7" entityName="logstash" followingProcessing="6 16"/>
+  <processing xsi:type="GDPR:Usage" id="8" entityName="kibana" followingProcessing="16"/>
+  <processing xsi:type="GDPR:Usage" id="9" entityName="rabbit" followingProcessing="10 11 16"/>
+  <processing xsi:type="GDPR:Usage" id="10" entityName="service_one" followingProcessing="7 9 16"/>
+  <processing xsi:type="GDPR:Usage" id="11" entityName="service_two" followingProcessing="7 9 16"/>
+  <processing xsi:type="GDPR:Usage" id="12" entityName="service_one_db" followingProcessing="10 16"/>
+  <processing xsi:type="GDPR:Usage" id="13" entityName="service_two_db" followingProcessing="11 16"/>
+  <processing xsi:type="GDPR:Usage" id="14" entityName="api_gateway" followingProcessing="10 11 16"/>
+  <processing xsi:type="GDPR:Usage" id="15" entityName="web_application" followingProcessing="14 16"/>
+  <processing xsi:type="GDPR:Usage" id="16" entityName="scope"/>
+</GDPR:LegalAssessmentFacts>

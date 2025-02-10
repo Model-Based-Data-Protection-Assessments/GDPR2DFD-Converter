@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_aj8ELeCNEe-LfM-jfeWyyA">
+  <labelTypes id="_aj8EVeCNEe-LfM-jfeWyyA" entityName="ProcessingType">
+    <label id="_aj8EZuCNEe-LfM-jfeWyyA" entityName="Collecting"/>
+    <label id="_aj8EaOCNEe-LfM-jfeWyyA" entityName="Storing"/>
+    <label id="_aj8EaeCNEe-LfM-jfeWyyA" entityName="Usage"/>
+    <label id="_aj8EauCNEe-LfM-jfeWyyA" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_aj8EV-CNEe-LfM-jfeWyyA" entityName="Data"/>
+  <labelTypes id="_aj8EWOCNEe-LfM-jfeWyyA" entityName="PersonalData"/>
+  <labelTypes id="_aj8EWeCNEe-LfM-jfeWyyA" entityName="Obligation"/>
+  <labelTypes id="_aj8EW-CNEe-LfM-jfeWyyA" entityName="Consent"/>
+  <labelTypes id="_aj8EXOCNEe-LfM-jfeWyyA" entityName="Contract"/>
+  <labelTypes id="_aj8EXeCNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
+  <labelTypes id="_aj8EX-CNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
+  <labelTypes id="_aj8EYOCNEe-LfM-jfeWyyA" entityName="Controller"/>
+  <labelTypes id="_aj8EYuCNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
+  <labelTypes id="_aj8EY-CNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <behavior id="_aj8EMeCNEe-LfM-jfeWyyA" entityName="github_repository Behavior"/>
+  <behavior id="_aj8ENeCNEe-LfM-jfeWyyA" entityName="user Behavior"/>
+  <behavior id="_aj8EOOCNEe-LfM-jfeWyyA" entityName="config_server Behavior"/>
+  <behavior id="_aj8EO-CNEe-LfM-jfeWyyA" entityName="discovery_server Behavior"/>
+  <behavior id="_aj8EPeCNEe-LfM-jfeWyyA" entityName="tracing_server Behavior"/>
+  <behavior id="_aj8EQOCNEe-LfM-jfeWyyA" entityName="admin_server Behavior"/>
+  <behavior id="_aj8EQ-CNEe-LfM-jfeWyyA" entityName="prometheus_server Behavior"/>
+  <behavior id="_aj8EReCNEe-LfM-jfeWyyA" entityName="grafana_server Behavior"/>
+  <behavior id="_aj8ESOCNEe-LfM-jfeWyyA" entityName="customers_service Behavior"/>
+  <behavior id="_aj8ES-CNEe-LfM-jfeWyyA" entityName="vets_service Behavior"/>
+  <behavior id="_aj8ETeCNEe-LfM-jfeWyyA" entityName="visits_service Behavior"/>
+  <behavior id="_aj8EUOCNEe-LfM-jfeWyyA" entityName="api_gateway Behavior"/>
+  <behavior id="_aj8EU-CNEe-LfM-jfeWyyA" entityName="secret_manager Behavior"/>
+</datadictionary:DataDictionary>

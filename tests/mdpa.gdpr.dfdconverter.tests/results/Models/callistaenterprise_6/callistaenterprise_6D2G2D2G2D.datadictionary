@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_afMHsOCNEe-LfM-jfeWyyA">
+  <labelTypes id="_afMuVOCNEe-LfM-jfeWyyA" entityName="ProcessingType">
+    <label id="_afMuYuCNEe-LfM-jfeWyyA" entityName="Collecting"/>
+    <label id="_afMuZ-CNEe-LfM-jfeWyyA" entityName="Storing"/>
+    <label id="_afMubOCNEe-LfM-jfeWyyA" entityName="Usage"/>
+    <label id="_afMucOCNEe-LfM-jfeWyyA" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_afMuVeCNEe-LfM-jfeWyyA" entityName="Data"/>
+  <labelTypes id="_afMuVuCNEe-LfM-jfeWyyA" entityName="PersonalData"/>
+  <labelTypes id="_afMuV-CNEe-LfM-jfeWyyA" entityName="Obligation"/>
+  <labelTypes id="_afMuWOCNEe-LfM-jfeWyyA" entityName="Consent"/>
+  <labelTypes id="_afMuWeCNEe-LfM-jfeWyyA" entityName="Contract"/>
+  <labelTypes id="_afMuWuCNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
+  <labelTypes id="_afMuXOCNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
+  <labelTypes id="_afMuXuCNEe-LfM-jfeWyyA" entityName="Controller"/>
+  <labelTypes id="_afMuX-CNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
+  <labelTypes id="_afMuYOCNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <behavior id="_afMuJeCNEe-LfM-jfeWyyA" entityName="github_repository Behavior"/>
+  <behavior id="_afMuM-CNEe-LfM-jfeWyyA" entityName="user Behavior"/>
+  <behavior id="_afMuNuCNEe-LfM-jfeWyyA" entityName="elasticsearch Behavior"/>
+  <behavior id="_afMuOOCNEe-LfM-jfeWyyA" entityName="kibana Behavior"/>
+  <behavior id="_afMuO-CNEe-LfM-jfeWyyA" entityName="logstash Behavior"/>
+  <behavior id="_afMuPeCNEe-LfM-jfeWyyA" entityName="rabbitmq Behavior"/>
+  <behavior id="_afMuP-CNEe-LfM-jfeWyyA" entityName="discovery_server Behavior"/>
+  <behavior id="_afMuQeCNEe-LfM-jfeWyyA" entityName="config_server Behavior"/>
+  <behavior id="_afMuQ-CNEe-LfM-jfeWyyA" entityName="auth_server Behavior"/>
+  <behavior id="_afMuReCNEe-LfM-jfeWyyA" entityName="monitor_dashboard Behavior"/>
+  <behavior id="_afMuR-CNEe-LfM-jfeWyyA" entityName="turbine_server Behavior"/>
+  <behavior id="_afMuSeCNEe-LfM-jfeWyyA" entityName="zipkin_server Behavior"/>
+  <behavior id="_afMuS-CNEe-LfM-jfeWyyA" entityName="product_service Behavior"/>
+  <behavior id="_afMuTeCNEe-LfM-jfeWyyA" entityName="recommendation_service Behavior"/>
+  <behavior id="_afMuT-CNEe-LfM-jfeWyyA" entityName="review_service Behavior"/>
+  <behavior id="_afMuUeCNEe-LfM-jfeWyyA" entityName="composite_service Behavior"/>
+  <behavior id="_afMuU-CNEe-LfM-jfeWyyA" entityName="edge_server Behavior"/>
+</datadictionary:DataDictionary>

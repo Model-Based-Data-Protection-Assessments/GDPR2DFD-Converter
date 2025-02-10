@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_alzsaeCNEe-LfM-jfeWyyA">
+  <labelTypes id="_alzskOCNEe-LfM-jfeWyyA" entityName="ProcessingType">
+    <label id="_alzsoeCNEe-LfM-jfeWyyA" entityName="Collecting"/>
+    <label id="_alzspOCNEe-LfM-jfeWyyA" entityName="Storing"/>
+    <label id="_alzspuCNEe-LfM-jfeWyyA" entityName="Usage"/>
+    <label id="_alzsp-CNEe-LfM-jfeWyyA" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_alzskeCNEe-LfM-jfeWyyA" entityName="Data"/>
+  <labelTypes id="_alzskuCNEe-LfM-jfeWyyA" entityName="PersonalData"/>
+  <labelTypes id="_alzsk-CNEe-LfM-jfeWyyA" entityName="Obligation"/>
+  <labelTypes id="_alzslOCNEe-LfM-jfeWyyA" entityName="Consent"/>
+  <labelTypes id="_alzsleCNEe-LfM-jfeWyyA" entityName="Contract"/>
+  <labelTypes id="_alzsluCNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
+  <labelTypes id="_alzsl-CNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
+  <labelTypes id="_alzsmOCNEe-LfM-jfeWyyA" entityName="Controller"/>
+  <labelTypes id="_alzsmuCNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
+  <labelTypes id="_alzsm-CNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <behavior id="_alzsa-CNEe-LfM-jfeWyyA" entityName="user Behavior"/>
+  <behavior id="_alzsceCNEe-LfM-jfeWyyA" entityName="consul Behavior"/>
+  <behavior id="_alzsdeCNEe-LfM-jfeWyyA" entityName="consul2 Behavior"/>
+  <behavior id="_alzsd-CNEe-LfM-jfeWyyA" entityName="consul3 Behavior"/>
+  <behavior id="_alzseeCNEe-LfM-jfeWyyA" entityName="elasticsearch Behavior"/>
+  <behavior id="_alzse-CNEe-LfM-jfeWyyA" entityName="logstash Behavior"/>
+  <behavior id="_alzsfeCNEe-LfM-jfeWyyA" entityName="kibana Behavior"/>
+  <behavior id="_alzsf-CNEe-LfM-jfeWyyA" entityName="rabbit Behavior"/>
+  <behavior id="_alzsgeCNEe-LfM-jfeWyyA" entityName="service_one Behavior"/>
+  <behavior id="_alzsg-CNEe-LfM-jfeWyyA" entityName="service_two Behavior"/>
+  <behavior id="_alzsheCNEe-LfM-jfeWyyA" entityName="service_one_db Behavior"/>
+  <behavior id="_alzsh-CNEe-LfM-jfeWyyA" entityName="service_two_db Behavior"/>
+  <behavior id="_alzsieCNEe-LfM-jfeWyyA" entityName="api_gateway Behavior"/>
+  <behavior id="_alzsi-CNEe-LfM-jfeWyyA" entityName="web_application Behavior"/>
+  <behavior id="_alzsjeCNEe-LfM-jfeWyyA" entityName="scope Behavior"/>
+  <behavior id="_alzsj-CNEe-LfM-jfeWyyA" entityName="secret_manager Behavior"/>
+</datadictionary:DataDictionary>

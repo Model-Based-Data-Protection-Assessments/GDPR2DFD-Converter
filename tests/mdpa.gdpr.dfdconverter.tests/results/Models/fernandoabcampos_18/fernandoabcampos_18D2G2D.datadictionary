@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_agl1NOCNEe-LfM-jfeWyyA">
+  <labelTypes id="_agl1NeCNEe-LfM-jfeWyyA" entityName="ProcessingType">
+    <label id="_agl1QOCNEe-LfM-jfeWyyA" entityName="Collecting"/>
+    <label id="_agl1QeCNEe-LfM-jfeWyyA" entityName="Storing"/>
+    <label id="_agl1QuCNEe-LfM-jfeWyyA" entityName="Usage"/>
+    <label id="_agl1Q-CNEe-LfM-jfeWyyA" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_agl1NuCNEe-LfM-jfeWyyA" entityName="Data"/>
+  <labelTypes id="_agl1N-CNEe-LfM-jfeWyyA" entityName="PersonalData"/>
+  <labelTypes id="_agl1OOCNEe-LfM-jfeWyyA" entityName="Obligation"/>
+  <labelTypes id="_agl1OeCNEe-LfM-jfeWyyA" entityName="Consent"/>
+  <labelTypes id="_agl1OuCNEe-LfM-jfeWyyA" entityName="Contract"/>
+  <labelTypes id="_agl1O-CNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
+  <labelTypes id="_agl1POCNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
+  <labelTypes id="_agl1PeCNEe-LfM-jfeWyyA" entityName="Controller"/>
+  <labelTypes id="_agl1PuCNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
+  <labelTypes id="_agl1P-CNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <behavior id="56">
+    <outPin id="81"/>
+    <assignment xsi:type="datadictionary:Assignment" id="209" outputPin="81">
+      <term xsi:type="datadictionary:TRUE" id="210"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#58"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#59"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+    </assignment>
+  </behavior>
+  <behavior id="70">
+    <inPin id="131"/>
+    <outPin id="129"/>
+    <assignment xsi:type="datadictionary:Assignment" id="221" outputPin="129" inputPins="131">
+      <term xsi:type="datadictionary:TRUE" id="222"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#72"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#59"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#73"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="256" outputPin="129" inputPins="131"/>
+  </behavior>
+  <behavior id="29">
+    <inPin id="80"/>
+    <outPin id="85"/>
+    <outPin id="90"/>
+    <outPin id="97"/>
+    <outPin id="104"/>
+    <outPin id="109"/>
+    <outPin id="121"/>
+    <outPin id="134"/>
+    <outPin id="143"/>
+    <assignment xsi:type="datadictionary:Assignment" id="171" outputPin="85" inputPins="80">
+      <term xsi:type="datadictionary:TRUE" id="172"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="173" outputPin="90" inputPins="80">
+      <term xsi:type="datadictionary:TRUE" id="174"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="175" outputPin="97" inputPins="80">
+      <term xsi:type="datadictionary:TRUE" id="176"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="177" outputPin="104" inputPins="80">
+      <term xsi:type="datadictionary:TRUE" id="178"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="179" outputPin="109" inputPins="80">
+      <term xsi:type="datadictionary:TRUE" id="180"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="181" outputPin="121" inputPins="80">
+      <term xsi:type="datadictionary:TRUE" id="182"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="183" outputPin="134" inputPins="80">
+      <term xsi:type="datadictionary:TRUE" id="184"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="185" outputPin="143" inputPins="80">
+      <term xsi:type="datadictionary:TRUE" id="186"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="232" outputPin="85" inputPins="80"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="233" outputPin="90" inputPins="80"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="234" outputPin="97" inputPins="80"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="235" outputPin="104" inputPins="80"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="236" outputPin="109" inputPins="80"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="237" outputPin="121" inputPins="80"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="238" outputPin="134" inputPins="80"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="239" outputPin="143" inputPins="80"/>
+  </behavior>
+  <behavior id="35">
+    <inPin id="84"/>
+    <outPin id="127"/>
+    <outPin id="145"/>
+    <assignment xsi:type="datadictionary:Assignment" id="187" outputPin="127" inputPins="84">
+      <term xsi:type="datadictionary:TRUE" id="188"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#37"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="189" outputPin="145" inputPins="84">
+      <term xsi:type="datadictionary:TRUE" id="190"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#37"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="240" outputPin="127" inputPins="84"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="241" outputPin="145" inputPins="84"/>
+  </behavior>
+  <behavior id="74">
+    <inPin id="123"/>
+    <outPin id="95"/>
+    <outPin id="147"/>
+    <assignment xsi:type="datadictionary:Assignment" id="223" outputPin="95" inputPins="123">
+      <term xsi:type="datadictionary:TRUE" id="224"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#76"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="225" outputPin="147" inputPins="123">
+      <term xsi:type="datadictionary:TRUE" id="226"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#76"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="257" outputPin="95" inputPins="123"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="258" outputPin="147" inputPins="123"/>
+  </behavior>
+  <behavior id="23">
+    <inPin id="89"/>
+    <outPin id="87"/>
+    <outPin id="149"/>
+    <assignment xsi:type="datadictionary:Assignment" id="167" outputPin="87" inputPins="89">
+      <term xsi:type="datadictionary:TRUE" id="168"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#25"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="169" outputPin="149" inputPins="89">
+      <term xsi:type="datadictionary:TRUE" id="170"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#25"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="230" outputPin="87" inputPins="89"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="231" outputPin="149" inputPins="89"/>
+  </behavior>
+  <behavior id="15">
+    <inPin id="94"/>
+    <outPin id="92"/>
+    <outPin id="99"/>
+    <outPin id="151"/>
+    <assignment xsi:type="datadictionary:Assignment" id="161" outputPin="92" inputPins="94">
+      <term xsi:type="datadictionary:TRUE" id="162"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#17"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="163" outputPin="99" inputPins="94">
+      <term xsi:type="datadictionary:TRUE" id="164"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#17"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="165" outputPin="151" inputPins="94">
+      <term xsi:type="datadictionary:TRUE" id="166"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#17"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="227" outputPin="92" inputPins="94"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="228" outputPin="99" inputPins="94"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="229" outputPin="151" inputPins="94"/>
+  </behavior>
+  <behavior id="41">
+    <inPin id="103"/>
+    <outPin id="101"/>
+    <outPin id="153"/>
+    <assignment xsi:type="datadictionary:Assignment" id="191" outputPin="101" inputPins="103">
+      <term xsi:type="datadictionary:TRUE" id="192"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#43"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="193" outputPin="153" inputPins="103">
+      <term xsi:type="datadictionary:TRUE" id="194"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#43"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="242" outputPin="101" inputPins="103"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="243" outputPin="153" inputPins="103"/>
+  </behavior>
+  <behavior id="54">
+    <inPin id="108"/>
+    <outPin id="106"/>
+    <outPin id="155"/>
+    <assignment xsi:type="datadictionary:Assignment" id="205" outputPin="106" inputPins="108">
+      <term xsi:type="datadictionary:TRUE" id="206"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#43"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="207" outputPin="155" inputPins="108">
+      <term xsi:type="datadictionary:TRUE" id="208"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#43"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="249" outputPin="106" inputPins="108"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="250" outputPin="155" inputPins="108"/>
+  </behavior>
+  <behavior id="62">
+    <inPin id="120"/>
+    <outPin id="111"/>
+    <outPin id="114"/>
+    <outPin id="118"/>
+    <outPin id="124"/>
+    <outPin id="157"/>
+    <assignment xsi:type="datadictionary:Assignment" id="211" outputPin="111" inputPins="120">
+      <term xsi:type="datadictionary:TRUE" id="212"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#43"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#64"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#113"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="213" outputPin="114" inputPins="120">
+      <term xsi:type="datadictionary:TRUE" id="214"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#43"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#64"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#113"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#116"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#117"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#66"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#53"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="215" outputPin="118" inputPins="120">
+      <term xsi:type="datadictionary:TRUE" id="216"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#43"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#64"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#113"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#116"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#117"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#66"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#53"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="217" outputPin="124" inputPins="120">
+      <term xsi:type="datadictionary:TRUE" id="218"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#43"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#64"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="219" outputPin="157" inputPins="120">
+      <term xsi:type="datadictionary:TRUE" id="220"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#43"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#64"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="251" outputPin="111" inputPins="120"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="252" outputPin="114" inputPins="120"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="253" outputPin="118" inputPins="120"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="254" outputPin="124" inputPins="120"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="255" outputPin="157" inputPins="120"/>
+  </behavior>
+  <behavior id="45">
+    <inPin id="126"/>
+    <outPin id="132"/>
+    <outPin id="136"/>
+    <outPin id="138"/>
+    <outPin id="140"/>
+    <outPin id="159"/>
+    <assignment xsi:type="datadictionary:Assignment" id="195" outputPin="132" inputPins="126">
+      <term xsi:type="datadictionary:TRUE" id="196"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#47"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#48"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="197" outputPin="136" inputPins="126">
+      <term xsi:type="datadictionary:TRUE" id="198"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#47"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#48"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="199" outputPin="138" inputPins="126">
+      <term xsi:type="datadictionary:TRUE" id="200"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#47"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#48"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="201" outputPin="140" inputPins="126">
+      <term xsi:type="datadictionary:TRUE" id="202"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#47"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#48"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="203" outputPin="159" inputPins="126">
+      <term xsi:type="datadictionary:TRUE" id="204"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#47"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#48"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/fernandoabcampos/fernandoabcampos_18.datadictionary#83"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="244" outputPin="132" inputPins="126"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="245" outputPin="136" inputPins="126"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="246" outputPin="138" inputPins="126"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="247" outputPin="140" inputPins="126"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="248" outputPin="159" inputPins="126"/>
+  </behavior>
+  <behavior id="67">
+    <inPin id="142"/>
+  </behavior>
+</datadictionary:DataDictionary>

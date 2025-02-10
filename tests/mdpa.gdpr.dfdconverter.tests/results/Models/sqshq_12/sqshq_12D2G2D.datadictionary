@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_am__N-CNEe-LfM-jfeWyyA">
+  <labelTypes id="_am__O-CNEe-LfM-jfeWyyA" entityName="ProcessingType">
+    <label id="_anAmSOCNEe-LfM-jfeWyyA" entityName="Collecting"/>
+    <label id="_anAmSeCNEe-LfM-jfeWyyA" entityName="Storing"/>
+    <label id="_anAmSuCNEe-LfM-jfeWyyA" entityName="Usage"/>
+    <label id="_anAmS-CNEe-LfM-jfeWyyA" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_am__POCNEe-LfM-jfeWyyA" entityName="Data"/>
+  <labelTypes id="_am__PeCNEe-LfM-jfeWyyA" entityName="PersonalData"/>
+  <labelTypes id="_am__PuCNEe-LfM-jfeWyyA" entityName="Obligation"/>
+  <labelTypes id="_am__P-CNEe-LfM-jfeWyyA" entityName="Consent"/>
+  <labelTypes id="_anAmQuCNEe-LfM-jfeWyyA" entityName="Contract"/>
+  <labelTypes id="_anAmQ-CNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
+  <labelTypes id="_anAmROCNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
+  <labelTypes id="_anAmReCNEe-LfM-jfeWyyA" entityName="Controller"/>
+  <labelTypes id="_anAmRuCNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
+  <labelTypes id="_anAmR-CNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <behavior id="101">
+    <inPin id="190"/>
+  </behavior>
+  <behavior id="88">
+    <outPin id="202"/>
+    <assignment xsi:type="datadictionary:Assignment" id="290" outputPin="202">
+      <term xsi:type="datadictionary:TRUE" id="291"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#90"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#91"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#92"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+    </assignment>
+  </behavior>
+  <behavior id="113">
+    <inPin id="222"/>
+    <outPin id="220"/>
+    <assignment xsi:type="datadictionary:Assignment" id="302" outputPin="220" inputPins="222">
+      <term xsi:type="datadictionary:TRUE" id="303"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#115"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#91"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#92"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="360" outputPin="220" inputPins="222"/>
+  </behavior>
+  <behavior id="116">
+    <outPin id="144"/>
+    <outPin id="149"/>
+    <outPin id="154"/>
+    <outPin id="163"/>
+    <outPin id="177"/>
+    <outPin id="186"/>
+    <outPin id="198"/>
+    <outPin id="225"/>
+    <assignment xsi:type="datadictionary:Assignment" id="304" outputPin="144">
+      <term xsi:type="datadictionary:TRUE" id="305"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#118"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#41"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#119"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#147"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="306" outputPin="149">
+      <term xsi:type="datadictionary:TRUE" id="307"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#118"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#41"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#119"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#147"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="308" outputPin="154">
+      <term xsi:type="datadictionary:TRUE" id="309"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#118"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#41"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#119"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#147"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="310" outputPin="163">
+      <term xsi:type="datadictionary:TRUE" id="311"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#118"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#41"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#119"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#147"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="312" outputPin="177">
+      <term xsi:type="datadictionary:TRUE" id="313"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#118"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#41"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#119"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#147"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="314" outputPin="186">
+      <term xsi:type="datadictionary:TRUE" id="315"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#118"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#41"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#119"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#147"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="316" outputPin="198">
+      <term xsi:type="datadictionary:TRUE" id="317"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#118"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#41"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#119"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#147"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="318" outputPin="225">
+      <term xsi:type="datadictionary:TRUE" id="319"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#118"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#41"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#119"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#147"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+    </assignment>
+  </behavior>
+  <behavior id="24">
+    <inPin id="143"/>
+    <outPin id="218"/>
+    <outPin id="235"/>
+    <assignment xsi:type="datadictionary:Assignment" id="252" outputPin="218" inputPins="143">
+      <term xsi:type="datadictionary:TRUE" id="253"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#26"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="254" outputPin="235" inputPins="143">
+      <term xsi:type="datadictionary:TRUE" id="255"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#26"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="338" outputPin="218" inputPins="143"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="339" outputPin="235" inputPins="143"/>
+  </behavior>
+  <behavior id="63">
+    <inPin id="237"/>
+  </behavior>
+  <behavior id="128">
+    <inPin id="153"/>
+    <outPin id="151"/>
+    <outPin id="156"/>
+    <assignment xsi:type="datadictionary:Assignment" id="322" outputPin="151" inputPins="153">
+      <term xsi:type="datadictionary:TRUE" id="323"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#130"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="324" outputPin="156" inputPins="153">
+      <term xsi:type="datadictionary:TRUE" id="325"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#130"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="361" outputPin="151" inputPins="153"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="362" outputPin="156" inputPins="153"/>
+  </behavior>
+  <behavior id="70">
+    <inPin id="148"/>
+    <outPin id="158"/>
+    <outPin id="238"/>
+    <assignment xsi:type="datadictionary:Assignment" id="276" outputPin="158" inputPins="148">
+      <term xsi:type="datadictionary:TRUE" id="277"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#72"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="278" outputPin="238" inputPins="148">
+      <term xsi:type="datadictionary:TRUE" id="279"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#72"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="350" outputPin="158" inputPins="148"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="351" outputPin="238" inputPins="148"/>
+  </behavior>
+  <behavior id="34">
+    <inPin id="162"/>
+    <outPin id="160"/>
+    <outPin id="169"/>
+    <outPin id="184"/>
+    <outPin id="196"/>
+    <outPin id="242"/>
+    <assignment xsi:type="datadictionary:Assignment" id="256" outputPin="160" inputPins="162">
+      <term xsi:type="datadictionary:TRUE" id="257"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#36"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#37"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#38"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#39"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#40"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#41"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#42"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="258" outputPin="169" inputPins="162">
+      <term xsi:type="datadictionary:TRUE" id="259"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#36"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#37"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#38"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#39"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#40"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#41"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#42"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#147"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#171"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#172"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="260" outputPin="184" inputPins="162">
+      <term xsi:type="datadictionary:TRUE" id="261"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#36"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#37"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#38"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#39"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#40"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#41"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#42"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#147"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#171"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#172"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="262" outputPin="196" inputPins="162">
+      <term xsi:type="datadictionary:TRUE" id="263"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#36"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#37"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#38"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#39"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#40"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#41"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#42"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#147"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#171"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#172"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="264" outputPin="242" inputPins="162">
+      <term xsi:type="datadictionary:TRUE" id="265"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#36"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#37"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#38"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#39"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#40"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#41"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#42"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="340" outputPin="160" inputPins="162"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="341" outputPin="169" inputPins="162"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="342" outputPin="184" inputPins="162"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="343" outputPin="196" inputPins="162"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="344" outputPin="242" inputPins="162"/>
+  </behavior>
+  <behavior id="51">
+    <inPin id="168"/>
+    <outPin id="165"/>
+    <outPin id="173"/>
+    <outPin id="179"/>
+    <outPin id="204"/>
+    <outPin id="240"/>
+    <assignment xsi:type="datadictionary:Assignment" id="266" outputPin="165" inputPins="168">
+      <term xsi:type="datadictionary:TRUE" id="267"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#53"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#37"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#40"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#54"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#167"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#60"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="268" outputPin="173" inputPins="168">
+      <term xsi:type="datadictionary:TRUE" id="269"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#53"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#37"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#40"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#54"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#175"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#176"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#142"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="270" outputPin="179" inputPins="168">
+      <term xsi:type="datadictionary:TRUE" id="271"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#53"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#37"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#40"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#54"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#167"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="272" outputPin="204" inputPins="168">
+      <term xsi:type="datadictionary:TRUE" id="273"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#53"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#37"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#40"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#54"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#175"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#167"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#176"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#60"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#142"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="274" outputPin="240" inputPins="168">
+      <term xsi:type="datadictionary:TRUE" id="275"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#53"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#37"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#40"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#54"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="345" outputPin="165" inputPins="168"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="346" outputPin="173" inputPins="168"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="347" outputPin="179" inputPins="168"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="348" outputPin="204" inputPins="168"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="349" outputPin="240" inputPins="168"/>
+  </behavior>
+  <behavior id="95">
+    <inPin id="183"/>
+    <outPin id="181"/>
+    <outPin id="188"/>
+    <outPin id="191"/>
+    <outPin id="206"/>
+    <outPin id="244"/>
+    <assignment xsi:type="datadictionary:Assignment" id="292" outputPin="181" inputPins="183">
+      <term xsi:type="datadictionary:TRUE" id="293"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#53"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#40"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="294" outputPin="188" inputPins="183">
+      <term xsi:type="datadictionary:TRUE" id="295"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#53"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#40"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="296" outputPin="191" inputPins="183">
+      <term xsi:type="datadictionary:TRUE" id="297"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#53"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#40"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#147"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="298" outputPin="206" inputPins="183">
+      <term xsi:type="datadictionary:TRUE" id="299"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#53"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#40"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#175"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#176"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#142"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="300" outputPin="244" inputPins="183">
+      <term xsi:type="datadictionary:TRUE" id="301"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#53"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#40"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="355" outputPin="181" inputPins="183"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="356" outputPin="188" inputPins="183"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="357" outputPin="191" inputPins="183"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="358" outputPin="206" inputPins="183"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="359" outputPin="244" inputPins="183"/>
+  </behavior>
+  <behavior id="82">
+    <inPin id="195"/>
+    <outPin id="193"/>
+    <outPin id="200"/>
+    <outPin id="246"/>
+    <assignment xsi:type="datadictionary:Assignment" id="284" outputPin="193" inputPins="195">
+      <term xsi:type="datadictionary:TRUE" id="285"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#53"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#37"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#40"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="286" outputPin="200" inputPins="195">
+      <term xsi:type="datadictionary:TRUE" id="287"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#53"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#37"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#40"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="288" outputPin="246" inputPins="195">
+      <term xsi:type="datadictionary:TRUE" id="289"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#53"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#37"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#40"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="352" outputPin="193" inputPins="195"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="353" outputPin="200" inputPins="195"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="354" outputPin="246" inputPins="195"/>
+  </behavior>
+  <behavior id="79">
+    <outPin id="215"/>
+    <assignment xsi:type="datadictionary:Assignment" id="282" outputPin="215">
+      <term xsi:type="datadictionary:TRUE" id="283"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#210"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#147"/>
+    </assignment>
+  </behavior>
+  <behavior id="76">
+    <outPin id="208"/>
+    <assignment xsi:type="datadictionary:Assignment" id="280" outputPin="208">
+      <term xsi:type="datadictionary:TRUE" id="281"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#210"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#147"/>
+    </assignment>
+  </behavior>
+  <behavior id="20">
+    <outPin id="213"/>
+    <assignment xsi:type="datadictionary:Assignment" id="250" outputPin="213">
+      <term xsi:type="datadictionary:TRUE" id="251"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#210"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#147"/>
+    </assignment>
+  </behavior>
+  <behavior id="125">
+    <outPin id="211"/>
+    <assignment xsi:type="datadictionary:Assignment" id="320" outputPin="211">
+      <term xsi:type="datadictionary:TRUE" id="321"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#210"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#147"/>
+    </assignment>
+  </behavior>
+  <behavior id="134">
+    <inPin id="217"/>
+    <outPin id="223"/>
+    <outPin id="227"/>
+    <outPin id="229"/>
+    <outPin id="231"/>
+    <outPin id="233"/>
+    <outPin id="248"/>
+    <assignment xsi:type="datadictionary:Assignment" id="326" outputPin="223" inputPins="217">
+      <term xsi:type="datadictionary:TRUE" id="327"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#136"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#137"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="328" outputPin="227" inputPins="217">
+      <term xsi:type="datadictionary:TRUE" id="329"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#136"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#137"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#167"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#176"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#60"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#142"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="330" outputPin="229" inputPins="217">
+      <term xsi:type="datadictionary:TRUE" id="331"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#136"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#137"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#167"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#176"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#60"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#142"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="332" outputPin="231" inputPins="217">
+      <term xsi:type="datadictionary:TRUE" id="333"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#136"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#137"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#167"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#176"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#60"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#142"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="334" outputPin="233" inputPins="217">
+      <term xsi:type="datadictionary:TRUE" id="335"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#136"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#137"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#167"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#176"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#171"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#60"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#142"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="336" outputPin="248" inputPins="217">
+      <term xsi:type="datadictionary:TRUE" id="337"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#136"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#28"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#137"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#29"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/sqshq/sqshq_12.datadictionary#146"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="363" outputPin="223" inputPins="217"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="364" outputPin="227" inputPins="217"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="365" outputPin="229" inputPins="217"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="366" outputPin="231" inputPins="217"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="367" outputPin="233" inputPins="217"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="368" outputPin="248" inputPins="217"/>
+  </behavior>
+</datadictionary:DataDictionary>

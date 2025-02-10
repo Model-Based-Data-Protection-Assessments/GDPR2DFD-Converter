@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dataflowdiagram:DataFlowDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" id="_tt-9EPHNEe62x6SamO9Dsg">
+  <flows id="_h35Bwt7_Ee-R1eq1ckyHWA" entityName="Data" sourceNode="xvpuf8" destinationNode="kqcy12">
+    <destinationPin href="models/GDPR/minimal.dd#_h35Bwd7_Ee-R1eq1ckyHWA"/>
+    <sourcePin href="models/GDPR/minimal.dd#_h35BwN7_Ee-R1eq1ckyHWA"/>
+  </flows>
+  <flows id="_h35o0t7_Ee-R1eq1ckyHWA" entityName="Data" sourceNode="kqcy12" destinationNode="fas8l">
+    <destinationPin href="models/GDPR/minimal.dd#_h35o0d7_Ee-R1eq1ckyHWA"/>
+    <sourcePin href="models/GDPR/minimal.dd#_h35o0N7_Ee-R1eq1ckyHWA"/>
+  </flows>
+  <flows id="_h35o1d7_Ee-R1eq1ckyHWA" entityName="Data" sourceNode="fas8l" destinationNode="1liryp">
+    <destinationPin href="models/GDPR/minimal.dd#_h35o1N7_Ee-R1eq1ckyHWA"/>
+    <sourcePin href="models/GDPR/minimal.dd#_h35o097_Ee-R1eq1ckyHWA"/>
+  </flows>
+  <flows id="_h35o2N7_Ee-R1eq1ckyHWA" entityName="Personal Data" sourceNode="g4z568" destinationNode="xvpuf8">
+    <destinationPin href="models/GDPR/minimal.dd#_h35o197_Ee-R1eq1ckyHWA"/>
+    <sourcePin href="models/GDPR/minimal.dd#_h35o1t7_Ee-R1eq1ckyHWA"/>
+  </flows>
+  <nodes xsi:type="dataflowdiagram:Process" id="xvpuf8" entityName="Anonymization">
+    <behavior href="models/GDPR/minimal.dd#_h31XYt7_Ee-R1eq1ckyHWA"/>
+    <properties href="models/GDPR/minimal.dd#772yn"/>
+    <properties href="models/GDPR/minimal.dd#8k3v"/>
+    <properties href="models/GDPR/minimal.dd#_h33Mm97_Ee-R1eq1ckyHWA"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Process" id="kqcy12" entityName="Transferring">
+    <behavior href="models/GDPR/minimal.dd#_h31-cd7_Ee-R1eq1ckyHWA"/>
+    <properties href="models/GDPR/minimal.dd#y7y8dg"/>
+    <properties href="models/GDPR/minimal.dd#8k3v"/>
+    <properties href="models/GDPR/minimal.dd#_h33MnN7_Ee-R1eq1ckyHWA"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Process" id="fas8l" entityName="Usage">
+    <behavior href="models/GDPR/minimal.dd#_h31-c97_Ee-R1eq1ckyHWA"/>
+    <properties href="models/GDPR/minimal.dd#quu8ak"/>
+    <properties href="models/GDPR/minimal.dd#8k3v"/>
+    <properties href="models/GDPR/minimal.dd#_h33Mm97_Ee-R1eq1ckyHWA"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Store" id="1liryp" entityName="Storage">
+    <behavior href="models/GDPR/minimal.dd#_h31-dd7_Ee-R1eq1ckyHWA"/>
+    <properties href="models/GDPR/minimal.dd#quu8ak"/>
+    <properties href="models/GDPR/minimal.dd#8k3v"/>
+    <properties href="models/GDPR/minimal.dd#_h33Mmt7_Ee-R1eq1ckyHWA"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:External" id="g4z568" entityName="Collecting">
+    <behavior href="models/GDPR/minimal.dd#_h31-d97_Ee-R1eq1ckyHWA"/>
+    <properties href="models/GDPR/minimal.dd#f7dnl"/>
+    <properties href="models/GDPR/minimal.dd#8k3v"/>
+    <properties href="models/GDPR/minimal.dd#_h33Mmd7_Ee-R1eq1ckyHWA"/>
+  </nodes>
+</dataflowdiagram:DataFlowDiagram>

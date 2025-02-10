@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_agPP9uCNEe-LfM-jfeWyyA">
+  <labelTypes id="_agPQIeCNEe-LfM-jfeWyyA" entityName="ProcessingType">
+    <label id="_agPQMuCNEe-LfM-jfeWyyA" entityName="Collecting"/>
+    <label id="_agPQM-CNEe-LfM-jfeWyyA" entityName="Storing"/>
+    <label id="_agPQNOCNEe-LfM-jfeWyyA" entityName="Usage"/>
+    <label id="_agPQNeCNEe-LfM-jfeWyyA" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_agPQI-CNEe-LfM-jfeWyyA" entityName="Data"/>
+  <labelTypes id="_agPQJeCNEe-LfM-jfeWyyA" entityName="PersonalData"/>
+  <labelTypes id="_agPQJuCNEe-LfM-jfeWyyA" entityName="Obligation"/>
+  <labelTypes id="_agPQKOCNEe-LfM-jfeWyyA" entityName="Consent"/>
+  <labelTypes id="_agPQKeCNEe-LfM-jfeWyyA" entityName="Contract"/>
+  <labelTypes id="_agPQKuCNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
+  <labelTypes id="_agPQK-CNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
+  <labelTypes id="_agPQLeCNEe-LfM-jfeWyyA" entityName="Controller"/>
+  <labelTypes id="_agPQLuCNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
+  <labelTypes id="_agPQMOCNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <behavior id="52">
+    <outPin id="71"/>
+    <assignment xsi:type="datadictionary:Assignment" id="159" outputPin="71">
+      <term xsi:type="datadictionary:TRUE" id="160"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#54"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#55"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#73"/>
+    </assignment>
+  </behavior>
+  <behavior id="13">
+    <inPin id="74"/>
+    <outPin id="117"/>
+    <assignment xsi:type="datadictionary:Assignment" id="133" outputPin="117" inputPins="74">
+      <term xsi:type="datadictionary:TRUE" id="134"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#15"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#73"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="181" outputPin="117" inputPins="74"/>
+  </behavior>
+  <behavior id="58">
+    <inPin id="70"/>
+    <outPin id="75"/>
+    <outPin id="78"/>
+    <outPin id="83"/>
+    <outPin id="88"/>
+    <outPin id="93"/>
+    <outPin id="98"/>
+    <outPin id="103"/>
+    <outPin id="119"/>
+    <assignment xsi:type="datadictionary:Assignment" id="161" outputPin="75" inputPins="70">
+      <term xsi:type="datadictionary:TRUE" id="162"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#60"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#73"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="163" outputPin="78" inputPins="70">
+      <term xsi:type="datadictionary:TRUE" id="164"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#60"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#73"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="165" outputPin="83" inputPins="70">
+      <term xsi:type="datadictionary:TRUE" id="166"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#60"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#73"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="167" outputPin="88" inputPins="70">
+      <term xsi:type="datadictionary:TRUE" id="168"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#60"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#73"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="169" outputPin="93" inputPins="70">
+      <term xsi:type="datadictionary:TRUE" id="170"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#60"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#73"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="171" outputPin="98" inputPins="70">
+      <term xsi:type="datadictionary:TRUE" id="172"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#60"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#73"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="173" outputPin="103" inputPins="70">
+      <term xsi:type="datadictionary:TRUE" id="174"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#60"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#73"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#105"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#50"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="175" outputPin="119" inputPins="70">
+      <term xsi:type="datadictionary:TRUE" id="176"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#60"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#73"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="194" outputPin="75" inputPins="70"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="195" outputPin="78" inputPins="70"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="196" outputPin="83" inputPins="70"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="197" outputPin="88" inputPins="70"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="198" outputPin="93" inputPins="70"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="199" outputPin="98" inputPins="70"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="200" outputPin="103" inputPins="70"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="201" outputPin="119" inputPins="70"/>
+  </behavior>
+  <behavior id="21">
+    <inPin id="77"/>
+    <outPin id="80"/>
+    <outPin id="121"/>
+    <assignment xsi:type="datadictionary:Assignment" id="135" outputPin="80" inputPins="77">
+      <term xsi:type="datadictionary:TRUE" id="136"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#23"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#73"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="137" outputPin="121" inputPins="77">
+      <term xsi:type="datadictionary:TRUE" id="138"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#23"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#73"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="182" outputPin="80" inputPins="77"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="183" outputPin="121" inputPins="77"/>
+  </behavior>
+  <behavior id="31">
+    <inPin id="82"/>
+    <outPin id="85"/>
+    <outPin id="131"/>
+    <assignment xsi:type="datadictionary:Assignment" id="143" outputPin="85" inputPins="82">
+      <term xsi:type="datadictionary:TRUE" id="144"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#23"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#73"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="145" outputPin="131" inputPins="82">
+      <term xsi:type="datadictionary:TRUE" id="146"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#23"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#73"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="186" outputPin="85" inputPins="82"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="187" outputPin="131" inputPins="82"/>
+  </behavior>
+  <behavior id="63">
+    <inPin id="87"/>
+    <outPin id="90"/>
+    <outPin id="129"/>
+    <assignment xsi:type="datadictionary:Assignment" id="177" outputPin="90" inputPins="87">
+      <term xsi:type="datadictionary:TRUE" id="178"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#23"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#73"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="179" outputPin="129" inputPins="87">
+      <term xsi:type="datadictionary:TRUE" id="180"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#23"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#73"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="202" outputPin="90" inputPins="87"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="203" outputPin="129" inputPins="87"/>
+  </behavior>
+  <behavior id="27">
+    <inPin id="92"/>
+    <outPin id="95"/>
+    <outPin id="125"/>
+    <assignment xsi:type="datadictionary:Assignment" id="139" outputPin="95" inputPins="92">
+      <term xsi:type="datadictionary:TRUE" id="140"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#23"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#73"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="141" outputPin="125" inputPins="92">
+      <term xsi:type="datadictionary:TRUE" id="142"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#23"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#73"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="184" outputPin="95" inputPins="92"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="185" outputPin="125" inputPins="92"/>
+  </behavior>
+  <behavior id="35">
+    <inPin id="97"/>
+    <outPin id="100"/>
+    <outPin id="123"/>
+    <assignment xsi:type="datadictionary:Assignment" id="147" outputPin="100" inputPins="97">
+      <term xsi:type="datadictionary:TRUE" id="148"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#23"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#73"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="149" outputPin="123" inputPins="97">
+      <term xsi:type="datadictionary:TRUE" id="150"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#23"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#73"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="188" outputPin="100" inputPins="97"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="189" outputPin="123" inputPins="97"/>
+  </behavior>
+  <behavior id="39">
+    <inPin id="102"/>
+    <outPin id="106"/>
+    <outPin id="108"/>
+    <outPin id="114"/>
+    <outPin id="127"/>
+    <assignment xsi:type="datadictionary:Assignment" id="151" outputPin="106" inputPins="102">
+      <term xsi:type="datadictionary:TRUE" id="152"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#41"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#42"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#73"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#105"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#50"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="153" outputPin="108" inputPins="102">
+      <term xsi:type="datadictionary:TRUE" id="154"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#41"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#42"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#73"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#110"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#111"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#105"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#50"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#113"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="155" outputPin="114" inputPins="102">
+      <term xsi:type="datadictionary:TRUE" id="156"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#41"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#42"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#73"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#110"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#111"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#105"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#50"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#113"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="157" outputPin="127" inputPins="102">
+      <term xsi:type="datadictionary:TRUE" id="158"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#16"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#41"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#42"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/jferrater/jferrater_18.datadictionary#73"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="190" outputPin="106" inputPins="102"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="191" outputPin="108" inputPins="102"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="192" outputPin="114" inputPins="102"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="193" outputPin="127" inputPins="102"/>
+  </behavior>
+  <behavior id="67">
+    <inPin id="116"/>
+  </behavior>
+</datadictionary:DataDictionary>

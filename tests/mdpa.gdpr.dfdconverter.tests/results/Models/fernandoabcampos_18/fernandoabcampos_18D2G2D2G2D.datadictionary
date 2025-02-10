@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_ag2T6OCNEe-LfM-jfeWyyA">
+  <labelTypes id="_ag2UD-CNEe-LfM-jfeWyyA" entityName="ProcessingType">
+    <label id="_ag2UH-CNEe-LfM-jfeWyyA" entityName="Collecting"/>
+    <label id="_ag2UIOCNEe-LfM-jfeWyyA" entityName="Storing"/>
+    <label id="_ag2UIeCNEe-LfM-jfeWyyA" entityName="Usage"/>
+    <label id="_ag2UIuCNEe-LfM-jfeWyyA" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_ag2UEOCNEe-LfM-jfeWyyA" entityName="Data"/>
+  <labelTypes id="_ag2UEeCNEe-LfM-jfeWyyA" entityName="PersonalData"/>
+  <labelTypes id="_ag2UEuCNEe-LfM-jfeWyyA" entityName="Obligation"/>
+  <labelTypes id="_ag2UE-CNEe-LfM-jfeWyyA" entityName="Consent"/>
+  <labelTypes id="_ag2UFOCNEe-LfM-jfeWyyA" entityName="Contract"/>
+  <labelTypes id="_ag2UFuCNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
+  <labelTypes id="_ag2UF-CNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
+  <labelTypes id="_ag2UGeCNEe-LfM-jfeWyyA" entityName="Controller"/>
+  <labelTypes id="_ag2UHOCNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
+  <labelTypes id="_ag2UHeCNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <behavior id="_ag2T6-CNEe-LfM-jfeWyyA" entityName="github_repository Behavior"/>
+  <behavior id="_ag2T7uCNEe-LfM-jfeWyyA" entityName="user Behavior"/>
+  <behavior id="_ag2T9OCNEe-LfM-jfeWyyA" entityName="config_server Behavior"/>
+  <behavior id="_ag2T-OCNEe-LfM-jfeWyyA" entityName="discovery_service Behavior"/>
+  <behavior id="_ag2T-uCNEe-LfM-jfeWyyA" entityName="rabbitmq Behavior"/>
+  <behavior id="_ag2T_uCNEe-LfM-jfeWyyA" entityName="monitor_dashboard Behavior"/>
+  <behavior id="_ag2UAOCNEe-LfM-jfeWyyA" entityName="turbine Behavior"/>
+  <behavior id="_ag2UA-CNEe-LfM-jfeWyyA" entityName="statement_service Behavior"/>
+  <behavior id="_ag2UBeCNEe-LfM-jfeWyyA" entityName="card_service Behavior"/>
+  <behavior id="_ag2UB-CNEe-LfM-jfeWyyA" entityName="card_statement_composite Behavior"/>
+  <behavior id="_ag2UCuCNEe-LfM-jfeWyyA" entityName="edge_server Behavior"/>
+  <behavior id="_ag2UDOCNEe-LfM-jfeWyyA" entityName="secret_manager Behavior"/>
+</datadictionary:DataDictionary>

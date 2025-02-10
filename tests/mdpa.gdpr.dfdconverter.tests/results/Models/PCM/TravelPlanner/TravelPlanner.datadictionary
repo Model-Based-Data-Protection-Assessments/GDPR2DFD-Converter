@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_aY8VEOCNEe-LfM-jfeWyyA">
+  <labelTypes id="_aZbdQOCNEe-LfM-jfeWyyA" entityName="AssignedRoles">
+    <label id="_aZd5gOCNEe-LfM-jfeWyyA" entityName="User"/>
+    <label id="_aZg9CuCNEe-LfM-jfeWyyA" entityName="Airline"/>
+  </labelTypes>
+  <labelTypes id="_aZzQxeCNEe-LfM-jfeWyyA" entityName="GrantedRoles">
+    <label id="_aZzQx-CNEe-LfM-jfeWyyA" entityName="User"/>
+    <label id="_aZ6l6OCNEe-LfM-jfeWyyA" entityName="Airline"/>
+  </labelTypes>
+  <behavior id="_aZZBAeCNEe-LfM-jfeWyyA">
+    <outPin id="_aZmce-CNEe-LfM-jfeWyyA" entityName=""/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aZvmX-CNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZmce-CNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aZvmY-CNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZfHoeCNEe-LfM-jfeWyyA">
+    <inPin id="_aZmceuCNEe-LfM-jfeWyyA" entityName=""/>
+    <outPin id="_aZfusOCNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aZyprOCNEe-LfM-jfeWyyA" outputPin="_aZfusOCNEe-LfM-jfeWyyA" outputLabels="_aZzQx-CNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aZypreCNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aZz3yOCNEe-LfM-jfeWyyA" outputPin="_aZfusOCNEe-LfM-jfeWyyA" outputLabels="_aZzQx-CNEe-LfM-jfeWyyA" inputPins="_aZmceuCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aZ0e9-CNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aZ0e_uCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZfusOCNEe-LfM-jfeWyyA" inputPins="_aZmceuCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aZ0fAuCNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZg80uCNEe-LfM-jfeWyyA">
+    <inPin id="_aZg81eCNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <outPin id="_aZg81-CNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aZ1t3-CNEe-LfM-jfeWyyA" outputPin="_aZg81-CNEe-LfM-jfeWyyA" inputPins="_aZg81eCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aZ4wTuCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZg81-CNEe-LfM-jfeWyyA" inputPins="_aZg81eCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aZ4wWuCNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZg82uCNEe-LfM-jfeWyyA">
+    <inPin id="_aZg83-CNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <outPin id="_aZr8kuCNEe-LfM-jfeWyyA" entityName=""/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aZ4wYuCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZr8kuCNEe-LfM-jfeWyyA" inputPins="_aZg83-CNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aZ4waOCNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZg84uCNEe-LfM-jfeWyyA">
+    <inPin id="_aZg85-CNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <inPin id="_aZr8kOCNEe-LfM-jfeWyyA" entityName=""/>
+    <outPin id="_aZg86eCNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aZ5-feCNEe-LfM-jfeWyyA" outputPin="_aZg86eCNEe-LfM-jfeWyyA" inputPins="_aZg85-CNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aZ5-geCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZg86eCNEe-LfM-jfeWyyA" inputPins="_aZg85-CNEe-LfM-jfeWyyA _aZr8kOCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aZ5-hOCNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZg86-CNEe-LfM-jfeWyyA">
+    <inPin id="_aZg87-CNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <outPin id="_aZg88eCNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <outPin id="_aZg88uCNEe-LfM-jfeWyyA" entityName="query"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aZ5-i-CNEe-LfM-jfeWyyA" outputPin="_aZg88eCNEe-LfM-jfeWyyA" inputPins="_aZg87-CNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aZ5-kOCNEe-LfM-jfeWyyA" outputPin="_aZg88uCNEe-LfM-jfeWyyA" outputLabels="_aZzQx-CNEe-LfM-jfeWyyA" inputPins="_aZg87-CNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aZ6l4-CNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aZ6l5-CNEe-LfM-jfeWyyA" outputPin="_aZg88uCNEe-LfM-jfeWyyA" outputLabels="_aZ6l6OCNEe-LfM-jfeWyyA" inputPins="_aZg87-CNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aZ6l6uCNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aZ6l6-CNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZg88eCNEe-LfM-jfeWyyA" inputPins="_aZg87-CNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aZ6l7OCNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aZ6l7eCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZg88uCNEe-LfM-jfeWyyA" inputPins="_aZg87-CNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aZ6l7uCNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZg89uCNEe-LfM-jfeWyyA">
+    <inPin id="_aZg8--CNEe-LfM-jfeWyyA" entityName="query"/>
+    <outPin id="_aZg8_OCNEe-LfM-jfeWyyA" entityName="query"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aZ6l9OCNEe-LfM-jfeWyyA" outputPin="_aZg8_OCNEe-LfM-jfeWyyA" inputPins="_aZg8--CNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aZ6l9uCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZg8_OCNEe-LfM-jfeWyyA" inputPins="_aZg8--CNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aZ6l-OCNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZg8_uCNEe-LfM-jfeWyyA">
+    <inPin id="_aZg9A-CNEe-LfM-jfeWyyA" entityName="query"/>
+    <outPin id="_aZg9BOCNEe-LfM-jfeWyyA" entityName="query"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aZ7M2OCNEe-LfM-jfeWyyA" outputPin="_aZg9BOCNEe-LfM-jfeWyyA" inputPins="_aZg9A-CNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aZ7M2eCNEe-LfM-jfeWyyA" outputPin="_aZg9BOCNEe-LfM-jfeWyyA" inputPins="_aZg9A-CNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aZ8a8uCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZg9BOCNEe-LfM-jfeWyyA" inputPins="_aZg9A-CNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aZ8a9eCNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZg9COCNEe-LfM-jfeWyyA">
+    <inPin id="_aZg9DOCNEe-LfM-jfeWyyA" entityName="query"/>
+    <outPin id="_aZg9DuCNEe-LfM-jfeWyyA" entityName="query"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aZ8a-eCNEe-LfM-jfeWyyA" outputPin="_aZg9DuCNEe-LfM-jfeWyyA" inputPins="_aZg9DOCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aZ8a_eCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZg9DuCNEe-LfM-jfeWyyA" inputPins="_aZg9DOCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aZ8bAOCNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZg9EOCNEe-LfM-jfeWyyA">
+    <inPin id="_aZg9FOCNEe-LfM-jfeWyyA" entityName="query"/>
+    <outPin id="_aZg9FeCNEe-LfM-jfeWyyA" entityName="query"/>
+    <outPin id="_aZsjGeCNEe-LfM-jfeWyyA" entityName=""/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aZ8bA-CNEe-LfM-jfeWyyA" outputPin="_aZg9FeCNEe-LfM-jfeWyyA" inputPins="_aZg9FOCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aZ8bBeCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZg9FeCNEe-LfM-jfeWyyA" inputPins="_aZg9FOCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aZ8bBuCNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aZ8bCOCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZsjGeCNEe-LfM-jfeWyyA" inputPins="_aZg9FOCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aZ8bCeCNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZg9F-CNEe-LfM-jfeWyyA">
+    <inPin id="_aZsjF-CNEe-LfM-jfeWyyA" entityName=""/>
+    <outPin id="_aZsjK-CNEe-LfM-jfeWyyA" entityName=""/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aZ8bDOCNEe-LfM-jfeWyyA" outputPin="_aZsjK-CNEe-LfM-jfeWyyA" inputPins="_aZsjF-CNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aZ-26-CNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZsjK-CNEe-LfM-jfeWyyA" inputPins="_aZsjF-CNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aZ-27uCNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZg9G-CNEe-LfM-jfeWyyA">
+    <inPin id="_aZsjKuCNEe-LfM-jfeWyyA" entityName=""/>
+    <outPin id="_aZg9HuCNEe-LfM-jfeWyyA" entityName="RETURN"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aZ-28-CNEe-LfM-jfeWyyA" outputPin="_aZg9HuCNEe-LfM-jfeWyyA" outputLabels="_aZzQx-CNEe-LfM-jfeWyyA _aZ6l6OCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aZ-29OCNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aZ-2-uCNEe-LfM-jfeWyyA" outputPin="_aZg9HuCNEe-LfM-jfeWyyA" outputLabels="_aZzQx-CNEe-LfM-jfeWyyA" inputPins="_aZsjKuCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aZ-2_-CNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aZ-3AeCNEe-LfM-jfeWyyA" outputPin="_aZg9HuCNEe-LfM-jfeWyyA" outputLabels="_aZ6l6OCNEe-LfM-jfeWyyA" inputPins="_aZsjKuCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aZ-3BuCNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aZ-3DOCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZg9HuCNEe-LfM-jfeWyyA" inputPins="_aZsjKuCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aZ-3DeCNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZg9IeCNEe-LfM-jfeWyyA">
+    <inPin id="_aZg9JeCNEe-LfM-jfeWyyA" entityName="RETURN"/>
+    <outPin id="_aZg9JuCNEe-LfM-jfeWyyA" entityName="RETURN"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aZ-3D-CNEe-LfM-jfeWyyA" outputPin="_aZg9JuCNEe-LfM-jfeWyyA" inputPins="_aZg9JeCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aZ-3FeCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZg9JuCNEe-LfM-jfeWyyA" inputPins="_aZg9JeCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aZ-3GOCNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZg9KOCNEe-LfM-jfeWyyA">
+    <inPin id="_aZg9LeCNEe-LfM-jfeWyyA" entityName="query"/>
+    <inPin id="_aZg9LuCNEe-LfM-jfeWyyA" entityName="RETURN"/>
+    <outPin id="_aZg9MOCNEe-LfM-jfeWyyA" entityName="query"/>
+    <outPin id="_aZg9MuCNEe-LfM-jfeWyyA" entityName="flights"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aZ-3HeCNEe-LfM-jfeWyyA" outputPin="_aZg9MOCNEe-LfM-jfeWyyA" inputPins="_aZg9LeCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aZ-3H-CNEe-LfM-jfeWyyA" outputPin="_aZg9MuCNEe-LfM-jfeWyyA" inputPins="_aZg9LuCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aZ-3I-CNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZg9MOCNEe-LfM-jfeWyyA" inputPins="_aZg9LeCNEe-LfM-jfeWyyA _aZg9LuCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aZ-3JeCNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aZ-3J-CNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZg9MuCNEe-LfM-jfeWyyA" inputPins="_aZg9LeCNEe-LfM-jfeWyyA _aZg9LuCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aZ-3KeCNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZg9NOCNEe-LfM-jfeWyyA">
+    <inPin id="_aZg9NeCNEe-LfM-jfeWyyA" entityName="query"/>
+    <inPin id="_aZg9NuCNEe-LfM-jfeWyyA" entityName="flights"/>
+    <outPin id="_aZg9N-CNEe-LfM-jfeWyyA" entityName="query"/>
+    <outPin id="_aZg9OOCNEe-LfM-jfeWyyA" entityName="flights"/>
+    <outPin id="_aZg9OeCNEe-LfM-jfeWyyA" entityName="RETURN"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aZ-3LeCNEe-LfM-jfeWyyA" outputPin="_aZg9N-CNEe-LfM-jfeWyyA" inputPins="_aZg9NeCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aZ-3MeCNEe-LfM-jfeWyyA" outputPin="_aZg9OOCNEe-LfM-jfeWyyA" inputPins="_aZg9NuCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aZ-3NeCNEe-LfM-jfeWyyA" outputPin="_aZg9OeCNEe-LfM-jfeWyyA" outputLabels="_aZzQx-CNEe-LfM-jfeWyyA" inputPins="_aZg9NeCNEe-LfM-jfeWyyA _aZg9NuCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:AND" id="_aaAsvOCNEe-LfM-jfeWyyA">
+        <terms xsi:type="datadictionary:LabelReference" id="_aaChneCNEe-LfM-jfeWyyA" label="_aZzQx-CNEe-LfM-jfeWyyA"/>
+        <terms xsi:type="datadictionary:LabelReference" id="_aaChp-CNEe-LfM-jfeWyyA" label="_aZzQx-CNEe-LfM-jfeWyyA"/>
+      </term>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaChrOCNEe-LfM-jfeWyyA" outputPin="_aZg9OeCNEe-LfM-jfeWyyA" outputLabels="_aZ6l6OCNEe-LfM-jfeWyyA" inputPins="_aZg9NeCNEe-LfM-jfeWyyA _aZg9NuCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:AND" id="_aaChsOCNEe-LfM-jfeWyyA">
+        <terms xsi:type="datadictionary:LabelReference" id="_aaChsuCNEe-LfM-jfeWyyA" label="_aZ6l6OCNEe-LfM-jfeWyyA"/>
+        <terms xsi:type="datadictionary:LabelReference" id="_aaCht-CNEe-LfM-jfeWyyA" label="_aZ6l6OCNEe-LfM-jfeWyyA"/>
+      </term>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaChweCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZg9N-CNEe-LfM-jfeWyyA" inputPins="_aZg9NeCNEe-LfM-jfeWyyA _aZg9NuCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaChw-CNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaChxeCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZg9OOCNEe-LfM-jfeWyyA" inputPins="_aZg9NeCNEe-LfM-jfeWyyA _aZg9NuCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaChxuCNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaChyOCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZg9OeCNEe-LfM-jfeWyyA" inputPins="_aZg9NeCNEe-LfM-jfeWyyA _aZg9NuCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaChy-CNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZg9POCNEe-LfM-jfeWyyA">
+    <inPin id="_aZg9QOCNEe-LfM-jfeWyyA" entityName="query"/>
+    <inPin id="_aZg9QeCNEe-LfM-jfeWyyA" entityName="flights"/>
+    <inPin id="_aZg9QuCNEe-LfM-jfeWyyA" entityName="RETURN"/>
+    <outPin id="_aZg9Q-CNEe-LfM-jfeWyyA" entityName="RETURN"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaChz-CNEe-LfM-jfeWyyA" outputPin="_aZg9Q-CNEe-LfM-jfeWyyA" inputPins="_aZg9QuCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaCh1OCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZg9Q-CNEe-LfM-jfeWyyA" inputPins="_aZg9QOCNEe-LfM-jfeWyyA _aZg9QeCNEe-LfM-jfeWyyA _aZg9QuCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaCh1uCNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZg9ReCNEe-LfM-jfeWyyA">
+    <inPin id="_aZg9SOCNEe-LfM-jfeWyyA" entityName="query"/>
+    <inPin id="_aZg9SuCNEe-LfM-jfeWyyA" entityName="RETURN"/>
+    <outPin id="_aZg9TOCNEe-LfM-jfeWyyA" entityName="query"/>
+    <outPin id="_aZg9TeCNEe-LfM-jfeWyyA" entityName="flights"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaCh3eCNEe-LfM-jfeWyyA" outputPin="_aZg9TOCNEe-LfM-jfeWyyA" inputPins="_aZg9SOCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaCh4-CNEe-LfM-jfeWyyA" outputPin="_aZg9TeCNEe-LfM-jfeWyyA" inputPins="_aZg9SuCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaCh6eCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZg9TOCNEe-LfM-jfeWyyA" inputPins="_aZg9SOCNEe-LfM-jfeWyyA _aZg9SuCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaCh7OCNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaCh7uCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZg9TeCNEe-LfM-jfeWyyA" inputPins="_aZg9SOCNEe-LfM-jfeWyyA _aZg9SuCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaCh8eCNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZg9T-CNEe-LfM-jfeWyyA">
+    <inPin id="_aZg9UOCNEe-LfM-jfeWyyA" entityName="query"/>
+    <inPin id="_aZg9UeCNEe-LfM-jfeWyyA" entityName="flights"/>
+    <outPin id="_aZg9UuCNEe-LfM-jfeWyyA" entityName="query"/>
+    <outPin id="_aZg9VOCNEe-LfM-jfeWyyA" entityName="flights"/>
+    <outPin id="_aZg9VeCNEe-LfM-jfeWyyA" entityName="RETURN"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaCh-OCNEe-LfM-jfeWyyA" outputPin="_aZg9UuCNEe-LfM-jfeWyyA" inputPins="_aZg9UOCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaCh--CNEe-LfM-jfeWyyA" outputPin="_aZg9VOCNEe-LfM-jfeWyyA" inputPins="_aZg9UeCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaCh_-CNEe-LfM-jfeWyyA" outputPin="_aZg9VeCNEe-LfM-jfeWyyA" inputPins="_aZg9UeCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaCiBeCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZg9UuCNEe-LfM-jfeWyyA" inputPins="_aZg9UOCNEe-LfM-jfeWyyA _aZg9UeCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaCiCeCNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaCiCuCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZg9VOCNEe-LfM-jfeWyyA" inputPins="_aZg9UOCNEe-LfM-jfeWyyA _aZg9UeCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaCiDOCNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaCiD-CNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZg9VeCNEe-LfM-jfeWyyA" inputPins="_aZg9UOCNEe-LfM-jfeWyyA _aZg9UeCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaCiEOCNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZg9V-CNEe-LfM-jfeWyyA">
+    <inPin id="_aZg9WuCNEe-LfM-jfeWyyA" entityName="query"/>
+    <inPin id="_aZhj4OCNEe-LfM-jfeWyyA" entityName="flights"/>
+    <inPin id="_aZhj4eCNEe-LfM-jfeWyyA" entityName="RETURN"/>
+    <outPin id="_aZhj4uCNEe-LfM-jfeWyyA" entityName="RETURN"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaCiE-CNEe-LfM-jfeWyyA" outputPin="_aZhj4uCNEe-LfM-jfeWyyA" inputPins="_aZhj4eCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaCiGeCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhj4uCNEe-LfM-jfeWyyA" inputPins="_aZg9WuCNEe-LfM-jfeWyyA _aZhj4OCNEe-LfM-jfeWyyA _aZhj4eCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaCiG-CNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZhj5OCNEe-LfM-jfeWyyA">
+    <inPin id="_aZhj6OCNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <inPin id="_aZhj6uCNEe-LfM-jfeWyyA" entityName="query"/>
+    <inPin id="_aZhj6-CNEe-LfM-jfeWyyA" entityName="RETURN"/>
+    <outPin id="_aZhj7eCNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <outPin id="_aZhj7-CNEe-LfM-jfeWyyA" entityName="query"/>
+    <outPin id="_aZhj8OCNEe-LfM-jfeWyyA" entityName="flights"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaCiH-CNEe-LfM-jfeWyyA" outputPin="_aZhj7eCNEe-LfM-jfeWyyA" inputPins="_aZhj6OCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaCiIeCNEe-LfM-jfeWyyA" outputPin="_aZhj7-CNEe-LfM-jfeWyyA" inputPins="_aZhj6uCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaCiJOCNEe-LfM-jfeWyyA" outputPin="_aZhj8OCNEe-LfM-jfeWyyA" inputPins="_aZhj6-CNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDIUeCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhj7eCNEe-LfM-jfeWyyA" inputPins="_aZhj6OCNEe-LfM-jfeWyyA _aZhj6uCNEe-LfM-jfeWyyA _aZhj6-CNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDIUuCNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDIVOCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhj7-CNEe-LfM-jfeWyyA" inputPins="_aZhj6OCNEe-LfM-jfeWyyA _aZhj6uCNEe-LfM-jfeWyyA _aZhj6-CNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDIWeCNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDIW-CNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhj8OCNEe-LfM-jfeWyyA" inputPins="_aZhj6OCNEe-LfM-jfeWyyA _aZhj6uCNEe-LfM-jfeWyyA _aZhj6-CNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDIXuCNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZhj8uCNEe-LfM-jfeWyyA">
+    <inPin id="_aZhj8-CNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <inPin id="_aZhj9eCNEe-LfM-jfeWyyA" entityName="query"/>
+    <inPin id="_aZhj9uCNEe-LfM-jfeWyyA" entityName="flights"/>
+    <outPin id="_aZhj9-CNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <outPin id="_aZhj-eCNEe-LfM-jfeWyyA" entityName="query"/>
+    <outPin id="_aZhj-uCNEe-LfM-jfeWyyA" entityName="flights"/>
+    <outPin id="_aZsjrOCNEe-LfM-jfeWyyA" entityName=""/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDIYuCNEe-LfM-jfeWyyA" outputPin="_aZhj9-CNEe-LfM-jfeWyyA" inputPins="_aZhj8-CNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDIZuCNEe-LfM-jfeWyyA" outputPin="_aZhj-eCNEe-LfM-jfeWyyA" inputPins="_aZhj9eCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDIaeCNEe-LfM-jfeWyyA" outputPin="_aZhj-uCNEe-LfM-jfeWyyA" inputPins="_aZhj9uCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDIbuCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhj9-CNEe-LfM-jfeWyyA" inputPins="_aZhj8-CNEe-LfM-jfeWyyA _aZhj9eCNEe-LfM-jfeWyyA _aZhj9uCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDIb-CNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDIcOCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhj-eCNEe-LfM-jfeWyyA" inputPins="_aZhj8-CNEe-LfM-jfeWyyA _aZhj9eCNEe-LfM-jfeWyyA _aZhj9uCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDIc-CNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDIdeCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhj-uCNEe-LfM-jfeWyyA" inputPins="_aZhj8-CNEe-LfM-jfeWyyA _aZhj9eCNEe-LfM-jfeWyyA _aZhj9uCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDIeOCNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDIeeCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZsjrOCNEe-LfM-jfeWyyA" inputPins="_aZhj8-CNEe-LfM-jfeWyyA _aZhj9eCNEe-LfM-jfeWyyA _aZhj9uCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDIfOCNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZhj_eCNEe-LfM-jfeWyyA">
+    <inPin id="_aZsjq-CNEe-LfM-jfeWyyA" entityName=""/>
+    <outPin id="_aZsjueCNEe-LfM-jfeWyyA" entityName=""/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDIgeCNEe-LfM-jfeWyyA" outputPin="_aZsjueCNEe-LfM-jfeWyyA" inputPins="_aZsjq-CNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDIiOCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZsjueCNEe-LfM-jfeWyyA" inputPins="_aZsjq-CNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDIi-CNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZhkAuCNEe-LfM-jfeWyyA">
+    <inPin id="_aZsjt-CNEe-LfM-jfeWyyA" entityName=""/>
+    <outPin id="_aZhkBOCNEe-LfM-jfeWyyA" entityName="RETURN"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDIkOCNEe-LfM-jfeWyyA" outputPin="_aZhkBOCNEe-LfM-jfeWyyA" outputLabels="_aZzQx-CNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDIkeCNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDImuCNEe-LfM-jfeWyyA" outputPin="_aZhkBOCNEe-LfM-jfeWyyA" outputLabels="_aZzQx-CNEe-LfM-jfeWyyA" inputPins="_aZsjt-CNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDIneCNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDIoeCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkBOCNEe-LfM-jfeWyyA" inputPins="_aZsjt-CNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDIo-CNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZhkB-CNEe-LfM-jfeWyyA">
+    <inPin id="_aZhkCuCNEe-LfM-jfeWyyA" entityName="RETURN"/>
+    <outPin id="_aZhkC-CNEe-LfM-jfeWyyA" entityName="RETURN"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDIpeCNEe-LfM-jfeWyyA" outputPin="_aZhkC-CNEe-LfM-jfeWyyA" inputPins="_aZhkCuCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDIquCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkC-CNEe-LfM-jfeWyyA" inputPins="_aZhkCuCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDIq-CNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZhkDeCNEe-LfM-jfeWyyA">
+    <inPin id="_aZhkEeCNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <inPin id="_aZhkEuCNEe-LfM-jfeWyyA" entityName="query"/>
+    <inPin id="_aZhkFeCNEe-LfM-jfeWyyA" entityName="flights"/>
+    <inPin id="_aZhkFuCNEe-LfM-jfeWyyA" entityName="RETURN"/>
+    <outPin id="_aZhkF-CNEe-LfM-jfeWyyA" entityName="query"/>
+    <outPin id="_aZhkGOCNEe-LfM-jfeWyyA" entityName="flights"/>
+    <outPin id="_aZhkGeCNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDIsuCNEe-LfM-jfeWyyA" outputPin="_aZhkGeCNEe-LfM-jfeWyyA" inputPins="_aZhkEeCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDIt-CNEe-LfM-jfeWyyA" outputPin="_aZhkF-CNEe-LfM-jfeWyyA" inputPins="_aZhkEuCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDIuuCNEe-LfM-jfeWyyA" outputPin="_aZhkGOCNEe-LfM-jfeWyyA" inputPins="_aZhkFeCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDIvOCNEe-LfM-jfeWyyA" outputPin="_aZhkGeCNEe-LfM-jfeWyyA" inputPins="_aZhkFuCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDIwuCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkF-CNEe-LfM-jfeWyyA" inputPins="_aZhkEeCNEe-LfM-jfeWyyA _aZhkEuCNEe-LfM-jfeWyyA _aZhkFeCNEe-LfM-jfeWyyA _aZhkFuCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDIw-CNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDIyOCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkGOCNEe-LfM-jfeWyyA" inputPins="_aZhkEeCNEe-LfM-jfeWyyA _aZhkEuCNEe-LfM-jfeWyyA _aZhkFeCNEe-LfM-jfeWyyA _aZhkFuCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDIyuCNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDIy-CNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkGeCNEe-LfM-jfeWyyA" inputPins="_aZhkEeCNEe-LfM-jfeWyyA _aZhkEuCNEe-LfM-jfeWyyA _aZhkFeCNEe-LfM-jfeWyyA _aZhkFuCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDIzuCNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZhkG-CNEe-LfM-jfeWyyA">
+    <inPin id="_aZhkHeCNEe-LfM-jfeWyyA" entityName="query"/>
+    <inPin id="_aZhkH-CNEe-LfM-jfeWyyA" entityName="flights"/>
+    <inPin id="_aZhkIeCNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <outPin id="_aZhkIuCNEe-LfM-jfeWyyA" entityName="query"/>
+    <outPin id="_aZhkI-CNEe-LfM-jfeWyyA" entityName="flights"/>
+    <outPin id="_aZhkJuCNEe-LfM-jfeWyyA" entityName="flight"/>
+    <outPin id="_aZhkJ-CNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDI0-CNEe-LfM-jfeWyyA" outputPin="_aZhkIuCNEe-LfM-jfeWyyA" inputPins="_aZhkHeCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDI1uCNEe-LfM-jfeWyyA" outputPin="_aZhkI-CNEe-LfM-jfeWyyA" inputPins="_aZhkH-CNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDI2OCNEe-LfM-jfeWyyA" outputPin="_aZhkJ-CNEe-LfM-jfeWyyA" inputPins="_aZhkIeCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDI3OCNEe-LfM-jfeWyyA" outputPin="_aZhkJuCNEe-LfM-jfeWyyA" inputPins="_aZhkH-CNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDI3eCNEe-LfM-jfeWyyA" outputPin="_aZhkJ-CNEe-LfM-jfeWyyA" inputPins="_aZhkIeCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDI4eCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkIuCNEe-LfM-jfeWyyA" inputPins="_aZhkHeCNEe-LfM-jfeWyyA _aZhkH-CNEe-LfM-jfeWyyA _aZhkIeCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDI4-CNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDI5OCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkI-CNEe-LfM-jfeWyyA" inputPins="_aZhkHeCNEe-LfM-jfeWyyA _aZhkH-CNEe-LfM-jfeWyyA _aZhkIeCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDI5uCNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDI5-CNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkJuCNEe-LfM-jfeWyyA" inputPins="_aZhkHeCNEe-LfM-jfeWyyA _aZhkH-CNEe-LfM-jfeWyyA _aZhkIeCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDI6-CNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDI7eCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkJ-CNEe-LfM-jfeWyyA" inputPins="_aZhkHeCNEe-LfM-jfeWyyA _aZhkH-CNEe-LfM-jfeWyyA _aZhkIeCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDI7-CNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZhkKeCNEe-LfM-jfeWyyA">
+    <inPin id="_aZhkKuCNEe-LfM-jfeWyyA" entityName="flight"/>
+    <inPin id="_aZhkLOCNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <outPin id="_aZhkLuCNEe-LfM-jfeWyyA" entityName="flight"/>
+    <outPin id="_aZhkL-CNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDI9OCNEe-LfM-jfeWyyA" outputPin="_aZhkLuCNEe-LfM-jfeWyyA" inputPins="_aZhkKuCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDI9-CNEe-LfM-jfeWyyA" outputPin="_aZhkL-CNEe-LfM-jfeWyyA" inputPins="_aZhkLOCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDI_OCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkLuCNEe-LfM-jfeWyyA" inputPins="_aZhkKuCNEe-LfM-jfeWyyA _aZhkLOCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDI_uCNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDJAOCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkL-CNEe-LfM-jfeWyyA" inputPins="_aZhkKuCNEe-LfM-jfeWyyA _aZhkLOCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDJAeCNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZhkMuCNEe-LfM-jfeWyyA">
+    <inPin id="_aZhkNuCNEe-LfM-jfeWyyA" entityName="flight"/>
+    <inPin id="_aZhkOeCNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <outPin id="_aZhkOuCNEe-LfM-jfeWyyA" entityName="flight"/>
+    <outPin id="_aZhkO-CNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDJBOCNEe-LfM-jfeWyyA" outputPin="_aZhkOuCNEe-LfM-jfeWyyA" inputPins="_aZhkNuCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDJB-CNEe-LfM-jfeWyyA" outputPin="_aZhkO-CNEe-LfM-jfeWyyA" inputPins="_aZhkOeCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDJCeCNEe-LfM-jfeWyyA" outputPin="_aZhkOuCNEe-LfM-jfeWyyA" inputPins="_aZhkNuCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDJDOCNEe-LfM-jfeWyyA" outputPin="_aZhkO-CNEe-LfM-jfeWyyA" inputPins="_aZhkOeCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDJEOCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkOuCNEe-LfM-jfeWyyA" inputPins="_aZhkNuCNEe-LfM-jfeWyyA _aZhkOeCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDJE-CNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDJFOCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkO-CNEe-LfM-jfeWyyA" inputPins="_aZhkNuCNEe-LfM-jfeWyyA _aZhkOeCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDJFeCNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZhkPeCNEe-LfM-jfeWyyA">
+    <inPin id="_aZhkQeCNEe-LfM-jfeWyyA" entityName="flight"/>
+    <inPin id="_aZhkQ-CNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <outPin id="_aZhkROCNEe-LfM-jfeWyyA" entityName="flight"/>
+    <outPin id="_aZhkRuCNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDJGOCNEe-LfM-jfeWyyA" outputPin="_aZhkROCNEe-LfM-jfeWyyA" inputPins="_aZhkQeCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDJGeCNEe-LfM-jfeWyyA" outputPin="_aZhkRuCNEe-LfM-jfeWyyA" inputPins="_aZhkQ-CNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDvYeCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkROCNEe-LfM-jfeWyyA" inputPins="_aZhkQeCNEe-LfM-jfeWyyA _aZhkQ-CNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDvY-CNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDvZOCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkRuCNEe-LfM-jfeWyyA" inputPins="_aZhkQeCNEe-LfM-jfeWyyA _aZhkQ-CNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDvaOCNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZhkSeCNEe-LfM-jfeWyyA">
+    <inPin id="_aZhkTeCNEe-LfM-jfeWyyA" entityName="flight"/>
+    <inPin id="_aZhkTuCNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <outPin id="_aZhkT-CNEe-LfM-jfeWyyA" entityName="flight"/>
+    <outPin id="_aZhkUOCNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <outPin id="_aZhkUeCNEe-LfM-jfeWyyA" entityName="RETURN"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDvb-CNEe-LfM-jfeWyyA" outputPin="_aZhkT-CNEe-LfM-jfeWyyA" inputPins="_aZhkTeCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDvc-CNEe-LfM-jfeWyyA" outputPin="_aZhkUOCNEe-LfM-jfeWyyA" inputPins="_aZhkTuCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDveuCNEe-LfM-jfeWyyA" outputPin="_aZhkUeCNEe-LfM-jfeWyyA" outputLabels="_aZzQx-CNEe-LfM-jfeWyyA" inputPins="_aZhkTeCNEe-LfM-jfeWyyA _aZhkTuCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDvfeCNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDvgOCNEe-LfM-jfeWyyA" outputPin="_aZhkUeCNEe-LfM-jfeWyyA" outputLabels="_aZ6l6OCNEe-LfM-jfeWyyA" inputPins="_aZhkTeCNEe-LfM-jfeWyyA _aZhkTuCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDvg-CNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDviOCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkT-CNEe-LfM-jfeWyyA" inputPins="_aZhkTeCNEe-LfM-jfeWyyA _aZhkTuCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDviuCNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDvi-CNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkUOCNEe-LfM-jfeWyyA" inputPins="_aZhkTeCNEe-LfM-jfeWyyA _aZhkTuCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDvjeCNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDvjuCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkUeCNEe-LfM-jfeWyyA" inputPins="_aZhkTeCNEe-LfM-jfeWyyA _aZhkTuCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDvkOCNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZhkU-CNEe-LfM-jfeWyyA">
+    <inPin id="_aZhkV-CNEe-LfM-jfeWyyA" entityName="flight"/>
+    <inPin id="_aZhkWOCNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <inPin id="_aZhkWuCNEe-LfM-jfeWyyA" entityName="RETURN"/>
+    <outPin id="_aZhkW-CNEe-LfM-jfeWyyA" entityName="RETURN"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDvk-CNEe-LfM-jfeWyyA" outputPin="_aZhkW-CNEe-LfM-jfeWyyA" inputPins="_aZhkWuCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDvl-CNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkW-CNEe-LfM-jfeWyyA" inputPins="_aZhkV-CNEe-LfM-jfeWyyA _aZhkWOCNEe-LfM-jfeWyyA _aZhkWuCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDvmOCNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZhkXuCNEe-LfM-jfeWyyA">
+    <inPin id="_aZhkYeCNEe-LfM-jfeWyyA" entityName="flight"/>
+    <inPin id="_aZhkYuCNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <inPin id="_aZhkZOCNEe-LfM-jfeWyyA" entityName="RETURN"/>
+    <outPin id="_aZhkZeCNEe-LfM-jfeWyyA" entityName="flight"/>
+    <outPin id="_aZhkZ-CNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <outPin id="_aZhkaOCNEe-LfM-jfeWyyA" entityName="confirmation"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDvnOCNEe-LfM-jfeWyyA" outputPin="_aZhkZeCNEe-LfM-jfeWyyA" inputPins="_aZhkYeCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDvoOCNEe-LfM-jfeWyyA" outputPin="_aZhkZ-CNEe-LfM-jfeWyyA" inputPins="_aZhkYuCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDvoeCNEe-LfM-jfeWyyA" outputPin="_aZhkaOCNEe-LfM-jfeWyyA" inputPins="_aZhkZOCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDvpOCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkZeCNEe-LfM-jfeWyyA" inputPins="_aZhkYeCNEe-LfM-jfeWyyA _aZhkYuCNEe-LfM-jfeWyyA _aZhkZOCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDvpeCNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDvp-CNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkZ-CNEe-LfM-jfeWyyA" inputPins="_aZhkYeCNEe-LfM-jfeWyyA _aZhkYuCNEe-LfM-jfeWyyA _aZhkZOCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDvqeCNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDvquCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkaOCNEe-LfM-jfeWyyA" inputPins="_aZhkYeCNEe-LfM-jfeWyyA _aZhkYuCNEe-LfM-jfeWyyA _aZhkZOCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDvrOCNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZhka-CNEe-LfM-jfeWyyA">
+    <inPin id="_aZhkb-CNEe-LfM-jfeWyyA" entityName="flight"/>
+    <inPin id="_aZhkceCNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <inPin id="_aZhkc-CNEe-LfM-jfeWyyA" entityName="confirmation"/>
+    <outPin id="_aZhkdOCNEe-LfM-jfeWyyA" entityName="flight"/>
+    <outPin id="_aZhkdeCNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <outPin id="_aZhkduCNEe-LfM-jfeWyyA" entityName="confirmation"/>
+    <outPin id="_aZhkeOCNEe-LfM-jfeWyyA" entityName="RETURN"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDvsOCNEe-LfM-jfeWyyA" outputPin="_aZhkdOCNEe-LfM-jfeWyyA" inputPins="_aZhkb-CNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDvs-CNEe-LfM-jfeWyyA" outputPin="_aZhkdeCNEe-LfM-jfeWyyA" inputPins="_aZhkceCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDvt-CNEe-LfM-jfeWyyA" outputPin="_aZhkduCNEe-LfM-jfeWyyA" inputPins="_aZhkc-CNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDvuuCNEe-LfM-jfeWyyA" outputPin="_aZhkeOCNEe-LfM-jfeWyyA" inputPins="_aZhkc-CNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDvveCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkdOCNEe-LfM-jfeWyyA" inputPins="_aZhkb-CNEe-LfM-jfeWyyA _aZhkceCNEe-LfM-jfeWyyA _aZhkc-CNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDvv-CNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDvwOCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkdeCNEe-LfM-jfeWyyA" inputPins="_aZhkb-CNEe-LfM-jfeWyyA _aZhkceCNEe-LfM-jfeWyyA _aZhkc-CNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDvweCNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDvw-CNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkduCNEe-LfM-jfeWyyA" inputPins="_aZhkb-CNEe-LfM-jfeWyyA _aZhkceCNEe-LfM-jfeWyyA _aZhkc-CNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDvxOCNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDvxuCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkeOCNEe-LfM-jfeWyyA" inputPins="_aZhkb-CNEe-LfM-jfeWyyA _aZhkceCNEe-LfM-jfeWyyA _aZhkc-CNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDvx-CNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZhke-CNEe-LfM-jfeWyyA">
+    <inPin id="_aZhkgOCNEe-LfM-jfeWyyA" entityName="flight"/>
+    <inPin id="_aZhkguCNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <inPin id="_aZhkg-CNEe-LfM-jfeWyyA" entityName="confirmation"/>
+    <inPin id="_aZhkheCNEe-LfM-jfeWyyA" entityName="RETURN"/>
+    <outPin id="_aZhkh-CNEe-LfM-jfeWyyA" entityName="RETURN"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDvyuCNEe-LfM-jfeWyyA" outputPin="_aZhkh-CNEe-LfM-jfeWyyA" inputPins="_aZhkheCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDvzOCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkh-CNEe-LfM-jfeWyyA" inputPins="_aZhkgOCNEe-LfM-jfeWyyA _aZhkguCNEe-LfM-jfeWyyA _aZhkg-CNEe-LfM-jfeWyyA _aZhkheCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDvzuCNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZhkieCNEe-LfM-jfeWyyA">
+    <inPin id="_aZhkjOCNEe-LfM-jfeWyyA" entityName="query"/>
+    <inPin id="_aZhkjuCNEe-LfM-jfeWyyA" entityName="flights"/>
+    <inPin id="_aZhkj-CNEe-LfM-jfeWyyA" entityName="flight"/>
+    <inPin id="_aZhkkeCNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <inPin id="_aZhkkuCNEe-LfM-jfeWyyA" entityName="RETURN"/>
+    <outPin id="_aZhklOCNEe-LfM-jfeWyyA" entityName="query"/>
+    <outPin id="_aZhkleCNEe-LfM-jfeWyyA" entityName="flights"/>
+    <outPin id="_aZhkl-CNEe-LfM-jfeWyyA" entityName="flight"/>
+    <outPin id="_aZhkmeCNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <outPin id="_aZhkmuCNEe-LfM-jfeWyyA" entityName="confirmation"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDv0-CNEe-LfM-jfeWyyA" outputPin="_aZhklOCNEe-LfM-jfeWyyA" inputPins="_aZhkjOCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDv1OCNEe-LfM-jfeWyyA" outputPin="_aZhkleCNEe-LfM-jfeWyyA" inputPins="_aZhkjuCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDv1eCNEe-LfM-jfeWyyA" outputPin="_aZhkl-CNEe-LfM-jfeWyyA" inputPins="_aZhkj-CNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDv2OCNEe-LfM-jfeWyyA" outputPin="_aZhkmeCNEe-LfM-jfeWyyA" inputPins="_aZhkkeCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDv2-CNEe-LfM-jfeWyyA" outputPin="_aZhkmuCNEe-LfM-jfeWyyA" inputPins="_aZhkkuCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDv3uCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhklOCNEe-LfM-jfeWyyA" inputPins="_aZhkjOCNEe-LfM-jfeWyyA _aZhkjuCNEe-LfM-jfeWyyA _aZhkj-CNEe-LfM-jfeWyyA _aZhkkeCNEe-LfM-jfeWyyA _aZhkkuCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDv3-CNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDv4eCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkleCNEe-LfM-jfeWyyA" inputPins="_aZhkjOCNEe-LfM-jfeWyyA _aZhkjuCNEe-LfM-jfeWyyA _aZhkj-CNEe-LfM-jfeWyyA _aZhkkeCNEe-LfM-jfeWyyA _aZhkkuCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDv4-CNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDv5OCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkl-CNEe-LfM-jfeWyyA" inputPins="_aZhkjOCNEe-LfM-jfeWyyA _aZhkjuCNEe-LfM-jfeWyyA _aZhkj-CNEe-LfM-jfeWyyA _aZhkkeCNEe-LfM-jfeWyyA _aZhkkuCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDv5uCNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDv5-CNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkmeCNEe-LfM-jfeWyyA" inputPins="_aZhkjOCNEe-LfM-jfeWyyA _aZhkjuCNEe-LfM-jfeWyyA _aZhkj-CNEe-LfM-jfeWyyA _aZhkkeCNEe-LfM-jfeWyyA _aZhkkuCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDv6uCNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDv7eCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkmuCNEe-LfM-jfeWyyA" inputPins="_aZhkjOCNEe-LfM-jfeWyyA _aZhkjuCNEe-LfM-jfeWyyA _aZhkj-CNEe-LfM-jfeWyyA _aZhkkeCNEe-LfM-jfeWyyA _aZhkkuCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDv7uCNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZhknOCNEe-LfM-jfeWyyA">
+    <inPin id="_aZhko-CNEe-LfM-jfeWyyA" entityName="query"/>
+    <inPin id="_aZhkpeCNEe-LfM-jfeWyyA" entityName="flights"/>
+    <inPin id="_aZhkp-CNEe-LfM-jfeWyyA" entityName="flight"/>
+    <inPin id="_aZhkqOCNEe-LfM-jfeWyyA" entityName="ccd"/>
+    <inPin id="_aZhkqeCNEe-LfM-jfeWyyA" entityName="confirmation"/>
+  </behavior>
+  <behavior id="_aZhkt-CNEe-LfM-jfeWyyA">
+    <outPin id="_aZtKeuCNEe-LfM-jfeWyyA" entityName=""/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDwDeCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZtKeuCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDwDuCNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZhkwOCNEe-LfM-jfeWyyA">
+    <inPin id="_aZtKeeCNEe-LfM-jfeWyyA" entityName=""/>
+    <outPin id="_aZhkxeCNEe-LfM-jfeWyyA" entityName="flight"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDwE-CNEe-LfM-jfeWyyA" outputPin="_aZhkxeCNEe-LfM-jfeWyyA" outputLabels="_aZzQx-CNEe-LfM-jfeWyyA _aZ6l6OCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDwFOCNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDwGOCNEe-LfM-jfeWyyA" outputPin="_aZhkxeCNEe-LfM-jfeWyyA" outputLabels="_aZzQx-CNEe-LfM-jfeWyyA" inputPins="_aZtKeeCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDwG-CNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDwHuCNEe-LfM-jfeWyyA" outputPin="_aZhkxeCNEe-LfM-jfeWyyA" outputLabels="_aZ6l6OCNEe-LfM-jfeWyyA" inputPins="_aZtKeeCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDwIeCNEe-LfM-jfeWyyA"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDwJOCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkxeCNEe-LfM-jfeWyyA" inputPins="_aZtKeeCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDwJuCNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZhkyOCNEe-LfM-jfeWyyA">
+    <inPin id="_aZhkzOCNEe-LfM-jfeWyyA" entityName="flight"/>
+    <outPin id="_aZhkzuCNEe-LfM-jfeWyyA" entityName="flight"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDwLeCNEe-LfM-jfeWyyA" outputPin="_aZhkzuCNEe-LfM-jfeWyyA" inputPins="_aZhkzOCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDwMuCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhkzuCNEe-LfM-jfeWyyA" inputPins="_aZhkzOCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDwM-CNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZhk0eCNEe-LfM-jfeWyyA">
+    <inPin id="_aZhk1uCNEe-LfM-jfeWyyA" entityName="flight"/>
+    <outPin id="_aZtKl-CNEe-LfM-jfeWyyA" entityName=""/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDwNuCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZtKl-CNEe-LfM-jfeWyyA" inputPins="_aZhk1uCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDwOOCNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZhk2eCNEe-LfM-jfeWyyA">
+    <inPin id="_aZhk3OCNEe-LfM-jfeWyyA" entityName="flight"/>
+    <inPin id="_aZtKluCNEe-LfM-jfeWyyA" entityName=""/>
+    <outPin id="_aZhk3eCNEe-LfM-jfeWyyA" entityName="flight"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_aaDwPOCNEe-LfM-jfeWyyA" outputPin="_aZhk3eCNEe-LfM-jfeWyyA" inputPins="_aZhk3OCNEe-LfM-jfeWyyA"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_aaDwPuCNEe-LfM-jfeWyyA" entityName="Dummy Assignment" outputPin="_aZhk3eCNEe-LfM-jfeWyyA" inputPins="_aZhk3OCNEe-LfM-jfeWyyA _aZtKluCNEe-LfM-jfeWyyA">
+      <term xsi:type="datadictionary:TRUE" id="_aaDwP-CNEe-LfM-jfeWyyA"/>
+    </assignment>
+  </behavior>
+  <behavior id="_aZhk3-CNEe-LfM-jfeWyyA">
+    <inPin id="_aZhk4-CNEe-LfM-jfeWyyA" entityName="flight"/>
+  </behavior>
+</datadictionary:DataDictionary>

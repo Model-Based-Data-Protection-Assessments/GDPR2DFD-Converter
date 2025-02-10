@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<GDPR:LegalAssessmentFacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" id="0">
+  <processing xsi:type="GDPR:Usage" id="2" entityName="github_repository"/>
+  <processing xsi:type="GDPR:Usage" id="3" entityName="user"/>
+  <processing xsi:type="GDPR:Usage" id="4" entityName="config_server"/>
+  <processing xsi:type="GDPR:Usage" id="5" entityName="discovery_server"/>
+  <processing xsi:type="GDPR:Usage" id="6" entityName="tracing_server"/>
+  <processing xsi:type="GDPR:Usage" id="7" entityName="admin_server"/>
+  <processing xsi:type="GDPR:Usage" id="8" entityName="prometheus_server"/>
+  <processing xsi:type="GDPR:Usage" id="9" entityName="grafana_server"/>
+  <processing xsi:type="GDPR:Usage" id="10" entityName="customers_service"/>
+  <processing xsi:type="GDPR:Usage" id="11" entityName="vets_service"/>
+  <processing xsi:type="GDPR:Usage" id="12" entityName="visits_service"/>
+  <processing xsi:type="GDPR:Usage" id="13" entityName="api_gateway"/>
+</GDPR:LegalAssessmentFacts>

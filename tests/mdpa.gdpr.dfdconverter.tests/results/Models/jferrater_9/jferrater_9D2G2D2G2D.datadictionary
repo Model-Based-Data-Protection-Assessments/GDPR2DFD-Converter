@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_aiaaI-CNEe-LfM-jfeWyyA">
+  <labelTypes id="_aiaaOOCNEe-LfM-jfeWyyA" entityName="ProcessingType">
+    <label id="_aiaaQ-CNEe-LfM-jfeWyyA" entityName="Collecting"/>
+    <label id="_aiaaROCNEe-LfM-jfeWyyA" entityName="Storing"/>
+    <label id="_aiaaReCNEe-LfM-jfeWyyA" entityName="Usage"/>
+    <label id="_aiaaRuCNEe-LfM-jfeWyyA" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_aiaaOeCNEe-LfM-jfeWyyA" entityName="Data"/>
+  <labelTypes id="_aiaaOuCNEe-LfM-jfeWyyA" entityName="PersonalData"/>
+  <labelTypes id="_aiaaO-CNEe-LfM-jfeWyyA" entityName="Obligation"/>
+  <labelTypes id="_aiaaPOCNEe-LfM-jfeWyyA" entityName="Consent"/>
+  <labelTypes id="_aiaaPeCNEe-LfM-jfeWyyA" entityName="Contract"/>
+  <labelTypes id="_aiaaPuCNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
+  <labelTypes id="_aiaaP-CNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
+  <labelTypes id="_aiaaQOCNEe-LfM-jfeWyyA" entityName="Controller"/>
+  <labelTypes id="_aiaaQeCNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
+  <labelTypes id="_aiaaQuCNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <behavior id="_aiaaJeCNEe-LfM-jfeWyyA" entityName="github_repository Behavior"/>
+  <behavior id="_aiaaJ-CNEe-LfM-jfeWyyA" entityName="discovery_service Behavior"/>
+  <behavior id="_aiaaKeCNEe-LfM-jfeWyyA" entityName="config_service Behavior"/>
+  <behavior id="_aiaaK-CNEe-LfM-jfeWyyA" entityName="account_service Behavior"/>
+  <behavior id="_aiaaLeCNEe-LfM-jfeWyyA" entityName="customer_service Behavior"/>
+  <behavior id="_aiaaL-CNEe-LfM-jfeWyyA" entityName="store_service Behavior"/>
+  <behavior id="_aiaaMeCNEe-LfM-jfeWyyA" entityName="item_service Behavior"/>
+  <behavior id="_aiaaM-CNEe-LfM-jfeWyyA" entityName="price_service Behavior"/>
+  <behavior id="_aiaaNeCNEe-LfM-jfeWyyA" entityName="foodtray_service Behavior"/>
+  <behavior id="_aiaaN-CNEe-LfM-jfeWyyA" entityName="logging_server Behavior"/>
+</datadictionary:DataDictionary>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_alMB4OCNEe-LfM-jfeWyyA">
+  <labelTypes id="_alMobuCNEe-LfM-jfeWyyA" entityName="ProcessingType">
+    <label id="_alMofeCNEe-LfM-jfeWyyA" entityName="Collecting"/>
+    <label id="_alMofuCNEe-LfM-jfeWyyA" entityName="Storing"/>
+    <label id="_alMof-CNEe-LfM-jfeWyyA" entityName="Usage"/>
+    <label id="_alMogOCNEe-LfM-jfeWyyA" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_alMob-CNEe-LfM-jfeWyyA" entityName="Data"/>
+  <labelTypes id="_alMocOCNEe-LfM-jfeWyyA" entityName="PersonalData"/>
+  <labelTypes id="_alMoceCNEe-LfM-jfeWyyA" entityName="Obligation"/>
+  <labelTypes id="_alMocuCNEe-LfM-jfeWyyA" entityName="Consent"/>
+  <labelTypes id="_alMoc-CNEe-LfM-jfeWyyA" entityName="Contract"/>
+  <labelTypes id="_alModOCNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
+  <labelTypes id="_alModeCNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
+  <labelTypes id="_alModuCNEe-LfM-jfeWyyA" entityName="Controller"/>
+  <labelTypes id="_alMod-CNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
+  <labelTypes id="_alMoeeCNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <behavior id="76">
+    <outPin id="98"/>
+    <assignment xsi:type="datadictionary:Assignment" id="221" outputPin="98">
+      <term xsi:type="datadictionary:TRUE" id="222"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#78"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#79"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#100"/>
+    </assignment>
+  </behavior>
+  <behavior id="87">
+    <inPin id="150"/>
+    <outPin id="148"/>
+    <assignment xsi:type="datadictionary:Assignment" id="225" outputPin="148" inputPins="150">
+      <term xsi:type="datadictionary:TRUE" id="226"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#89"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#79"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#90"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#100"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="253" outputPin="148" inputPins="150"/>
+  </behavior>
+  <behavior id="53">
+    <inPin id="97"/>
+    <outPin id="102"/>
+    <outPin id="107"/>
+    <outPin id="112"/>
+    <outPin id="120"/>
+    <outPin id="130"/>
+    <outPin id="139"/>
+    <outPin id="154"/>
+    <assignment xsi:type="datadictionary:Assignment" id="193" outputPin="102" inputPins="97">
+      <term xsi:type="datadictionary:TRUE" id="194"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#55"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#19"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#100"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="195" outputPin="107" inputPins="97">
+      <term xsi:type="datadictionary:TRUE" id="196"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#55"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#19"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#100"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="197" outputPin="112" inputPins="97">
+      <term xsi:type="datadictionary:TRUE" id="198"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#55"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#19"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#100"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="199" outputPin="120" inputPins="97">
+      <term xsi:type="datadictionary:TRUE" id="200"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#55"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#19"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#100"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="201" outputPin="130" inputPins="97">
+      <term xsi:type="datadictionary:TRUE" id="202"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#55"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#19"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#100"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="203" outputPin="139" inputPins="97">
+      <term xsi:type="datadictionary:TRUE" id="204"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#55"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#19"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#100"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="205" outputPin="154" inputPins="97">
+      <term xsi:type="datadictionary:TRUE" id="206"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#55"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#19"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#100"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="238" outputPin="102" inputPins="97"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="239" outputPin="107" inputPins="97"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="240" outputPin="112" inputPins="97"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="241" outputPin="120" inputPins="97"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="242" outputPin="130" inputPins="97"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="243" outputPin="139" inputPins="97"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="244" outputPin="154" inputPins="97"/>
+  </behavior>
+  <behavior id="59">
+    <inPin id="101"/>
+    <outPin id="146"/>
+    <assignment xsi:type="datadictionary:Assignment" id="207" outputPin="146" inputPins="101">
+      <term xsi:type="datadictionary:TRUE" id="208"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#61"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#19"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#100"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="245" outputPin="146" inputPins="101"/>
+  </behavior>
+  <behavior id="16">
+    <inPin id="106"/>
+    <outPin id="104"/>
+    <assignment xsi:type="datadictionary:Assignment" id="169" outputPin="104" inputPins="106">
+      <term xsi:type="datadictionary:TRUE" id="170"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#19"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#100"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="227" outputPin="104" inputPins="106"/>
+  </behavior>
+  <behavior id="82">
+    <inPin id="111"/>
+    <outPin id="109"/>
+    <assignment xsi:type="datadictionary:Assignment" id="223" outputPin="109" inputPins="111">
+      <term xsi:type="datadictionary:TRUE" id="224"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#84"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#19"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#100"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="252" outputPin="109" inputPins="111"/>
+  </behavior>
+  <behavior id="33">
+    <inPin id="124"/>
+    <outPin id="115"/>
+    <assignment xsi:type="datadictionary:Assignment" id="177" outputPin="115" inputPins="124">
+      <term xsi:type="datadictionary:TRUE" id="178"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#35"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#19"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#100"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="231" outputPin="115" inputPins="124"/>
+  </behavior>
+  <behavior id="91">
+    <inPin id="114"/>
+  </behavior>
+  <behavior id="42">
+    <inPin id="119"/>
+    <outPin id="117"/>
+    <outPin id="122"/>
+    <outPin id="125"/>
+    <assignment xsi:type="datadictionary:Assignment" id="181" outputPin="117" inputPins="119">
+      <term xsi:type="datadictionary:TRUE" id="182"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#26"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#44"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#100"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="183" outputPin="122" inputPins="119">
+      <term xsi:type="datadictionary:TRUE" id="184"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#26"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#44"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#100"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="185" outputPin="125" inputPins="119">
+      <term xsi:type="datadictionary:TRUE" id="186"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#26"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#44"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#100"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="232" outputPin="117" inputPins="119"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="233" outputPin="122" inputPins="119"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="234" outputPin="125" inputPins="119"/>
+  </behavior>
+  <behavior id="24">
+    <inPin id="129"/>
+    <outPin id="127"/>
+    <outPin id="132"/>
+    <outPin id="134"/>
+    <assignment xsi:type="datadictionary:Assignment" id="171" outputPin="127" inputPins="129">
+      <term xsi:type="datadictionary:TRUE" id="172"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#26"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#100"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="173" outputPin="132" inputPins="129">
+      <term xsi:type="datadictionary:TRUE" id="174"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#26"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#100"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="175" outputPin="134" inputPins="129">
+      <term xsi:type="datadictionary:TRUE" id="176"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#26"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#100"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="228" outputPin="127" inputPins="129"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="229" outputPin="132" inputPins="129"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="230" outputPin="134" inputPins="129"/>
+  </behavior>
+  <behavior id="50">
+    <inPin id="138"/>
+    <outPin id="136"/>
+    <outPin id="141"/>
+    <outPin id="143"/>
+    <assignment xsi:type="datadictionary:Assignment" id="187" outputPin="136" inputPins="138">
+      <term xsi:type="datadictionary:TRUE" id="188"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#26"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#44"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#100"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="189" outputPin="141" inputPins="138">
+      <term xsi:type="datadictionary:TRUE" id="190"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#26"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#44"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#100"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="191" outputPin="143" inputPins="138">
+      <term xsi:type="datadictionary:TRUE" id="192"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#26"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#44"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#100"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="235" outputPin="136" inputPins="138"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="236" outputPin="141" inputPins="138"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="237" outputPin="143" inputPins="138"/>
+  </behavior>
+  <behavior id="65">
+    <inPin id="145"/>
+    <outPin id="151"/>
+    <outPin id="156"/>
+    <outPin id="158"/>
+    <outPin id="160"/>
+    <outPin id="162"/>
+    <outPin id="165"/>
+    <assignment xsi:type="datadictionary:Assignment" id="209" outputPin="151" inputPins="145">
+      <term xsi:type="datadictionary:TRUE" id="210"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#67"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#19"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#68"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#100"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#153"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="211" outputPin="156" inputPins="145">
+      <term xsi:type="datadictionary:TRUE" id="212"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#67"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#19"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#68"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#100"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#153"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="213" outputPin="158" inputPins="145">
+      <term xsi:type="datadictionary:TRUE" id="214"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#67"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#19"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#68"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#100"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#153"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="215" outputPin="160" inputPins="145">
+      <term xsi:type="datadictionary:TRUE" id="216"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#67"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#19"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#68"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#100"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#153"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="217" outputPin="162" inputPins="145">
+      <term xsi:type="datadictionary:TRUE" id="218"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#67"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#19"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#68"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#100"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#153"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#164"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="219" outputPin="165" inputPins="145">
+      <term xsi:type="datadictionary:TRUE" id="220"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#67"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#19"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#68"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#100"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#153"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="246" outputPin="151" inputPins="145"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="247" outputPin="156" inputPins="145"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="248" outputPin="158" inputPins="145"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="249" outputPin="160" inputPins="145"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="250" outputPin="162" inputPins="145"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="251" outputPin="165" inputPins="145"/>
+  </behavior>
+  <behavior id="39">
+    <outPin id="167"/>
+    <assignment xsi:type="datadictionary:Assignment" id="179" outputPin="167">
+      <term xsi:type="datadictionary:TRUE" id="180"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#19"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#41"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/spring-petclinic/spring-petclinic_9.datadictionary#100"/>
+    </assignment>
+  </behavior>
+</datadictionary:DataDictionary>

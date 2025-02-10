@@ -326,7 +326,7 @@ public class GDPR2DFD {
 			if (optNt.isPresent()) {
 				NodeTrace nt = optNt.get();
 				node = nt.getDfdNode();
-				dd.getBehaviour().add(node.getBehaviour());
+				dd.getBehavior().add(node.getBehavior());
 				outTrace.getNodeTraces().add(nt);
 			} else {
 				// Create
@@ -356,10 +356,10 @@ public class GDPR2DFD {
 		node.setId(processing.getId());
 		node.setEntityName(processing.getEntityName());
 		
-		Behaviour behaviour = ddFactory.createBehaviour();
-		behaviour.setEntityName(node.getEntityName() + " Behaviour");
-		node.setBehaviour(behaviour);
-		dd.getBehaviour().add(behaviour);
+		Behavior behavior = ddFactory.createBehavior();
+		behavior.setEntityName(node.getEntityName() + " Behavior");
+		node.setBehavior(behavior);
+		dd.getBehavior().add(behavior);
 		
 		return node;
 	}
@@ -451,18 +451,18 @@ public class GDPR2DFD {
 				} else {
 					String dataName = data.getEntityName();
 					
-					Pin outPin = sourceNode.getBehaviour().getOutPin().stream().filter(pin -> pin.getEntityName().equals(dataName)).findAny().orElse(null);
+					Pin outPin = sourceNode.getBehavior().getOutPin().stream().filter(pin -> pin.getEntityName().equals(dataName)).findAny().orElse(null);
 					if (outPin == null) {
 						outPin = ddFactory.createPin();
 						outPin.setEntityName(dataName);
-						sourceNode.getBehaviour().getOutPin().add(outPin);
+						sourceNode.getBehavior().getOutPin().add(outPin);
 					}
 					
-					Pin inPin = destinationNode.getBehaviour().getInPin().stream().filter(pin -> pin.getEntityName().equals(dataName)).findAny().orElse(null);
+					Pin inPin = destinationNode.getBehavior().getInPin().stream().filter(pin -> pin.getEntityName().equals(dataName)).findAny().orElse(null);
 					if (inPin == null) {
 						inPin = ddFactory.createPin();
 						inPin.setEntityName(dataName);
-						destinationNode.getBehaviour().getInPin().add(inPin);
+						destinationNode.getBehavior().getInPin().add(inPin);
 					}
 					
 					Flow flow = createNewFlow(dataName, sourceNode, outPin, destinationNode, inPin);
@@ -524,28 +524,28 @@ public class GDPR2DFD {
 				outTrace.getAssignmentTraces().add(at);
 			} else {
 				if (processing.getInputData().contains(data)) {
-					if (!containsAssignment(node.getBehaviour(), data.getEntityName(), data)) {
+					if (!containsAssignment(node.getBehavior(), data.getEntityName(), data)) {
 						// the same data is set as input and output the labels are simply forwarded.
 						var assignment = ddFactory.createForwardingAssignment();
-						assignment.getInputPins().add(node.getBehaviour().getInPin().stream().filter(pin -> pin.getEntityName().equals(data.getEntityName())).findAny().orElseThrow());
-						assignment.setOutputPin(node.getBehaviour().getOutPin().stream().filter(pin -> pin.getEntityName().equals(data.getEntityName())).findAny().orElseThrow());
+						assignment.getInputPins().add(node.getBehavior().getInPin().stream().filter(pin -> pin.getEntityName().equals(data.getEntityName())).findAny().orElseThrow());
+						assignment.setOutputPin(node.getBehavior().getOutPin().stream().filter(pin -> pin.getEntityName().equals(data.getEntityName())).findAny().orElseThrow());
 						
 						assignment.setEntityName("Forward " + data.getEntityName());
-						node.getBehaviour().getAssignment().add(assignment);
+						node.getBehavior().getAssignment().add(assignment);
 					}
 				} else {
 					// if data is not forwarded AND the data is of type PersonalData, the label of the corresponding natural person is set.
 					if (data instanceof PersonalData personalData) {
-						if (!containsAssignment(node.getBehaviour(), data)) {
+						if (!containsAssignment(node.getBehavior(), data)) {
 							var assignment = ddFactory.createAssignment();
-							assignment.setOutputPin(node.getBehaviour().getOutPin().stream().filter(pin -> pin.getEntityName().equals(personalData.getEntityName())).findAny().orElseThrow());
+							assignment.setOutputPin(node.getBehavior().getOutPin().stream().filter(pin -> pin.getEntityName().equals(personalData.getEntityName())).findAny().orElseThrow());
 							assignment.setTerm(ddFactory.createTRUE());
 							personalData.getDataReferences().forEach(person -> {
 								assignment.getOutputLabels().add(entityToLabelMap.get(person));
 							});
 							
 							assignment.setEntityName("Send " + personalData.getEntityName());
-							node.getBehaviour().getAssignment().add(assignment);
+							node.getBehavior().getAssignment().add(assignment);
 						}
 					} else {
 						// Special case, here no assignment is set. It is up to the developer in the DFD/DD to decide what happens in this node.
@@ -556,14 +556,20 @@ public class GDPR2DFD {
 		});
 	}
 	
-	private boolean containsAssignment(Behaviour behaviour, String inputPinName, Data data) {
+	private boolean containsAssignment(Behavior behaviour, String inputPinName, Data data) {
 		return behaviour.getAssignment().stream().anyMatch(
-				ass -> ass.getOutputPin().getEntityName().equals(data.getEntityName()) &&
-				ass.getInputPins().stream().anyMatch(pin -> pin.getEntityName().equals(inputPinName))
-				);
+				ass ->  {					
+					if (!ass.getOutputPin().getEntityName().equals(data.getEntityName())) return false; 
+					if (ass instanceof ForwardingAssignment forwardingAssignment) {
+						if (forwardingAssignment.getInputPins().stream().anyMatch(pin -> pin.getEntityName().equals(inputPinName))) return true;
+					} else if (ass instanceof Assignment assignment) {
+						if (assignment.getInputPins().stream().anyMatch(pin -> pin.getEntityName().equals(inputPinName))) return true;
+					}
+					return false;
+				});
 	}
 	
-	private boolean containsAssignment(Behaviour behaviour, Data data) {
+	private boolean containsAssignment(Behavior behaviour, Data data) {
 		return behaviour.getAssignment().stream().anyMatch(ass -> ass.getOutputPin().getEntityName().equals(data.getEntityName()));
 	}
 	
@@ -575,7 +581,7 @@ public class GDPR2DFD {
 				.filter(
 						at -> at.getProcessing().getId().equals(processing.getId()) &&
 							  at.getOutputData().getId().equals(outputData.getId()) && 
-							  node.getBehaviour().getAssignment().stream()
+							  node.getBehavior().getAssignment().stream()
 							  	.anyMatch(
 							  			ass -> ass.getEntityName().equals(at.getAssignment().getEntityName())))
 				.findAny();

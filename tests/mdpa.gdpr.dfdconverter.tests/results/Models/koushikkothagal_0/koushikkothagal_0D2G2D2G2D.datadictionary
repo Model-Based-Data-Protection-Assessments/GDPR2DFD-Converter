@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_ahqzV-CNEe-LfM-jfeWyyA">
+  <labelTypes id="_ahqza-CNEe-LfM-jfeWyyA" entityName="ProcessingType">
+    <label id="_ahqzeuCNEe-LfM-jfeWyyA" entityName="Collecting"/>
+    <label id="_ahqze-CNEe-LfM-jfeWyyA" entityName="Storing"/>
+    <label id="_ahqzfeCNEe-LfM-jfeWyyA" entityName="Usage"/>
+    <label id="_ahqzfuCNEe-LfM-jfeWyyA" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_ahqzbeCNEe-LfM-jfeWyyA" entityName="Data"/>
+  <labelTypes id="_ahqzb-CNEe-LfM-jfeWyyA" entityName="PersonalData"/>
+  <labelTypes id="_ahqzcOCNEe-LfM-jfeWyyA" entityName="Obligation"/>
+  <labelTypes id="_ahqzcuCNEe-LfM-jfeWyyA" entityName="Consent"/>
+  <labelTypes id="_ahqzc-CNEe-LfM-jfeWyyA" entityName="Contract"/>
+  <labelTypes id="_ahqzdeCNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
+  <labelTypes id="_ahqzduCNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
+  <labelTypes id="_ahqzd-CNEe-LfM-jfeWyyA" entityName="Controller"/>
+  <labelTypes id="_ahqzeOCNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
+  <labelTypes id="_ahqzeeCNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <behavior id="_ahqzWuCNEe-LfM-jfeWyyA" entityName="external_website Behavior"/>
+  <behavior id="_ahqzX-CNEe-LfM-jfeWyyA" entityName="discovery_server Behavior"/>
+  <behavior id="_ahqzZOCNEe-LfM-jfeWyyA" entityName="ratings_data_service Behavior"/>
+  <behavior id="_ahqzZ-CNEe-LfM-jfeWyyA" entityName="movie_info_service Behavior"/>
+  <behavior id="_ahqzaeCNEe-LfM-jfeWyyA" entityName="movie_catalog_service Behavior"/>
+</datadictionary:DataDictionary>

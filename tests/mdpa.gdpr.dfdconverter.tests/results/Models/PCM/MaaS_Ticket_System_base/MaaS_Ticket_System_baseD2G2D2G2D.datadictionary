@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_a8Ihs-CNEe-LfM-jfeWyyA">
+  <labelTypes id="_a8JIzuCNEe-LfM-jfeWyyA" entityName="ProcessingType">
+    <label id="_a8JI2eCNEe-LfM-jfeWyyA" entityName="Collecting"/>
+    <label id="_a8JI2uCNEe-LfM-jfeWyyA" entityName="Storing"/>
+    <label id="_a8JI2-CNEe-LfM-jfeWyyA" entityName="Usage"/>
+    <label id="_a8JI3OCNEe-LfM-jfeWyyA" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_a8JIz-CNEe-LfM-jfeWyyA" entityName="Data"/>
+  <labelTypes id="_a8JI0OCNEe-LfM-jfeWyyA" entityName="PersonalData"/>
+  <labelTypes id="_a8JI0eCNEe-LfM-jfeWyyA" entityName="Obligation"/>
+  <labelTypes id="_a8JI0uCNEe-LfM-jfeWyyA" entityName="Consent"/>
+  <labelTypes id="_a8JI0-CNEe-LfM-jfeWyyA" entityName="Contract"/>
+  <labelTypes id="_a8JI1OCNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
+  <labelTypes id="_a8JI1eCNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
+  <labelTypes id="_a8JI1uCNEe-LfM-jfeWyyA" entityName="Controller"/>
+  <labelTypes id="_a8JI1-CNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
+  <labelTypes id="_a8JI2OCNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <behavior id="_a8IhteCNEe-LfM-jfeWyyA" entityName="usage: InspectorInspectCustomer Behavior"/>
+  <behavior id="_a8Iht-CNEe-LfM-jfeWyyA" entityName="inspector inspects customer Behavior"/>
+  <behavior id="_a8IhueCNEe-LfM-jfeWyyA" entityName="Beginning inspectCustomer Behavior"/>
+  <behavior id="_a8Ihu-CNEe-LfM-jfeWyyA" entityName="establish encrypted connection Behavior"/>
+  <behavior id="_a8IhveCNEe-LfM-jfeWyyA" entityName="initialize customer inspection Behavior"/>
+  <behavior id="_a8Ihv-CNEe-LfM-jfeWyyA" entityName="Beginning inspectCustomer Behavior"/>
+  <behavior id="_a8IhweCNEe-LfM-jfeWyyA" entityName="forward inspection request to middleware Behavior"/>
+  <behavior id="_a8Ihw-CNEe-LfM-jfeWyyA" entityName="Beginning inspectCustomer Behavior"/>
+  <behavior id="_a8IhxeCNEe-LfM-jfeWyyA" entityName="authenticate inspector Behavior"/>
+  <behavior id="_a8Ihx-CNEe-LfM-jfeWyyA" entityName="Beginning authenticateStaff Behavior"/>
+  <behavior id="_a8IhyeCNEe-LfM-jfeWyyA" entityName="return authentication result Behavior"/>
+  <behavior id="_a8Ihy-CNEe-LfM-jfeWyyA" entityName="Ending authenticateStaff Behavior"/>
+  <behavior id="_a8IhzeCNEe-LfM-jfeWyyA" entityName="authenticate inspector Behavior"/>
+  <behavior id="_a8Ihz-CNEe-LfM-jfeWyyA" entityName="read trip db for inspection Behavior"/>
+  <behavior id="_a8Ih0eCNEe-LfM-jfeWyyA" entityName="Beginning inspect Behavior"/>
+  <behavior id="_a8Ih0-CNEe-LfM-jfeWyyA" entityName="search Trip DB for vehicle and STS checkout information and return Behavior"/>
+  <behavior id="_a8Ih1eCNEe-LfM-jfeWyyA" entityName="Ending inspect Behavior"/>
+  <behavior id="_a8Ih1-CNEe-LfM-jfeWyyA" entityName="read trip db for inspection Behavior"/>
+  <behavior id="_a8Ih2eCNEe-LfM-jfeWyyA" entityName="return inspection result Behavior"/>
+  <behavior id="_a8Ih2-CNEe-LfM-jfeWyyA" entityName="Ending inspectCustomer Behavior"/>
+  <behavior id="_a8Ih3eCNEe-LfM-jfeWyyA" entityName="forward inspection request to middleware Behavior"/>
+  <behavior id="_a8Ih3-CNEe-LfM-jfeWyyA" entityName="return inspection result Behavior"/>
+  <behavior id="_a8Ih4eCNEe-LfM-jfeWyyA" entityName="Ending inspectCustomer Behavior"/>
+  <behavior id="_a8Ih4-CNEe-LfM-jfeWyyA" entityName="initialize customer inspection Behavior"/>
+  <behavior id="_a8Ih5eCNEe-LfM-jfeWyyA" entityName="return inspection result Behavior"/>
+  <behavior id="_a8Ih5-CNEe-LfM-jfeWyyA" entityName="Ending inspectCustomer Behavior"/>
+  <behavior id="_a8Ih6eCNEe-LfM-jfeWyyA" entityName="inspector inspects customer Behavior"/>
+  <behavior id="_a8Ih6-CNEe-LfM-jfeWyyA" entityName="usage: InspectorInspectCustomer Behavior"/>
+  <behavior id="_a8Ih7eCNEe-LfM-jfeWyyA" entityName="usage: CustomerCheckIn Behavior"/>
+  <behavior id="_a8Ih7-CNEe-LfM-jfeWyyA" entityName="customer interacts with vehicle Behavior"/>
+  <behavior id="_a8Ih8eCNEe-LfM-jfeWyyA" entityName="Beginning interact Behavior"/>
+  <behavior id="_a8Ih8-CNEe-LfM-jfeWyyA" entityName="signature Behavior"/>
+  <behavior id="_a8Ih9eCNEe-LfM-jfeWyyA" entityName="return interaction Behavior"/>
+  <behavior id="_a8Ih9-CNEe-LfM-jfeWyyA" entityName="Ending interact Behavior"/>
+  <behavior id="_a8Ih-eCNEe-LfM-jfeWyyA" entityName="customer interacts with vehicle Behavior"/>
+  <behavior id="_a8Ih--CNEe-LfM-jfeWyyA" entityName="customer sends check in message Behavior"/>
+  <behavior id="_a8Ih_eCNEe-LfM-jfeWyyA" entityName="Beginning checkin Behavior"/>
+  <behavior id="_a8Ih_-CNEe-LfM-jfeWyyA" entityName="sendCheckInMessage Behavior"/>
+  <behavior id="_a8IiAeCNEe-LfM-jfeWyyA" entityName="Beginning checkin Behavior"/>
+  <behavior id="_a8IiA-CNEe-LfM-jfeWyyA" entityName="pass checkin message to middleware Behavior"/>
+  <behavior id="_a8IiBeCNEe-LfM-jfeWyyA" entityName="Beginning checkin Behavior"/>
+  <behavior id="_a8IiB-CNEe-LfM-jfeWyyA" entityName="add trip start to DB Behavior"/>
+  <behavior id="_a8IiCeCNEe-LfM-jfeWyyA" entityName="Beginning addTripStart Behavior"/>
+  <behavior id="_a8IiC-CNEe-LfM-jfeWyyA" entityName="return write success Behavior"/>
+  <behavior id="_a8IiDeCNEe-LfM-jfeWyyA" entityName="Ending addTripStart Behavior"/>
+  <behavior id="_a8IiD-CNEe-LfM-jfeWyyA" entityName="add trip start to DB Behavior"/>
+  <behavior id="_a8IiEeCNEe-LfM-jfeWyyA" entityName="return checkIn report Behavior"/>
+  <behavior id="_a8IiE-CNEe-LfM-jfeWyyA" entityName="Ending checkin Behavior"/>
+  <behavior id="_a8IiFeCNEe-LfM-jfeWyyA" entityName="pass checkin message to middleware Behavior"/>
+  <behavior id="_a8IiF-CNEe-LfM-jfeWyyA" entityName="return checkin report Behavior"/>
+  <behavior id="_a8IiGeCNEe-LfM-jfeWyyA" entityName="Ending checkin Behavior"/>
+  <behavior id="_a8IiG-CNEe-LfM-jfeWyyA" entityName="sendCheckInMessage Behavior"/>
+  <behavior id="_a8IiHeCNEe-LfM-jfeWyyA" entityName="return checkin success Behavior"/>
+  <behavior id="_a8IiH-CNEe-LfM-jfeWyyA" entityName="Ending checkin Behavior"/>
+  <behavior id="_a8IiIeCNEe-LfM-jfeWyyA" entityName="customer sends check in message Behavior"/>
+  <behavior id="_a8IiI-CNEe-LfM-jfeWyyA" entityName="usage: CustomerCheckIn Behavior"/>
+  <behavior id="_a8IiJeCNEe-LfM-jfeWyyA" entityName="usage: CustomerCheckOut Behavior"/>
+  <behavior id="_a8IiJ-CNEe-LfM-jfeWyyA" entityName="customer interacts with vehicle Behavior"/>
+  <behavior id="_a8IiKeCNEe-LfM-jfeWyyA" entityName="Beginning interact Behavior"/>
+  <behavior id="_a8IiK-CNEe-LfM-jfeWyyA" entityName="signature Behavior"/>
+  <behavior id="_a8IiLeCNEe-LfM-jfeWyyA" entityName="return interaction Behavior"/>
+  <behavior id="_a8IiL-CNEe-LfM-jfeWyyA" entityName="Ending interact Behavior"/>
+  <behavior id="_a8IiMeCNEe-LfM-jfeWyyA" entityName="customer interacts with vehicle Behavior"/>
+  <behavior id="_a8IiM-CNEe-LfM-jfeWyyA" entityName="customer sends check out message Behavior"/>
+  <behavior id="_a8IiNeCNEe-LfM-jfeWyyA" entityName="Beginning checkout Behavior"/>
+  <behavior id="_a8IiN-CNEe-LfM-jfeWyyA" entityName="sendCheckOutMessage Behavior"/>
+  <behavior id="_a8IiOeCNEe-LfM-jfeWyyA" entityName="Beginning checkout Behavior"/>
+  <behavior id="_a8IiO-CNEe-LfM-jfeWyyA" entityName="pass checkout message to middleware Behavior"/>
+  <behavior id="_a8IiPeCNEe-LfM-jfeWyyA" entityName="Beginning checkout Behavior"/>
+  <behavior id="_a8IiP-CNEe-LfM-jfeWyyA" entityName="write checkout to trip table Behavior"/>
+  <behavior id="_a8IiQeCNEe-LfM-jfeWyyA" entityName="Beginning addTripEnd Behavior"/>
+  <behavior id="_a8IiQ-CNEe-LfM-jfeWyyA" entityName="return write success Behavior"/>
+  <behavior id="_a8IiReCNEe-LfM-jfeWyyA" entityName="Ending addTripEnd Behavior"/>
+  <behavior id="_a8IiR-CNEe-LfM-jfeWyyA" entityName="write checkout to trip table Behavior"/>
+  <behavior id="_a8IiSeCNEe-LfM-jfeWyyA" entityName="return checkout report Behavior"/>
+  <behavior id="_a8IiS-CNEe-LfM-jfeWyyA" entityName="Ending checkout Behavior"/>
+  <behavior id="_a8IiTeCNEe-LfM-jfeWyyA" entityName="pass checkout message to middleware Behavior"/>
+  <behavior id="_a8IiT-CNEe-LfM-jfeWyyA" entityName="return checkout report Behavior"/>
+  <behavior id="_a8IiUeCNEe-LfM-jfeWyyA" entityName="Ending checkout Behavior"/>
+  <behavior id="_a8IiU-CNEe-LfM-jfeWyyA" entityName="sendCheckOutMessage Behavior"/>
+  <behavior id="_a8IiVeCNEe-LfM-jfeWyyA" entityName="return check out success Behavior"/>
+  <behavior id="_a8IiV-CNEe-LfM-jfeWyyA" entityName="Ending checkout Behavior"/>
+  <behavior id="_a8IiWeCNEe-LfM-jfeWyyA" entityName="customer sends check out message Behavior"/>
+  <behavior id="_a8IiW-CNEe-LfM-jfeWyyA" entityName="usage: CustomerCheckOut Behavior"/>
+  <behavior id="_a8IiXeCNEe-LfM-jfeWyyA" entityName="usage: CustomerGetTripHistory Behavior"/>
+  <behavior id="_a8IiX-CNEe-LfM-jfeWyyA" entityName="customer wants to view trip history Behavior"/>
+  <behavior id="_a8IiYeCNEe-LfM-jfeWyyA" entityName="Beginning getTripHistory Behavior"/>
+  <behavior id="_a8IiY-CNEe-LfM-jfeWyyA" entityName="request trip history Behavior"/>
+  <behavior id="_a8IiZeCNEe-LfM-jfeWyyA" entityName="Beginning getTripHistory Behavior"/>
+  <behavior id="_a8IiZ-CNEe-LfM-jfeWyyA" entityName="pass request to middleware Behavior"/>
+  <behavior id="_a8IiaeCNEe-LfM-jfeWyyA" entityName="Beginning getTripHistory Behavior"/>
+  <behavior id="_a8Iia-CNEe-LfM-jfeWyyA" entityName="read trip history from database Behavior"/>
+  <behavior id="_a8IibeCNEe-LfM-jfeWyyA" entityName="Beginning getTripHistory Behavior"/>
+  <behavior id="_a8Iib-CNEe-LfM-jfeWyyA" entityName="return trip history Behavior"/>
+  <behavior id="_a8IiceCNEe-LfM-jfeWyyA" entityName="Ending getTripHistory Behavior"/>
+  <behavior id="_a8Iic-CNEe-LfM-jfeWyyA" entityName="read trip history from database Behavior"/>
+  <behavior id="_a8IideCNEe-LfM-jfeWyyA" entityName="return trip history Behavior"/>
+  <behavior id="_a8Iid-CNEe-LfM-jfeWyyA" entityName="Ending getTripHistory Behavior"/>
+  <behavior id="_a8IieeCNEe-LfM-jfeWyyA" entityName="pass request to middleware Behavior"/>
+  <behavior id="_a8Iie-CNEe-LfM-jfeWyyA" entityName="return trip history Behavior"/>
+  <behavior id="_a8IifeCNEe-LfM-jfeWyyA" entityName="Ending getTripHistory Behavior"/>
+  <behavior id="_a8Iif-CNEe-LfM-jfeWyyA" entityName="request trip history Behavior"/>
+  <behavior id="_a8IigeCNEe-LfM-jfeWyyA" entityName="return trip history Behavior"/>
+  <behavior id="_a8Iig-CNEe-LfM-jfeWyyA" entityName="Ending getTripHistory Behavior"/>
+  <behavior id="_a8IiheCNEe-LfM-jfeWyyA" entityName="customer wants to view trip history Behavior"/>
+  <behavior id="_a8Iih-CNEe-LfM-jfeWyyA" entityName="usage: CustomerGetTripHistory Behavior"/>
+  <behavior id="_a8IiieCNEe-LfM-jfeWyyA" entityName="usage: CustomerResetSTS Behavior"/>
+  <behavior id="_a8Iii-CNEe-LfM-jfeWyyA" entityName="customer wants to reset STS Behavior"/>
+  <behavior id="_a8IijeCNEe-LfM-jfeWyyA" entityName="Beginning resetShortTermSecret Behavior"/>
+  <behavior id="_a8Iij-CNEe-LfM-jfeWyyA" entityName="reset customer STS initialized Behavior"/>
+  <behavior id="_a8IikeCNEe-LfM-jfeWyyA" entityName="Beginning resetShortTermSecret Behavior"/>
+  <behavior id="_a8Iik-CNEe-LfM-jfeWyyA" entityName="pass reset STS request to middleware Behavior"/>
+  <behavior id="_a8IileCNEe-LfM-jfeWyyA" entityName="Beginning resetShortTermSecret Behavior"/>
+  <behavior id="_a8Iil-CNEe-LfM-jfeWyyA" entityName="call db to set new STS Behavior"/>
+  <behavior id="_a8IimeCNEe-LfM-jfeWyyA" entityName="Beginning resetCustomerShortTermSecret Behavior"/>
+  <behavior id="_a8Iim-CNEe-LfM-jfeWyyA" entityName="update customer STS Behavior"/>
+  <behavior id="_a8IineCNEe-LfM-jfeWyyA" entityName="Ending resetCustomerShortTermSecret Behavior"/>
+  <behavior id="_a8Iin-CNEe-LfM-jfeWyyA" entityName="call db to set new STS Behavior"/>
+  <behavior id="_a8IioeCNEe-LfM-jfeWyyA" entityName="return reset success Behavior"/>
+  <behavior id="_a8Iio-CNEe-LfM-jfeWyyA" entityName="Ending resetShortTermSecret Behavior"/>
+  <behavior id="_a8IipeCNEe-LfM-jfeWyyA" entityName="pass reset STS request to middleware Behavior"/>
+  <behavior id="_a8Iip-CNEe-LfM-jfeWyyA" entityName="return reset success Behavior"/>
+  <behavior id="_a8IiqeCNEe-LfM-jfeWyyA" entityName="Ending resetShortTermSecret Behavior"/>
+  <behavior id="_a8Iiq-CNEe-LfM-jfeWyyA" entityName="reset customer STS initialized Behavior"/>
+  <behavior id="_a8IireCNEe-LfM-jfeWyyA" entityName="return reset STS success Behavior"/>
+  <behavior id="_a8Iir-CNEe-LfM-jfeWyyA" entityName="Ending resetShortTermSecret Behavior"/>
+  <behavior id="_a8IiseCNEe-LfM-jfeWyyA" entityName="customer wants to reset STS Behavior"/>
+  <behavior id="_a8Iis-CNEe-LfM-jfeWyyA" entityName="usage: CustomerResetSTS Behavior"/>
+  <behavior id="_a8IiteCNEe-LfM-jfeWyyA" entityName="usage: CustomerRegister Behavior"/>
+  <behavior id="_a8Iit-CNEe-LfM-jfeWyyA" entityName="customer initializes registration Behavior"/>
+  <behavior id="_a8IiueCNEe-LfM-jfeWyyA" entityName="Beginning requestRegistration Behavior"/>
+  <behavior id="_a8Iiu-CNEe-LfM-jfeWyyA" entityName="issue registration request Behavior"/>
+  <behavior id="_a8IiveCNEe-LfM-jfeWyyA" entityName="Beginning requestRegistration Behavior"/>
+  <behavior id="_a8Iiv-CNEe-LfM-jfeWyyA" entityName="add customer to database Behavior"/>
+  <behavior id="_a8IiweCNEe-LfM-jfeWyyA" entityName="Beginning addCustomer Behavior"/>
+  <behavior id="_a8Iiw-CNEe-LfM-jfeWyyA" entityName="Ending addCustomer Behavior"/>
+  <behavior id="_a8IixeCNEe-LfM-jfeWyyA" entityName="add customer to database Behavior"/>
+  <behavior id="_a8Iix-CNEe-LfM-jfeWyyA" entityName="create and return contact acknoledgement Behavior"/>
+  <behavior id="_a8IiyeCNEe-LfM-jfeWyyA" entityName="Ending requestRegistration Behavior"/>
+  <behavior id="_a8Iiy-CNEe-LfM-jfeWyyA" entityName="issue registration request Behavior"/>
+  <behavior id="_a8IizeCNEe-LfM-jfeWyyA" entityName="chooseLTS Behavior"/>
+  <behavior id="_a8Iiz-CNEe-LfM-jfeWyyA" entityName="chooseInitialSTS Behavior"/>
+  <behavior id="_a8Ii0eCNEe-LfM-jfeWyyA" entityName="send registration message Behavior"/>
+  <behavior id="_a8Ii0-CNEe-LfM-jfeWyyA" entityName="Beginning register Behavior"/>
+  <behavior id="_a8Ii1eCNEe-LfM-jfeWyyA" entityName="pass registration message to middleware Behavior"/>
+  <behavior id="_a8Ii1-CNEe-LfM-jfeWyyA" entityName="Beginning register Behavior"/>
+  <behavior id="_a8Ii2eCNEe-LfM-jfeWyyA" entityName="add customer to db Behavior"/>
+  <behavior id="_a8Ii2-CNEe-LfM-jfeWyyA" entityName="Beginning addCustomer Behavior"/>
+  <behavior id="_a8Ii3eCNEe-LfM-jfeWyyA" entityName="return write success Behavior"/>
+  <behavior id="_a8Ii3-CNEe-LfM-jfeWyyA" entityName="Ending addCustomer Behavior"/>
+  <behavior id="_a8Ii4eCNEe-LfM-jfeWyyA" entityName="add customer to db Behavior"/>
+  <behavior id="_a8Ii4-CNEe-LfM-jfeWyyA" entityName="return registration success Behavior"/>
+  <behavior id="_a8Ii5eCNEe-LfM-jfeWyyA" entityName="Ending register Behavior"/>
+  <behavior id="_a8Ii5-CNEe-LfM-jfeWyyA" entityName="pass registration message to middleware Behavior"/>
+  <behavior id="_a8Ii6eCNEe-LfM-jfeWyyA" entityName="return register success Behavior"/>
+  <behavior id="_a8Ii6-CNEe-LfM-jfeWyyA" entityName="Ending register Behavior"/>
+  <behavior id="_a8Ii7eCNEe-LfM-jfeWyyA" entityName="send registration message Behavior"/>
+  <behavior id="_a8Ii7-CNEe-LfM-jfeWyyA" entityName="return registration success Behavior"/>
+  <behavior id="_a8Ii8eCNEe-LfM-jfeWyyA" entityName="Ending requestRegistration Behavior"/>
+  <behavior id="_a8Ii8-CNEe-LfM-jfeWyyA" entityName="customer initializes registration Behavior"/>
+  <behavior id="_a8Ii9eCNEe-LfM-jfeWyyA" entityName="usage: CustomerRegister Behavior"/>
+  <behavior id="_a8Ii9-CNEe-LfM-jfeWyyA" entityName="usage: StaffAnalysis Behavior"/>
+  <behavior id="_a8Ii-eCNEe-LfM-jfeWyyA" entityName="analysis staff calls analysis function Behavior"/>
+  <behavior id="_a8Ii--CNEe-LfM-jfeWyyA" entityName="Beginning analysis Behavior"/>
+  <behavior id="_a8Ii_eCNEe-LfM-jfeWyyA" entityName="forward analysis request Behavior"/>
+  <behavior id="_a8Ii_-CNEe-LfM-jfeWyyA" entityName="Beginning analysis Behavior"/>
+  <behavior id="_a8IjAeCNEe-LfM-jfeWyyA" entityName="forward analysis function to middleware Behavior"/>
+  <behavior id="_a8IjA-CNEe-LfM-jfeWyyA" entityName="Beginning analysis Behavior"/>
+  <behavior id="_a8IjBeCNEe-LfM-jfeWyyA" entityName="authenticate analysis staff Behavior"/>
+  <behavior id="_a8IjB-CNEe-LfM-jfeWyyA" entityName="Beginning authenticateStaff Behavior"/>
+  <behavior id="_a8IjCeCNEe-LfM-jfeWyyA" entityName="return authentication result Behavior"/>
+  <behavior id="_a8IjC-CNEe-LfM-jfeWyyA" entityName="Ending authenticateStaff Behavior"/>
+  <behavior id="_a8IjDeCNEe-LfM-jfeWyyA" entityName="authenticate analysis staff Behavior"/>
+  <behavior id="_a8IjD-CNEe-LfM-jfeWyyA" entityName="access tables and perform analysis function Behavior"/>
+  <behavior id="_a8IjEeCNEe-LfM-jfeWyyA" entityName="Ending analysis Behavior"/>
+  <behavior id="_a8IjE-CNEe-LfM-jfeWyyA" entityName="forward analysis function to middleware Behavior"/>
+  <behavior id="_a8IjFeCNEe-LfM-jfeWyyA" entityName="return analysis result Behavior"/>
+  <behavior id="_a8IjF-CNEe-LfM-jfeWyyA" entityName="Ending analysis Behavior"/>
+  <behavior id="_a8IjGeCNEe-LfM-jfeWyyA" entityName="forward analysis request Behavior"/>
+  <behavior id="_a8IjG-CNEe-LfM-jfeWyyA" entityName="return analysis result Behavior"/>
+  <behavior id="_a8IjHeCNEe-LfM-jfeWyyA" entityName="Ending analysis Behavior"/>
+  <behavior id="_a8IjH-CNEe-LfM-jfeWyyA" entityName="analysis staff calls analysis function Behavior"/>
+  <behavior id="_a8IjIeCNEe-LfM-jfeWyyA" entityName="usage: StaffAnalysis Behavior"/>
+  <behavior id="_a8IjI-CNEe-LfM-jfeWyyA" entityName="usage: AutomaticClearance Behavior"/>
+  <behavior id="_a8IjJeCNEe-LfM-jfeWyyA" entityName="clearance interval reached Behavior"/>
+  <behavior id="_a8IjJ-CNEe-LfM-jfeWyyA" entityName="Beginning clearance Behavior"/>
+  <behavior id="_a8IjKeCNEe-LfM-jfeWyyA" entityName="clearance interval triggered Behavior"/>
+  <behavior id="_a8IjK-CNEe-LfM-jfeWyyA" entityName="Beginning clearance Behavior"/>
+  <behavior id="_a8IjLeCNEe-LfM-jfeWyyA" entityName="forward clearance message to middleware Behavior"/>
+  <behavior id="_a8IjL-CNEe-LfM-jfeWyyA" entityName="Beginning clearance Behavior"/>
+  <behavior id="_a8IjMeCNEe-LfM-jfeWyyA" entityName="return billing invoice Behavior"/>
+  <behavior id="_a8IjM-CNEe-LfM-jfeWyyA" entityName="Ending clearance Behavior"/>
+  <behavior id="_a8IjNeCNEe-LfM-jfeWyyA" entityName="forward clearance message to middleware Behavior"/>
+  <behavior id="_a8JIweCNEe-LfM-jfeWyyA" entityName="return billing invoice Behavior"/>
+  <behavior id="_a8JIw-CNEe-LfM-jfeWyyA" entityName="Ending clearance Behavior"/>
+  <behavior id="_a8JIxeCNEe-LfM-jfeWyyA" entityName="clearance interval triggered Behavior"/>
+  <behavior id="_a8JIx-CNEe-LfM-jfeWyyA" entityName="return billing invoice Behavior"/>
+  <behavior id="_a8JIyeCNEe-LfM-jfeWyyA" entityName="Ending clearance Behavior"/>
+  <behavior id="_a8JIy-CNEe-LfM-jfeWyyA" entityName="clearance interval reached Behavior"/>
+  <behavior id="_a8JIzeCNEe-LfM-jfeWyyA" entityName="usage: AutomaticClearance Behavior"/>
+</datadictionary:DataDictionary>

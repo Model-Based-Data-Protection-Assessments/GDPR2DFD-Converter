@@ -281,24 +281,28 @@ public class DFD2GDPR {
 	
 	private Processing createNewGDPRProcessing(Node node) {
 		Processing processing;
-		Label processingTypeLabel = node.getProperties().stream().filter(label -> getLabelTypeOfLabel(label).getEntityName().equals("ProcessingType")).findFirst().orElseThrow();
+		Label processingTypeLabel = node.getProperties().stream().filter(label -> getLabelTypeOfLabel(label).getEntityName().equals("ProcessingType")).findFirst().orElse(null);
 		
-		switch (processingTypeLabel.getEntityName()) {
-		case "Collecting":
-			processing = gdprFactory.createCollecting();
-			break;
-		case "Storing":
-			processing = gdprFactory.createStoring();
-			break;
-		case "Usage":
+		if (processingTypeLabel == null) {
 			processing = gdprFactory.createUsage();
-			break;
-		case "Transferring":
-			processing = gdprFactory.createTransferring();
-			break;
-		default: // this should not occur processings without any additional information should be modelled as "Usage"
-			processing = gdprFactory.createProcessing();
-			break;
+		} else {
+			switch (processingTypeLabel.getEntityName()) {
+			case "Collecting":
+				processing = gdprFactory.createCollecting();
+				break;
+			case "Storing":
+				processing = gdprFactory.createStoring();
+				break;
+			case "Usage":
+				processing = gdprFactory.createUsage();
+				break;
+			case "Transferring":
+				processing = gdprFactory.createTransferring();
+				break;
+			default: // this should not occur processings without any additional information should be modelled as "Usage"
+				processing = gdprFactory.createProcessing();
+				break;
+			}
 		}
 		
 		processing.setEntityName(node.getEntityName());
@@ -357,15 +361,15 @@ public class DFD2GDPR {
 	private void createProcessingReferences(Node node) {
 		var processing = mapNodeToProcessing.get(node);
 		
-		for (Pin pin : node.getBehaviour().getInPin()) {
+		for (Pin pin : node.getBehavior().getInPin()) {
 			Data data = getDataFromPin(pin);
-			if(processing.getInputData().stream().noneMatch(d -> d.getId().equals(data.getId()))) {
+			if(processing.getInputData().stream().noneMatch(d -> d.getId().equals(data.getId())) && data != null ) {
 				processing.getInputData().add(data);
 			}
 		}
-		for (Pin pin : node.getBehaviour().getOutPin()) {
+		for (Pin pin : node.getBehavior().getOutPin()) {
 			Data data = getDataFromPin(pin);
-			if(processing.getOutputData().stream().noneMatch(d -> d.getId().equals(data.getId()))) {
+			if(processing.getOutputData().stream().noneMatch(d -> d.getId().equals(data.getId())) && data != null) {
 				processing.getOutputData().add(data);
 			}
 		}
@@ -380,7 +384,7 @@ public class DFD2GDPR {
 	}
 	
 	private Data getDataFromPin(Pin pin) {
-		return laf.getData().stream().filter(it -> it.getEntityName().equals(pin.getEntityName())).findAny().orElseThrow();
+		return laf.getData().stream().filter(it -> it.getEntityName().equals(pin.getEntityName())).findAny().orElse(null);
 	}
 	
 	/**

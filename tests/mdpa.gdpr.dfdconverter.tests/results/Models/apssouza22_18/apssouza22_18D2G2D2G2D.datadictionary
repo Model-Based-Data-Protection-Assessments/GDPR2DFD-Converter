@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_afPK_-CNEe-LfM-jfeWyyA">
+  <labelTypes id="_afPxnuCNEe-LfM-jfeWyyA" entityName="ProcessingType">
+    <label id="_afPxuOCNEe-LfM-jfeWyyA" entityName="Collecting"/>
+    <label id="_afPxuuCNEe-LfM-jfeWyyA" entityName="Storing"/>
+    <label id="_afPxvOCNEe-LfM-jfeWyyA" entityName="Usage"/>
+    <label id="_afPxwOCNEe-LfM-jfeWyyA" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_afPxn-CNEe-LfM-jfeWyyA" entityName="Data"/>
+  <labelTypes id="_afPxoOCNEe-LfM-jfeWyyA" entityName="PersonalData"/>
+  <labelTypes id="_afPxoeCNEe-LfM-jfeWyyA" entityName="Obligation"/>
+  <labelTypes id="_afPxqOCNEe-LfM-jfeWyyA" entityName="Consent"/>
+  <labelTypes id="_afPxq-CNEe-LfM-jfeWyyA" entityName="Contract"/>
+  <labelTypes id="_afPxreCNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
+  <labelTypes id="_afPxr-CNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
+  <labelTypes id="_afPxseCNEe-LfM-jfeWyyA" entityName="Controller"/>
+  <labelTypes id="_afPxsuCNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
+  <labelTypes id="_afPxtOCNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <behavior id="_afPLA-CNEe-LfM-jfeWyyA" entityName="user Behavior"/>
+  <behavior id="_afPLCuCNEe-LfM-jfeWyyA" entityName="logstash Behavior"/>
+  <behavior id="_afPLEOCNEe-LfM-jfeWyyA" entityName="config_server Behavior"/>
+  <behavior id="_afPLEuCNEe-LfM-jfeWyyA" entityName="admin Behavior"/>
+  <behavior id="_afPxb-CNEe-LfM-jfeWyyA" entityName="eureka_server Behavior"/>
+  <behavior id="_afPxc-CNEe-LfM-jfeWyyA" entityName="user_service Behavior"/>
+  <behavior id="_afPxgOCNEe-LfM-jfeWyyA" entityName="kafka Behavior"/>
+  <behavior id="_afPxhOCNEe-LfM-jfeWyyA" entityName="mailer Behavior"/>
+  <behavior id="_afPxh-CNEe-LfM-jfeWyyA" entityName="reminder Behavior"/>
+  <behavior id="_afPxieCNEe-LfM-jfeWyyA" entityName="api_gateway Behavior"/>
+  <behavior id="_afPxjOCNEe-LfM-jfeWyyA" entityName="oauth Behavior"/>
+  <behavior id="_afPxk-CNEe-LfM-jfeWyyA" entityName="proxy Behavior"/>
+  <behavior id="_afPxleCNEe-LfM-jfeWyyA" entityName="zookeeper Behavior"/>
+  <behavior id="_afPxmOCNEe-LfM-jfeWyyA" entityName="jmx_monitoring Behavior"/>
+  <behavior id="_afPxmuCNEe-LfM-jfeWyyA" entityName="todo_infra Behavior"/>
+  <behavior id="_afPxnOCNEe-LfM-jfeWyyA" entityName="secret_manager Behavior"/>
+</datadictionary:DataDictionary>

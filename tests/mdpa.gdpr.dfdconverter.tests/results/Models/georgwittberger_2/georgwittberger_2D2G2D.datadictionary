@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_aiZMRuCNEe-LfM-jfeWyyA">
+  <labelTypes id="_aiZMVuCNEe-LfM-jfeWyyA" entityName="ProcessingType">
+    <label id="_aiZMdeCNEe-LfM-jfeWyyA" entityName="Collecting"/>
+    <label id="_aiZMi-CNEe-LfM-jfeWyyA" entityName="Storing"/>
+    <label id="_aiZMjeCNEe-LfM-jfeWyyA" entityName="Usage"/>
+    <label id="_aiZMj-CNEe-LfM-jfeWyyA" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_aiZMWOCNEe-LfM-jfeWyyA" entityName="Data"/>
+  <labelTypes id="_aiZMWeCNEe-LfM-jfeWyyA" entityName="PersonalData"/>
+  <labelTypes id="_aiZMWuCNEe-LfM-jfeWyyA" entityName="Obligation"/>
+  <labelTypes id="_aiZMXOCNEe-LfM-jfeWyyA" entityName="Consent"/>
+  <labelTypes id="_aiZMXuCNEe-LfM-jfeWyyA" entityName="Contract"/>
+  <labelTypes id="_aiZMX-CNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
+  <labelTypes id="_aiZMYeCNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
+  <labelTypes id="_aiZMYuCNEe-LfM-jfeWyyA" entityName="Controller"/>
+  <labelTypes id="_aiZMY-CNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
+  <labelTypes id="_aiZMZeCNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <behavior id="23">
+    <inPin id="35"/>
+    <outPin id="32"/>
+    <assignment xsi:type="datadictionary:Assignment" id="60" outputPin="32" inputPins="35">
+      <term xsi:type="datadictionary:TRUE" id="61"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_2.datadictionary#25"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_2.datadictionary#26"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_2.datadictionary#27"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_2.datadictionary#34"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="67" outputPin="32" inputPins="35"/>
+  </behavior>
+  <behavior id="16">
+    <inPin id="31"/>
+    <outPin id="36"/>
+    <outPin id="43"/>
+    <outPin id="45"/>
+    <outPin id="48"/>
+    <assignment xsi:type="datadictionary:Assignment" id="52" outputPin="36" inputPins="31">
+      <term xsi:type="datadictionary:TRUE" id="53"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_2.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_2.datadictionary#19"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_2.datadictionary#20"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_2.datadictionary#34"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="54" outputPin="43" inputPins="31">
+      <term xsi:type="datadictionary:TRUE" id="55"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_2.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_2.datadictionary#19"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_2.datadictionary#20"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_2.datadictionary#34"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_2.datadictionary#41"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="56" outputPin="45" inputPins="31">
+      <term xsi:type="datadictionary:TRUE" id="57"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_2.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_2.datadictionary#19"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_2.datadictionary#20"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_2.datadictionary#34"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_2.datadictionary#41"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="58" outputPin="48" inputPins="31">
+      <term xsi:type="datadictionary:TRUE" id="59"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_2.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_2.datadictionary#19"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_2.datadictionary#20"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_2.datadictionary#34"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_2.datadictionary#41"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="63" outputPin="36" inputPins="31"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="64" outputPin="43" inputPins="31"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="65" outputPin="45" inputPins="31"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="66" outputPin="48" inputPins="31"/>
+  </behavior>
+  <behavior id="8">
+    <inPin id="47"/>
+  </behavior>
+  <behavior id="28">
+    <inPin id="38"/>
+  </behavior>
+  <behavior id="13">
+    <inPin id="42"/>
+    <outPin id="39"/>
+    <assignment xsi:type="datadictionary:Assignment" id="50" outputPin="39" inputPins="42">
+      <term xsi:type="datadictionary:TRUE" id="51"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_2.datadictionary#10"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_2.datadictionary#34"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_2.datadictionary#41"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="62" outputPin="39" inputPins="42"/>
+  </behavior>
+</datadictionary:DataDictionary>

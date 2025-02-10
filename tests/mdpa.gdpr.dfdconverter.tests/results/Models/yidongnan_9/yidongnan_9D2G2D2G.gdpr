@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+<GDPR:LegalAssessmentFacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" id="0">
+  <processing xsi:type="GDPR:Usage" id="2" entityName="user"/>
+  <processing xsi:type="GDPR:Usage" id="3" entityName="admin_dashboard"/>
+  <processing xsi:type="GDPR:Usage" id="4" entityName="eureka_server"/>
+  <processing xsi:type="GDPR:Usage" id="5" entityName="rabbitmq"/>
+  <processing xsi:type="GDPR:Usage" id="6" entityName="config_server"/>
+  <processing xsi:type="GDPR:Usage" id="7" entityName="hystrix_dashboard"/>
+  <processing xsi:type="GDPR:Usage" id="8" entityName="service_a"/>
+  <processing xsi:type="GDPR:Usage" id="9" entityName="service_b"/>
+  <processing xsi:type="GDPR:Usage" id="10" entityName="zuul"/>
+  <processing xsi:type="GDPR:Usage" id="11" entityName="zipkin"/>
+  <processing xsi:type="GDPR:Usage" id="12" entityName="logging_server"/>
+</GDPR:LegalAssessmentFacts>

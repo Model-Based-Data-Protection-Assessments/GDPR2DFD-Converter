@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_akEAHuCNEe-LfM-jfeWyyA">
+  <labelTypes id="_akEnBuCNEe-LfM-jfeWyyA" entityName="ProcessingType">
+    <label id="_akEnEeCNEe-LfM-jfeWyyA" entityName="Collecting"/>
+    <label id="_akEnEuCNEe-LfM-jfeWyyA" entityName="Storing"/>
+    <label id="_akEnE-CNEe-LfM-jfeWyyA" entityName="Usage"/>
+    <label id="_akEnFOCNEe-LfM-jfeWyyA" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_akEnB-CNEe-LfM-jfeWyyA" entityName="Data"/>
+  <labelTypes id="_akEnCOCNEe-LfM-jfeWyyA" entityName="PersonalData"/>
+  <labelTypes id="_akEnCeCNEe-LfM-jfeWyyA" entityName="Obligation"/>
+  <labelTypes id="_akEnCuCNEe-LfM-jfeWyyA" entityName="Consent"/>
+  <labelTypes id="_akEnC-CNEe-LfM-jfeWyyA" entityName="Contract"/>
+  <labelTypes id="_akEnDOCNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
+  <labelTypes id="_akEnDeCNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
+  <labelTypes id="_akEnDuCNEe-LfM-jfeWyyA" entityName="Controller"/>
+  <labelTypes id="_akEnD-CNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
+  <labelTypes id="_akEnEOCNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <behavior id="74">
+    <outPin id="95"/>
+    <assignment xsi:type="datadictionary:Assignment" id="231" outputPin="95">
+      <term xsi:type="datadictionary:TRUE" id="232"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#76"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#38"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#97"/>
+    </assignment>
+  </behavior>
+  <behavior id="34">
+    <outPin id="102"/>
+    <outPin id="148"/>
+    <assignment xsi:type="datadictionary:Assignment" id="187" outputPin="102">
+      <term xsi:type="datadictionary:TRUE" id="188"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#36"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#37"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#38"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#39"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#104"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#105"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#41"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#46"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="189" outputPin="148">
+      <term xsi:type="datadictionary:TRUE" id="190"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#36"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#37"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#38"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#39"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#104"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#105"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#41"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#46"/>
+    </assignment>
+  </behavior>
+  <behavior id="79">
+    <inPin id="143"/>
+    <outPin id="141"/>
+    <assignment xsi:type="datadictionary:Assignment" id="233" outputPin="141" inputPins="143">
+      <term xsi:type="datadictionary:TRUE" id="234"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#81"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#38"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#39"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#97"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="270" outputPin="141" inputPins="143"/>
+  </behavior>
+  <behavior id="60">
+    <inPin id="94"/>
+    <outPin id="99"/>
+    <outPin id="106"/>
+    <outPin id="112"/>
+    <outPin id="117"/>
+    <outPin id="124"/>
+    <outPin id="136"/>
+    <outPin id="156"/>
+    <outPin id="161"/>
+    <assignment xsi:type="datadictionary:Assignment" id="203" outputPin="99" inputPins="94">
+      <term xsi:type="datadictionary:TRUE" id="204"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#62"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#97"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="205" outputPin="106" inputPins="94">
+      <term xsi:type="datadictionary:TRUE" id="206"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#62"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#97"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="207" outputPin="112" inputPins="94">
+      <term xsi:type="datadictionary:TRUE" id="208"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#62"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#97"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="209" outputPin="117" inputPins="94">
+      <term xsi:type="datadictionary:TRUE" id="210"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#62"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#97"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="211" outputPin="124" inputPins="94">
+      <term xsi:type="datadictionary:TRUE" id="212"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#62"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#97"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="213" outputPin="136" inputPins="94">
+      <term xsi:type="datadictionary:TRUE" id="214"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#62"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#97"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="215" outputPin="156" inputPins="94">
+      <term xsi:type="datadictionary:TRUE" id="216"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#62"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#97"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="217" outputPin="161" inputPins="94">
+      <term xsi:type="datadictionary:TRUE" id="218"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#62"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#97"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="256" outputPin="99" inputPins="94"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="257" outputPin="106" inputPins="94"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="258" outputPin="112" inputPins="94"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="259" outputPin="117" inputPins="94"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="260" outputPin="124" inputPins="94"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="261" outputPin="136" inputPins="94"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="262" outputPin="156" inputPins="94"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="263" outputPin="161" inputPins="94"/>
+  </behavior>
+  <behavior id="47">
+    <inPin id="98"/>
+    <outPin id="158"/>
+    <outPin id="163"/>
+    <assignment xsi:type="datadictionary:Assignment" id="191" outputPin="158" inputPins="98">
+      <term xsi:type="datadictionary:TRUE" id="192"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#49"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#97"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="193" outputPin="163" inputPins="98">
+      <term xsi:type="datadictionary:TRUE" id="194"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#49"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#97"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="250" outputPin="158" inputPins="98"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="251" outputPin="163" inputPins="98"/>
+  </behavior>
+  <behavior id="82">
+    <inPin id="101"/>
+    <outPin id="108"/>
+    <outPin id="121"/>
+    <outPin id="128"/>
+    <outPin id="134"/>
+    <outPin id="165"/>
+    <assignment xsi:type="datadictionary:Assignment" id="235" outputPin="108" inputPins="101">
+      <term xsi:type="datadictionary:TRUE" id="236"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#84"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#85"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#86"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#37"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#24"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#87"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#97"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#110"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="237" outputPin="121" inputPins="101">
+      <term xsi:type="datadictionary:TRUE" id="238"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#84"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#85"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#86"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#37"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#24"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#87"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#97"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#110"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="239" outputPin="128" inputPins="101">
+      <term xsi:type="datadictionary:TRUE" id="240"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#84"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#85"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#86"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#37"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#24"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#87"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#97"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#110"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="241" outputPin="134" inputPins="101">
+      <term xsi:type="datadictionary:TRUE" id="242"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#84"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#85"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#86"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#37"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#24"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#87"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#97"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#110"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="243" outputPin="165" inputPins="101">
+      <term xsi:type="datadictionary:TRUE" id="244"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#84"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#85"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#86"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#37"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#24"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#87"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#97"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="271" outputPin="108" inputPins="101"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="272" outputPin="121" inputPins="101"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="273" outputPin="128" inputPins="101"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="274" outputPin="134" inputPins="101"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="275" outputPin="165" inputPins="101"/>
+  </behavior>
+  <behavior id="15">
+    <inPin id="111"/>
+    <outPin id="114"/>
+    <outPin id="167"/>
+    <assignment xsi:type="datadictionary:Assignment" id="177" outputPin="114" inputPins="111">
+      <term xsi:type="datadictionary:TRUE" id="178"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#17"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#97"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="179" outputPin="167" inputPins="111">
+      <term xsi:type="datadictionary:TRUE" id="180"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#17"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#97"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="245" outputPin="114" inputPins="111"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="246" outputPin="167" inputPins="111"/>
+  </behavior>
+  <behavior id="53">
+    <inPin id="116"/>
+    <outPin id="119"/>
+    <outPin id="169"/>
+    <assignment xsi:type="datadictionary:Assignment" id="195" outputPin="119" inputPins="116">
+      <term xsi:type="datadictionary:TRUE" id="196"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#17"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#24"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#25"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#97"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="197" outputPin="169" inputPins="116">
+      <term xsi:type="datadictionary:TRUE" id="198"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#17"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#24"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#25"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#97"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="252" outputPin="119" inputPins="116"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="253" outputPin="169" inputPins="116"/>
+  </behavior>
+  <behavior id="56">
+    <inPin id="123"/>
+    <outPin id="126"/>
+    <outPin id="171"/>
+    <assignment xsi:type="datadictionary:Assignment" id="199" outputPin="126" inputPins="123">
+      <term xsi:type="datadictionary:TRUE" id="200"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#17"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#24"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#25"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#97"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="201" outputPin="171" inputPins="123">
+      <term xsi:type="datadictionary:TRUE" id="202"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#17"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#24"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#25"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#97"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="254" outputPin="126" inputPins="123"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="255" outputPin="171" inputPins="123"/>
+  </behavior>
+  <behavior id="21">
+    <inPin id="133"/>
+    <outPin id="130"/>
+    <outPin id="138"/>
+    <outPin id="173"/>
+    <assignment xsi:type="datadictionary:Assignment" id="181" outputPin="130" inputPins="133">
+      <term xsi:type="datadictionary:TRUE" id="182"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#17"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#23"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#24"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#25"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#97"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#132"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="183" outputPin="138" inputPins="133">
+      <term xsi:type="datadictionary:TRUE" id="184"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#17"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#23"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#24"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#25"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#97"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#132"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="185" outputPin="173" inputPins="133">
+      <term xsi:type="datadictionary:TRUE" id="186"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#17"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#23"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#24"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#25"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#97"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="247" outputPin="130" inputPins="133"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="248" outputPin="138" inputPins="133"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="249" outputPin="173" inputPins="133"/>
+  </behavior>
+  <behavior id="66">
+    <inPin id="140"/>
+    <outPin id="144"/>
+    <outPin id="146"/>
+    <outPin id="150"/>
+    <outPin id="152"/>
+    <outPin id="154"/>
+    <outPin id="175"/>
+    <assignment xsi:type="datadictionary:Assignment" id="219" outputPin="144" inputPins="140">
+      <term xsi:type="datadictionary:TRUE" id="220"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#68"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#25"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#69"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#97"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="221" outputPin="146" inputPins="140">
+      <term xsi:type="datadictionary:TRUE" id="222"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#68"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#25"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#69"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#97"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#110"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="223" outputPin="150" inputPins="140">
+      <term xsi:type="datadictionary:TRUE" id="224"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#68"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#25"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#69"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#97"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="225" outputPin="152" inputPins="140">
+      <term xsi:type="datadictionary:TRUE" id="226"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#68"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#25"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#69"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#97"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="227" outputPin="154" inputPins="140">
+      <term xsi:type="datadictionary:TRUE" id="228"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#68"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#25"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#69"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#97"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="229" outputPin="175" inputPins="140">
+      <term xsi:type="datadictionary:TRUE" id="230"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#68"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#31"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#25"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#69"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#18"/>
+      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/rohitghatol/rohitghatol_10.datadictionary#97"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="264" outputPin="144" inputPins="140"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="265" outputPin="146" inputPins="140"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="266" outputPin="150" inputPins="140"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="267" outputPin="152" inputPins="140"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="268" outputPin="154" inputPins="140"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="269" outputPin="175" inputPins="140"/>
+  </behavior>
+  <behavior id="29">
+    <inPin id="160"/>
+  </behavior>
+</datadictionary:DataDictionary>

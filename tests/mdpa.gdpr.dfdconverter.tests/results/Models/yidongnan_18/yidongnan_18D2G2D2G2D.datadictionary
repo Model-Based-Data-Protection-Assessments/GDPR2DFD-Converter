@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_aifSxOCNEe-LfM-jfeWyyA">
+  <labelTypes id="_aifS5eCNEe-LfM-jfeWyyA" entityName="ProcessingType">
+    <label id="_aifS9eCNEe-LfM-jfeWyyA" entityName="Collecting"/>
+    <label id="_aifS9uCNEe-LfM-jfeWyyA" entityName="Storing"/>
+    <label id="_aifS9-CNEe-LfM-jfeWyyA" entityName="Usage"/>
+    <label id="_aifS-OCNEe-LfM-jfeWyyA" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_aifS5uCNEe-LfM-jfeWyyA" entityName="Data"/>
+  <labelTypes id="_aifS5-CNEe-LfM-jfeWyyA" entityName="PersonalData"/>
+  <labelTypes id="_aifS6OCNEe-LfM-jfeWyyA" entityName="Obligation"/>
+  <labelTypes id="_aifS6eCNEe-LfM-jfeWyyA" entityName="Consent"/>
+  <labelTypes id="_aifS6uCNEe-LfM-jfeWyyA" entityName="Contract"/>
+  <labelTypes id="_aifS7OCNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
+  <labelTypes id="_aifS7uCNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
+  <labelTypes id="_aifS7-CNEe-LfM-jfeWyyA" entityName="Controller"/>
+  <labelTypes id="_aifS8OCNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
+  <labelTypes id="_aifS8uCNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <behavior id="_aifSx-CNEe-LfM-jfeWyyA" entityName="user Behavior"/>
+  <behavior id="_aifSyuCNEe-LfM-jfeWyyA" entityName="admin_dashboard Behavior"/>
+  <behavior id="_aifSzOCNEe-LfM-jfeWyyA" entityName="eureka_server Behavior"/>
+  <behavior id="_aifS0OCNEe-LfM-jfeWyyA" entityName="rabbitmq Behavior"/>
+  <behavior id="_aifS0uCNEe-LfM-jfeWyyA" entityName="config_server Behavior"/>
+  <behavior id="_aifS1uCNEe-LfM-jfeWyyA" entityName="hystrix_dashboard Behavior"/>
+  <behavior id="_aifS2eCNEe-LfM-jfeWyyA" entityName="service_a Behavior"/>
+  <behavior id="_aifS3OCNEe-LfM-jfeWyyA" entityName="service_b Behavior"/>
+  <behavior id="_aifS3-CNEe-LfM-jfeWyyA" entityName="zuul Behavior"/>
+  <behavior id="_aifS4eCNEe-LfM-jfeWyyA" entityName="zipkin Behavior"/>
+  <behavior id="_aifS5OCNEe-LfM-jfeWyyA" entityName="secret_manager Behavior"/>
+</datadictionary:DataDictionary>

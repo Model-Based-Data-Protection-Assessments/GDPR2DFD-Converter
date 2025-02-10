@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<GDPR:LegalAssessmentFacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" id="0">
+  <processing xsi:type="GDPR:Usage" id="2" entityName="user" followingProcessing="3"/>
+  <processing xsi:type="GDPR:Usage" id="3" entityName="apache_server" followingProcessing="2 6 5 4 7"/>
+  <processing xsi:type="GDPR:Usage" id="4" entityName="content_service" followingProcessing="7"/>
+  <processing xsi:type="GDPR:Usage" id="5" entityName="product_service" followingProcessing="7"/>
+  <processing xsi:type="GDPR:Usage" id="6" entityName="cart_service" followingProcessing="5 7"/>
+  <processing xsi:type="GDPR:Usage" id="7" entityName="secret_manager"/>
+</GDPR:LegalAssessmentFacts>
