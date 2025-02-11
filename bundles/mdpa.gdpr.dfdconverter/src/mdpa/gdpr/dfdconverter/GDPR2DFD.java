@@ -108,6 +108,10 @@ public class GDPR2DFD {
 		setup((LegalAssessmentFacts) gdprResource.getContents().get(0), null, null);
 	}
 	
+	public GDPR2DFD(LegalAssessmentFacts laf) {
+		setup(laf, null, null);
+	}
+	
 	private void setup(LegalAssessmentFacts laf, TraceModel inTrace, DataDictionary dd) {
 		this.laf = laf;
 		this.inTrace = inTrace;
@@ -536,7 +540,7 @@ public class GDPR2DFD {
 				} else {
 					// if data is not forwarded AND the data is of type PersonalData, the label of the corresponding natural person is set.
 					if (data instanceof PersonalData personalData) {
-						if (!containsAssignment(node.getBehavior(), data)) {
+						if (!containsAssignment(node.getBehavior(), data) && processing.getFollowingProcessing().size() > 0) {
 							var assignment = ddFactory.createAssignment();
 							assignment.setOutputPin(node.getBehavior().getOutPin().stream().filter(pin -> pin.getEntityName().equals(personalData.getEntityName())).findAny().orElseThrow());
 							assignment.setTerm(ddFactory.createTRUE());
@@ -555,6 +559,7 @@ public class GDPR2DFD {
 			}
 		});
 	}
+	
 	
 	private boolean containsAssignment(Behavior behaviour, String inputPinName, Data data) {
 		return behaviour.getAssignment().stream().anyMatch(
