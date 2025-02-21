@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="ASCII"?>
 <GDPR:LegalAssessmentFacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" id="0">
-  <processing xsi:type="GDPR:Usage" id="2" entityName="user" followingProcessing="13"/>
-  <processing xsi:type="GDPR:Usage" id="3" entityName="logstash"/>
-  <processing xsi:type="GDPR:Usage" id="4" entityName="config_server" followingProcessing="6 7 9 10 11 12 3 17"/>
-  <processing xsi:type="GDPR:Usage" id="5" entityName="admin" followingProcessing="4 7 9 10 11 12 3 17"/>
-  <processing xsi:type="GDPR:Usage" id="6" entityName="eureka_server" followingProcessing="5 11 3 17"/>
-  <processing xsi:type="GDPR:Usage" id="7" entityName="user_service" followingProcessing="3 17"/>
-  <processing xsi:type="GDPR:Usage" id="8" entityName="kafka" followingProcessing="9 17"/>
-  <processing xsi:type="GDPR:Usage" id="9" entityName="mailer" followingProcessing="6 3 17"/>
-  <processing xsi:type="GDPR:Usage" id="10" entityName="reminder" followingProcessing="6 8 3 17"/>
-  <processing xsi:type="GDPR:Usage" id="11" entityName="api_gateway" followingProcessing="7 3 17"/>
-  <processing xsi:type="GDPR:Usage" id="12" entityName="oauth" followingProcessing="7 6 3 17"/>
-  <processing xsi:type="GDPR:Usage" id="13" entityName="proxy" followingProcessing="2 11 3 17"/>
-  <processing xsi:type="GDPR:Usage" id="14" entityName="zookeeper" followingProcessing="8 17"/>
-  <processing xsi:type="GDPR:Usage" id="15" entityName="jmx_monitoring" followingProcessing="17"/>
-  <processing xsi:type="GDPR:Usage" id="16" entityName="todo_infra" followingProcessing="17"/>
-  <processing xsi:type="GDPR:Usage" id="17" entityName="secret_manager"/>
+  <processing xsi:type="GDPR:Usage" id="2" entityName="user" responsible="_Oerrs-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="3" entityName="logstash" responsible="_Oerrs-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="4" entityName="config_server" responsible="_Oerrs-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="5" entityName="admin" responsible="_Oerrs-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="6" entityName="eureka_server" responsible="_Oerrs-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="7" entityName="user_service" responsible="_Oerrs-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="8" entityName="kafka" inputData="_Oerrse1IEe-35cJzkApa3w" purpose="_Oerrsu1IEe-35cJzkApa3w" responsible="_Oerrs-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="9" entityName="mailer" responsible="_Oerrs-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="10" entityName="reminder" responsible="_Oerrs-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="11" entityName="api_gateway" responsible="_Oerrs-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="12" entityName="oauth" responsible="_Oerrs-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="13" entityName="proxy" responsible="_Oerrs-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Collecting" id="14" entityName="zookeeper" outputData="_Oerrse1IEe-35cJzkApa3w" purpose="_Oerrsu1IEe-35cJzkApa3w" followingProcessing="8 17" responsible="_Oerrs-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Collecting" id="15" entityName="jmx_monitoring" followingProcessing="17" responsible="_Oerrs-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Collecting" id="16" entityName="todo_infra" followingProcessing="17" responsible="_Oerrs-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="17" entityName="secret_manager" inputData="_Oerrse1IEe-35cJzkApa3w" purpose="_Oerrsu1IEe-35cJzkApa3w" responsible="_Oerrs-1IEe-35cJzkApa3w"/>
+  <purposes id="_Oerrsu1IEe-35cJzkApa3w"/>
+  <data id="_Oerrse1IEe-35cJzkApa3w"/>
+  <involvedParties xsi:type="GDPR:Controller" id="_Oerrs-1IEe-35cJzkApa3w"/>
 </GDPR:LegalAssessmentFacts>

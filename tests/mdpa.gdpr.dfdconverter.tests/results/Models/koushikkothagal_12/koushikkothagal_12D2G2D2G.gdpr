@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="ASCII"?>
 <GDPR:LegalAssessmentFacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" id="0">
-  <processing xsi:type="GDPR:Usage" id="2" entityName="external_website"/>
-  <processing xsi:type="GDPR:Usage" id="3" entityName="discovery_server"/>
-  <processing xsi:type="GDPR:Usage" id="4" entityName="ratings_data_service"/>
-  <processing xsi:type="GDPR:Usage" id="5" entityName="movie_info_service"/>
-  <processing xsi:type="GDPR:Usage" id="6" entityName="movie_catalog_service"/>
-  <processing xsi:type="GDPR:Usage" id="7" entityName="monitoring_dashboard"/>
-  <processing xsi:type="GDPR:Usage" id="8" entityName="logging_server"/>
-  <processing xsi:type="GDPR:Usage" id="9" entityName="message_broker"/>
+  <processing xsi:type="GDPR:Collecting" id="_OUZuS-1IEe-35cJzkApa3w" outputData="_OSwvg-1IEe-35cJzkApa3w" purpose="_OSxWnO1IEe-35cJzkApa3w" responsible="_OS1oBO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="_OUd_xO1IEe-35cJzkApa3w" inputData="_OS1A8O1IEe-35cJzkApa3w" purpose="_OS1A8e1IEe-35cJzkApa3w" responsible="_OS1oBO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="_OUemxe1IEe-35cJzkApa3w" inputData="_OS1A8O1IEe-35cJzkApa3w" purpose="_OS1A8e1IEe-35cJzkApa3w" responsible="_OS1oBO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="_OUemyO1IEe-35cJzkApa3w" inputData="_OSwvg-1IEe-35cJzkApa3w" purpose="_OSxWnO1IEe-35cJzkApa3w" responsible="_OS1oBO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Collecting" id="_OUem0e1IEe-35cJzkApa3w" outputData="_OS1A8O1IEe-35cJzkApa3w" purpose="_OS1A8e1IEe-35cJzkApa3w" responsible="_OS1oBO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="_OUfN0O1IEe-35cJzkApa3w" responsible="_OS1oBO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="_OUfN0-1IEe-35cJzkApa3w" responsible="_OS1oBO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="_OUfN2e1IEe-35cJzkApa3w" inputData="_OS1A8O1IEe-35cJzkApa3w" purpose="_OS1A8e1IEe-35cJzkApa3w" responsible="_OS1oBO1IEe-35cJzkApa3w"/>
+  <purposes id="_OSxWnO1IEe-35cJzkApa3w"/>
+  <purposes id="_OS1A8e1IEe-35cJzkApa3w"/>
+  <data id="_OSwvg-1IEe-35cJzkApa3w"/>
+  <data id="_OS1A8O1IEe-35cJzkApa3w"/>
+  <involvedParties xsi:type="GDPR:Controller" id="_OS1oBO1IEe-35cJzkApa3w"/>
 </GDPR:LegalAssessmentFacts>

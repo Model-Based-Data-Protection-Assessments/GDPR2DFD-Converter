@@ -1,129 +1,194 @@
 <?xml version="1.0" encoding="ASCII"?>
 <dataflowdiagram:DataFlowDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" id="0">
+  <flows id="111" entityName="github_repository" sourceNode="2" destinationNode="4">
+    <destinationPin href="anilallewar_18D2G2D.datadictionary#109"/>
+    <sourcePin href="anilallewar_18D2G2D.datadictionary#110"/>
+  </flows>
+  <flows id="115" entityName="configserver" sourceNode="4" destinationNode="5">
+    <destinationPin href="anilallewar_18D2G2D.datadictionary#113"/>
+    <sourcePin href="anilallewar_18D2G2D.datadictionary#114"/>
+  </flows>
+  <flows id="118" entityName="configserver" sourceNode="4" destinationNode="6">
+    <destinationPin href="anilallewar_18D2G2D.datadictionary#116"/>
+    <sourcePin href="anilallewar_18D2G2D.datadictionary#117"/>
+  </flows>
+  <flows id="132" entityName="configserver" sourceNode="4" destinationNode="9">
+    <destinationPin href="anilallewar_18D2G2D.datadictionary#130"/>
+    <sourcePin href="anilallewar_18D2G2D.datadictionary#131"/>
+  </flows>
+  <flows id="137" entityName="configserver" sourceNode="4" destinationNode="10">
+    <destinationPin href="anilallewar_18D2G2D.datadictionary#135"/>
+    <sourcePin href="anilallewar_18D2G2D.datadictionary#136"/>
+  </flows>
+  <flows id="146" entityName="configserver" sourceNode="4" destinationNode="11">
+    <destinationPin href="anilallewar_18D2G2D.datadictionary#144"/>
+    <sourcePin href="anilallewar_18D2G2D.datadictionary#145"/>
+  </flows>
+  <flows id="153" entityName="configserver" sourceNode="4" destinationNode="12">
+    <destinationPin href="anilallewar_18D2G2D.datadictionary#151"/>
+    <sourcePin href="anilallewar_18D2G2D.datadictionary#152"/>
+  </flows>
+  <flows id="171" entityName="configserver" sourceNode="4" destinationNode="13">
+    <destinationPin href="anilallewar_18D2G2D.datadictionary#167"/>
+    <sourcePin href="anilallewar_18D2G2D.datadictionary#170"/>
+  </flows>
+  <flows id="186" entityName="configserver" sourceNode="4" destinationNode="14">
+    <destinationPin href="anilallewar_18D2G2D.datadictionary#182"/>
+    <sourcePin href="anilallewar_18D2G2D.datadictionary#185"/>
+  </flows>
+  <flows id="123" entityName="mysqldb" sourceNode="7" destinationNode="8">
+    <destinationPin href="anilallewar_18D2G2D.datadictionary#119"/>
+    <sourcePin href="anilallewar_18D2G2D.datadictionary#122"/>
+  </flows>
   <nodes xsi:type="dataflowdiagram:External" id="2" entityName="github_repository">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_18/anilallewar_18D2G2D.datadictionary#90"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#92"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#93"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#95"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_18/anilallewar_18D2G2D.datadictionary#_agqGxOCNEe-LfM-jfeWyyA"/>
+    <behavior href="anilallewar_18D2G2D.datadictionary#90"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#92"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#93"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#95"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_Oc90ZO1IEe-35cJzkApa3w"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_Oc90ae1IEe-35cJzkApa3w"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_OdDUAe1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:External" id="3" entityName="user">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_18/anilallewar_18D2G2D.datadictionary#96"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#98"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#93"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#99"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_18/anilallewar_18D2G2D.datadictionary#_agqGxOCNEe-LfM-jfeWyyA"/>
+    <behavior href="anilallewar_18D2G2D.datadictionary#96"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#98"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#93"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#99"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_Oc90ae1IEe-35cJzkApa3w"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_OdDUA-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="4" entityName="configserver">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_18/anilallewar_18D2G2D.datadictionary#40"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#18"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#42"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#43"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#45"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_18/anilallewar_18D2G2D.datadictionary#_agqGxOCNEe-LfM-jfeWyyA"/>
+    <behavior href="anilallewar_18D2G2D.datadictionary#40"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#18"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#42"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#43"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#45"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_Oc90ZO1IEe-35cJzkApa3w"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_Oc90ae1IEe-35cJzkApa3w"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_OdDUA-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="5" entityName="webservice_registry">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_18/anilallewar_18D2G2D.datadictionary#34"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#18"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#36"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#37"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#39"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_18/anilallewar_18D2G2D.datadictionary#_agqGxOCNEe-LfM-jfeWyyA"/>
+    <behavior href="anilallewar_18D2G2D.datadictionary#34"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#18"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#36"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#37"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#39"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_Oc90ZO1IEe-35cJzkApa3w"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_Oc90ae1IEe-35cJzkApa3w"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_OdDUA-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="6" entityName="zipkin_tracing">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_18/anilallewar_18D2G2D.datadictionary#28"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#18"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#30"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#32"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#33"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_18/anilallewar_18D2G2D.datadictionary#_agqGxOCNEe-LfM-jfeWyyA"/>
+    <behavior href="anilallewar_18D2G2D.datadictionary#28"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#18"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#30"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#32"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#33"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_Oc90ZO1IEe-35cJzkApa3w"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_Oc90ae1IEe-35cJzkApa3w"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_OdDUA-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="7" entityName="mysqldb">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_18/anilallewar_18D2G2D.datadictionary#46"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#48"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#49"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#50"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#52"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#54"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_18/anilallewar_18D2G2D.datadictionary#_agqGxOCNEe-LfM-jfeWyyA"/>
+    <behavior href="anilallewar_18D2G2D.datadictionary#46"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#48"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#49"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#50"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#52"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#54"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_Oc90Zu1IEe-35cJzkApa3w"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_Oc90ae1IEe-35cJzkApa3w"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_OdDUAe1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="8" entityName="auth_server">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_18/anilallewar_18D2G2D.datadictionary#100"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#18"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#102"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#62"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#21"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#49"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#103"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#105"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#107"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#108"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#54"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_18/anilallewar_18D2G2D.datadictionary#_agqGxOCNEe-LfM-jfeWyyA"/>
+    <behavior href="anilallewar_18D2G2D.datadictionary#100"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#18"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#102"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#62"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#21"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#49"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#103"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#105"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#107"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#108"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#54"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_Oc90Zu1IEe-35cJzkApa3w"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_Oc90ae1IEe-35cJzkApa3w"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_OdDUA-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="9" entityName="web_portal">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_18/anilallewar_18D2G2D.datadictionary#16"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#18"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#19"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#20"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#21"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#23"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#25"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#27"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_18/anilallewar_18D2G2D.datadictionary#_agqGxOCNEe-LfM-jfeWyyA"/>
+    <behavior href="anilallewar_18D2G2D.datadictionary#16"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#18"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#19"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#20"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#21"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#23"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#25"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#27"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_Oc90ZO1IEe-35cJzkApa3w"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_Oc90ae1IEe-35cJzkApa3w"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_OdDUA-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="10" entityName="user_webservice">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_18/anilallewar_18D2G2D.datadictionary#73"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#60"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#61"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#62"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#21"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#75"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#76"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_18/anilallewar_18D2G2D.datadictionary#_agqGxOCNEe-LfM-jfeWyyA"/>
+    <behavior href="anilallewar_18D2G2D.datadictionary#73"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#60"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#61"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#62"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#21"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#75"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#76"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_Oc90ZO1IEe-35cJzkApa3w"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_Oc90ae1IEe-35cJzkApa3w"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_OdDUA-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="11" entityName="comments_webservice">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_18/anilallewar_18D2G2D.datadictionary#77"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#60"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#61"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#62"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#79"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#80"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#81"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_18/anilallewar_18D2G2D.datadictionary#_agqGxOCNEe-LfM-jfeWyyA"/>
+    <behavior href="anilallewar_18D2G2D.datadictionary#77"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#60"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#61"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#62"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#79"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#80"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#81"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_Oc90ZO1IEe-35cJzkApa3w"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_Oc90ae1IEe-35cJzkApa3w"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_OdDUA-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="12" entityName="task_webservice">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_18/anilallewar_18D2G2D.datadictionary#58"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#60"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#61"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#21"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#62"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#63"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#64"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#66"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#67"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#69"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#70"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#72"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_18/anilallewar_18D2G2D.datadictionary#_agqGxOCNEe-LfM-jfeWyyA"/>
+    <behavior href="anilallewar_18D2G2D.datadictionary#58"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#60"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#61"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#21"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#62"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#63"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#64"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#66"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#67"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#69"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#70"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#72"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_Oc90ZO1IEe-35cJzkApa3w"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_Oc90ae1IEe-35cJzkApa3w"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_OdDUA-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="13" entityName="api_gateway">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_18/anilallewar_18D2G2D.datadictionary#82"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#18"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#84"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#64"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#63"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#85"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#69"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#87"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#88"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#89"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_18/anilallewar_18D2G2D.datadictionary#_agqGxOCNEe-LfM-jfeWyyA"/>
+    <behavior href="anilallewar_18D2G2D.datadictionary#82"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#18"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#84"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#64"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#63"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#85"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#69"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#87"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#88"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#89"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_Oc90ZO1IEe-35cJzkApa3w"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_Oc90ae1IEe-35cJzkApa3w"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_OdDUA-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="14" entityName="secret_manager">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_18/anilallewar_18D2G2D.datadictionary#55"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#18"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_18.datadictionary#57"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_18/anilallewar_18D2G2D.datadictionary#_agqGxOCNEe-LfM-jfeWyyA"/>
+    <behavior href="anilallewar_18D2G2D.datadictionary#55"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#18"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#57"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_Oc90ZO1IEe-35cJzkApa3w"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_Oc90ae1IEe-35cJzkApa3w"/>
+    <properties href="anilallewar_18D2G2D.datadictionary#_OdDUA-1IEe-35cJzkApa3w"/>
   </nodes>
 </dataflowdiagram:DataFlowDiagram>

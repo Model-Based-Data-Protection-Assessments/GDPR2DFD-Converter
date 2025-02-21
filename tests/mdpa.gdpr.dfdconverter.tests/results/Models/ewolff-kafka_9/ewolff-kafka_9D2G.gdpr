@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="ASCII"?>
 <GDPR:LegalAssessmentFacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" id="0">
-  <processing xsi:type="GDPR:Usage" id="2" entityName="user" followingProcessing="8"/>
-  <processing xsi:type="GDPR:Usage" id="3" entityName="zookeeper" followingProcessing="4"/>
-  <processing xsi:type="GDPR:Usage" id="4" entityName="kafka" followingProcessing="6 7"/>
-  <processing xsi:type="GDPR:Usage" id="5" entityName="order" followingProcessing="4"/>
-  <processing xsi:type="GDPR:Usage" id="6" entityName="invoicing"/>
-  <processing xsi:type="GDPR:Usage" id="7" entityName="shipping"/>
-  <processing xsi:type="GDPR:Usage" id="8" entityName="apache" followingProcessing="5 7 6 2"/>
-  <processing xsi:type="GDPR:Usage" id="9" entityName="postgres" followingProcessing="5 7 6"/>
-  <processing xsi:type="GDPR:Usage" id="10" entityName="monitoring_dashboard"/>
-  <processing xsi:type="GDPR:Usage" id="11" entityName="logging_server" followingProcessing="10"/>
+  <processing xsi:type="GDPR:Usage" id="2" entityName="user" responsible="_OWRWr-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Collecting" id="3" entityName="zookeeper" outputData="_OWRWje1IEe-35cJzkApa3w" purpose="_OWRWju1IEe-35cJzkApa3w" followingProcessing="4" responsible="_OWRWr-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="4" entityName="kafka" inputData="_OWRWje1IEe-35cJzkApa3w" purpose="_OWRWju1IEe-35cJzkApa3w" responsible="_OWRWr-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="5" entityName="order" inputData="_OWRWlO1IEe-35cJzkApa3w" purpose="_OWRWle1IEe-35cJzkApa3w" responsible="_OWRWr-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="6" entityName="invoicing" inputData="_OWRWlO1IEe-35cJzkApa3w" purpose="_OWRWle1IEe-35cJzkApa3w" responsible="_OWRWr-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="7" entityName="shipping" inputData="_OWRWlO1IEe-35cJzkApa3w" purpose="_OWRWle1IEe-35cJzkApa3w" responsible="_OWRWr-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="8" entityName="apache" responsible="_OWRWr-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Collecting" id="9" entityName="postgres" outputData="_OWRWlO1IEe-35cJzkApa3w" purpose="_OWRWle1IEe-35cJzkApa3w" followingProcessing="5 7 6" responsible="_OWRWr-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="10" entityName="monitoring_dashboard" inputData="_OWRWpu1IEe-35cJzkApa3w" purpose="_OWRWp-1IEe-35cJzkApa3w" responsible="_OWRWr-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Collecting" id="11" entityName="logging_server" outputData="_OWRWpu1IEe-35cJzkApa3w" purpose="_OWRWp-1IEe-35cJzkApa3w" followingProcessing="10" responsible="_OWRWr-1IEe-35cJzkApa3w"/>
+  <purposes id="_OWRWju1IEe-35cJzkApa3w"/>
+  <purposes id="_OWRWle1IEe-35cJzkApa3w"/>
+  <purposes id="_OWRWp-1IEe-35cJzkApa3w"/>
+  <data id="_OWRWje1IEe-35cJzkApa3w"/>
+  <data id="_OWRWlO1IEe-35cJzkApa3w"/>
+  <data id="_OWRWpu1IEe-35cJzkApa3w"/>
+  <involvedParties xsi:type="GDPR:Controller" id="_OWRWr-1IEe-35cJzkApa3w"/>
 </GDPR:LegalAssessmentFacts>

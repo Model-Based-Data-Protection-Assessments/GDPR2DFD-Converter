@@ -1,71 +1,155 @@
 <?xml version="1.0" encoding="ASCII"?>
 <dataflowdiagram:DataFlowDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" id="0">
-  <nodes xsi:type="dataflowdiagram:Process" id="2" entityName="github_repository">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNQ-CNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNguCNEe-LfM-jfeWyyA"/>
+  <flows id="_OZm-oe1IEe-35cJzkApa3w" sourceNode="2" destinationNode="9">
+    <destinationPin href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-oO1IEe-35cJzkApa3w"/>
+    <sourcePin href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-nu1IEe-35cJzkApa3w"/>
+  </flows>
+  <flows id="_OZm-p-1IEe-35cJzkApa3w" sourceNode="4" destinationNode="5">
+    <destinationPin href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-pe1IEe-35cJzkApa3w"/>
+    <sourcePin href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-pO1IEe-35cJzkApa3w"/>
+  </flows>
+  <flows id="_OZm-re1IEe-35cJzkApa3w" sourceNode="6" destinationNode="4">
+    <destinationPin href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-rO1IEe-35cJzkApa3w"/>
+    <sourcePin href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-qu1IEe-35cJzkApa3w"/>
+  </flows>
+  <flows id="_OZm-sO1IEe-35cJzkApa3w" sourceNode="9" destinationNode="8">
+    <destinationPin href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-r-1IEe-35cJzkApa3w"/>
+    <sourcePin href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-ru1IEe-35cJzkApa3w"/>
+  </flows>
+  <flows id="_OZm-tO1IEe-35cJzkApa3w" sourceNode="9" destinationNode="7">
+    <destinationPin href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-su1IEe-35cJzkApa3w"/>
+    <sourcePin href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-ru1IEe-35cJzkApa3w"/>
+  </flows>
+  <flows id="_OZm-t-1IEe-35cJzkApa3w" sourceNode="9" destinationNode="10">
+    <destinationPin href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-tu1IEe-35cJzkApa3w"/>
+    <sourcePin href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-ru1IEe-35cJzkApa3w"/>
+  </flows>
+  <flows id="_OZm-ue1IEe-35cJzkApa3w" sourceNode="9" destinationNode="11">
+    <destinationPin href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-uO1IEe-35cJzkApa3w"/>
+    <sourcePin href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-ru1IEe-35cJzkApa3w"/>
+  </flows>
+  <flows id="_OZm-vO1IEe-35cJzkApa3w" sourceNode="9" destinationNode="12">
+    <destinationPin href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-u-1IEe-35cJzkApa3w"/>
+    <sourcePin href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-ru1IEe-35cJzkApa3w"/>
+  </flows>
+  <flows id="_OZm-wO1IEe-35cJzkApa3w" sourceNode="9" destinationNode="14">
+    <destinationPin href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-vu1IEe-35cJzkApa3w"/>
+    <sourcePin href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-ru1IEe-35cJzkApa3w"/>
+  </flows>
+  <flows id="_OZm-xO1IEe-35cJzkApa3w" sourceNode="9" destinationNode="15">
+    <destinationPin href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-wu1IEe-35cJzkApa3w"/>
+    <sourcePin href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-ru1IEe-35cJzkApa3w"/>
+  </flows>
+  <flows id="_OZm-xu1IEe-35cJzkApa3w" sourceNode="9" destinationNode="16">
+    <destinationPin href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-xe1IEe-35cJzkApa3w"/>
+    <sourcePin href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-ru1IEe-35cJzkApa3w"/>
+  </flows>
+  <flows id="_OZm-yO1IEe-35cJzkApa3w" sourceNode="9" destinationNode="17">
+    <destinationPin href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-x-1IEe-35cJzkApa3w"/>
+    <sourcePin href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-ru1IEe-35cJzkApa3w"/>
+  </flows>
+  <flows id="_OZm-ze1IEe-35cJzkApa3w" sourceNode="9" destinationNode="18">
+    <destinationPin href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-y-1IEe-35cJzkApa3w"/>
+    <sourcePin href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-ru1IEe-35cJzkApa3w"/>
+  </flows>
+  <nodes xsi:type="dataflowdiagram:External" id="2" entityName="github_repository">
+    <behavior href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-Z-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZQZU-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZRAK-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZWfze1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="3" entityName="user">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNR-CNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNguCNEe-LfM-jfeWyyA"/>
+    <behavior href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-a-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZRAK-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZWfz-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="4" entityName="elasticsearch">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNSuCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNguCNEe-LfM-jfeWyyA"/>
+    <behavior href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-bu1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZQZTe1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZRAK-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZWfz-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="5" entityName="kibana">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNTuCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNguCNEe-LfM-jfeWyyA"/>
+    <behavior href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-cO1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZQZTe1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZRAK-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZWfz-1IEe-35cJzkApa3w"/>
   </nodes>
-  <nodes xsi:type="dataflowdiagram:Process" id="6" entityName="logstash">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNUeCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNguCNEe-LfM-jfeWyyA"/>
+  <nodes xsi:type="dataflowdiagram:External" id="6" entityName="logstash">
+    <behavior href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-cu1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZQZTe1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZRAK-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZWfze1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="7" entityName="rabbitmq">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNVOCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNguCNEe-LfM-jfeWyyA"/>
+    <behavior href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-de1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZQZU-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZRAK-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZWfz-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="8" entityName="discovery_server">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNV-CNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNguCNEe-LfM-jfeWyyA"/>
+    <behavior href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-eO1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZQZU-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZRAK-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZWfz-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="9" entityName="config_server">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNWuCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNguCNEe-LfM-jfeWyyA"/>
+    <behavior href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-eu1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZQZU-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZRAK-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZWfz-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="10" entityName="auth_server">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNXOCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNguCNEe-LfM-jfeWyyA"/>
+    <behavior href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-fe1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZQZU-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZRAK-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZWfz-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="11" entityName="monitor_dashboard">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNX-CNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNguCNEe-LfM-jfeWyyA"/>
+    <behavior href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-gO1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZQZU-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZRAK-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZWfz-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="12" entityName="turbine_server">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNY-CNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNguCNEe-LfM-jfeWyyA"/>
+    <behavior href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-gu1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZQZU-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZRAK-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZWfz-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="13" entityName="zipkin_server">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNZeCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNguCNEe-LfM-jfeWyyA"/>
+    <behavior href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-he1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZRAK-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZWfz-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="14" entityName="product_service">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNaOCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNguCNEe-LfM-jfeWyyA"/>
+    <behavior href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-h-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZQZU-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZRAK-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZWfz-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="15" entityName="recommendation_service">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNauCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNguCNEe-LfM-jfeWyyA"/>
+    <behavior href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-ie1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZQZU-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZRAK-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZWfz-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="16" entityName="review_service">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNbeCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNguCNEe-LfM-jfeWyyA"/>
+    <behavior href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-i-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZQZU-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZRAK-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZWfz-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="17" entityName="composite_service">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNb-CNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNguCNEe-LfM-jfeWyyA"/>
+    <behavior href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-je1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZQZU-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZRAK-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZWfz-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="18" entityName="edge_server">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNcuCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//callistaenterprise_11/callistaenterprise_11D2G2D2G2D.datadictionary#_ahfNguCNEe-LfM-jfeWyyA"/>
+    <behavior href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZm-j-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZQZU-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZRAK-1IEe-35cJzkApa3w"/>
+    <properties href="callistaenterprise_11D2G2D2G2D.datadictionary#_OZWfz-1IEe-35cJzkApa3w"/>
   </nodes>
 </dataflowdiagram:DataFlowDiagram>

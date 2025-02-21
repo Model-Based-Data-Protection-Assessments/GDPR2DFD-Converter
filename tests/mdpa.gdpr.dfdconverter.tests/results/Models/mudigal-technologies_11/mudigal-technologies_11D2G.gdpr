@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="ASCII"?>
 <GDPR:LegalAssessmentFacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" id="0">
-  <processing xsi:type="GDPR:Usage" id="2" entityName="user" followingProcessing="15"/>
-  <processing xsi:type="GDPR:Usage" id="3" entityName="consul" followingProcessing="10 11 14 16"/>
-  <processing xsi:type="GDPR:Usage" id="4" entityName="consul2" followingProcessing="3 16"/>
-  <processing xsi:type="GDPR:Usage" id="5" entityName="consul3" followingProcessing="3 4 16"/>
-  <processing xsi:type="GDPR:Usage" id="6" entityName="elasticsearch" followingProcessing="8 16"/>
-  <processing xsi:type="GDPR:Usage" id="7" entityName="logstash" followingProcessing="6 16"/>
-  <processing xsi:type="GDPR:Usage" id="8" entityName="kibana" followingProcessing="16"/>
-  <processing xsi:type="GDPR:Usage" id="9" entityName="rabbit" followingProcessing="10 11 16"/>
-  <processing xsi:type="GDPR:Usage" id="10" entityName="service_one" followingProcessing="7 9 16"/>
-  <processing xsi:type="GDPR:Usage" id="11" entityName="service_two" followingProcessing="7 9 16"/>
-  <processing xsi:type="GDPR:Usage" id="12" entityName="service_one_db" followingProcessing="10 16"/>
-  <processing xsi:type="GDPR:Usage" id="13" entityName="service_two_db" followingProcessing="11 16"/>
-  <processing xsi:type="GDPR:Usage" id="14" entityName="api_gateway" followingProcessing="10 11 16"/>
-  <processing xsi:type="GDPR:Usage" id="15" entityName="web_application" followingProcessing="2 14 16"/>
-  <processing xsi:type="GDPR:Usage" id="16" entityName="scope"/>
+  <processing xsi:type="GDPR:Usage" id="2" entityName="user" responsible="_OYN3Wu1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="3" entityName="consul" inputData="_OYNQZO1IEe-35cJzkApa3w" outputData="_OYNQZO1IEe-35cJzkApa3w" purpose="_OYNQZe1IEe-35cJzkApa3w" followingProcessing="10 11 14 16" responsible="_OYN3Wu1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="4" entityName="consul2" inputData="_OYNQZO1IEe-35cJzkApa3w" purpose="_OYNQZe1IEe-35cJzkApa3w" followingProcessing="3 16" responsible="_OYN3Wu1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Collecting" id="5" entityName="consul3" outputData="_OYNQZO1IEe-35cJzkApa3w" purpose="_OYNQZe1IEe-35cJzkApa3w" followingProcessing="3 4 16" responsible="_OYN3Wu1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="6" entityName="elasticsearch" responsible="_OYN3Wu1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="7" entityName="logstash" responsible="_OYN3Wu1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="8" entityName="kibana" responsible="_OYN3Wu1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="9" entityName="rabbit" responsible="_OYN3Wu1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="10" entityName="service_one" inputData="_OYNQaO1IEe-35cJzkApa3w" purpose="_OYNQae1IEe-35cJzkApa3w" responsible="_OYN3Wu1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="11" entityName="service_two" inputData="_OYNQau1IEe-35cJzkApa3w" purpose="_OYNQa-1IEe-35cJzkApa3w" responsible="_OYN3Wu1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Collecting" id="12" entityName="service_one_db" outputData="_OYNQaO1IEe-35cJzkApa3w" purpose="_OYNQae1IEe-35cJzkApa3w" followingProcessing="10 16" responsible="_OYN3Wu1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Collecting" id="13" entityName="service_two_db" outputData="_OYNQau1IEe-35cJzkApa3w" purpose="_OYNQa-1IEe-35cJzkApa3w" followingProcessing="11 16" responsible="_OYN3Wu1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="14" entityName="api_gateway" inputData="_OYNQZO1IEe-35cJzkApa3w" purpose="_OYNQZe1IEe-35cJzkApa3w" responsible="_OYN3Wu1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="15" entityName="web_application" responsible="_OYN3Wu1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="16" entityName="scope" inputData="_OYNQaO1IEe-35cJzkApa3w" purpose="_OYNQae1IEe-35cJzkApa3w" responsible="_OYN3Wu1IEe-35cJzkApa3w"/>
+  <purposes id="_OYNQZe1IEe-35cJzkApa3w"/>
+  <purposes id="_OYNQae1IEe-35cJzkApa3w"/>
+  <purposes id="_OYNQa-1IEe-35cJzkApa3w"/>
+  <data id="_OYNQZO1IEe-35cJzkApa3w"/>
+  <data id="_OYNQaO1IEe-35cJzkApa3w"/>
+  <data id="_OYNQau1IEe-35cJzkApa3w"/>
+  <involvedParties xsi:type="GDPR:Controller" id="_OYN3Wu1IEe-35cJzkApa3w"/>
 </GDPR:LegalAssessmentFacts>

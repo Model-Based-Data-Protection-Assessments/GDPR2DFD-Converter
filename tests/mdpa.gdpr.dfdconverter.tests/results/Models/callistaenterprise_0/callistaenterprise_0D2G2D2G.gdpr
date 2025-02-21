@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="ASCII"?>
 <GDPR:LegalAssessmentFacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" id="0">
-  <processing xsi:type="GDPR:Usage" id="2" entityName="github_repository"/>
-  <processing xsi:type="GDPR:Usage" id="3" entityName="user"/>
-  <processing xsi:type="GDPR:Usage" id="4" entityName="elasticsearch"/>
-  <processing xsi:type="GDPR:Usage" id="5" entityName="kibana"/>
-  <processing xsi:type="GDPR:Usage" id="6" entityName="logstash"/>
-  <processing xsi:type="GDPR:Usage" id="7" entityName="rabbitmq"/>
-  <processing xsi:type="GDPR:Usage" id="8" entityName="discovery_server"/>
-  <processing xsi:type="GDPR:Usage" id="9" entityName="config_server"/>
-  <processing xsi:type="GDPR:Usage" id="10" entityName="auth_server"/>
-  <processing xsi:type="GDPR:Usage" id="11" entityName="monitor_dashboard"/>
-  <processing xsi:type="GDPR:Usage" id="12" entityName="turbine_server"/>
-  <processing xsi:type="GDPR:Usage" id="13" entityName="zipkin_server"/>
-  <processing xsi:type="GDPR:Usage" id="14" entityName="product_service"/>
-  <processing xsi:type="GDPR:Usage" id="15" entityName="recommendation_service"/>
-  <processing xsi:type="GDPR:Usage" id="16" entityName="review_service"/>
-  <processing xsi:type="GDPR:Usage" id="17" entityName="composite_service"/>
-  <processing xsi:type="GDPR:Usage" id="18" entityName="edge_server"/>
+  <processing xsi:type="GDPR:Collecting" id="_OcO0uO1IEe-35cJzkApa3w" outputData="_OcIHCu1IEe-35cJzkApa3w" purpose="_OcIHC-1IEe-35cJzkApa3w" responsible="_OcIt9O1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Collecting" id="_OcO0ve1IEe-35cJzkApa3w" outputData="_OcIHDO1IEe-35cJzkApa3w" purpose="_OcIHDe1IEe-35cJzkApa3w" responsible="_OcIt9O1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="_OcO0v-1IEe-35cJzkApa3w" responsible="_OcIt9O1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="_OcO0wu1IEe-35cJzkApa3w" responsible="_OcIt9O1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="_OcO0xu1IEe-35cJzkApa3w" inputData="_OcIHCu1IEe-35cJzkApa3w" purpose="_OcIHC-1IEe-35cJzkApa3w" responsible="_OcIt9O1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="_OcO0y-1IEe-35cJzkApa3w" inputData="_OcIHCu1IEe-35cJzkApa3w" purpose="_OcIHC-1IEe-35cJzkApa3w" responsible="_OcIt9O1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="_OcO00O1IEe-35cJzkApa3w" inputData="_OcIHCu1IEe-35cJzkApa3w" purpose="_OcIHC-1IEe-35cJzkApa3w" responsible="_OcIt9O1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="_OcO01-1IEe-35cJzkApa3w" inputData="_OcIHCu1IEe-35cJzkApa3w" outputData="_OcIHCu1IEe-35cJzkApa3w" purpose="_OcIHC-1IEe-35cJzkApa3w" responsible="_OcIt9O1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="_OcO02O1IEe-35cJzkApa3w" inputData="_OcIHDO1IEe-35cJzkApa3w" purpose="_OcIHDe1IEe-35cJzkApa3w" responsible="_OcIt9O1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="_OcO02u1IEe-35cJzkApa3w" inputData="_OcIHCu1IEe-35cJzkApa3w" purpose="_OcIHC-1IEe-35cJzkApa3w" responsible="_OcIt9O1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="_OcO06e1IEe-35cJzkApa3w" inputData="_OcIHCu1IEe-35cJzkApa3w" purpose="_OcIHC-1IEe-35cJzkApa3w" responsible="_OcIt9O1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="_OcO07u1IEe-35cJzkApa3w" responsible="_OcIt9O1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="_OcO08e1IEe-35cJzkApa3w" inputData="_OcIHCu1IEe-35cJzkApa3w" purpose="_OcIHC-1IEe-35cJzkApa3w" responsible="_OcIt9O1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="_OcO09e1IEe-35cJzkApa3w" inputData="_OcIHCu1IEe-35cJzkApa3w" purpose="_OcIHC-1IEe-35cJzkApa3w" responsible="_OcIt9O1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="_OcO0-O1IEe-35cJzkApa3w" inputData="_OcIHCu1IEe-35cJzkApa3w" purpose="_OcIHC-1IEe-35cJzkApa3w" responsible="_OcIt9O1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="_OcO0_O1IEe-35cJzkApa3w" inputData="_OcIHCu1IEe-35cJzkApa3w" purpose="_OcIHC-1IEe-35cJzkApa3w" responsible="_OcIt9O1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="_OcO1AO1IEe-35cJzkApa3w" inputData="_OcIHDO1IEe-35cJzkApa3w" purpose="_OcIHDe1IEe-35cJzkApa3w" responsible="_OcIt9O1IEe-35cJzkApa3w"/>
+  <purposes id="_OcIHC-1IEe-35cJzkApa3w"/>
+  <purposes id="_OcIHDe1IEe-35cJzkApa3w"/>
+  <data id="_OcIHCu1IEe-35cJzkApa3w"/>
+  <data id="_OcIHDO1IEe-35cJzkApa3w"/>
+  <involvedParties xsi:type="GDPR:Controller" id="_OcIt9O1IEe-35cJzkApa3w"/>
 </GDPR:LegalAssessmentFacts>

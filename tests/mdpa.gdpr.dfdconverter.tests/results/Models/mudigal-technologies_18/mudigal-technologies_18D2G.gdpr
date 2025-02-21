@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="ASCII"?>
 <GDPR:LegalAssessmentFacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" id="0">
-  <processing xsi:type="GDPR:Usage" id="2" entityName="user" followingProcessing="15"/>
-  <processing xsi:type="GDPR:Usage" id="3" entityName="consul" followingProcessing="10 11 14 16 17"/>
-  <processing xsi:type="GDPR:Usage" id="4" entityName="consul2" followingProcessing="3 16 17"/>
-  <processing xsi:type="GDPR:Usage" id="5" entityName="consul3" followingProcessing="3 4 16 17"/>
-  <processing xsi:type="GDPR:Usage" id="6" entityName="elasticsearch" followingProcessing="8 16 17"/>
-  <processing xsi:type="GDPR:Usage" id="7" entityName="logstash" followingProcessing="6 16 17"/>
-  <processing xsi:type="GDPR:Usage" id="8" entityName="kibana" followingProcessing="16 17"/>
-  <processing xsi:type="GDPR:Usage" id="9" entityName="rabbit" followingProcessing="10 11 16 17"/>
-  <processing xsi:type="GDPR:Usage" id="10" entityName="service_one" followingProcessing="7 9 16 17"/>
-  <processing xsi:type="GDPR:Usage" id="11" entityName="service_two" followingProcessing="7 9 16 17"/>
-  <processing xsi:type="GDPR:Usage" id="12" entityName="service_one_db" followingProcessing="10 16"/>
-  <processing xsi:type="GDPR:Usage" id="13" entityName="service_two_db" followingProcessing="11 16"/>
-  <processing xsi:type="GDPR:Usage" id="14" entityName="api_gateway" followingProcessing="10 11 16 17"/>
-  <processing xsi:type="GDPR:Usage" id="15" entityName="web_application" followingProcessing="2 14 16 17"/>
-  <processing xsi:type="GDPR:Usage" id="16" entityName="scope" followingProcessing="17"/>
-  <processing xsi:type="GDPR:Usage" id="17" entityName="secret_manager"/>
+  <processing xsi:type="GDPR:Usage" id="2" entityName="user" responsible="_OaDqku1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="3" entityName="consul" inputData="_OaBOGe1IEe-35cJzkApa3w" outputData="_OaBOGe1IEe-35cJzkApa3w" purpose="_OaBOGu1IEe-35cJzkApa3w" followingProcessing="10 11 14 16 17" responsible="_OaDqku1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="4" entityName="consul2" inputData="_OaBOGe1IEe-35cJzkApa3w" purpose="_OaBOGu1IEe-35cJzkApa3w" followingProcessing="3 16 17" responsible="_OaDqku1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Collecting" id="5" entityName="consul3" outputData="_OaBOGe1IEe-35cJzkApa3w" purpose="_OaBOGu1IEe-35cJzkApa3w" followingProcessing="3 4 16 17" responsible="_OaDqku1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="6" entityName="elasticsearch" responsible="_OaDqku1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="7" entityName="logstash" responsible="_OaDqku1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="8" entityName="kibana" responsible="_OaDqku1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="9" entityName="rabbit" responsible="_OaDqku1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="10" entityName="service_one" inputData="_OaBOG-1IEe-35cJzkApa3w" purpose="_OaBOHO1IEe-35cJzkApa3w" responsible="_OaDqku1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="11" entityName="service_two" inputData="_OaBOHe1IEe-35cJzkApa3w" purpose="_OaBOHu1IEe-35cJzkApa3w" responsible="_OaDqku1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Collecting" id="12" entityName="service_one_db" outputData="_OaBOG-1IEe-35cJzkApa3w" purpose="_OaBOHO1IEe-35cJzkApa3w" followingProcessing="10 16" responsible="_OaDqku1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Collecting" id="13" entityName="service_two_db" outputData="_OaBOHe1IEe-35cJzkApa3w" purpose="_OaBOHu1IEe-35cJzkApa3w" followingProcessing="11 16" responsible="_OaDqku1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="14" entityName="api_gateway" inputData="_OaBOGe1IEe-35cJzkApa3w" purpose="_OaBOGu1IEe-35cJzkApa3w" responsible="_OaDqku1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="15" entityName="web_application" responsible="_OaDqku1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="16" entityName="scope" inputData="_OaBOG-1IEe-35cJzkApa3w" purpose="_OaBOHO1IEe-35cJzkApa3w" responsible="_OaDqku1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="17" entityName="secret_manager" inputData="_OaBOGe1IEe-35cJzkApa3w" purpose="_OaBOGu1IEe-35cJzkApa3w" responsible="_OaDqku1IEe-35cJzkApa3w"/>
+  <purposes id="_OaBOGu1IEe-35cJzkApa3w"/>
+  <purposes id="_OaBOHO1IEe-35cJzkApa3w"/>
+  <purposes id="_OaBOHu1IEe-35cJzkApa3w"/>
+  <data id="_OaBOGe1IEe-35cJzkApa3w"/>
+  <data id="_OaBOG-1IEe-35cJzkApa3w"/>
+  <data id="_OaBOHe1IEe-35cJzkApa3w"/>
+  <involvedParties xsi:type="GDPR:Controller" id="_OaDqku1IEe-35cJzkApa3w"/>
 </GDPR:LegalAssessmentFacts>

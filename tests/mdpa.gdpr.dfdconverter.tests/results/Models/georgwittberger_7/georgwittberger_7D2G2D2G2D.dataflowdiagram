@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="ASCII"?>
 <dataflowdiagram:DataFlowDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" id="0">
   <nodes xsi:type="dataflowdiagram:Process" id="2" entityName="user">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_7/georgwittberger_7D2G2D2G2D.datadictionary#_afDkLOCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_7/georgwittberger_7D2G2D2G2D.datadictionary#_afDkQuCNEe-LfM-jfeWyyA"/>
+    <behavior href="georgwittberger_7D2G2D2G2D.datadictionary#_OVPbxe1IEe-35cJzkApa3w"/>
+    <properties href="georgwittberger_7D2G2D2G2D.datadictionary#_OVAyeO1IEe-35cJzkApa3w"/>
+    <properties href="georgwittberger_7D2G2D2G2D.datadictionary#_OVG4-e1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="3" entityName="apache_server">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_7/georgwittberger_7D2G2D2G2D.datadictionary#_afDkLuCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_7/georgwittberger_7D2G2D2G2D.datadictionary#_afDkQuCNEe-LfM-jfeWyyA"/>
+    <behavior href="georgwittberger_7D2G2D2G2D.datadictionary#_OVPby-1IEe-35cJzkApa3w"/>
+    <properties href="georgwittberger_7D2G2D2G2D.datadictionary#_OVAyeO1IEe-35cJzkApa3w"/>
+    <properties href="georgwittberger_7D2G2D2G2D.datadictionary#_OVG4-e1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="4" entityName="content_service">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_7/georgwittberger_7D2G2D2G2D.datadictionary#_afDkMOCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_7/georgwittberger_7D2G2D2G2D.datadictionary#_afDkQuCNEe-LfM-jfeWyyA"/>
+    <behavior href="georgwittberger_7D2G2D2G2D.datadictionary#_OVPb0-1IEe-35cJzkApa3w"/>
+    <properties href="georgwittberger_7D2G2D2G2D.datadictionary#_OVAyeO1IEe-35cJzkApa3w"/>
+    <properties href="georgwittberger_7D2G2D2G2D.datadictionary#_OVG4-e1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="5" entityName="product_service">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_7/georgwittberger_7D2G2D2G2D.datadictionary#_afDkMuCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_7/georgwittberger_7D2G2D2G2D.datadictionary#_afDkQuCNEe-LfM-jfeWyyA"/>
+    <behavior href="georgwittberger_7D2G2D2G2D.datadictionary#_OVPb1-1IEe-35cJzkApa3w"/>
+    <properties href="georgwittberger_7D2G2D2G2D.datadictionary#_OVAyeO1IEe-35cJzkApa3w"/>
+    <properties href="georgwittberger_7D2G2D2G2D.datadictionary#_OVG4-e1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="6" entityName="cart_service">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_7/georgwittberger_7D2G2D2G2D.datadictionary#_afDkNOCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_7/georgwittberger_7D2G2D2G2D.datadictionary#_afDkQuCNEe-LfM-jfeWyyA"/>
+    <behavior href="georgwittberger_7D2G2D2G2D.datadictionary#_OVPb3O1IEe-35cJzkApa3w"/>
+    <properties href="georgwittberger_7D2G2D2G2D.datadictionary#_OVAyeO1IEe-35cJzkApa3w"/>
+    <properties href="georgwittberger_7D2G2D2G2D.datadictionary#_OVG4-e1IEe-35cJzkApa3w"/>
   </nodes>
 </dataflowdiagram:DataFlowDiagram>

@@ -1,25 +1,117 @@
 <?xml version="1.0" encoding="ASCII"?>
-<datadictionary:DataDictionary xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_afu5yeCNEe-LfM-jfeWyyA">
-  <labelTypes id="_afu59eCNEe-LfM-jfeWyyA" entityName="ProcessingType">
-    <label id="_afvguOCNEe-LfM-jfeWyyA" entityName="Collecting"/>
-    <label id="_afvgveCNEe-LfM-jfeWyyA" entityName="Storing"/>
-    <label id="_afvgwOCNEe-LfM-jfeWyyA" entityName="Usage"/>
-    <label id="_afvgweCNEe-LfM-jfeWyyA" entityName="Transferring"/>
+<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="1">
+  <labelTypes id="8" entityName="Stereotype">
+    <label id="11" entityName="internal"/>
+    <label id="12" entityName="local_logging"/>
+    <label id="20" entityName="infrastructural"/>
+    <label id="21" entityName="logging_server"/>
+    <label id="22" entityName="monitoring_dashboard"/>
+    <label id="25" entityName="web_server"/>
+    <label id="26" entityName="gateway"/>
+    <label id="31" entityName="user_stereotype"/>
+    <label id="32" entityName="entrypoint"/>
+    <label id="33" entityName="exitpoint"/>
+    <label id="40" entityName="restful_http"/>
   </labelTypes>
-  <labelTypes id="_afu59-CNEe-LfM-jfeWyyA" entityName="Data"/>
-  <labelTypes id="_afu5-eCNEe-LfM-jfeWyyA" entityName="PersonalData"/>
-  <labelTypes id="_afu5-uCNEe-LfM-jfeWyyA" entityName="Obligation"/>
-  <labelTypes id="_afu5--CNEe-LfM-jfeWyyA" entityName="Consent"/>
-  <labelTypes id="_afu5_eCNEe-LfM-jfeWyyA" entityName="Contract"/>
-  <labelTypes id="_afu5_-CNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
-  <labelTypes id="_afvgquCNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
-  <labelTypes id="_afvgreCNEe-LfM-jfeWyyA" entityName="Controller"/>
-  <labelTypes id="_afvgr-CNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
-  <labelTypes id="_afvgtOCNEe-LfM-jfeWyyA" entityName="Purposes"/>
-  <behavior id="_afu5zOCNEe-LfM-jfeWyyA" entityName="user Behavior"/>
-  <behavior id="_afu54-CNEe-LfM-jfeWyyA" entityName="apache_server Behavior"/>
-  <behavior id="_afu56OCNEe-LfM-jfeWyyA" entityName="content_service Behavior"/>
-  <behavior id="_afu56-CNEe-LfM-jfeWyyA" entityName="product_service Behavior"/>
-  <behavior id="_afu57eCNEe-LfM-jfeWyyA" entityName="cart_service Behavior"/>
-  <behavior id="_afu58uCNEe-LfM-jfeWyyA" entityName="logging_server Behavior"/>
+  <labelTypes id="13" entityName="Port">
+    <label id="14" entityName="11080"/>
+    <label id="17" entityName="11082"/>
+    <label id="36" entityName="11081"/>
+  </labelTypes>
+  <labelTypes id="27" entityName="WebServer">
+    <label id="28" entityName="Apachehttpd"/>
+  </labelTypes>
+  <labelTypes id="_OVdeVu1IEe-35cJzkApa3w" entityName="ProcessingType">
+    <label id="_OVeFQu1IEe-35cJzkApa3w" entityName="Collecting"/>
+    <label id="_OVeFRe1IEe-35cJzkApa3w" entityName="Storing"/>
+    <label id="_OVeFRu1IEe-35cJzkApa3w" entityName="Usage"/>
+    <label id="_OVeFSe1IEe-35cJzkApa3w" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_OVdeWe1IEe-35cJzkApa3w" entityName="Data"/>
+  <labelTypes id="_OVdeW-1IEe-35cJzkApa3w" entityName="PersonalData"/>
+  <labelTypes id="_OVdeXO1IEe-35cJzkApa3w" entityName="Obligation"/>
+  <labelTypes id="_OVdeXe1IEe-35cJzkApa3w" entityName="Consent"/>
+  <labelTypes id="_OVdeXu1IEe-35cJzkApa3w" entityName="Contract"/>
+  <labelTypes id="_OVdeYO1IEe-35cJzkApa3w" entityName="PublicAuthority"/>
+  <labelTypes id="_OVdeYu1IEe-35cJzkApa3w" entityName="NaturalPerson"/>
+  <labelTypes id="_OVdeZO1IEe-35cJzkApa3w" entityName="Controller">
+    <label id="_OVc3M-1IEe-35cJzkApa3w"/>
+    <label id="_OVc3M-1IEe-35cJzkApa3w"/>
+  </labelTypes>
+  <labelTypes id="_OVdeZe1IEe-35cJzkApa3w" entityName="ThirdParty"/>
+  <labelTypes id="_OVdeaO1IEe-35cJzkApa3w" entityName="Purposes"/>
+  <behavior id="9">
+    <inPin id="52"/>
+    <outPin id="58"/>
+    <assignment xsi:type="datadictionary:Assignment" id="64" outputPin="58" outputLabels="11 12 40" inputPins="52">
+      <term xsi:type="datadictionary:TRUE" id="65"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="84" outputPin="58" inputPins="52"/>
+  </behavior>
+  <behavior id="15">
+    <inPin id="47"/>
+    <outPin id="45"/>
+    <outPin id="62"/>
+    <assignment xsi:type="datadictionary:Assignment" id="66" outputPin="45" outputLabels="11 12 40" inputPins="47">
+      <term xsi:type="datadictionary:TRUE" id="67"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="68" outputPin="62" outputLabels="11 12 40" inputPins="47">
+      <term xsi:type="datadictionary:TRUE" id="69"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="85" outputPin="45" inputPins="47"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="86" outputPin="62" inputPins="47"/>
+  </behavior>
+  <behavior id="18">
+    <inPin id="55"/>
+  </behavior>
+  <behavior id="23">
+    <inPin id="37"/>
+    <outPin id="42"/>
+    <outPin id="48"/>
+    <outPin id="50"/>
+    <outPin id="53"/>
+    <outPin id="56"/>
+    <assignment xsi:type="datadictionary:Assignment" id="70" outputPin="42" outputLabels="25 26 20 12 40" inputPins="37">
+      <term xsi:type="datadictionary:TRUE" id="71"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="72" outputPin="48" outputLabels="25 26 20 12 40" inputPins="37">
+      <term xsi:type="datadictionary:TRUE" id="73"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="74" outputPin="50" outputLabels="25 26 20 12 40" inputPins="37">
+      <term xsi:type="datadictionary:TRUE" id="75"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="76" outputPin="53" outputLabels="25 26 20 12 40" inputPins="37">
+      <term xsi:type="datadictionary:TRUE" id="77"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="78" outputPin="56" outputLabels="25 26 20 12 40" inputPins="37">
+      <term xsi:type="datadictionary:TRUE" id="79"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="87" outputPin="42" inputPins="37"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="88" outputPin="48" inputPins="37"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="89" outputPin="50" inputPins="37"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="90" outputPin="53" inputPins="37"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="91" outputPin="56" inputPins="37"/>
+  </behavior>
+  <behavior id="29">
+    <inPin id="41"/>
+    <outPin id="38"/>
+    <assignment xsi:type="datadictionary:Assignment" id="80" outputPin="38" outputLabels="31 32 33 40" inputPins="41">
+      <term xsi:type="datadictionary:TRUE" id="81"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="92" outputPin="38" inputPins="41"/>
+  </behavior>
+  <behavior id="34">
+    <inPin id="44"/>
+    <outPin id="60"/>
+    <assignment xsi:type="datadictionary:Assignment" id="82" outputPin="60" outputLabels="11 12 40" inputPins="44">
+      <term xsi:type="datadictionary:TRUE" id="83"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="93" outputPin="60" inputPins="44"/>
+  </behavior>
+  <behavior id="_OVhvu-1IEe-35cJzkApa3w" entityName="user Behavior"/>
+  <behavior id="_OVhvvu1IEe-35cJzkApa3w" entityName="apache_server Behavior"/>
+  <behavior id="_OVhvwO1IEe-35cJzkApa3w" entityName="content_service Behavior"/>
+  <behavior id="_OVhvwu1IEe-35cJzkApa3w" entityName="product_service Behavior"/>
+  <behavior id="_OVhvxe1IEe-35cJzkApa3w" entityName="cart_service Behavior"/>
+  <behavior id="_OVhvyO1IEe-35cJzkApa3w" entityName="logging_server Behavior"/>
 </datadictionary:DataDictionary>

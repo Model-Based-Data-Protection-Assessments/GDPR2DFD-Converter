@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="ASCII"?>
 <GDPR:LegalAssessmentFacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" id="0">
-  <processing xsi:type="GDPR:Usage" id="2" entityName="github_repository" followingProcessing="7"/>
-  <processing xsi:type="GDPR:Usage" id="3" entityName="database_movie_service" followingProcessing="9"/>
-  <processing xsi:type="GDPR:Usage" id="4" entityName="database_user_service" followingProcessing="10"/>
-  <processing xsi:type="GDPR:Usage" id="5" entityName="database_recommendation_service" followingProcessing="11"/>
-  <processing xsi:type="GDPR:Usage" id="6" entityName="user" followingProcessing="12"/>
-  <processing xsi:type="GDPR:Usage" id="7" entityName="config_service" followingProcessing="8 9 10 11 12 13"/>
-  <processing xsi:type="GDPR:Usage" id="8" entityName="eureka_service" followingProcessing="12 13"/>
-  <processing xsi:type="GDPR:Usage" id="9" entityName="movie_service" followingProcessing="8 13"/>
-  <processing xsi:type="GDPR:Usage" id="10" entityName="user_service" followingProcessing="8 13"/>
-  <processing xsi:type="GDPR:Usage" id="11" entityName="recommendation_service" followingProcessing="8 13"/>
-  <processing xsi:type="GDPR:Usage" id="12" entityName="recommendation_client" followingProcessing="6 11 9 10 13"/>
-  <processing xsi:type="GDPR:Usage" id="13" entityName="authorization_server"/>
+  <processing xsi:type="GDPR:Collecting" id="2" entityName="github_repository" outputData="_OY07U-1IEe-35cJzkApa3w" purpose="_OY07VO1IEe-35cJzkApa3w" followingProcessing="7" responsible="_OY1iUu1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Collecting" id="3" entityName="database_movie_service" outputData="_OY07Ve1IEe-35cJzkApa3w" purpose="_OY07Vu1IEe-35cJzkApa3w" followingProcessing="9" responsible="_OY1iUu1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Collecting" id="4" entityName="database_user_service" outputData="_OY07V-1IEe-35cJzkApa3w" purpose="_OY07WO1IEe-35cJzkApa3w" followingProcessing="10" responsible="_OY1iUu1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Collecting" id="5" entityName="database_recommendation_service" outputData="_OY07We1IEe-35cJzkApa3w" purpose="_OY07Wu1IEe-35cJzkApa3w" followingProcessing="11" responsible="_OY1iUu1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="6" entityName="user" responsible="_OY1iUu1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="7" entityName="config_service" inputData="_OY07U-1IEe-35cJzkApa3w" outputData="_OY07U-1IEe-35cJzkApa3w" purpose="_OY07VO1IEe-35cJzkApa3w" followingProcessing="8 9 10 11 12 13" responsible="_OY1iUu1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="8" entityName="eureka_service" inputData="_OY07U-1IEe-35cJzkApa3w" purpose="_OY07VO1IEe-35cJzkApa3w" responsible="_OY1iUu1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="9" entityName="movie_service" inputData="_OY07Ve1IEe-35cJzkApa3w" purpose="_OY07Vu1IEe-35cJzkApa3w" responsible="_OY1iUu1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="10" entityName="user_service" inputData="_OY07V-1IEe-35cJzkApa3w" purpose="_OY07WO1IEe-35cJzkApa3w" responsible="_OY1iUu1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="11" entityName="recommendation_service" inputData="_OY07We1IEe-35cJzkApa3w" purpose="_OY07Wu1IEe-35cJzkApa3w" responsible="_OY1iUu1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="12" entityName="recommendation_client" inputData="_OY07U-1IEe-35cJzkApa3w" purpose="_OY07VO1IEe-35cJzkApa3w" responsible="_OY1iUu1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="13" entityName="authorization_server" inputData="_OY07U-1IEe-35cJzkApa3w" purpose="_OY07VO1IEe-35cJzkApa3w" responsible="_OY1iUu1IEe-35cJzkApa3w"/>
+  <purposes id="_OY07VO1IEe-35cJzkApa3w"/>
+  <purposes id="_OY07Vu1IEe-35cJzkApa3w"/>
+  <purposes id="_OY07WO1IEe-35cJzkApa3w"/>
+  <purposes id="_OY07Wu1IEe-35cJzkApa3w"/>
+  <data id="_OY07U-1IEe-35cJzkApa3w"/>
+  <data id="_OY07Ve1IEe-35cJzkApa3w"/>
+  <data id="_OY07V-1IEe-35cJzkApa3w"/>
+  <data id="_OY07We1IEe-35cJzkApa3w"/>
+  <involvedParties xsi:type="GDPR:Controller" id="_OY1iUu1IEe-35cJzkApa3w"/>
 </GDPR:LegalAssessmentFacts>

@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="ASCII"?>
 <GDPR:LegalAssessmentFacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" id="0">
-  <processing xsi:type="GDPR:Usage" id="2" entityName="github_repository" followingProcessing="4"/>
-  <processing xsi:type="GDPR:Usage" id="3" entityName="user" followingProcessing="12"/>
-  <processing xsi:type="GDPR:Usage" id="4" entityName="config_server" followingProcessing="5 7 8 9 10 11 12 13"/>
-  <processing xsi:type="GDPR:Usage" id="5" entityName="discovery_service" followingProcessing="12 13"/>
-  <processing xsi:type="GDPR:Usage" id="6" entityName="rabbitmq" followingProcessing="8 13"/>
-  <processing xsi:type="GDPR:Usage" id="7" entityName="monitor_dashboard" followingProcessing="5 13"/>
-  <processing xsi:type="GDPR:Usage" id="8" entityName="turbine" followingProcessing="5 7 13"/>
-  <processing xsi:type="GDPR:Usage" id="9" entityName="statement_service" followingProcessing="5 13"/>
-  <processing xsi:type="GDPR:Usage" id="10" entityName="card_service" followingProcessing="5 13"/>
-  <processing xsi:type="GDPR:Usage" id="11" entityName="card_statement_composite" followingProcessing="5 10 9 6 13"/>
-  <processing xsi:type="GDPR:Usage" id="12" entityName="edge_server" followingProcessing="3 10 9 11 13"/>
-  <processing xsi:type="GDPR:Usage" id="13" entityName="secret_manager"/>
+  <processing xsi:type="GDPR:Collecting" id="2" entityName="github_repository" outputData="_OXQN-e1IEe-35cJzkApa3w" purpose="_OXQN-u1IEe-35cJzkApa3w" followingProcessing="4" responsible="_OXQOFe1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="3" entityName="user" responsible="_OXQOFe1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="4" entityName="config_server" inputData="_OXQN-e1IEe-35cJzkApa3w" outputData="_OXQN-e1IEe-35cJzkApa3w" purpose="_OXQN-u1IEe-35cJzkApa3w" followingProcessing="5 7 8 9 10 11 12 13" responsible="_OXQOFe1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="5" entityName="discovery_service" inputData="_OXQN-e1IEe-35cJzkApa3w" purpose="_OXQN-u1IEe-35cJzkApa3w" responsible="_OXQOFe1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="6" entityName="rabbitmq" responsible="_OXQOFe1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="7" entityName="monitor_dashboard" inputData="_OXQN-e1IEe-35cJzkApa3w" purpose="_OXQN-u1IEe-35cJzkApa3w" responsible="_OXQOFe1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="8" entityName="turbine" inputData="_OXQN-e1IEe-35cJzkApa3w" purpose="_OXQN-u1IEe-35cJzkApa3w" responsible="_OXQOFe1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="9" entityName="statement_service" inputData="_OXQN-e1IEe-35cJzkApa3w" purpose="_OXQN-u1IEe-35cJzkApa3w" responsible="_OXQOFe1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="10" entityName="card_service" inputData="_OXQN-e1IEe-35cJzkApa3w" purpose="_OXQN-u1IEe-35cJzkApa3w" responsible="_OXQOFe1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="11" entityName="card_statement_composite" inputData="_OXQN-e1IEe-35cJzkApa3w" purpose="_OXQN-u1IEe-35cJzkApa3w" responsible="_OXQOFe1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="12" entityName="edge_server" inputData="_OXQN-e1IEe-35cJzkApa3w" purpose="_OXQN-u1IEe-35cJzkApa3w" responsible="_OXQOFe1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="13" entityName="secret_manager" inputData="_OXQN-e1IEe-35cJzkApa3w" purpose="_OXQN-u1IEe-35cJzkApa3w" responsible="_OXQOFe1IEe-35cJzkApa3w"/>
+  <purposes id="_OXQN-u1IEe-35cJzkApa3w"/>
+  <data id="_OXQN-e1IEe-35cJzkApa3w"/>
+  <involvedParties xsi:type="GDPR:Controller" id="_OXQOFe1IEe-35cJzkApa3w"/>
 </GDPR:LegalAssessmentFacts>

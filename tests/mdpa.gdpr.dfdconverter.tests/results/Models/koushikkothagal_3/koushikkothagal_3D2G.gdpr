@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="ASCII"?>
 <GDPR:LegalAssessmentFacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" id="0">
-  <processing xsi:type="GDPR:Usage" id="2" entityName="external_website" followingProcessing="5"/>
-  <processing xsi:type="GDPR:Usage" id="3" entityName="discovery_server"/>
-  <processing xsi:type="GDPR:Usage" id="4" entityName="ratings_data_service" followingProcessing="3"/>
-  <processing xsi:type="GDPR:Usage" id="5" entityName="movie_info_service" followingProcessing="3"/>
-  <processing xsi:type="GDPR:Usage" id="6" entityName="movie_catalog_service" followingProcessing="3 4 5"/>
-  <processing xsi:type="GDPR:Usage" id="7" entityName="auth_server" followingProcessing="3 5 6 4"/>
+  <processing xsi:type="GDPR:Collecting" id="2" entityName="external_website" outputData="_OWmtx-1IEe-35cJzkApa3w" purpose="_OWmtyO1IEe-35cJzkApa3w" followingProcessing="5" responsible="_OWmt2-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="3" entityName="discovery_server" inputData="_OWmtzO1IEe-35cJzkApa3w" purpose="_OWmtze1IEe-35cJzkApa3w" responsible="_OWmt2-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="4" entityName="ratings_data_service" inputData="_OWmtzO1IEe-35cJzkApa3w" purpose="_OWmtze1IEe-35cJzkApa3w" responsible="_OWmt2-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="5" entityName="movie_info_service" inputData="_OWmtx-1IEe-35cJzkApa3w" purpose="_OWmtyO1IEe-35cJzkApa3w" responsible="_OWmt2-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="6" entityName="movie_catalog_service" inputData="_OWmtzO1IEe-35cJzkApa3w" purpose="_OWmtze1IEe-35cJzkApa3w" followingProcessing="3 4 5" responsible="_OWmt2-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Collecting" id="7" entityName="auth_server" outputData="_OWmtzO1IEe-35cJzkApa3w" purpose="_OWmtze1IEe-35cJzkApa3w" followingProcessing="3 5 6 4" responsible="_OWmt2-1IEe-35cJzkApa3w"/>
+  <purposes id="_OWmtyO1IEe-35cJzkApa3w"/>
+  <purposes id="_OWmtze1IEe-35cJzkApa3w"/>
+  <data id="_OWmtx-1IEe-35cJzkApa3w"/>
+  <data id="_OWmtzO1IEe-35cJzkApa3w"/>
+  <involvedParties xsi:type="GDPR:Controller" id="_OWmt2-1IEe-35cJzkApa3w"/>
 </GDPR:LegalAssessmentFacts>

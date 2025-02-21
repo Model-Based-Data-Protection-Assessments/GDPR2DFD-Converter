@@ -1,27 +1,88 @@
 <?xml version="1.0" encoding="ASCII"?>
-<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_ahnI4uCNEe-LfM-jfeWyyA">
-  <labelTypes id="_ahnv8-CNEe-LfM-jfeWyyA" entityName="ProcessingType">
-    <label id="_ahnwA-CNEe-LfM-jfeWyyA" entityName="Collecting"/>
-    <label id="_ahnwBeCNEe-LfM-jfeWyyA" entityName="Storing"/>
-    <label id="_ahnwBuCNEe-LfM-jfeWyyA" entityName="Usage"/>
-    <label id="_ahnwB-CNEe-LfM-jfeWyyA" entityName="Transferring"/>
+<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="1">
+  <labelTypes id="7" entityName="Stereotype">
+    <label id="10" entityName="internal"/>
+    <label id="18" entityName="load_balancer"/>
+    <label id="26" entityName="external_website"/>
+    <label id="31" entityName="infrastructural"/>
+    <label id="32" entityName="service_discovery"/>
+    <label id="45" entityName="restful_http"/>
+    <label id="53" entityName="load_balanced_link"/>
   </labelTypes>
-  <labelTypes id="_ahnv9eCNEe-LfM-jfeWyyA" entityName="Data"/>
-  <labelTypes id="_ahnv9uCNEe-LfM-jfeWyyA" entityName="PersonalData"/>
-  <labelTypes id="_ahnv9-CNEe-LfM-jfeWyyA" entityName="Obligation"/>
-  <labelTypes id="_ahnv-OCNEe-LfM-jfeWyyA" entityName="Consent"/>
-  <labelTypes id="_ahnv-uCNEe-LfM-jfeWyyA" entityName="Contract"/>
-  <labelTypes id="_ahnv--CNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
-  <labelTypes id="_ahnv_OCNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
-  <labelTypes id="_ahnv_eCNEe-LfM-jfeWyyA" entityName="Controller"/>
-  <labelTypes id="_ahnv_uCNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
-  <labelTypes id="_ahnwAOCNEe-LfM-jfeWyyA" entityName="Purposes"/>
+  <labelTypes id="11" entityName="Endpoints">
+    <label id="12" entityName="movies"/>
+    <label id="13" entityName="moviesmovieId"/>
+    <label id="19" entityName="catalog"/>
+    <label id="20" entityName="cataloguserId"/>
+    <label id="38" entityName="ratingsdata"/>
+    <label id="39" entityName="ratingsdatamoviesmovieId"/>
+    <label id="40" entityName="ratingsdatauseruserId"/>
+  </labelTypes>
+  <labelTypes id="14" entityName="Port">
+    <label id="15" entityName="8082"/>
+    <label id="21" entityName="8081"/>
+    <label id="33" entityName="8761"/>
+    <label id="41" entityName="8083"/>
+  </labelTypes>
+  <labelTypes id="22" entityName="LoadBalancer">
+    <label id="23" entityName="SpringCloud"/>
+  </labelTypes>
+  <labelTypes id="27" entityName="URL">
+    <label id="28" entityName="httpsapithemoviedborg"/>
+  </labelTypes>
+  <labelTypes id="34" entityName="ServiceDiscovery">
+    <label id="35" entityName="Eureka"/>
+  </labelTypes>
+  <labelTypes id="_OWmtzu1IEe-35cJzkApa3w" entityName="ProcessingType">
+    <label id="_OWmt4e1IEe-35cJzkApa3w" entityName="Collecting"/>
+    <label id="_OWmt4u1IEe-35cJzkApa3w" entityName="Storing"/>
+    <label id="_OWmt4-1IEe-35cJzkApa3w" entityName="Usage"/>
+    <label id="_OWmt5O1IEe-35cJzkApa3w" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_OWmtz-1IEe-35cJzkApa3w" entityName="Data">
+    <label id="_OWlfr-1IEe-35cJzkApa3w"/>
+    <label id="_OWlfse1IEe-35cJzkApa3w"/>
+  </labelTypes>
+  <labelTypes id="_OWmt0O1IEe-35cJzkApa3w" entityName="PersonalData"/>
+  <labelTypes id="_OWmt0e1IEe-35cJzkApa3w" entityName="Obligation"/>
+  <labelTypes id="_OWmt0u1IEe-35cJzkApa3w" entityName="Consent"/>
+  <labelTypes id="_OWmt0-1IEe-35cJzkApa3w" entityName="Contract"/>
+  <labelTypes id="_OWmt1O1IEe-35cJzkApa3w" entityName="PublicAuthority"/>
+  <labelTypes id="_OWmt1e1IEe-35cJzkApa3w" entityName="NaturalPerson"/>
+  <labelTypes id="_OWmt1-1IEe-35cJzkApa3w" entityName="Controller">
+    <label id="_OWlfte1IEe-35cJzkApa3w"/>
+  </labelTypes>
+  <labelTypes id="_OWmt2O1IEe-35cJzkApa3w" entityName="ThirdParty"/>
+  <labelTypes id="_OWmt2u1IEe-35cJzkApa3w" entityName="Purposes">
+    <label id="_OWlfsO1IEe-35cJzkApa3w"/>
+    <label id="_OWlfsu1IEe-35cJzkApa3w"/>
+  </labelTypes>
+  <behavior id="8">
+    <inPin id="48"/>
+    <outPin id="46"/>
+    <assignment xsi:type="datadictionary:Assignment" id="59" outputPin="46" outputLabels="10 45" inputPins="48">
+      <term xsi:type="datadictionary:TRUE" id="60"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="71" outputPin="46" inputPins="48"/>
+  </behavior>
+  <behavior id="16">
+    <outPin id="51"/>
+    <outPin id="55"/>
+    <outPin id="57"/>
+    <assignment xsi:type="datadictionary:Assignment" id="61" outputPin="51" outputLabels="10 18 45 53">
+      <term xsi:type="datadictionary:TRUE" id="62"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="63" outputPin="55" outputLabels="10 18 45 53">
+      <term xsi:type="datadictionary:TRUE" id="64"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="65" outputPin="57" outputLabels="10 18 45 53">
+      <term xsi:type="datadictionary:TRUE" id="66"/>
+    </assignment>
+  </behavior>
   <behavior id="24">
     <outPin id="49"/>
-    <assignment xsi:type="datadictionary:Assignment" id="67" outputPin="49">
+    <assignment xsi:type="datadictionary:Assignment" id="67" outputPin="49" outputLabels="26 45">
       <term xsi:type="datadictionary:TRUE" id="68"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#26"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#45"/>
     </assignment>
   </behavior>
   <behavior id="29">
@@ -30,47 +91,9 @@
   <behavior id="36">
     <inPin id="54"/>
     <outPin id="43"/>
-    <assignment xsi:type="datadictionary:Assignment" id="69" outputPin="43" inputPins="54">
+    <assignment xsi:type="datadictionary:Assignment" id="69" outputPin="43" outputLabels="10 45" inputPins="54">
       <term xsi:type="datadictionary:TRUE" id="70"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#10"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#45"/>
     </assignment>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="72" outputPin="43" inputPins="54"/>
-  </behavior>
-  <behavior id="8">
-    <inPin id="48"/>
-    <outPin id="46"/>
-    <assignment xsi:type="datadictionary:Assignment" id="59" outputPin="46" inputPins="48">
-      <term xsi:type="datadictionary:TRUE" id="60"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#10"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#45"/>
-    </assignment>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="71" outputPin="46" inputPins="48"/>
-  </behavior>
-  <behavior id="16">
-    <outPin id="51"/>
-    <outPin id="55"/>
-    <outPin id="57"/>
-    <assignment xsi:type="datadictionary:Assignment" id="61" outputPin="51">
-      <term xsi:type="datadictionary:TRUE" id="62"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#10"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#18"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#45"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#53"/>
-    </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="63" outputPin="55">
-      <term xsi:type="datadictionary:TRUE" id="64"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#10"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#18"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#45"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#53"/>
-    </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="65" outputPin="57">
-      <term xsi:type="datadictionary:TRUE" id="66"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#10"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#18"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#45"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#53"/>
-    </assignment>
   </behavior>
 </datadictionary:DataDictionary>

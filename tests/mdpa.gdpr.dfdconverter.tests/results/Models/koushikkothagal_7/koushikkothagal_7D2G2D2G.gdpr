@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="ASCII"?>
 <GDPR:LegalAssessmentFacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" id="0">
-  <processing xsi:type="GDPR:Usage" id="2" entityName="external_website"/>
-  <processing xsi:type="GDPR:Usage" id="3" entityName="discovery_server"/>
-  <processing xsi:type="GDPR:Usage" id="4" entityName="ratings_data_service"/>
-  <processing xsi:type="GDPR:Usage" id="5" entityName="movie_info_service"/>
-  <processing xsi:type="GDPR:Usage" id="6" entityName="movie_catalog_service"/>
+  <processing xsi:type="GDPR:Collecting" id="_OWJbF-1IEe-35cJzkApa3w" outputData="_OWA34e1IEe-35cJzkApa3w" purpose="_OWA34u1IEe-35cJzkApa3w" responsible="_OWA37u1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="_OWJbG-1IEe-35cJzkApa3w" inputData="_OWA35O1IEe-35cJzkApa3w" purpose="_OWA35e1IEe-35cJzkApa3w" responsible="_OWA37u1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="_OWKBwO1IEe-35cJzkApa3w" inputData="_OWA35O1IEe-35cJzkApa3w" purpose="_OWA35e1IEe-35cJzkApa3w" responsible="_OWA37u1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="_OWKBwe1IEe-35cJzkApa3w" inputData="_OWA34e1IEe-35cJzkApa3w" purpose="_OWA34u1IEe-35cJzkApa3w" responsible="_OWA37u1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Collecting" id="_OWKBw-1IEe-35cJzkApa3w" outputData="_OWA35O1IEe-35cJzkApa3w" purpose="_OWA35e1IEe-35cJzkApa3w" responsible="_OWA37u1IEe-35cJzkApa3w"/>
+  <purposes id="_OWA34u1IEe-35cJzkApa3w"/>
+  <purposes id="_OWA35e1IEe-35cJzkApa3w"/>
+  <data id="_OWA34e1IEe-35cJzkApa3w"/>
+  <data id="_OWA35O1IEe-35cJzkApa3w"/>
+  <involvedParties xsi:type="GDPR:Controller" id="_OWA37u1IEe-35cJzkApa3w"/>
 </GDPR:LegalAssessmentFacts>

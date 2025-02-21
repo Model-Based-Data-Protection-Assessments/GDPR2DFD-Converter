@@ -1,24 +1,91 @@
 <?xml version="1.0" encoding="ASCII"?>
-<datadictionary:DataDictionary xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_afkhueCNEe-LfM-jfeWyyA">
-  <labelTypes id="_afkhzeCNEe-LfM-jfeWyyA" entityName="ProcessingType">
-    <label id="_afkh2OCNEe-LfM-jfeWyyA" entityName="Collecting"/>
-    <label id="_afkh2eCNEe-LfM-jfeWyyA" entityName="Storing"/>
-    <label id="_afkh2uCNEe-LfM-jfeWyyA" entityName="Usage"/>
-    <label id="_afkh2-CNEe-LfM-jfeWyyA" entityName="Transferring"/>
+<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="1">
+  <labelTypes id="7" entityName="Stereotype">
+    <label id="10" entityName="internal"/>
+    <label id="18" entityName="web_server"/>
+    <label id="19" entityName="gateway"/>
+    <label id="20" entityName="infrastructural"/>
+    <label id="21" entityName="transform_identity_representation"/>
+    <label id="26" entityName="user_stereotype"/>
+    <label id="27" entityName="entrypoint"/>
+    <label id="28" entityName="exitpoint"/>
+    <label id="35" entityName="restful_http"/>
   </labelTypes>
-  <labelTypes id="_afkhzuCNEe-LfM-jfeWyyA" entityName="Data"/>
-  <labelTypes id="_afkhz-CNEe-LfM-jfeWyyA" entityName="PersonalData"/>
-  <labelTypes id="_afkh0OCNEe-LfM-jfeWyyA" entityName="Obligation"/>
-  <labelTypes id="_afkh0eCNEe-LfM-jfeWyyA" entityName="Consent"/>
-  <labelTypes id="_afkh0uCNEe-LfM-jfeWyyA" entityName="Contract"/>
-  <labelTypes id="_afkh0-CNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
-  <labelTypes id="_afkh1OCNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
-  <labelTypes id="_afkh1eCNEe-LfM-jfeWyyA" entityName="Controller"/>
-  <labelTypes id="_afkh1uCNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
-  <labelTypes id="_afkh1-CNEe-LfM-jfeWyyA" entityName="Purposes"/>
-  <behavior id="_afkhwuCNEe-LfM-jfeWyyA" entityName="user Behavior"/>
-  <behavior id="_afkhxuCNEe-LfM-jfeWyyA" entityName="apache_server Behavior"/>
-  <behavior id="_afkhyOCNEe-LfM-jfeWyyA" entityName="content_service Behavior"/>
-  <behavior id="_afkhyuCNEe-LfM-jfeWyyA" entityName="product_service Behavior"/>
-  <behavior id="_afkhzOCNEe-LfM-jfeWyyA" entityName="cart_service Behavior"/>
+  <labelTypes id="11" entityName="Port">
+    <label id="12" entityName="11080"/>
+    <label id="15" entityName="11082"/>
+    <label id="31" entityName="11081"/>
+  </labelTypes>
+  <labelTypes id="22" entityName="WebServer">
+    <label id="23" entityName="Apachehttpd"/>
+  </labelTypes>
+  <labelTypes id="_OVUUd-1IEe-35cJzkApa3w" entityName="ProcessingType">
+    <label id="_OVUUhu1IEe-35cJzkApa3w" entityName="Collecting"/>
+    <label id="_OVUUh-1IEe-35cJzkApa3w" entityName="Storing"/>
+    <label id="_OVUUiO1IEe-35cJzkApa3w" entityName="Usage"/>
+    <label id="_OVUUie1IEe-35cJzkApa3w" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_OVUUee1IEe-35cJzkApa3w" entityName="Data"/>
+  <labelTypes id="_OVUUeu1IEe-35cJzkApa3w" entityName="PersonalData"/>
+  <labelTypes id="_OVUUe-1IEe-35cJzkApa3w" entityName="Obligation"/>
+  <labelTypes id="_OVUUfO1IEe-35cJzkApa3w" entityName="Consent"/>
+  <labelTypes id="_OVUUfe1IEe-35cJzkApa3w" entityName="Contract"/>
+  <labelTypes id="_OVUUfu1IEe-35cJzkApa3w" entityName="PublicAuthority"/>
+  <labelTypes id="_OVUUf-1IEe-35cJzkApa3w" entityName="NaturalPerson"/>
+  <labelTypes id="_OVUUge1IEe-35cJzkApa3w" entityName="Controller">
+    <label id="_OVTGRO1IEe-35cJzkApa3w"/>
+    <label id="_OVTGRO1IEe-35cJzkApa3w"/>
+  </labelTypes>
+  <labelTypes id="_OVUUgu1IEe-35cJzkApa3w" entityName="ThirdParty"/>
+  <labelTypes id="_OVUUg-1IEe-35cJzkApa3w" entityName="Purposes"/>
+  <behavior id="8">
+    <inPin id="47"/>
+  </behavior>
+  <behavior id="13">
+    <inPin id="42"/>
+    <outPin id="40"/>
+    <assignment xsi:type="datadictionary:Assignment" id="50" outputPin="40" outputLabels="10 35" inputPins="42">
+      <term xsi:type="datadictionary:TRUE" id="51"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="62" outputPin="40" inputPins="42"/>
+  </behavior>
+  <behavior id="16">
+    <inPin id="32"/>
+    <outPin id="37"/>
+    <outPin id="43"/>
+    <outPin id="45"/>
+    <outPin id="48"/>
+    <assignment xsi:type="datadictionary:Assignment" id="52" outputPin="37" outputLabels="18 19 20 21 35" inputPins="32">
+      <term xsi:type="datadictionary:TRUE" id="53"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="54" outputPin="43" outputLabels="18 19 20 21 35" inputPins="32">
+      <term xsi:type="datadictionary:TRUE" id="55"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="56" outputPin="45" outputLabels="18 19 20 21 35" inputPins="32">
+      <term xsi:type="datadictionary:TRUE" id="57"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="58" outputPin="48" outputLabels="18 19 20 21 35" inputPins="32">
+      <term xsi:type="datadictionary:TRUE" id="59"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="63" outputPin="37" inputPins="32"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="64" outputPin="43" inputPins="32"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="65" outputPin="45" inputPins="32"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="66" outputPin="48" inputPins="32"/>
+  </behavior>
+  <behavior id="24">
+    <inPin id="36"/>
+    <outPin id="33"/>
+    <assignment xsi:type="datadictionary:Assignment" id="60" outputPin="33" outputLabels="26 27 28 35" inputPins="36">
+      <term xsi:type="datadictionary:TRUE" id="61"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="67" outputPin="33" inputPins="36"/>
+  </behavior>
+  <behavior id="29">
+    <inPin id="39"/>
+  </behavior>
+  <behavior id="_OVYl0u1IEe-35cJzkApa3w" entityName="user Behavior"/>
+  <behavior id="_OVYl3-1IEe-35cJzkApa3w" entityName="apache_server Behavior"/>
+  <behavior id="_OVYl5u1IEe-35cJzkApa3w" entityName="content_service Behavior"/>
+  <behavior id="_OVYl7u1IEe-35cJzkApa3w" entityName="product_service Behavior"/>
+  <behavior id="_OVYl8-1IEe-35cJzkApa3w" entityName="cart_service Behavior"/>
 </datadictionary:DataDictionary>

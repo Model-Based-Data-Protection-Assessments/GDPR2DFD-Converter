@@ -1,81 +1,89 @@
 <?xml version="1.0" encoding="ASCII"?>
 <dataflowdiagram:DataFlowDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" id="0">
   <nodes xsi:type="dataflowdiagram:External" id="2" entityName="user">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff_18/ewolff_18D2G2D.datadictionary#50"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#52"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#53"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#54"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff_18/ewolff_18D2G2D.datadictionary#_aii9GuCNEe-LfM-jfeWyyA"/>
+    <behavior href="ewolff_18D2G2D.datadictionary#50"/>
+    <properties href="ewolff_18D2G2D.datadictionary#52"/>
+    <properties href="ewolff_18D2G2D.datadictionary#53"/>
+    <properties href="ewolff_18D2G2D.datadictionary#54"/>
+    <properties href="ewolff_18D2G2D.datadictionary#_OZitFu1IEe-35cJzkApa3w"/>
+    <properties href="ewolff_18D2G2D.datadictionary#_OZkiN-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="3" entityName="eureka">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff_18/ewolff_18D2G2D.datadictionary#22"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#24"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#15"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#25"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#27"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff_18/ewolff_18D2G2D.datadictionary#_aii9GuCNEe-LfM-jfeWyyA"/>
+    <behavior href="ewolff_18D2G2D.datadictionary#22"/>
+    <properties href="ewolff_18D2G2D.datadictionary#24"/>
+    <properties href="ewolff_18D2G2D.datadictionary#15"/>
+    <properties href="ewolff_18D2G2D.datadictionary#25"/>
+    <properties href="ewolff_18D2G2D.datadictionary#27"/>
+    <properties href="ewolff_18D2G2D.datadictionary#_OZitFu1IEe-35cJzkApa3w"/>
+    <properties href="ewolff_18D2G2D.datadictionary#_OZkiN-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="4" entityName="zuul">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff_18/ewolff_18D2G2D.datadictionary#39"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#41"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#42"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#15"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#44"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#38"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#46"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff_18/ewolff_18D2G2D.datadictionary#_aii9GuCNEe-LfM-jfeWyyA"/>
+    <behavior href="ewolff_18D2G2D.datadictionary#39"/>
+    <properties href="ewolff_18D2G2D.datadictionary#41"/>
+    <properties href="ewolff_18D2G2D.datadictionary#42"/>
+    <properties href="ewolff_18D2G2D.datadictionary#15"/>
+    <properties href="ewolff_18D2G2D.datadictionary#44"/>
+    <properties href="ewolff_18D2G2D.datadictionary#38"/>
+    <properties href="ewolff_18D2G2D.datadictionary#46"/>
+    <properties href="ewolff_18D2G2D.datadictionary#_OZitFu1IEe-35cJzkApa3w"/>
+    <properties href="ewolff_18D2G2D.datadictionary#_OZkiN-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="5" entityName="turbine">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff_18/ewolff_18D2G2D.datadictionary#11"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#13"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#14"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#15"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#17"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#19"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#21"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff_18/ewolff_18D2G2D.datadictionary#_aii9GuCNEe-LfM-jfeWyyA"/>
+    <behavior href="ewolff_18D2G2D.datadictionary#11"/>
+    <properties href="ewolff_18D2G2D.datadictionary#13"/>
+    <properties href="ewolff_18D2G2D.datadictionary#14"/>
+    <properties href="ewolff_18D2G2D.datadictionary#15"/>
+    <properties href="ewolff_18D2G2D.datadictionary#17"/>
+    <properties href="ewolff_18D2G2D.datadictionary#19"/>
+    <properties href="ewolff_18D2G2D.datadictionary#21"/>
+    <properties href="ewolff_18D2G2D.datadictionary#_OZitFu1IEe-35cJzkApa3w"/>
+    <properties href="ewolff_18D2G2D.datadictionary#_OZkiN-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="6" entityName="catalog">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff_18/ewolff_18D2G2D.datadictionary#28"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#30"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#32"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#33"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#34"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#35"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#36"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#37"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#38"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff_18/ewolff_18D2G2D.datadictionary#_aii9GuCNEe-LfM-jfeWyyA"/>
+    <behavior href="ewolff_18D2G2D.datadictionary#28"/>
+    <properties href="ewolff_18D2G2D.datadictionary#30"/>
+    <properties href="ewolff_18D2G2D.datadictionary#32"/>
+    <properties href="ewolff_18D2G2D.datadictionary#33"/>
+    <properties href="ewolff_18D2G2D.datadictionary#34"/>
+    <properties href="ewolff_18D2G2D.datadictionary#35"/>
+    <properties href="ewolff_18D2G2D.datadictionary#36"/>
+    <properties href="ewolff_18D2G2D.datadictionary#37"/>
+    <properties href="ewolff_18D2G2D.datadictionary#38"/>
+    <properties href="ewolff_18D2G2D.datadictionary#_OZitFu1IEe-35cJzkApa3w"/>
+    <properties href="ewolff_18D2G2D.datadictionary#_OZkiN-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="7" entityName="customer">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff_18/ewolff_18D2G2D.datadictionary#55"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#30"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#35"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#34"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#33"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#57"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#38"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff_18/ewolff_18D2G2D.datadictionary#_aii9GuCNEe-LfM-jfeWyyA"/>
+    <behavior href="ewolff_18D2G2D.datadictionary#55"/>
+    <properties href="ewolff_18D2G2D.datadictionary#30"/>
+    <properties href="ewolff_18D2G2D.datadictionary#35"/>
+    <properties href="ewolff_18D2G2D.datadictionary#34"/>
+    <properties href="ewolff_18D2G2D.datadictionary#33"/>
+    <properties href="ewolff_18D2G2D.datadictionary#57"/>
+    <properties href="ewolff_18D2G2D.datadictionary#38"/>
+    <properties href="ewolff_18D2G2D.datadictionary#_OZitFu1IEe-35cJzkApa3w"/>
+    <properties href="ewolff_18D2G2D.datadictionary#_OZkiN-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="8" entityName="order">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff_18/ewolff_18D2G2D.datadictionary#58"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#30"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#42"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#60"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#61"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#35"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#62"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#63"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#64"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#66"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#38"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#46"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff_18/ewolff_18D2G2D.datadictionary#_aii9GuCNEe-LfM-jfeWyyA"/>
+    <behavior href="ewolff_18D2G2D.datadictionary#58"/>
+    <properties href="ewolff_18D2G2D.datadictionary#30"/>
+    <properties href="ewolff_18D2G2D.datadictionary#42"/>
+    <properties href="ewolff_18D2G2D.datadictionary#60"/>
+    <properties href="ewolff_18D2G2D.datadictionary#61"/>
+    <properties href="ewolff_18D2G2D.datadictionary#35"/>
+    <properties href="ewolff_18D2G2D.datadictionary#62"/>
+    <properties href="ewolff_18D2G2D.datadictionary#63"/>
+    <properties href="ewolff_18D2G2D.datadictionary#64"/>
+    <properties href="ewolff_18D2G2D.datadictionary#66"/>
+    <properties href="ewolff_18D2G2D.datadictionary#38"/>
+    <properties href="ewolff_18D2G2D.datadictionary#46"/>
+    <properties href="ewolff_18D2G2D.datadictionary#_OZitFu1IEe-35cJzkApa3w"/>
+    <properties href="ewolff_18D2G2D.datadictionary#_OZkiN-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="9" entityName="secret_manager">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff_18/ewolff_18D2G2D.datadictionary#47"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#15"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/ewolff/ewolff_18.datadictionary#49"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff_18/ewolff_18D2G2D.datadictionary#_aii9GuCNEe-LfM-jfeWyyA"/>
+    <behavior href="ewolff_18D2G2D.datadictionary#47"/>
+    <properties href="ewolff_18D2G2D.datadictionary#15"/>
+    <properties href="ewolff_18D2G2D.datadictionary#49"/>
+    <properties href="ewolff_18D2G2D.datadictionary#_OZitFu1IEe-35cJzkApa3w"/>
+    <properties href="ewolff_18D2G2D.datadictionary#_OZkiN-1IEe-35cJzkApa3w"/>
   </nodes>
 </dataflowdiagram:DataFlowDiagram>

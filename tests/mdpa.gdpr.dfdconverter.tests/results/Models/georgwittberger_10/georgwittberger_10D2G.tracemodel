@@ -2,76 +2,26 @@
 <tracemodel:TraceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" xmlns:tracemodel="http://www.example.org/tracemodel">
   <nodeTraces>
     <dfdNode xsi:type="dataflowdiagram:External" href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_10.dataflowdiagram#2"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_10/georgwittberger_10D2G.gdpr#2"/>
+    <gdprProcessing href="georgwittberger_10D2G.gdpr#2"/>
   </nodeTraces>
   <nodeTraces>
     <dfdNode xsi:type="dataflowdiagram:Process" href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_10.dataflowdiagram#3"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_10/georgwittberger_10D2G.gdpr#3"/>
+    <gdprProcessing href="georgwittberger_10D2G.gdpr#3"/>
   </nodeTraces>
   <nodeTraces>
     <dfdNode xsi:type="dataflowdiagram:Process" href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_10.dataflowdiagram#4"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_10/georgwittberger_10D2G.gdpr#4"/>
+    <gdprProcessing href="georgwittberger_10D2G.gdpr#4"/>
   </nodeTraces>
   <nodeTraces>
     <dfdNode xsi:type="dataflowdiagram:Process" href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_10.dataflowdiagram#5"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_10/georgwittberger_10D2G.gdpr#5"/>
+    <gdprProcessing href="georgwittberger_10D2G.gdpr#5"/>
   </nodeTraces>
   <nodeTraces>
     <dfdNode xsi:type="dataflowdiagram:Process" href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_10.dataflowdiagram#6"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_10/georgwittberger_10D2G.gdpr#6"/>
+    <gdprProcessing href="georgwittberger_10D2G.gdpr#6"/>
   </nodeTraces>
   <nodeTraces>
     <dfdNode xsi:type="dataflowdiagram:Process" href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_10.dataflowdiagram#7"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_10/georgwittberger_10D2G.gdpr#7"/>
+    <gdprProcessing href="georgwittberger_10D2G.gdpr#7"/>
   </nodeTraces>
-  <flowTraces>
-    <dataFlow href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_10.dataflowdiagram#39"/>
-    <source href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_10/georgwittberger_10D2G.gdpr#2"/>
-    <dest href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_10/georgwittberger_10D2G.gdpr#3"/>
-  </flowTraces>
-  <flowTraces>
-    <dataFlow href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_10.dataflowdiagram#43"/>
-    <source href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_10/georgwittberger_10D2G.gdpr#3"/>
-    <dest href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_10/georgwittberger_10D2G.gdpr#2"/>
-  </flowTraces>
-  <flowTraces>
-    <dataFlow href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_10.dataflowdiagram#46"/>
-    <source href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_10/georgwittberger_10D2G.gdpr#6"/>
-    <dest href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_10/georgwittberger_10D2G.gdpr#5"/>
-  </flowTraces>
-  <flowTraces>
-    <dataFlow href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_10.dataflowdiagram#49"/>
-    <source href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_10/georgwittberger_10D2G.gdpr#3"/>
-    <dest href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_10/georgwittberger_10D2G.gdpr#6"/>
-  </flowTraces>
-  <flowTraces>
-    <dataFlow href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_10.dataflowdiagram#51"/>
-    <source href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_10/georgwittberger_10D2G.gdpr#3"/>
-    <dest href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_10/georgwittberger_10D2G.gdpr#5"/>
-  </flowTraces>
-  <flowTraces>
-    <dataFlow href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_10.dataflowdiagram#54"/>
-    <source href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_10/georgwittberger_10D2G.gdpr#3"/>
-    <dest href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_10/georgwittberger_10D2G.gdpr#4"/>
-  </flowTraces>
-  <flowTraces>
-    <dataFlow href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_10.dataflowdiagram#57"/>
-    <source href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_10/georgwittberger_10D2G.gdpr#3"/>
-    <dest href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_10/georgwittberger_10D2G.gdpr#7"/>
-  </flowTraces>
-  <flowTraces>
-    <dataFlow href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_10.dataflowdiagram#59"/>
-    <source href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_10/georgwittberger_10D2G.gdpr#4"/>
-    <dest href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_10/georgwittberger_10D2G.gdpr#7"/>
-  </flowTraces>
-  <flowTraces>
-    <dataFlow href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_10.dataflowdiagram#61"/>
-    <source href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_10/georgwittberger_10D2G.gdpr#5"/>
-    <dest href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_10/georgwittberger_10D2G.gdpr#7"/>
-  </flowTraces>
-  <flowTraces>
-    <dataFlow href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/georgwittberger/georgwittberger_10.dataflowdiagram#63"/>
-    <source href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_10/georgwittberger_10D2G.gdpr#6"/>
-    <dest href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_10/georgwittberger_10D2G.gdpr#7"/>
-  </flowTraces>
 </tracemodel:TraceModel>

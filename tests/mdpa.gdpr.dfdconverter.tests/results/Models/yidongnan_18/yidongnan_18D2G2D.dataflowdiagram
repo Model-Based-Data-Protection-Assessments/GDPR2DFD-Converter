@@ -1,97 +1,154 @@
 <?xml version="1.0" encoding="ASCII"?>
 <dataflowdiagram:DataFlowDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" id="0">
+  <flows id="155" entityName="secret_manager" sourceNode="12" destinationNode="3">
+    <destinationPin href="yidongnan_18D2G2D.datadictionary#153"/>
+    <sourcePin href="yidongnan_18D2G2D.datadictionary#154"/>
+  </flows>
+  <flows id="157" entityName="secret_manager" sourceNode="12" destinationNode="4">
+    <destinationPin href="yidongnan_18D2G2D.datadictionary#88"/>
+    <sourcePin href="yidongnan_18D2G2D.datadictionary#156"/>
+  </flows>
+  <flows id="159" entityName="secret_manager" sourceNode="12" destinationNode="5">
+    <destinationPin href="yidongnan_18D2G2D.datadictionary#91"/>
+    <sourcePin href="yidongnan_18D2G2D.datadictionary#158"/>
+  </flows>
+  <flows id="161" entityName="secret_manager" sourceNode="12" destinationNode="6">
+    <destinationPin href="yidongnan_18D2G2D.datadictionary#84"/>
+    <sourcePin href="yidongnan_18D2G2D.datadictionary#160"/>
+  </flows>
+  <flows id="163" entityName="secret_manager" sourceNode="12" destinationNode="8">
+    <destinationPin href="yidongnan_18D2G2D.datadictionary#101"/>
+    <sourcePin href="yidongnan_18D2G2D.datadictionary#162"/>
+  </flows>
+  <flows id="165" entityName="secret_manager" sourceNode="12" destinationNode="9">
+    <destinationPin href="yidongnan_18D2G2D.datadictionary#112"/>
+    <sourcePin href="yidongnan_18D2G2D.datadictionary#164"/>
+  </flows>
+  <flows id="167" entityName="secret_manager" sourceNode="12" destinationNode="10">
+    <destinationPin href="yidongnan_18D2G2D.datadictionary#127"/>
+    <sourcePin href="yidongnan_18D2G2D.datadictionary#166"/>
+  </flows>
+  <flows id="169" entityName="secret_manager" sourceNode="12" destinationNode="11">
+    <destinationPin href="yidongnan_18D2G2D.datadictionary#134"/>
+    <sourcePin href="yidongnan_18D2G2D.datadictionary#168"/>
+  </flows>
+  <flows id="171" entityName="secret_manager" sourceNode="12" destinationNode="7">
+    <destinationPin href="yidongnan_18D2G2D.datadictionary#96"/>
+    <sourcePin href="yidongnan_18D2G2D.datadictionary#170"/>
+  </flows>
   <nodes xsi:type="dataflowdiagram:External" id="2" entityName="user">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//yidongnan_18/yidongnan_18D2G2D.datadictionary#64"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#66"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#67"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#68"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//yidongnan_18/yidongnan_18D2G2D.datadictionary#_aibBb-CNEe-LfM-jfeWyyA"/>
+    <behavior href="yidongnan_18D2G2D.datadictionary#64"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#66"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#67"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#68"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#_OdTL8O1IEe-35cJzkApa3w"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#_OdWPBO1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="3" entityName="admin_dashboard">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//yidongnan_18/yidongnan_18D2G2D.datadictionary#40"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#42"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#24"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#17"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#43"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#45"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//yidongnan_18/yidongnan_18D2G2D.datadictionary#_aibBb-CNEe-LfM-jfeWyyA"/>
+    <behavior href="yidongnan_18D2G2D.datadictionary#40"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#42"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#24"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#17"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#43"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#45"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#_OdTLme1IEe-35cJzkApa3w"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#_OdTL8O1IEe-35cJzkApa3w"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#_OdWPBO1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="4" entityName="eureka_server">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//yidongnan_18/yidongnan_18D2G2D.datadictionary#34"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#36"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#24"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#17"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#37"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#39"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//yidongnan_18/yidongnan_18D2G2D.datadictionary#_aibBb-CNEe-LfM-jfeWyyA"/>
+    <behavior href="yidongnan_18D2G2D.datadictionary#34"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#36"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#24"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#17"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#37"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#39"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#_OdTLme1IEe-35cJzkApa3w"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#_OdTL8O1IEe-35cJzkApa3w"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#_OdWPBO1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="5" entityName="rabbitmq">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//yidongnan_18/yidongnan_18D2G2D.datadictionary#69"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#71"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#24"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#73"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#74"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//yidongnan_18/yidongnan_18D2G2D.datadictionary#_aibBb-CNEe-LfM-jfeWyyA"/>
+    <behavior href="yidongnan_18D2G2D.datadictionary#69"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#71"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#24"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#73"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#74"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#_OdTLme1IEe-35cJzkApa3w"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#_OdTL8O1IEe-35cJzkApa3w"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#_OdWPBO1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="6" entityName="config_server">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//yidongnan_18/yidongnan_18D2G2D.datadictionary#28"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#30"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#24"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#17"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#31"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#33"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//yidongnan_18/yidongnan_18D2G2D.datadictionary#_aibBb-CNEe-LfM-jfeWyyA"/>
+    <behavior href="yidongnan_18D2G2D.datadictionary#28"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#30"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#24"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#17"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#31"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#33"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#_OdTLme1IEe-35cJzkApa3w"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#_OdTL8O1IEe-35cJzkApa3w"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#_OdWPBO1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="7" entityName="hystrix_dashboard">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//yidongnan_18/yidongnan_18D2G2D.datadictionary#75"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#77"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#78"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#24"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#17"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#80"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#81"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#83"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//yidongnan_18/yidongnan_18D2G2D.datadictionary#_aibBb-CNEe-LfM-jfeWyyA"/>
+    <behavior href="yidongnan_18D2G2D.datadictionary#75"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#77"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#78"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#24"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#17"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#80"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#81"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#83"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#_OdTLme1IEe-35cJzkApa3w"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#_OdTL8O1IEe-35cJzkApa3w"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#_OdWPBO1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="8" entityName="service_a">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//yidongnan_18/yidongnan_18D2G2D.datadictionary#46"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#16"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#48"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#17"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#50"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#51"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//yidongnan_18/yidongnan_18D2G2D.datadictionary#_aibBb-CNEe-LfM-jfeWyyA"/>
+    <behavior href="yidongnan_18D2G2D.datadictionary#46"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#16"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#48"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#17"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#50"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#51"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#_OdTLme1IEe-35cJzkApa3w"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#_OdTL8O1IEe-35cJzkApa3w"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#_OdWPBO1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="9" entityName="service_b">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//yidongnan_18/yidongnan_18D2G2D.datadictionary#14"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#16"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#17"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#20"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//yidongnan_18/yidongnan_18D2G2D.datadictionary#_aibBb-CNEe-LfM-jfeWyyA"/>
+    <behavior href="yidongnan_18D2G2D.datadictionary#14"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#16"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#17"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#20"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#_OdTLme1IEe-35cJzkApa3w"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#_OdTL8O1IEe-35cJzkApa3w"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#_OdWPBO1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="10" entityName="zuul">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//yidongnan_18/yidongnan_18D2G2D.datadictionary#52"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#54"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#24"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#55"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#17"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#57"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#58"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#60"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//yidongnan_18/yidongnan_18D2G2D.datadictionary#_aibBb-CNEe-LfM-jfeWyyA"/>
+    <behavior href="yidongnan_18D2G2D.datadictionary#52"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#54"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#24"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#55"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#17"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#57"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#58"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#60"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#_OdTLme1IEe-35cJzkApa3w"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#_OdTL8O1IEe-35cJzkApa3w"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#_OdWPBO1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="11" entityName="zipkin">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//yidongnan_18/yidongnan_18D2G2D.datadictionary#21"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#23"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#24"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#26"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#27"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//yidongnan_18/yidongnan_18D2G2D.datadictionary#_aibBb-CNEe-LfM-jfeWyyA"/>
+    <behavior href="yidongnan_18D2G2D.datadictionary#21"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#23"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#24"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#26"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#27"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#_OdTLme1IEe-35cJzkApa3w"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#_OdTL8O1IEe-35cJzkApa3w"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#_OdWPBO1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="12" entityName="secret_manager">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//yidongnan_18/yidongnan_18D2G2D.datadictionary#61"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#24"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/yidongnan/yidongnan_18.datadictionary#63"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//yidongnan_18/yidongnan_18D2G2D.datadictionary#_aibBb-CNEe-LfM-jfeWyyA"/>
+    <behavior href="yidongnan_18D2G2D.datadictionary#61"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#24"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#63"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#_OdTLme1IEe-35cJzkApa3w"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#_OdTL8O1IEe-35cJzkApa3w"/>
+    <properties href="yidongnan_18D2G2D.datadictionary#_OdWPAu1IEe-35cJzkApa3w"/>
   </nodes>
 </dataflowdiagram:DataFlowDiagram>

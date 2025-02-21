@@ -69,6 +69,9 @@ public class DFD2GDPR {
 	private Map<Node, Processing> mapNodeToProcessing = new HashMap<>();	
 	private Map<Label, Entity> labelToEntityMap = new HashMap<>();
 	private Map<Entity, Entity> gdprElementClonesMap = new HashMap<>();
+	
+	private List<Node> collectingNodes = new ArrayList<>();
+	private Map<Node, Long> mapNodeToAnalyzedIncomingFlows = new HashMap<>();
 		
 	private ResourceSet rs;	
 	
@@ -128,6 +131,13 @@ public class DFD2GDPR {
 			rs = new ResourceSetImpl();
 			rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put(Resource.Factory.Registry.DEFAULT_EXTENSION, new XMIResourceFactoryImpl());
 		}
+		
+		if (inTrace == null) {
+			dfd.getNodes().stream().forEach(node -> {
+				long count = dfd.getFlows().stream().filter(flow -> flow.getDestinationNode().equals(node)).count();
+				mapNodeToAnalyzedIncomingFlows.put(node, count);
+			});
+		}
 	}
 	
 	private void setup(DataFlowDiagram dfd, DataDictionary dd) {
@@ -139,6 +149,10 @@ public class DFD2GDPR {
 	 */
 	public void transform() {
 		laf.setId(dfd.getId());
+		if (inTrace == null) {
+			collectingNodes = identifyCollectingNodes();
+		}
+		
 				
 		// convert labels
 		parseLabels();
@@ -148,9 +162,14 @@ public class DFD2GDPR {
 		dfd.getNodes().forEach(this::createProcessingReferences);
 		
 		// convert flows				
-		dfd.getFlows().forEach(this::transformFlow);
+		transformFlowsInOrder();
+		
+		if (laf.getInvolvedParties().stream().noneMatch(Controller.class::isInstance)) {
+			var controller = gdprFactory.createController();
+			laf.getInvolvedParties().add(controller);
+			laf.getProcessing().forEach(processing -> processing.setResponsible(controller));
+		}
 	}
-	
 	/**
 	 * Saves the created Model instances at the provided locations
 	 * @param gdprFile Location where gdpr instance is to be saved
@@ -254,8 +273,9 @@ public class DFD2GDPR {
 		var optNt = nodeTraceLookup(node);
 		if (optNt.isPresent()) {
 			NodeTrace nt = optNt.get();
-			gdprProcessing = nt.getGdprProcessing();
-			outTrace.getNodeTraces().add(nt);
+			gdprProcessing = cloneProcessing(nt.getGdprProcessing());
+			System.out.println(gdprProcessing.getEntityName() + "    " + gdprProcessing.getInputData().size());
+			addNodeTrace(node, gdprProcessing);
 		} else {
 			gdprProcessing = createNewGDPRProcessing(node);
 			addNodeTrace(node, gdprProcessing);
@@ -284,7 +304,8 @@ public class DFD2GDPR {
 		Label processingTypeLabel = node.getProperties().stream().filter(label -> getLabelTypeOfLabel(label).getEntityName().equals("ProcessingType")).findFirst().orElse(null);
 		
 		if (processingTypeLabel == null) {
-			processing = gdprFactory.createUsage();
+			if (collectingNodes.contains(node)) processing = gdprFactory.createCollecting();
+			else processing = gdprFactory.createUsage();
 		} else {
 			switch (processingTypeLabel.getEntityName()) {
 			case "Collecting":
@@ -361,7 +382,7 @@ public class DFD2GDPR {
 	private void createProcessingReferences(Node node) {
 		var processing = mapNodeToProcessing.get(node);
 		
-		for (Pin pin : node.getBehavior().getInPin()) {
+		/*for (Pin pin : node.getBehavior().getInPin()) {
 			Data data = getDataFromPin(pin);
 			if(processing.getInputData().stream().noneMatch(d -> d.getId().equals(data.getId())) && data != null ) {
 				processing.getInputData().add(data);
@@ -372,7 +393,7 @@ public class DFD2GDPR {
 			if(processing.getOutputData().stream().noneMatch(d -> d.getId().equals(data.getId())) && data != null) {
 				processing.getOutputData().add(data);
 			}
-		}
+		}*/
 			
 		processing.getOnTheBasisOf().clear();
 		processing.getOnTheBasisOf().addAll(getLegalBasesFromNode(node));
@@ -385,6 +406,30 @@ public class DFD2GDPR {
 	
 	private Data getDataFromPin(Pin pin) {
 		return laf.getData().stream().filter(it -> it.getEntityName().equals(pin.getEntityName())).findAny().orElse(null);
+	}
+	
+	private void transformFlowsInOrder() {
+		if (collectingNodes == null) dfd.getFlows().forEach(flow -> transformFlow(flow));
+		else {
+			var startingNodes = collectingNodes;
+			List<Node> completedNodes = new ArrayList<>();
+			while (startingNodes != null && startingNodes.size() > 0) {
+				completedNodes.addAll(startingNodes);
+				List<Flow> flows = new ArrayList<>();
+				List<Node> followingNodes = new ArrayList<>();
+				var test = startingNodes;
+				
+				dfd.getFlows().stream().filter(flow -> test.stream().filter(node -> mapNodeToAnalyzedIncomingFlows.get(node) == 0).anyMatch(node -> flow.getSourceNode().equals(node))).forEach(flow -> {
+					flows.add(flow);
+					Node destinationNode = flow.getDestinationNode();
+					mapNodeToAnalyzedIncomingFlows.put(destinationNode, mapNodeToAnalyzedIncomingFlows.get(destinationNode) - 1);
+					followingNodes.add(destinationNode);
+				});
+				
+				flows.forEach(flow -> transformFlow(flow));
+				startingNodes = followingNodes.stream().filter(node -> !completedNodes.contains(node)).toList();
+			}
+		}
 	}
 	
 	/**
@@ -405,11 +450,30 @@ public class DFD2GDPR {
 			source = mapNodeToProcessing.get(flow.getSourceNode());
 			dest = mapNodeToProcessing.get(flow.getDestinationNode());
 			
+			var presentData = dest.getInputData().size() == 0 ? null : getDataFromPin(flow.getSourcePin());
+			if (presentData == null) {
+				if (collectingNodes.contains(flow.getSourceNode()) && source.getOutputData().size() == 0) {
+					//TODO datareference
+					var dataCollecting = gdprFactory.createData();
+					var purposeCollecting = gdprFactory.createPurpose();
+					laf.getData().add(dataCollecting);
+					laf.getPurposes().add(purposeCollecting);
+					
+					source.getOutputData().add(dataCollecting);
+					source.getPurpose().add(purposeCollecting);
+				} else if (source.getOutputData().size() == 0 && source.getInputData().size() > 0) {
+					source.getOutputData().addAll(source.getInputData());
+				}
+				dest.getInputData().addAll(source.getOutputData());
+				dest.getPurpose().addAll(source.getPurpose());
+				presentData = source.getOutputData().stream().findAny().orElseThrow();
+			}
+			
 			var ft = TracemodelFactory.eINSTANCE.createFlowTrace();
 			ft.setDataFlow(flow);
 			ft.setDest(dest);
 			ft.setSource(source);
-			ft.setData(getDataFromPin(flow.getSourcePin()));
+			ft.setData(presentData);
 			outTrace.getFlowTraces().add(ft);
 		}
 		
@@ -550,7 +614,7 @@ public class DFD2GDPR {
 		if(processing.getResponsible() != null) clone.setResponsible((Role)cloneRole(processing.getResponsible()));
 		
 		processing.getInputData().forEach(data -> clone.getInputData().add(cloneData(data)));
-		processing.getOutputData().forEach(data -> clone.getInputData().add(cloneData(data)));
+		processing.getOutputData().forEach(data -> clone.getOutputData().add(cloneData(data)));
 		processing.getOnTheBasisOf().forEach(legalBasis -> clone.getOnTheBasisOf().add(cloneLegalBasis(legalBasis)));
 		processing.getPurpose().forEach(purpose -> clone.getPurpose().add(clonePurpose(purpose)));
 		
@@ -599,5 +663,9 @@ public class DFD2GDPR {
 
 	public TraceModel getDFD2GDPRTrace() {
 		return outTrace;
+	}
+	
+	private List<Node> identifyCollectingNodes() {
+		return dfd.getNodes().stream().filter(node -> dfd.getFlows().stream().noneMatch(flow -> flow.getDestinationNode().equals(node))).toList();
 	}
 }

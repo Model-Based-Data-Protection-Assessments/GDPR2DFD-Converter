@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="ASCII"?>
 <GDPR:LegalAssessmentFacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" id="0">
-  <processing xsi:type="GDPR:Usage" id="2" entityName="mail_server"/>
-  <processing xsi:type="GDPR:Usage" id="3" entityName="external_website" followingProcessing="13"/>
-  <processing xsi:type="GDPR:Usage" id="4" entityName="user" followingProcessing="18"/>
-  <processing xsi:type="GDPR:Usage" id="5" entityName="config" followingProcessing="6 7 8 10 11 12 13 18"/>
-  <processing xsi:type="GDPR:Usage" id="6" entityName="registry" followingProcessing="18"/>
-  <processing xsi:type="GDPR:Usage" id="7" entityName="monitoring"/>
-  <processing xsi:type="GDPR:Usage" id="8" entityName="turbine_stream_service" followingProcessing="6 7"/>
-  <processing xsi:type="GDPR:Usage" id="9" entityName="rabbitmq" followingProcessing="8"/>
-  <processing xsi:type="GDPR:Usage" id="10" entityName="auth_service" followingProcessing="6 11 12 13"/>
-  <processing xsi:type="GDPR:Usage" id="11" entityName="account_service" followingProcessing="6 10 9 13"/>
-  <processing xsi:type="GDPR:Usage" id="12" entityName="notification_service" followingProcessing="6 9 2 11"/>
-  <processing xsi:type="GDPR:Usage" id="13" entityName="statistics_service" followingProcessing="6 9"/>
-  <processing xsi:type="GDPR:Usage" id="14" entityName="auth_mongodb" followingProcessing="10"/>
-  <processing xsi:type="GDPR:Usage" id="15" entityName="account_mongodb" followingProcessing="11"/>
-  <processing xsi:type="GDPR:Usage" id="16" entityName="statistics_mongodb" followingProcessing="13"/>
-  <processing xsi:type="GDPR:Usage" id="17" entityName="notification_mongodb" followingProcessing="12"/>
-  <processing xsi:type="GDPR:Usage" id="18" entityName="gateway" followingProcessing="4 11 13 12 10"/>
+  <processing xsi:type="GDPR:Usage" id="2" entityName="mail_server" responsible="_OefehO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Collecting" id="3" entityName="external_website" followingProcessing="13" responsible="_OefehO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="4" entityName="user" responsible="_OefehO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Collecting" id="5" entityName="config" outputData="_Oefef-1IEe-35cJzkApa3w" purpose="_OefegO1IEe-35cJzkApa3w" followingProcessing="6 7 8 10 11 12 13 18" responsible="_OefehO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="6" entityName="registry" inputData="_Oefef-1IEe-35cJzkApa3w" purpose="_OefegO1IEe-35cJzkApa3w" responsible="_OefehO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="7" entityName="monitoring" inputData="_Oefef-1IEe-35cJzkApa3w" purpose="_OefegO1IEe-35cJzkApa3w" responsible="_OefehO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="8" entityName="turbine_stream_service" inputData="_Oefef-1IEe-35cJzkApa3w" purpose="_OefegO1IEe-35cJzkApa3w" responsible="_OefehO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="9" entityName="rabbitmq" responsible="_OefehO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="10" entityName="auth_service" inputData="_Oefef-1IEe-35cJzkApa3w" purpose="_OefegO1IEe-35cJzkApa3w" responsible="_OefehO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="11" entityName="account_service" inputData="_Oefef-1IEe-35cJzkApa3w" purpose="_OefegO1IEe-35cJzkApa3w" responsible="_OefehO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="12" entityName="notification_service" inputData="_Oefef-1IEe-35cJzkApa3w" purpose="_OefegO1IEe-35cJzkApa3w" responsible="_OefehO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="13" entityName="statistics_service" inputData="_Oefef-1IEe-35cJzkApa3w" purpose="_OefegO1IEe-35cJzkApa3w" responsible="_OefehO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Collecting" id="14" entityName="auth_mongodb" followingProcessing="10" responsible="_OefehO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Collecting" id="15" entityName="account_mongodb" followingProcessing="11" responsible="_OefehO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Collecting" id="16" entityName="statistics_mongodb" followingProcessing="13" responsible="_OefehO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Collecting" id="17" entityName="notification_mongodb" followingProcessing="12" responsible="_OefehO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="18" entityName="gateway" inputData="_Oefef-1IEe-35cJzkApa3w" purpose="_OefegO1IEe-35cJzkApa3w" responsible="_OefehO1IEe-35cJzkApa3w"/>
+  <purposes id="_OefegO1IEe-35cJzkApa3w"/>
+  <data id="_Oefef-1IEe-35cJzkApa3w"/>
+  <involvedParties xsi:type="GDPR:Controller" id="_OefehO1IEe-35cJzkApa3w"/>
 </GDPR:LegalAssessmentFacts>

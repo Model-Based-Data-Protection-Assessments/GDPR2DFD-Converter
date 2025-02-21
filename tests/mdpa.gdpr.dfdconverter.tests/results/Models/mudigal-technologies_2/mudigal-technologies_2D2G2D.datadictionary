@@ -1,32 +1,202 @@
 <?xml version="1.0" encoding="ASCII"?>
-<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_ak-mJuCNEe-LfM-jfeWyyA">
-  <labelTypes id="_ak-mK-CNEe-LfM-jfeWyyA" entityName="ProcessingType">
-    <label id="_ak-mNuCNEe-LfM-jfeWyyA" entityName="Collecting"/>
-    <label id="_ak-mOOCNEe-LfM-jfeWyyA" entityName="Storing"/>
-    <label id="_ak-mOeCNEe-LfM-jfeWyyA" entityName="Usage"/>
-    <label id="_ak-mOuCNEe-LfM-jfeWyyA" entityName="Transferring"/>
+<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="1">
+  <labelTypes id="17" entityName="Stereotype">
+    <label id="20" entityName="internal"/>
+    <label id="21" entityName="local_logging"/>
+    <label id="26" entityName="logging_server"/>
+    <label id="27" entityName="infrastructural"/>
+    <label id="37" entityName="web_application"/>
+    <label id="43" entityName="search_engine"/>
+    <label id="52" entityName="service_discovery"/>
+    <label id="58" entityName="message_broker"/>
+    <label id="59" entityName="plaintext_credentials"/>
+    <label id="69" entityName="monitoring_dashboard"/>
+    <label id="75" entityName="gateway"/>
+    <label id="76" entityName="load_balancer"/>
+    <label id="93" entityName="user_stereotype"/>
+    <label id="94" entityName="entrypoint"/>
+    <label id="95" entityName="exitpoint"/>
+    <label id="101" entityName="restful_http"/>
+    <label id="102" entityName="authenticated_request"/>
+    <label id="123" entityName="message_producer_rabbitmq"/>
+    <label id="124" entityName="plaintext_credentials_link"/>
+    <label id="131" entityName="message_consumer_rabbitmq"/>
+    <label id="146" entityName="jdbc"/>
   </labelTypes>
-  <labelTypes id="_ak-mLOCNEe-LfM-jfeWyyA" entityName="Data"/>
-  <labelTypes id="_ak-mLeCNEe-LfM-jfeWyyA" entityName="PersonalData"/>
-  <labelTypes id="_ak-mLuCNEe-LfM-jfeWyyA" entityName="Obligation"/>
-  <labelTypes id="_ak-mL-CNEe-LfM-jfeWyyA" entityName="Consent"/>
-  <labelTypes id="_ak-mMOCNEe-LfM-jfeWyyA" entityName="Contract"/>
-  <labelTypes id="_ak-mMeCNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
-  <labelTypes id="_ak-mMuCNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
-  <labelTypes id="_ak-mM-CNEe-LfM-jfeWyyA" entityName="Controller"/>
-  <labelTypes id="_ak-mNOCNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
-  <labelTypes id="_ak-mNeCNEe-LfM-jfeWyyA" entityName="Purposes"/>
-  <behavior id="91">
-    <inPin id="161"/>
-    <outPin id="159"/>
-    <assignment xsi:type="datadictionary:Assignment" id="253" outputPin="159" inputPins="161">
-      <term xsi:type="datadictionary:TRUE" id="254"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#93"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#94"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#95"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#101"/>
+  <labelTypes id="22" entityName="Port">
+    <label id="23" entityName="8082"/>
+    <label id="28" entityName="5000"/>
+    <label id="38" entityName="4200"/>
+    <label id="46" entityName="9200"/>
+    <label id="49" entityName="8084"/>
+    <label id="53" entityName="8500"/>
+    <label id="64" entityName="15672"/>
+    <label id="72" entityName="4040"/>
+    <label id="79" entityName="8080"/>
+    <label id="87" entityName="5601"/>
+  </labelTypes>
+  <labelTypes id="29" entityName="LoggingServer">
+    <label id="30" entityName="Logstash"/>
+  </labelTypes>
+  <labelTypes id="33" entityName="Process">
+    <label id="34" entityName="service_two_db"/>
+    <label id="90" entityName="service_one_db"/>
+  </labelTypes>
+  <labelTypes id="39" entityName="WebApplication">
+    <label id="40" entityName="Nginx"/>
+  </labelTypes>
+  <labelTypes id="44" entityName="SearchEngine">
+    <label id="45" entityName="Elasticsearch"/>
+  </labelTypes>
+  <labelTypes id="54" entityName="ServiceDiscovery">
+    <label id="55" entityName="Consul"/>
+  </labelTypes>
+  <labelTypes id="60" entityName="MessageBroker">
+    <label id="61" entityName="RabbitMQ"/>
+  </labelTypes>
+  <labelTypes id="62" entityName="Username">
+    <label id="63" entityName="mudigal"/>
+    <label id="149" entityName="servicetwo"/>
+  </labelTypes>
+  <labelTypes id="65" entityName="Password">
+    <label id="66" entityName="mudigal"/>
+    <label id="150" entityName="servicetwo"/>
+  </labelTypes>
+  <labelTypes id="70" entityName="MonitoringDashboard">
+    <label id="71" entityName="WeaveScope"/>
+    <label id="86" entityName="Kibana"/>
+  </labelTypes>
+  <labelTypes id="77" entityName="Gateway">
+    <label id="78" entityName="Zuul"/>
+  </labelTypes>
+  <labelTypes id="80" entityName="LoadBalancer">
+    <label id="81" entityName="Ribbon"/>
+  </labelTypes>
+  <labelTypes id="125" entityName="RoutingKey">
+    <label id="126" entityName="commudigalmicroservicessampleservice"/>
+  </labelTypes>
+  <labelTypes id="127" entityName="ProducerExchange">
+    <label id="128" entityName="commudigalmicroservicessampleservicesexchange"/>
+  </labelTypes>
+  <labelTypes id="132" entityName="Queue">
+    <label id="133" entityName="commudigalmicroservicessampleserviceone"/>
+    <label id="143" entityName="commudigalmicroservicessampleservicetwo"/>
+  </labelTypes>
+  <labelTypes id="_OaLmwu1IEe-35cJzkApa3w" entityName="ProcessingType">
+    <label id="_OaMNQu1IEe-35cJzkApa3w" entityName="Collecting"/>
+    <label id="_OaMNRe1IEe-35cJzkApa3w" entityName="Storing"/>
+    <label id="_OaMNRu1IEe-35cJzkApa3w" entityName="Usage"/>
+    <label id="_OaMNSe1IEe-35cJzkApa3w" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_OaLmxe1IEe-35cJzkApa3w" entityName="Data">
+    <label id="_OaKYE-1IEe-35cJzkApa3w"/>
+    <label id="_OaKYFe1IEe-35cJzkApa3w"/>
+    <label id="_OaKYF-1IEe-35cJzkApa3w"/>
+  </labelTypes>
+  <labelTypes id="_OaLmyO1IEe-35cJzkApa3w" entityName="PersonalData"/>
+  <labelTypes id="_OaLmye1IEe-35cJzkApa3w" entityName="Obligation"/>
+  <labelTypes id="_OaLmzO1IEe-35cJzkApa3w" entityName="Consent"/>
+  <labelTypes id="_OaLmz-1IEe-35cJzkApa3w" entityName="Contract"/>
+  <labelTypes id="_OaLm0u1IEe-35cJzkApa3w" entityName="PublicAuthority"/>
+  <labelTypes id="_OaLm1O1IEe-35cJzkApa3w" entityName="NaturalPerson"/>
+  <labelTypes id="_OaLm1-1IEe-35cJzkApa3w" entityName="Controller">
+    <label id="_OaKYQO1IEe-35cJzkApa3w"/>
+  </labelTypes>
+  <labelTypes id="_OaLm2u1IEe-35cJzkApa3w" entityName="ThirdParty"/>
+  <labelTypes id="_OaLm3e1IEe-35cJzkApa3w" entityName="Purposes">
+    <label id="_OaKYFO1IEe-35cJzkApa3w"/>
+    <label id="_OaKYFu1IEe-35cJzkApa3w"/>
+    <label id="_OaKYGO1IEe-35cJzkApa3w"/>
+  </labelTypes>
+  <behavior id="18">
+    <inPin id="114"/>
+    <outPin id="118"/>
+    <outPin id="121"/>
+    <outPin id="169"/>
+    <assignment xsi:type="datadictionary:Assignment" id="193" outputPin="118" outputLabels="20 21 101 102" inputPins="114">
+      <term xsi:type="datadictionary:TRUE" id="194"/>
     </assignment>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="287" outputPin="159" inputPins="161"/>
+    <assignment xsi:type="datadictionary:Assignment" id="195" outputPin="121" outputLabels="20 21 123 124 101 102 126 128" inputPins="114">
+      <term xsi:type="datadictionary:TRUE" id="196"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="197" outputPin="169" outputLabels="20 21 101 102" inputPins="114">
+      <term xsi:type="datadictionary:TRUE" id="198"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="261" outputPin="118" inputPins="114"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="262" outputPin="121" inputPins="114"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="263" outputPin="169" inputPins="114"/>
+  </behavior>
+  <behavior id="24">
+    <inPin id="117"/>
+    <outPin id="109"/>
+    <outPin id="191"/>
+    <assignment xsi:type="datadictionary:Assignment" id="199" outputPin="109" outputLabels="26 27 101 102" inputPins="117">
+      <term xsi:type="datadictionary:TRUE" id="200"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="201" outputPin="191" outputLabels="26 27 101 102" inputPins="117">
+      <term xsi:type="datadictionary:TRUE" id="202"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="264" outputPin="109" inputPins="117"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="265" outputPin="191" inputPins="117"/>
+  </behavior>
+  <behavior id="31">
+    <outPin id="147"/>
+    <outPin id="175"/>
+    <assignment xsi:type="datadictionary:Assignment" id="203" outputPin="147" outputLabels="146 124 102 149 150">
+      <term xsi:type="datadictionary:TRUE" id="204"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="205" outputPin="175" outputLabels="101 102">
+      <term xsi:type="datadictionary:TRUE" id="206"/>
+    </assignment>
+  </behavior>
+  <behavior id="35">
+    <inPin id="158"/>
+    <outPin id="162"/>
+    <outPin id="164"/>
+    <outPin id="177"/>
+    <assignment xsi:type="datadictionary:Assignment" id="207" outputPin="162" outputLabels="37 27 101" inputPins="158">
+      <term xsi:type="datadictionary:TRUE" id="208"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="209" outputPin="164" outputLabels="37 27 101 102" inputPins="158">
+      <term xsi:type="datadictionary:TRUE" id="210"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="211" outputPin="177" outputLabels="37 27 101 102" inputPins="158">
+      <term xsi:type="datadictionary:TRUE" id="212"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="266" outputPin="162" inputPins="158"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="267" outputPin="164" inputPins="158"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="268" outputPin="177" inputPins="158"/>
+  </behavior>
+  <behavior id="41">
+    <inPin id="108"/>
+    <outPin id="112"/>
+    <outPin id="189"/>
+    <assignment xsi:type="datadictionary:Assignment" id="213" outputPin="112" outputLabels="43 27 101 102" inputPins="108">
+      <term xsi:type="datadictionary:TRUE" id="214"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="215" outputPin="189" outputLabels="43 27 101 102" inputPins="108">
+      <term xsi:type="datadictionary:TRUE" id="216"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="269" outputPin="112" inputPins="108"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="270" outputPin="189" inputPins="108"/>
+  </behavior>
+  <behavior id="47">
+    <inPin id="134"/>
+    <outPin id="137"/>
+    <outPin id="139"/>
+    <outPin id="173"/>
+    <assignment xsi:type="datadictionary:Assignment" id="217" outputPin="137" outputLabels="20 21 101 102" inputPins="134">
+      <term xsi:type="datadictionary:TRUE" id="218"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="219" outputPin="139" outputLabels="20 21 123 101 124 102 126 128" inputPins="134">
+      <term xsi:type="datadictionary:TRUE" id="220"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="221" outputPin="173" outputLabels="20 21 101 102" inputPins="134">
+      <term xsi:type="datadictionary:TRUE" id="222"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="271" outputPin="137" inputPins="134"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="272" outputPin="139" inputPins="134"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="273" outputPin="173" inputPins="134"/>
   </behavior>
   <behavior id="50">
     <inPin id="98"/>
@@ -34,339 +204,113 @@
     <outPin id="135"/>
     <outPin id="156"/>
     <outPin id="181"/>
-    <assignment xsi:type="datadictionary:Assignment" id="223" outputPin="115" inputPins="98">
+    <assignment xsi:type="datadictionary:Assignment" id="223" outputPin="115" outputLabels="52 27 101 102" inputPins="98">
       <term xsi:type="datadictionary:TRUE" id="224"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#52"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#27"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#101"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#102"/>
     </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="225" outputPin="135" inputPins="98">
+    <assignment xsi:type="datadictionary:Assignment" id="225" outputPin="135" outputLabels="52 27 101 102" inputPins="98">
       <term xsi:type="datadictionary:TRUE" id="226"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#52"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#27"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#101"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#102"/>
     </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="227" outputPin="156" inputPins="98">
+    <assignment xsi:type="datadictionary:Assignment" id="227" outputPin="156" outputLabels="52 27 101 102" inputPins="98">
       <term xsi:type="datadictionary:TRUE" id="228"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#52"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#27"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#101"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#102"/>
     </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="229" outputPin="181" inputPins="98">
+    <assignment xsi:type="datadictionary:Assignment" id="229" outputPin="181" outputLabels="52 27 101 102" inputPins="98">
       <term xsi:type="datadictionary:TRUE" id="230"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#52"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#27"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#101"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#102"/>
     </assignment>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="274" outputPin="115" inputPins="98"/>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="275" outputPin="135" inputPins="98"/>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="276" outputPin="156" inputPins="98"/>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="277" outputPin="181" inputPins="98"/>
   </behavior>
-  <behavior id="82">
-    <inPin id="105"/>
-    <outPin id="99"/>
-    <outPin id="183"/>
-    <assignment xsi:type="datadictionary:Assignment" id="243" outputPin="99" inputPins="105">
-      <term xsi:type="datadictionary:TRUE" id="244"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#52"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#27"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#101"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#102"/>
-    </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="245" outputPin="183" inputPins="105">
-      <term xsi:type="datadictionary:TRUE" id="246"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#52"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#27"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#101"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#102"/>
-    </assignment>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="284" outputPin="99" inputPins="105"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="285" outputPin="183" inputPins="105"/>
-  </behavior>
-  <behavior id="96">
-    <outPin id="103"/>
-    <outPin id="106"/>
-    <outPin id="185"/>
-    <assignment xsi:type="datadictionary:Assignment" id="255" outputPin="103">
-      <term xsi:type="datadictionary:TRUE" id="256"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#52"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#27"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#101"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#102"/>
-    </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="257" outputPin="106">
-      <term xsi:type="datadictionary:TRUE" id="258"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#52"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#27"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#101"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#102"/>
-    </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="259" outputPin="185">
-      <term xsi:type="datadictionary:TRUE" id="260"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#52"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#27"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#101"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#102"/>
-    </assignment>
-  </behavior>
-  <behavior id="41">
-    <inPin id="108"/>
-    <outPin id="112"/>
-    <outPin id="189"/>
-    <assignment xsi:type="datadictionary:Assignment" id="213" outputPin="112" inputPins="108">
-      <term xsi:type="datadictionary:TRUE" id="214"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#43"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#27"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#101"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#102"/>
-    </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="215" outputPin="189" inputPins="108">
-      <term xsi:type="datadictionary:TRUE" id="216"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#43"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#27"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#101"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#102"/>
-    </assignment>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="269" outputPin="112" inputPins="108"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="270" outputPin="189" inputPins="108"/>
-  </behavior>
-  <behavior id="24">
-    <inPin id="117"/>
-    <outPin id="109"/>
-    <outPin id="191"/>
-    <assignment xsi:type="datadictionary:Assignment" id="199" outputPin="109" inputPins="117">
-      <term xsi:type="datadictionary:TRUE" id="200"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#26"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#27"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#101"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#102"/>
-    </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="201" outputPin="191" inputPins="117">
-      <term xsi:type="datadictionary:TRUE" id="202"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#26"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#27"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#101"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#102"/>
-    </assignment>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="264" outputPin="109" inputPins="117"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="265" outputPin="191" inputPins="117"/>
-  </behavior>
-  <behavior id="84">
-    <inPin id="111"/>
-    <outPin id="187"/>
-    <assignment xsi:type="datadictionary:Assignment" id="247" outputPin="187" inputPins="111">
-      <term xsi:type="datadictionary:TRUE" id="248"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#69"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#27"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#101"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#102"/>
-    </assignment>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="286" outputPin="187" inputPins="111"/>
-  </behavior>
   <behavior id="56">
     <inPin id="120"/>
     <outPin id="129"/>
     <outPin id="141"/>
     <outPin id="179"/>
-    <assignment xsi:type="datadictionary:Assignment" id="231" outputPin="129" inputPins="120">
+    <assignment xsi:type="datadictionary:Assignment" id="231" outputPin="129" outputLabels="58 59 27 131 101 102 133" inputPins="120">
       <term xsi:type="datadictionary:TRUE" id="232"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#58"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#59"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#27"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#131"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#101"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#102"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#133"/>
     </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="233" outputPin="141" inputPins="120">
+    <assignment xsi:type="datadictionary:Assignment" id="233" outputPin="141" outputLabels="58 59 27 131 101 102 143" inputPins="120">
       <term xsi:type="datadictionary:TRUE" id="234"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#58"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#59"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#27"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#131"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#101"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#102"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#143"/>
     </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="235" outputPin="179" inputPins="120">
+    <assignment xsi:type="datadictionary:Assignment" id="235" outputPin="179" outputLabels="58 59 27 101 102" inputPins="120">
       <term xsi:type="datadictionary:TRUE" id="236"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#58"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#59"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#27"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#101"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#102"/>
     </assignment>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="278" outputPin="129" inputPins="120"/>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="279" outputPin="141" inputPins="120"/>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="280" outputPin="179" inputPins="120"/>
   </behavior>
-  <behavior id="18">
-    <inPin id="114"/>
-    <outPin id="118"/>
-    <outPin id="121"/>
-    <outPin id="169"/>
-    <assignment xsi:type="datadictionary:Assignment" id="193" outputPin="118" inputPins="114">
-      <term xsi:type="datadictionary:TRUE" id="194"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#20"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#21"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#101"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#102"/>
-    </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="195" outputPin="121" inputPins="114">
-      <term xsi:type="datadictionary:TRUE" id="196"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#20"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#21"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#123"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#124"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#101"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#102"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#126"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#128"/>
-    </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="197" outputPin="169" inputPins="114">
-      <term xsi:type="datadictionary:TRUE" id="198"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#20"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#21"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#101"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#102"/>
-    </assignment>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="261" outputPin="118" inputPins="114"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="262" outputPin="121" inputPins="114"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="263" outputPin="169" inputPins="114"/>
-  </behavior>
-  <behavior id="47">
-    <inPin id="134"/>
-    <outPin id="137"/>
-    <outPin id="139"/>
-    <outPin id="173"/>
-    <assignment xsi:type="datadictionary:Assignment" id="217" outputPin="137" inputPins="134">
-      <term xsi:type="datadictionary:TRUE" id="218"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#20"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#21"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#101"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#102"/>
-    </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="219" outputPin="139" inputPins="134">
-      <term xsi:type="datadictionary:TRUE" id="220"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#20"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#21"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#123"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#101"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#124"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#102"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#126"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#128"/>
-    </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="221" outputPin="173" inputPins="134">
-      <term xsi:type="datadictionary:TRUE" id="222"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#20"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#21"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#101"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#102"/>
-    </assignment>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="271" outputPin="137" inputPins="134"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="272" outputPin="139" inputPins="134"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="273" outputPin="173" inputPins="134"/>
-  </behavior>
-  <behavior id="88">
-    <outPin id="144"/>
-    <outPin id="171"/>
-    <assignment xsi:type="datadictionary:Assignment" id="249" outputPin="144">
-      <term xsi:type="datadictionary:TRUE" id="250"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#146"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#102"/>
-    </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="251" outputPin="171">
-      <term xsi:type="datadictionary:TRUE" id="252"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#101"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#102"/>
-    </assignment>
-  </behavior>
-  <behavior id="31">
-    <outPin id="147"/>
-    <outPin id="175"/>
-    <assignment xsi:type="datadictionary:Assignment" id="203" outputPin="147">
-      <term xsi:type="datadictionary:TRUE" id="204"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#146"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#124"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#102"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#149"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#150"/>
-    </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="205" outputPin="175">
-      <term xsi:type="datadictionary:TRUE" id="206"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#101"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#102"/>
-    </assignment>
+  <behavior id="67">
+    <inPin id="166"/>
   </behavior>
   <behavior id="73">
     <inPin id="155"/>
     <outPin id="151"/>
     <outPin id="153"/>
     <outPin id="167"/>
-    <assignment xsi:type="datadictionary:Assignment" id="237" outputPin="151" inputPins="155">
+    <assignment xsi:type="datadictionary:Assignment" id="237" outputPin="151" outputLabels="75 27 76 101 102" inputPins="155">
       <term xsi:type="datadictionary:TRUE" id="238"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#75"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#27"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#76"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#101"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#102"/>
     </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="239" outputPin="153" inputPins="155">
+    <assignment xsi:type="datadictionary:Assignment" id="239" outputPin="153" outputLabels="75 27 76 101 102" inputPins="155">
       <term xsi:type="datadictionary:TRUE" id="240"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#75"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#27"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#76"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#101"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#102"/>
     </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="241" outputPin="167" inputPins="155">
+    <assignment xsi:type="datadictionary:Assignment" id="241" outputPin="167" outputLabels="75 27 76 101 102" inputPins="155">
       <term xsi:type="datadictionary:TRUE" id="242"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#75"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#27"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#76"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#101"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#102"/>
     </assignment>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="281" outputPin="151" inputPins="155"/>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="282" outputPin="153" inputPins="155"/>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="283" outputPin="167" inputPins="155"/>
   </behavior>
-  <behavior id="35">
-    <inPin id="158"/>
-    <outPin id="162"/>
-    <outPin id="164"/>
-    <outPin id="177"/>
-    <assignment xsi:type="datadictionary:Assignment" id="207" outputPin="162" inputPins="158">
-      <term xsi:type="datadictionary:TRUE" id="208"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#37"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#27"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#101"/>
+  <behavior id="82">
+    <inPin id="105"/>
+    <outPin id="99"/>
+    <outPin id="183"/>
+    <assignment xsi:type="datadictionary:Assignment" id="243" outputPin="99" outputLabels="52 27 101 102" inputPins="105">
+      <term xsi:type="datadictionary:TRUE" id="244"/>
     </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="209" outputPin="164" inputPins="158">
-      <term xsi:type="datadictionary:TRUE" id="210"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#37"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#27"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#101"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#102"/>
+    <assignment xsi:type="datadictionary:Assignment" id="245" outputPin="183" outputLabels="52 27 101 102" inputPins="105">
+      <term xsi:type="datadictionary:TRUE" id="246"/>
     </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="211" outputPin="177" inputPins="158">
-      <term xsi:type="datadictionary:TRUE" id="212"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#37"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#27"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#101"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mudigal-technologies/mudigal-technologies_2.datadictionary#102"/>
-    </assignment>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="266" outputPin="162" inputPins="158"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="267" outputPin="164" inputPins="158"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="268" outputPin="177" inputPins="158"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="284" outputPin="99" inputPins="105"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="285" outputPin="183" inputPins="105"/>
   </behavior>
-  <behavior id="67">
-    <inPin id="166"/>
+  <behavior id="84">
+    <inPin id="111"/>
+    <outPin id="187"/>
+    <assignment xsi:type="datadictionary:Assignment" id="247" outputPin="187" outputLabels="69 27 101 102" inputPins="111">
+      <term xsi:type="datadictionary:TRUE" id="248"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="286" outputPin="187" inputPins="111"/>
+  </behavior>
+  <behavior id="88">
+    <outPin id="144"/>
+    <outPin id="171"/>
+    <assignment xsi:type="datadictionary:Assignment" id="249" outputPin="144" outputLabels="146 102">
+      <term xsi:type="datadictionary:TRUE" id="250"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="251" outputPin="171" outputLabels="101 102">
+      <term xsi:type="datadictionary:TRUE" id="252"/>
+    </assignment>
+  </behavior>
+  <behavior id="91">
+    <inPin id="161"/>
+    <outPin id="159"/>
+    <assignment xsi:type="datadictionary:Assignment" id="253" outputPin="159" outputLabels="93 94 95 101" inputPins="161">
+      <term xsi:type="datadictionary:TRUE" id="254"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="287" outputPin="159" inputPins="161"/>
+  </behavior>
+  <behavior id="96">
+    <outPin id="103"/>
+    <outPin id="106"/>
+    <outPin id="185"/>
+    <assignment xsi:type="datadictionary:Assignment" id="255" outputPin="103" outputLabels="52 27 101 102">
+      <term xsi:type="datadictionary:TRUE" id="256"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="257" outputPin="106" outputLabels="52 27 101 102">
+      <term xsi:type="datadictionary:TRUE" id="258"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="259" outputPin="185" outputLabels="52 27 101 102">
+      <term xsi:type="datadictionary:TRUE" id="260"/>
+    </assignment>
   </behavior>
 </datadictionary:DataDictionary>

@@ -1,131 +1,182 @@
 <?xml version="1.0" encoding="ASCII"?>
 <dataflowdiagram:DataFlowDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" id="0">
+  <flows id="107" entityName="github_repository" sourceNode="2" destinationNode="7">
+    <destinationPin href="mdeket_5D2G2D.datadictionary#105"/>
+    <sourcePin href="mdeket_5D2G2D.datadictionary#106"/>
+  </flows>
+  <flows id="118" entityName="database_movie_service" sourceNode="3" destinationNode="9">
+    <destinationPin href="mdeket_5D2G2D.datadictionary#114"/>
+    <sourcePin href="mdeket_5D2G2D.datadictionary#117"/>
+  </flows>
+  <flows id="126" entityName="database_user_service" sourceNode="4" destinationNode="10">
+    <destinationPin href="mdeket_5D2G2D.datadictionary#122"/>
+    <sourcePin href="mdeket_5D2G2D.datadictionary#125"/>
+  </flows>
+  <flows id="134" entityName="database_recommendation_service" sourceNode="5" destinationNode="11">
+    <destinationPin href="mdeket_5D2G2D.datadictionary#130"/>
+    <sourcePin href="mdeket_5D2G2D.datadictionary#133"/>
+  </flows>
+  <flows id="111" entityName="config_service" sourceNode="7" destinationNode="8">
+    <destinationPin href="mdeket_5D2G2D.datadictionary#109"/>
+    <sourcePin href="mdeket_5D2G2D.datadictionary#110"/>
+  </flows>
+  <flows id="144" entityName="config_service" sourceNode="7" destinationNode="12">
+    <destinationPin href="mdeket_5D2G2D.datadictionary#135"/>
+    <sourcePin href="mdeket_5D2G2D.datadictionary#143"/>
+  </flows>
+  <flows id="156" entityName="config_service" sourceNode="7" destinationNode="13">
+    <destinationPin href="mdeket_5D2G2D.datadictionary#154"/>
+    <sourcePin href="mdeket_5D2G2D.datadictionary#155"/>
+  </flows>
   <nodes xsi:type="dataflowdiagram:External" id="2" entityName="github_repository">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mdeket_5/mdeket_5D2G2D.datadictionary#89"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#91"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#60"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#93"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mdeket_5/mdeket_5D2G2D.datadictionary#_aiVh2-CNEe-LfM-jfeWyyA"/>
+    <behavior href="mdeket_5D2G2D.datadictionary#89"/>
+    <properties href="mdeket_5D2G2D.datadictionary#91"/>
+    <properties href="mdeket_5D2G2D.datadictionary#60"/>
+    <properties href="mdeket_5D2G2D.datadictionary#93"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY07VO1IEe-35cJzkApa3w"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY1iUu1IEe-35cJzkApa3w"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY2Juu1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:External" id="3" entityName="database_movie_service">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mdeket_5/mdeket_5D2G2D.datadictionary#94"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#60"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#59"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#61"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mdeket_5/mdeket_5D2G2D.datadictionary#_aiVh2-CNEe-LfM-jfeWyyA"/>
+    <behavior href="mdeket_5D2G2D.datadictionary#94"/>
+    <properties href="mdeket_5D2G2D.datadictionary#60"/>
+    <properties href="mdeket_5D2G2D.datadictionary#59"/>
+    <properties href="mdeket_5D2G2D.datadictionary#61"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY07Vu1IEe-35cJzkApa3w"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY1iUu1IEe-35cJzkApa3w"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY2Juu1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:External" id="4" entityName="database_user_service">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mdeket_5/mdeket_5D2G2D.datadictionary#79"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#60"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#59"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#61"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#62"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#81"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#82"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#83"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#69"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mdeket_5/mdeket_5D2G2D.datadictionary#_aiVh2-CNEe-LfM-jfeWyyA"/>
+    <behavior href="mdeket_5D2G2D.datadictionary#79"/>
+    <properties href="mdeket_5D2G2D.datadictionary#60"/>
+    <properties href="mdeket_5D2G2D.datadictionary#59"/>
+    <properties href="mdeket_5D2G2D.datadictionary#61"/>
+    <properties href="mdeket_5D2G2D.datadictionary#62"/>
+    <properties href="mdeket_5D2G2D.datadictionary#81"/>
+    <properties href="mdeket_5D2G2D.datadictionary#82"/>
+    <properties href="mdeket_5D2G2D.datadictionary#83"/>
+    <properties href="mdeket_5D2G2D.datadictionary#69"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY07WO1IEe-35cJzkApa3w"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY1iUu1IEe-35cJzkApa3w"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY2Juu1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:External" id="5" entityName="database_recommendation_service">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mdeket_5/mdeket_5D2G2D.datadictionary#57"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#59"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#60"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#61"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#62"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#64"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#65"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#67"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#69"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mdeket_5/mdeket_5D2G2D.datadictionary#_aiVh2-CNEe-LfM-jfeWyyA"/>
+    <behavior href="mdeket_5D2G2D.datadictionary#57"/>
+    <properties href="mdeket_5D2G2D.datadictionary#59"/>
+    <properties href="mdeket_5D2G2D.datadictionary#60"/>
+    <properties href="mdeket_5D2G2D.datadictionary#61"/>
+    <properties href="mdeket_5D2G2D.datadictionary#62"/>
+    <properties href="mdeket_5D2G2D.datadictionary#64"/>
+    <properties href="mdeket_5D2G2D.datadictionary#65"/>
+    <properties href="mdeket_5D2G2D.datadictionary#67"/>
+    <properties href="mdeket_5D2G2D.datadictionary#69"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY07Wu1IEe-35cJzkApa3w"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY1iUu1IEe-35cJzkApa3w"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY2Juu1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:External" id="6" entityName="user">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mdeket_5/mdeket_5D2G2D.datadictionary#102"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#104"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#60"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#59"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mdeket_5/mdeket_5D2G2D.datadictionary#_aiVh2-CNEe-LfM-jfeWyyA"/>
+    <behavior href="mdeket_5D2G2D.datadictionary#102"/>
+    <properties href="mdeket_5D2G2D.datadictionary#104"/>
+    <properties href="mdeket_5D2G2D.datadictionary#60"/>
+    <properties href="mdeket_5D2G2D.datadictionary#59"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY1iUu1IEe-35cJzkApa3w"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY2Jvu1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="7" entityName="config_service">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mdeket_5/mdeket_5D2G2D.datadictionary#96"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#98"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#27"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#18"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#99"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#101"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mdeket_5/mdeket_5D2G2D.datadictionary#_aiVh2-CNEe-LfM-jfeWyyA"/>
+    <behavior href="mdeket_5D2G2D.datadictionary#96"/>
+    <properties href="mdeket_5D2G2D.datadictionary#98"/>
+    <properties href="mdeket_5D2G2D.datadictionary#27"/>
+    <properties href="mdeket_5D2G2D.datadictionary#18"/>
+    <properties href="mdeket_5D2G2D.datadictionary#99"/>
+    <properties href="mdeket_5D2G2D.datadictionary#101"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY07VO1IEe-35cJzkApa3w"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY1iUu1IEe-35cJzkApa3w"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY2Jvu1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="8" entityName="eureka_service">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mdeket_5/mdeket_5D2G2D.datadictionary#24"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#26"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#27"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#18"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#28"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#30"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mdeket_5/mdeket_5D2G2D.datadictionary#_aiVh2-CNEe-LfM-jfeWyyA"/>
+    <behavior href="mdeket_5D2G2D.datadictionary#24"/>
+    <properties href="mdeket_5D2G2D.datadictionary#26"/>
+    <properties href="mdeket_5D2G2D.datadictionary#27"/>
+    <properties href="mdeket_5D2G2D.datadictionary#18"/>
+    <properties href="mdeket_5D2G2D.datadictionary#28"/>
+    <properties href="mdeket_5D2G2D.datadictionary#30"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY07VO1IEe-35cJzkApa3w"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY1iUu1IEe-35cJzkApa3w"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY2Jvu1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="9" entityName="movie_service">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mdeket_5/mdeket_5D2G2D.datadictionary#84"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#17"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#18"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#46"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#86"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#87"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#49"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#88"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mdeket_5/mdeket_5D2G2D.datadictionary#_aiVh2-CNEe-LfM-jfeWyyA"/>
+    <behavior href="mdeket_5D2G2D.datadictionary#84"/>
+    <properties href="mdeket_5D2G2D.datadictionary#17"/>
+    <properties href="mdeket_5D2G2D.datadictionary#18"/>
+    <properties href="mdeket_5D2G2D.datadictionary#46"/>
+    <properties href="mdeket_5D2G2D.datadictionary#86"/>
+    <properties href="mdeket_5D2G2D.datadictionary#87"/>
+    <properties href="mdeket_5D2G2D.datadictionary#49"/>
+    <properties href="mdeket_5D2G2D.datadictionary#88"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY07Vu1IEe-35cJzkApa3w"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY1iUu1IEe-35cJzkApa3w"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY2Jvu1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="10" entityName="user_service">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mdeket_5/mdeket_5D2G2D.datadictionary#15"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#17"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#18"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#20"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#21"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#23"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mdeket_5/mdeket_5D2G2D.datadictionary#_aiVh2-CNEe-LfM-jfeWyyA"/>
+    <behavior href="mdeket_5D2G2D.datadictionary#15"/>
+    <properties href="mdeket_5D2G2D.datadictionary#17"/>
+    <properties href="mdeket_5D2G2D.datadictionary#18"/>
+    <properties href="mdeket_5D2G2D.datadictionary#20"/>
+    <properties href="mdeket_5D2G2D.datadictionary#21"/>
+    <properties href="mdeket_5D2G2D.datadictionary#23"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY07WO1IEe-35cJzkApa3w"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY1iUu1IEe-35cJzkApa3w"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY2Jvu1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="11" entityName="recommendation_service">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mdeket_5/mdeket_5D2G2D.datadictionary#70"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#17"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#18"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#72"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#73"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#74"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#75"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#76"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#45"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#77"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#78"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mdeket_5/mdeket_5D2G2D.datadictionary#_aiVh2-CNEe-LfM-jfeWyyA"/>
+    <behavior href="mdeket_5D2G2D.datadictionary#70"/>
+    <properties href="mdeket_5D2G2D.datadictionary#17"/>
+    <properties href="mdeket_5D2G2D.datadictionary#18"/>
+    <properties href="mdeket_5D2G2D.datadictionary#72"/>
+    <properties href="mdeket_5D2G2D.datadictionary#73"/>
+    <properties href="mdeket_5D2G2D.datadictionary#74"/>
+    <properties href="mdeket_5D2G2D.datadictionary#75"/>
+    <properties href="mdeket_5D2G2D.datadictionary#76"/>
+    <properties href="mdeket_5D2G2D.datadictionary#45"/>
+    <properties href="mdeket_5D2G2D.datadictionary#77"/>
+    <properties href="mdeket_5D2G2D.datadictionary#78"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY07Wu1IEe-35cJzkApa3w"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY1iUu1IEe-35cJzkApa3w"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY2Jvu1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="12" entityName="recommendation_client">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mdeket_5/mdeket_5D2G2D.datadictionary#34"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#36"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#37"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#38"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#27"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#39"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#40"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#18"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#42"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#21"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#43"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#20"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#44"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#45"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#46"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#47"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#48"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#49"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#51"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#53"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#54"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#56"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mdeket_5/mdeket_5D2G2D.datadictionary#_aiVh2-CNEe-LfM-jfeWyyA"/>
+    <behavior href="mdeket_5D2G2D.datadictionary#34"/>
+    <properties href="mdeket_5D2G2D.datadictionary#36"/>
+    <properties href="mdeket_5D2G2D.datadictionary#37"/>
+    <properties href="mdeket_5D2G2D.datadictionary#38"/>
+    <properties href="mdeket_5D2G2D.datadictionary#27"/>
+    <properties href="mdeket_5D2G2D.datadictionary#39"/>
+    <properties href="mdeket_5D2G2D.datadictionary#40"/>
+    <properties href="mdeket_5D2G2D.datadictionary#18"/>
+    <properties href="mdeket_5D2G2D.datadictionary#42"/>
+    <properties href="mdeket_5D2G2D.datadictionary#21"/>
+    <properties href="mdeket_5D2G2D.datadictionary#43"/>
+    <properties href="mdeket_5D2G2D.datadictionary#20"/>
+    <properties href="mdeket_5D2G2D.datadictionary#44"/>
+    <properties href="mdeket_5D2G2D.datadictionary#45"/>
+    <properties href="mdeket_5D2G2D.datadictionary#46"/>
+    <properties href="mdeket_5D2G2D.datadictionary#47"/>
+    <properties href="mdeket_5D2G2D.datadictionary#48"/>
+    <properties href="mdeket_5D2G2D.datadictionary#49"/>
+    <properties href="mdeket_5D2G2D.datadictionary#51"/>
+    <properties href="mdeket_5D2G2D.datadictionary#53"/>
+    <properties href="mdeket_5D2G2D.datadictionary#54"/>
+    <properties href="mdeket_5D2G2D.datadictionary#56"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY07VO1IEe-35cJzkApa3w"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY1iUu1IEe-35cJzkApa3w"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY2Jvu1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="13" entityName="authorization_server">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mdeket_5/mdeket_5D2G2D.datadictionary#31"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#27"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/mdeket/mdeket_5.datadictionary#33"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//mdeket_5/mdeket_5D2G2D.datadictionary#_aiVh2-CNEe-LfM-jfeWyyA"/>
+    <behavior href="mdeket_5D2G2D.datadictionary#31"/>
+    <properties href="mdeket_5D2G2D.datadictionary#27"/>
+    <properties href="mdeket_5D2G2D.datadictionary#33"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY07VO1IEe-35cJzkApa3w"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY1iUu1IEe-35cJzkApa3w"/>
+    <properties href="mdeket_5D2G2D.datadictionary#_OY2Jvu1IEe-35cJzkApa3w"/>
   </nodes>
 </dataflowdiagram:DataFlowDiagram>

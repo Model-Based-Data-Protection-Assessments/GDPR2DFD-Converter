@@ -1,44 +1,66 @@
 <?xml version="1.0" encoding="ASCII"?>
 <dataflowdiagram:DataFlowDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" id="0">
+  <flows id="50" entityName="external_website" sourceNode="2" destinationNode="5">
+    <destinationPin href="koushikkothagal_0D2G2D.datadictionary#48"/>
+    <sourcePin href="koushikkothagal_0D2G2D.datadictionary#49"/>
+  </flows>
+  <flows id="52" entityName="movie_catalog_service" sourceNode="6" destinationNode="3">
+    <destinationPin href="koushikkothagal_0D2G2D.datadictionary#42"/>
+    <sourcePin href="koushikkothagal_0D2G2D.datadictionary#51"/>
+  </flows>
+  <flows id="56" entityName="movie_catalog_service" sourceNode="6" destinationNode="4">
+    <destinationPin href="koushikkothagal_0D2G2D.datadictionary#54"/>
+    <sourcePin href="koushikkothagal_0D2G2D.datadictionary#55"/>
+  </flows>
   <nodes xsi:type="dataflowdiagram:External" id="2" entityName="external_website">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//koushikkothagal_0/koushikkothagal_0D2G2D.datadictionary#24"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#26"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#28"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//koushikkothagal_0/koushikkothagal_0D2G2D.datadictionary#_ahnwBuCNEe-LfM-jfeWyyA"/>
+    <behavior href="koushikkothagal_0D2G2D.datadictionary#24"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#26"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#28"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#_OWlfsO1IEe-35cJzkApa3w"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#_OWlfte1IEe-35cJzkApa3w"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#_OWmt4e1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="3" entityName="discovery_server">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//koushikkothagal_0/koushikkothagal_0D2G2D.datadictionary#29"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#31"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#32"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#33"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#35"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//koushikkothagal_0/koushikkothagal_0D2G2D.datadictionary#_ahnwBuCNEe-LfM-jfeWyyA"/>
+    <behavior href="koushikkothagal_0D2G2D.datadictionary#29"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#31"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#32"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#33"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#35"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#_OWlfsu1IEe-35cJzkApa3w"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#_OWlfte1IEe-35cJzkApa3w"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#_OWmt4-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="4" entityName="ratings_data_service">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//koushikkothagal_0/koushikkothagal_0D2G2D.datadictionary#36"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#10"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#38"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#39"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#40"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#41"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//koushikkothagal_0/koushikkothagal_0D2G2D.datadictionary#_ahnwBuCNEe-LfM-jfeWyyA"/>
+    <behavior href="koushikkothagal_0D2G2D.datadictionary#36"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#10"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#38"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#39"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#40"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#41"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#_OWlfsu1IEe-35cJzkApa3w"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#_OWlfte1IEe-35cJzkApa3w"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#_OWmt4-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="5" entityName="movie_info_service">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//koushikkothagal_0/koushikkothagal_0D2G2D.datadictionary#8"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#10"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#12"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#13"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#15"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//koushikkothagal_0/koushikkothagal_0D2G2D.datadictionary#_ahnwBuCNEe-LfM-jfeWyyA"/>
+    <behavior href="koushikkothagal_0D2G2D.datadictionary#8"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#10"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#12"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#13"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#15"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#_OWlfsO1IEe-35cJzkApa3w"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#_OWlfte1IEe-35cJzkApa3w"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#_OWmt4-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="6" entityName="movie_catalog_service">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//koushikkothagal_0/koushikkothagal_0D2G2D.datadictionary#16"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#10"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#18"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#19"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#20"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#21"/>
-    <properties href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/koushikkothagal/koushikkothagal_0.datadictionary#23"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//koushikkothagal_0/koushikkothagal_0D2G2D.datadictionary#_ahnwBuCNEe-LfM-jfeWyyA"/>
+    <behavior href="koushikkothagal_0D2G2D.datadictionary#16"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#10"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#18"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#19"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#20"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#21"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#23"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#_OWlfsu1IEe-35cJzkApa3w"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#_OWlfte1IEe-35cJzkApa3w"/>
+    <properties href="koushikkothagal_0D2G2D.datadictionary#_OWmt4e1IEe-35cJzkApa3w"/>
   </nodes>
 </dataflowdiagram:DataFlowDiagram>

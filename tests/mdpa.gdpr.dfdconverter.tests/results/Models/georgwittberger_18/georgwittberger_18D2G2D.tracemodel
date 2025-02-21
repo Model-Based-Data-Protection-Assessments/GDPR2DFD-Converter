@@ -1,27 +1,32 @@
 <?xml version="1.0" encoding="ASCII"?>
-<tracemodel:TraceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" xmlns:tracemodel="http://www.example.org/tracemodel">
+<tracemodel:TraceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" xmlns:tracemodel="http://www.example.org/tracemodel">
   <nodeTraces>
-    <dfdNode xsi:type="dataflowdiagram:External" href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_18/georgwittberger_18D2G2D.dataflowdiagram#2"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_18/georgwittberger_18D2G.gdpr#2"/>
+    <dfdNode xsi:type="dataflowdiagram:External" href="georgwittberger_18D2G2D.dataflowdiagram#2"/>
+    <gdprProcessing href="georgwittberger_18D2G.gdpr#2"/>
   </nodeTraces>
   <nodeTraces>
-    <dfdNode xsi:type="dataflowdiagram:Process" href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_18/georgwittberger_18D2G2D.dataflowdiagram#3"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_18/georgwittberger_18D2G.gdpr#3"/>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="georgwittberger_18D2G2D.dataflowdiagram#3"/>
+    <gdprProcessing href="georgwittberger_18D2G.gdpr#3"/>
   </nodeTraces>
   <nodeTraces>
-    <dfdNode xsi:type="dataflowdiagram:Process" href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_18/georgwittberger_18D2G2D.dataflowdiagram#4"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_18/georgwittberger_18D2G.gdpr#4"/>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="georgwittberger_18D2G2D.dataflowdiagram#4"/>
+    <gdprProcessing href="georgwittberger_18D2G.gdpr#4"/>
   </nodeTraces>
   <nodeTraces>
-    <dfdNode xsi:type="dataflowdiagram:Process" href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_18/georgwittberger_18D2G2D.dataflowdiagram#5"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_18/georgwittberger_18D2G.gdpr#5"/>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="georgwittberger_18D2G2D.dataflowdiagram#5"/>
+    <gdprProcessing href="georgwittberger_18D2G.gdpr#5"/>
   </nodeTraces>
   <nodeTraces>
-    <dfdNode xsi:type="dataflowdiagram:Process" href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_18/georgwittberger_18D2G2D.dataflowdiagram#6"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_18/georgwittberger_18D2G.gdpr#6"/>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="georgwittberger_18D2G2D.dataflowdiagram#6"/>
+    <gdprProcessing href="georgwittberger_18D2G.gdpr#6"/>
   </nodeTraces>
   <nodeTraces>
-    <dfdNode xsi:type="dataflowdiagram:Process" href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_18/georgwittberger_18D2G2D.dataflowdiagram#7"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_18/georgwittberger_18D2G.gdpr#7"/>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="georgwittberger_18D2G2D.dataflowdiagram#7"/>
+    <gdprProcessing href="georgwittberger_18D2G.gdpr#7"/>
   </nodeTraces>
+  <labelTraces>
+    <label href="georgwittberger_18D2G2D.datadictionary#_OSu6Xu1IEe-35cJzkApa3w"/>
+    <labelType href="georgwittberger_18D2G2D.datadictionary#_OT3jD-1IEe-35cJzkApa3w"/>
+    <gdprElement xsi:type="GDPR:Controller" href="georgwittberger_18D2G.gdpr#_OSu6Xu1IEe-35cJzkApa3w"/>
+  </labelTraces>
 </tracemodel:TraceModel>

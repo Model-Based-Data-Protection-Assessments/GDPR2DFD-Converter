@@ -1,27 +1,54 @@
 <?xml version="1.0" encoding="ASCII"?>
 <dataflowdiagram:DataFlowDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" id="0">
+  <flows id="_OV2fwe1IEe-35cJzkApa3w" sourceNode="7" destinationNode="3">
+    <destinationPin href="georgwittberger_5D2G2D2G2D.datadictionary#_OV2fwO1IEe-35cJzkApa3w"/>
+    <sourcePin href="georgwittberger_5D2G2D2G2D.datadictionary#_OV14we1IEe-35cJzkApa3w"/>
+  </flows>
+  <flows id="_OV2fw-1IEe-35cJzkApa3w" sourceNode="7" destinationNode="4">
+    <destinationPin href="georgwittberger_5D2G2D2G2D.datadictionary#_OV2fwu1IEe-35cJzkApa3w"/>
+    <sourcePin href="georgwittberger_5D2G2D2G2D.datadictionary#_OV14we1IEe-35cJzkApa3w"/>
+  </flows>
+  <flows id="_OV2fxe1IEe-35cJzkApa3w" sourceNode="7" destinationNode="5">
+    <destinationPin href="georgwittberger_5D2G2D2G2D.datadictionary#_OV2fxO1IEe-35cJzkApa3w"/>
+    <sourcePin href="georgwittberger_5D2G2D2G2D.datadictionary#_OV14we1IEe-35cJzkApa3w"/>
+  </flows>
+  <flows id="_OV2fx-1IEe-35cJzkApa3w" sourceNode="7" destinationNode="6">
+    <destinationPin href="georgwittberger_5D2G2D2G2D.datadictionary#_OV2fxu1IEe-35cJzkApa3w"/>
+    <sourcePin href="georgwittberger_5D2G2D2G2D.datadictionary#_OV14we1IEe-35cJzkApa3w"/>
+  </flows>
   <nodes xsi:type="dataflowdiagram:Process" id="2" entityName="user">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_5/georgwittberger_5D2G2D2G2D.datadictionary#_afAhN-CNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_5/georgwittberger_5D2G2D2G2D.datadictionary#_afAhT-CNEe-LfM-jfeWyyA"/>
+    <behavior href="georgwittberger_5D2G2D2G2D.datadictionary#_OV14s-1IEe-35cJzkApa3w"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_OVtV1e1IEe-35cJzkApa3w"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_OVyOie1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="3" entityName="apache_server">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_5/georgwittberger_5D2G2D2G2D.datadictionary#_afAhOeCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_5/georgwittberger_5D2G2D2G2D.datadictionary#_afAhT-CNEe-LfM-jfeWyyA"/>
+    <behavior href="georgwittberger_5D2G2D2G2D.datadictionary#_OV14te1IEe-35cJzkApa3w"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_OVtV0e1IEe-35cJzkApa3w"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_OVtV1e1IEe-35cJzkApa3w"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_OVyOie1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="4" entityName="content_service">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_5/georgwittberger_5D2G2D2G2D.datadictionary#_afAhO-CNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_5/georgwittberger_5D2G2D2G2D.datadictionary#_afAhT-CNEe-LfM-jfeWyyA"/>
+    <behavior href="georgwittberger_5D2G2D2G2D.datadictionary#_OV14t-1IEe-35cJzkApa3w"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_OVtV0e1IEe-35cJzkApa3w"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_OVtV1e1IEe-35cJzkApa3w"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_OVyOie1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="5" entityName="product_service">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_5/georgwittberger_5D2G2D2G2D.datadictionary#_afAhPeCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_5/georgwittberger_5D2G2D2G2D.datadictionary#_afAhT-CNEe-LfM-jfeWyyA"/>
+    <behavior href="georgwittberger_5D2G2D2G2D.datadictionary#_OV14ue1IEe-35cJzkApa3w"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_OVtV0e1IEe-35cJzkApa3w"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_OVtV1e1IEe-35cJzkApa3w"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_OVyOie1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="6" entityName="cart_service">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_5/georgwittberger_5D2G2D2G2D.datadictionary#_afAhP-CNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_5/georgwittberger_5D2G2D2G2D.datadictionary#_afAhT-CNEe-LfM-jfeWyyA"/>
+    <behavior href="georgwittberger_5D2G2D2G2D.datadictionary#_OV14u-1IEe-35cJzkApa3w"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_OVtV0e1IEe-35cJzkApa3w"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_OVtV1e1IEe-35cJzkApa3w"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_OVyOie1IEe-35cJzkApa3w"/>
   </nodes>
-  <nodes xsi:type="dataflowdiagram:Process" id="7" entityName="auth_server">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_5/georgwittberger_5D2G2D2G2D.datadictionary#_afAhQeCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//georgwittberger_5/georgwittberger_5D2G2D2G2D.datadictionary#_afAhT-CNEe-LfM-jfeWyyA"/>
+  <nodes xsi:type="dataflowdiagram:External" id="7" entityName="auth_server">
+    <behavior href="georgwittberger_5D2G2D2G2D.datadictionary#_OV14ve1IEe-35cJzkApa3w"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_OVtV0e1IEe-35cJzkApa3w"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_OVtV1e1IEe-35cJzkApa3w"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_OVyOh-1IEe-35cJzkApa3w"/>
   </nodes>
 </dataflowdiagram:DataFlowDiagram>

@@ -1,55 +1,120 @@
 <?xml version="1.0" encoding="ASCII"?>
 <dataflowdiagram:DataFlowDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" id="0">
-  <nodes xsi:type="dataflowdiagram:Process" id="2" entityName="github_repository">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//spring-petclinic_18/spring-petclinic_18D2G2D2G2D.datadictionary#_aj8EMeCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//spring-petclinic_18/spring-petclinic_18D2G2D2G2D.datadictionary#_aj8EaeCNEe-LfM-jfeWyyA"/>
+  <flows id="_OdQI4u1IEe-35cJzkApa3w" sourceNode="2" destinationNode="4">
+    <destinationPin href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQI4e1IEe-35cJzkApa3w"/>
+    <sourcePin href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQI4O1IEe-35cJzkApa3w"/>
+  </flows>
+  <flows id="_OdQI9e1IEe-35cJzkApa3w" sourceNode="14" destinationNode="5">
+    <destinationPin href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQI8-1IEe-35cJzkApa3w"/>
+    <sourcePin href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQI8e1IEe-35cJzkApa3w"/>
+  </flows>
+  <flows id="_OdQI-u1IEe-35cJzkApa3w" sourceNode="14" destinationNode="6">
+    <destinationPin href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQI-O1IEe-35cJzkApa3w"/>
+    <sourcePin href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQI8e1IEe-35cJzkApa3w"/>
+  </flows>
+  <flows id="_OdQI_u1IEe-35cJzkApa3w" sourceNode="14" destinationNode="7">
+    <destinationPin href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQI_e1IEe-35cJzkApa3w"/>
+    <sourcePin href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQI8e1IEe-35cJzkApa3w"/>
+  </flows>
+  <flows id="_OdQJA-1IEe-35cJzkApa3w" sourceNode="14" destinationNode="8">
+    <destinationPin href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQJAe1IEe-35cJzkApa3w"/>
+    <sourcePin href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQI8e1IEe-35cJzkApa3w"/>
+  </flows>
+  <flows id="_OdQJBu1IEe-35cJzkApa3w" sourceNode="14" destinationNode="9">
+    <destinationPin href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQJBe1IEe-35cJzkApa3w"/>
+    <sourcePin href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQI8e1IEe-35cJzkApa3w"/>
+  </flows>
+  <flows id="_OdQJCu1IEe-35cJzkApa3w" sourceNode="14" destinationNode="10">
+    <destinationPin href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQJCe1IEe-35cJzkApa3w"/>
+    <sourcePin href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQI8e1IEe-35cJzkApa3w"/>
+  </flows>
+  <flows id="_OdQJDu1IEe-35cJzkApa3w" sourceNode="14" destinationNode="11">
+    <destinationPin href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQJDe1IEe-35cJzkApa3w"/>
+    <sourcePin href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQI8e1IEe-35cJzkApa3w"/>
+  </flows>
+  <flows id="_OdQJEu1IEe-35cJzkApa3w" sourceNode="14" destinationNode="12">
+    <destinationPin href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQJEe1IEe-35cJzkApa3w"/>
+    <sourcePin href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQI8e1IEe-35cJzkApa3w"/>
+  </flows>
+  <flows id="_OdQJF-1IEe-35cJzkApa3w" sourceNode="14" destinationNode="13">
+    <destinationPin href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQJFe1IEe-35cJzkApa3w"/>
+    <sourcePin href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQI8e1IEe-35cJzkApa3w"/>
+  </flows>
+  <nodes xsi:type="dataflowdiagram:External" id="2" entityName="github_repository">
+    <behavior href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQIoe1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdJaw-1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdKBvu1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdLP7e1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="3" entityName="user">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//spring-petclinic_18/spring-petclinic_18D2G2D2G2D.datadictionary#_aj8ENeCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//spring-petclinic_18/spring-petclinic_18D2G2D2G2D.datadictionary#_aj8EaeCNEe-LfM-jfeWyyA"/>
+    <behavior href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQIpu1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdKBvu1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdLP7-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="4" entityName="config_server">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//spring-petclinic_18/spring-petclinic_18D2G2D2G2D.datadictionary#_aj8EOOCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//spring-petclinic_18/spring-petclinic_18D2G2D2G2D.datadictionary#_aj8EaeCNEe-LfM-jfeWyyA"/>
+    <behavior href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQIqe1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdJaw-1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdKBvu1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdLP7-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="5" entityName="discovery_server">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//spring-petclinic_18/spring-petclinic_18D2G2D2G2D.datadictionary#_aj8EO-CNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//spring-petclinic_18/spring-petclinic_18D2G2D2G2D.datadictionary#_aj8EaeCNEe-LfM-jfeWyyA"/>
+    <behavior href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQIrO1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdJayO1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdKBvu1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdLP7-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="6" entityName="tracing_server">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//spring-petclinic_18/spring-petclinic_18D2G2D2G2D.datadictionary#_aj8EPeCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//spring-petclinic_18/spring-petclinic_18D2G2D2G2D.datadictionary#_aj8EaeCNEe-LfM-jfeWyyA"/>
+    <behavior href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQIr-1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdJayO1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdKBvu1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdLP7-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="7" entityName="admin_server">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//spring-petclinic_18/spring-petclinic_18D2G2D2G2D.datadictionary#_aj8EQOCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//spring-petclinic_18/spring-petclinic_18D2G2D2G2D.datadictionary#_aj8EaeCNEe-LfM-jfeWyyA"/>
+    <behavior href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQIse1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdJayO1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdKBvu1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdLP7-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="8" entityName="prometheus_server">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//spring-petclinic_18/spring-petclinic_18D2G2D2G2D.datadictionary#_aj8EQ-CNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//spring-petclinic_18/spring-petclinic_18D2G2D2G2D.datadictionary#_aj8EaeCNEe-LfM-jfeWyyA"/>
+    <behavior href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQIs-1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdJayO1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdKBvu1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdLP7-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="9" entityName="grafana_server">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//spring-petclinic_18/spring-petclinic_18D2G2D2G2D.datadictionary#_aj8EReCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//spring-petclinic_18/spring-petclinic_18D2G2D2G2D.datadictionary#_aj8EaeCNEe-LfM-jfeWyyA"/>
+    <behavior href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQItu1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdJayO1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdKBvu1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdLP7-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="10" entityName="customers_service">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//spring-petclinic_18/spring-petclinic_18D2G2D2G2D.datadictionary#_aj8ESOCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//spring-petclinic_18/spring-petclinic_18D2G2D2G2D.datadictionary#_aj8EaeCNEe-LfM-jfeWyyA"/>
+    <behavior href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQIuO1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdJayO1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdKBvu1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdLP7-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="11" entityName="vets_service">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//spring-petclinic_18/spring-petclinic_18D2G2D2G2D.datadictionary#_aj8ES-CNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//spring-petclinic_18/spring-petclinic_18D2G2D2G2D.datadictionary#_aj8EaeCNEe-LfM-jfeWyyA"/>
+    <behavior href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQIuu1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdJayO1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdKBvu1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdLP7-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="12" entityName="visits_service">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//spring-petclinic_18/spring-petclinic_18D2G2D2G2D.datadictionary#_aj8ETeCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//spring-petclinic_18/spring-petclinic_18D2G2D2G2D.datadictionary#_aj8EaeCNEe-LfM-jfeWyyA"/>
+    <behavior href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQIvO1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdJayO1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdKBvu1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdLP7-1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="13" entityName="api_gateway">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//spring-petclinic_18/spring-petclinic_18D2G2D2G2D.datadictionary#_aj8EUOCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//spring-petclinic_18/spring-petclinic_18D2G2D2G2D.datadictionary#_aj8EaeCNEe-LfM-jfeWyyA"/>
+    <behavior href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQIvu1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdJayO1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdKBvu1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdLP7-1IEe-35cJzkApa3w"/>
   </nodes>
-  <nodes xsi:type="dataflowdiagram:Process" id="14" entityName="secret_manager">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//spring-petclinic_18/spring-petclinic_18D2G2D2G2D.datadictionary#_aj8EU-CNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//spring-petclinic_18/spring-petclinic_18D2G2D2G2D.datadictionary#_aj8EaeCNEe-LfM-jfeWyyA"/>
+  <nodes xsi:type="dataflowdiagram:External" id="14" entityName="secret_manager">
+    <behavior href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdQIwO1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdJayO1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdKBvu1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D2G2D.datadictionary#_OdLP7e1IEe-35cJzkApa3w"/>
   </nodes>
 </dataflowdiagram:DataFlowDiagram>

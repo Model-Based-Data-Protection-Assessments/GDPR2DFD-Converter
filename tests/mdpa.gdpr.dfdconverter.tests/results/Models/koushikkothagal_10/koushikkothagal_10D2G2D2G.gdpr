@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="ASCII"?>
 <GDPR:LegalAssessmentFacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" id="0">
-  <processing xsi:type="GDPR:Usage" id="2" entityName="external_website"/>
-  <processing xsi:type="GDPR:Usage" id="3" entityName="discovery_server"/>
-  <processing xsi:type="GDPR:Usage" id="4" entityName="ratings_data_service"/>
-  <processing xsi:type="GDPR:Usage" id="5" entityName="movie_info_service"/>
-  <processing xsi:type="GDPR:Usage" id="6" entityName="movie_catalog_service"/>
-  <processing xsi:type="GDPR:Usage" id="7" entityName="monitoring_dashboard"/>
-  <processing xsi:type="GDPR:Usage" id="8" entityName="logging_server"/>
+  <processing xsi:type="GDPR:Collecting" id="_OXO_7e1IEe-35cJzkApa3w" outputData="_OXLVlO1IEe-35cJzkApa3w" purpose="_OXLVle1IEe-35cJzkApa3w" responsible="_OXLVo-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="_OXPm4O1IEe-35cJzkApa3w" inputData="_OXLVmO1IEe-35cJzkApa3w" purpose="_OXLVme1IEe-35cJzkApa3w" responsible="_OXLVo-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="_OXPm4e1IEe-35cJzkApa3w" inputData="_OXLVmO1IEe-35cJzkApa3w" purpose="_OXLVme1IEe-35cJzkApa3w" responsible="_OXLVo-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="_OXPm4u1IEe-35cJzkApa3w" inputData="_OXLVlO1IEe-35cJzkApa3w" purpose="_OXLVle1IEe-35cJzkApa3w" responsible="_OXLVo-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Collecting" id="_OXPm4-1IEe-35cJzkApa3w" outputData="_OXLVmO1IEe-35cJzkApa3w" purpose="_OXLVme1IEe-35cJzkApa3w" responsible="_OXLVo-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="_OXPm5O1IEe-35cJzkApa3w" responsible="_OXLVo-1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="_OXPm5e1IEe-35cJzkApa3w" inputData="_OXLVmO1IEe-35cJzkApa3w" purpose="_OXLVme1IEe-35cJzkApa3w" responsible="_OXLVo-1IEe-35cJzkApa3w"/>
+  <purposes id="_OXLVle1IEe-35cJzkApa3w"/>
+  <purposes id="_OXLVme1IEe-35cJzkApa3w"/>
+  <data id="_OXLVlO1IEe-35cJzkApa3w"/>
+  <data id="_OXLVmO1IEe-35cJzkApa3w"/>
+  <involvedParties xsi:type="GDPR:Controller" id="_OXLVo-1IEe-35cJzkApa3w"/>
 </GDPR:LegalAssessmentFacts>

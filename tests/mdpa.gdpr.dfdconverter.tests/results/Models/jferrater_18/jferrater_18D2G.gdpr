@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="ASCII"?>
 <GDPR:LegalAssessmentFacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" id="0">
-  <processing xsi:type="GDPR:Usage" id="2" entityName="github_repository" followingProcessing="4"/>
-  <processing xsi:type="GDPR:Usage" id="3" entityName="discovery_service" followingProcessing="11"/>
-  <processing xsi:type="GDPR:Usage" id="4" entityName="config_service" followingProcessing="3 5 6 7 8 9 10 11"/>
-  <processing xsi:type="GDPR:Usage" id="5" entityName="account_service" followingProcessing="3 11"/>
-  <processing xsi:type="GDPR:Usage" id="6" entityName="customer_service" followingProcessing="3 11"/>
-  <processing xsi:type="GDPR:Usage" id="7" entityName="store_service" followingProcessing="3 11"/>
-  <processing xsi:type="GDPR:Usage" id="8" entityName="item_service" followingProcessing="3 11"/>
-  <processing xsi:type="GDPR:Usage" id="9" entityName="price_service" followingProcessing="3 11"/>
-  <processing xsi:type="GDPR:Usage" id="10" entityName="foodtray_service" followingProcessing="3 8 9 11"/>
-  <processing xsi:type="GDPR:Usage" id="11" entityName="secret_manager"/>
+  <processing xsi:type="GDPR:Collecting" id="2" entityName="github_repository" outputData="_OS4ES-1IEe-35cJzkApa3w" purpose="_OS4ETO1IEe-35cJzkApa3w" followingProcessing="4" responsible="_OS4rUe1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="3" entityName="discovery_service" inputData="_OS4ES-1IEe-35cJzkApa3w" purpose="_OS4ETO1IEe-35cJzkApa3w" responsible="_OS4rUe1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="4" entityName="config_service" inputData="_OS4ES-1IEe-35cJzkApa3w" outputData="_OS4ES-1IEe-35cJzkApa3w" purpose="_OS4ETO1IEe-35cJzkApa3w" followingProcessing="3 5 6 7 8 9 10 11" responsible="_OS4rUe1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="5" entityName="account_service" inputData="_OS4ES-1IEe-35cJzkApa3w" purpose="_OS4ETO1IEe-35cJzkApa3w" followingProcessing="3 11" responsible="_OS4rUe1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="6" entityName="customer_service" inputData="_OS4ES-1IEe-35cJzkApa3w" purpose="_OS4ETO1IEe-35cJzkApa3w" followingProcessing="3 11" responsible="_OS4rUe1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="7" entityName="store_service" inputData="_OS4ES-1IEe-35cJzkApa3w" purpose="_OS4ETO1IEe-35cJzkApa3w" followingProcessing="3 11" responsible="_OS4rUe1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="8" entityName="item_service" inputData="_OS4ES-1IEe-35cJzkApa3w" purpose="_OS4ETO1IEe-35cJzkApa3w" followingProcessing="11" responsible="_OS4rUe1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="9" entityName="price_service" inputData="_OS4ES-1IEe-35cJzkApa3w" purpose="_OS4ETO1IEe-35cJzkApa3w" followingProcessing="11" responsible="_OS4rUe1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="10" entityName="foodtray_service" inputData="_OS4ES-1IEe-35cJzkApa3w" purpose="_OS4ETO1IEe-35cJzkApa3w" followingProcessing="3 8 9 11" responsible="_OS4rUe1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="11" entityName="secret_manager" inputData="_OS4ES-1IEe-35cJzkApa3w" purpose="_OS4ETO1IEe-35cJzkApa3w" responsible="_OS4rUe1IEe-35cJzkApa3w"/>
+  <purposes id="_OS4ETO1IEe-35cJzkApa3w"/>
+  <data id="_OS4ES-1IEe-35cJzkApa3w"/>
+  <involvedParties xsi:type="GDPR:Controller" id="_OS4rUe1IEe-35cJzkApa3w"/>
 </GDPR:LegalAssessmentFacts>

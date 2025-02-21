@@ -1,25 +1,144 @@
 <?xml version="1.0" encoding="ASCII"?>
-<datadictionary:DataDictionary xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_ajOTW-CNEe-LfM-jfeWyyA">
-  <labelTypes id="_ajOTjeCNEe-LfM-jfeWyyA" entityName="ProcessingType">
-    <label id="_ajOTqOCNEe-LfM-jfeWyyA" entityName="Collecting"/>
-    <label id="_ajOTquCNEe-LfM-jfeWyyA" entityName="Storing"/>
-    <label id="_ajOTq-CNEe-LfM-jfeWyyA" entityName="Usage"/>
-    <label id="_ajOTreCNEe-LfM-jfeWyyA" entityName="Transferring"/>
+<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="1">
+  <labelTypes id="8" entityName="Stereotype">
+    <label id="11" entityName="internal"/>
+    <label id="19" entityName="load_balancer"/>
+    <label id="27" entityName="external_website"/>
+    <label id="32" entityName="infrastructural"/>
+    <label id="33" entityName="service_discovery"/>
+    <label id="45" entityName="gateway"/>
+    <label id="46" entityName="transform_identity_representation&quot; shape = Mrecord"/>
+    <label id="50" entityName="restful_http"/>
+    <label id="58" entityName="load_balanced_link"/>
   </labelTypes>
-  <labelTypes id="_ajOTjuCNEe-LfM-jfeWyyA" entityName="Data"/>
-  <labelTypes id="_ajOTj-CNEe-LfM-jfeWyyA" entityName="PersonalData"/>
-  <labelTypes id="_ajOTkeCNEe-LfM-jfeWyyA" entityName="Obligation"/>
-  <labelTypes id="_ajOTkuCNEe-LfM-jfeWyyA" entityName="Consent"/>
-  <labelTypes id="_ajOTleCNEe-LfM-jfeWyyA" entityName="Contract"/>
-  <labelTypes id="_ajOTl-CNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
-  <labelTypes id="_ajOTmOCNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
-  <labelTypes id="_ajOTm-CNEe-LfM-jfeWyyA" entityName="Controller"/>
-  <labelTypes id="_ajOTneCNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
-  <labelTypes id="_ajOTnuCNEe-LfM-jfeWyyA" entityName="Purposes"/>
-  <behavior id="_ajOTZeCNEe-LfM-jfeWyyA" entityName="external_website Behavior"/>
-  <behavior id="_ajOTcOCNEe-LfM-jfeWyyA" entityName="discovery_server Behavior"/>
-  <behavior id="_ajOTc-CNEe-LfM-jfeWyyA" entityName="ratings_data_service Behavior"/>
-  <behavior id="_ajOTgeCNEe-LfM-jfeWyyA" entityName="movie_info_service Behavior"/>
-  <behavior id="_ajOTg-CNEe-LfM-jfeWyyA" entityName="movie_catalog_service Behavior"/>
-  <behavior id="_ajOTiOCNEe-LfM-jfeWyyA" entityName="gateway Behavior"/>
+  <labelTypes id="12" entityName="Endpoints">
+    <label id="13" entityName="movies"/>
+    <label id="14" entityName="moviesmovieId"/>
+    <label id="20" entityName="catalog"/>
+    <label id="21" entityName="cataloguserId"/>
+    <label id="39" entityName="ratingsdata"/>
+    <label id="40" entityName="ratingsdatamoviesmovieId"/>
+    <label id="41" entityName="ratingsdatauseruserId"/>
+  </labelTypes>
+  <labelTypes id="15" entityName="Port">
+    <label id="16" entityName="8082"/>
+    <label id="22" entityName="8081"/>
+    <label id="34" entityName="8761"/>
+    <label id="42" entityName="8083"/>
+  </labelTypes>
+  <labelTypes id="23" entityName="LoadBalancer">
+    <label id="24" entityName="SpringCloud"/>
+  </labelTypes>
+  <labelTypes id="28" entityName="URL">
+    <label id="29" entityName="httpsapithemoviedborg"/>
+  </labelTypes>
+  <labelTypes id="35" entityName="ServiceDiscovery">
+    <label id="36" entityName="Eureka"/>
+  </labelTypes>
+  <labelTypes id="_OWNFE-1IEe-35cJzkApa3w" entityName="ProcessingType">
+    <label id="_OWNFLe1IEe-35cJzkApa3w" entityName="Collecting"/>
+    <label id="_OWNFLu1IEe-35cJzkApa3w" entityName="Storing"/>
+    <label id="_OWNFMO1IEe-35cJzkApa3w" entityName="Usage"/>
+    <label id="_OWNFMe1IEe-35cJzkApa3w" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_OWNFFO1IEe-35cJzkApa3w" entityName="Data">
+    <label id="_OWIz5-1IEe-35cJzkApa3w"/>
+    <label id="_OWKBx-1IEe-35cJzkApa3w"/>
+    <label id="_OWIz5-1IEe-35cJzkApa3w"/>
+    <label id="_OWKBx-1IEe-35cJzkApa3w"/>
+  </labelTypes>
+  <labelTypes id="_OWNFFe1IEe-35cJzkApa3w" entityName="PersonalData"/>
+  <labelTypes id="_OWNFF-1IEe-35cJzkApa3w" entityName="Obligation"/>
+  <labelTypes id="_OWNFGO1IEe-35cJzkApa3w" entityName="Consent"/>
+  <labelTypes id="_OWNFGe1IEe-35cJzkApa3w" entityName="Contract"/>
+  <labelTypes id="_OWNFG-1IEe-35cJzkApa3w" entityName="PublicAuthority"/>
+  <labelTypes id="_OWNFHe1IEe-35cJzkApa3w" entityName="NaturalPerson"/>
+  <labelTypes id="_OWNFH-1IEe-35cJzkApa3w" entityName="Controller">
+    <label id="_OWKB5e1IEe-35cJzkApa3w"/>
+    <label id="_OWKB5e1IEe-35cJzkApa3w"/>
+  </labelTypes>
+  <labelTypes id="_OWNFIO1IEe-35cJzkApa3w" entityName="ThirdParty"/>
+  <labelTypes id="_OWNFIe1IEe-35cJzkApa3w" entityName="Purposes">
+    <label id="_OWIz6O1IEe-35cJzkApa3w"/>
+    <label id="_OWKByO1IEe-35cJzkApa3w"/>
+    <label id="_OWIz6O1IEe-35cJzkApa3w"/>
+    <label id="_OWKByO1IEe-35cJzkApa3w"/>
+  </labelTypes>
+  <behavior id="9">
+    <inPin id="53"/>
+    <outPin id="51"/>
+    <assignment xsi:type="datadictionary:Assignment" id="71" outputPin="51" outputLabels="11 50" inputPins="53">
+      <term xsi:type="datadictionary:TRUE" id="72"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="89" outputPin="51" inputPins="53"/>
+  </behavior>
+  <behavior id="17">
+    <inPin id="68"/>
+    <outPin id="56"/>
+    <outPin id="60"/>
+    <outPin id="62"/>
+    <assignment xsi:type="datadictionary:Assignment" id="73" outputPin="56" outputLabels="11 19 50 58" inputPins="68">
+      <term xsi:type="datadictionary:TRUE" id="74"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="75" outputPin="60" outputLabels="11 19 50 58" inputPins="68">
+      <term xsi:type="datadictionary:TRUE" id="76"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="77" outputPin="62" outputLabels="11 19 50 58" inputPins="68">
+      <term xsi:type="datadictionary:TRUE" id="78"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="90" outputPin="56" inputPins="68"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="91" outputPin="60" inputPins="68"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="92" outputPin="62" inputPins="68"/>
+  </behavior>
+  <behavior id="25">
+    <outPin id="54"/>
+    <assignment xsi:type="datadictionary:Assignment" id="79" outputPin="54" outputLabels="27 50">
+      <term xsi:type="datadictionary:TRUE" id="80"/>
+    </assignment>
+  </behavior>
+  <behavior id="30">
+    <inPin id="47"/>
+  </behavior>
+  <behavior id="37">
+    <inPin id="59"/>
+    <outPin id="48"/>
+    <assignment xsi:type="datadictionary:Assignment" id="81" outputPin="48" outputLabels="11 50" inputPins="59">
+      <term xsi:type="datadictionary:TRUE" id="82"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="93" outputPin="48" inputPins="59"/>
+  </behavior>
+  <behavior id="43">
+    <outPin id="64"/>
+    <outPin id="66"/>
+    <outPin id="69"/>
+    <assignment xsi:type="datadictionary:Assignment" id="83" outputPin="64" outputLabels="32 45 46 50">
+      <term xsi:type="datadictionary:TRUE" id="84"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="85" outputPin="66" outputLabels="32 45 46 50">
+      <term xsi:type="datadictionary:TRUE" id="86"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="87" outputPin="69" outputLabels="32 45 46 50">
+      <term xsi:type="datadictionary:TRUE" id="88"/>
+    </assignment>
+  </behavior>
+  <behavior id="_OWTLzO1IEe-35cJzkApa3w" entityName="external_website Behavior">
+    <outPin id="_OWTL4O1IEe-35cJzkApa3w"/>
+  </behavior>
+  <behavior id="_OWTLzu1IEe-35cJzkApa3w" entityName="discovery_server Behavior">
+    <inPin id="_OWTL5u1IEe-35cJzkApa3w"/>
+  </behavior>
+  <behavior id="_OWTL0O1IEe-35cJzkApa3w" entityName="ratings_data_service Behavior">
+    <inPin id="_OWTywO1IEe-35cJzkApa3w"/>
+  </behavior>
+  <behavior id="_OWTL0u1IEe-35cJzkApa3w" entityName="movie_info_service Behavior">
+    <inPin id="_OWTL4e1IEe-35cJzkApa3w"/>
+  </behavior>
+  <behavior id="_OWTL1O1IEe-35cJzkApa3w" entityName="movie_catalog_service Behavior">
+    <inPin id="_OWTyxO1IEe-35cJzkApa3w"/>
+    <outPin id="_OWTL5O1IEe-35cJzkApa3w"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_OWTyxu1IEe-35cJzkApa3w" entityName="Forward aName" outputPin="_OWTL5O1IEe-35cJzkApa3w" inputPins="_OWTyxO1IEe-35cJzkApa3w"/>
+  </behavior>
+  <behavior id="_OWTL1u1IEe-35cJzkApa3w" entityName="gateway Behavior">
+    <outPin id="_OWTywu1IEe-35cJzkApa3w"/>
+  </behavior>
 </datadictionary:DataDictionary>

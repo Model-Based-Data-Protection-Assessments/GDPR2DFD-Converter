@@ -39,7 +39,7 @@ public class ScalabilityTests {
 	private static dataflowdiagramFactory dfdFactory = dataflowdiagramFactory.eINSTANCE;
 	private static datadictionaryFactory ddFactory = datadictionaryFactory.eINSTANCE;
 	private static GDPRFactory gdprFactory = GDPRFactory.eINSTANCE;
-	private static final String resultFolder = "C:\\Users\\Huell\\Documents\\HIWI\\GDPR2DFD-Converter\\tests\\mdpa.gdpr.dfdconverter.tests\\results\\Scalability\\";
+	private static final String resultFolder = "C:\\Users\\Huell\\Documents\\Studium\\HIWI\\GDPR2DFD-Converter\\tests\\mdpa.gdpr.dfdconverter.tests\\results\\Scalability\\";
 	
 	
 	@Test
@@ -52,7 +52,7 @@ public class ScalabilityTests {
         int recordIndex = 0;
 
         // Run the loop 11 times in total
-        IntStream.range(0, 11).parallel().forEach(i -> {
+        IntStream.range(0, 11).forEach(i -> {
         	for (int j = 0; j < 7; j ++) {
 	            var dataDictionary = ddFactory.createDataDictionary();
 	            var dataFlowDiagram = dfdFactory.createDataFlowDiagram();
@@ -395,7 +395,6 @@ public class ScalabilityTests {
         // Run the loop 11 times in total
         for (int i = 0; i < 11; i++) {
         	for (int j = 0; j < 6; j ++) {
- 	           long preStartTime = System.nanoTime();
 	
 	           LegalAssessmentFacts laf = createPurposeLaf(j);
 	            GDPR2DFD converter = new GDPR2DFD(laf);
@@ -411,7 +410,6 @@ public class ScalabilityTests {
 	
 	            // Convert nanoseconds to milliseconds
 	            long durationMs = (endTime - startTime) / 1_000_000;
-	            System.out.println("Purpose " + laf.getPurposes().size() + " took " + ((endTime - preStartTime) / 1_000_000) + "ms");
 	
 	            // We only record (and write) the timing data for i > 0
 	            if (i > 0) {

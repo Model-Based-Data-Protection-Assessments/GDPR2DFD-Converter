@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="ASCII"?>
 <GDPR:LegalAssessmentFacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" id="0">
-  <processing xsi:type="GDPR:Usage" id="2" entityName="user" followingProcessing="10"/>
-  <processing xsi:type="GDPR:Usage" id="3" entityName="admin_dashboard" followingProcessing="6 4 7 8 9 5 10"/>
-  <processing xsi:type="GDPR:Usage" id="4" entityName="eureka_server" followingProcessing="10"/>
-  <processing xsi:type="GDPR:Usage" id="5" entityName="rabbitmq" followingProcessing="11"/>
-  <processing xsi:type="GDPR:Usage" id="6" entityName="config_server" followingProcessing="4 5 8 9"/>
-  <processing xsi:type="GDPR:Usage" id="7" entityName="hystrix_dashboard" followingProcessing="4"/>
-  <processing xsi:type="GDPR:Usage" id="8" entityName="service_a" followingProcessing="5 4 7 9 11"/>
-  <processing xsi:type="GDPR:Usage" id="9" entityName="service_b" followingProcessing="5 4 11 7"/>
-  <processing xsi:type="GDPR:Usage" id="10" entityName="zuul" followingProcessing="8 5 11 6"/>
-  <processing xsi:type="GDPR:Usage" id="11" entityName="zipkin"/>
+  <processing xsi:type="GDPR:Collecting" id="2" entityName="user" outputData="_ObnJmu1IEe-35cJzkApa3w" purpose="_ObnJm-1IEe-35cJzkApa3w" followingProcessing="10" responsible="_ObnwlO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Collecting" id="3" entityName="admin_dashboard" outputData="_ObnJl-1IEe-35cJzkApa3w" purpose="_ObnJmO1IEe-35cJzkApa3w" followingProcessing="6 4 7 8 9 5 10" responsible="_ObnwlO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="4" entityName="eureka_server" inputData="_ObnJl-1IEe-35cJzkApa3w" purpose="_ObnJmO1IEe-35cJzkApa3w" responsible="_ObnwlO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="5" entityName="rabbitmq" inputData="_ObnJl-1IEe-35cJzkApa3w" purpose="_ObnJmO1IEe-35cJzkApa3w" responsible="_ObnwlO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="6" entityName="config_server" inputData="_ObnJl-1IEe-35cJzkApa3w" purpose="_ObnJmO1IEe-35cJzkApa3w" responsible="_ObnwlO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="7" entityName="hystrix_dashboard" inputData="_ObnJl-1IEe-35cJzkApa3w" purpose="_ObnJmO1IEe-35cJzkApa3w" responsible="_ObnwlO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="8" entityName="service_a" inputData="_ObnJl-1IEe-35cJzkApa3w" purpose="_ObnJmO1IEe-35cJzkApa3w" responsible="_ObnwlO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="9" entityName="service_b" inputData="_ObnJl-1IEe-35cJzkApa3w" purpose="_ObnJmO1IEe-35cJzkApa3w" responsible="_ObnwlO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="10" entityName="zuul" inputData="_ObnJmu1IEe-35cJzkApa3w" purpose="_ObnJm-1IEe-35cJzkApa3w" responsible="_ObnwlO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="11" entityName="zipkin" responsible="_ObnwlO1IEe-35cJzkApa3w"/>
+  <purposes id="_ObnJmO1IEe-35cJzkApa3w"/>
+  <purposes id="_ObnJm-1IEe-35cJzkApa3w"/>
+  <data id="_ObnJl-1IEe-35cJzkApa3w"/>
+  <data id="_ObnJmu1IEe-35cJzkApa3w"/>
+  <involvedParties xsi:type="GDPR:Controller" id="_ObnwlO1IEe-35cJzkApa3w"/>
 </GDPR:LegalAssessmentFacts>

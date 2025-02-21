@@ -1,41 +1,137 @@
 <?xml version="1.0" encoding="ASCII"?>
-<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_agr70eCNEe-LfM-jfeWyyA">
-  <labelTypes id="_agr70uCNEe-LfM-jfeWyyA" entityName="ProcessingType">
-    <label id="_agr73eCNEe-LfM-jfeWyyA" entityName="Collecting"/>
-    <label id="_agr73uCNEe-LfM-jfeWyyA" entityName="Storing"/>
-    <label id="_agr73-CNEe-LfM-jfeWyyA" entityName="Usage"/>
-    <label id="_agr74OCNEe-LfM-jfeWyyA" entityName="Transferring"/>
+<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="1">
+  <labelTypes id="15" entityName="Stereotype">
+    <label id="18" entityName="infrastructural"/>
+    <label id="19" entityName="monitoring_dashboard"/>
+    <label id="20" entityName="monitoring_server"/>
+    <label id="21" entityName="logging_server"/>
+    <label id="22" entityName="authentication_scope_all_requests"/>
+    <label id="31" entityName="tracing_server"/>
+    <label id="37" entityName="service_discovery"/>
+    <label id="43" entityName="configuration_server"/>
+    <label id="49" entityName="database"/>
+    <label id="50" entityName="plaintext_credentials"/>
+    <label id="58" entityName="internal"/>
+    <label id="59" entityName="local_logging"/>
+    <label id="60" entityName="resource_server"/>
+    <label id="61" entityName="circuit_breaker"/>
+    <label id="62" entityName="load_balancer"/>
+    <label id="73" entityName="message_broker"/>
+    <label id="85" entityName="gateway"/>
+    <label id="86" entityName="csrf_disabled"/>
+    <label id="93" entityName="github_repository"/>
+    <label id="94" entityName="entrypoint"/>
+    <label id="99" entityName="user_stereotype"/>
+    <label id="100" entityName="exitpoint"/>
+    <label id="103" entityName="authorization_server"/>
+    <label id="113" entityName="restful_http"/>
+    <label id="125" entityName="plaintext_credentials_link"/>
+    <label id="163" entityName="circuit_breaker_link"/>
+    <label id="164" entityName="load_balanced_link"/>
   </labelTypes>
-  <labelTypes id="_agr70-CNEe-LfM-jfeWyyA" entityName="Data"/>
-  <labelTypes id="_agr71OCNEe-LfM-jfeWyyA" entityName="PersonalData"/>
-  <labelTypes id="_agr71eCNEe-LfM-jfeWyyA" entityName="Obligation"/>
-  <labelTypes id="_agr71uCNEe-LfM-jfeWyyA" entityName="Consent"/>
-  <labelTypes id="_agr71-CNEe-LfM-jfeWyyA" entityName="Contract"/>
-  <labelTypes id="_agr72OCNEe-LfM-jfeWyyA" entityName="PublicAuthority"/>
-  <labelTypes id="_agr72eCNEe-LfM-jfeWyyA" entityName="NaturalPerson"/>
-  <labelTypes id="_agr72uCNEe-LfM-jfeWyyA" entityName="Controller"/>
-  <labelTypes id="_agr72-CNEe-LfM-jfeWyyA" entityName="ThirdParty"/>
-  <labelTypes id="_agr73OCNEe-LfM-jfeWyyA" entityName="Purposes"/>
-  <behavior id="91">
-    <outPin id="111"/>
-    <assignment xsi:type="datadictionary:Assignment" id="246" outputPin="111">
-      <term xsi:type="datadictionary:TRUE" id="247"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#93"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#94"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
+  <labelTypes id="23" entityName="MonitoringDashboard">
+    <label id="24" entityName="Hystrix"/>
+  </labelTypes>
+  <labelTypes id="25" entityName="Port">
+    <label id="26" entityName="8090"/>
+    <label id="34" entityName="9411"/>
+    <label id="38" entityName="8761"/>
+    <label id="44" entityName="8888"/>
+    <label id="51" entityName="3306"/>
+    <label id="68" entityName="8082"/>
+    <label id="77" entityName="8091"/>
+    <label id="82" entityName="8083"/>
+    <label id="89" entityName="8765"/>
+    <label id="109" entityName="8899"/>
+  </labelTypes>
+  <labelTypes id="27" entityName="MonitoringServer">
+    <label id="28" entityName="Turbine"/>
+  </labelTypes>
+  <labelTypes id="32" entityName="TracingServer">
+    <label id="33" entityName="Zipkin"/>
+  </labelTypes>
+  <labelTypes id="39" entityName="ServiceDiscovery">
+    <label id="40" entityName="Eureka"/>
+  </labelTypes>
+  <labelTypes id="45" entityName="ConfigurationServer">
+    <label id="46" entityName="SpringCloudConfig"/>
+  </labelTypes>
+  <labelTypes id="52" entityName="Database">
+    <label id="53" entityName="MySQL"/>
+  </labelTypes>
+  <labelTypes id="54" entityName="Password">
+    <label id="55" entityName="password"/>
+  </labelTypes>
+  <labelTypes id="63" entityName="Endpoints">
+    <label id="64" entityName="taskId"/>
+    <label id="65" entityName="usertaskuserName"/>
+    <label id="76" entityName="userName"/>
+    <label id="80" entityName="comments"/>
+    <label id="81" entityName="commentstaskId"/>
+    <label id="104" entityName="me"/>
+  </labelTypes>
+  <labelTypes id="66" entityName="CircuitBreaker">
+    <label id="67" entityName="Hystrix"/>
+  </labelTypes>
+  <labelTypes id="69" entityName="LoadBalancer">
+    <label id="70" entityName="SpringCloud"/>
+    <label id="90" entityName="Ribbon"/>
+  </labelTypes>
+  <labelTypes id="87" entityName="Gateway">
+    <label id="88" entityName="Zuul"/>
+  </labelTypes>
+  <labelTypes id="95" entityName="URL">
+    <label id="96" entityName="httpsgithubcomanilallewarmicroservicesbasicscloudconfig"/>
+  </labelTypes>
+  <labelTypes id="105" entityName="AuthorizationServer">
+    <label id="106" entityName="SpringOAuth2"/>
+  </labelTypes>
+  <labelTypes id="107" entityName="Username">
+    <label id="108" entityName="user"/>
+    <label id="126" entityName="root"/>
+  </labelTypes>
+  <labelTypes id="_OZdNiu1IEe-35cJzkApa3w" entityName="ProcessingType">
+    <label id="_OZdNnu1IEe-35cJzkApa3w" entityName="Collecting"/>
+    <label id="_OZdNn-1IEe-35cJzkApa3w" entityName="Storing"/>
+    <label id="_OZdNoO1IEe-35cJzkApa3w" entityName="Usage"/>
+    <label id="_OZdNoe1IEe-35cJzkApa3w" entityName="Transferring"/>
+  </labelTypes>
+  <labelTypes id="_OZdNi-1IEe-35cJzkApa3w" entityName="Data">
+    <label id="_OZYVH-1IEe-35cJzkApa3w"/>
+    <label id="_OZYVIu1IEe-35cJzkApa3w"/>
+  </labelTypes>
+  <labelTypes id="_OZdNjO1IEe-35cJzkApa3w" entityName="PersonalData"/>
+  <labelTypes id="_OZdNje1IEe-35cJzkApa3w" entityName="Obligation"/>
+  <labelTypes id="_OZdNj-1IEe-35cJzkApa3w" entityName="Consent"/>
+  <labelTypes id="_OZdNkO1IEe-35cJzkApa3w" entityName="Contract"/>
+  <labelTypes id="_OZdNke1IEe-35cJzkApa3w" entityName="PublicAuthority"/>
+  <labelTypes id="_OZdNku1IEe-35cJzkApa3w" entityName="NaturalPerson"/>
+  <labelTypes id="_OZdNlO1IEe-35cJzkApa3w" entityName="Controller">
+    <label id="_OZY8QO1IEe-35cJzkApa3w"/>
+  </labelTypes>
+  <labelTypes id="_OZdNlu1IEe-35cJzkApa3w" entityName="ThirdParty"/>
+  <labelTypes id="_OZdNl-1IEe-35cJzkApa3w" entityName="Purposes">
+    <label id="_OZYVIO1IEe-35cJzkApa3w"/>
+    <label id="_OZYVI-1IEe-35cJzkApa3w"/>
+  </labelTypes>
+  <behavior id="16">
+    <inPin id="131"/>
+    <outPin id="129"/>
+    <assignment xsi:type="datadictionary:Assignment" id="192" outputPin="129" outputLabels="18 19 20 21 22 113" inputPins="131">
+      <term xsi:type="datadictionary:TRUE" id="193"/>
     </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="258" outputPin="129" inputPins="131"/>
   </behavior>
-  <behavior id="97">
-    <inPin id="165"/>
-    <outPin id="169"/>
-    <assignment xsi:type="datadictionary:Assignment" id="248" outputPin="169" inputPins="165">
-      <term xsi:type="datadictionary:TRUE" id="249"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#99"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#94"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#100"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
+  <behavior id="29">
+    <inPin id="117"/>
+  </behavior>
+  <behavior id="35">
+    <inPin id="114"/>
+    <outPin id="173"/>
+    <assignment xsi:type="datadictionary:Assignment" id="194" outputPin="173" outputLabels="18 37 113" inputPins="114">
+      <term xsi:type="datadictionary:TRUE" id="195"/>
     </assignment>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="284" outputPin="169" inputPins="165"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="259" outputPin="173" inputPins="114"/>
   </behavior>
   <behavior id="41">
     <inPin id="110"/>
@@ -47,53 +143,29 @@
     <outPin id="146"/>
     <outPin id="153"/>
     <outPin id="171"/>
-    <assignment xsi:type="datadictionary:Assignment" id="196" outputPin="115" inputPins="110">
+    <assignment xsi:type="datadictionary:Assignment" id="196" outputPin="115" outputLabels="18 43 113" inputPins="110">
       <term xsi:type="datadictionary:TRUE" id="197"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#18"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#43"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
     </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="198" outputPin="118" inputPins="110">
+    <assignment xsi:type="datadictionary:Assignment" id="198" outputPin="118" outputLabels="18 43 113" inputPins="110">
       <term xsi:type="datadictionary:TRUE" id="199"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#18"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#43"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
     </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="200" outputPin="121" inputPins="110">
+    <assignment xsi:type="datadictionary:Assignment" id="200" outputPin="121" outputLabels="18 43 113" inputPins="110">
       <term xsi:type="datadictionary:TRUE" id="201"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#18"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#43"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
     </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="202" outputPin="132" inputPins="110">
+    <assignment xsi:type="datadictionary:Assignment" id="202" outputPin="132" outputLabels="18 43 113" inputPins="110">
       <term xsi:type="datadictionary:TRUE" id="203"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#18"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#43"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
     </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="204" outputPin="137" inputPins="110">
+    <assignment xsi:type="datadictionary:Assignment" id="204" outputPin="137" outputLabels="18 43 113" inputPins="110">
       <term xsi:type="datadictionary:TRUE" id="205"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#18"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#43"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
     </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="206" outputPin="146" inputPins="110">
+    <assignment xsi:type="datadictionary:Assignment" id="206" outputPin="146" outputLabels="18 43 113" inputPins="110">
       <term xsi:type="datadictionary:TRUE" id="207"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#18"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#43"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
     </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="208" outputPin="153" inputPins="110">
+    <assignment xsi:type="datadictionary:Assignment" id="208" outputPin="153" outputLabels="18 43 113" inputPins="110">
       <term xsi:type="datadictionary:TRUE" id="209"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#18"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#43"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
     </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="210" outputPin="171" inputPins="110">
+    <assignment xsi:type="datadictionary:Assignment" id="210" outputPin="171" outputLabels="18 43 113" inputPins="110">
       <term xsi:type="datadictionary:TRUE" id="211"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#18"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#43"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
     </assignment>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="260" outputPin="115" inputPins="110"/>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="261" outputPin="118" inputPins="110"/>
@@ -104,121 +176,61 @@
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="266" outputPin="153" inputPins="110"/>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="267" outputPin="171" inputPins="110"/>
   </behavior>
-  <behavior id="35">
-    <inPin id="114"/>
-    <outPin id="173"/>
-    <assignment xsi:type="datadictionary:Assignment" id="194" outputPin="173" inputPins="114">
-      <term xsi:type="datadictionary:TRUE" id="195"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#18"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#37"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
-    </assignment>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="259" outputPin="173" inputPins="114"/>
-  </behavior>
-  <behavior id="29">
-    <inPin id="117"/>
-  </behavior>
   <behavior id="47">
     <outPin id="123"/>
-    <assignment xsi:type="datadictionary:Assignment" id="212" outputPin="123">
+    <assignment xsi:type="datadictionary:Assignment" id="212" outputPin="123" outputLabels="49 50 113 125 126 55">
       <term xsi:type="datadictionary:TRUE" id="213"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#49"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#50"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#125"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#126"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#55"/>
     </assignment>
   </behavior>
-  <behavior id="101">
-    <inPin id="120"/>
-    <outPin id="127"/>
-    <outPin id="141"/>
-    <outPin id="155"/>
-    <outPin id="177"/>
-    <assignment xsi:type="datadictionary:Assignment" id="250" outputPin="127" inputPins="120">
-      <term xsi:type="datadictionary:TRUE" id="251"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#18"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#103"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#60"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#22"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#50"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
+  <behavior id="56">
+    <inPin id="152"/>
+    <outPin id="150"/>
+    <outPin id="157"/>
+    <outPin id="159"/>
+    <outPin id="161"/>
+    <outPin id="190"/>
+    <assignment xsi:type="datadictionary:Assignment" id="214" outputPin="150" outputLabels="58 59 22 60 61 62 113" inputPins="152">
+      <term xsi:type="datadictionary:TRUE" id="215"/>
     </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="252" outputPin="141" inputPins="120">
-      <term xsi:type="datadictionary:TRUE" id="253"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#18"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#103"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#60"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#22"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#50"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
+    <assignment xsi:type="datadictionary:Assignment" id="216" outputPin="157" outputLabels="58 59 22 60 61 62 113" inputPins="152">
+      <term xsi:type="datadictionary:TRUE" id="217"/>
     </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="254" outputPin="155" inputPins="120">
-      <term xsi:type="datadictionary:TRUE" id="255"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#18"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#103"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#60"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#22"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#50"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
+    <assignment xsi:type="datadictionary:Assignment" id="218" outputPin="159" outputLabels="58 59 22 60 61 62 113" inputPins="152">
+      <term xsi:type="datadictionary:TRUE" id="219"/>
     </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="256" outputPin="177" inputPins="120">
-      <term xsi:type="datadictionary:TRUE" id="257"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#18"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#103"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#60"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#22"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#50"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
+    <assignment xsi:type="datadictionary:Assignment" id="220" outputPin="161" outputLabels="58 59 22 60 61 62 113 163 164" inputPins="152">
+      <term xsi:type="datadictionary:TRUE" id="221"/>
     </assignment>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="285" outputPin="127" inputPins="120"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="286" outputPin="141" inputPins="120"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="287" outputPin="155" inputPins="120"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="288" outputPin="177" inputPins="120"/>
+    <assignment xsi:type="datadictionary:Assignment" id="222" outputPin="190" outputLabels="58 59 22 60 61 62 113" inputPins="152">
+      <term xsi:type="datadictionary:TRUE" id="223"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="268" outputPin="150" inputPins="152"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="269" outputPin="157" inputPins="152"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="270" outputPin="159" inputPins="152"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="271" outputPin="161" inputPins="152"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="272" outputPin="190" inputPins="152"/>
   </behavior>
-  <behavior id="16">
-    <inPin id="131"/>
-    <outPin id="129"/>
-    <assignment xsi:type="datadictionary:Assignment" id="192" outputPin="129" inputPins="131">
-      <term xsi:type="datadictionary:TRUE" id="193"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#18"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#19"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#20"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#21"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#22"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
+  <behavior id="71">
+    <inPin id="185"/>
+    <outPin id="183"/>
+    <assignment xsi:type="datadictionary:Assignment" id="224" outputPin="183" outputLabels="18 73 113" inputPins="185">
+      <term xsi:type="datadictionary:TRUE" id="225"/>
     </assignment>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="258" outputPin="129" inputPins="131"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="273" outputPin="183" inputPins="185"/>
   </behavior>
   <behavior id="74">
     <inPin id="136"/>
     <outPin id="134"/>
     <outPin id="139"/>
     <outPin id="186"/>
-    <assignment xsi:type="datadictionary:Assignment" id="226" outputPin="134" inputPins="136">
+    <assignment xsi:type="datadictionary:Assignment" id="226" outputPin="134" outputLabels="58 59 60 22 113" inputPins="136">
       <term xsi:type="datadictionary:TRUE" id="227"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#58"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#59"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#60"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#22"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
     </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="228" outputPin="139" inputPins="136">
+    <assignment xsi:type="datadictionary:Assignment" id="228" outputPin="139" outputLabels="58 59 60 22 113" inputPins="136">
       <term xsi:type="datadictionary:TRUE" id="229"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#58"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#59"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#60"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#22"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
     </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="230" outputPin="186" inputPins="136">
+    <assignment xsi:type="datadictionary:Assignment" id="230" outputPin="186" outputLabels="58 59 60 22 113" inputPins="136">
       <term xsi:type="datadictionary:TRUE" id="231"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#58"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#59"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#60"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#22"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
     </assignment>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="274" outputPin="134" inputPins="136"/>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="275" outputPin="139" inputPins="136"/>
@@ -229,95 +241,18 @@
     <outPin id="143"/>
     <outPin id="148"/>
     <outPin id="188"/>
-    <assignment xsi:type="datadictionary:Assignment" id="232" outputPin="143" inputPins="145">
+    <assignment xsi:type="datadictionary:Assignment" id="232" outputPin="143" outputLabels="58 59 60 113" inputPins="145">
       <term xsi:type="datadictionary:TRUE" id="233"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#58"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#59"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#60"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
     </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="234" outputPin="148" inputPins="145">
+    <assignment xsi:type="datadictionary:Assignment" id="234" outputPin="148" outputLabels="58 59 60 113" inputPins="145">
       <term xsi:type="datadictionary:TRUE" id="235"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#58"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#59"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#60"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
     </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="236" outputPin="188" inputPins="145">
+    <assignment xsi:type="datadictionary:Assignment" id="236" outputPin="188" outputLabels="58 59 60 113" inputPins="145">
       <term xsi:type="datadictionary:TRUE" id="237"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#58"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#59"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#60"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
     </assignment>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="277" outputPin="143" inputPins="145"/>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="278" outputPin="148" inputPins="145"/>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="279" outputPin="188" inputPins="145"/>
-  </behavior>
-  <behavior id="56">
-    <inPin id="152"/>
-    <outPin id="150"/>
-    <outPin id="157"/>
-    <outPin id="159"/>
-    <outPin id="161"/>
-    <outPin id="190"/>
-    <assignment xsi:type="datadictionary:Assignment" id="214" outputPin="150" inputPins="152">
-      <term xsi:type="datadictionary:TRUE" id="215"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#58"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#59"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#22"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#60"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#61"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#62"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
-    </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="216" outputPin="157" inputPins="152">
-      <term xsi:type="datadictionary:TRUE" id="217"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#58"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#59"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#22"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#60"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#61"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#62"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
-    </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="218" outputPin="159" inputPins="152">
-      <term xsi:type="datadictionary:TRUE" id="219"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#58"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#59"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#22"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#60"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#61"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#62"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
-    </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="220" outputPin="161" inputPins="152">
-      <term xsi:type="datadictionary:TRUE" id="221"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#58"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#59"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#22"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#60"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#61"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#62"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#163"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#164"/>
-    </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="222" outputPin="190" inputPins="152">
-      <term xsi:type="datadictionary:TRUE" id="223"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#58"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#59"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#22"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#60"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#61"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#62"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
-    </assignment>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="268" outputPin="150" inputPins="152"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="269" outputPin="157" inputPins="152"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="270" outputPin="159" inputPins="152"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="271" outputPin="161" inputPins="152"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="272" outputPin="190" inputPins="152"/>
   </behavior>
   <behavior id="83">
     <inPin id="168"/>
@@ -325,60 +260,58 @@
     <outPin id="175"/>
     <outPin id="179"/>
     <outPin id="181"/>
-    <assignment xsi:type="datadictionary:Assignment" id="238" outputPin="166" inputPins="168">
+    <assignment xsi:type="datadictionary:Assignment" id="238" outputPin="166" outputLabels="18 85 62 61 86 113" inputPins="168">
       <term xsi:type="datadictionary:TRUE" id="239"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#18"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#85"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#62"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#61"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#86"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
     </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="240" outputPin="175" inputPins="168">
+    <assignment xsi:type="datadictionary:Assignment" id="240" outputPin="175" outputLabels="18 85 62 61 86 113" inputPins="168">
       <term xsi:type="datadictionary:TRUE" id="241"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#18"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#85"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#62"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#61"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#86"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
     </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="242" outputPin="179" inputPins="168">
+    <assignment xsi:type="datadictionary:Assignment" id="242" outputPin="179" outputLabels="18 85 62 61 86 113 164 163" inputPins="168">
       <term xsi:type="datadictionary:TRUE" id="243"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#18"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#85"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#62"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#61"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#86"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#164"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#163"/>
     </assignment>
-    <assignment xsi:type="datadictionary:Assignment" id="244" outputPin="181" inputPins="168">
+    <assignment xsi:type="datadictionary:Assignment" id="244" outputPin="181" outputLabels="18 85 62 61 86 113 164 163" inputPins="168">
       <term xsi:type="datadictionary:TRUE" id="245"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#18"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#85"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#62"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#61"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#86"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#164"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#163"/>
     </assignment>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="280" outputPin="166" inputPins="168"/>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="281" outputPin="175" inputPins="168"/>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="282" outputPin="179" inputPins="168"/>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="283" outputPin="181" inputPins="168"/>
   </behavior>
-  <behavior id="71">
-    <inPin id="185"/>
-    <outPin id="183"/>
-    <assignment xsi:type="datadictionary:Assignment" id="224" outputPin="183" inputPins="185">
-      <term xsi:type="datadictionary:TRUE" id="225"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#18"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#73"/>
-      <outputLabels href="../../../../../../ExampleModels/bundles/org.dataflowanalysis.examplemodels/casestudies/TUHH-Models/anilallewar/anilallewar_12.datadictionary#113"/>
+  <behavior id="91">
+    <outPin id="111"/>
+    <assignment xsi:type="datadictionary:Assignment" id="246" outputPin="111" outputLabels="93 94 113">
+      <term xsi:type="datadictionary:TRUE" id="247"/>
     </assignment>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="273" outputPin="183" inputPins="185"/>
+  </behavior>
+  <behavior id="97">
+    <inPin id="165"/>
+    <outPin id="169"/>
+    <assignment xsi:type="datadictionary:Assignment" id="248" outputPin="169" outputLabels="99 94 100 113" inputPins="165">
+      <term xsi:type="datadictionary:TRUE" id="249"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="284" outputPin="169" inputPins="165"/>
+  </behavior>
+  <behavior id="101">
+    <inPin id="120"/>
+    <outPin id="127"/>
+    <outPin id="141"/>
+    <outPin id="155"/>
+    <outPin id="177"/>
+    <assignment xsi:type="datadictionary:Assignment" id="250" outputPin="127" outputLabels="18 103 60 22 50 113" inputPins="120">
+      <term xsi:type="datadictionary:TRUE" id="251"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="252" outputPin="141" outputLabels="18 103 60 22 50 113" inputPins="120">
+      <term xsi:type="datadictionary:TRUE" id="253"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="254" outputPin="155" outputLabels="18 103 60 22 50 113" inputPins="120">
+      <term xsi:type="datadictionary:TRUE" id="255"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="256" outputPin="177" outputLabels="18 103 60 22 50 113" inputPins="120">
+      <term xsi:type="datadictionary:TRUE" id="257"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="285" outputPin="127" inputPins="120"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="286" outputPin="141" inputPins="120"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="287" outputPin="155" inputPins="120"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="288" outputPin="177" inputPins="120"/>
   </behavior>
 </datadictionary:DataDictionary>

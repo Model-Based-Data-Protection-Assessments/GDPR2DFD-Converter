@@ -96,19 +96,21 @@ public class ModelRunnerTest {
         // For example, parse them, compare them, run some logic, etc.
 
         var data = data();
-        data.addAll(convertPalladio());
         data.stream().parallel().forEach(file -> {
+        
         	File dfdFile = file[0];
         	File ddFile = file[1];
         	String name = dfdFile.getName().substring(0, dfdFile.getName().length() - ".dataflowdiagram".length());
-        	String resultFolder = resultFolderBase + "\\" + name + "\\";
+        	String resultFolder = resultFolderBase + name + "\\";
         	
         	ResourceSet rs = new ResourceSetImpl();
         	rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put(Resource.Factory.Registry.DEFAULT_EXTENSION, new XMIResourceFactoryImpl());
     		rs.getPackageRegistry().put(dataflowdiagramPackage.eNS_URI, dataflowdiagramPackage.eINSTANCE);
         	Resource dfdResource = rs.getResource(URI.createFileURI(dfdFile.toString()), true);
+        	Resource ddResource = rs.getResource(URI.createFileURI(ddFile.toString()), true);
         	EcoreUtil.resolveAll(rs);
         	DataFlowDiagram dfd = (DataFlowDiagram) dfdResource.getContents().get(0);
+        	DataDictionary dd = (DataDictionary) ddResource.getContents().get(0);
         	
         	if (dfdFile.getParentFile().toString().contains("PCM")) {
         		resultFolder = dfdFile.getParentFile().toString() + "\\";
@@ -145,13 +147,14 @@ public class ModelRunnerTest {
 
         	assertEquals(dfd.getNodes().size(), laf.getProcessing().size());
         	
-        	GDPR2DFD gdpr2dfd = new GDPR2DFD(laf, trace);
+        	GDPR2DFD gdpr2dfd = new GDPR2DFD(laf, dd, trace);
         	gdpr2dfd.transform();
         	gdpr2dfd.save(resultFolder + name + "D2G2D.dataflowdiagram", resultFolder + name + "D2G2D.datadictionary", resultFolder + name + "D2G2D.tracemodel");        	
         	
         	
         	DataFlowDiagram dfd2 = gdpr2dfd.getDataFlowDiagram();
-        	DataDictionary dd2 = gdpr2dfd.getDataDictionary();    	
+        	DataDictionary dd2 = gdpr2dfd.getDataDictionary();   
+        	trace = gdpr2dfd.getGDPR2DFDTrace();
 
         	assertEquals(dfd2.getNodes().size(), laf.getProcessing().size());
         	
@@ -160,16 +163,17 @@ public class ModelRunnerTest {
         	dfd2gdpr2.save(resultFolder + name + "D2G2D2G.gdpr", resultFolder + name + "D2G2D2G.tracemodel");
         	
         	LegalAssessmentFacts laf2 = dfd2gdpr.getLegalAssessmentFacts();
+        	trace = dfd2gdpr.getDFD2GDPRTrace();
 
         	assertEquals(dfd.getNodes().size(), laf2.getProcessing().size());
         	
-        	GDPR2DFD gdpr2dfd2 = new GDPR2DFD(laf2, trace);
+        	GDPR2DFD gdpr2dfd2 = new GDPR2DFD(laf2, dd2, trace);
         	gdpr2dfd2.transform();
         	gdpr2dfd2.save(resultFolder + name + "D2G2D2G2D.dataflowdiagram", resultFolder + name + "D2G2D2G2D.datadictionary", resultFolder + name + "D2G2D2G2D.tracemodel");
         
         	assertEquals(gdpr2dfd2.getDataFlowDiagram().getNodes().size(), dfd.getNodes().size());
+        
         });
-
         // ... your actual test logic here ...
     }
 	

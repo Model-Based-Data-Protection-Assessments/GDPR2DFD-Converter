@@ -1,51 +1,121 @@
 <?xml version="1.0" encoding="ASCII"?>
-<tracemodel:TraceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" xmlns:tracemodel="http://www.example.org/tracemodel">
+<tracemodel:TraceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" xmlns:tracemodel="http://www.example.org/tracemodel">
   <nodeTraces>
-    <dfdNode xsi:type="dataflowdiagram:External" href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_7/anilallewar_7D2G2D.dataflowdiagram#2"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_7/anilallewar_7D2G.gdpr#2"/>
+    <dfdNode xsi:type="dataflowdiagram:External" href="anilallewar_7D2G2D.dataflowdiagram#2"/>
+    <gdprProcessing href="anilallewar_7D2G.gdpr#2"/>
   </nodeTraces>
   <nodeTraces>
-    <dfdNode xsi:type="dataflowdiagram:External" href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_7/anilallewar_7D2G2D.dataflowdiagram#3"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_7/anilallewar_7D2G.gdpr#3"/>
+    <dfdNode xsi:type="dataflowdiagram:External" href="anilallewar_7D2G2D.dataflowdiagram#3"/>
+    <gdprProcessing href="anilallewar_7D2G.gdpr#3"/>
   </nodeTraces>
   <nodeTraces>
-    <dfdNode xsi:type="dataflowdiagram:Process" href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_7/anilallewar_7D2G2D.dataflowdiagram#4"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_7/anilallewar_7D2G.gdpr#4"/>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="anilallewar_7D2G2D.dataflowdiagram#4"/>
+    <gdprProcessing href="anilallewar_7D2G.gdpr#4"/>
   </nodeTraces>
   <nodeTraces>
-    <dfdNode xsi:type="dataflowdiagram:Process" href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_7/anilallewar_7D2G2D.dataflowdiagram#5"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_7/anilallewar_7D2G.gdpr#5"/>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="anilallewar_7D2G2D.dataflowdiagram#5"/>
+    <gdprProcessing href="anilallewar_7D2G.gdpr#5"/>
   </nodeTraces>
   <nodeTraces>
-    <dfdNode xsi:type="dataflowdiagram:Process" href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_7/anilallewar_7D2G2D.dataflowdiagram#6"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_7/anilallewar_7D2G.gdpr#6"/>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="anilallewar_7D2G2D.dataflowdiagram#6"/>
+    <gdprProcessing href="anilallewar_7D2G.gdpr#6"/>
   </nodeTraces>
   <nodeTraces>
-    <dfdNode xsi:type="dataflowdiagram:Process" href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_7/anilallewar_7D2G2D.dataflowdiagram#7"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_7/anilallewar_7D2G.gdpr#7"/>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="anilallewar_7D2G2D.dataflowdiagram#7"/>
+    <gdprProcessing href="anilallewar_7D2G.gdpr#7"/>
   </nodeTraces>
   <nodeTraces>
-    <dfdNode xsi:type="dataflowdiagram:Process" href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_7/anilallewar_7D2G2D.dataflowdiagram#8"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_7/anilallewar_7D2G.gdpr#8"/>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="anilallewar_7D2G2D.dataflowdiagram#8"/>
+    <gdprProcessing href="anilallewar_7D2G.gdpr#8"/>
   </nodeTraces>
   <nodeTraces>
-    <dfdNode xsi:type="dataflowdiagram:Process" href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_7/anilallewar_7D2G2D.dataflowdiagram#9"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_7/anilallewar_7D2G.gdpr#9"/>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="anilallewar_7D2G2D.dataflowdiagram#9"/>
+    <gdprProcessing href="anilallewar_7D2G.gdpr#9"/>
   </nodeTraces>
   <nodeTraces>
-    <dfdNode xsi:type="dataflowdiagram:Process" href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_7/anilallewar_7D2G2D.dataflowdiagram#10"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_7/anilallewar_7D2G.gdpr#10"/>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="anilallewar_7D2G2D.dataflowdiagram#10"/>
+    <gdprProcessing href="anilallewar_7D2G.gdpr#10"/>
   </nodeTraces>
   <nodeTraces>
-    <dfdNode xsi:type="dataflowdiagram:Process" href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_7/anilallewar_7D2G2D.dataflowdiagram#11"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_7/anilallewar_7D2G.gdpr#11"/>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="anilallewar_7D2G2D.dataflowdiagram#11"/>
+    <gdprProcessing href="anilallewar_7D2G.gdpr#11"/>
   </nodeTraces>
   <nodeTraces>
-    <dfdNode xsi:type="dataflowdiagram:Process" href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_7/anilallewar_7D2G2D.dataflowdiagram#12"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_7/anilallewar_7D2G.gdpr#12"/>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="anilallewar_7D2G2D.dataflowdiagram#12"/>
+    <gdprProcessing href="anilallewar_7D2G.gdpr#12"/>
   </nodeTraces>
   <nodeTraces>
-    <dfdNode xsi:type="dataflowdiagram:Process" href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_7/anilallewar_7D2G2D.dataflowdiagram#13"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//anilallewar_7/anilallewar_7D2G.gdpr#13"/>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="anilallewar_7D2G2D.dataflowdiagram#13"/>
+    <gdprProcessing href="anilallewar_7D2G.gdpr#13"/>
   </nodeTraces>
+  <labelTraces>
+    <label href="anilallewar_7D2G2D.datadictionary#_ObTnoe1IEe-35cJzkApa3w"/>
+    <labelType href="anilallewar_7D2G2D.datadictionary#_ObU19-1IEe-35cJzkApa3w"/>
+    <gdprElement xsi:type="GDPR:Controller" href="anilallewar_7D2G.gdpr#_ObTnoe1IEe-35cJzkApa3w"/>
+  </labelTraces>
+  <labelTraces>
+    <label href="anilallewar_7D2G2D.datadictionary#_ObTnle1IEe-35cJzkApa3w"/>
+    <labelType href="anilallewar_7D2G2D.datadictionary#_ObU1-u1IEe-35cJzkApa3w"/>
+    <gdprElement xsi:type="GDPR:Purpose" href="anilallewar_7D2G.gdpr#_ObTnle1IEe-35cJzkApa3w"/>
+  </labelTraces>
+  <labelTraces>
+    <label href="anilallewar_7D2G2D.datadictionary#_ObTnl-1IEe-35cJzkApa3w"/>
+    <labelType href="anilallewar_7D2G2D.datadictionary#_ObU1-u1IEe-35cJzkApa3w"/>
+    <gdprElement xsi:type="GDPR:Purpose" href="anilallewar_7D2G.gdpr#_ObTnl-1IEe-35cJzkApa3w"/>
+  </labelTraces>
+  <labelTraces>
+    <label href="anilallewar_7D2G2D.datadictionary#_ObTnlO1IEe-35cJzkApa3w"/>
+    <labelType href="anilallewar_7D2G2D.datadictionary#_ObU16-1IEe-35cJzkApa3w"/>
+    <gdprElement xsi:type="GDPR:Data" href="anilallewar_7D2G.gdpr#_ObTnlO1IEe-35cJzkApa3w"/>
+  </labelTraces>
+  <labelTraces>
+    <label href="anilallewar_7D2G2D.datadictionary#_ObTnlu1IEe-35cJzkApa3w"/>
+    <labelType href="anilallewar_7D2G2D.datadictionary#_ObU16-1IEe-35cJzkApa3w"/>
+    <gdprElement xsi:type="GDPR:Data" href="anilallewar_7D2G.gdpr#_ObTnlu1IEe-35cJzkApa3w"/>
+  </labelTraces>
+  <flowTraces dataFlow="107">
+    <source href="anilallewar_7D2G.gdpr#2"/>
+    <dest href="anilallewar_7D2G.gdpr#4"/>
+    <data href="anilallewar_7D2G.gdpr#_ObTnlO1IEe-35cJzkApa3w"/>
+  </flowTraces>
+  <flowTraces dataFlow="112">
+    <source href="anilallewar_7D2G.gdpr#4"/>
+    <dest href="anilallewar_7D2G.gdpr#5"/>
+    <data href="anilallewar_7D2G.gdpr#_ObTnlO1IEe-35cJzkApa3w"/>
+  </flowTraces>
+  <flowTraces dataFlow="115">
+    <source href="anilallewar_7D2G.gdpr#4"/>
+    <dest href="anilallewar_7D2G.gdpr#6"/>
+    <data href="anilallewar_7D2G.gdpr#_ObTnlO1IEe-35cJzkApa3w"/>
+  </flowTraces>
+  <flowTraces dataFlow="129">
+    <source href="anilallewar_7D2G.gdpr#4"/>
+    <dest href="anilallewar_7D2G.gdpr#9"/>
+    <data href="anilallewar_7D2G.gdpr#_ObTnlO1IEe-35cJzkApa3w"/>
+  </flowTraces>
+  <flowTraces dataFlow="134">
+    <source href="anilallewar_7D2G.gdpr#4"/>
+    <dest href="anilallewar_7D2G.gdpr#10"/>
+    <data href="anilallewar_7D2G.gdpr#_ObTnlO1IEe-35cJzkApa3w"/>
+  </flowTraces>
+  <flowTraces dataFlow="143">
+    <source href="anilallewar_7D2G.gdpr#4"/>
+    <dest href="anilallewar_7D2G.gdpr#11"/>
+    <data href="anilallewar_7D2G.gdpr#_ObTnlO1IEe-35cJzkApa3w"/>
+  </flowTraces>
+  <flowTraces dataFlow="150">
+    <source href="anilallewar_7D2G.gdpr#4"/>
+    <dest href="anilallewar_7D2G.gdpr#12"/>
+    <data href="anilallewar_7D2G.gdpr#_ObTnlO1IEe-35cJzkApa3w"/>
+  </flowTraces>
+  <flowTraces dataFlow="168">
+    <source href="anilallewar_7D2G.gdpr#4"/>
+    <dest href="anilallewar_7D2G.gdpr#13"/>
+    <data href="anilallewar_7D2G.gdpr#_ObTnlO1IEe-35cJzkApa3w"/>
+  </flowTraces>
+  <flowTraces dataFlow="120">
+    <source href="anilallewar_7D2G.gdpr#7"/>
+    <dest href="anilallewar_7D2G.gdpr#8"/>
+    <data href="anilallewar_7D2G.gdpr#_ObTnlu1IEe-35cJzkApa3w"/>
+  </flowTraces>
 </tracemodel:TraceModel>

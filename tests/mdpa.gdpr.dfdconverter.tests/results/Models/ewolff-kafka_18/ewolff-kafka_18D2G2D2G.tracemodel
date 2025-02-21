@@ -1,39 +1,64 @@
 <?xml version="1.0" encoding="ASCII"?>
-<tracemodel:TraceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" xmlns:tracemodel="http://www.example.org/tracemodel">
+<tracemodel:TraceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" xmlns:tracemodel="http://www.example.org/tracemodel">
   <nodeTraces>
-    <dfdNode xsi:type="dataflowdiagram:External" href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_18/ewolff-kafka_18D2G2D.dataflowdiagram#2"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_18/ewolff-kafka_18D2G2D2G.gdpr#2"/>
+    <dfdNode xsi:type="dataflowdiagram:External" href="ewolff-kafka_18D2G2D.dataflowdiagram#2"/>
+    <gdprProcessing href="ewolff-kafka_18D2G2D2G.gdpr#_OZDk0O1IEe-35cJzkApa3w"/>
   </nodeTraces>
   <nodeTraces>
-    <dfdNode xsi:type="dataflowdiagram:Process" href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_18/ewolff-kafka_18D2G2D.dataflowdiagram#3"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_18/ewolff-kafka_18D2G2D2G.gdpr#3"/>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="ewolff-kafka_18D2G2D.dataflowdiagram#3"/>
+    <gdprProcessing href="ewolff-kafka_18D2G2D2G.gdpr#_OZDk0e1IEe-35cJzkApa3w"/>
   </nodeTraces>
   <nodeTraces>
-    <dfdNode xsi:type="dataflowdiagram:Process" href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_18/ewolff-kafka_18D2G2D.dataflowdiagram#4"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_18/ewolff-kafka_18D2G2D2G.gdpr#4"/>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="ewolff-kafka_18D2G2D.dataflowdiagram#4"/>
+    <gdprProcessing href="ewolff-kafka_18D2G2D2G.gdpr#_OZDk1O1IEe-35cJzkApa3w"/>
   </nodeTraces>
   <nodeTraces>
-    <dfdNode xsi:type="dataflowdiagram:Process" href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_18/ewolff-kafka_18D2G2D.dataflowdiagram#5"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_18/ewolff-kafka_18D2G2D2G.gdpr#5"/>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="ewolff-kafka_18D2G2D.dataflowdiagram#5"/>
+    <gdprProcessing href="ewolff-kafka_18D2G2D2G.gdpr#_OZDk7e1IEe-35cJzkApa3w"/>
   </nodeTraces>
   <nodeTraces>
-    <dfdNode xsi:type="dataflowdiagram:Process" href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_18/ewolff-kafka_18D2G2D.dataflowdiagram#6"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_18/ewolff-kafka_18D2G2D2G.gdpr#6"/>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="ewolff-kafka_18D2G2D.dataflowdiagram#6"/>
+    <gdprProcessing href="ewolff-kafka_18D2G2D2G.gdpr#_OZDk9u1IEe-35cJzkApa3w"/>
   </nodeTraces>
   <nodeTraces>
-    <dfdNode xsi:type="dataflowdiagram:Process" href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_18/ewolff-kafka_18D2G2D.dataflowdiagram#7"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_18/ewolff-kafka_18D2G2D2G.gdpr#7"/>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="ewolff-kafka_18D2G2D.dataflowdiagram#7"/>
+    <gdprProcessing href="ewolff-kafka_18D2G2D2G.gdpr#_OZTcke1IEe-35cJzkApa3w"/>
   </nodeTraces>
   <nodeTraces>
-    <dfdNode xsi:type="dataflowdiagram:Process" href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_18/ewolff-kafka_18D2G2D.dataflowdiagram#8"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_18/ewolff-kafka_18D2G2D2G.gdpr#8"/>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="ewolff-kafka_18D2G2D.dataflowdiagram#8"/>
+    <gdprProcessing href="ewolff-kafka_18D2G2D2G.gdpr#_OZUDfO1IEe-35cJzkApa3w"/>
   </nodeTraces>
   <nodeTraces>
-    <dfdNode xsi:type="dataflowdiagram:Process" href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_18/ewolff-kafka_18D2G2D.dataflowdiagram#9"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_18/ewolff-kafka_18D2G2D2G.gdpr#9"/>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="ewolff-kafka_18D2G2D.dataflowdiagram#9"/>
+    <gdprProcessing href="ewolff-kafka_18D2G2D2G.gdpr#_OZVRkO1IEe-35cJzkApa3w"/>
   </nodeTraces>
   <nodeTraces>
-    <dfdNode xsi:type="dataflowdiagram:Process" href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_18/ewolff-kafka_18D2G2D.dataflowdiagram#10"/>
-    <gdprProcessing href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//ewolff-kafka_18/ewolff-kafka_18D2G2D2G.gdpr#10"/>
+    <dfdNode xsi:type="dataflowdiagram:Process" href="ewolff-kafka_18D2G2D.dataflowdiagram#10"/>
+    <gdprProcessing href="ewolff-kafka_18D2G2D2G.gdpr#_OZVRle1IEe-35cJzkApa3w"/>
   </nodeTraces>
+  <labelTraces>
+    <label href="ewolff-kafka_18D2G2D.datadictionary#_OYpVM-1IEe-35cJzkApa3w"/>
+    <labelType href="ewolff-kafka_18D2G2D.datadictionary#_OYs_d-1IEe-35cJzkApa3w"/>
+    <gdprElement xsi:type="GDPR:Data" href="ewolff-kafka_18D2G2D2G.gdpr#_OYpVM-1IEe-35cJzkApa3w"/>
+  </labelTraces>
+  <labelTraces>
+    <label href="ewolff-kafka_18D2G2D.datadictionary#_OYpVOO1IEe-35cJzkApa3w"/>
+    <labelType href="ewolff-kafka_18D2G2D.datadictionary#_OYs_d-1IEe-35cJzkApa3w"/>
+    <gdprElement xsi:type="GDPR:Data" href="ewolff-kafka_18D2G2D2G.gdpr#_OYpVOO1IEe-35cJzkApa3w"/>
+  </labelTraces>
+  <labelTraces>
+    <label href="ewolff-kafka_18D2G2D.datadictionary#_OYpVQ-1IEe-35cJzkApa3w"/>
+    <labelType href="ewolff-kafka_18D2G2D.datadictionary#_OYs_gO1IEe-35cJzkApa3w"/>
+    <gdprElement xsi:type="GDPR:Controller" href="ewolff-kafka_18D2G2D2G.gdpr#_OYpVQ-1IEe-35cJzkApa3w"/>
+  </labelTraces>
+  <labelTraces>
+    <label href="ewolff-kafka_18D2G2D.datadictionary#_OYpVNO1IEe-35cJzkApa3w"/>
+    <labelType href="ewolff-kafka_18D2G2D.datadictionary#_OYs_gu1IEe-35cJzkApa3w"/>
+    <gdprElement xsi:type="GDPR:Purpose" href="ewolff-kafka_18D2G2D2G.gdpr#_OYpVNO1IEe-35cJzkApa3w"/>
+  </labelTraces>
+  <labelTraces>
+    <label href="ewolff-kafka_18D2G2D.datadictionary#_OYpVOe1IEe-35cJzkApa3w"/>
+    <labelType href="ewolff-kafka_18D2G2D.datadictionary#_OYs_gu1IEe-35cJzkApa3w"/>
+    <gdprElement xsi:type="GDPR:Purpose" href="ewolff-kafka_18D2G2D2G.gdpr#_OYpVOe1IEe-35cJzkApa3w"/>
+  </labelTraces>
 </tracemodel:TraceModel>

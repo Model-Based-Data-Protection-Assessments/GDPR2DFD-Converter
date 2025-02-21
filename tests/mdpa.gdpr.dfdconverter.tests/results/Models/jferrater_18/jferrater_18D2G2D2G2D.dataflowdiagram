@@ -1,43 +1,99 @@
 <?xml version="1.0" encoding="ASCII"?>
 <dataflowdiagram:DataFlowDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" id="0">
-  <nodes xsi:type="dataflowdiagram:Process" id="2" entityName="github_repository">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_18/jferrater_18D2G2D2G2D.datadictionary#_agfHjeCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_18/jferrater_18D2G2D2G2D.datadictionary#_agful-CNEe-LfM-jfeWyyA"/>
+  <flows id="_OUlUhu1IEe-35cJzkApa3w" sourceNode="2" destinationNode="4">
+    <destinationPin href="jferrater_18D2G2D2G2D.datadictionary#_OUlUhe1IEe-35cJzkApa3w"/>
+    <sourcePin href="jferrater_18D2G2D2G2D.datadictionary#_OUlUhO1IEe-35cJzkApa3w"/>
+  </flows>
+  <flows id="_OUlUi-1IEe-35cJzkApa3w" sourceNode="4" destinationNode="3">
+    <destinationPin href="jferrater_18D2G2D2G2D.datadictionary#_OUlUiu1IEe-35cJzkApa3w"/>
+    <sourcePin href="jferrater_18D2G2D2G2D.datadictionary#_OUlUie1IEe-35cJzkApa3w"/>
+  </flows>
+  <flows id="_OUlUl-1IEe-35cJzkApa3w" sourceNode="4" destinationNode="5">
+    <destinationPin href="jferrater_18D2G2D2G2D.datadictionary#_OUlUle1IEe-35cJzkApa3w"/>
+    <sourcePin href="jferrater_18D2G2D2G2D.datadictionary#_OUlUie1IEe-35cJzkApa3w"/>
+  </flows>
+  <flows id="_OUlUp-1IEe-35cJzkApa3w" sourceNode="4" destinationNode="6">
+    <destinationPin href="jferrater_18D2G2D2G2D.datadictionary#_OUlUnO1IEe-35cJzkApa3w"/>
+    <sourcePin href="jferrater_18D2G2D2G2D.datadictionary#_OUlUie1IEe-35cJzkApa3w"/>
+  </flows>
+  <flows id="_OUlUs-1IEe-35cJzkApa3w" sourceNode="4" destinationNode="7">
+    <destinationPin href="jferrater_18D2G2D2G2D.datadictionary#_OUlUsO1IEe-35cJzkApa3w"/>
+    <sourcePin href="jferrater_18D2G2D2G2D.datadictionary#_OUlUie1IEe-35cJzkApa3w"/>
+  </flows>
+  <flows id="_OUlU2-1IEe-35cJzkApa3w" sourceNode="4" destinationNode="8">
+    <destinationPin href="jferrater_18D2G2D2G2D.datadictionary#_OUlUvO1IEe-35cJzkApa3w"/>
+    <sourcePin href="jferrater_18D2G2D2G2D.datadictionary#_OUlUie1IEe-35cJzkApa3w"/>
+  </flows>
+  <flows id="_OUl7ge1IEe-35cJzkApa3w" sourceNode="4" destinationNode="9">
+    <destinationPin href="jferrater_18D2G2D2G2D.datadictionary#_OUl7gO1IEe-35cJzkApa3w"/>
+    <sourcePin href="jferrater_18D2G2D2G2D.datadictionary#_OUlUie1IEe-35cJzkApa3w"/>
+  </flows>
+  <flows id="_OUl7hu1IEe-35cJzkApa3w" sourceNode="4" destinationNode="10">
+    <destinationPin href="jferrater_18D2G2D2G2D.datadictionary#_OUl7hO1IEe-35cJzkApa3w"/>
+    <sourcePin href="jferrater_18D2G2D2G2D.datadictionary#_OUlUie1IEe-35cJzkApa3w"/>
+  </flows>
+  <flows id="_OUl7je1IEe-35cJzkApa3w" sourceNode="4" destinationNode="11">
+    <destinationPin href="jferrater_18D2G2D2G2D.datadictionary#_OUl7ie1IEe-35cJzkApa3w"/>
+    <sourcePin href="jferrater_18D2G2D2G2D.datadictionary#_OUlUie1IEe-35cJzkApa3w"/>
+  </flows>
+  <nodes xsi:type="dataflowdiagram:External" id="2" entityName="github_repository">
+    <behavior href="jferrater_18D2G2D2G2D.datadictionary#_OUktrO1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_18D2G2D2G2D.datadictionary#_OS4ETO1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_18D2G2D2G2D.datadictionary#_OS4rUe1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_18D2G2D2G2D.datadictionary#_OT_ere1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="3" entityName="discovery_service">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_18/jferrater_18D2G2D2G2D.datadictionary#_agfHj-CNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_18/jferrater_18D2G2D2G2D.datadictionary#_agful-CNEe-LfM-jfeWyyA"/>
+    <behavior href="jferrater_18D2G2D2G2D.datadictionary#_OUktsu1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_18D2G2D2G2D.datadictionary#_OS4ETO1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_18D2G2D2G2D.datadictionary#_OS4rUe1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_18D2G2D2G2D.datadictionary#_OT_etO1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="4" entityName="config_service">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_18/jferrater_18D2G2D2G2D.datadictionary#_agfHkeCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_18/jferrater_18D2G2D2G2D.datadictionary#_agful-CNEe-LfM-jfeWyyA"/>
+    <behavior href="jferrater_18D2G2D2G2D.datadictionary#_OUktuO1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_18D2G2D2G2D.datadictionary#_OS4ETO1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_18D2G2D2G2D.datadictionary#_OS4rUe1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_18D2G2D2G2D.datadictionary#_OT_etO1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="5" entityName="account_service">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_18/jferrater_18D2G2D2G2D.datadictionary#_agfHk-CNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_18/jferrater_18D2G2D2G2D.datadictionary#_agful-CNEe-LfM-jfeWyyA"/>
+    <behavior href="jferrater_18D2G2D2G2D.datadictionary#_OUktuu1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_18D2G2D2G2D.datadictionary#_OS4ETO1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_18D2G2D2G2D.datadictionary#_OS4rUe1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_18D2G2D2G2D.datadictionary#_OT_etO1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="6" entityName="customer_service">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_18/jferrater_18D2G2D2G2D.datadictionary#_agfHleCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_18/jferrater_18D2G2D2G2D.datadictionary#_agful-CNEe-LfM-jfeWyyA"/>
+    <behavior href="jferrater_18D2G2D2G2D.datadictionary#_OUktvO1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_18D2G2D2G2D.datadictionary#_OS4ETO1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_18D2G2D2G2D.datadictionary#_OS4rUe1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_18D2G2D2G2D.datadictionary#_OT_etO1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="7" entityName="store_service">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_18/jferrater_18D2G2D2G2D.datadictionary#_agfHl-CNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_18/jferrater_18D2G2D2G2D.datadictionary#_agful-CNEe-LfM-jfeWyyA"/>
+    <behavior href="jferrater_18D2G2D2G2D.datadictionary#_OUktvu1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_18D2G2D2G2D.datadictionary#_OS4ETO1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_18D2G2D2G2D.datadictionary#_OS4rUe1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_18D2G2D2G2D.datadictionary#_OT_etO1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="8" entityName="item_service">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_18/jferrater_18D2G2D2G2D.datadictionary#_agfHm-CNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_18/jferrater_18D2G2D2G2D.datadictionary#_agful-CNEe-LfM-jfeWyyA"/>
+    <behavior href="jferrater_18D2G2D2G2D.datadictionary#_OUktwe1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_18D2G2D2G2D.datadictionary#_OS4ETO1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_18D2G2D2G2D.datadictionary#_OS4rUe1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_18D2G2D2G2D.datadictionary#_OT_etO1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="9" entityName="price_service">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_18/jferrater_18D2G2D2G2D.datadictionary#_agfHnuCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_18/jferrater_18D2G2D2G2D.datadictionary#_agful-CNEe-LfM-jfeWyyA"/>
+    <behavior href="jferrater_18D2G2D2G2D.datadictionary#_OUktxe1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_18D2G2D2G2D.datadictionary#_OS4ETO1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_18D2G2D2G2D.datadictionary#_OS4rUe1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_18D2G2D2G2D.datadictionary#_OT_etO1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="10" entityName="foodtray_service">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_18/jferrater_18D2G2D2G2D.datadictionary#_agfHoOCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_18/jferrater_18D2G2D2G2D.datadictionary#_agful-CNEe-LfM-jfeWyyA"/>
+    <behavior href="jferrater_18D2G2D2G2D.datadictionary#_OUktyO1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_18D2G2D2G2D.datadictionary#_OS4ETO1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_18D2G2D2G2D.datadictionary#_OS4rUe1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_18D2G2D2G2D.datadictionary#_OT_etO1IEe-35cJzkApa3w"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="11" entityName="secret_manager">
-    <behavior href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_18/jferrater_18D2G2D2G2D.datadictionary#_agfHouCNEe-LfM-jfeWyyA"/>
-    <properties href="file:/C:/Users/Huell/Documents/Studium/HIWI/GDPR2DFD-Converter/tests/mdpa.gdpr.dfdconverter.tests/results/Models//jferrater_18/jferrater_18D2G2D2G2D.datadictionary#_agful-CNEe-LfM-jfeWyyA"/>
+    <behavior href="jferrater_18D2G2D2G2D.datadictionary#_OUkty-1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_18D2G2D2G2D.datadictionary#_OS4ETO1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_18D2G2D2G2D.datadictionary#_OS4rUe1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_18D2G2D2G2D.datadictionary#_OT_etO1IEe-35cJzkApa3w"/>
   </nodes>
 </dataflowdiagram:DataFlowDiagram>

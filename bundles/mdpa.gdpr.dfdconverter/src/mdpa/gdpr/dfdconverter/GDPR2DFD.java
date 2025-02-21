@@ -9,6 +9,7 @@ import org.eclipse.emf.ecore.resource.impl.ResourceImpl;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.xmi.XMLResource;
+import org.eclipse.emf.ecore.xmi.impl.URIHandlerImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMLResourceFactoryImpl;
 
@@ -146,13 +147,64 @@ public class GDPR2DFD {
 			ddResource = createAndAddResource(ddFile, new String[] {"datadictionary"} ,rs);
 			ddResource.getContents().add(dd);
 		}
+		if (!ddResource.getURI().toString().equals(URI.createFileURI(ddFile).toFileString())) {			
+
+			ddResource = createAndAddResource(ddFile, new String[] {"datadictionary"} ,rs);			
+			ddResource.getContents().add(dd);	
+			
+			dd = (DataDictionary) ddResource.getContents().get(0);
+
+			EcoreUtil.resolveAll(ddResource);
+			
+			
+			
+			Map<String, Pin> idToPinMap = new HashMap<>();
+			dd.getBehavior().stream().map(it -> {
+				List<Pin> pins = new ArrayList<>();
+				pins.addAll(it.getInPin());
+				pins.addAll(it.getOutPin());
+				return pins;
+			}).flatMap(it -> it.stream()).forEach(pin -> idToPinMap.put(pin.getId(), pin));
+			
+			List<Flow> newFlows = dfd.getFlows().stream().map(flow -> {
+				Flow newFlow = dfdFactory.createFlow();
+				newFlow.setId(flow.getId());
+				newFlow.setEntityName(flow.getEntityName());
+				newFlow.setDestinationNode(flow.getDestinationNode());
+				newFlow.setSourceNode(flow.getSourceNode());
+				
+				newFlow.setDestinationPin(idToPinMap.get(flow.getDestinationPin().getId()));
+				newFlow.setSourcePin(idToPinMap.get(flow.getSourcePin().getId()));
+				return newFlow;
+			}).toList();
+			
+			dfd.getFlows().removeAll(dfd.getFlows());
+			dfd.getFlows().addAll(newFlows);
+			
+			Map<String, Label> ifToLabelMap = new HashMap<>();
+			dd.getLabelTypes().forEach(labelType -> labelType.getLabel().forEach(label -> ifToLabelMap.put(label.getId(), label)));
+			
+			Map<String, Behavior> idToBehaviorMap = new HashMap<>();
+			dd.getBehavior().forEach(behavior -> idToBehaviorMap.put(behavior.getId(), behavior));
+			
+			dfd.getNodes().forEach(node -> {
+				node.setBehavior(idToBehaviorMap.get(node.getBehavior().getId()));
+				var newProperties = node.getProperties().stream().map(label -> ifToLabelMap.get(label.getId())).toList();
+				node.getProperties().removeAll(node.getProperties());
+				node.getProperties().addAll(newProperties);
+			});
+			
+			
+			
+		}
 		
 		dfdResource.getContents().add(dfd);		
 		outTraceResource.getContents().add(outTrace);
 		
+
+		saveResource(ddResource);
 		saveResource(outTraceResource);
 		saveResource(dfdResource);
-		saveResource(ddResource);
 	}
 	
 	/**
@@ -330,7 +382,7 @@ public class GDPR2DFD {
 			if (optNt.isPresent()) {
 				NodeTrace nt = optNt.get();
 				node = nt.getDfdNode();
-				dd.getBehavior().add(node.getBehavior());
+				if (dd.getBehavior().stream().noneMatch(behavior -> behavior.getId().equals(node.getBehavior().getId()))) dd.getBehavior().add(node.getBehavior());
 				outTrace.getNodeTraces().add(nt);
 			} else {
 				// Create
@@ -527,6 +579,7 @@ public class GDPR2DFD {
 //				node.getBehaviour().getAssignment().add(at.getAssignment());
 				outTrace.getAssignmentTraces().add(at);
 			} else {
+				if (processing.getFollowingProcessing().size() == 0) return;
 				if (processing.getInputData().contains(data)) {
 					if (!containsAssignment(node.getBehavior(), data.getEntityName(), data)) {
 						// the same data is set as input and output the labels are simply forwarded.

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="ASCII"?>
 <GDPR:LegalAssessmentFacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" id="0">
-  <processing xsi:type="GDPR:Usage" id="2" entityName="user" followingProcessing="4"/>
-  <processing xsi:type="GDPR:Usage" id="3" entityName="eureka" followingProcessing="4 9"/>
-  <processing xsi:type="GDPR:Usage" id="4" entityName="zuul" followingProcessing="2 7 6 8 9"/>
-  <processing xsi:type="GDPR:Usage" id="5" entityName="turbine" followingProcessing="3 9"/>
-  <processing xsi:type="GDPR:Usage" id="6" entityName="catalog" followingProcessing="3 9"/>
-  <processing xsi:type="GDPR:Usage" id="7" entityName="customer" followingProcessing="3 9"/>
-  <processing xsi:type="GDPR:Usage" id="8" entityName="order" followingProcessing="3 6 7 5 9"/>
-  <processing xsi:type="GDPR:Usage" id="9" entityName="secret_manager"/>
+  <processing xsi:type="GDPR:Usage" id="2" entityName="user" responsible="_OZitFu1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="3" entityName="eureka" responsible="_OZitFu1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="4" entityName="zuul" responsible="_OZitFu1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="5" entityName="turbine" responsible="_OZitFu1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="6" entityName="catalog" responsible="_OZitFu1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="7" entityName="customer" responsible="_OZitFu1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="8" entityName="order" responsible="_OZitFu1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="9" entityName="secret_manager" responsible="_OZitFu1IEe-35cJzkApa3w"/>
+  <involvedParties xsi:type="GDPR:Controller" id="_OZitFu1IEe-35cJzkApa3w"/>
 </GDPR:LegalAssessmentFacts>

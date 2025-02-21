@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="ASCII"?>
 <GDPR:LegalAssessmentFacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" id="0">
-  <processing xsi:type="GDPR:Usage" id="2" entityName="github_repository" followingProcessing="4"/>
-  <processing xsi:type="GDPR:Usage" id="3" entityName="user" followingProcessing="13"/>
-  <processing xsi:type="GDPR:Usage" id="4" entityName="config_server" followingProcessing="5 6 7 10 11 12 13"/>
-  <processing xsi:type="GDPR:Usage" id="5" entityName="discovery_server" followingProcessing="13"/>
-  <processing xsi:type="GDPR:Usage" id="6" entityName="tracing_server" followingProcessing="5"/>
-  <processing xsi:type="GDPR:Usage" id="7" entityName="admin_server" followingProcessing="5"/>
-  <processing xsi:type="GDPR:Usage" id="8" entityName="prometheus_server" followingProcessing="9"/>
-  <processing xsi:type="GDPR:Usage" id="9" entityName="grafana_server"/>
-  <processing xsi:type="GDPR:Usage" id="10" entityName="customers_service" followingProcessing="5 6 8"/>
-  <processing xsi:type="GDPR:Usage" id="11" entityName="vets_service" followingProcessing="5 6 8"/>
-  <processing xsi:type="GDPR:Usage" id="12" entityName="visits_service" followingProcessing="5 6 8"/>
-  <processing xsi:type="GDPR:Usage" id="13" entityName="api_gateway" followingProcessing="3 8 11 12 10 6"/>
-  <processing xsi:type="GDPR:Usage" id="14" entityName="auth_server" followingProcessing="4 5 6 7 8 9 10 11 12 13"/>
+  <processing xsi:type="GDPR:Collecting" id="2" entityName="github_repository" outputData="_Od3zYe1IEe-35cJzkApa3w" purpose="_Od3zYu1IEe-35cJzkApa3w" followingProcessing="4" responsible="_Od3zae1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="3" entityName="user" responsible="_Od3zae1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="4" entityName="config_server" inputData="_Od3zYe1IEe-35cJzkApa3w" purpose="_Od3zYu1IEe-35cJzkApa3w" followingProcessing="5 6 7 10 11 12 13" responsible="_Od3zae1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="5" entityName="discovery_server" inputData="_Od3zY-1IEe-35cJzkApa3w" purpose="_Od3zZO1IEe-35cJzkApa3w" responsible="_Od3zae1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="6" entityName="tracing_server" inputData="_Od3zY-1IEe-35cJzkApa3w" purpose="_Od3zZO1IEe-35cJzkApa3w" responsible="_Od3zae1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="7" entityName="admin_server" inputData="_Od3zY-1IEe-35cJzkApa3w" purpose="_Od3zZO1IEe-35cJzkApa3w" responsible="_Od3zae1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="8" entityName="prometheus_server" inputData="_Od3zY-1IEe-35cJzkApa3w" purpose="_Od3zZO1IEe-35cJzkApa3w" responsible="_Od3zae1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="9" entityName="grafana_server" inputData="_Od3zY-1IEe-35cJzkApa3w" purpose="_Od3zZO1IEe-35cJzkApa3w" responsible="_Od3zae1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="10" entityName="customers_service" inputData="_Od3zY-1IEe-35cJzkApa3w" purpose="_Od3zZO1IEe-35cJzkApa3w" responsible="_Od3zae1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="11" entityName="vets_service" inputData="_Od3zY-1IEe-35cJzkApa3w" purpose="_Od3zZO1IEe-35cJzkApa3w" responsible="_Od3zae1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="12" entityName="visits_service" inputData="_Od3zY-1IEe-35cJzkApa3w" purpose="_Od3zZO1IEe-35cJzkApa3w" responsible="_Od3zae1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Usage" id="13" entityName="api_gateway" inputData="_Od3zY-1IEe-35cJzkApa3w" purpose="_Od3zZO1IEe-35cJzkApa3w" responsible="_Od3zae1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Collecting" id="14" entityName="auth_server" outputData="_Od3zY-1IEe-35cJzkApa3w" purpose="_Od3zZO1IEe-35cJzkApa3w" followingProcessing="4 5 6 7 8 9 10 11 12 13" responsible="_Od3zae1IEe-35cJzkApa3w"/>
+  <purposes id="_Od3zYu1IEe-35cJzkApa3w"/>
+  <purposes id="_Od3zZO1IEe-35cJzkApa3w"/>
+  <data id="_Od3zYe1IEe-35cJzkApa3w"/>
+  <data id="_Od3zY-1IEe-35cJzkApa3w"/>
+  <involvedParties xsi:type="GDPR:Controller" id="_Od3zae1IEe-35cJzkApa3w"/>
 </GDPR:LegalAssessmentFacts>
