@@ -73,34 +73,29 @@
   <labelTypes id="94" entityName="MonitoringDashboard">
     <label id="95" entityName="Grafana"/>
   </labelTypes>
-  <labelTypes id="_UbSwsPE9Ee-L2P0tVZBdHA" entityName="ProcessingType">
-    <label id="_UbflAfE9Ee-L2P0tVZBdHA" entityName="Collecting"/>
-    <label id="_UbflAvE9Ee-L2P0tVZBdHA" entityName="Storing"/>
-    <label id="_UbflA_E9Ee-L2P0tVZBdHA" entityName="Usage"/>
-    <label id="_UbflBPE9Ee-L2P0tVZBdHA" entityName="Transferring"/>
+  <labelTypes id="_tZw-YfIXEe-7xa1ULUXTTw" entityName="ProcessingType">
+    <label id="_tZw-cfIXEe-7xa1ULUXTTw" entityName="Collecting"/>
+    <label id="_tZw-cvIXEe-7xa1ULUXTTw" entityName="Storing"/>
+    <label id="_tZw-c_IXEe-7xa1ULUXTTw" entityName="Usage"/>
+    <label id="_tZw-dPIXEe-7xa1ULUXTTw" entityName="Transferring"/>
   </labelTypes>
-  <labelTypes id="_UbSwsvE9Ee-L2P0tVZBdHA" entityName="Data">
-    <label id="_UaGd_fE9Ee-L2P0tVZBdHA"/>
-    <label id="_UaGeAvE9Ee-L2P0tVZBdHA"/>
-    <label id="_UaGd_fE9Ee-L2P0tVZBdHA"/>
-    <label id="_UaGeAvE9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_tZw-YvIXEe-7xa1ULUXTTw" entityName="Data">
+    <label id="_tZwXXfIXEe-7xa1ULUXTTw"/>
+    <label id="_tZwXX_IXEe-7xa1ULUXTTw"/>
   </labelTypes>
-  <labelTypes id="_UbSws_E9Ee-L2P0tVZBdHA" entityName="PersonalData"/>
-  <labelTypes id="_UbSwtPE9Ee-L2P0tVZBdHA" entityName="Obligation"/>
-  <labelTypes id="_UbSwtfE9Ee-L2P0tVZBdHA" entityName="Consent"/>
-  <labelTypes id="_UbSwtvE9Ee-L2P0tVZBdHA" entityName="Contract"/>
-  <labelTypes id="_UbSwuPE9Ee-L2P0tVZBdHA" entityName="PublicAuthority"/>
-  <labelTypes id="_UbSwvPE9Ee-L2P0tVZBdHA" entityName="NaturalPerson"/>
-  <labelTypes id="_UbSwv_E9Ee-L2P0tVZBdHA" entityName="Controller">
-    <label id="_UaHE-PE9Ee-L2P0tVZBdHA"/>
-    <label id="_UaHE-PE9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_tZw-Y_IXEe-7xa1ULUXTTw" entityName="PersonalData"/>
+  <labelTypes id="_tZw-ZPIXEe-7xa1ULUXTTw" entityName="Obligation"/>
+  <labelTypes id="_tZw-ZfIXEe-7xa1ULUXTTw" entityName="Consent"/>
+  <labelTypes id="_tZw-ZvIXEe-7xa1ULUXTTw" entityName="Contract"/>
+  <labelTypes id="_tZw-Z_IXEe-7xa1ULUXTTw" entityName="PublicAuthority"/>
+  <labelTypes id="_tZw-aPIXEe-7xa1ULUXTTw" entityName="NaturalPerson"/>
+  <labelTypes id="_tZw-afIXEe-7xa1ULUXTTw" entityName="Controller">
+    <label id="_tZwXYfIXEe-7xa1ULUXTTw"/>
   </labelTypes>
-  <labelTypes id="_UbSwwvE9Ee-L2P0tVZBdHA" entityName="ThirdParty"/>
-  <labelTypes id="_UbSwxvE9Ee-L2P0tVZBdHA" entityName="Purposes">
-    <label id="_UaGd_vE9Ee-L2P0tVZBdHA"/>
-    <label id="_UaGeA_E9Ee-L2P0tVZBdHA"/>
-    <label id="_UaGd_vE9Ee-L2P0tVZBdHA"/>
-    <label id="_UaGeA_E9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_tZw-avIXEe-7xa1ULUXTTw" entityName="ThirdParty"/>
+  <labelTypes id="_tZw-a_IXEe-7xa1ULUXTTw" entityName="Purposes">
+    <label id="_tZwXXvIXEe-7xa1ULUXTTw"/>
+    <label id="_tZwXYPIXEe-7xa1ULUXTTw"/>
   </labelTypes>
   <behavior id="16">
     <inPin id="106"/>
@@ -282,17 +277,4 @@
   <behavior id="91">
     <inPin id="114"/>
   </behavior>
-  <behavior id="_Uc3eAvE9Ee-L2P0tVZBdHA" entityName="github_repository Behavior"/>
-  <behavior id="_Uc3eBPE9Ee-L2P0tVZBdHA" entityName="user Behavior"/>
-  <behavior id="_Uc3eBvE9Ee-L2P0tVZBdHA" entityName="config_server Behavior"/>
-  <behavior id="_Uc3eCPE9Ee-L2P0tVZBdHA" entityName="discovery_server Behavior"/>
-  <behavior id="_Uc3eCvE9Ee-L2P0tVZBdHA" entityName="tracing_server Behavior"/>
-  <behavior id="_Uc3eDPE9Ee-L2P0tVZBdHA" entityName="admin_server Behavior"/>
-  <behavior id="_Uc3eDvE9Ee-L2P0tVZBdHA" entityName="prometheus_server Behavior"/>
-  <behavior id="_Uc3eEPE9Ee-L2P0tVZBdHA" entityName="grafana_server Behavior"/>
-  <behavior id="_Uc4FEfE9Ee-L2P0tVZBdHA" entityName="customers_service Behavior"/>
-  <behavior id="_Uc4FE_E9Ee-L2P0tVZBdHA" entityName="vets_service Behavior"/>
-  <behavior id="_Uc4FFfE9Ee-L2P0tVZBdHA" entityName="visits_service Behavior"/>
-  <behavior id="_Uc4FF_E9Ee-L2P0tVZBdHA" entityName="api_gateway Behavior"/>
-  <behavior id="_Uc4FGfE9Ee-L2P0tVZBdHA" entityName="logging_server Behavior"/>
 </datadictionary:DataDictionary>

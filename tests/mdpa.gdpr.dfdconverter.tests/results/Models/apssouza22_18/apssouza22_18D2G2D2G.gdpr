@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="ASCII"?>
 <GDPR:LegalAssessmentFacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" id="0">
-  <processing xsi:type="GDPR:Usage" id="_Un_wC_E9Ee-L2P0tVZBdHA" responsible="_UnzixvE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="_Un_wDPE9Ee-L2P0tVZBdHA" responsible="_UnzixvE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="_Un_wDfE9Ee-L2P0tVZBdHA" responsible="_UnzixvE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="_Un_wDvE9Ee-L2P0tVZBdHA" responsible="_UnzixvE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="_Un_wD_E9Ee-L2P0tVZBdHA" responsible="_UnzixvE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="_UoAXAPE9Ee-L2P0tVZBdHA" responsible="_UnzixvE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="_UoAXAfE9Ee-L2P0tVZBdHA" inputData="_UnzivvE9Ee-L2P0tVZBdHA" purpose="_Unziv_E9Ee-L2P0tVZBdHA" responsible="_UnzixvE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="_UoAXAvE9Ee-L2P0tVZBdHA" responsible="_UnzixvE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="_UoAXA_E9Ee-L2P0tVZBdHA" responsible="_UnzixvE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="_UoAXBvE9Ee-L2P0tVZBdHA" responsible="_UnzixvE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="_UoAXCPE9Ee-L2P0tVZBdHA" responsible="_UnzixvE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="_UoAXCvE9Ee-L2P0tVZBdHA" responsible="_UnzixvE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Collecting" id="_UoAXC_E9Ee-L2P0tVZBdHA" outputData="_UnzivvE9Ee-L2P0tVZBdHA" purpose="_Unziv_E9Ee-L2P0tVZBdHA" responsible="_UnzixvE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Collecting" id="_UoAXDPE9Ee-L2P0tVZBdHA" responsible="_UnzixvE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Collecting" id="_UoAXDfE9Ee-L2P0tVZBdHA" responsible="_UnzixvE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="_UoAXD_E9Ee-L2P0tVZBdHA" inputData="_UnzivvE9Ee-L2P0tVZBdHA" purpose="_Unziv_E9Ee-L2P0tVZBdHA" responsible="_UnzixvE9Ee-L2P0tVZBdHA"/>
-  <purposes id="_Unziv_E9Ee-L2P0tVZBdHA"/>
-  <data id="_UnzivvE9Ee-L2P0tVZBdHA"/>
-  <involvedParties xsi:type="GDPR:Controller" id="_UnzixvE9Ee-L2P0tVZBdHA"/>
+  <processing xsi:type="GDPR:Usage" id="2" entityName="user" responsible="_s_2Cl_IXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="3" entityName="logstash" inputData="_s_2CkfIXEe-7xa1ULUXTTw" purpose="_s_2CkvIXEe-7xa1ULUXTTw" responsible="_s_2Cl_IXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="4" entityName="config_server" inputData="_s_2CkfIXEe-7xa1ULUXTTw" outputData="_s_2CkfIXEe-7xa1ULUXTTw" purpose="_s_2CkvIXEe-7xa1ULUXTTw" followingProcessing="6 7 9 10 11 12 3 17" responsible="_s_2Cl_IXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="5" entityName="admin" inputData="_s_2CkfIXEe-7xa1ULUXTTw" outputData="_s_2CkfIXEe-7xa1ULUXTTw" purpose="_s_2CkvIXEe-7xa1ULUXTTw" followingProcessing="4 7 9 10 11 12 3 17" responsible="_s_2Cl_IXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="6" entityName="eureka_server" inputData="_s_2CkfIXEe-7xa1ULUXTTw" outputData="_s_2CkfIXEe-7xa1ULUXTTw" purpose="_s_2CkvIXEe-7xa1ULUXTTw" followingProcessing="5 11 3 17" responsible="_s_2Cl_IXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="7" entityName="user_service" inputData="_s_2CkfIXEe-7xa1ULUXTTw" outputData="_s_2CkfIXEe-7xa1ULUXTTw" purpose="_s_2CkvIXEe-7xa1ULUXTTw" followingProcessing="3 17" responsible="_s_2Cl_IXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="8" entityName="kafka" inputData="_s_2CkfIXEe-7xa1ULUXTTw" outputData="_s_2CkfIXEe-7xa1ULUXTTw" purpose="_s_2CkvIXEe-7xa1ULUXTTw" followingProcessing="9 17" responsible="_s_2Cl_IXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="9" entityName="mailer" inputData="_s_2CkfIXEe-7xa1ULUXTTw" outputData="_s_2CkfIXEe-7xa1ULUXTTw" purpose="_s_2CkvIXEe-7xa1ULUXTTw" followingProcessing="6 3 17" responsible="_s_2Cl_IXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="10" entityName="reminder" inputData="_s_2CkfIXEe-7xa1ULUXTTw" outputData="_s_2CkfIXEe-7xa1ULUXTTw" purpose="_s_2CkvIXEe-7xa1ULUXTTw" followingProcessing="6 8 3 17" responsible="_s_2Cl_IXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="11" entityName="api_gateway" inputData="_s_2CkfIXEe-7xa1ULUXTTw" outputData="_s_2CkfIXEe-7xa1ULUXTTw" purpose="_s_2CkvIXEe-7xa1ULUXTTw" followingProcessing="7 3 17" responsible="_s_2Cl_IXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="12" entityName="oauth" inputData="_s_2CkfIXEe-7xa1ULUXTTw" outputData="_s_2CkfIXEe-7xa1ULUXTTw" purpose="_s_2CkvIXEe-7xa1ULUXTTw" followingProcessing="7 6 3 17" responsible="_s_2Cl_IXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="13" entityName="proxy" responsible="_s_2Cl_IXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Collecting" id="14" entityName="zookeeper" outputData="_s_2CkfIXEe-7xa1ULUXTTw" purpose="_s_2CkvIXEe-7xa1ULUXTTw" followingProcessing="8 17" responsible="_s_2Cl_IXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Collecting" id="15" entityName="jmx_monitoring" outputData="_s_2Ck_IXEe-7xa1ULUXTTw" purpose="_s_2ClPIXEe-7xa1ULUXTTw" followingProcessing="17" responsible="_s_2Cl_IXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Collecting" id="16" entityName="todo_infra" outputData="_s_2ClfIXEe-7xa1ULUXTTw" purpose="_s_2ClvIXEe-7xa1ULUXTTw" followingProcessing="17" responsible="_s_2Cl_IXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="17" entityName="secret_manager" inputData="_s_2CkfIXEe-7xa1ULUXTTw _s_2Ck_IXEe-7xa1ULUXTTw _s_2ClfIXEe-7xa1ULUXTTw" purpose="_s_2CkvIXEe-7xa1ULUXTTw _s_2ClPIXEe-7xa1ULUXTTw _s_2ClvIXEe-7xa1ULUXTTw" responsible="_s_2Cl_IXEe-7xa1ULUXTTw"/>
+  <purposes id="_s_2CkvIXEe-7xa1ULUXTTw"/>
+  <purposes id="_s_2ClPIXEe-7xa1ULUXTTw"/>
+  <purposes id="_s_2ClvIXEe-7xa1ULUXTTw"/>
+  <data id="_s_2CkfIXEe-7xa1ULUXTTw"/>
+  <data id="_s_2Ck_IXEe-7xa1ULUXTTw"/>
+  <data id="_s_2ClfIXEe-7xa1ULUXTTw"/>
+  <involvedParties xsi:type="GDPR:Controller" id="_s_2Cl_IXEe-7xa1ULUXTTw"/>
 </GDPR:LegalAssessmentFacts>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="ASCII"?>
 <GDPR:LegalAssessmentFacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" id="0">
-  <processing xsi:type="GDPR:Usage" id="_u6ikwPE_Ee-vgNH_2N5YLA" responsible="_u3ROUfE_Ee-vgNH_2N5YLA"/>
-  <processing xsi:type="GDPR:Usage" id="_u7JowPE_Ee-vgNH_2N5YLA" responsible="_u3ROUfE_Ee-vgNH_2N5YLA"/>
-  <processing xsi:type="GDPR:Usage" id="_u7JowfE_Ee-vgNH_2N5YLA" responsible="_u3ROUfE_Ee-vgNH_2N5YLA"/>
-  <processing xsi:type="GDPR:Usage" id="_u7JowvE_Ee-vgNH_2N5YLA" responsible="_u3ROUfE_Ee-vgNH_2N5YLA"/>
-  <processing xsi:type="GDPR:Usage" id="_u7Jow_E_Ee-vgNH_2N5YLA" responsible="_u3ROUfE_Ee-vgNH_2N5YLA"/>
-  <processing xsi:type="GDPR:Usage" id="_u7JoxPE_Ee-vgNH_2N5YLA" responsible="_u3ROUfE_Ee-vgNH_2N5YLA"/>
-  <involvedParties xsi:type="GDPR:Controller" id="_u3ROUfE_Ee-vgNH_2N5YLA"/>
+  <processing xsi:type="GDPR:Usage" id="2" entityName="user" responsible="_tKIAL_IXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="3" entityName="apache_server" responsible="_tKIAL_IXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="4" entityName="content_service" responsible="_tKIAL_IXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="5" entityName="product_service" responsible="_tKIAL_IXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="6" entityName="cart_service" responsible="_tKIAL_IXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="7" entityName="logging_server" responsible="_tKIAL_IXEe-7xa1ULUXTTw"/>
+  <involvedParties xsi:type="GDPR:Controller" id="_tKIAL_IXEe-7xa1ULUXTTw"/>
 </GDPR:LegalAssessmentFacts>

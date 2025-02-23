@@ -4,9 +4,11 @@ import java.io.IOException;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.Set;
 
 import org.dataflowanalysis.dfd.datadictionary.DataDictionary;
 import org.dataflowanalysis.dfd.datadictionary.Label;
@@ -149,6 +151,7 @@ public class DFD2GDPR {
 	 */
 	public void transform() {
 		laf.setId(dfd.getId());
+		
 		if (inTrace == null) {
 			collectingNodes = identifyCollectingNodes();
 		}
@@ -409,25 +412,57 @@ public class DFD2GDPR {
 	}
 	
 	private void transformFlowsInOrder() {
-		if (collectingNodes == null) dfd.getFlows().forEach(flow -> transformFlow(flow));
+		if (inTrace != null) dfd.getFlows().forEach(flow -> transformFlow(flow));
 		else {
 			var startingNodes = collectingNodes;
-			List<Node> completedNodes = new ArrayList<>();
-			while (startingNodes != null && startingNodes.size() > 0) {
-				completedNodes.addAll(startingNodes);
-				List<Flow> flows = new ArrayList<>();
+			while (startingNodes != null && startingNodes.size() > 0) {		
 				List<Node> followingNodes = new ArrayList<>();
-				var test = startingNodes;
-				
-				dfd.getFlows().stream().filter(flow -> test.stream().filter(node -> mapNodeToAnalyzedIncomingFlows.get(node) == 0).anyMatch(node -> flow.getSourceNode().equals(node))).forEach(flow -> {
-					flows.add(flow);
-					Node destinationNode = flow.getDestinationNode();
-					mapNodeToAnalyzedIncomingFlows.put(destinationNode, mapNodeToAnalyzedIncomingFlows.get(destinationNode) - 1);
-					followingNodes.add(destinationNode);
-				});
-				System.out.println(flows);
-				flows.forEach(flow -> transformFlow(flow));
-				startingNodes = followingNodes.stream().filter(node -> !completedNodes.contains(node)).toList();
+				for (Node node : startingNodes) {
+					List<Flow> outgoingFlows = dfd.getFlows().stream().filter(flow -> flow.getSourceNode().equals(node)).toList();
+					var processing = mapNodeToProcessing.get(node);
+					if (!outgoingFlows.isEmpty()) {
+						processing.getOutputData().addAll(processing.getInputData().stream().filter(it -> !processing.getOutputData().contains(it)).toList());
+					}
+					
+					List<Processing> followingProcessing = outgoingFlows.stream().map(it -> mapNodeToProcessing.get(it.getDestinationNode())).toList(); 
+					List<Processing> followingProcessingWithNewInputData = new ArrayList<>();
+					
+					if (collectingNodes.contains(node) && processing.getOutputData().isEmpty()) {
+						var dataCollecting = gdprFactory.createData();
+						var purposeCollecting = gdprFactory.createPurpose();
+						laf.getData().add(dataCollecting);
+						laf.getPurposes().add(purposeCollecting);
+						
+						processing.getOutputData().add(dataCollecting);
+						processing.getPurpose().add(purposeCollecting);
+					}
+					
+					List<Data> outgoingData = processing.getOutputData();
+					outgoingFlows.forEach(flow -> {
+						outgoingData.forEach(data -> {
+							if (outTrace.getFlowTraces().stream().filter(flowTrace -> flowTrace.getDataFlow().equals(flow) && flowTrace.getData().equals(data)).count() == 0) {
+								var ft = TracemodelFactory.eINSTANCE.createFlowTrace();
+								ft.setDataFlow(flow);
+								ft.setDest(mapNodeToProcessing.get(flow.getDestinationNode()));
+								ft.setSource(mapNodeToProcessing.get(flow.getSourceNode()));
+								ft.setData(data);
+								outTrace.getFlowTraces().add(ft);
+							}
+						});
+					});
+					
+					followingProcessing.forEach(it -> {
+						if (!it.getInputData().containsAll(outgoingData)) {
+							followingProcessingWithNewInputData.add(it);
+							it.getInputData().addAll(outgoingData.stream().filter(data -> !it.getInputData().contains(data)).toList());
+							it.getPurpose().addAll(processing.getPurpose().stream().filter(purpose -> !it.getPurpose().contains(purpose)).toList());
+						}
+						
+						if (!processing.getFollowingProcessing().contains(it)) processing.getFollowingProcessing().add(it);
+					});					
+					followingNodes.addAll(outgoingFlows.stream().map(it -> it.getDestinationNode()).filter(it -> followingProcessingWithNewInputData.contains(mapNodeToProcessing.get(it))).toList());
+				}
+				startingNodes = followingNodes;
 			}
 		}
 	}
@@ -444,39 +479,26 @@ public class DFD2GDPR {
 		if (optFt.isPresent()) {
 			var ft = optFt.get();
 			outTrace.getFlowTraces().addAll(ft);
+			if (ft.isEmpty()) return;
+			else {
+				source = cloneProcessing(ft.get(0).getSource());
+				dest = cloneProcessing(ft.get(0).getDest());
+				System.out.println("test");
+			}
 		} else {
 			source = mapNodeToProcessing.get(flow.getSourceNode());
 			dest = mapNodeToProcessing.get(flow.getDestinationNode());
-			
-			var presentData = dest.getInputData().size() == 0 ? null : getDataFromPin(flow.getSourcePin());
-			if (presentData == null) {
-				if (collectingNodes.contains(flow.getSourceNode()) && source.getOutputData().size() == 0) {
-					//TODO datareference
-					var dataCollecting = gdprFactory.createData();
-					var purposeCollecting = gdprFactory.createPurpose();
-					laf.getData().add(dataCollecting);
-					laf.getPurposes().add(purposeCollecting);
-					
-					source.getOutputData().add(dataCollecting);
-					source.getPurpose().add(purposeCollecting);
-				} else if (source.getOutputData().size() == 0 && source.getInputData().size() > 0) {
-					source.getOutputData().addAll(source.getInputData());
-				}
-				dest.getInputData().addAll(source.getOutputData());
-				dest.getPurpose().addAll(source.getPurpose());
-				presentData = source.getOutputData().stream().findAny().orElseThrow();
-			}
 			
 			var ft = TracemodelFactory.eINSTANCE.createFlowTrace();
 			ft.setDataFlow(flow);
 			ft.setDest(dest);
 			ft.setSource(source);
-			ft.setData(presentData);
+			ft.setData(getDataFromPin(flow.getSourcePin()));
 			outTrace.getFlowTraces().add(ft);
 		}
 		
 		// this might not be necessary if a trace exists but checking does no harm.
-		//if(source.getFollowingProcessing().stream().noneMatch(p -> p.getId().equals(dest.getId())))source.getFollowingProcessing().add(dest);
+		if(!source.getFollowingProcessing().contains(dest)) source.getFollowingProcessing().add(dest);
 	}
 	
 	private Optional<List<FlowTrace>> flowTraceLookup(Flow flow) {
@@ -611,6 +633,8 @@ public class DFD2GDPR {
 		
 		if(processing.getResponsible() != null) clone.setResponsible((Role)cloneRole(processing.getResponsible()));
 		
+		clone.setEntityName(processing.getEntityName());
+		clone.setId(processing.getId());
 		processing.getInputData().forEach(data -> clone.getInputData().add(cloneData(data)));
 		processing.getOutputData().forEach(data -> clone.getOutputData().add(cloneData(data)));
 		processing.getOnTheBasisOf().forEach(legalBasis -> clone.getOnTheBasisOf().add(cloneLegalBasis(legalBasis)));

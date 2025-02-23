@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="ASCII"?>
 <GDPR:LegalAssessmentFacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" id="0">
-  <processing xsi:type="GDPR:Usage" id="2" entityName="user" responsible="_UtGScvE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Collecting" id="3" entityName="admin_dashboard" outputData="_UtGSbfE9Ee-L2P0tVZBdHA" purpose="_UtGSbvE9Ee-L2P0tVZBdHA" responsible="_UtGScvE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="4" entityName="eureka_server" inputData="_UtGSbfE9Ee-L2P0tVZBdHA" purpose="_UtGSbvE9Ee-L2P0tVZBdHA" responsible="_UtGScvE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="5" entityName="rabbitmq" inputData="_UtGSbfE9Ee-L2P0tVZBdHA" purpose="_UtGSbvE9Ee-L2P0tVZBdHA" responsible="_UtGScvE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="6" entityName="config_server" inputData="_UtGSbfE9Ee-L2P0tVZBdHA" purpose="_UtGSbvE9Ee-L2P0tVZBdHA" responsible="_UtGScvE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="7" entityName="hystrix_dashboard" inputData="_UtGSbfE9Ee-L2P0tVZBdHA" purpose="_UtGSbvE9Ee-L2P0tVZBdHA" responsible="_UtGScvE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="8" entityName="service_a" inputData="_UtGSbfE9Ee-L2P0tVZBdHA" purpose="_UtGSbvE9Ee-L2P0tVZBdHA" responsible="_UtGScvE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="9" entityName="service_b" inputData="_UtGSbfE9Ee-L2P0tVZBdHA" purpose="_UtGSbvE9Ee-L2P0tVZBdHA" responsible="_UtGScvE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="10" entityName="zuul" inputData="_UtGSbfE9Ee-L2P0tVZBdHA" purpose="_UtGSbvE9Ee-L2P0tVZBdHA" responsible="_UtGScvE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="11" entityName="zipkin" responsible="_UtGScvE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Collecting" id="12" entityName="logging_server" responsible="_UtGScvE9Ee-L2P0tVZBdHA"/>
-  <purposes id="_UtGSbvE9Ee-L2P0tVZBdHA"/>
-  <data id="_UtGSbfE9Ee-L2P0tVZBdHA"/>
-  <involvedParties xsi:type="GDPR:Controller" id="_UtGScvE9Ee-L2P0tVZBdHA"/>
+  <processing xsi:type="GDPR:Usage" id="2" entityName="user" inputData="_tluWwPIXEe-7xa1ULUXTTw _tluWwvIXEe-7xa1ULUXTTw" outputData="_tluWwPIXEe-7xa1ULUXTTw _tluWwvIXEe-7xa1ULUXTTw" purpose="_tluWwfIXEe-7xa1ULUXTTw _tluWw_IXEe-7xa1ULUXTTw" followingProcessing="10" responsible="_tluWxPIXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Collecting" id="3" entityName="admin_dashboard" outputData="_tluWwPIXEe-7xa1ULUXTTw" purpose="_tluWwfIXEe-7xa1ULUXTTw" followingProcessing="6 4 7 8 9 5 10" responsible="_tluWxPIXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="4" entityName="eureka_server" inputData="_tluWwPIXEe-7xa1ULUXTTw _tluWwvIXEe-7xa1ULUXTTw" outputData="_tluWwPIXEe-7xa1ULUXTTw _tluWwvIXEe-7xa1ULUXTTw" purpose="_tluWwfIXEe-7xa1ULUXTTw _tluWw_IXEe-7xa1ULUXTTw" followingProcessing="10" responsible="_tluWxPIXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="5" entityName="rabbitmq" inputData="_tluWwPIXEe-7xa1ULUXTTw _tluWwvIXEe-7xa1ULUXTTw" outputData="_tluWwPIXEe-7xa1ULUXTTw _tluWwvIXEe-7xa1ULUXTTw" purpose="_tluWwfIXEe-7xa1ULUXTTw _tluWw_IXEe-7xa1ULUXTTw" followingProcessing="11" responsible="_tluWxPIXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="6" entityName="config_server" inputData="_tluWwPIXEe-7xa1ULUXTTw _tluWwvIXEe-7xa1ULUXTTw" outputData="_tluWwPIXEe-7xa1ULUXTTw _tluWwvIXEe-7xa1ULUXTTw" purpose="_tluWwfIXEe-7xa1ULUXTTw _tluWw_IXEe-7xa1ULUXTTw" followingProcessing="4 5 8 9" responsible="_tluWxPIXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="7" entityName="hystrix_dashboard" inputData="_tluWwPIXEe-7xa1ULUXTTw _tluWwvIXEe-7xa1ULUXTTw" outputData="_tluWwPIXEe-7xa1ULUXTTw _tluWwvIXEe-7xa1ULUXTTw" purpose="_tluWwfIXEe-7xa1ULUXTTw _tluWw_IXEe-7xa1ULUXTTw" followingProcessing="4" responsible="_tluWxPIXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="8" entityName="service_a" inputData="_tluWwPIXEe-7xa1ULUXTTw _tluWwvIXEe-7xa1ULUXTTw" outputData="_tluWwPIXEe-7xa1ULUXTTw _tluWwvIXEe-7xa1ULUXTTw" purpose="_tluWwfIXEe-7xa1ULUXTTw _tluWw_IXEe-7xa1ULUXTTw" followingProcessing="5 4 7 9 11" responsible="_tluWxPIXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="9" entityName="service_b" inputData="_tluWwPIXEe-7xa1ULUXTTw _tluWwvIXEe-7xa1ULUXTTw" outputData="_tluWwPIXEe-7xa1ULUXTTw _tluWwvIXEe-7xa1ULUXTTw" purpose="_tluWwfIXEe-7xa1ULUXTTw _tluWw_IXEe-7xa1ULUXTTw" followingProcessing="5 4 11 7" responsible="_tluWxPIXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="10" entityName="zuul" inputData="_tluWwPIXEe-7xa1ULUXTTw _tluWwvIXEe-7xa1ULUXTTw" outputData="_tluWwPIXEe-7xa1ULUXTTw _tluWwvIXEe-7xa1ULUXTTw" purpose="_tluWwfIXEe-7xa1ULUXTTw _tluWw_IXEe-7xa1ULUXTTw" followingProcessing="2 8 5 11 6" responsible="_tluWxPIXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="11" entityName="zipkin" inputData="_tluWwPIXEe-7xa1ULUXTTw _tluWwvIXEe-7xa1ULUXTTw" purpose="_tluWwfIXEe-7xa1ULUXTTw _tluWw_IXEe-7xa1ULUXTTw" responsible="_tluWxPIXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Collecting" id="12" entityName="logging_server" outputData="_tluWwvIXEe-7xa1ULUXTTw" purpose="_tluWw_IXEe-7xa1ULUXTTw" followingProcessing="7" responsible="_tluWxPIXEe-7xa1ULUXTTw"/>
+  <purposes id="_tluWwfIXEe-7xa1ULUXTTw"/>
+  <purposes id="_tluWw_IXEe-7xa1ULUXTTw"/>
+  <data id="_tluWwPIXEe-7xa1ULUXTTw"/>
+  <data id="_tluWwvIXEe-7xa1ULUXTTw"/>
+  <involvedParties xsi:type="GDPR:Controller" id="_tluWxPIXEe-7xa1ULUXTTw"/>
 </GDPR:LegalAssessmentFacts>

@@ -20,30 +20,27 @@
   <labelTypes id="22" entityName="WebServer">
     <label id="23" entityName="Apachehttpd"/>
   </labelTypes>
-  <labelTypes id="_UbSw0vE9Ee-L2P0tVZBdHA" entityName="ProcessingType">
-    <label id="_UbgMMPE9Ee-L2P0tVZBdHA" entityName="Collecting"/>
-    <label id="_UbgMMvE9Ee-L2P0tVZBdHA" entityName="Storing"/>
-    <label id="_UbgMM_E9Ee-L2P0tVZBdHA" entityName="Usage"/>
-    <label id="_UbgMNPE9Ee-L2P0tVZBdHA" entityName="Transferring"/>
+  <labelTypes id="_tLVg0fIXEe-7xa1ULUXTTw" entityName="ProcessingType">
+    <label id="_tLVg3_IXEe-7xa1ULUXTTw" entityName="Collecting"/>
+    <label id="_tLVg4PIXEe-7xa1ULUXTTw" entityName="Storing"/>
+    <label id="_tLVg4fIXEe-7xa1ULUXTTw" entityName="Usage"/>
+    <label id="_tLVg4vIXEe-7xa1ULUXTTw" entityName="Transferring"/>
   </labelTypes>
-  <labelTypes id="_UbSw1PE9Ee-L2P0tVZBdHA" entityName="Data">
-    <label id="_UYy2WPE9Ee-L2P0tVZBdHA"/>
-    <label id="_UYy2WPE9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_tLVg0vIXEe-7xa1ULUXTTw" entityName="Data">
+    <label id="_tLU6CPIXEe-7xa1ULUXTTw"/>
   </labelTypes>
-  <labelTypes id="_UbSw1vE9Ee-L2P0tVZBdHA" entityName="PersonalData"/>
-  <labelTypes id="_UbSw2vE9Ee-L2P0tVZBdHA" entityName="Obligation"/>
-  <labelTypes id="_UbSw2_E9Ee-L2P0tVZBdHA" entityName="Consent"/>
-  <labelTypes id="_UbSw3_E9Ee-L2P0tVZBdHA" entityName="Contract"/>
-  <labelTypes id="_UbSw4_E9Ee-L2P0tVZBdHA" entityName="PublicAuthority"/>
-  <labelTypes id="_UbSw5_E9Ee-L2P0tVZBdHA" entityName="NaturalPerson"/>
-  <labelTypes id="_UbTXxPE9Ee-L2P0tVZBdHA" entityName="Controller">
-    <label id="_UY6LFfE9Ee-L2P0tVZBdHA"/>
-    <label id="_UY6LFfE9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_tLVg0_IXEe-7xa1ULUXTTw" entityName="PersonalData"/>
+  <labelTypes id="_tLVg1PIXEe-7xa1ULUXTTw" entityName="Obligation"/>
+  <labelTypes id="_tLVg1fIXEe-7xa1ULUXTTw" entityName="Consent"/>
+  <labelTypes id="_tLVg1vIXEe-7xa1ULUXTTw" entityName="Contract"/>
+  <labelTypes id="_tLVg1_IXEe-7xa1ULUXTTw" entityName="PublicAuthority"/>
+  <labelTypes id="_tLVg2PIXEe-7xa1ULUXTTw" entityName="NaturalPerson"/>
+  <labelTypes id="_tLVg2fIXEe-7xa1ULUXTTw" entityName="Controller">
+    <label id="_tLU6CvIXEe-7xa1ULUXTTw"/>
   </labelTypes>
-  <labelTypes id="_UbTXy_E9Ee-L2P0tVZBdHA" entityName="ThirdParty"/>
-  <labelTypes id="_UbTX0_E9Ee-L2P0tVZBdHA" entityName="Purposes">
-    <label id="_UY0EifE9Ee-L2P0tVZBdHA"/>
-    <label id="_UY0EifE9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_tLVg2vIXEe-7xa1ULUXTTw" entityName="ThirdParty"/>
+  <labelTypes id="_tLVg2_IXEe-7xa1ULUXTTw" entityName="Purposes">
+    <label id="_tLU6CfIXEe-7xa1ULUXTTw"/>
   </labelTypes>
   <behavior id="9">
     <inPin id="51"/>
@@ -108,10 +105,4 @@
       <term xsi:type="datadictionary:TRUE" id="81"/>
     </assignment>
   </behavior>
-  <behavior id="_UcttCfE9Ee-L2P0tVZBdHA" entityName="user Behavior"/>
-  <behavior id="_UcttDPE9Ee-L2P0tVZBdHA" entityName="apache_server Behavior"/>
-  <behavior id="_UcttDvE9Ee-L2P0tVZBdHA" entityName="content_service Behavior"/>
-  <behavior id="_UcttEPE9Ee-L2P0tVZBdHA" entityName="product_service Behavior"/>
-  <behavior id="_UcttEvE9Ee-L2P0tVZBdHA" entityName="cart_service Behavior"/>
-  <behavior id="_UcttFPE9Ee-L2P0tVZBdHA" entityName="auth_server Behavior"/>
 </datadictionary:DataDictionary>

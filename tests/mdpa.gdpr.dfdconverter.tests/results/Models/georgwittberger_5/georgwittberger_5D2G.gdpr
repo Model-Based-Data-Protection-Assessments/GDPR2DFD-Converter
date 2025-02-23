@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="ASCII"?>
 <GDPR:LegalAssessmentFacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" id="0">
-  <processing xsi:type="GDPR:Usage" id="2" entityName="user" responsible="_UeZvGfE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="3" entityName="apache_server" inputData="_UeZvEPE9Ee-L2P0tVZBdHA" purpose="_UeZvEfE9Ee-L2P0tVZBdHA" responsible="_UeZvGfE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="4" entityName="content_service" inputData="_UeZvEPE9Ee-L2P0tVZBdHA" purpose="_UeZvEfE9Ee-L2P0tVZBdHA" responsible="_UeZvGfE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="5" entityName="product_service" inputData="_UeZvEPE9Ee-L2P0tVZBdHA" purpose="_UeZvEfE9Ee-L2P0tVZBdHA" responsible="_UeZvGfE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="6" entityName="cart_service" inputData="_UeZvEPE9Ee-L2P0tVZBdHA" purpose="_UeZvEfE9Ee-L2P0tVZBdHA" responsible="_UeZvGfE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Collecting" id="7" entityName="auth_server" outputData="_UeZvEPE9Ee-L2P0tVZBdHA" purpose="_UeZvEfE9Ee-L2P0tVZBdHA" responsible="_UeZvGfE9Ee-L2P0tVZBdHA"/>
-  <purposes id="_UeZvEfE9Ee-L2P0tVZBdHA"/>
-  <data id="_UeZvEPE9Ee-L2P0tVZBdHA"/>
-  <involvedParties xsi:type="GDPR:Controller" id="_UeZvGfE9Ee-L2P0tVZBdHA"/>
+  <processing xsi:type="GDPR:Usage" id="2" entityName="user" inputData="_tKVbR_IXEe-7xa1ULUXTTw" outputData="_tKVbR_IXEe-7xa1ULUXTTw" purpose="_tKVbSPIXEe-7xa1ULUXTTw" followingProcessing="3" responsible="_tKVbSfIXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="3" entityName="apache_server" inputData="_tKVbR_IXEe-7xa1ULUXTTw" outputData="_tKVbR_IXEe-7xa1ULUXTTw" purpose="_tKVbSPIXEe-7xa1ULUXTTw" followingProcessing="2 6 5 4" responsible="_tKVbSfIXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="4" entityName="content_service" inputData="_tKVbR_IXEe-7xa1ULUXTTw" purpose="_tKVbSPIXEe-7xa1ULUXTTw" responsible="_tKVbSfIXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="5" entityName="product_service" inputData="_tKVbR_IXEe-7xa1ULUXTTw" purpose="_tKVbSPIXEe-7xa1ULUXTTw" responsible="_tKVbSfIXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="6" entityName="cart_service" inputData="_tKVbR_IXEe-7xa1ULUXTTw" outputData="_tKVbR_IXEe-7xa1ULUXTTw" purpose="_tKVbSPIXEe-7xa1ULUXTTw" followingProcessing="5" responsible="_tKVbSfIXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Collecting" id="7" entityName="auth_server" outputData="_tKVbR_IXEe-7xa1ULUXTTw" purpose="_tKVbSPIXEe-7xa1ULUXTTw" followingProcessing="3 4 5 6" responsible="_tKVbSfIXEe-7xa1ULUXTTw"/>
+  <purposes id="_tKVbSPIXEe-7xa1ULUXTTw"/>
+  <data id="_tKVbR_IXEe-7xa1ULUXTTw"/>
+  <involvedParties xsi:type="GDPR:Controller" id="_tKVbSfIXEe-7xa1ULUXTTw"/>
 </GDPR:LegalAssessmentFacts>

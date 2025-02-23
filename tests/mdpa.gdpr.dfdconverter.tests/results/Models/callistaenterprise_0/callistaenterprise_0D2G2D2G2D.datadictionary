@@ -96,34 +96,29 @@
   <labelTypes id="139" entityName="Protocol">
     <label id="140" entityName="HTTPS"/>
   </labelTypes>
-  <labelTypes id="_Uu8shvE9Ee-L2P0tVZBdHA" entityName="ProcessingType">
-    <label id="_Uu8snPE9Ee-L2P0tVZBdHA" entityName="Collecting"/>
-    <label id="_Uu8snvE9Ee-L2P0tVZBdHA" entityName="Storing"/>
-    <label id="_Uu8sn_E9Ee-L2P0tVZBdHA" entityName="Usage"/>
-    <label id="_Uu8soPE9Ee-L2P0tVZBdHA" entityName="Transferring"/>
+  <labelTypes id="_tEZyYfIXEe-7xa1ULUXTTw" entityName="ProcessingType">
+    <label id="_tEZycfIXEe-7xa1ULUXTTw" entityName="Collecting"/>
+    <label id="_tEZycvIXEe-7xa1ULUXTTw" entityName="Storing"/>
+    <label id="_tEZyc_IXEe-7xa1ULUXTTw" entityName="Usage"/>
+    <label id="_tEZydPIXEe-7xa1ULUXTTw" entityName="Transferring"/>
   </labelTypes>
-  <labelTypes id="_Uu8sh_E9Ee-L2P0tVZBdHA" entityName="Data">
-    <label id="_Uu63ZfE9Ee-L2P0tVZBdHA"/>
-    <label id="_Uu63Z_E9Ee-L2P0tVZBdHA"/>
-    <label id="_Uu63ZfE9Ee-L2P0tVZBdHA"/>
-    <label id="_Uu63Z_E9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_tEZyYvIXEe-7xa1ULUXTTw" entityName="Data">
+    <label id="_tEYkUvIXEe-7xa1ULUXTTw"/>
+    <label id="_tEYkVPIXEe-7xa1ULUXTTw"/>
   </labelTypes>
-  <labelTypes id="_Uu8siPE9Ee-L2P0tVZBdHA" entityName="PersonalData"/>
-  <labelTypes id="_Uu8sivE9Ee-L2P0tVZBdHA" entityName="Obligation"/>
-  <labelTypes id="_Uu8si_E9Ee-L2P0tVZBdHA" entityName="Consent"/>
-  <labelTypes id="_Uu8sjfE9Ee-L2P0tVZBdHA" entityName="Contract"/>
-  <labelTypes id="_Uu8sjvE9Ee-L2P0tVZBdHA" entityName="PublicAuthority"/>
-  <labelTypes id="_Uu8sj_E9Ee-L2P0tVZBdHA" entityName="NaturalPerson"/>
-  <labelTypes id="_Uu8skfE9Ee-L2P0tVZBdHA" entityName="Controller">
-    <label id="_Uu63a_E9Ee-L2P0tVZBdHA"/>
-    <label id="_Uu63a_E9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_tEZyY_IXEe-7xa1ULUXTTw" entityName="PersonalData"/>
+  <labelTypes id="_tEZyZPIXEe-7xa1ULUXTTw" entityName="Obligation"/>
+  <labelTypes id="_tEZyZfIXEe-7xa1ULUXTTw" entityName="Consent"/>
+  <labelTypes id="_tEZyZvIXEe-7xa1ULUXTTw" entityName="Contract"/>
+  <labelTypes id="_tEZyZ_IXEe-7xa1ULUXTTw" entityName="PublicAuthority"/>
+  <labelTypes id="_tEZyaPIXEe-7xa1ULUXTTw" entityName="NaturalPerson"/>
+  <labelTypes id="_tEZyafIXEe-7xa1ULUXTTw" entityName="Controller">
+    <label id="_tEYkVvIXEe-7xa1ULUXTTw"/>
   </labelTypes>
-  <labelTypes id="_Uu8sk_E9Ee-L2P0tVZBdHA" entityName="ThirdParty"/>
-  <labelTypes id="_Uu8slfE9Ee-L2P0tVZBdHA" entityName="Purposes">
-    <label id="_Uu63ZvE9Ee-L2P0tVZBdHA"/>
-    <label id="_Uu63aPE9Ee-L2P0tVZBdHA"/>
-    <label id="_Uu63ZvE9Ee-L2P0tVZBdHA"/>
-    <label id="_Uu63aPE9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_tEZyavIXEe-7xa1ULUXTTw" entityName="ThirdParty"/>
+  <labelTypes id="_tEZya_IXEe-7xa1ULUXTTw" entityName="Purposes">
+    <label id="_tEYkU_IXEe-7xa1ULUXTTw"/>
+    <label id="_tEYkVfIXEe-7xa1ULUXTTw"/>
   </labelTypes>
   <behavior id="20">
     <inPin id="161"/>
@@ -381,21 +376,4 @@
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="351" outputPin="167" inputPins="164"/>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="352" outputPin="216" inputPins="164"/>
   </behavior>
-  <behavior id="_UvA98vE9Ee-L2P0tVZBdHA" entityName="github_repository Behavior"/>
-  <behavior id="_UvBlAfE9Ee-L2P0tVZBdHA" entityName="user Behavior"/>
-  <behavior id="_UvBlA_E9Ee-L2P0tVZBdHA" entityName="elasticsearch Behavior"/>
-  <behavior id="_UvBlBfE9Ee-L2P0tVZBdHA" entityName="kibana Behavior"/>
-  <behavior id="_UvBlB_E9Ee-L2P0tVZBdHA" entityName="logstash Behavior"/>
-  <behavior id="_UvBlCfE9Ee-L2P0tVZBdHA" entityName="rabbitmq Behavior"/>
-  <behavior id="_UvBlC_E9Ee-L2P0tVZBdHA" entityName="discovery_server Behavior"/>
-  <behavior id="_UvBlDfE9Ee-L2P0tVZBdHA" entityName="config_server Behavior"/>
-  <behavior id="_UvBlD_E9Ee-L2P0tVZBdHA" entityName="auth_server Behavior"/>
-  <behavior id="_UvBlEfE9Ee-L2P0tVZBdHA" entityName="monitor_dashboard Behavior"/>
-  <behavior id="_UvBlE_E9Ee-L2P0tVZBdHA" entityName="turbine_server Behavior"/>
-  <behavior id="_UvBlFfE9Ee-L2P0tVZBdHA" entityName="zipkin_server Behavior"/>
-  <behavior id="_UvBlF_E9Ee-L2P0tVZBdHA" entityName="product_service Behavior"/>
-  <behavior id="_UvBlGfE9Ee-L2P0tVZBdHA" entityName="recommendation_service Behavior"/>
-  <behavior id="_UvBlG_E9Ee-L2P0tVZBdHA" entityName="review_service Behavior"/>
-  <behavior id="_UvBlHfE9Ee-L2P0tVZBdHA" entityName="composite_service Behavior"/>
-  <behavior id="_UvBlH_E9Ee-L2P0tVZBdHA" entityName="edge_server Behavior"/>
 </datadictionary:DataDictionary>

@@ -1,38 +1,98 @@
 <?xml version="1.0" encoding="ASCII"?>
 <dataflowdiagram:DataFlowDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" id="0">
-  <nodes xsi:type="dataflowdiagram:Process" id="2" entityName="user">
-    <behavior href="georgwittberger_5D2G2D2G2D.datadictionary#_Ue0l5fE9Ee-L2P0tVZBdHA"/>
-    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_UeZvGfE9Ee-L2P0tVZBdHA"/>
-    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_Ueenm_E9Ee-L2P0tVZBdHA"/>
+  <flows id="38" entityName="user" sourceNode="2" destinationNode="3">
+    <destinationPin href="georgwittberger_5D2G2D2G2D.datadictionary#36"/>
+    <sourcePin href="georgwittberger_5D2G2D2G2D.datadictionary#37"/>
+  </flows>
+  <flows id="42" entityName="apache_server" sourceNode="3" destinationNode="2">
+    <destinationPin href="georgwittberger_5D2G2D2G2D.datadictionary#40"/>
+    <sourcePin href="georgwittberger_5D2G2D2G2D.datadictionary#41"/>
+  </flows>
+  <flows id="48" entityName="apache_server" sourceNode="3" destinationNode="6">
+    <destinationPin href="georgwittberger_5D2G2D2G2D.datadictionary#46"/>
+    <sourcePin href="georgwittberger_5D2G2D2G2D.datadictionary#47"/>
+  </flows>
+  <flows id="50" entityName="apache_server" sourceNode="3" destinationNode="5">
+    <destinationPin href="georgwittberger_5D2G2D2G2D.datadictionary#43"/>
+    <sourcePin href="georgwittberger_5D2G2D2G2D.datadictionary#49"/>
+  </flows>
+  <flows id="53" entityName="apache_server" sourceNode="3" destinationNode="4">
+    <destinationPin href="georgwittberger_5D2G2D2G2D.datadictionary#51"/>
+    <sourcePin href="georgwittberger_5D2G2D2G2D.datadictionary#52"/>
+  </flows>
+  <flows id="45" entityName="cart_service" sourceNode="6" destinationNode="5">
+    <destinationPin href="georgwittberger_5D2G2D2G2D.datadictionary#43"/>
+    <sourcePin href="georgwittberger_5D2G2D2G2D.datadictionary#44"/>
+  </flows>
+  <flows id="55" entityName="auth_server" sourceNode="7" destinationNode="3">
+    <destinationPin href="georgwittberger_5D2G2D2G2D.datadictionary#36"/>
+    <sourcePin href="georgwittberger_5D2G2D2G2D.datadictionary#54"/>
+  </flows>
+  <flows id="57" entityName="auth_server" sourceNode="7" destinationNode="4">
+    <destinationPin href="georgwittberger_5D2G2D2G2D.datadictionary#51"/>
+    <sourcePin href="georgwittberger_5D2G2D2G2D.datadictionary#56"/>
+  </flows>
+  <flows id="59" entityName="auth_server" sourceNode="7" destinationNode="5">
+    <destinationPin href="georgwittberger_5D2G2D2G2D.datadictionary#43"/>
+    <sourcePin href="georgwittberger_5D2G2D2G2D.datadictionary#58"/>
+  </flows>
+  <flows id="61" entityName="auth_server" sourceNode="7" destinationNode="6">
+    <destinationPin href="georgwittberger_5D2G2D2G2D.datadictionary#46"/>
+    <sourcePin href="georgwittberger_5D2G2D2G2D.datadictionary#60"/>
+  </flows>
+  <nodes xsi:type="dataflowdiagram:External" id="2" entityName="user">
+    <behavior href="georgwittberger_5D2G2D2G2D.datadictionary#25"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#27"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#28"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#29"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_tKVbSPIXEe-7xa1ULUXTTw"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_tKVbSfIXEe-7xa1ULUXTTw"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_tKWCYfIXEe-7xa1ULUXTTw"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="3" entityName="apache_server">
-    <behavior href="georgwittberger_5D2G2D2G2D.datadictionary#_Ue0l6_E9Ee-L2P0tVZBdHA"/>
-    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_UeZvEfE9Ee-L2P0tVZBdHA"/>
-    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_UeZvGfE9Ee-L2P0tVZBdHA"/>
-    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_Ueenm_E9Ee-L2P0tVZBdHA"/>
+    <behavior href="georgwittberger_5D2G2D2G2D.datadictionary#18"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#20"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#21"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#22"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#12"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#24"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_tKVbSPIXEe-7xa1ULUXTTw"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_tKVbSfIXEe-7xa1ULUXTTw"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_tKWCYfIXEe-7xa1ULUXTTw"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="4" entityName="content_service">
-    <behavior href="georgwittberger_5D2G2D2G2D.datadictionary#_Ue1M5fE9Ee-L2P0tVZBdHA"/>
-    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_UeZvEfE9Ee-L2P0tVZBdHA"/>
-    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_UeZvGfE9Ee-L2P0tVZBdHA"/>
-    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_Ueenm_E9Ee-L2P0tVZBdHA"/>
+    <behavior href="georgwittberger_5D2G2D2G2D.datadictionary#9"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#11"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#12"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#14"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_tKVbSPIXEe-7xa1ULUXTTw"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_tKVbSfIXEe-7xa1ULUXTTw"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_tKWCYfIXEe-7xa1ULUXTTw"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="5" entityName="product_service">
-    <behavior href="georgwittberger_5D2G2D2G2D.datadictionary#_Ue2bKfE9Ee-L2P0tVZBdHA"/>
-    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_UeZvEfE9Ee-L2P0tVZBdHA"/>
-    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_UeZvGfE9Ee-L2P0tVZBdHA"/>
-    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_Ueenm_E9Ee-L2P0tVZBdHA"/>
+    <behavior href="georgwittberger_5D2G2D2G2D.datadictionary#30"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#11"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#12"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#32"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_tKVbSPIXEe-7xa1ULUXTTw"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_tKVbSfIXEe-7xa1ULUXTTw"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_tKWCYfIXEe-7xa1ULUXTTw"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="6" entityName="cart_service">
-    <behavior href="georgwittberger_5D2G2D2G2D.datadictionary#_Ue3CEfE9Ee-L2P0tVZBdHA"/>
-    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_UeZvEfE9Ee-L2P0tVZBdHA"/>
-    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_UeZvGfE9Ee-L2P0tVZBdHA"/>
-    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_Ueenm_E9Ee-L2P0tVZBdHA"/>
+    <behavior href="georgwittberger_5D2G2D2G2D.datadictionary#15"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#11"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#12"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#17"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_tKVbSPIXEe-7xa1ULUXTTw"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_tKVbSfIXEe-7xa1ULUXTTw"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_tKWCYfIXEe-7xa1ULUXTTw"/>
   </nodes>
-  <nodes xsi:type="dataflowdiagram:External" id="7" entityName="auth_server">
-    <behavior href="georgwittberger_5D2G2D2G2D.datadictionary#_Ue3CE_E9Ee-L2P0tVZBdHA"/>
-    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_UeZvEfE9Ee-L2P0tVZBdHA"/>
-    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_UeZvGfE9Ee-L2P0tVZBdHA"/>
-    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_Ueenl_E9Ee-L2P0tVZBdHA"/>
+  <nodes xsi:type="dataflowdiagram:Process" id="7" entityName="auth_server">
+    <behavior href="georgwittberger_5D2G2D2G2D.datadictionary#33"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#22"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#35"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_tKVbSPIXEe-7xa1ULUXTTw"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_tKVbSfIXEe-7xa1ULUXTTw"/>
+    <properties href="georgwittberger_5D2G2D2G2D.datadictionary#_tKWCX_IXEe-7xa1ULUXTTw"/>
   </nodes>
 </dataflowdiagram:DataFlowDiagram>

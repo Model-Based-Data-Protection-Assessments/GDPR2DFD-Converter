@@ -37,34 +37,29 @@
   <labelTypes id="44" entityName="ServiceDiscovery">
     <label id="45" entityName="Eureka"/>
   </labelTypes>
-  <labelTypes id="_UbSw3fE9Ee-L2P0tVZBdHA" entityName="ProcessingType">
-    <label id="_UbgMFPE9Ee-L2P0tVZBdHA" entityName="Collecting"/>
-    <label id="_UbgMH_E9Ee-L2P0tVZBdHA" entityName="Storing"/>
-    <label id="_UbgMIfE9Ee-L2P0tVZBdHA" entityName="Usage"/>
-    <label id="_UbgMJvE9Ee-L2P0tVZBdHA" entityName="Transferring"/>
+  <labelTypes id="_tQUHcfIXEe-7xa1ULUXTTw" entityName="ProcessingType">
+    <label id="_tQUHgfIXEe-7xa1ULUXTTw" entityName="Collecting"/>
+    <label id="_tQUHgvIXEe-7xa1ULUXTTw" entityName="Storing"/>
+    <label id="_tQUHg_IXEe-7xa1ULUXTTw" entityName="Usage"/>
+    <label id="_tQUHhPIXEe-7xa1ULUXTTw" entityName="Transferring"/>
   </labelTypes>
-  <labelTypes id="_UbSw5vE9Ee-L2P0tVZBdHA" entityName="Data">
-    <label id="_UYy2WfE9Ee-L2P0tVZBdHA"/>
-    <label id="_UY489PE9Ee-L2P0tVZBdHA"/>
-    <label id="_UYy2WfE9Ee-L2P0tVZBdHA"/>
-    <label id="_UY489PE9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_tQUHcvIXEe-7xa1ULUXTTw" entityName="Data">
+    <label id="_tQTgafIXEe-7xa1ULUXTTw"/>
+    <label id="_tQTga_IXEe-7xa1ULUXTTw"/>
   </labelTypes>
-  <labelTypes id="_UbTXxvE9Ee-L2P0tVZBdHA" entityName="PersonalData"/>
-  <labelTypes id="_UbTXzPE9Ee-L2P0tVZBdHA" entityName="Obligation"/>
-  <labelTypes id="_UbTX1fE9Ee-L2P0tVZBdHA" entityName="Consent"/>
-  <labelTypes id="_UbTX4fE9Ee-L2P0tVZBdHA" entityName="Contract"/>
-  <labelTypes id="_UbTX6_E9Ee-L2P0tVZBdHA" entityName="PublicAuthority"/>
-  <labelTypes id="_UbTX9fE9Ee-L2P0tVZBdHA" entityName="NaturalPerson"/>
-  <labelTypes id="_UbTX__E9Ee-L2P0tVZBdHA" entityName="Controller">
-    <label id="_UY6yKfE9Ee-L2P0tVZBdHA"/>
-    <label id="_UY6yKfE9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_tQUHc_IXEe-7xa1ULUXTTw" entityName="PersonalData"/>
+  <labelTypes id="_tQUHdPIXEe-7xa1ULUXTTw" entityName="Obligation"/>
+  <labelTypes id="_tQUHdfIXEe-7xa1ULUXTTw" entityName="Consent"/>
+  <labelTypes id="_tQUHdvIXEe-7xa1ULUXTTw" entityName="Contract"/>
+  <labelTypes id="_tQUHd_IXEe-7xa1ULUXTTw" entityName="PublicAuthority"/>
+  <labelTypes id="_tQUHePIXEe-7xa1ULUXTTw" entityName="NaturalPerson"/>
+  <labelTypes id="_tQUHefIXEe-7xa1ULUXTTw" entityName="Controller">
+    <label id="_tQTgbfIXEe-7xa1ULUXTTw"/>
   </labelTypes>
-  <labelTypes id="_UbTYBPE9Ee-L2P0tVZBdHA" entityName="ThirdParty"/>
-  <labelTypes id="_UbTYDPE9Ee-L2P0tVZBdHA" entityName="Purposes">
-    <label id="_UY0rjvE9Ee-L2P0tVZBdHA"/>
-    <label id="_UY489fE9Ee-L2P0tVZBdHA"/>
-    <label id="_UY0rjvE9Ee-L2P0tVZBdHA"/>
-    <label id="_UY489fE9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_tQUHevIXEe-7xa1ULUXTTw" entityName="ThirdParty"/>
+  <labelTypes id="_tQUHe_IXEe-7xa1ULUXTTw" entityName="Purposes">
+    <label id="_tQTgavIXEe-7xa1ULUXTTw"/>
+    <label id="_tQTgbPIXEe-7xa1ULUXTTw"/>
   </labelTypes>
   <behavior id="11">
     <inPin id="61"/>
@@ -143,12 +138,4 @@
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="116" outputPin="56" inputPins="67"/>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="117" outputPin="81" inputPins="67"/>
   </behavior>
-  <behavior id="_UcuUFPE9Ee-L2P0tVZBdHA" entityName="external_website Behavior"/>
-  <behavior id="_UcuUF_E9Ee-L2P0tVZBdHA" entityName="discovery_server Behavior"/>
-  <behavior id="_UcuUGfE9Ee-L2P0tVZBdHA" entityName="ratings_data_service Behavior"/>
-  <behavior id="_UcuUG_E9Ee-L2P0tVZBdHA" entityName="movie_info_service Behavior"/>
-  <behavior id="_UcuUHfE9Ee-L2P0tVZBdHA" entityName="movie_catalog_service Behavior"/>
-  <behavior id="_UcuUIPE9Ee-L2P0tVZBdHA" entityName="monitoring_dashboard Behavior"/>
-  <behavior id="_UcuUIvE9Ee-L2P0tVZBdHA" entityName="logging_server Behavior"/>
-  <behavior id="_UcuUJPE9Ee-L2P0tVZBdHA" entityName="message_broker Behavior"/>
 </datadictionary:DataDictionary>

@@ -53,30 +53,27 @@
   <labelTypes id="112" entityName="LoadBalancer">
     <label id="113" entityName="Ribbon"/>
   </labelTypes>
-  <labelTypes id="_UjuT-PE9Ee-L2P0tVZBdHA" entityName="ProcessingType">
-    <label id="_UjuUD_E9Ee-L2P0tVZBdHA" entityName="Collecting"/>
-    <label id="_UjuUEPE9Ee-L2P0tVZBdHA" entityName="Storing"/>
-    <label id="_UjuUEfE9Ee-L2P0tVZBdHA" entityName="Usage"/>
-    <label id="_UjuUEvE9Ee-L2P0tVZBdHA" entityName="Transferring"/>
+  <labelTypes id="_tMHj8fIXEe-7xa1ULUXTTw" entityName="ProcessingType">
+    <label id="_tMHj__IXEe-7xa1ULUXTTw" entityName="Collecting"/>
+    <label id="_tMHkAPIXEe-7xa1ULUXTTw" entityName="Storing"/>
+    <label id="_tMHkAfIXEe-7xa1ULUXTTw" entityName="Usage"/>
+    <label id="_tMHkAvIXEe-7xa1ULUXTTw" entityName="Transferring"/>
   </labelTypes>
-  <labelTypes id="_UjuT-vE9Ee-L2P0tVZBdHA" entityName="Data">
-    <label id="_Ujqps_E9Ee-L2P0tVZBdHA"/>
-    <label id="_Ujqps_E9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_tMHj8vIXEe-7xa1ULUXTTw" entityName="Data">
+    <label id="_tMG86vIXEe-7xa1ULUXTTw"/>
   </labelTypes>
-  <labelTypes id="_UjuT_fE9Ee-L2P0tVZBdHA" entityName="PersonalData"/>
-  <labelTypes id="_UjuUAPE9Ee-L2P0tVZBdHA" entityName="Obligation"/>
-  <labelTypes id="_UjuUAvE9Ee-L2P0tVZBdHA" entityName="Consent"/>
-  <labelTypes id="_UjuUBPE9Ee-L2P0tVZBdHA" entityName="Contract"/>
-  <labelTypes id="_UjuUB_E9Ee-L2P0tVZBdHA" entityName="PublicAuthority"/>
-  <labelTypes id="_UjuUCPE9Ee-L2P0tVZBdHA" entityName="NaturalPerson"/>
-  <labelTypes id="_UjuUCfE9Ee-L2P0tVZBdHA" entityName="Controller">
-    <label id="_UjrQtvE9Ee-L2P0tVZBdHA"/>
-    <label id="_UjrQtvE9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_tMHj8_IXEe-7xa1ULUXTTw" entityName="PersonalData"/>
+  <labelTypes id="_tMHj9PIXEe-7xa1ULUXTTw" entityName="Obligation"/>
+  <labelTypes id="_tMHj9fIXEe-7xa1ULUXTTw" entityName="Consent"/>
+  <labelTypes id="_tMHj9vIXEe-7xa1ULUXTTw" entityName="Contract"/>
+  <labelTypes id="_tMHj9_IXEe-7xa1ULUXTTw" entityName="PublicAuthority"/>
+  <labelTypes id="_tMHj-PIXEe-7xa1ULUXTTw" entityName="NaturalPerson"/>
+  <labelTypes id="_tMHj-fIXEe-7xa1ULUXTTw" entityName="Controller">
+    <label id="_tMG87PIXEe-7xa1ULUXTTw"/>
   </labelTypes>
-  <labelTypes id="_UjuUCvE9Ee-L2P0tVZBdHA" entityName="ThirdParty"/>
-  <labelTypes id="_UjuUC_E9Ee-L2P0tVZBdHA" entityName="Purposes">
-    <label id="_UjqptPE9Ee-L2P0tVZBdHA"/>
-    <label id="_UjqptPE9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_tMHj-vIXEe-7xa1ULUXTTw" entityName="ThirdParty"/>
+  <labelTypes id="_tMHj-_IXEe-7xa1ULUXTTw" entityName="Purposes">
+    <label id="_tMG86_IXEe-7xa1ULUXTTw"/>
   </labelTypes>
   <behavior id="13">
     <inPin id="74"/>
@@ -226,14 +223,4 @@
   <behavior id="67">
     <inPin id="116"/>
   </behavior>
-  <behavior id="_UkbenvE9Ee-L2P0tVZBdHA" entityName="github_repository Behavior"/>
-  <behavior id="_UkbeovE9Ee-L2P0tVZBdHA" entityName="discovery_service Behavior"/>
-  <behavior id="_UkbepPE9Ee-L2P0tVZBdHA" entityName="config_service Behavior"/>
-  <behavior id="_UkbepvE9Ee-L2P0tVZBdHA" entityName="account_service Behavior"/>
-  <behavior id="_UkbeqPE9Ee-L2P0tVZBdHA" entityName="customer_service Behavior"/>
-  <behavior id="_Ukbeq_E9Ee-L2P0tVZBdHA" entityName="store_service Behavior"/>
-  <behavior id="_UkbervE9Ee-L2P0tVZBdHA" entityName="item_service Behavior"/>
-  <behavior id="_UkbesPE9Ee-L2P0tVZBdHA" entityName="price_service Behavior"/>
-  <behavior id="_UkbesvE9Ee-L2P0tVZBdHA" entityName="foodtray_service Behavior"/>
-  <behavior id="_UkbetPE9Ee-L2P0tVZBdHA" entityName="secret_manager Behavior"/>
 </datadictionary:DataDictionary>

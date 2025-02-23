@@ -181,6 +181,18 @@ public class GDPR2DFD {
 			dfd.getFlows().removeAll(dfd.getFlows());
 			dfd.getFlows().addAll(newFlows);
 			
+			List<FlowTrace> newFlowTraces = outTrace.getFlowTraces().stream().map(trace -> {
+				var ft = TracemodelFactory.eINSTANCE.createFlowTrace();
+				ft.setDataFlow(newFlows.stream().filter(it -> trace.getDataFlow().getId().equals(it.getId())).findAny().orElseThrow());
+				ft.setSource(trace.getSource());
+				ft.setDest(trace.getDest());
+				ft.setData(trace.getData());
+				return ft;
+			}).toList();
+			
+			outTrace.getFlowTraces().clear();
+			outTrace.getFlowTraces().addAll(newFlowTraces);
+			
 			Map<String, Label> ifToLabelMap = new HashMap<>();
 			dd.getLabelTypes().forEach(labelType -> labelType.getLabel().forEach(label -> ifToLabelMap.put(label.getId(), label)));
 			
@@ -203,6 +215,7 @@ public class GDPR2DFD {
 		
 
 		saveResource(ddResource);
+		EcoreUtil.resolveAll(outTraceResource);
 		saveResource(outTraceResource);
 		saveResource(dfdResource);
 	}
@@ -234,6 +247,17 @@ public class GDPR2DFD {
 		//Create Flows
 		laf.getProcessing().stream().forEach(p -> {
 			dfd.getFlows().addAll(createFlows(p));
+		});
+		
+		//Sorry for that but otherwise containment causes issues
+		laf.getProcessing().forEach(p -> {
+			p.getFollowingProcessing().forEach(fp -> {
+				p.getOutputData().forEach(data -> {
+					dfd.getFlows().stream().filter(flow -> flow.getSourceNode().equals(processingToNodeMap.get(p)) && flow.getDestinationNode().equals(processingToNodeMap.get(fp))).forEach(flow -> {
+						addFlowTrace(flow, p, fp, data);
+					});
+				});
+			});
 		});
 		
 		// Create/Annotate Behaviors to Nodes
@@ -503,7 +527,6 @@ public class GDPR2DFD {
 				if(optFt.isPresent()) {
 					FlowTrace ft = optFt.get();
 					flows.add(ft.getDataFlow());
-					outTrace.getFlowTraces().add(ft);
 				} else {
 					String dataName = data.getEntityName();
 					
@@ -522,7 +545,6 @@ public class GDPR2DFD {
 					}
 					
 					Flow flow = createNewFlow(dataName, sourceNode, outPin, destinationNode, inPin);
-					addFlowTrace(flow, processing, followingProcessing, data);
 					flows.add(flow);
 				}
 			});

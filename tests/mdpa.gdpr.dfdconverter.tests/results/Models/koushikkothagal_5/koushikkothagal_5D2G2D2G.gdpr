@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="ASCII"?>
 <GDPR:LegalAssessmentFacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" id="0">
-  <processing xsi:type="GDPR:Collecting" id="_UgQwR_E9Ee-L2P0tVZBdHA" outputData="_UfukwfE9Ee-L2P0tVZBdHA" purpose="_UfukwvE9Ee-L2P0tVZBdHA" responsible="_UfukzfE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="_UgQwSPE9Ee-L2P0tVZBdHA" inputData="_UfukxfE9Ee-L2P0tVZBdHA" purpose="_UfukxvE9Ee-L2P0tVZBdHA" responsible="_UfukzfE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="_UgQwSfE9Ee-L2P0tVZBdHA" inputData="_UfukxfE9Ee-L2P0tVZBdHA" purpose="_UfukxvE9Ee-L2P0tVZBdHA" responsible="_UfukzfE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="_UgQwSvE9Ee-L2P0tVZBdHA" inputData="_UfukwfE9Ee-L2P0tVZBdHA" purpose="_UfukwvE9Ee-L2P0tVZBdHA" responsible="_UfukzfE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="_UgQwTPE9Ee-L2P0tVZBdHA" inputData="_UfukxfE9Ee-L2P0tVZBdHA" purpose="_UfukxvE9Ee-L2P0tVZBdHA" responsible="_UfukzfE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Collecting" id="_UgQwTvE9Ee-L2P0tVZBdHA" outputData="_UfukxfE9Ee-L2P0tVZBdHA" purpose="_UfukxvE9Ee-L2P0tVZBdHA" responsible="_UfukzfE9Ee-L2P0tVZBdHA"/>
-  <purposes id="_UfukwvE9Ee-L2P0tVZBdHA"/>
-  <purposes id="_UfukxvE9Ee-L2P0tVZBdHA"/>
-  <data id="_UfukwfE9Ee-L2P0tVZBdHA"/>
-  <data id="_UfukxfE9Ee-L2P0tVZBdHA"/>
-  <involvedParties xsi:type="GDPR:Controller" id="_UfukzfE9Ee-L2P0tVZBdHA"/>
+  <processing xsi:type="GDPR:Collecting" id="2" entityName="external_website" outputData="_tPnj5_IXEe-7xa1ULUXTTw" purpose="_tPnj6PIXEe-7xa1ULUXTTw" followingProcessing="5" responsible="_tPnj6_IXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="3" entityName="discovery_server" inputData="_tPnj6fIXEe-7xa1ULUXTTw _tPnj5_IXEe-7xa1ULUXTTw" purpose="_tPnj6vIXEe-7xa1ULUXTTw _tPnj6PIXEe-7xa1ULUXTTw" responsible="_tPnj6_IXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="4" entityName="ratings_data_service" inputData="_tPnj6fIXEe-7xa1ULUXTTw" outputData="_tPnj6fIXEe-7xa1ULUXTTw" purpose="_tPnj6vIXEe-7xa1ULUXTTw" followingProcessing="3" responsible="_tPnj6_IXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="5" entityName="movie_info_service" inputData="_tPnj5_IXEe-7xa1ULUXTTw _tPnj6fIXEe-7xa1ULUXTTw" outputData="_tPnj5_IXEe-7xa1ULUXTTw _tPnj6fIXEe-7xa1ULUXTTw" purpose="_tPnj6PIXEe-7xa1ULUXTTw _tPnj6vIXEe-7xa1ULUXTTw" followingProcessing="3" responsible="_tPnj6_IXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="6" entityName="movie_catalog_service" inputData="_tPnj6fIXEe-7xa1ULUXTTw" outputData="_tPnj6fIXEe-7xa1ULUXTTw" purpose="_tPnj6vIXEe-7xa1ULUXTTw" followingProcessing="3 4 5" responsible="_tPnj6_IXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Collecting" id="7" entityName="auth_server" outputData="_tPnj6fIXEe-7xa1ULUXTTw" purpose="_tPnj6vIXEe-7xa1ULUXTTw" followingProcessing="3 5 6 4" responsible="_tPnj6_IXEe-7xa1ULUXTTw"/>
+  <purposes id="_tPnj6PIXEe-7xa1ULUXTTw"/>
+  <purposes id="_tPnj6vIXEe-7xa1ULUXTTw"/>
+  <data id="_tPnj5_IXEe-7xa1ULUXTTw"/>
+  <data id="_tPnj6fIXEe-7xa1ULUXTTw"/>
+  <involvedParties xsi:type="GDPR:Controller" id="_tPnj6_IXEe-7xa1ULUXTTw"/>
 </GDPR:LegalAssessmentFacts>

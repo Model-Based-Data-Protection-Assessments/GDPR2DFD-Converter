@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="ASCII"?>
 <GDPR:LegalAssessmentFacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" id="0">
-  <processing xsi:type="GDPR:Usage" id="_UmUVRPE9Ee-L2P0tVZBdHA" responsible="_UmFrufE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="_UmU8APE9Ee-L2P0tVZBdHA" inputData="_UmFrgfE9Ee-L2P0tVZBdHA" purpose="_UmFrgvE9Ee-L2P0tVZBdHA" responsible="_UmFrufE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="_UmU8BPE9Ee-L2P0tVZBdHA" inputData="_UmFrgfE9Ee-L2P0tVZBdHA" purpose="_UmFrgvE9Ee-L2P0tVZBdHA" responsible="_UmFrufE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="_UmU8BvE9Ee-L2P0tVZBdHA" inputData="_UmFrdPE9Ee-L2P0tVZBdHA" purpose="_UmFrdfE9Ee-L2P0tVZBdHA" responsible="_UmFrufE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="_UmU8CfE9Ee-L2P0tVZBdHA" inputData="_UmFrdPE9Ee-L2P0tVZBdHA" purpose="_UmFrdfE9Ee-L2P0tVZBdHA" responsible="_UmFrufE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="_UmU8D_E9Ee-L2P0tVZBdHA" inputData="_UmFrdPE9Ee-L2P0tVZBdHA" purpose="_UmFrdfE9Ee-L2P0tVZBdHA" responsible="_UmFrufE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Usage" id="_UmU8E_E9Ee-L2P0tVZBdHA" inputData="_UmFrgfE9Ee-L2P0tVZBdHA" purpose="_UmFrgvE9Ee-L2P0tVZBdHA" responsible="_UmFrufE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Collecting" id="_UmU8FfE9Ee-L2P0tVZBdHA" outputData="_UmFrdPE9Ee-L2P0tVZBdHA" purpose="_UmFrdfE9Ee-L2P0tVZBdHA" responsible="_UmFrufE9Ee-L2P0tVZBdHA"/>
-  <processing xsi:type="GDPR:Collecting" id="_UmU8HfE9Ee-L2P0tVZBdHA" outputData="_UmFrgfE9Ee-L2P0tVZBdHA" purpose="_UmFrgvE9Ee-L2P0tVZBdHA" responsible="_UmFrufE9Ee-L2P0tVZBdHA"/>
-  <purposes id="_UmFrdfE9Ee-L2P0tVZBdHA"/>
-  <purposes id="_UmFrgvE9Ee-L2P0tVZBdHA"/>
-  <data id="_UmFrdPE9Ee-L2P0tVZBdHA"/>
-  <data id="_UmFrgfE9Ee-L2P0tVZBdHA"/>
-  <involvedParties xsi:type="GDPR:Controller" id="_UmFrufE9Ee-L2P0tVZBdHA"/>
+  <processing xsi:type="GDPR:Usage" id="2" entityName="user" inputData="_tHYN7PIXEe-7xa1ULUXTTw" outputData="_tHYN7PIXEe-7xa1ULUXTTw" purpose="_tHYN7fIXEe-7xa1ULUXTTw" followingProcessing="8" responsible="_tHYN7vIXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="3" entityName="zookeeper" inputData="_tHYN7PIXEe-7xa1ULUXTTw" outputData="_tHYN7PIXEe-7xa1ULUXTTw" purpose="_tHYN7fIXEe-7xa1ULUXTTw" followingProcessing="4" responsible="_tHYN7vIXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="4" entityName="kafka" inputData="_tHYN7PIXEe-7xa1ULUXTTw _tHYN6vIXEe-7xa1ULUXTTw" outputData="_tHYN7PIXEe-7xa1ULUXTTw _tHYN6vIXEe-7xa1ULUXTTw" purpose="_tHYN7fIXEe-7xa1ULUXTTw _tHYN6_IXEe-7xa1ULUXTTw" followingProcessing="6 7" responsible="_tHYN7vIXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="5" entityName="order" inputData="_tHYN6vIXEe-7xa1ULUXTTw _tHYN7PIXEe-7xa1ULUXTTw" outputData="_tHYN6vIXEe-7xa1ULUXTTw _tHYN7PIXEe-7xa1ULUXTTw" purpose="_tHYN6_IXEe-7xa1ULUXTTw _tHYN7fIXEe-7xa1ULUXTTw" followingProcessing="4" responsible="_tHYN7vIXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="6" entityName="invoicing" inputData="_tHYN6vIXEe-7xa1ULUXTTw _tHYN7PIXEe-7xa1ULUXTTw" purpose="_tHYN6_IXEe-7xa1ULUXTTw _tHYN7fIXEe-7xa1ULUXTTw" responsible="_tHYN7vIXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="7" entityName="shipping" inputData="_tHYN6vIXEe-7xa1ULUXTTw _tHYN7PIXEe-7xa1ULUXTTw" purpose="_tHYN6_IXEe-7xa1ULUXTTw _tHYN7fIXEe-7xa1ULUXTTw" responsible="_tHYN7vIXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Usage" id="8" entityName="apache" inputData="_tHYN7PIXEe-7xa1ULUXTTw" outputData="_tHYN7PIXEe-7xa1ULUXTTw" purpose="_tHYN7fIXEe-7xa1ULUXTTw" followingProcessing="5 7 6 2" responsible="_tHYN7vIXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Collecting" id="9" entityName="postgres" outputData="_tHYN6vIXEe-7xa1ULUXTTw" purpose="_tHYN6_IXEe-7xa1ULUXTTw" followingProcessing="5 7 6" responsible="_tHYN7vIXEe-7xa1ULUXTTw"/>
+  <processing xsi:type="GDPR:Collecting" id="10" entityName="authorization_server" outputData="_tHYN7PIXEe-7xa1ULUXTTw" purpose="_tHYN7fIXEe-7xa1ULUXTTw" followingProcessing="3 4 5 6 7 8" responsible="_tHYN7vIXEe-7xa1ULUXTTw"/>
+  <purposes id="_tHYN6_IXEe-7xa1ULUXTTw"/>
+  <purposes id="_tHYN7fIXEe-7xa1ULUXTTw"/>
+  <data id="_tHYN6vIXEe-7xa1ULUXTTw"/>
+  <data id="_tHYN7PIXEe-7xa1ULUXTTw"/>
+  <involvedParties xsi:type="GDPR:Controller" id="_tHYN7vIXEe-7xa1ULUXTTw"/>
 </GDPR:LegalAssessmentFacts>

@@ -51,38 +51,31 @@
   <labelTypes id="96" entityName="Password">
     <label id="97" entityName="dbpass"/>
   </labelTypes>
-  <labelTypes id="_UoQ1vPE9Ee-L2P0tVZBdHA" entityName="ProcessingType">
-    <label id="_UoQ12fE9Ee-L2P0tVZBdHA" entityName="Collecting"/>
-    <label id="_UoQ12vE9Ee-L2P0tVZBdHA" entityName="Storing"/>
-    <label id="_UoQ12_E9Ee-L2P0tVZBdHA" entityName="Usage"/>
-    <label id="_UoQ13fE9Ee-L2P0tVZBdHA" entityName="Transferring"/>
+  <labelTypes id="_tGmKwfIXEe-7xa1ULUXTTw" entityName="ProcessingType">
+    <label id="_tGmK0_IXEe-7xa1ULUXTTw" entityName="Collecting"/>
+    <label id="_tGmK1PIXEe-7xa1ULUXTTw" entityName="Storing"/>
+    <label id="_tGmK1fIXEe-7xa1ULUXTTw" entityName="Usage"/>
+    <label id="_tGmK1vIXEe-7xa1ULUXTTw" entityName="Transferring"/>
   </labelTypes>
-  <labelTypes id="_UoQ1vvE9Ee-L2P0tVZBdHA" entityName="Data">
-    <label id="_UoOZfvE9Ee-L2P0tVZBdHA"/>
-    <label id="_UoOZgPE9Ee-L2P0tVZBdHA"/>
-    <label id="_UoOZg_E9Ee-L2P0tVZBdHA"/>
-    <label id="_UoOZfvE9Ee-L2P0tVZBdHA"/>
-    <label id="_UoOZgPE9Ee-L2P0tVZBdHA"/>
-    <label id="_UoOZg_E9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_tGmKwvIXEe-7xa1ULUXTTw" entityName="Data">
+    <label id="_tGlju_IXEe-7xa1ULUXTTw"/>
+    <label id="_tGljvfIXEe-7xa1ULUXTTw"/>
+    <label id="_tGljv_IXEe-7xa1ULUXTTw"/>
   </labelTypes>
-  <labelTypes id="_UoQ1wfE9Ee-L2P0tVZBdHA" entityName="PersonalData"/>
-  <labelTypes id="_UoQ1wvE9Ee-L2P0tVZBdHA" entityName="Obligation"/>
-  <labelTypes id="_UoQ1xPE9Ee-L2P0tVZBdHA" entityName="Consent"/>
-  <labelTypes id="_UoQ1xfE9Ee-L2P0tVZBdHA" entityName="Contract"/>
-  <labelTypes id="_UoQ1xvE9Ee-L2P0tVZBdHA" entityName="PublicAuthority"/>
-  <labelTypes id="_UoQ1x_E9Ee-L2P0tVZBdHA" entityName="NaturalPerson"/>
-  <labelTypes id="_UoQ1yfE9Ee-L2P0tVZBdHA" entityName="Controller">
-    <label id="_UoOZh_E9Ee-L2P0tVZBdHA"/>
-    <label id="_UoOZh_E9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_tGmKw_IXEe-7xa1ULUXTTw" entityName="PersonalData"/>
+  <labelTypes id="_tGmKxPIXEe-7xa1ULUXTTw" entityName="Obligation"/>
+  <labelTypes id="_tGmKxfIXEe-7xa1ULUXTTw" entityName="Consent"/>
+  <labelTypes id="_tGmKxvIXEe-7xa1ULUXTTw" entityName="Contract"/>
+  <labelTypes id="_tGmKx_IXEe-7xa1ULUXTTw" entityName="PublicAuthority"/>
+  <labelTypes id="_tGmKyPIXEe-7xa1ULUXTTw" entityName="NaturalPerson"/>
+  <labelTypes id="_tGmKyfIXEe-7xa1ULUXTTw" entityName="Controller">
+    <label id="_tGljwfIXEe-7xa1ULUXTTw"/>
   </labelTypes>
-  <labelTypes id="_UoQ1y_E9Ee-L2P0tVZBdHA" entityName="ThirdParty"/>
-  <labelTypes id="_UoQ1zPE9Ee-L2P0tVZBdHA" entityName="Purposes">
-    <label id="_UoOZf_E9Ee-L2P0tVZBdHA"/>
-    <label id="_UoOZgfE9Ee-L2P0tVZBdHA"/>
-    <label id="_UoOZhPE9Ee-L2P0tVZBdHA"/>
-    <label id="_UoOZf_E9Ee-L2P0tVZBdHA"/>
-    <label id="_UoOZgfE9Ee-L2P0tVZBdHA"/>
-    <label id="_UoOZhPE9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_tGmKyvIXEe-7xa1ULUXTTw" entityName="ThirdParty"/>
+  <labelTypes id="_tGmKy_IXEe-7xa1ULUXTTw" entityName="Purposes">
+    <label id="_tGljvPIXEe-7xa1ULUXTTw"/>
+    <label id="_tGljvvIXEe-7xa1ULUXTTw"/>
+    <label id="_tGljwPIXEe-7xa1ULUXTTw"/>
   </labelTypes>
   <behavior id="13">
     <inPin id="84"/>
@@ -171,14 +164,4 @@
     </assignment>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="138" outputPin="63" inputPins="77"/>
   </behavior>
-  <behavior id="_UoYxpPE9Ee-L2P0tVZBdHA" entityName="user Behavior"/>
-  <behavior id="_UoYxpvE9Ee-L2P0tVZBdHA" entityName="zookeeper Behavior"/>
-  <behavior id="_UoYxqPE9Ee-L2P0tVZBdHA" entityName="kafka Behavior"/>
-  <behavior id="_UoYxqvE9Ee-L2P0tVZBdHA" entityName="order Behavior"/>
-  <behavior id="_UoYxrPE9Ee-L2P0tVZBdHA" entityName="invoicing Behavior"/>
-  <behavior id="_UoYxrvE9Ee-L2P0tVZBdHA" entityName="shipping Behavior"/>
-  <behavior id="_UoYxsPE9Ee-L2P0tVZBdHA" entityName="apache Behavior"/>
-  <behavior id="_UoYxsvE9Ee-L2P0tVZBdHA" entityName="postgres Behavior"/>
-  <behavior id="_UoYxtPE9Ee-L2P0tVZBdHA" entityName="monitoring_dashboard Behavior"/>
-  <behavior id="_UoYxtvE9Ee-L2P0tVZBdHA" entityName="logging_server Behavior"/>
 </datadictionary:DataDictionary>

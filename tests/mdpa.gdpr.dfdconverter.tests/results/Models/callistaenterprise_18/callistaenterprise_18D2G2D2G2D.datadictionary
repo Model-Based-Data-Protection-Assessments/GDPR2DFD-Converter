@@ -95,34 +95,29 @@
   <labelTypes id="123" entityName="AuthorizationServer">
     <label id="124" entityName="SpringOAuth2"/>
   </labelTypes>
-  <labelTypes id="_UcY84fE9Ee-L2P0tVZBdHA" entityName="ProcessingType">
-    <label id="_UcY88fE9Ee-L2P0tVZBdHA" entityName="Collecting"/>
-    <label id="_UcY88vE9Ee-L2P0tVZBdHA" entityName="Storing"/>
-    <label id="_UcY88_E9Ee-L2P0tVZBdHA" entityName="Usage"/>
-    <label id="_UcY89PE9Ee-L2P0tVZBdHA" entityName="Transferring"/>
+  <labelTypes id="_tCQdUfIXEe-7xa1ULUXTTw" entityName="ProcessingType">
+    <label id="_tCQdYfIXEe-7xa1ULUXTTw" entityName="Collecting"/>
+    <label id="_tCQdYvIXEe-7xa1ULUXTTw" entityName="Storing"/>
+    <label id="_tCQdY_IXEe-7xa1ULUXTTw" entityName="Usage"/>
+    <label id="_tCQdZPIXEe-7xa1ULUXTTw" entityName="Transferring"/>
   </labelTypes>
-  <labelTypes id="_UcY84vE9Ee-L2P0tVZBdHA" entityName="Data">
-    <label id="_UcKTYPE9Ee-L2P0tVZBdHA"/>
-    <label id="_UcKTYvE9Ee-L2P0tVZBdHA"/>
-    <label id="_UcKTYPE9Ee-L2P0tVZBdHA"/>
-    <label id="_UcKTYvE9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_tCQdUvIXEe-7xa1ULUXTTw" entityName="Data">
+    <label id="_tCPPQvIXEe-7xa1ULUXTTw"/>
+    <label id="_tCPPRPIXEe-7xa1ULUXTTw"/>
   </labelTypes>
-  <labelTypes id="_UcY84_E9Ee-L2P0tVZBdHA" entityName="PersonalData"/>
-  <labelTypes id="_UcY85PE9Ee-L2P0tVZBdHA" entityName="Obligation"/>
-  <labelTypes id="_UcY85fE9Ee-L2P0tVZBdHA" entityName="Consent"/>
-  <labelTypes id="_UcY85vE9Ee-L2P0tVZBdHA" entityName="Contract"/>
-  <labelTypes id="_UcY85_E9Ee-L2P0tVZBdHA" entityName="PublicAuthority"/>
-  <labelTypes id="_UcY86PE9Ee-L2P0tVZBdHA" entityName="NaturalPerson"/>
-  <labelTypes id="_UcY86fE9Ee-L2P0tVZBdHA" entityName="Controller">
-    <label id="_UcK6cPE9Ee-L2P0tVZBdHA"/>
-    <label id="_UcK6cPE9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_tCQdU_IXEe-7xa1ULUXTTw" entityName="PersonalData"/>
+  <labelTypes id="_tCQdVPIXEe-7xa1ULUXTTw" entityName="Obligation"/>
+  <labelTypes id="_tCQdVfIXEe-7xa1ULUXTTw" entityName="Consent"/>
+  <labelTypes id="_tCQdVvIXEe-7xa1ULUXTTw" entityName="Contract"/>
+  <labelTypes id="_tCQdV_IXEe-7xa1ULUXTTw" entityName="PublicAuthority"/>
+  <labelTypes id="_tCQdWPIXEe-7xa1ULUXTTw" entityName="NaturalPerson"/>
+  <labelTypes id="_tCQdWfIXEe-7xa1ULUXTTw" entityName="Controller">
+    <label id="_tCPPRvIXEe-7xa1ULUXTTw"/>
   </labelTypes>
-  <labelTypes id="_UcY86vE9Ee-L2P0tVZBdHA" entityName="ThirdParty"/>
-  <labelTypes id="_UcY86_E9Ee-L2P0tVZBdHA" entityName="Purposes">
-    <label id="_UcKTYfE9Ee-L2P0tVZBdHA"/>
-    <label id="_UcKTY_E9Ee-L2P0tVZBdHA"/>
-    <label id="_UcKTYfE9Ee-L2P0tVZBdHA"/>
-    <label id="_UcKTY_E9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_tCQdWvIXEe-7xa1ULUXTTw" entityName="ThirdParty"/>
+  <labelTypes id="_tCQdW_IXEe-7xa1ULUXTTw" entityName="Purposes">
+    <label id="_tCPPQ_IXEe-7xa1ULUXTTw"/>
+    <label id="_tCPPRfIXEe-7xa1ULUXTTw"/>
   </labelTypes>
   <behavior id="21">
     <inPin id="164"/>
@@ -408,22 +403,4 @@
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="380" outputPin="170" inputPins="167"/>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="381" outputPin="234" inputPins="167"/>
   </behavior>
-  <behavior id="_Uc1o7vE9Ee-L2P0tVZBdHA" entityName="github_repository Behavior"/>
-  <behavior id="_Uc1o9PE9Ee-L2P0tVZBdHA" entityName="user Behavior"/>
-  <behavior id="_Uc1o_vE9Ee-L2P0tVZBdHA" entityName="elasticsearch Behavior"/>
-  <behavior id="_Uc1pBPE9Ee-L2P0tVZBdHA" entityName="kibana Behavior"/>
-  <behavior id="_Uc1pCfE9Ee-L2P0tVZBdHA" entityName="logstash Behavior"/>
-  <behavior id="_Uc1pDvE9Ee-L2P0tVZBdHA" entityName="rabbitmq Behavior"/>
-  <behavior id="_Uc1pEPE9Ee-L2P0tVZBdHA" entityName="discovery_server Behavior"/>
-  <behavior id="_Uc1pGPE9Ee-L2P0tVZBdHA" entityName="config_server Behavior"/>
-  <behavior id="_Uc1pGvE9Ee-L2P0tVZBdHA" entityName="auth_server Behavior"/>
-  <behavior id="_Uc1pIPE9Ee-L2P0tVZBdHA" entityName="monitor_dashboard Behavior"/>
-  <behavior id="_Uc1pJPE9Ee-L2P0tVZBdHA" entityName="turbine_server Behavior"/>
-  <behavior id="_Uc1pKvE9Ee-L2P0tVZBdHA" entityName="zipkin_server Behavior"/>
-  <behavior id="_Uc1pMPE9Ee-L2P0tVZBdHA" entityName="product_service Behavior"/>
-  <behavior id="_Uc1pOfE9Ee-L2P0tVZBdHA" entityName="recommendation_service Behavior"/>
-  <behavior id="_Uc1pQPE9Ee-L2P0tVZBdHA" entityName="review_service Behavior"/>
-  <behavior id="_Uc1pQ_E9Ee-L2P0tVZBdHA" entityName="composite_service Behavior"/>
-  <behavior id="_Uc1pSvE9Ee-L2P0tVZBdHA" entityName="edge_server Behavior"/>
-  <behavior id="_Uc1pTfE9Ee-L2P0tVZBdHA" entityName="secret_manager Behavior"/>
 </datadictionary:DataDictionary>

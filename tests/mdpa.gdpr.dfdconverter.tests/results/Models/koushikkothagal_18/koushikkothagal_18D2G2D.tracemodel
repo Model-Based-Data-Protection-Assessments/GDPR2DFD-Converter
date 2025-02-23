@@ -25,28 +25,94 @@
     <gdprProcessing href="koushikkothagal_18D2G.gdpr#7"/>
   </nodeTraces>
   <labelTraces>
-    <label href="koushikkothagal_18D2G2D.datadictionary#_UemjafE9Ee-L2P0tVZBdHA"/>
-    <labelType href="koushikkothagal_18D2G2D.datadictionary#_UepmwvE9Ee-L2P0tVZBdHA"/>
-    <gdprElement xsi:type="GDPR:Controller" href="koushikkothagal_18D2G.gdpr#_UemjafE9Ee-L2P0tVZBdHA"/>
+    <label href="koushikkothagal_18D2G2D.datadictionary#_tR6DFPIXEe-7xa1ULUXTTw"/>
+    <labelType href="koushikkothagal_18D2G2D.datadictionary#_tR6p-fIXEe-7xa1ULUXTTw"/>
+    <gdprElement xsi:type="GDPR:Controller" href="koushikkothagal_18D2G.gdpr#_tR6DFPIXEe-7xa1ULUXTTw"/>
   </labelTraces>
   <labelTraces>
-    <label href="koushikkothagal_18D2G2D.datadictionary#_Uel8c_E9Ee-L2P0tVZBdHA"/>
-    <labelType href="koushikkothagal_18D2G2D.datadictionary#_UepmxPE9Ee-L2P0tVZBdHA"/>
-    <gdprElement xsi:type="GDPR:Purpose" href="koushikkothagal_18D2G.gdpr#_Uel8c_E9Ee-L2P0tVZBdHA"/>
+    <label href="koushikkothagal_18D2G2D.datadictionary#_tR6DEfIXEe-7xa1ULUXTTw"/>
+    <labelType href="koushikkothagal_18D2G2D.datadictionary#_tR6p-_IXEe-7xa1ULUXTTw"/>
+    <gdprElement xsi:type="GDPR:Purpose" href="koushikkothagal_18D2G.gdpr#_tR6DEfIXEe-7xa1ULUXTTw"/>
   </labelTraces>
   <labelTraces>
-    <label href="koushikkothagal_18D2G2D.datadictionary#_Uel8ePE9Ee-L2P0tVZBdHA"/>
-    <labelType href="koushikkothagal_18D2G2D.datadictionary#_UepmxPE9Ee-L2P0tVZBdHA"/>
-    <gdprElement xsi:type="GDPR:Purpose" href="koushikkothagal_18D2G.gdpr#_Uel8ePE9Ee-L2P0tVZBdHA"/>
+    <label href="koushikkothagal_18D2G2D.datadictionary#_tR6DE_IXEe-7xa1ULUXTTw"/>
+    <labelType href="koushikkothagal_18D2G2D.datadictionary#_tR6p-_IXEe-7xa1ULUXTTw"/>
+    <gdprElement xsi:type="GDPR:Purpose" href="koushikkothagal_18D2G.gdpr#_tR6DE_IXEe-7xa1ULUXTTw"/>
   </labelTraces>
   <labelTraces>
-    <label href="koushikkothagal_18D2G2D.datadictionary#_Uel8cvE9Ee-L2P0tVZBdHA"/>
-    <labelType href="koushikkothagal_18D2G2D.datadictionary#_Uepmu_E9Ee-L2P0tVZBdHA"/>
-    <gdprElement xsi:type="GDPR:Data" href="koushikkothagal_18D2G.gdpr#_Uel8cvE9Ee-L2P0tVZBdHA"/>
+    <label href="koushikkothagal_18D2G2D.datadictionary#_tR6DEPIXEe-7xa1ULUXTTw"/>
+    <labelType href="koushikkothagal_18D2G2D.datadictionary#_tR6p8vIXEe-7xa1ULUXTTw"/>
+    <gdprElement xsi:type="GDPR:Data" href="koushikkothagal_18D2G.gdpr#_tR6DEPIXEe-7xa1ULUXTTw"/>
   </labelTraces>
   <labelTraces>
-    <label href="koushikkothagal_18D2G2D.datadictionary#_Uel8d_E9Ee-L2P0tVZBdHA"/>
-    <labelType href="koushikkothagal_18D2G2D.datadictionary#_Uepmu_E9Ee-L2P0tVZBdHA"/>
-    <gdprElement xsi:type="GDPR:Data" href="koushikkothagal_18D2G.gdpr#_Uel8d_E9Ee-L2P0tVZBdHA"/>
+    <label href="koushikkothagal_18D2G2D.datadictionary#_tR6DEvIXEe-7xa1ULUXTTw"/>
+    <labelType href="koushikkothagal_18D2G2D.datadictionary#_tR6p8vIXEe-7xa1ULUXTTw"/>
+    <gdprElement xsi:type="GDPR:Data" href="koushikkothagal_18D2G.gdpr#_tR6DEvIXEe-7xa1ULUXTTw"/>
   </labelTraces>
+  <flowTraces>
+    <dataFlow href="koushikkothagal_18D2G2D.dataflowdiagram#54"/>
+    <source href="koushikkothagal_18D2G.gdpr#2"/>
+    <dest href="koushikkothagal_18D2G.gdpr#5"/>
+    <data href="koushikkothagal_18D2G.gdpr#_tR6DEPIXEe-7xa1ULUXTTw"/>
+  </flowTraces>
+  <flowTraces>
+    <dataFlow href="koushikkothagal_18D2G2D.dataflowdiagram#48"/>
+    <source href="koushikkothagal_18D2G.gdpr#4"/>
+    <dest href="koushikkothagal_18D2G.gdpr#3"/>
+    <data href="koushikkothagal_18D2G.gdpr#_tR6DEvIXEe-7xa1ULUXTTw"/>
+  </flowTraces>
+  <flowTraces>
+    <dataFlow href="koushikkothagal_18D2G2D.dataflowdiagram#51"/>
+    <source href="koushikkothagal_18D2G.gdpr#5"/>
+    <dest href="koushikkothagal_18D2G.gdpr#3"/>
+    <data href="koushikkothagal_18D2G.gdpr#_tR6DEPIXEe-7xa1ULUXTTw"/>
+  </flowTraces>
+  <flowTraces>
+    <dataFlow href="koushikkothagal_18D2G2D.dataflowdiagram#51"/>
+    <source href="koushikkothagal_18D2G.gdpr#5"/>
+    <dest href="koushikkothagal_18D2G.gdpr#3"/>
+    <data href="koushikkothagal_18D2G.gdpr#_tR6DEvIXEe-7xa1ULUXTTw"/>
+  </flowTraces>
+  <flowTraces>
+    <dataFlow href="koushikkothagal_18D2G2D.dataflowdiagram#56"/>
+    <source href="koushikkothagal_18D2G.gdpr#6"/>
+    <dest href="koushikkothagal_18D2G.gdpr#3"/>
+    <data href="koushikkothagal_18D2G.gdpr#_tR6DEvIXEe-7xa1ULUXTTw"/>
+  </flowTraces>
+  <flowTraces>
+    <dataFlow href="koushikkothagal_18D2G2D.dataflowdiagram#60"/>
+    <source href="koushikkothagal_18D2G.gdpr#6"/>
+    <dest href="koushikkothagal_18D2G.gdpr#4"/>
+    <data href="koushikkothagal_18D2G.gdpr#_tR6DEvIXEe-7xa1ULUXTTw"/>
+  </flowTraces>
+  <flowTraces>
+    <dataFlow href="koushikkothagal_18D2G2D.dataflowdiagram#62"/>
+    <source href="koushikkothagal_18D2G.gdpr#6"/>
+    <dest href="koushikkothagal_18D2G.gdpr#5"/>
+    <data href="koushikkothagal_18D2G.gdpr#_tR6DEvIXEe-7xa1ULUXTTw"/>
+  </flowTraces>
+  <flowTraces>
+    <dataFlow href="koushikkothagal_18D2G2D.dataflowdiagram#64"/>
+    <source href="koushikkothagal_18D2G.gdpr#7"/>
+    <dest href="koushikkothagal_18D2G.gdpr#3"/>
+    <data href="koushikkothagal_18D2G.gdpr#_tR6DEvIXEe-7xa1ULUXTTw"/>
+  </flowTraces>
+  <flowTraces>
+    <dataFlow href="koushikkothagal_18D2G2D.dataflowdiagram#66"/>
+    <source href="koushikkothagal_18D2G.gdpr#7"/>
+    <dest href="koushikkothagal_18D2G.gdpr#5"/>
+    <data href="koushikkothagal_18D2G.gdpr#_tR6DEvIXEe-7xa1ULUXTTw"/>
+  </flowTraces>
+  <flowTraces>
+    <dataFlow href="koushikkothagal_18D2G2D.dataflowdiagram#69"/>
+    <source href="koushikkothagal_18D2G.gdpr#7"/>
+    <dest href="koushikkothagal_18D2G.gdpr#6"/>
+    <data href="koushikkothagal_18D2G.gdpr#_tR6DEvIXEe-7xa1ULUXTTw"/>
+  </flowTraces>
+  <flowTraces>
+    <dataFlow href="koushikkothagal_18D2G2D.dataflowdiagram#71"/>
+    <source href="koushikkothagal_18D2G.gdpr#7"/>
+    <dest href="koushikkothagal_18D2G.gdpr#4"/>
+    <data href="koushikkothagal_18D2G.gdpr#_tR6DEvIXEe-7xa1ULUXTTw"/>
+  </flowTraces>
 </tracemodel:TraceModel>

@@ -74,30 +74,31 @@
   <labelTypes id="147" entityName="LoadBalancer">
     <label id="148" entityName="Ribbon"/>
   </labelTypes>
-  <labelTypes id="_UkqIMvE9Ee-L2P0tVZBdHA" entityName="ProcessingType">
-    <label id="_UkqIVvE9Ee-L2P0tVZBdHA" entityName="Collecting"/>
-    <label id="_UkqIWPE9Ee-L2P0tVZBdHA" entityName="Storing"/>
-    <label id="_UkqIWfE9Ee-L2P0tVZBdHA" entityName="Usage"/>
-    <label id="_UkqIWvE9Ee-L2P0tVZBdHA" entityName="Transferring"/>
+  <labelTypes id="_s7VV8fIXEe-7xa1ULUXTTw" entityName="ProcessingType">
+    <label id="_s7VWA_IXEe-7xa1ULUXTTw" entityName="Collecting"/>
+    <label id="_s7VWBPIXEe-7xa1ULUXTTw" entityName="Storing"/>
+    <label id="_s7VWBfIXEe-7xa1ULUXTTw" entityName="Usage"/>
+    <label id="_s7VWBvIXEe-7xa1ULUXTTw" entityName="Transferring"/>
   </labelTypes>
-  <labelTypes id="_UkqINfE9Ee-L2P0tVZBdHA" entityName="Data">
-    <label id="_UknE7fE9Ee-L2P0tVZBdHA"/>
-    <label id="_UknE7fE9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_s7VV8vIXEe-7xa1ULUXTTw" entityName="Data">
+    <label id="_s7UH4PIXEe-7xa1ULUXTTw"/>
+    <label id="_s7UH4vIXEe-7xa1ULUXTTw"/>
+    <label id="_s7UH5PIXEe-7xa1ULUXTTw"/>
   </labelTypes>
-  <labelTypes id="_UkqINvE9Ee-L2P0tVZBdHA" entityName="PersonalData"/>
-  <labelTypes id="_UkqIOPE9Ee-L2P0tVZBdHA" entityName="Obligation"/>
-  <labelTypes id="_UkqIOvE9Ee-L2P0tVZBdHA" entityName="Consent"/>
-  <labelTypes id="_UkqIO_E9Ee-L2P0tVZBdHA" entityName="Contract"/>
-  <labelTypes id="_UkqIPfE9Ee-L2P0tVZBdHA" entityName="PublicAuthority"/>
-  <labelTypes id="_UkqIP_E9Ee-L2P0tVZBdHA" entityName="NaturalPerson"/>
-  <labelTypes id="_UkqIQfE9Ee-L2P0tVZBdHA" entityName="Controller">
-    <label id="_Uknr4PE9Ee-L2P0tVZBdHA"/>
-    <label id="_Uknr4PE9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_s7VV8_IXEe-7xa1ULUXTTw" entityName="PersonalData"/>
+  <labelTypes id="_s7VV9PIXEe-7xa1ULUXTTw" entityName="Obligation"/>
+  <labelTypes id="_s7VV9fIXEe-7xa1ULUXTTw" entityName="Consent"/>
+  <labelTypes id="_s7VV9vIXEe-7xa1ULUXTTw" entityName="Contract"/>
+  <labelTypes id="_s7VV9_IXEe-7xa1ULUXTTw" entityName="PublicAuthority"/>
+  <labelTypes id="_s7VV-PIXEe-7xa1ULUXTTw" entityName="NaturalPerson"/>
+  <labelTypes id="_s7VV-fIXEe-7xa1ULUXTTw" entityName="Controller">
+    <label id="_s7Uu4PIXEe-7xa1ULUXTTw"/>
   </labelTypes>
-  <labelTypes id="_UkqIQ_E9Ee-L2P0tVZBdHA" entityName="ThirdParty"/>
-  <labelTypes id="_UkqIRPE9Ee-L2P0tVZBdHA" entityName="Purposes">
-    <label id="_UknE7vE9Ee-L2P0tVZBdHA"/>
-    <label id="_UknE7vE9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_s7VV-vIXEe-7xa1ULUXTTw" entityName="ThirdParty"/>
+  <labelTypes id="_s7VV-_IXEe-7xa1ULUXTTw" entityName="Purposes">
+    <label id="_s7UH4fIXEe-7xa1ULUXTTw"/>
+    <label id="_s7UH4_IXEe-7xa1ULUXTTw"/>
+    <label id="_s7UH5fIXEe-7xa1ULUXTTw"/>
   </labelTypes>
   <behavior id="18"/>
   <behavior id="21">
@@ -313,19 +314,4 @@
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="292" outputPin="155" inputPins="149"/>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="293" outputPin="179" inputPins="149"/>
   </behavior>
-  <behavior id="_Uk5_yfE9Ee-L2P0tVZBdHA" entityName="user Behavior"/>
-  <behavior id="_Uk5_y_E9Ee-L2P0tVZBdHA" entityName="logstash Behavior"/>
-  <behavior id="_Uk5_z_E9Ee-L2P0tVZBdHA" entityName="config_server Behavior"/>
-  <behavior id="_Uk5_0fE9Ee-L2P0tVZBdHA" entityName="admin Behavior"/>
-  <behavior id="_Uk5_0_E9Ee-L2P0tVZBdHA" entityName="eureka_server Behavior"/>
-  <behavior id="_Uk5_1fE9Ee-L2P0tVZBdHA" entityName="user_service Behavior"/>
-  <behavior id="_Uk5_1_E9Ee-L2P0tVZBdHA" entityName="kafka Behavior"/>
-  <behavior id="_Uk5_2_E9Ee-L2P0tVZBdHA" entityName="mailer Behavior"/>
-  <behavior id="_Uk5_3fE9Ee-L2P0tVZBdHA" entityName="reminder Behavior"/>
-  <behavior id="_Uk5_3_E9Ee-L2P0tVZBdHA" entityName="api_gateway Behavior"/>
-  <behavior id="_Uk5_4vE9Ee-L2P0tVZBdHA" entityName="oauth Behavior"/>
-  <behavior id="_Uk5_5fE9Ee-L2P0tVZBdHA" entityName="proxy Behavior"/>
-  <behavior id="_Uk5_5_E9Ee-L2P0tVZBdHA" entityName="zookeeper Behavior"/>
-  <behavior id="_Uk5_6fE9Ee-L2P0tVZBdHA" entityName="jmx_monitoring Behavior"/>
-  <behavior id="_Uk5_6_E9Ee-L2P0tVZBdHA" entityName="todo_infra Behavior"/>
 </datadictionary:DataDictionary>

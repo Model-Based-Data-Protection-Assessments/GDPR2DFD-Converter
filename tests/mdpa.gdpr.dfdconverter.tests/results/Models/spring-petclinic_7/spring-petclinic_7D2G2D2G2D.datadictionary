@@ -73,30 +73,27 @@
   <labelTypes id="90" entityName="MonitoringDashboard">
     <label id="91" entityName="Grafana"/>
   </labelTypes>
-  <labelTypes id="_UiYQNvE9Ee-L2P0tVZBdHA" entityName="ProcessingType">
-    <label id="_UiYQUPE9Ee-L2P0tVZBdHA" entityName="Collecting"/>
-    <label id="_UiYQU_E9Ee-L2P0tVZBdHA" entityName="Storing"/>
-    <label id="_UiYQVfE9Ee-L2P0tVZBdHA" entityName="Usage"/>
-    <label id="_UiYQVvE9Ee-L2P0tVZBdHA" entityName="Transferring"/>
+  <labelTypes id="_tasygfIXEe-7xa1ULUXTTw" entityName="ProcessingType">
+    <label id="_tasyj_IXEe-7xa1ULUXTTw" entityName="Collecting"/>
+    <label id="_tasykPIXEe-7xa1ULUXTTw" entityName="Storing"/>
+    <label id="_tasykfIXEe-7xa1ULUXTTw" entityName="Usage"/>
+    <label id="_tasykvIXEe-7xa1ULUXTTw" entityName="Transferring"/>
   </labelTypes>
-  <labelTypes id="_UiYQN_E9Ee-L2P0tVZBdHA" entityName="Data">
-    <label id="_UiT-zvE9Ee-L2P0tVZBdHA"/>
-    <label id="_UiT-zvE9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_tasygvIXEe-7xa1ULUXTTw" entityName="Data">
+    <label id="_tasLffIXEe-7xa1ULUXTTw"/>
   </labelTypes>
-  <labelTypes id="_UiYQOPE9Ee-L2P0tVZBdHA" entityName="PersonalData"/>
-  <labelTypes id="_UiYQOfE9Ee-L2P0tVZBdHA" entityName="Obligation"/>
-  <labelTypes id="_UiYQO_E9Ee-L2P0tVZBdHA" entityName="Consent"/>
-  <labelTypes id="_UiYQPfE9Ee-L2P0tVZBdHA" entityName="Contract"/>
-  <labelTypes id="_UiYQPvE9Ee-L2P0tVZBdHA" entityName="PublicAuthority"/>
-  <labelTypes id="_UiYQQPE9Ee-L2P0tVZBdHA" entityName="NaturalPerson"/>
-  <labelTypes id="_UiYQQvE9Ee-L2P0tVZBdHA" entityName="Controller">
-    <label id="_UiUlyvE9Ee-L2P0tVZBdHA"/>
-    <label id="_UiUlyvE9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_tasyg_IXEe-7xa1ULUXTTw" entityName="PersonalData"/>
+  <labelTypes id="_tasyhPIXEe-7xa1ULUXTTw" entityName="Obligation"/>
+  <labelTypes id="_tasyhfIXEe-7xa1ULUXTTw" entityName="Consent"/>
+  <labelTypes id="_tasyhvIXEe-7xa1ULUXTTw" entityName="Contract"/>
+  <labelTypes id="_tasyh_IXEe-7xa1ULUXTTw" entityName="PublicAuthority"/>
+  <labelTypes id="_tasyiPIXEe-7xa1ULUXTTw" entityName="NaturalPerson"/>
+  <labelTypes id="_tasyifIXEe-7xa1ULUXTTw" entityName="Controller">
+    <label id="_tasLf_IXEe-7xa1ULUXTTw"/>
   </labelTypes>
-  <labelTypes id="_UiYQQ_E9Ee-L2P0tVZBdHA" entityName="ThirdParty"/>
-  <labelTypes id="_UiYQRPE9Ee-L2P0tVZBdHA" entityName="Purposes">
-    <label id="_UiT-z_E9Ee-L2P0tVZBdHA"/>
-    <label id="_UiT-z_E9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_tasyivIXEe-7xa1ULUXTTw" entityName="ThirdParty"/>
+  <labelTypes id="_tasyi_IXEe-7xa1ULUXTTw" entityName="Purposes">
+    <label id="_tasLfvIXEe-7xa1ULUXTTw"/>
   </labelTypes>
   <behavior id="15">
     <inPin id="126"/>
@@ -272,16 +269,4 @@
   <behavior id="87">
     <inPin id="111"/>
   </behavior>
-  <behavior id="_UiiBOfE9Ee-L2P0tVZBdHA" entityName="github_repository Behavior"/>
-  <behavior id="_UiiBPPE9Ee-L2P0tVZBdHA" entityName="user Behavior"/>
-  <behavior id="_UiioMfE9Ee-L2P0tVZBdHA" entityName="config_server Behavior"/>
-  <behavior id="_UiioM_E9Ee-L2P0tVZBdHA" entityName="discovery_server Behavior"/>
-  <behavior id="_UiioNfE9Ee-L2P0tVZBdHA" entityName="tracing_server Behavior"/>
-  <behavior id="_UiioN_E9Ee-L2P0tVZBdHA" entityName="admin_server Behavior"/>
-  <behavior id="_UiioOfE9Ee-L2P0tVZBdHA" entityName="prometheus_server Behavior"/>
-  <behavior id="_UiioO_E9Ee-L2P0tVZBdHA" entityName="grafana_server Behavior"/>
-  <behavior id="_UiioPfE9Ee-L2P0tVZBdHA" entityName="customers_service Behavior"/>
-  <behavior id="_UiioP_E9Ee-L2P0tVZBdHA" entityName="vets_service Behavior"/>
-  <behavior id="_UiioQfE9Ee-L2P0tVZBdHA" entityName="visits_service Behavior"/>
-  <behavior id="_UiioQ_E9Ee-L2P0tVZBdHA" entityName="api_gateway Behavior"/>
 </datadictionary:DataDictionary>

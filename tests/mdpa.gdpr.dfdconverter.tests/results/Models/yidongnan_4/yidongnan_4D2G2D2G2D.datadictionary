@@ -63,30 +63,27 @@
   <labelTypes id="79" entityName="MonitoringServer">
     <label id="80" entityName="Turbine"/>
   </labelTypes>
-  <labelTypes id="_UtxBHPE9Ee-L2P0tVZBdHA" entityName="ProcessingType">
-    <label id="_UtxBR_E9Ee-L2P0tVZBdHA" entityName="Collecting"/>
-    <label id="_UtxBSvE9Ee-L2P0tVZBdHA" entityName="Storing"/>
-    <label id="_UtxBTPE9Ee-L2P0tVZBdHA" entityName="Usage"/>
-    <label id="_UtxBUPE9Ee-L2P0tVZBdHA" entityName="Transferring"/>
+  <labelTypes id="_tpAUQfIXEe-7xa1ULUXTTw" entityName="ProcessingType">
+    <label id="_tpAUT_IXEe-7xa1ULUXTTw" entityName="Collecting"/>
+    <label id="_tpAUUPIXEe-7xa1ULUXTTw" entityName="Storing"/>
+    <label id="_tpAUUfIXEe-7xa1ULUXTTw" entityName="Usage"/>
+    <label id="_tpAUUvIXEe-7xa1ULUXTTw" entityName="Transferring"/>
   </labelTypes>
-  <labelTypes id="_UtxBH_E9Ee-L2P0tVZBdHA" entityName="Data">
-    <label id="_UtuksfE9Ee-L2P0tVZBdHA"/>
-    <label id="_UtuksfE9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_tpAUQvIXEe-7xa1ULUXTTw" entityName="Data">
+    <label id="_to_tMPIXEe-7xa1ULUXTTw"/>
   </labelTypes>
-  <labelTypes id="_UtxBIfE9Ee-L2P0tVZBdHA" entityName="PersonalData"/>
-  <labelTypes id="_UtxBJPE9Ee-L2P0tVZBdHA" entityName="Obligation"/>
-  <labelTypes id="_UtxBJ_E9Ee-L2P0tVZBdHA" entityName="Consent"/>
-  <labelTypes id="_UtxBK_E9Ee-L2P0tVZBdHA" entityName="Contract"/>
-  <labelTypes id="_UtxBLvE9Ee-L2P0tVZBdHA" entityName="PublicAuthority"/>
-  <labelTypes id="_UtxBMvE9Ee-L2P0tVZBdHA" entityName="NaturalPerson"/>
-  <labelTypes id="_UtxBM_E9Ee-L2P0tVZBdHA" entityName="Controller">
-    <label id="_UtvLlfE9Ee-L2P0tVZBdHA"/>
-    <label id="_UtvLlfE9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_tpAUQ_IXEe-7xa1ULUXTTw" entityName="PersonalData"/>
+  <labelTypes id="_tpAURPIXEe-7xa1ULUXTTw" entityName="Obligation"/>
+  <labelTypes id="_tpAURfIXEe-7xa1ULUXTTw" entityName="Consent"/>
+  <labelTypes id="_tpAURvIXEe-7xa1ULUXTTw" entityName="Contract"/>
+  <labelTypes id="_tpAUR_IXEe-7xa1ULUXTTw" entityName="PublicAuthority"/>
+  <labelTypes id="_tpAUSPIXEe-7xa1ULUXTTw" entityName="NaturalPerson"/>
+  <labelTypes id="_tpAUSfIXEe-7xa1ULUXTTw" entityName="Controller">
+    <label id="_to_tMvIXEe-7xa1ULUXTTw"/>
   </labelTypes>
-  <labelTypes id="_UtxBNPE9Ee-L2P0tVZBdHA" entityName="ThirdParty"/>
-  <labelTypes id="_UtxBOPE9Ee-L2P0tVZBdHA" entityName="Purposes">
-    <label id="_UtuksvE9Ee-L2P0tVZBdHA"/>
-    <label id="_UtuksvE9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_tpAUSvIXEe-7xa1ULUXTTw" entityName="ThirdParty"/>
+  <labelTypes id="_tpAUS_IXEe-7xa1ULUXTTw" entityName="Purposes">
+    <label id="_to_tMfIXEe-7xa1ULUXTTw"/>
   </labelTypes>
   <behavior id="13">
     <inPin id="109"/>
@@ -255,14 +252,4 @@
     </assignment>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="229" outputPin="96" inputPins="93"/>
   </behavior>
-  <behavior id="_Ut4V9_E9Ee-L2P0tVZBdHA" entityName="user Behavior"/>
-  <behavior id="_Ut48kvE9Ee-L2P0tVZBdHA" entityName="admin_dashboard Behavior"/>
-  <behavior id="_Ut48lvE9Ee-L2P0tVZBdHA" entityName="eureka_server Behavior"/>
-  <behavior id="_Ut48mfE9Ee-L2P0tVZBdHA" entityName="rabbitmq Behavior"/>
-  <behavior id="_Ut48nfE9Ee-L2P0tVZBdHA" entityName="config_server Behavior"/>
-  <behavior id="_Ut48ofE9Ee-L2P0tVZBdHA" entityName="hystrix_dashboard Behavior"/>
-  <behavior id="_Ut48pfE9Ee-L2P0tVZBdHA" entityName="service_a Behavior"/>
-  <behavior id="_Ut48qfE9Ee-L2P0tVZBdHA" entityName="service_b Behavior"/>
-  <behavior id="_Ut48rfE9Ee-L2P0tVZBdHA" entityName="zuul Behavior"/>
-  <behavior id="_Ut48sfE9Ee-L2P0tVZBdHA" entityName="zipkin Behavior"/>
 </datadictionary:DataDictionary>

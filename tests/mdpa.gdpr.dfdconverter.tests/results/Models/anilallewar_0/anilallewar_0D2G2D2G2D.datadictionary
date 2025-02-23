@@ -92,38 +92,31 @@
   <labelTypes id="109" entityName="Protocol">
     <label id="110" entityName="HTTPS"/>
   </labelTypes>
-  <labelTypes id="_Up83zPE9Ee-L2P0tVZBdHA" entityName="ProcessingType">
-    <label id="_Up834fE9Ee-L2P0tVZBdHA" entityName="Collecting"/>
-    <label id="_Up834vE9Ee-L2P0tVZBdHA" entityName="Storing"/>
-    <label id="_Up834_E9Ee-L2P0tVZBdHA" entityName="Usage"/>
-    <label id="_Up835PE9Ee-L2P0tVZBdHA" entityName="Transferring"/>
+  <labelTypes id="_syEsQPIXEe-7xa1ULUXTTw" entityName="ProcessingType">
+    <label id="_syIWo_IXEe-7xa1ULUXTTw" entityName="Collecting"/>
+    <label id="_syIWpPIXEe-7xa1ULUXTTw" entityName="Storing"/>
+    <label id="_syIWpfIXEe-7xa1ULUXTTw" entityName="Usage"/>
+    <label id="_syIWpvIXEe-7xa1ULUXTTw" entityName="Transferring"/>
   </labelTypes>
-  <labelTypes id="_Up83zfE9Ee-L2P0tVZBdHA" entityName="Data">
-    <label id="_Up50ofE9Ee-L2P0tVZBdHA"/>
-    <label id="_Up50pPE9Ee-L2P0tVZBdHA"/>
-    <label id="_Up50p_E9Ee-L2P0tVZBdHA"/>
-    <label id="_Up50ofE9Ee-L2P0tVZBdHA"/>
-    <label id="_Up50pPE9Ee-L2P0tVZBdHA"/>
-    <label id="_Up50p_E9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_syEsQfIXEe-7xa1ULUXTTw" entityName="Data">
+    <label id="_sw6OoPIXEe-7xa1ULUXTTw"/>
+    <label id="_sw_uMPIXEe-7xa1ULUXTTw"/>
+    <label id="_sw_uMvIXEe-7xa1ULUXTTw"/>
   </labelTypes>
-  <labelTypes id="_Up83zvE9Ee-L2P0tVZBdHA" entityName="PersonalData"/>
-  <labelTypes id="_Up83z_E9Ee-L2P0tVZBdHA" entityName="Obligation"/>
-  <labelTypes id="_Up830PE9Ee-L2P0tVZBdHA" entityName="Consent"/>
-  <labelTypes id="_Up830vE9Ee-L2P0tVZBdHA" entityName="Contract"/>
-  <labelTypes id="_Up831PE9Ee-L2P0tVZBdHA" entityName="PublicAuthority"/>
-  <labelTypes id="_Up831vE9Ee-L2P0tVZBdHA" entityName="NaturalPerson"/>
-  <labelTypes id="_Up831_E9Ee-L2P0tVZBdHA" entityName="Controller">
-    <label id="_Up6bjfE9Ee-L2P0tVZBdHA"/>
-    <label id="_Up6bjfE9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_syEsQvIXEe-7xa1ULUXTTw" entityName="PersonalData"/>
+  <labelTypes id="_syEsQ_IXEe-7xa1ULUXTTw" entityName="Obligation"/>
+  <labelTypes id="_syEsRPIXEe-7xa1ULUXTTw" entityName="Consent"/>
+  <labelTypes id="_syEsRfIXEe-7xa1ULUXTTw" entityName="Contract"/>
+  <labelTypes id="_syEsRvIXEe-7xa1ULUXTTw" entityName="PublicAuthority"/>
+  <labelTypes id="_syFTUPIXEe-7xa1ULUXTTw" entityName="NaturalPerson"/>
+  <labelTypes id="_syFTUfIXEe-7xa1ULUXTTw" entityName="Controller">
+    <label id="_sxEmsPIXEe-7xa1ULUXTTw"/>
   </labelTypes>
-  <labelTypes id="_Up832PE9Ee-L2P0tVZBdHA" entityName="ThirdParty"/>
-  <labelTypes id="_Up832fE9Ee-L2P0tVZBdHA" entityName="Purposes">
-    <label id="_Up50ovE9Ee-L2P0tVZBdHA"/>
-    <label id="_Up50pfE9Ee-L2P0tVZBdHA"/>
-    <label id="_Up50qPE9Ee-L2P0tVZBdHA"/>
-    <label id="_Up50ovE9Ee-L2P0tVZBdHA"/>
-    <label id="_Up50pfE9Ee-L2P0tVZBdHA"/>
-    <label id="_Up50qPE9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_syFTUvIXEe-7xa1ULUXTTw" entityName="ThirdParty"/>
+  <labelTypes id="_syFTU_IXEe-7xa1ULUXTTw" entityName="Purposes">
+    <label id="_sw61sPIXEe-7xa1ULUXTTw"/>
+    <label id="_sw_uMfIXEe-7xa1ULUXTTw"/>
+    <label id="_sw_uM_IXEe-7xa1ULUXTTw"/>
   </labelTypes>
   <behavior id="15">
     <inPin id="128"/>
@@ -299,16 +292,4 @@
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="261" outputPin="152" inputPins="117"/>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="262" outputPin="174" inputPins="117"/>
   </behavior>
-  <behavior id="_UqNWevE9Ee-L2P0tVZBdHA" entityName="github_repository Behavior"/>
-  <behavior id="_UqNWfPE9Ee-L2P0tVZBdHA" entityName="user Behavior"/>
-  <behavior id="_UqNWfvE9Ee-L2P0tVZBdHA" entityName="configserver Behavior"/>
-  <behavior id="_UqNWgPE9Ee-L2P0tVZBdHA" entityName="webservice_registry Behavior"/>
-  <behavior id="_UqNWg_E9Ee-L2P0tVZBdHA" entityName="zipkin_tracing Behavior"/>
-  <behavior id="_UqNWhvE9Ee-L2P0tVZBdHA" entityName="mysqldb Behavior"/>
-  <behavior id="_UqNWifE9Ee-L2P0tVZBdHA" entityName="auth_server Behavior"/>
-  <behavior id="_UqNWjPE9Ee-L2P0tVZBdHA" entityName="web_portal Behavior"/>
-  <behavior id="_UqNWjvE9Ee-L2P0tVZBdHA" entityName="user_webservice Behavior"/>
-  <behavior id="_UqN9gPE9Ee-L2P0tVZBdHA" entityName="comments_webservice Behavior"/>
-  <behavior id="_UqN9gvE9Ee-L2P0tVZBdHA" entityName="task_webservice Behavior"/>
-  <behavior id="_UqN9hfE9Ee-L2P0tVZBdHA" entityName="api_gateway Behavior"/>
 </datadictionary:DataDictionary>

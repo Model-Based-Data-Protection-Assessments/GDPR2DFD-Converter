@@ -41,6 +41,8 @@ public class ScalabilityTests {
 	private static GDPRFactory gdprFactory = GDPRFactory.eINSTANCE;
 	private static final String resultFolder = "C:\\Users\\Huell\\Documents\\Studium\\HIWI\\GDPR2DFD-Converter\\tests\\mdpa.gdpr.dfdconverter.tests\\results\\Scalability\\";
 	
+	private static final int max = 5;
+	
 	
 	@Test
 	public void runDFDTest() {	
@@ -53,7 +55,7 @@ public class ScalabilityTests {
 
         // Run the loop 11 times in total
         IntStream.range(0, 11).forEach(i -> {
-        	for (int j = 0; j < 7; j ++) {
+        	for (int j = 0; j < max; j ++) {
 	            var dataDictionary = ddFactory.createDataDictionary();
 	            var dataFlowDiagram = dfdFactory.createDataFlowDiagram();
 	
@@ -92,7 +94,7 @@ public class ScalabilityTests {
         );
      // Calculate and write the average of the 10 recorded durations
         
-        for (int j = 0; j < 7; j++ ) {
+        for (int j = 0; j < max; j++ ) {
         	long sum = 0;
 	        for (int i = 0; i < 10; i++) {
 		        sum += recordedDurations[i][j];
@@ -235,7 +237,7 @@ public class ScalabilityTests {
 		
 		PersonalData data = laf.getData().stream().filter(PersonalData.class::isInstance).map(PersonalData.class::cast).findAny().orElseThrow();
 		
-		for (int i = 0; i < Math.pow(10, exponent) - 1; i++) {
+		for (int i = 0; i < Math.pow(10, exponent) - 2; i++) {
 			NaturalPerson person = gdprFactory.createNaturalPerson();
 			person.setEntityName("person" + i);
 			data.getDataReferences().add(person);
@@ -278,7 +280,7 @@ public class ScalabilityTests {
 
         // Run the loop 11 times in total
         for (int i = 0; i < 11; i++) {
-        	for (int j = 0; j < 6; j ++) {
+        	for (int j = 0; j < max; j ++) {
 	
 	           LegalAssessmentFacts laf = createProcessingLAF(j); 
 	            GDPR2DFD converter = new GDPR2DFD(laf);
@@ -308,7 +310,7 @@ public class ScalabilityTests {
         }
      // Calculate and write the average of the 10 recorded durations
         
-        for (int j = 0; j < 7; j++ ) {
+        for (int j = 0; j < max; j++ ) {
         	long sum = 0;
 	        for (int i = 0; i < 10; i++) {
 		        sum += recordedDurations[i][j];
@@ -336,7 +338,7 @@ public class ScalabilityTests {
 
         // Run the loop 11 times in total
         for (int i = 0; i < 11; i++) {
-        	for (int j = 0; j < 6; j ++) {
+        	for (int j = 0; j < max; j ++) {
 	
 	           LegalAssessmentFacts laf = createRoleLaf(j); 
 	            GDPR2DFD converter = new GDPR2DFD(laf);
@@ -366,7 +368,7 @@ public class ScalabilityTests {
         }
      // Calculate and write the average of the 10 recorded durations
         
-        for (int j = 0; j < 7; j++ ) {
+        for (int j = 0; j < max; j++ ) {
         	long sum = 0;
 	        for (int i = 0; i < 10; i++) {
 		        sum += recordedDurations[i][j];
@@ -394,7 +396,7 @@ public class ScalabilityTests {
 
         // Run the loop 11 times in total
         for (int i = 0; i < 11; i++) {
-        	for (int j = 0; j < 6; j ++) {
+        	for (int j = 0; j < max; j ++) {
 	
 	           LegalAssessmentFacts laf = createPurposeLaf(j);
 	            GDPR2DFD converter = new GDPR2DFD(laf);
@@ -424,7 +426,7 @@ public class ScalabilityTests {
         }
      // Calculate and write the average of the 10 recorded durations
         
-        for (int j = 0; j < 7; j++ ) {
+        for (int j = 0; j < max; j++ ) {
         	long sum = 0;
 	        for (int i = 0; i < 10; i++) {
 		        sum += recordedDurations[i][j];

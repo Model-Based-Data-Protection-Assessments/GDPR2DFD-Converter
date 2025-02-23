@@ -117,30 +117,37 @@
   <labelTypes id="141" entityName="LoadBalancer">
     <label id="142" entityName="Ribbon"/>
   </labelTypes>
-  <labelTypes id="_UuZS4_E9Ee-L2P0tVZBdHA" entityName="ProcessingType">
-    <label id="_UuZS8fE9Ee-L2P0tVZBdHA" entityName="Collecting"/>
-    <label id="_UuZS8vE9Ee-L2P0tVZBdHA" entityName="Storing"/>
-    <label id="_UuZS8_E9Ee-L2P0tVZBdHA" entityName="Usage"/>
-    <label id="_UuZS9PE9Ee-L2P0tVZBdHA" entityName="Transferring"/>
+  <labelTypes id="_teu98fIXEe-7xa1ULUXTTw" entityName="ProcessingType">
+    <label id="_teu-CfIXEe-7xa1ULUXTTw" entityName="Collecting"/>
+    <label id="_teu-CvIXEe-7xa1ULUXTTw" entityName="Storing"/>
+    <label id="_teu-C_IXEe-7xa1ULUXTTw" entityName="Usage"/>
+    <label id="_teu-DPIXEe-7xa1ULUXTTw" entityName="Transferring"/>
   </labelTypes>
-  <labelTypes id="_UuZS5PE9Ee-L2P0tVZBdHA" entityName="Data">
-    <label id="_UuW2qPE9Ee-L2P0tVZBdHA"/>
-    <label id="_UuW2qPE9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_teu98vIXEe-7xa1ULUXTTw" entityName="Data">
+    <label id="_teshwvIXEe-7xa1ULUXTTw"/>
+    <label id="_teshxPIXEe-7xa1ULUXTTw"/>
+    <label id="_teshxvIXEe-7xa1ULUXTTw"/>
+    <label id="_teshyPIXEe-7xa1ULUXTTw"/>
+    <label id="_teshyvIXEe-7xa1ULUXTTw"/>
+    <label id="_teshzPIXEe-7xa1ULUXTTw"/>
   </labelTypes>
-  <labelTypes id="_UuZS5fE9Ee-L2P0tVZBdHA" entityName="PersonalData"/>
-  <labelTypes id="_UuZS5vE9Ee-L2P0tVZBdHA" entityName="Obligation"/>
-  <labelTypes id="_UuZS5_E9Ee-L2P0tVZBdHA" entityName="Consent"/>
-  <labelTypes id="_UuZS6PE9Ee-L2P0tVZBdHA" entityName="Contract"/>
-  <labelTypes id="_UuZS6fE9Ee-L2P0tVZBdHA" entityName="PublicAuthority"/>
-  <labelTypes id="_UuZS6vE9Ee-L2P0tVZBdHA" entityName="NaturalPerson"/>
-  <labelTypes id="_UuZS6_E9Ee-L2P0tVZBdHA" entityName="Controller">
-    <label id="_UuW2qvE9Ee-L2P0tVZBdHA"/>
-    <label id="_UuW2qvE9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_teu98_IXEe-7xa1ULUXTTw" entityName="PersonalData"/>
+  <labelTypes id="_teu99PIXEe-7xa1ULUXTTw" entityName="Obligation"/>
+  <labelTypes id="_teu99fIXEe-7xa1ULUXTTw" entityName="Consent"/>
+  <labelTypes id="_teu99vIXEe-7xa1ULUXTTw" entityName="Contract"/>
+  <labelTypes id="_teu99_IXEe-7xa1ULUXTTw" entityName="PublicAuthority"/>
+  <labelTypes id="_teu9-PIXEe-7xa1ULUXTTw" entityName="NaturalPerson"/>
+  <labelTypes id="_teu9-fIXEe-7xa1ULUXTTw" entityName="Controller">
+    <label id="_tetv0PIXEe-7xa1ULUXTTw"/>
   </labelTypes>
-  <labelTypes id="_UuZS7PE9Ee-L2P0tVZBdHA" entityName="ThirdParty"/>
-  <labelTypes id="_UuZS7fE9Ee-L2P0tVZBdHA" entityName="Purposes">
-    <label id="_UuW2qfE9Ee-L2P0tVZBdHA"/>
-    <label id="_UuW2qfE9Ee-L2P0tVZBdHA"/>
+  <labelTypes id="_teu9-vIXEe-7xa1ULUXTTw" entityName="ThirdParty"/>
+  <labelTypes id="_teu9-_IXEe-7xa1ULUXTTw" entityName="Purposes">
+    <label id="_teshw_IXEe-7xa1ULUXTTw"/>
+    <label id="_teshxfIXEe-7xa1ULUXTTw"/>
+    <label id="_teshx_IXEe-7xa1ULUXTTw"/>
+    <label id="_teshyfIXEe-7xa1ULUXTTw"/>
+    <label id="_teshy_IXEe-7xa1ULUXTTw"/>
+    <label id="_teshzfIXEe-7xa1ULUXTTw"/>
   </labelTypes>
   <behavior id="20">
     <outPin id="214"/>
@@ -359,21 +366,4 @@
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="332" outputPin="232" inputPins="218"/>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="333" outputPin="234" inputPins="218"/>
   </behavior>
-  <behavior id="_Uuic1PE9Ee-L2P0tVZBdHA" entityName="mail_server Behavior"/>
-  <behavior id="_Uuic1vE9Ee-L2P0tVZBdHA" entityName="external_website Behavior"/>
-  <behavior id="_Uuic2PE9Ee-L2P0tVZBdHA" entityName="user Behavior"/>
-  <behavior id="_Uuic2vE9Ee-L2P0tVZBdHA" entityName="config Behavior"/>
-  <behavior id="_Uuic3PE9Ee-L2P0tVZBdHA" entityName="registry Behavior"/>
-  <behavior id="_Uuic3vE9Ee-L2P0tVZBdHA" entityName="monitoring Behavior"/>
-  <behavior id="_Uuic4PE9Ee-L2P0tVZBdHA" entityName="turbine_stream_service Behavior"/>
-  <behavior id="_Uuic4vE9Ee-L2P0tVZBdHA" entityName="rabbitmq Behavior"/>
-  <behavior id="_Uuic5PE9Ee-L2P0tVZBdHA" entityName="auth_service Behavior"/>
-  <behavior id="_Uuic5vE9Ee-L2P0tVZBdHA" entityName="account_service Behavior"/>
-  <behavior id="_Uuic6PE9Ee-L2P0tVZBdHA" entityName="notification_service Behavior"/>
-  <behavior id="_Uuic6vE9Ee-L2P0tVZBdHA" entityName="statistics_service Behavior"/>
-  <behavior id="_Uuic7PE9Ee-L2P0tVZBdHA" entityName="auth_mongodb Behavior"/>
-  <behavior id="_Uuic7vE9Ee-L2P0tVZBdHA" entityName="account_mongodb Behavior"/>
-  <behavior id="_Uuic8PE9Ee-L2P0tVZBdHA" entityName="statistics_mongodb Behavior"/>
-  <behavior id="_Uuic8vE9Ee-L2P0tVZBdHA" entityName="notification_mongodb Behavior"/>
-  <behavior id="_Uuic9PE9Ee-L2P0tVZBdHA" entityName="gateway Behavior"/>
 </datadictionary:DataDictionary>

@@ -14,7 +14,6 @@ import java.util.*;
 import org.dataflowanalysis.converter.PCMConverter;
 import org.dataflowanalysis.dfd.datadictionary.DataDictionary;
 import org.dataflowanalysis.dfd.dataflowdiagram.DataFlowDiagram;
-import org.dataflowanalysis.dfd.dataflowdiagram.Node;
 import org.dataflowanalysis.dfd.dataflowdiagram.dataflowdiagramPackage;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.Resource;
@@ -23,8 +22,6 @@ import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 import org.junit.jupiter.api.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
 
 import mdpa.gdpr.dfdconverter.DFD2GDPR;
 import mdpa.gdpr.dfdconverter.GDPR2DFD;
@@ -34,10 +31,10 @@ import mdpa.gdpr.metamodel.GDPR.LegalAssessmentFacts;
 public class ModelRunnerTest {		
 
     // Set the root directory where all subfolders are located
-    private static final String ROOT_DIR = "C:\\Users\\Huell\\Documents\\HIWI\\ExampleModels\\bundles\\org.dataflowanalysis.examplemodels\\casestudies\\TUHH-Models\\";
-    private static final String ROOT_DIR_PCM = "C:\\Users\\Huell\\Documents\\HIWI\\ExampleModels\\bundles\\org.dataflowanalysis.examplemodels\\casestudies\\";
-    private static final String resultFolderBase = "C:\\Users\\Huell\\Documents\\HIWI\\GDPR2DFD-Converter\\tests\\mdpa.gdpr.dfdconverter.tests\\results\\Models\\";
-    private static final String resultFolderBasePCM = "C:\\Users\\Huell\\Documents\\HIWI\\GDPR2DFD-Converter\\tests\\mdpa.gdpr.dfdconverter.tests\\results\\Models\\PCM\\";
+    private static final String ROOT_DIR = "C:\\Users\\Huell\\Documents\\Studium\\HIWI\\ExampleModels\\bundles\\org.dataflowanalysis.examplemodels\\casestudies\\TUHH-Models\\";
+    private static final String ROOT_DIR_PCM = "C:\\Users\\Huell\\Documents\\Studium\\HIWI\\ExampleModels\\bundles\\org.dataflowanalysis.examplemodels\\casestudies\\";
+    private static final String resultFolderBase = "C:\\Users\\Huell\\Documents\\Studium\\HIWI\\GDPR2DFD-Converter\\tests\\mdpa.gdpr.dfdconverter.tests\\results\\Models\\";
+    private static final String resultFolderBasePCM = "C:\\Users\\Huell\\Documents\\Studium\\HIWI\\GDPR2DFD-Converter\\tests\\mdpa.gdpr.dfdconverter.tests\\results\\Models\\PCM\\";
 
 
     public static Collection<File[]> data() {
@@ -99,7 +96,7 @@ public class ModelRunnerTest {
         // For example, parse them, compare them, run some logic, etc.
 
         var data = data();
-        data.stream().parallel().forEach(file -> {
+        data.stream().forEach(file -> {
         
         	File dfdFile = file[0];
         	File ddFile = file[1];
@@ -166,24 +163,17 @@ public class ModelRunnerTest {
         	dfd2gdpr2.save(resultFolder + name + "D2G2D2G.gdpr", resultFolder + name + "D2G2D2G.tracemodel");
         	
         	LegalAssessmentFacts laf2 = dfd2gdpr.getLegalAssessmentFacts();
-        	trace = dfd2gdpr.getDFD2GDPRTrace();
+        	trace = dfd2gdpr2.getDFD2GDPRTrace();
 
         	assertEquals(dfd.getNodes().size(), laf2.getProcessing().size());
         	
         	GDPR2DFD gdpr2dfd2 = new GDPR2DFD(laf2, dd2, trace);
         	gdpr2dfd2.transform();
         	gdpr2dfd2.save(resultFolder + name + "D2G2D2G2D.dataflowdiagram", resultFolder + name + "D2G2D2G2D.datadictionary", resultFolder + name + "D2G2D2G2D.tracemodel");
-        
-        	var dfd3 = gdpr2dfd2.getDataFlowDiagram();
-        	var dd3 = gdpr2dfd2.getDataDictionary();
         	
         	assertEquals(gdpr2dfd2.getDataFlowDiagram().getNodes().size(), dfd.getNodes().size());
-        	
-        	DataFlowDiagram[] dfds = {dfd, dfd2, dfd3};
-        	DataDictionary[] dds = {dd, dd2, dd3};
-        	LegalAssessmentFacts[] lafs = {laf, laf2};
-        	
-        	annotateMetaData(dfds, dds, lafs, resultFolder);
+        	        	
+        	annotateMetaData(resultFolder + name, resultFolder);
         
         });
         // ... your actual test logic here ...
@@ -274,25 +264,66 @@ public class ModelRunnerTest {
     	return testData;
     }
     
-    public static void annotateMetaData(DataFlowDiagram[] dfds, DataDictionary[] dds, LegalAssessmentFacts[] lafs, String folder) {
+    public static void annotateMetaData(String fileName, String folder) {
     	StringBuilder builder = new StringBuilder();
+    	var newFileName = fileName;
     	for (int i = 0; i < 3; i++) {
-    		builder.append("DFD Cycle " + i + ":").append("\n");
-    		builder.append("Number of Nodes: ").append(dfds[i].getNodes().size()).append("\n");
-    		builder.append("Number of Flows: ").append(dfds[i].getFlows().size()).append("\n");
-    		builder.append("Number of Properties: ").append(dfds[i].getNodes().stream().flatMap(n -> n.getProperties().stream()).count()).append("\n");
+    		//Reload DD to get accurate numbers
+        	var rs = new ResourceSetImpl();
+        	rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put(Resource.Factory.Registry.DEFAULT_EXTENSION, new XMIResourceFactoryImpl());
+        	rs.getPackageRegistry().put(dataflowdiagramPackage.eNS_URI, dataflowdiagramPackage.eINSTANCE);
+        	var dfdResource = rs.getResource(URI.createFileURI(newFileName + ".dataflowdiagram"), true);
+        	var ddResource = rs.getResource(URI.createFileURI(newFileName + ".datadictionary"), true);
+        	EcoreUtil.resolveAll(rs);
+        	var dfd = (DataFlowDiagram) dfdResource.getContents().get(0);
+        	var dd = (DataDictionary) ddResource.getContents().get(0);
+        	
+    		builder.append("DFD Cycle " + (2 * i) + ":").append("\n");
+    		builder.append("Number of Nodes: ").append(dfd.getNodes().size()).append("\n");
+    		builder.append("Number of Flows: ").append(dfd.getFlows().size()).append("\n");
+    		builder.append("Number of Properties: ").append(dfd.getNodes().stream().flatMap(n -> n.getProperties().stream()).count()).append("\n");
     		
-    		builder.append("DD Cycle " + i + ":").append("\n");
-    		builder.append("Number of LabelTypes: ").append(dds[i].getLabelTypes().size()).append("\n");
-    		builder.append("Number of Labels: ").append(dds[i].getLabelTypes().stream().flatMap(lt -> lt.getLabel().stream()).count()).append("\n");
+    		builder.append("DD Cycle " + (2 * i) + ":").append("\n");
+    		builder.append("Number of LabelTypes: ").append(dd.getLabelTypes().size()).append("\n");
+    		builder.append("Number of Labels: ").append(dd.getLabelTypes().stream().flatMap(lt -> lt.getLabel().stream()).count()).append("\n");     
     		
-    		if (i < 2) {
-    			builder.append("GDPR Cycle " + i + ":").append("\n");
-    			builder.append("Number of Processings: ").append(lafs[i].getProcessing().size()).append("\n");
-    			builder.append("Number of Data: ").append(lafs[i].getData().size()).append("\n");
-    			builder.append("Number of Purposes: ").append(lafs[i].getPurposes().size()).append("\n");
-    		}
+    		
+    		if (i == 0) newFileName += "D2G2D";
+    		else newFileName += "2G2D";
     	}
+    	
+    	newFileName = fileName;
+    	for (int i = 0; i < 4; i++) {
+    		if (i == 0) newFileName += "D2G";
+    		else if (i % 2 == 1) newFileName += "2D";
+    		else newFileName += "2G";
+    		
+    		var rs = new ResourceSetImpl();
+        	rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put(Resource.Factory.Registry.DEFAULT_EXTENSION, new XMIResourceFactoryImpl());
+    		var tracemodelResource = rs.getResource(URI.createFileURI(newFileName + ".tracemodel"), true);
+    		var tracemodelD2G = (TraceModel) tracemodelResource.getContents().get(0);
+    		
+    		builder.append("TraceModel Cycle " + i + ":").append("\n");
+    		builder.append("Number of FlowTraces: ").append(tracemodelD2G.getFlowTraces().size()).append("\n");
+    		builder.append("Number of FlowTraces: ").append(tracemodelD2G.getNodeTraces().size()).append("\n");
+    		builder.append("Number of LabelTraces: ").append(tracemodelD2G.getLabelTraces().size()).append("\n");    		
+			  
+    	}
+    	
+    	newFileName = fileName + "D2G";
+    	for (int i = 0; i < 2; i++) {
+    		var rs = new ResourceSetImpl();
+        	rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put(Resource.Factory.Registry.DEFAULT_EXTENSION, new XMIResourceFactoryImpl());
+        	var gdprResource = rs.getResource(URI.createFileURI(newFileName + ".gdpr"), true);
+			var laf = (LegalAssessmentFacts) gdprResource.getContents().get(0);
+			
+			builder.append("GDPR Cycle " + (i+1) + ":").append("\n");
+			builder.append("Number of Processings: ").append(laf.getProcessing().size()).append("\n");
+			builder.append("Number of Data: ").append(laf.getData().size()).append("\n");
+			builder.append("Number of Purposes: ").append(laf.getPurposes().size()).append("\n");
+			
+			newFileName += "2D2G";
+    	}		
     	
     	try (BufferedWriter writer = new BufferedWriter(new FileWriter(folder + "metadata.txt"))) {
     		writer.write(builder.toString());
