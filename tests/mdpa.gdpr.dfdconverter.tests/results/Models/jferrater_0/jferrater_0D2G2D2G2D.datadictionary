@@ -54,30 +54,30 @@
   <labelTypes id="109" entityName="LoadBalancer">
     <label id="110" entityName="Ribbon"/>
   </labelTypes>
-  <labelTypes id="_OT3i8O1IEe-35cJzkApa3w" entityName="ProcessingType">
-    <label id="_OT_ele1IEe-35cJzkApa3w" entityName="Collecting"/>
-    <label id="_OT_eoe1IEe-35cJzkApa3w" entityName="Storing"/>
-    <label id="_OT_epO1IEe-35cJzkApa3w" entityName="Usage"/>
-    <label id="_OT_epe1IEe-35cJzkApa3w" entityName="Transferring"/>
+  <labelTypes id="_UgRXUvE9Ee-L2P0tVZBdHA" entityName="ProcessingType">
+    <label id="_UgRXb_E9Ee-L2P0tVZBdHA" entityName="Collecting"/>
+    <label id="_UgRXcfE9Ee-L2P0tVZBdHA" entityName="Storing"/>
+    <label id="_UgR-YPE9Ee-L2P0tVZBdHA" entityName="Usage"/>
+    <label id="_UgR-Y_E9Ee-L2P0tVZBdHA" entityName="Transferring"/>
   </labelTypes>
-  <labelTypes id="_OT3i_O1IEe-35cJzkApa3w" entityName="Data">
-    <label id="_OSwvgu1IEe-35cJzkApa3w"/>
-    <label id="_OSwvgu1IEe-35cJzkApa3w"/>
+  <labelTypes id="_UgRXU_E9Ee-L2P0tVZBdHA" entityName="Data">
+    <label id="_UgMe8fE9Ee-L2P0tVZBdHA"/>
+    <label id="_UgMe8fE9Ee-L2P0tVZBdHA"/>
   </labelTypes>
-  <labelTypes id="_OT3jBO1IEe-35cJzkApa3w" entityName="PersonalData"/>
-  <labelTypes id="_OT3jC-1IEe-35cJzkApa3w" entityName="Obligation"/>
-  <labelTypes id="_OT3jDu1IEe-35cJzkApa3w" entityName="Consent"/>
-  <labelTypes id="_OT3jFO1IEe-35cJzkApa3w" entityName="Contract"/>
-  <labelTypes id="_OT3jGu1IEe-35cJzkApa3w" entityName="PublicAuthority"/>
-  <labelTypes id="_OT3jHu1IEe-35cJzkApa3w" entityName="NaturalPerson"/>
-  <labelTypes id="_OT4J0e1IEe-35cJzkApa3w" entityName="Controller">
-    <label id="_OS1oA-1IEe-35cJzkApa3w"/>
-    <label id="_OS1oA-1IEe-35cJzkApa3w"/>
+  <labelTypes id="_UgRXVPE9Ee-L2P0tVZBdHA" entityName="PersonalData"/>
+  <labelTypes id="_UgRXVvE9Ee-L2P0tVZBdHA" entityName="Obligation"/>
+  <labelTypes id="_UgRXWPE9Ee-L2P0tVZBdHA" entityName="Consent"/>
+  <labelTypes id="_UgRXWvE9Ee-L2P0tVZBdHA" entityName="Contract"/>
+  <labelTypes id="_UgRXXPE9Ee-L2P0tVZBdHA" entityName="PublicAuthority"/>
+  <labelTypes id="_UgRXXvE9Ee-L2P0tVZBdHA" entityName="NaturalPerson"/>
+  <labelTypes id="_UgRXX_E9Ee-L2P0tVZBdHA" entityName="Controller">
+    <label id="_UgNGAfE9Ee-L2P0tVZBdHA"/>
+    <label id="_UgNGAfE9Ee-L2P0tVZBdHA"/>
   </labelTypes>
-  <labelTypes id="_OT4J1u1IEe-35cJzkApa3w" entityName="ThirdParty"/>
-  <labelTypes id="_OT4J2e1IEe-35cJzkApa3w" entityName="Purposes">
-    <label id="_OSxWm-1IEe-35cJzkApa3w"/>
-    <label id="_OSxWm-1IEe-35cJzkApa3w"/>
+  <labelTypes id="_UgRXYfE9Ee-L2P0tVZBdHA" entityName="ThirdParty"/>
+  <labelTypes id="_UgRXZfE9Ee-L2P0tVZBdHA" entityName="Purposes">
+    <label id="_UgMe8vE9Ee-L2P0tVZBdHA"/>
+    <label id="_UgMe8vE9Ee-L2P0tVZBdHA"/>
   </labelTypes>
   <behavior id="12">
     <inPin id="71"/>
@@ -184,33 +184,13 @@
     </assignment>
     <assignment xsi:type="datadictionary:ForwardingAssignment" id="159" outputPin="87" inputPins="84"/>
   </behavior>
-  <behavior id="_OUi4Mu1IEe-35cJzkApa3w" entityName="github_repository Behavior">
-    <outPin id="_OUi4Wu1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_OUi4NO1IEe-35cJzkApa3w" entityName="discovery_service Behavior">
-    <inPin id="_OUkGUe1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_OUi4Nu1IEe-35cJzkApa3w" entityName="config_service Behavior">
-    <inPin id="_OUjfaO1IEe-35cJzkApa3w"/>
-    <outPin id="_OUkGUO1IEe-35cJzkApa3w"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_OUkGhe1IEe-35cJzkApa3w" entityName="Forward aName" outputPin="_OUkGUO1IEe-35cJzkApa3w" inputPins="_OUjfaO1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_OUi4OO1IEe-35cJzkApa3w" entityName="account_service Behavior">
-    <inPin id="_OUkGV-1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_OUi4Ou1IEe-35cJzkApa3w" entityName="customer_service Behavior">
-    <inPin id="_OUkGWe1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_OUi4PO1IEe-35cJzkApa3w" entityName="store_service Behavior">
-    <inPin id="_OUkGW-1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_OUi4Pu1IEe-35cJzkApa3w" entityName="item_service Behavior">
-    <inPin id="_OUkGXe1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_OUi4Qe1IEe-35cJzkApa3w" entityName="price_service Behavior">
-    <inPin id="_OUkGX-1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_OUi4RO1IEe-35cJzkApa3w" entityName="foodtray_service Behavior">
-    <inPin id="_OUkGZu1IEe-35cJzkApa3w"/>
-  </behavior>
+  <behavior id="_Ugojs_E9Ee-L2P0tVZBdHA" entityName="github_repository Behavior"/>
+  <behavior id="_UgojtfE9Ee-L2P0tVZBdHA" entityName="discovery_service Behavior"/>
+  <behavior id="_Ugojt_E9Ee-L2P0tVZBdHA" entityName="config_service Behavior"/>
+  <behavior id="_UgojufE9Ee-L2P0tVZBdHA" entityName="account_service Behavior"/>
+  <behavior id="_Ugoju_E9Ee-L2P0tVZBdHA" entityName="customer_service Behavior"/>
+  <behavior id="_UgojvfE9Ee-L2P0tVZBdHA" entityName="store_service Behavior"/>
+  <behavior id="_Ugojv_E9Ee-L2P0tVZBdHA" entityName="item_service Behavior"/>
+  <behavior id="_UgojwfE9Ee-L2P0tVZBdHA" entityName="price_service Behavior"/>
+  <behavior id="_UgojxPE9Ee-L2P0tVZBdHA" entityName="foodtray_service Behavior"/>
 </datadictionary:DataDictionary>

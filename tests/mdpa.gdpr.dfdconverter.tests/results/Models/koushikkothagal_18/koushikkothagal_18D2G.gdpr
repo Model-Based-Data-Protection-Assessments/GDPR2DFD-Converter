@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="ASCII"?>
 <GDPR:LegalAssessmentFacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GDPR="http://www.example.org/GDPR" id="0">
-  <processing xsi:type="GDPR:Collecting" id="2" entityName="external_website" outputData="_OXgFyu1IEe-35cJzkApa3w" purpose="_OXgFy-1IEe-35cJzkApa3w" followingProcessing="5" responsible="_OXgsoO1IEe-35cJzkApa3w"/>
-  <processing xsi:type="GDPR:Usage" id="3" entityName="discovery_server" inputData="_OXgFzu1IEe-35cJzkApa3w" purpose="_OXgFz-1IEe-35cJzkApa3w" responsible="_OXgsoO1IEe-35cJzkApa3w"/>
-  <processing xsi:type="GDPR:Usage" id="4" entityName="ratings_data_service" inputData="_OXgFzu1IEe-35cJzkApa3w" purpose="_OXgFz-1IEe-35cJzkApa3w" responsible="_OXgsoO1IEe-35cJzkApa3w"/>
-  <processing xsi:type="GDPR:Usage" id="5" entityName="movie_info_service" inputData="_OXgFyu1IEe-35cJzkApa3w" purpose="_OXgFy-1IEe-35cJzkApa3w" responsible="_OXgsoO1IEe-35cJzkApa3w"/>
-  <processing xsi:type="GDPR:Usage" id="6" entityName="movie_catalog_service" inputData="_OXgFzu1IEe-35cJzkApa3w" purpose="_OXgFz-1IEe-35cJzkApa3w" followingProcessing="3 4 5" responsible="_OXgsoO1IEe-35cJzkApa3w"/>
-  <processing xsi:type="GDPR:Collecting" id="7" entityName="secret_manager" outputData="_OXgFzu1IEe-35cJzkApa3w" purpose="_OXgFz-1IEe-35cJzkApa3w" followingProcessing="3 5 6 4" responsible="_OXgsoO1IEe-35cJzkApa3w"/>
-  <purposes id="_OXgFy-1IEe-35cJzkApa3w"/>
-  <purposes id="_OXgFz-1IEe-35cJzkApa3w"/>
-  <data id="_OXgFyu1IEe-35cJzkApa3w"/>
-  <data id="_OXgFzu1IEe-35cJzkApa3w"/>
-  <involvedParties xsi:type="GDPR:Controller" id="_OXgsoO1IEe-35cJzkApa3w"/>
+  <processing xsi:type="GDPR:Collecting" id="2" entityName="external_website" outputData="_Uel8cvE9Ee-L2P0tVZBdHA" purpose="_Uel8c_E9Ee-L2P0tVZBdHA" responsible="_UemjafE9Ee-L2P0tVZBdHA"/>
+  <processing xsi:type="GDPR:Usage" id="3" entityName="discovery_server" inputData="_Uel8d_E9Ee-L2P0tVZBdHA" purpose="_Uel8ePE9Ee-L2P0tVZBdHA" responsible="_UemjafE9Ee-L2P0tVZBdHA"/>
+  <processing xsi:type="GDPR:Usage" id="4" entityName="ratings_data_service" inputData="_Uel8d_E9Ee-L2P0tVZBdHA" purpose="_Uel8ePE9Ee-L2P0tVZBdHA" responsible="_UemjafE9Ee-L2P0tVZBdHA"/>
+  <processing xsi:type="GDPR:Usage" id="5" entityName="movie_info_service" inputData="_Uel8cvE9Ee-L2P0tVZBdHA" purpose="_Uel8c_E9Ee-L2P0tVZBdHA" responsible="_UemjafE9Ee-L2P0tVZBdHA"/>
+  <processing xsi:type="GDPR:Usage" id="6" entityName="movie_catalog_service" inputData="_Uel8d_E9Ee-L2P0tVZBdHA" purpose="_Uel8ePE9Ee-L2P0tVZBdHA" responsible="_UemjafE9Ee-L2P0tVZBdHA"/>
+  <processing xsi:type="GDPR:Collecting" id="7" entityName="secret_manager" outputData="_Uel8d_E9Ee-L2P0tVZBdHA" purpose="_Uel8ePE9Ee-L2P0tVZBdHA" responsible="_UemjafE9Ee-L2P0tVZBdHA"/>
+  <purposes id="_Uel8c_E9Ee-L2P0tVZBdHA"/>
+  <purposes id="_Uel8ePE9Ee-L2P0tVZBdHA"/>
+  <data id="_Uel8cvE9Ee-L2P0tVZBdHA"/>
+  <data id="_Uel8d_E9Ee-L2P0tVZBdHA"/>
+  <involvedParties xsi:type="GDPR:Controller" id="_UemjafE9Ee-L2P0tVZBdHA"/>
 </GDPR:LegalAssessmentFacts>

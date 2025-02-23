@@ -2,7 +2,9 @@ package mdpa.gdpr.dfdconverter.tests;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -12,6 +14,7 @@ import java.util.*;
 import org.dataflowanalysis.converter.PCMConverter;
 import org.dataflowanalysis.dfd.datadictionary.DataDictionary;
 import org.dataflowanalysis.dfd.dataflowdiagram.DataFlowDiagram;
+import org.dataflowanalysis.dfd.dataflowdiagram.Node;
 import org.dataflowanalysis.dfd.dataflowdiagram.dataflowdiagramPackage;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.Resource;
@@ -31,10 +34,10 @@ import mdpa.gdpr.metamodel.GDPR.LegalAssessmentFacts;
 public class ModelRunnerTest {		
 
     // Set the root directory where all subfolders are located
-    private static final String ROOT_DIR = "C:\\Users\\Huell\\Documents\\Studium\\HIWI\\ExampleModels\\bundles\\org.dataflowanalysis.examplemodels\\casestudies\\TUHH-Models\\";
-    private static final String ROOT_DIR_PCM = "C:\\Users\\Huell\\Documents\\Studium\\HIWI\\ExampleModels\\bundles\\org.dataflowanalysis.examplemodels\\casestudies\\";
-    private static final String resultFolderBase = "C:\\Users\\Huell\\Documents\\Studium\\HIWI\\GDPR2DFD-Converter\\tests\\mdpa.gdpr.dfdconverter.tests\\results\\Models\\";
-    private static final String resultFolderBasePCM = "C:\\Users\\Huell\\Documents\\Studium\\HIWI\\GDPR2DFD-Converter\\tests\\mdpa.gdpr.dfdconverter.tests\\results\\Models\\PCM\\";
+    private static final String ROOT_DIR = "C:\\Users\\Huell\\Documents\\HIWI\\ExampleModels\\bundles\\org.dataflowanalysis.examplemodels\\casestudies\\TUHH-Models\\";
+    private static final String ROOT_DIR_PCM = "C:\\Users\\Huell\\Documents\\HIWI\\ExampleModels\\bundles\\org.dataflowanalysis.examplemodels\\casestudies\\";
+    private static final String resultFolderBase = "C:\\Users\\Huell\\Documents\\HIWI\\GDPR2DFD-Converter\\tests\\mdpa.gdpr.dfdconverter.tests\\results\\Models\\";
+    private static final String resultFolderBasePCM = "C:\\Users\\Huell\\Documents\\HIWI\\GDPR2DFD-Converter\\tests\\mdpa.gdpr.dfdconverter.tests\\results\\Models\\PCM\\";
 
 
     public static Collection<File[]> data() {
@@ -171,7 +174,16 @@ public class ModelRunnerTest {
         	gdpr2dfd2.transform();
         	gdpr2dfd2.save(resultFolder + name + "D2G2D2G2D.dataflowdiagram", resultFolder + name + "D2G2D2G2D.datadictionary", resultFolder + name + "D2G2D2G2D.tracemodel");
         
+        	var dfd3 = gdpr2dfd2.getDataFlowDiagram();
+        	var dd3 = gdpr2dfd2.getDataDictionary();
+        	
         	assertEquals(gdpr2dfd2.getDataFlowDiagram().getNodes().size(), dfd.getNodes().size());
+        	
+        	DataFlowDiagram[] dfds = {dfd, dfd2, dfd3};
+        	DataDictionary[] dds = {dd, dd2, dd3};
+        	LegalAssessmentFacts[] lafs = {laf, laf2};
+        	
+        	annotateMetaData(dfds, dds, lafs, resultFolder);
         
         });
         // ... your actual test logic here ...
@@ -261,4 +273,31 @@ public class ModelRunnerTest {
     	});
     	return testData;
     }
+    
+    public static void annotateMetaData(DataFlowDiagram[] dfds, DataDictionary[] dds, LegalAssessmentFacts[] lafs, String folder) {
+    	StringBuilder builder = new StringBuilder();
+    	for (int i = 0; i < 3; i++) {
+    		builder.append("DFD Cycle " + i + ":").append("\n");
+    		builder.append("Number of Nodes: ").append(dfds[i].getNodes().size()).append("\n");
+    		builder.append("Number of Flows: ").append(dfds[i].getFlows().size()).append("\n");
+    		builder.append("Number of Properties: ").append(dfds[i].getNodes().stream().flatMap(n -> n.getProperties().stream()).count()).append("\n");
+    		
+    		builder.append("DD Cycle " + i + ":").append("\n");
+    		builder.append("Number of LabelTypes: ").append(dds[i].getLabelTypes().size()).append("\n");
+    		builder.append("Number of Labels: ").append(dds[i].getLabelTypes().stream().flatMap(lt -> lt.getLabel().stream()).count()).append("\n");
+    		
+    		if (i < 2) {
+    			builder.append("GDPR Cycle " + i + ":").append("\n");
+    			builder.append("Number of Processings: ").append(lafs[i].getProcessing().size()).append("\n");
+    			builder.append("Number of Data: ").append(lafs[i].getData().size()).append("\n");
+    			builder.append("Number of Purposes: ").append(lafs[i].getPurposes().size()).append("\n");
+    		}
+    	}
+    	
+    	try (BufferedWriter writer = new BufferedWriter(new FileWriter(folder + "metadata.txt"))) {
+    		writer.write(builder.toString());
+    	} catch (Exception e) {
+			// TODO: handle exception
+		}
+    } 
 }

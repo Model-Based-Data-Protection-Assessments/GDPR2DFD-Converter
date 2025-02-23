@@ -1,120 +1,80 @@
 <?xml version="1.0" encoding="ASCII"?>
 <dataflowdiagram:DataFlowDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" id="0">
-  <flows id="_Od_Ike1IEe-35cJzkApa3w" sourceNode="2" destinationNode="4">
-    <destinationPin href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_Iju1IEe-35cJzkApa3w"/>
-    <sourcePin href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_IjO1IEe-35cJzkApa3w"/>
-  </flows>
-  <flows id="_Od_Iqu1IEe-35cJzkApa3w" sourceNode="14" destinationNode="5">
-    <destinationPin href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_IqO1IEe-35cJzkApa3w"/>
-    <sourcePin href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_Ipu1IEe-35cJzkApa3w"/>
-  </flows>
-  <flows id="_Od_Ir-1IEe-35cJzkApa3w" sourceNode="14" destinationNode="6">
-    <destinationPin href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_Iru1IEe-35cJzkApa3w"/>
-    <sourcePin href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_Ipu1IEe-35cJzkApa3w"/>
-  </flows>
-  <flows id="_Od_Itu1IEe-35cJzkApa3w" sourceNode="14" destinationNode="7">
-    <destinationPin href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_ItO1IEe-35cJzkApa3w"/>
-    <sourcePin href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_Ipu1IEe-35cJzkApa3w"/>
-  </flows>
-  <flows id="_Od_IvO1IEe-35cJzkApa3w" sourceNode="14" destinationNode="8">
-    <destinationPin href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_Iu-1IEe-35cJzkApa3w"/>
-    <sourcePin href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_Ipu1IEe-35cJzkApa3w"/>
-  </flows>
-  <flows id="_Od_Iwu1IEe-35cJzkApa3w" sourceNode="14" destinationNode="9">
-    <destinationPin href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_IwO1IEe-35cJzkApa3w"/>
-    <sourcePin href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_Ipu1IEe-35cJzkApa3w"/>
-  </flows>
-  <flows id="_Od_Ix-1IEe-35cJzkApa3w" sourceNode="14" destinationNode="10">
-    <destinationPin href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_Ixe1IEe-35cJzkApa3w"/>
-    <sourcePin href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_Ipu1IEe-35cJzkApa3w"/>
-  </flows>
-  <flows id="_Od_Iyu1IEe-35cJzkApa3w" sourceNode="14" destinationNode="11">
-    <destinationPin href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_Iye1IEe-35cJzkApa3w"/>
-    <sourcePin href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_Ipu1IEe-35cJzkApa3w"/>
-  </flows>
-  <flows id="_Od_I0e1IEe-35cJzkApa3w" sourceNode="14" destinationNode="12">
-    <destinationPin href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_Iz-1IEe-35cJzkApa3w"/>
-    <sourcePin href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_Ipu1IEe-35cJzkApa3w"/>
-  </flows>
-  <flows id="_Od_I1u1IEe-35cJzkApa3w" sourceNode="14" destinationNode="13">
-    <destinationPin href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_I1e1IEe-35cJzkApa3w"/>
-    <sourcePin href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_Ipu1IEe-35cJzkApa3w"/>
-  </flows>
   <nodes xsi:type="dataflowdiagram:External" id="2" entityName="github_repository">
-    <behavior href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_IM-1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od3zYu1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od3zae1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od5Bhe1IEe-35cJzkApa3w"/>
+    <behavior href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlbkQPE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlMT7PE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlM6w_E9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlP-K_E9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="3" entityName="user">
-    <behavior href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_INu1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od3zae1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od5Bh-1IEe-35cJzkApa3w"/>
+    <behavior href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlcLMfE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlM6w_E9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlP-LvE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="4" entityName="config_server">
-    <behavior href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_IOu1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od3zYu1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od3zae1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od5Bh-1IEe-35cJzkApa3w"/>
+    <behavior href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlcLNvE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlMT7PE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlM6w_E9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlP-LvE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="5" entityName="discovery_server">
-    <behavior href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_IPu1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od3zZO1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od3zae1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od5Bh-1IEe-35cJzkApa3w"/>
+    <behavior href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlcLOfE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlMT9PE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlM6w_E9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlP-LvE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="6" entityName="tracing_server">
-    <behavior href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_IQe1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od3zZO1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od3zae1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od5Bh-1IEe-35cJzkApa3w"/>
+    <behavior href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlcLPfE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlMT9PE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlM6w_E9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlP-LvE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="7" entityName="admin_server">
-    <behavior href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_IQ-1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od3zZO1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od3zae1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od5Bh-1IEe-35cJzkApa3w"/>
+    <behavior href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlcLP_E9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlMT9PE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlM6w_E9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlP-LvE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="8" entityName="prometheus_server">
-    <behavior href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_IRu1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od3zZO1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od3zae1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od5Bh-1IEe-35cJzkApa3w"/>
+    <behavior href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlcLQfE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlMT9PE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlM6w_E9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlP-LvE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="9" entityName="grafana_server">
-    <behavior href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_ISe1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od3zZO1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od3zae1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od5Bh-1IEe-35cJzkApa3w"/>
+    <behavior href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlcLRfE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlMT9PE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlM6w_E9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlP-LvE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="10" entityName="customers_service">
-    <behavior href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_ITO1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od3zZO1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od3zae1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od5Bh-1IEe-35cJzkApa3w"/>
+    <behavior href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlcLSPE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlMT9PE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlM6w_E9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlP-LvE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="11" entityName="vets_service">
-    <behavior href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_ITu1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od3zZO1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od3zae1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od5Bh-1IEe-35cJzkApa3w"/>
+    <behavior href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlcLTPE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlMT9PE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlM6w_E9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlP-LvE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="12" entityName="visits_service">
-    <behavior href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_IUO1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od3zZO1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od3zae1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od5Bh-1IEe-35cJzkApa3w"/>
+    <behavior href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlcLT_E9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlMT9PE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlM6w_E9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlP-LvE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="13" entityName="api_gateway">
-    <behavior href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_IU-1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od3zZO1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od3zae1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od5Bh-1IEe-35cJzkApa3w"/>
+    <behavior href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlcLUfE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlMT9PE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlM6w_E9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlP-LvE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:External" id="14" entityName="auth_server">
-    <behavior href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od_IWO1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od3zZO1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od3zae1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_Od5Bhe1IEe-35cJzkApa3w"/>
+    <behavior href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlcLU_E9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlMT9PE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlM6w_E9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_3D2G2D2G2D.datadictionary#_UlP-K_E9Ee-L2P0tVZBdHA"/>
   </nodes>
 </dataflowdiagram:DataFlowDiagram>

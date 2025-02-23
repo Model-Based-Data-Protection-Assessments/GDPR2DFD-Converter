@@ -35,34 +35,34 @@
   <labelTypes id="35" entityName="ServiceDiscovery">
     <label id="36" entityName="Eureka"/>
   </labelTypes>
-  <labelTypes id="_OWxs2-1IEe-35cJzkApa3w" entityName="ProcessingType">
-    <label id="_OWxs6-1IEe-35cJzkApa3w" entityName="Collecting"/>
-    <label id="_OWxs7O1IEe-35cJzkApa3w" entityName="Storing"/>
-    <label id="_OWxs7e1IEe-35cJzkApa3w" entityName="Usage"/>
-    <label id="_OWxs7-1IEe-35cJzkApa3w" entityName="Transferring"/>
+  <labelTypes id="_UlFmB_E9Ee-L2P0tVZBdHA" entityName="ProcessingType">
+    <label id="_UlFmQvE9Ee-L2P0tVZBdHA" entityName="Collecting"/>
+    <label id="_UlFmRvE9Ee-L2P0tVZBdHA" entityName="Storing"/>
+    <label id="_UlFmSfE9Ee-L2P0tVZBdHA" entityName="Usage"/>
+    <label id="_UlFmTvE9Ee-L2P0tVZBdHA" entityName="Transferring"/>
   </labelTypes>
-  <labelTypes id="_OWxs3O1IEe-35cJzkApa3w" entityName="Data">
-    <label id="_OWwfKe1IEe-35cJzkApa3w"/>
-    <label id="_OWwfLO1IEe-35cJzkApa3w"/>
-    <label id="_OWwfKe1IEe-35cJzkApa3w"/>
-    <label id="_OWwfLO1IEe-35cJzkApa3w"/>
+  <labelTypes id="_UlFmC_E9Ee-L2P0tVZBdHA" entityName="Data">
+    <label id="_UlCiwvE9Ee-L2P0tVZBdHA"/>
+    <label id="_UlCiyfE9Ee-L2P0tVZBdHA"/>
+    <label id="_UlCiwvE9Ee-L2P0tVZBdHA"/>
+    <label id="_UlCiyfE9Ee-L2P0tVZBdHA"/>
   </labelTypes>
-  <labelTypes id="_OWxs3e1IEe-35cJzkApa3w" entityName="PersonalData"/>
-  <labelTypes id="_OWxs3u1IEe-35cJzkApa3w" entityName="Obligation"/>
-  <labelTypes id="_OWxs3-1IEe-35cJzkApa3w" entityName="Consent"/>
-  <labelTypes id="_OWxs4O1IEe-35cJzkApa3w" entityName="Contract"/>
-  <labelTypes id="_OWxs4e1IEe-35cJzkApa3w" entityName="PublicAuthority"/>
-  <labelTypes id="_OWxs4u1IEe-35cJzkApa3w" entityName="NaturalPerson"/>
-  <labelTypes id="_OWxs4-1IEe-35cJzkApa3w" entityName="Controller">
-    <label id="_OWwfPO1IEe-35cJzkApa3w"/>
-    <label id="_OWwfPO1IEe-35cJzkApa3w"/>
+  <labelTypes id="_UlFmDvE9Ee-L2P0tVZBdHA" entityName="PersonalData"/>
+  <labelTypes id="_UlFmEvE9Ee-L2P0tVZBdHA" entityName="Obligation"/>
+  <labelTypes id="_UlFmF_E9Ee-L2P0tVZBdHA" entityName="Consent"/>
+  <labelTypes id="_UlFmG_E9Ee-L2P0tVZBdHA" entityName="Contract"/>
+  <labelTypes id="_UlFmHfE9Ee-L2P0tVZBdHA" entityName="PublicAuthority"/>
+  <labelTypes id="_UlFmIPE9Ee-L2P0tVZBdHA" entityName="NaturalPerson"/>
+  <labelTypes id="_UlFmI_E9Ee-L2P0tVZBdHA" entityName="Controller">
+    <label id="_UlCi4vE9Ee-L2P0tVZBdHA"/>
+    <label id="_UlCi4vE9Ee-L2P0tVZBdHA"/>
   </labelTypes>
-  <labelTypes id="_OWxs5O1IEe-35cJzkApa3w" entityName="ThirdParty"/>
-  <labelTypes id="_OWxs5e1IEe-35cJzkApa3w" entityName="Purposes">
-    <label id="_OWwfKu1IEe-35cJzkApa3w"/>
-    <label id="_OWwfLe1IEe-35cJzkApa3w"/>
-    <label id="_OWwfKu1IEe-35cJzkApa3w"/>
-    <label id="_OWwfLe1IEe-35cJzkApa3w"/>
+  <labelTypes id="_UlFmJfE9Ee-L2P0tVZBdHA" entityName="ThirdParty"/>
+  <labelTypes id="_UlFmKPE9Ee-L2P0tVZBdHA" entityName="Purposes">
+    <label id="_UlCixPE9Ee-L2P0tVZBdHA"/>
+    <label id="_UlCiyvE9Ee-L2P0tVZBdHA"/>
+    <label id="_UlCixPE9Ee-L2P0tVZBdHA"/>
+    <label id="_UlCiyvE9Ee-L2P0tVZBdHA"/>
   </labelTypes>
   <behavior id="9">
     <inPin id="53"/>
@@ -125,22 +125,10 @@
       <term xsi:type="datadictionary:TRUE" id="92"/>
     </assignment>
   </behavior>
-  <behavior id="_OW2lZ-1IEe-35cJzkApa3w" entityName="external_website Behavior">
-    <outPin id="_OW2le-1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_OW2la-1IEe-35cJzkApa3w" entityName="discovery_server Behavior">
-    <inPin id="_OW3MYO1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_OW2lbe1IEe-35cJzkApa3w" entityName="ratings_data_service Behavior">
-    <inPin id="_OW3MZO1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_OW2lb-1IEe-35cJzkApa3w" entityName="movie_info_service Behavior">
-    <inPin id="_OW2lfO1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_OW2lce1IEe-35cJzkApa3w" entityName="movie_catalog_service Behavior">
-    <inPin id="_OW3MYu1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_OW2lc-1IEe-35cJzkApa3w" entityName="auth_server Behavior">
-    <outPin id="_OW2lfu1IEe-35cJzkApa3w"/>
-  </behavior>
+  <behavior id="_UlWrpfE9Ee-L2P0tVZBdHA" entityName="external_website Behavior"/>
+  <behavior id="_UlWrqPE9Ee-L2P0tVZBdHA" entityName="discovery_server Behavior"/>
+  <behavior id="_UlWrqvE9Ee-L2P0tVZBdHA" entityName="ratings_data_service Behavior"/>
+  <behavior id="_UlWrrfE9Ee-L2P0tVZBdHA" entityName="movie_info_service Behavior"/>
+  <behavior id="_UlWrsPE9Ee-L2P0tVZBdHA" entityName="movie_catalog_service Behavior"/>
+  <behavior id="_UlWrsvE9Ee-L2P0tVZBdHA" entityName="auth_server Behavior"/>
 </datadictionary:DataDictionary>

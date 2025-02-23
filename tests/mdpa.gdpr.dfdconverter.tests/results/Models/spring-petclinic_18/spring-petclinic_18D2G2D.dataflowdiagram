@@ -1,61 +1,21 @@
 <?xml version="1.0" encoding="ASCII"?>
 <dataflowdiagram:DataFlowDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" id="0">
-  <flows id="99" entityName="github_repository" sourceNode="2" destinationNode="4">
-    <destinationPin href="spring-petclinic_18D2G2D.datadictionary#97"/>
-    <sourcePin href="spring-petclinic_18D2G2D.datadictionary#98"/>
-  </flows>
-  <flows id="170" entityName="secret_manager" sourceNode="14" destinationNode="5">
-    <destinationPin href="spring-petclinic_18D2G2D.datadictionary#101"/>
-    <sourcePin href="spring-petclinic_18D2G2D.datadictionary#169"/>
-  </flows>
-  <flows id="172" entityName="secret_manager" sourceNode="14" destinationNode="6">
-    <destinationPin href="spring-petclinic_18D2G2D.datadictionary#106"/>
-    <sourcePin href="spring-petclinic_18D2G2D.datadictionary#171"/>
-  </flows>
-  <flows id="174" entityName="secret_manager" sourceNode="14" destinationNode="7">
-    <destinationPin href="spring-petclinic_18D2G2D.datadictionary#111"/>
-    <sourcePin href="spring-petclinic_18D2G2D.datadictionary#173"/>
-  </flows>
-  <flows id="176" entityName="secret_manager" sourceNode="14" destinationNode="8">
-    <destinationPin href="spring-petclinic_18D2G2D.datadictionary#124"/>
-    <sourcePin href="spring-petclinic_18D2G2D.datadictionary#175"/>
-  </flows>
-  <flows id="178" entityName="secret_manager" sourceNode="14" destinationNode="9">
-    <destinationPin href="spring-petclinic_18D2G2D.datadictionary#114"/>
-    <sourcePin href="spring-petclinic_18D2G2D.datadictionary#177"/>
-  </flows>
-  <flows id="180" entityName="secret_manager" sourceNode="14" destinationNode="10">
-    <destinationPin href="spring-petclinic_18D2G2D.datadictionary#119"/>
-    <sourcePin href="spring-petclinic_18D2G2D.datadictionary#179"/>
-  </flows>
-  <flows id="182" entityName="secret_manager" sourceNode="14" destinationNode="11">
-    <destinationPin href="spring-petclinic_18D2G2D.datadictionary#129"/>
-    <sourcePin href="spring-petclinic_18D2G2D.datadictionary#181"/>
-  </flows>
-  <flows id="184" entityName="secret_manager" sourceNode="14" destinationNode="12">
-    <destinationPin href="spring-petclinic_18D2G2D.datadictionary#138"/>
-    <sourcePin href="spring-petclinic_18D2G2D.datadictionary#183"/>
-  </flows>
-  <flows id="186" entityName="secret_manager" sourceNode="14" destinationNode="13">
-    <destinationPin href="spring-petclinic_18D2G2D.datadictionary#145"/>
-    <sourcePin href="spring-petclinic_18D2G2D.datadictionary#185"/>
-  </flows>
   <nodes xsi:type="dataflowdiagram:External" id="2" entityName="github_repository">
     <behavior href="spring-petclinic_18D2G2D.datadictionary#76"/>
     <properties href="spring-petclinic_18D2G2D.datadictionary#78"/>
     <properties href="spring-petclinic_18D2G2D.datadictionary#79"/>
     <properties href="spring-petclinic_18D2G2D.datadictionary#81"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdJaw-1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdKBvu1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdLP7e1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmFEifE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmFrsfE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmNAUPE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:External" id="3" entityName="user">
     <behavior href="spring-petclinic_18D2G2D.datadictionary#87"/>
     <properties href="spring-petclinic_18D2G2D.datadictionary#89"/>
     <properties href="spring-petclinic_18D2G2D.datadictionary#79"/>
     <properties href="spring-petclinic_18D2G2D.datadictionary#90"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdKBvu1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdLP7-1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmFrsfE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmNAU_E9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="4" entityName="config_server">
     <behavior href="spring-petclinic_18D2G2D.datadictionary#53"/>
@@ -63,9 +23,9 @@
     <properties href="spring-petclinic_18D2G2D.datadictionary#19"/>
     <properties href="spring-petclinic_18D2G2D.datadictionary#56"/>
     <properties href="spring-petclinic_18D2G2D.datadictionary#58"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdJaw-1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdKBvu1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdLP7-1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmFEifE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmFrsfE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmNAU_E9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="5" entityName="discovery_server">
     <behavior href="spring-petclinic_18D2G2D.datadictionary#59"/>
@@ -73,9 +33,9 @@
     <properties href="spring-petclinic_18D2G2D.datadictionary#19"/>
     <properties href="spring-petclinic_18D2G2D.datadictionary#62"/>
     <properties href="spring-petclinic_18D2G2D.datadictionary#64"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdJayO1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdKBvu1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdLP7-1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmFEl_E9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmFrsfE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmNAU_E9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="6" entityName="tracing_server">
     <behavior href="spring-petclinic_18D2G2D.datadictionary#16"/>
@@ -83,9 +43,9 @@
     <properties href="spring-petclinic_18D2G2D.datadictionary#19"/>
     <properties href="spring-petclinic_18D2G2D.datadictionary#21"/>
     <properties href="spring-petclinic_18D2G2D.datadictionary#23"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdJayO1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdKBvu1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdLP7-1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmFEl_E9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmFrsfE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmNAU_E9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="7" entityName="admin_server">
     <behavior href="spring-petclinic_18D2G2D.datadictionary#82"/>
@@ -93,9 +53,9 @@
     <properties href="spring-petclinic_18D2G2D.datadictionary#19"/>
     <properties href="spring-petclinic_18D2G2D.datadictionary#39"/>
     <properties href="spring-petclinic_18D2G2D.datadictionary#86"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdJayO1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdKBvu1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdLP7-1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmFEl_E9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmFrsfE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmNAU_E9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="8" entityName="prometheus_server">
     <behavior href="spring-petclinic_18D2G2D.datadictionary#36"/>
@@ -103,9 +63,9 @@
     <properties href="spring-petclinic_18D2G2D.datadictionary#19"/>
     <properties href="spring-petclinic_18D2G2D.datadictionary#39"/>
     <properties href="spring-petclinic_18D2G2D.datadictionary#41"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdJayO1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdKBvu1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdLP7-1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmFEl_E9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmFrsfE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmNAU_E9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="9" entityName="grafana_server">
     <behavior href="spring-petclinic_18D2G2D.datadictionary#91"/>
@@ -113,9 +73,9 @@
     <properties href="spring-petclinic_18D2G2D.datadictionary#19"/>
     <properties href="spring-petclinic_18D2G2D.datadictionary#95"/>
     <properties href="spring-petclinic_18D2G2D.datadictionary#96"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdJayO1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdKBvu1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdLP7-1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmFEl_E9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmFrsfE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmNAU_E9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="10" entityName="customers_service">
     <behavior href="spring-petclinic_18D2G2D.datadictionary#42"/>
@@ -127,9 +87,9 @@
     <properties href="spring-petclinic_18D2G2D.datadictionary#47"/>
     <properties href="spring-petclinic_18D2G2D.datadictionary#49"/>
     <properties href="spring-petclinic_18D2G2D.datadictionary#35"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdJayO1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdKBvu1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdLP7-1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmFEl_E9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmFrsfE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmNAU_E9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="11" entityName="vets_service">
     <behavior href="spring-petclinic_18D2G2D.datadictionary#27"/>
@@ -138,9 +98,9 @@
     <properties href="spring-petclinic_18D2G2D.datadictionary#32"/>
     <properties href="spring-petclinic_18D2G2D.datadictionary#33"/>
     <properties href="spring-petclinic_18D2G2D.datadictionary#35"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdJayO1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdKBvu1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdLP7-1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmFEl_E9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmFrsfE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmNAU_E9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="12" entityName="visits_service">
     <behavior href="spring-petclinic_18D2G2D.datadictionary#50"/>
@@ -150,9 +110,9 @@
     <properties href="spring-petclinic_18D2G2D.datadictionary#52"/>
     <properties href="spring-petclinic_18D2G2D.datadictionary#49"/>
     <properties href="spring-petclinic_18D2G2D.datadictionary#35"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdJayO1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdKBvu1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdLP7-1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmFEl_E9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmFrsfE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmNAU_E9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="13" entityName="api_gateway">
     <behavior href="spring-petclinic_18D2G2D.datadictionary#65"/>
@@ -164,16 +124,16 @@
     <properties href="spring-petclinic_18D2G2D.datadictionary#72"/>
     <properties href="spring-petclinic_18D2G2D.datadictionary#73"/>
     <properties href="spring-petclinic_18D2G2D.datadictionary#75"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdJayO1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdKBvu1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdLP7-1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmFEl_E9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmFrsfE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmNAU_E9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="14" entityName="secret_manager">
     <behavior href="spring-petclinic_18D2G2D.datadictionary#24"/>
     <properties href="spring-petclinic_18D2G2D.datadictionary#19"/>
     <properties href="spring-petclinic_18D2G2D.datadictionary#26"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdJayO1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdKBvu1IEe-35cJzkApa3w"/>
-    <properties href="spring-petclinic_18D2G2D.datadictionary#_OdLP7e1IEe-35cJzkApa3w"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmFEl_E9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmFrsfE9Ee-L2P0tVZBdHA"/>
+    <properties href="spring-petclinic_18D2G2D.datadictionary#_UmNAUPE9Ee-L2P0tVZBdHA"/>
   </nodes>
 </dataflowdiagram:DataFlowDiagram>

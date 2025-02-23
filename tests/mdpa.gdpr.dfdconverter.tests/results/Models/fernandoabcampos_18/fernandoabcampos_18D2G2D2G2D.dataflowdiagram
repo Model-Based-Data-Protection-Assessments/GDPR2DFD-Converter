@@ -1,109 +1,73 @@
 <?xml version="1.0" encoding="ASCII"?>
 <dataflowdiagram:DataFlowDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" id="0">
-  <flows id="_OXgFne1IEe-35cJzkApa3w" sourceNode="2" destinationNode="4">
-    <destinationPin href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXgFm-1IEe-35cJzkApa3w"/>
-    <sourcePin href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXgFme1IEe-35cJzkApa3w"/>
-  </flows>
-  <flows id="_OXgFpe1IEe-35cJzkApa3w" sourceNode="4" destinationNode="5">
-    <destinationPin href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXgFo-1IEe-35cJzkApa3w"/>
-    <sourcePin href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXgFoe1IEe-35cJzkApa3w"/>
-  </flows>
-  <flows id="_OXgFqe1IEe-35cJzkApa3w" sourceNode="4" destinationNode="7">
-    <destinationPin href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXgFqO1IEe-35cJzkApa3w"/>
-    <sourcePin href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXgFoe1IEe-35cJzkApa3w"/>
-  </flows>
-  <flows id="_OXgFq-1IEe-35cJzkApa3w" sourceNode="4" destinationNode="8">
-    <destinationPin href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXgFqu1IEe-35cJzkApa3w"/>
-    <sourcePin href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXgFoe1IEe-35cJzkApa3w"/>
-  </flows>
-  <flows id="_OXgFre1IEe-35cJzkApa3w" sourceNode="4" destinationNode="9">
-    <destinationPin href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXgFrO1IEe-35cJzkApa3w"/>
-    <sourcePin href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXgFoe1IEe-35cJzkApa3w"/>
-  </flows>
-  <flows id="_OXgFr-1IEe-35cJzkApa3w" sourceNode="4" destinationNode="10">
-    <destinationPin href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXgFru1IEe-35cJzkApa3w"/>
-    <sourcePin href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXgFoe1IEe-35cJzkApa3w"/>
-  </flows>
-  <flows id="_OXgFse1IEe-35cJzkApa3w" sourceNode="4" destinationNode="11">
-    <destinationPin href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXgFsO1IEe-35cJzkApa3w"/>
-    <sourcePin href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXgFoe1IEe-35cJzkApa3w"/>
-  </flows>
-  <flows id="_OXgFs-1IEe-35cJzkApa3w" sourceNode="4" destinationNode="12">
-    <destinationPin href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXgFsu1IEe-35cJzkApa3w"/>
-    <sourcePin href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXgFoe1IEe-35cJzkApa3w"/>
-  </flows>
-  <flows id="_OXgFtu1IEe-35cJzkApa3w" sourceNode="4" destinationNode="13">
-    <destinationPin href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXgFte1IEe-35cJzkApa3w"/>
-    <sourcePin href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXgFoe1IEe-35cJzkApa3w"/>
-  </flows>
   <nodes xsi:type="dataflowdiagram:External" id="2" entityName="github_repository">
-    <behavior href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXfehu1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXQN-u1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXQOFe1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXSDYO1IEe-35cJzkApa3w"/>
+    <behavior href="fernandoabcampos_18D2G2D2G2D.datadictionary#_Uc1o3vE9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UarssfE9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UarsvPE9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UbgMEfE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="3" entityName="user">
-    <behavior href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXfekO1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXQOFe1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXSDY-1IEe-35cJzkApa3w"/>
+    <behavior href="fernandoabcampos_18D2G2D2G2D.datadictionary#_Uc1o6fE9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UarsvPE9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UbgMGPE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="4" entityName="config_server">
-    <behavior href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXfenu1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXQN-u1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXQOFe1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXSDY-1IEe-35cJzkApa3w"/>
+    <behavior href="fernandoabcampos_18D2G2D2G2D.datadictionary#_Uc1o8vE9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UarssfE9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UarsvPE9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UbgMGPE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="5" entityName="discovery_service">
-    <behavior href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXfeou1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXQN-u1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXQOFe1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXSDY-1IEe-35cJzkApa3w"/>
+    <behavior href="fernandoabcampos_18D2G2D2G2D.datadictionary#_Uc1o_fE9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UarssfE9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UarsvPE9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UbgMGPE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="6" entityName="rabbitmq">
-    <behavior href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXfepu1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXQOFe1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXSDY-1IEe-35cJzkApa3w"/>
+    <behavior href="fernandoabcampos_18D2G2D2G2D.datadictionary#_Uc1pBvE9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UarsvPE9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UbgMGPE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="7" entityName="monitor_dashboard">
-    <behavior href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXfequ1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXQN-u1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXQOFe1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXSDY-1IEe-35cJzkApa3w"/>
+    <behavior href="fernandoabcampos_18D2G2D2G2D.datadictionary#_Uc1pDPE9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UarssfE9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UarsvPE9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UbgMGPE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="8" entityName="turbine">
-    <behavior href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXferO1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXQN-u1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXQOFe1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXSDY-1IEe-35cJzkApa3w"/>
+    <behavior href="fernandoabcampos_18D2G2D2G2D.datadictionary#_Uc1pF_E9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UarssfE9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UarsvPE9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UbgMGPE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="9" entityName="statement_service">
-    <behavior href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXfese1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXQN-u1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXQOFe1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXSDY-1IEe-35cJzkApa3w"/>
+    <behavior href="fernandoabcampos_18D2G2D2G2D.datadictionary#_Uc1pHfE9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UarssfE9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UarsvPE9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UbgMGPE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="10" entityName="card_service">
-    <behavior href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXfetu1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXQN-u1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXQOFe1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXSDY-1IEe-35cJzkApa3w"/>
+    <behavior href="fernandoabcampos_18D2G2D2G2D.datadictionary#_Uc1pJ_E9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UarssfE9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UarsvPE9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UbgMGPE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="11" entityName="card_statement_composite">
-    <behavior href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXfeuu1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXQN-u1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXQOFe1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXSDY-1IEe-35cJzkApa3w"/>
+    <behavior href="fernandoabcampos_18D2G2D2G2D.datadictionary#_Uc1pL_E9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UarssfE9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UarsvPE9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UbgMGPE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="12" entityName="edge_server">
-    <behavior href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXfeve1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXQN-u1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXQOFe1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXSDY-1IEe-35cJzkApa3w"/>
+    <behavior href="fernandoabcampos_18D2G2D2G2D.datadictionary#_Uc1pO_E9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UarssfE9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UarsvPE9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UbgMGPE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="13" entityName="secret_manager">
-    <behavior href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXfewe1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXQN-u1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXQOFe1IEe-35cJzkApa3w"/>
-    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_OXSDY-1IEe-35cJzkApa3w"/>
+    <behavior href="fernandoabcampos_18D2G2D2G2D.datadictionary#_Uc1pRvE9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UarssfE9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UarsvPE9Ee-L2P0tVZBdHA"/>
+    <properties href="fernandoabcampos_18D2G2D2G2D.datadictionary#_UbgMGPE9Ee-L2P0tVZBdHA"/>
   </nodes>
 </dataflowdiagram:DataFlowDiagram>

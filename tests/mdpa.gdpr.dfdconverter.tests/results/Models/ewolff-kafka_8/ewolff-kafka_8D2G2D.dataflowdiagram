@@ -1,37 +1,21 @@
 <?xml version="1.0" encoding="ASCII"?>
 <dataflowdiagram:DataFlowDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" id="0">
-  <flows id="53" entityName="zookeeper" sourceNode="3" destinationNode="4">
-    <destinationPin href="ewolff-kafka_8D2G2D.datadictionary#51"/>
-    <sourcePin href="ewolff-kafka_8D2G2D.datadictionary#52"/>
-  </flows>
-  <flows id="84" entityName="postgres" sourceNode="9" destinationNode="5">
-    <destinationPin href="ewolff-kafka_8D2G2D.datadictionary#70"/>
-    <sourcePin href="ewolff-kafka_8D2G2D.datadictionary#83"/>
-  </flows>
-  <flows id="92" entityName="postgres" sourceNode="9" destinationNode="7">
-    <destinationPin href="ewolff-kafka_8D2G2D.datadictionary#67"/>
-    <sourcePin href="ewolff-kafka_8D2G2D.datadictionary#91"/>
-  </flows>
-  <flows id="94" entityName="postgres" sourceNode="9" destinationNode="6">
-    <destinationPin href="ewolff-kafka_8D2G2D.datadictionary#61"/>
-    <sourcePin href="ewolff-kafka_8D2G2D.datadictionary#93"/>
-  </flows>
   <nodes xsi:type="dataflowdiagram:External" id="2" entityName="user">
     <behavior href="ewolff-kafka_8D2G2D.datadictionary#38"/>
     <properties href="ewolff-kafka_8D2G2D.datadictionary#40"/>
     <properties href="ewolff-kafka_8D2G2D.datadictionary#41"/>
     <properties href="ewolff-kafka_8D2G2D.datadictionary#42"/>
-    <properties href="ewolff-kafka_8D2G2D.datadictionary#_OY8QAu1IEe-35cJzkApa3w"/>
-    <properties href="ewolff-kafka_8D2G2D.datadictionary#_OY83U-1IEe-35cJzkApa3w"/>
+    <properties href="ewolff-kafka_8D2G2D.datadictionary#_UmukuPE9Ee-L2P0tVZBdHA"/>
+    <properties href="ewolff-kafka_8D2G2D.datadictionary#_UmxA6vE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="3" entityName="zookeeper">
     <behavior href="ewolff-kafka_8D2G2D.datadictionary#20"/>
     <properties href="ewolff-kafka_8D2G2D.datadictionary#22"/>
     <properties href="ewolff-kafka_8D2G2D.datadictionary#15"/>
     <properties href="ewolff-kafka_8D2G2D.datadictionary#24"/>
-    <properties href="ewolff-kafka_8D2G2D.datadictionary#_OY7pQ-1IEe-35cJzkApa3w"/>
-    <properties href="ewolff-kafka_8D2G2D.datadictionary#_OY8QAu1IEe-35cJzkApa3w"/>
-    <properties href="ewolff-kafka_8D2G2D.datadictionary#_OY83Ue1IEe-35cJzkApa3w"/>
+    <properties href="ewolff-kafka_8D2G2D.datadictionary#_Umuks_E9Ee-L2P0tVZBdHA"/>
+    <properties href="ewolff-kafka_8D2G2D.datadictionary#_UmukuPE9Ee-L2P0tVZBdHA"/>
+    <properties href="ewolff-kafka_8D2G2D.datadictionary#_UmxA6PE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="4" entityName="kafka">
     <behavior href="ewolff-kafka_8D2G2D.datadictionary#30"/>
@@ -39,36 +23,36 @@
     <properties href="ewolff-kafka_8D2G2D.datadictionary#15"/>
     <properties href="ewolff-kafka_8D2G2D.datadictionary#34"/>
     <properties href="ewolff-kafka_8D2G2D.datadictionary#35"/>
-    <properties href="ewolff-kafka_8D2G2D.datadictionary#_OY7pQ-1IEe-35cJzkApa3w"/>
-    <properties href="ewolff-kafka_8D2G2D.datadictionary#_OY8QAu1IEe-35cJzkApa3w"/>
-    <properties href="ewolff-kafka_8D2G2D.datadictionary#_OY83U-1IEe-35cJzkApa3w"/>
+    <properties href="ewolff-kafka_8D2G2D.datadictionary#_Umuks_E9Ee-L2P0tVZBdHA"/>
+    <properties href="ewolff-kafka_8D2G2D.datadictionary#_UmukuPE9Ee-L2P0tVZBdHA"/>
+    <properties href="ewolff-kafka_8D2G2D.datadictionary#_UmxA6vE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="5" entityName="order">
     <behavior href="ewolff-kafka_8D2G2D.datadictionary#47"/>
     <properties href="ewolff-kafka_8D2G2D.datadictionary#27"/>
     <properties href="ewolff-kafka_8D2G2D.datadictionary#50"/>
     <properties href="ewolff-kafka_8D2G2D.datadictionary#29"/>
-    <properties href="ewolff-kafka_8D2G2D.datadictionary#_OY7pRe1IEe-35cJzkApa3w"/>
-    <properties href="ewolff-kafka_8D2G2D.datadictionary#_OY8QAu1IEe-35cJzkApa3w"/>
-    <properties href="ewolff-kafka_8D2G2D.datadictionary#_OY83U-1IEe-35cJzkApa3w"/>
+    <properties href="ewolff-kafka_8D2G2D.datadictionary#_UmuktfE9Ee-L2P0tVZBdHA"/>
+    <properties href="ewolff-kafka_8D2G2D.datadictionary#_UmukuPE9Ee-L2P0tVZBdHA"/>
+    <properties href="ewolff-kafka_8D2G2D.datadictionary#_UmxA6vE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="6" entityName="invoicing">
     <behavior href="ewolff-kafka_8D2G2D.datadictionary#36"/>
     <properties href="ewolff-kafka_8D2G2D.datadictionary#27"/>
     <properties href="ewolff-kafka_8D2G2D.datadictionary#28"/>
     <properties href="ewolff-kafka_8D2G2D.datadictionary#29"/>
-    <properties href="ewolff-kafka_8D2G2D.datadictionary#_OY7pRe1IEe-35cJzkApa3w"/>
-    <properties href="ewolff-kafka_8D2G2D.datadictionary#_OY8QAu1IEe-35cJzkApa3w"/>
-    <properties href="ewolff-kafka_8D2G2D.datadictionary#_OY83U-1IEe-35cJzkApa3w"/>
+    <properties href="ewolff-kafka_8D2G2D.datadictionary#_UmuktfE9Ee-L2P0tVZBdHA"/>
+    <properties href="ewolff-kafka_8D2G2D.datadictionary#_UmukuPE9Ee-L2P0tVZBdHA"/>
+    <properties href="ewolff-kafka_8D2G2D.datadictionary#_UmxA6vE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="7" entityName="shipping">
     <behavior href="ewolff-kafka_8D2G2D.datadictionary#25"/>
     <properties href="ewolff-kafka_8D2G2D.datadictionary#27"/>
     <properties href="ewolff-kafka_8D2G2D.datadictionary#28"/>
     <properties href="ewolff-kafka_8D2G2D.datadictionary#29"/>
-    <properties href="ewolff-kafka_8D2G2D.datadictionary#_OY7pRe1IEe-35cJzkApa3w"/>
-    <properties href="ewolff-kafka_8D2G2D.datadictionary#_OY8QAu1IEe-35cJzkApa3w"/>
-    <properties href="ewolff-kafka_8D2G2D.datadictionary#_OY83U-1IEe-35cJzkApa3w"/>
+    <properties href="ewolff-kafka_8D2G2D.datadictionary#_UmuktfE9Ee-L2P0tVZBdHA"/>
+    <properties href="ewolff-kafka_8D2G2D.datadictionary#_UmukuPE9Ee-L2P0tVZBdHA"/>
+    <properties href="ewolff-kafka_8D2G2D.datadictionary#_UmxA6vE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="8" entityName="apache">
     <behavior href="ewolff-kafka_8D2G2D.datadictionary#11"/>
@@ -77,14 +61,14 @@
     <properties href="ewolff-kafka_8D2G2D.datadictionary#15"/>
     <properties href="ewolff-kafka_8D2G2D.datadictionary#17"/>
     <properties href="ewolff-kafka_8D2G2D.datadictionary#19"/>
-    <properties href="ewolff-kafka_8D2G2D.datadictionary#_OY8QAu1IEe-35cJzkApa3w"/>
-    <properties href="ewolff-kafka_8D2G2D.datadictionary#_OY83U-1IEe-35cJzkApa3w"/>
+    <properties href="ewolff-kafka_8D2G2D.datadictionary#_UmukuPE9Ee-L2P0tVZBdHA"/>
+    <properties href="ewolff-kafka_8D2G2D.datadictionary#_UmxA6vE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="9" entityName="postgres">
     <behavior href="ewolff-kafka_8D2G2D.datadictionary#43"/>
     <properties href="ewolff-kafka_8D2G2D.datadictionary#46"/>
-    <properties href="ewolff-kafka_8D2G2D.datadictionary#_OY7pRe1IEe-35cJzkApa3w"/>
-    <properties href="ewolff-kafka_8D2G2D.datadictionary#_OY8QAu1IEe-35cJzkApa3w"/>
-    <properties href="ewolff-kafka_8D2G2D.datadictionary#_OY83Ue1IEe-35cJzkApa3w"/>
+    <properties href="ewolff-kafka_8D2G2D.datadictionary#_UmuktfE9Ee-L2P0tVZBdHA"/>
+    <properties href="ewolff-kafka_8D2G2D.datadictionary#_UmukuPE9Ee-L2P0tVZBdHA"/>
+    <properties href="ewolff-kafka_8D2G2D.datadictionary#_UmxA6PE9Ee-L2P0tVZBdHA"/>
   </nodes>
 </dataflowdiagram:DataFlowDiagram>

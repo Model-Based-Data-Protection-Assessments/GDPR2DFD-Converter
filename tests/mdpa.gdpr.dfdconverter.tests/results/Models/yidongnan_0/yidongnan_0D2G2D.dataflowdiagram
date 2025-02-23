@@ -1,39 +1,11 @@
 <?xml version="1.0" encoding="ASCII"?>
 <dataflowdiagram:DataFlowDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" id="0">
-  <flows id="121" entityName="user" sourceNode="2" destinationNode="10">
-    <destinationPin href="yidongnan_0D2G2D.datadictionary#119"/>
-    <sourcePin href="yidongnan_0D2G2D.datadictionary#120"/>
-  </flows>
-  <flows id="81" entityName="admin_dashboard" sourceNode="3" destinationNode="6">
-    <destinationPin href="yidongnan_0D2G2D.datadictionary#79"/>
-    <sourcePin href="yidongnan_0D2G2D.datadictionary#80"/>
-  </flows>
-  <flows id="90" entityName="admin_dashboard" sourceNode="3" destinationNode="4">
-    <destinationPin href="yidongnan_0D2G2D.datadictionary#83"/>
-    <sourcePin href="yidongnan_0D2G2D.datadictionary#89"/>
-  </flows>
-  <flows id="93" entityName="admin_dashboard" sourceNode="3" destinationNode="7">
-    <destinationPin href="yidongnan_0D2G2D.datadictionary#91"/>
-    <sourcePin href="yidongnan_0D2G2D.datadictionary#92"/>
-  </flows>
-  <flows id="98" entityName="admin_dashboard" sourceNode="3" destinationNode="8">
-    <destinationPin href="yidongnan_0D2G2D.datadictionary#96"/>
-    <sourcePin href="yidongnan_0D2G2D.datadictionary#97"/>
-  </flows>
-  <flows id="109" entityName="admin_dashboard" sourceNode="3" destinationNode="9">
-    <destinationPin href="yidongnan_0D2G2D.datadictionary#107"/>
-    <sourcePin href="yidongnan_0D2G2D.datadictionary#108"/>
-  </flows>
-  <flows id="136" entityName="admin_dashboard" sourceNode="3" destinationNode="5">
-    <destinationPin href="yidongnan_0D2G2D.datadictionary#86"/>
-    <sourcePin href="yidongnan_0D2G2D.datadictionary#135"/>
-  </flows>
   <nodes xsi:type="dataflowdiagram:External" id="2" entityName="user">
     <behavior href="yidongnan_0D2G2D.datadictionary#61"/>
     <properties href="yidongnan_0D2G2D.datadictionary#63"/>
-    <properties href="yidongnan_0D2G2D.datadictionary#_ObnJm-1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_0D2G2D.datadictionary#_ObnwlO1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_0D2G2D.datadictionary#_ObtQSO1IEe-35cJzkApa3w"/>
+    <properties href="yidongnan_0D2G2D.datadictionary#_UrgW9fE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_0D2G2D.datadictionary#_UrgW-PE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_0D2G2D.datadictionary#_UrtLRvE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="3" entityName="admin_dashboard">
     <behavior href="yidongnan_0D2G2D.datadictionary#39"/>
@@ -42,9 +14,9 @@
     <properties href="yidongnan_0D2G2D.datadictionary#16"/>
     <properties href="yidongnan_0D2G2D.datadictionary#42"/>
     <properties href="yidongnan_0D2G2D.datadictionary#44"/>
-    <properties href="yidongnan_0D2G2D.datadictionary#_ObnJmO1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_0D2G2D.datadictionary#_ObnwlO1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_0D2G2D.datadictionary#_ObtQSO1IEe-35cJzkApa3w"/>
+    <properties href="yidongnan_0D2G2D.datadictionary#_UrgW8fE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_0D2G2D.datadictionary#_UrgW-PE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_0D2G2D.datadictionary#_UrtLRvE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="4" entityName="eureka_server">
     <behavior href="yidongnan_0D2G2D.datadictionary#33"/>
@@ -53,9 +25,9 @@
     <properties href="yidongnan_0D2G2D.datadictionary#16"/>
     <properties href="yidongnan_0D2G2D.datadictionary#36"/>
     <properties href="yidongnan_0D2G2D.datadictionary#38"/>
-    <properties href="yidongnan_0D2G2D.datadictionary#_ObnJmO1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_0D2G2D.datadictionary#_ObnwlO1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_0D2G2D.datadictionary#_ObtQSu1IEe-35cJzkApa3w"/>
+    <properties href="yidongnan_0D2G2D.datadictionary#_UrgW8fE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_0D2G2D.datadictionary#_UrgW-PE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_0D2G2D.datadictionary#_UrtLSfE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="5" entityName="rabbitmq">
     <behavior href="yidongnan_0D2G2D.datadictionary#64"/>
@@ -63,9 +35,9 @@
     <properties href="yidongnan_0D2G2D.datadictionary#23"/>
     <properties href="yidongnan_0D2G2D.datadictionary#68"/>
     <properties href="yidongnan_0D2G2D.datadictionary#69"/>
-    <properties href="yidongnan_0D2G2D.datadictionary#_ObnJmO1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_0D2G2D.datadictionary#_ObnwlO1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_0D2G2D.datadictionary#_ObtQSu1IEe-35cJzkApa3w"/>
+    <properties href="yidongnan_0D2G2D.datadictionary#_UrgW8fE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_0D2G2D.datadictionary#_UrgW-PE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_0D2G2D.datadictionary#_UrtLSfE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="6" entityName="config_server">
     <behavior href="yidongnan_0D2G2D.datadictionary#27"/>
@@ -74,9 +46,9 @@
     <properties href="yidongnan_0D2G2D.datadictionary#16"/>
     <properties href="yidongnan_0D2G2D.datadictionary#30"/>
     <properties href="yidongnan_0D2G2D.datadictionary#32"/>
-    <properties href="yidongnan_0D2G2D.datadictionary#_ObnJmO1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_0D2G2D.datadictionary#_ObnwlO1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_0D2G2D.datadictionary#_ObtQSu1IEe-35cJzkApa3w"/>
+    <properties href="yidongnan_0D2G2D.datadictionary#_UrgW8fE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_0D2G2D.datadictionary#_UrgW-PE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_0D2G2D.datadictionary#_UrtLSfE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="7" entityName="hystrix_dashboard">
     <behavior href="yidongnan_0D2G2D.datadictionary#70"/>
@@ -87,9 +59,9 @@
     <properties href="yidongnan_0D2G2D.datadictionary#75"/>
     <properties href="yidongnan_0D2G2D.datadictionary#76"/>
     <properties href="yidongnan_0D2G2D.datadictionary#78"/>
-    <properties href="yidongnan_0D2G2D.datadictionary#_ObnJmO1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_0D2G2D.datadictionary#_ObnwlO1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_0D2G2D.datadictionary#_ObtQSu1IEe-35cJzkApa3w"/>
+    <properties href="yidongnan_0D2G2D.datadictionary#_UrgW8fE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_0D2G2D.datadictionary#_UrgW-PE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_0D2G2D.datadictionary#_UrtLSfE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="8" entityName="service_a">
     <behavior href="yidongnan_0D2G2D.datadictionary#45"/>
@@ -98,18 +70,18 @@
     <properties href="yidongnan_0D2G2D.datadictionary#16"/>
     <properties href="yidongnan_0D2G2D.datadictionary#49"/>
     <properties href="yidongnan_0D2G2D.datadictionary#50"/>
-    <properties href="yidongnan_0D2G2D.datadictionary#_ObnJmO1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_0D2G2D.datadictionary#_ObnwlO1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_0D2G2D.datadictionary#_ObtQSu1IEe-35cJzkApa3w"/>
+    <properties href="yidongnan_0D2G2D.datadictionary#_UrgW8fE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_0D2G2D.datadictionary#_UrgW-PE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_0D2G2D.datadictionary#_UrtLSfE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="9" entityName="service_b">
     <behavior href="yidongnan_0D2G2D.datadictionary#13"/>
     <properties href="yidongnan_0D2G2D.datadictionary#15"/>
     <properties href="yidongnan_0D2G2D.datadictionary#16"/>
     <properties href="yidongnan_0D2G2D.datadictionary#19"/>
-    <properties href="yidongnan_0D2G2D.datadictionary#_ObnJmO1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_0D2G2D.datadictionary#_ObnwlO1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_0D2G2D.datadictionary#_ObtQSu1IEe-35cJzkApa3w"/>
+    <properties href="yidongnan_0D2G2D.datadictionary#_UrgW8fE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_0D2G2D.datadictionary#_UrgW-PE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_0D2G2D.datadictionary#_UrtLSfE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="10" entityName="zuul">
     <behavior href="yidongnan_0D2G2D.datadictionary#51"/>
@@ -121,9 +93,9 @@
     <properties href="yidongnan_0D2G2D.datadictionary#57"/>
     <properties href="yidongnan_0D2G2D.datadictionary#58"/>
     <properties href="yidongnan_0D2G2D.datadictionary#60"/>
-    <properties href="yidongnan_0D2G2D.datadictionary#_ObnJm-1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_0D2G2D.datadictionary#_ObnwlO1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_0D2G2D.datadictionary#_ObtQSu1IEe-35cJzkApa3w"/>
+    <properties href="yidongnan_0D2G2D.datadictionary#_UrgW9fE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_0D2G2D.datadictionary#_UrgW-PE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_0D2G2D.datadictionary#_UrtLSfE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="11" entityName="zipkin">
     <behavior href="yidongnan_0D2G2D.datadictionary#20"/>
@@ -131,7 +103,7 @@
     <properties href="yidongnan_0D2G2D.datadictionary#23"/>
     <properties href="yidongnan_0D2G2D.datadictionary#25"/>
     <properties href="yidongnan_0D2G2D.datadictionary#26"/>
-    <properties href="yidongnan_0D2G2D.datadictionary#_ObnwlO1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_0D2G2D.datadictionary#_ObtQSu1IEe-35cJzkApa3w"/>
+    <properties href="yidongnan_0D2G2D.datadictionary#_UrgW-PE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_0D2G2D.datadictionary#_UrtLSfE9Ee-L2P0tVZBdHA"/>
   </nodes>
 </dataflowdiagram:DataFlowDiagram>

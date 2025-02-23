@@ -73,34 +73,34 @@
   <labelTypes id="94" entityName="MonitoringDashboard">
     <label id="95" entityName="Grafana"/>
   </labelTypes>
-  <labelTypes id="_Obi4E-1IEe-35cJzkApa3w" entityName="ProcessingType">
-    <label id="_Obi4I-1IEe-35cJzkApa3w" entityName="Collecting"/>
-    <label id="_Obi4Je1IEe-35cJzkApa3w" entityName="Storing"/>
-    <label id="_Obi4Ju1IEe-35cJzkApa3w" entityName="Usage"/>
-    <label id="_Obi4KO1IEe-35cJzkApa3w" entityName="Transferring"/>
+  <labelTypes id="_UbSwsPE9Ee-L2P0tVZBdHA" entityName="ProcessingType">
+    <label id="_UbflAfE9Ee-L2P0tVZBdHA" entityName="Collecting"/>
+    <label id="_UbflAvE9Ee-L2P0tVZBdHA" entityName="Storing"/>
+    <label id="_UbflA_E9Ee-L2P0tVZBdHA" entityName="Usage"/>
+    <label id="_UbflBPE9Ee-L2P0tVZBdHA" entityName="Transferring"/>
   </labelTypes>
-  <labelTypes id="_Obi4FO1IEe-35cJzkApa3w" entityName="Data">
-    <label id="_Obhp_-1IEe-35cJzkApa3w"/>
-    <label id="_ObhqAe1IEe-35cJzkApa3w"/>
-    <label id="_Obhp_-1IEe-35cJzkApa3w"/>
-    <label id="_ObhqAe1IEe-35cJzkApa3w"/>
+  <labelTypes id="_UbSwsvE9Ee-L2P0tVZBdHA" entityName="Data">
+    <label id="_UaGd_fE9Ee-L2P0tVZBdHA"/>
+    <label id="_UaGeAvE9Ee-L2P0tVZBdHA"/>
+    <label id="_UaGd_fE9Ee-L2P0tVZBdHA"/>
+    <label id="_UaGeAvE9Ee-L2P0tVZBdHA"/>
   </labelTypes>
-  <labelTypes id="_Obi4Fe1IEe-35cJzkApa3w" entityName="PersonalData"/>
-  <labelTypes id="_Obi4Fu1IEe-35cJzkApa3w" entityName="Obligation"/>
-  <labelTypes id="_Obi4F-1IEe-35cJzkApa3w" entityName="Consent"/>
-  <labelTypes id="_Obi4GO1IEe-35cJzkApa3w" entityName="Contract"/>
-  <labelTypes id="_Obi4Ge1IEe-35cJzkApa3w" entityName="PublicAuthority"/>
-  <labelTypes id="_Obi4Gu1IEe-35cJzkApa3w" entityName="NaturalPerson"/>
-  <labelTypes id="_Obi4G-1IEe-35cJzkApa3w" entityName="Controller">
-    <label id="_ObhqBO1IEe-35cJzkApa3w"/>
-    <label id="_ObhqBO1IEe-35cJzkApa3w"/>
+  <labelTypes id="_UbSws_E9Ee-L2P0tVZBdHA" entityName="PersonalData"/>
+  <labelTypes id="_UbSwtPE9Ee-L2P0tVZBdHA" entityName="Obligation"/>
+  <labelTypes id="_UbSwtfE9Ee-L2P0tVZBdHA" entityName="Consent"/>
+  <labelTypes id="_UbSwtvE9Ee-L2P0tVZBdHA" entityName="Contract"/>
+  <labelTypes id="_UbSwuPE9Ee-L2P0tVZBdHA" entityName="PublicAuthority"/>
+  <labelTypes id="_UbSwvPE9Ee-L2P0tVZBdHA" entityName="NaturalPerson"/>
+  <labelTypes id="_UbSwv_E9Ee-L2P0tVZBdHA" entityName="Controller">
+    <label id="_UaHE-PE9Ee-L2P0tVZBdHA"/>
+    <label id="_UaHE-PE9Ee-L2P0tVZBdHA"/>
   </labelTypes>
-  <labelTypes id="_Obi4HO1IEe-35cJzkApa3w" entityName="ThirdParty"/>
-  <labelTypes id="_Obi4He1IEe-35cJzkApa3w" entityName="Purposes">
-    <label id="_ObhqAO1IEe-35cJzkApa3w"/>
-    <label id="_ObhqAu1IEe-35cJzkApa3w"/>
-    <label id="_ObhqAO1IEe-35cJzkApa3w"/>
-    <label id="_ObhqAu1IEe-35cJzkApa3w"/>
+  <labelTypes id="_UbSwwvE9Ee-L2P0tVZBdHA" entityName="ThirdParty"/>
+  <labelTypes id="_UbSwxvE9Ee-L2P0tVZBdHA" entityName="Purposes">
+    <label id="_UaGd_vE9Ee-L2P0tVZBdHA"/>
+    <label id="_UaGeA_E9Ee-L2P0tVZBdHA"/>
+    <label id="_UaGd_vE9Ee-L2P0tVZBdHA"/>
+    <label id="_UaGeA_E9Ee-L2P0tVZBdHA"/>
   </labelTypes>
   <behavior id="16">
     <inPin id="106"/>
@@ -282,41 +282,17 @@
   <behavior id="91">
     <inPin id="114"/>
   </behavior>
-  <behavior id="_ObspMO1IEe-35cJzkApa3w" entityName="github_repository Behavior">
-    <outPin id="_ObspZ-1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_ObspNe1IEe-35cJzkApa3w" entityName="user Behavior"/>
-  <behavior id="_ObspN-1IEe-35cJzkApa3w" entityName="config_server Behavior">
-    <inPin id="_ObtQIO1IEe-35cJzkApa3w"/>
-    <outPin id="_ObtQJO1IEe-35cJzkApa3w"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_ObtQO-1IEe-35cJzkApa3w" entityName="Forward aName" outputPin="_ObtQJO1IEe-35cJzkApa3w" inputPins="_ObtQIO1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_ObspOe1IEe-35cJzkApa3w" entityName="discovery_server Behavior">
-    <inPin id="_ObtQJu1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_ObspO-1IEe-35cJzkApa3w" entityName="tracing_server Behavior">
-    <inPin id="_ObtQKO1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_ObspPe1IEe-35cJzkApa3w" entityName="admin_server Behavior">
-    <inPin id="_ObtQKu1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_ObspP-1IEe-35cJzkApa3w" entityName="prometheus_server Behavior"/>
-  <behavior id="_ObspQe1IEe-35cJzkApa3w" entityName="grafana_server Behavior">
-    <inPin id="_ObtQNe1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_ObspQ-1IEe-35cJzkApa3w" entityName="customers_service Behavior">
-    <inPin id="_ObtQLO1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_ObspRu1IEe-35cJzkApa3w" entityName="vets_service Behavior">
-    <inPin id="_ObtQLu1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_ObspSO1IEe-35cJzkApa3w" entityName="visits_service Behavior">
-    <inPin id="_ObtQMO1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_ObspTO1IEe-35cJzkApa3w" entityName="api_gateway Behavior">
-    <inPin id="_ObtQMu1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_ObspT-1IEe-35cJzkApa3w" entityName="logging_server Behavior">
-    <outPin id="_ObtQNO1IEe-35cJzkApa3w"/>
-  </behavior>
+  <behavior id="_Uc3eAvE9Ee-L2P0tVZBdHA" entityName="github_repository Behavior"/>
+  <behavior id="_Uc3eBPE9Ee-L2P0tVZBdHA" entityName="user Behavior"/>
+  <behavior id="_Uc3eBvE9Ee-L2P0tVZBdHA" entityName="config_server Behavior"/>
+  <behavior id="_Uc3eCPE9Ee-L2P0tVZBdHA" entityName="discovery_server Behavior"/>
+  <behavior id="_Uc3eCvE9Ee-L2P0tVZBdHA" entityName="tracing_server Behavior"/>
+  <behavior id="_Uc3eDPE9Ee-L2P0tVZBdHA" entityName="admin_server Behavior"/>
+  <behavior id="_Uc3eDvE9Ee-L2P0tVZBdHA" entityName="prometheus_server Behavior"/>
+  <behavior id="_Uc3eEPE9Ee-L2P0tVZBdHA" entityName="grafana_server Behavior"/>
+  <behavior id="_Uc4FEfE9Ee-L2P0tVZBdHA" entityName="customers_service Behavior"/>
+  <behavior id="_Uc4FE_E9Ee-L2P0tVZBdHA" entityName="vets_service Behavior"/>
+  <behavior id="_Uc4FFfE9Ee-L2P0tVZBdHA" entityName="visits_service Behavior"/>
+  <behavior id="_Uc4FF_E9Ee-L2P0tVZBdHA" entityName="api_gateway Behavior"/>
+  <behavior id="_Uc4FGfE9Ee-L2P0tVZBdHA" entityName="logging_server Behavior"/>
 </datadictionary:DataDictionary>

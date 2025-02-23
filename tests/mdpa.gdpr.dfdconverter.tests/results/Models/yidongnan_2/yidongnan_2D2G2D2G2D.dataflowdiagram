@@ -1,89 +1,61 @@
 <?xml version="1.0" encoding="ASCII"?>
 <dataflowdiagram:DataFlowDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" id="0">
-  <flows id="_OeWUpu1IEe-35cJzkApa3w" sourceNode="3" destinationNode="6">
-    <destinationPin href="yidongnan_2D2G2D2G2D.datadictionary#_OeWUpe1IEe-35cJzkApa3w"/>
-    <sourcePin href="yidongnan_2D2G2D2G2D.datadictionary#_OeWUou1IEe-35cJzkApa3w"/>
-  </flows>
-  <flows id="_OeWUru1IEe-35cJzkApa3w" sourceNode="3" destinationNode="4">
-    <destinationPin href="yidongnan_2D2G2D2G2D.datadictionary#_OeWUrO1IEe-35cJzkApa3w"/>
-    <sourcePin href="yidongnan_2D2G2D2G2D.datadictionary#_OeWUou1IEe-35cJzkApa3w"/>
-  </flows>
-  <flows id="_OeWUs-1IEe-35cJzkApa3w" sourceNode="3" destinationNode="7">
-    <destinationPin href="yidongnan_2D2G2D2G2D.datadictionary#_OeWUsu1IEe-35cJzkApa3w"/>
-    <sourcePin href="yidongnan_2D2G2D2G2D.datadictionary#_OeWUou1IEe-35cJzkApa3w"/>
-  </flows>
-  <flows id="_OeWUte1IEe-35cJzkApa3w" sourceNode="3" destinationNode="8">
-    <destinationPin href="yidongnan_2D2G2D2G2D.datadictionary#_OeWUtO1IEe-35cJzkApa3w"/>
-    <sourcePin href="yidongnan_2D2G2D2G2D.datadictionary#_OeWUou1IEe-35cJzkApa3w"/>
-  </flows>
-  <flows id="_OeWUt-1IEe-35cJzkApa3w" sourceNode="3" destinationNode="9">
-    <destinationPin href="yidongnan_2D2G2D2G2D.datadictionary#_OeWUtu1IEe-35cJzkApa3w"/>
-    <sourcePin href="yidongnan_2D2G2D2G2D.datadictionary#_OeWUou1IEe-35cJzkApa3w"/>
-  </flows>
-  <flows id="_OeW7gO1IEe-35cJzkApa3w" sourceNode="3" destinationNode="5">
-    <destinationPin href="yidongnan_2D2G2D2G2D.datadictionary#_OeWUue1IEe-35cJzkApa3w"/>
-    <sourcePin href="yidongnan_2D2G2D2G2D.datadictionary#_OeWUou1IEe-35cJzkApa3w"/>
-  </flows>
-  <flows id="_OeW7hO1IEe-35cJzkApa3w" sourceNode="3" destinationNode="10">
-    <destinationPin href="yidongnan_2D2G2D2G2D.datadictionary#_OeW7gu1IEe-35cJzkApa3w"/>
-    <sourcePin href="yidongnan_2D2G2D2G2D.datadictionary#_OeWUou1IEe-35cJzkApa3w"/>
-  </flows>
   <nodes xsi:type="dataflowdiagram:Process" id="2" entityName="user">
-    <behavior href="yidongnan_2D2G2D2G2D.datadictionary#_OeWUg-1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_OeQ1H-1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_OeSDVe1IEe-35cJzkApa3w"/>
+    <behavior href="yidongnan_2D2G2D2G2D.datadictionary#_UqYVmPE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_Up8QxvE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_UqGox_E9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:External" id="3" entityName="admin_dashboard">
-    <behavior href="yidongnan_2D2G2D2G2D.datadictionary#_OeWUh-1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_OeQ07-1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_OeQ1H-1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_OeSDUO1IEe-35cJzkApa3w"/>
+    <behavior href="yidongnan_2D2G2D2G2D.datadictionary#_UqYVmvE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_Up7Ck_E9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_Up8QxvE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_UqGoxfE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="4" entityName="eureka_server">
-    <behavior href="yidongnan_2D2G2D2G2D.datadictionary#_OeWUi-1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_OeQ07-1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_OeQ1H-1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_OeSDVe1IEe-35cJzkApa3w"/>
+    <behavior href="yidongnan_2D2G2D2G2D.datadictionary#_UqYVnPE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_Up7Ck_E9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_Up8QxvE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_UqGox_E9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="5" entityName="rabbitmq">
-    <behavior href="yidongnan_2D2G2D2G2D.datadictionary#_OeWUje1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_OeQ07-1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_OeQ1H-1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_OeSDVe1IEe-35cJzkApa3w"/>
+    <behavior href="yidongnan_2D2G2D2G2D.datadictionary#_UqYVnvE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_Up7Ck_E9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_Up8QxvE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_UqGox_E9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="6" entityName="config_server">
-    <behavior href="yidongnan_2D2G2D2G2D.datadictionary#_OeWUj-1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_OeQ07-1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_OeQ1H-1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_OeSDVe1IEe-35cJzkApa3w"/>
+    <behavior href="yidongnan_2D2G2D2G2D.datadictionary#_UqYVoPE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_Up7Ck_E9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_Up8QxvE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_UqGox_E9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="7" entityName="hystrix_dashboard">
-    <behavior href="yidongnan_2D2G2D2G2D.datadictionary#_OeWUke1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_OeQ07-1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_OeQ1H-1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_OeSDVe1IEe-35cJzkApa3w"/>
+    <behavior href="yidongnan_2D2G2D2G2D.datadictionary#_UqYVovE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_Up7Ck_E9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_Up8QxvE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_UqGox_E9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="8" entityName="service_a">
-    <behavior href="yidongnan_2D2G2D2G2D.datadictionary#_OeWUk-1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_OeQ07-1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_OeQ1H-1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_OeSDVe1IEe-35cJzkApa3w"/>
+    <behavior href="yidongnan_2D2G2D2G2D.datadictionary#_UqYVpPE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_Up7Ck_E9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_Up8QxvE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_UqGox_E9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="9" entityName="service_b">
-    <behavior href="yidongnan_2D2G2D2G2D.datadictionary#_OeWUle1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_OeQ07-1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_OeQ1H-1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_OeSDVe1IEe-35cJzkApa3w"/>
+    <behavior href="yidongnan_2D2G2D2G2D.datadictionary#_UqYVpvE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_Up7Ck_E9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_Up8QxvE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_UqGox_E9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="10" entityName="zuul">
-    <behavior href="yidongnan_2D2G2D2G2D.datadictionary#_OeWUl-1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_OeQ07-1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_OeQ1H-1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_OeSDVe1IEe-35cJzkApa3w"/>
+    <behavior href="yidongnan_2D2G2D2G2D.datadictionary#_UqYVqPE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_Up7Ck_E9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_Up8QxvE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_UqGox_E9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="11" entityName="zipkin">
-    <behavior href="yidongnan_2D2G2D2G2D.datadictionary#_OeWUme1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_OeQ1H-1IEe-35cJzkApa3w"/>
-    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_OeSDVe1IEe-35cJzkApa3w"/>
+    <behavior href="yidongnan_2D2G2D2G2D.datadictionary#_UqYVqvE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_Up8QxvE9Ee-L2P0tVZBdHA"/>
+    <properties href="yidongnan_2D2G2D2G2D.datadictionary#_UqGox_E9Ee-L2P0tVZBdHA"/>
   </nodes>
 </dataflowdiagram:DataFlowDiagram>

@@ -1,45 +1,13 @@
 <?xml version="1.0" encoding="ASCII"?>
 <dataflowdiagram:DataFlowDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" id="0">
-  <flows id="73" entityName="github_repository" sourceNode="2" destinationNode="4">
-    <destinationPin href="jferrater_5D2G2D.datadictionary#71"/>
-    <sourcePin href="jferrater_5D2G2D.datadictionary#72"/>
-  </flows>
-  <flows id="119" entityName="authorization_server" sourceNode="11" destinationNode="3">
-    <destinationPin href="jferrater_5D2G2D.datadictionary#75"/>
-    <sourcePin href="jferrater_5D2G2D.datadictionary#118"/>
-  </flows>
-  <flows id="123" entityName="authorization_server" sourceNode="11" destinationNode="5">
-    <destinationPin href="jferrater_5D2G2D.datadictionary#79"/>
-    <sourcePin href="jferrater_5D2G2D.datadictionary#122"/>
-  </flows>
-  <flows id="125" entityName="authorization_server" sourceNode="11" destinationNode="6">
-    <destinationPin href="jferrater_5D2G2D.datadictionary#84"/>
-    <sourcePin href="jferrater_5D2G2D.datadictionary#124"/>
-  </flows>
-  <flows id="127" entityName="authorization_server" sourceNode="11" destinationNode="9">
-    <destinationPin href="jferrater_5D2G2D.datadictionary#99"/>
-    <sourcePin href="jferrater_5D2G2D.datadictionary#126"/>
-  </flows>
-  <flows id="129" entityName="authorization_server" sourceNode="11" destinationNode="10">
-    <destinationPin href="jferrater_5D2G2D.datadictionary#104"/>
-    <sourcePin href="jferrater_5D2G2D.datadictionary#128"/>
-  </flows>
-  <flows id="131" entityName="authorization_server" sourceNode="11" destinationNode="7">
-    <destinationPin href="jferrater_5D2G2D.datadictionary#89"/>
-    <sourcePin href="jferrater_5D2G2D.datadictionary#130"/>
-  </flows>
-  <flows id="133" entityName="authorization_server" sourceNode="11" destinationNode="8">
-    <destinationPin href="jferrater_5D2G2D.datadictionary#94"/>
-    <sourcePin href="jferrater_5D2G2D.datadictionary#132"/>
-  </flows>
   <nodes xsi:type="dataflowdiagram:External" id="2" entityName="github_repository">
     <behavior href="jferrater_5D2G2D.datadictionary#56"/>
     <properties href="jferrater_5D2G2D.datadictionary#58"/>
     <properties href="jferrater_5D2G2D.datadictionary#59"/>
     <properties href="jferrater_5D2G2D.datadictionary#61"/>
-    <properties href="jferrater_5D2G2D.datadictionary#_OVvyVe1IEe-35cJzkApa3w"/>
-    <properties href="jferrater_5D2G2D.datadictionary#_OVwZJ-1IEe-35cJzkApa3w"/>
-    <properties href="jferrater_5D2G2D.datadictionary#_OVy1eu1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_5D2G2D.datadictionary#_UjzMpfE9Ee-L2P0tVZBdHA"/>
+    <properties href="jferrater_5D2G2D.datadictionary#_Ujzzj_E9Ee-L2P0tVZBdHA"/>
+    <properties href="jferrater_5D2G2D.datadictionary#_Uj7IYfE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="3" entityName="discovery_service">
     <behavior href="jferrater_5D2G2D.datadictionary#17"/>
@@ -48,9 +16,9 @@
     <properties href="jferrater_5D2G2D.datadictionary#20"/>
     <properties href="jferrater_5D2G2D.datadictionary#22"/>
     <properties href="jferrater_5D2G2D.datadictionary#24"/>
-    <properties href="jferrater_5D2G2D.datadictionary#_OVvyWe1IEe-35cJzkApa3w"/>
-    <properties href="jferrater_5D2G2D.datadictionary#_OVwZJ-1IEe-35cJzkApa3w"/>
-    <properties href="jferrater_5D2G2D.datadictionary#_OVy1fO1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_5D2G2D.datadictionary#_UjzMrfE9Ee-L2P0tVZBdHA"/>
+    <properties href="jferrater_5D2G2D.datadictionary#_Ujzzj_E9Ee-L2P0tVZBdHA"/>
+    <properties href="jferrater_5D2G2D.datadictionary#_Uj7IZfE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="4" entityName="config_service">
     <behavior href="jferrater_5D2G2D.datadictionary#62"/>
@@ -59,9 +27,9 @@
     <properties href="jferrater_5D2G2D.datadictionary#20"/>
     <properties href="jferrater_5D2G2D.datadictionary#22"/>
     <properties href="jferrater_5D2G2D.datadictionary#66"/>
-    <properties href="jferrater_5D2G2D.datadictionary#_OVvyVe1IEe-35cJzkApa3w"/>
-    <properties href="jferrater_5D2G2D.datadictionary#_OVwZJ-1IEe-35cJzkApa3w"/>
-    <properties href="jferrater_5D2G2D.datadictionary#_OVy1fO1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_5D2G2D.datadictionary#_UjzMpfE9Ee-L2P0tVZBdHA"/>
+    <properties href="jferrater_5D2G2D.datadictionary#_Ujzzj_E9Ee-L2P0tVZBdHA"/>
+    <properties href="jferrater_5D2G2D.datadictionary#_Uj7IZfE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="5" entityName="account_service">
     <behavior href="jferrater_5D2G2D.datadictionary#25"/>
@@ -69,9 +37,9 @@
     <properties href="jferrater_5D2G2D.datadictionary#20"/>
     <properties href="jferrater_5D2G2D.datadictionary#29"/>
     <properties href="jferrater_5D2G2D.datadictionary#30"/>
-    <properties href="jferrater_5D2G2D.datadictionary#_OVvyWe1IEe-35cJzkApa3w"/>
-    <properties href="jferrater_5D2G2D.datadictionary#_OVwZJ-1IEe-35cJzkApa3w"/>
-    <properties href="jferrater_5D2G2D.datadictionary#_OVy1fO1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_5D2G2D.datadictionary#_UjzMrfE9Ee-L2P0tVZBdHA"/>
+    <properties href="jferrater_5D2G2D.datadictionary#_Ujzzj_E9Ee-L2P0tVZBdHA"/>
+    <properties href="jferrater_5D2G2D.datadictionary#_Uj7IZfE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="6" entityName="customer_service">
     <behavior href="jferrater_5D2G2D.datadictionary#35"/>
@@ -79,9 +47,9 @@
     <properties href="jferrater_5D2G2D.datadictionary#20"/>
     <properties href="jferrater_5D2G2D.datadictionary#37"/>
     <properties href="jferrater_5D2G2D.datadictionary#38"/>
-    <properties href="jferrater_5D2G2D.datadictionary#_OVvyWe1IEe-35cJzkApa3w"/>
-    <properties href="jferrater_5D2G2D.datadictionary#_OVwZJ-1IEe-35cJzkApa3w"/>
-    <properties href="jferrater_5D2G2D.datadictionary#_OVy1fO1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_5D2G2D.datadictionary#_UjzMrfE9Ee-L2P0tVZBdHA"/>
+    <properties href="jferrater_5D2G2D.datadictionary#_Ujzzj_E9Ee-L2P0tVZBdHA"/>
+    <properties href="jferrater_5D2G2D.datadictionary#_Uj7IZfE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="7" entityName="store_service">
     <behavior href="jferrater_5D2G2D.datadictionary#67"/>
@@ -89,9 +57,9 @@
     <properties href="jferrater_5D2G2D.datadictionary#20"/>
     <properties href="jferrater_5D2G2D.datadictionary#69"/>
     <properties href="jferrater_5D2G2D.datadictionary#70"/>
-    <properties href="jferrater_5D2G2D.datadictionary#_OVvyWe1IEe-35cJzkApa3w"/>
-    <properties href="jferrater_5D2G2D.datadictionary#_OVwZJ-1IEe-35cJzkApa3w"/>
-    <properties href="jferrater_5D2G2D.datadictionary#_OVy1fO1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_5D2G2D.datadictionary#_UjzMrfE9Ee-L2P0tVZBdHA"/>
+    <properties href="jferrater_5D2G2D.datadictionary#_Ujzzj_E9Ee-L2P0tVZBdHA"/>
+    <properties href="jferrater_5D2G2D.datadictionary#_Uj7IZfE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="8" entityName="item_service">
     <behavior href="jferrater_5D2G2D.datadictionary#31"/>
@@ -99,9 +67,9 @@
     <properties href="jferrater_5D2G2D.datadictionary#20"/>
     <properties href="jferrater_5D2G2D.datadictionary#33"/>
     <properties href="jferrater_5D2G2D.datadictionary#34"/>
-    <properties href="jferrater_5D2G2D.datadictionary#_OVvyWe1IEe-35cJzkApa3w"/>
-    <properties href="jferrater_5D2G2D.datadictionary#_OVwZJ-1IEe-35cJzkApa3w"/>
-    <properties href="jferrater_5D2G2D.datadictionary#_OVy1fO1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_5D2G2D.datadictionary#_UjzMrfE9Ee-L2P0tVZBdHA"/>
+    <properties href="jferrater_5D2G2D.datadictionary#_Ujzzj_E9Ee-L2P0tVZBdHA"/>
+    <properties href="jferrater_5D2G2D.datadictionary#_Uj7IZfE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="9" entityName="price_service">
     <behavior href="jferrater_5D2G2D.datadictionary#39"/>
@@ -109,9 +77,9 @@
     <properties href="jferrater_5D2G2D.datadictionary#20"/>
     <properties href="jferrater_5D2G2D.datadictionary#41"/>
     <properties href="jferrater_5D2G2D.datadictionary#42"/>
-    <properties href="jferrater_5D2G2D.datadictionary#_OVvyWe1IEe-35cJzkApa3w"/>
-    <properties href="jferrater_5D2G2D.datadictionary#_OVwZJ-1IEe-35cJzkApa3w"/>
-    <properties href="jferrater_5D2G2D.datadictionary#_OVy1fO1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_5D2G2D.datadictionary#_UjzMrfE9Ee-L2P0tVZBdHA"/>
+    <properties href="jferrater_5D2G2D.datadictionary#_Ujzzj_E9Ee-L2P0tVZBdHA"/>
+    <properties href="jferrater_5D2G2D.datadictionary#_Uj7IZfE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="10" entityName="foodtray_service">
     <behavior href="jferrater_5D2G2D.datadictionary#43"/>
@@ -126,16 +94,16 @@
     <properties href="jferrater_5D2G2D.datadictionary#52"/>
     <properties href="jferrater_5D2G2D.datadictionary#54"/>
     <properties href="jferrater_5D2G2D.datadictionary#55"/>
-    <properties href="jferrater_5D2G2D.datadictionary#_OVvyWe1IEe-35cJzkApa3w"/>
-    <properties href="jferrater_5D2G2D.datadictionary#_OVwZJ-1IEe-35cJzkApa3w"/>
-    <properties href="jferrater_5D2G2D.datadictionary#_OVy1fO1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_5D2G2D.datadictionary#_UjzMrfE9Ee-L2P0tVZBdHA"/>
+    <properties href="jferrater_5D2G2D.datadictionary#_Ujzzj_E9Ee-L2P0tVZBdHA"/>
+    <properties href="jferrater_5D2G2D.datadictionary#_Uj7IZfE9Ee-L2P0tVZBdHA"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="11" entityName="authorization_server">
     <behavior href="jferrater_5D2G2D.datadictionary#13"/>
     <properties href="jferrater_5D2G2D.datadictionary#15"/>
     <properties href="jferrater_5D2G2D.datadictionary#16"/>
-    <properties href="jferrater_5D2G2D.datadictionary#_OVvyWe1IEe-35cJzkApa3w"/>
-    <properties href="jferrater_5D2G2D.datadictionary#_OVwZJ-1IEe-35cJzkApa3w"/>
-    <properties href="jferrater_5D2G2D.datadictionary#_OVy1eu1IEe-35cJzkApa3w"/>
+    <properties href="jferrater_5D2G2D.datadictionary#_UjzMrfE9Ee-L2P0tVZBdHA"/>
+    <properties href="jferrater_5D2G2D.datadictionary#_Ujzzj_E9Ee-L2P0tVZBdHA"/>
+    <properties href="jferrater_5D2G2D.datadictionary#_Uj7IYfE9Ee-L2P0tVZBdHA"/>
   </nodes>
 </dataflowdiagram:DataFlowDiagram>

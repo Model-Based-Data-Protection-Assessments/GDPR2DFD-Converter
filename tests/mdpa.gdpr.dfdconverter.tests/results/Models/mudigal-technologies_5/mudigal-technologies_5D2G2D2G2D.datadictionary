@@ -83,38 +83,38 @@
     <label id="137" entityName="commudigalmicroservicessampleserviceone"/>
     <label id="147" entityName="commudigalmicroservicessampleservicetwo"/>
   </labelTypes>
-  <labelTypes id="_OYWaMO1IEe-35cJzkApa3w" entityName="ProcessingType">
-    <label id="_OYWaTu1IEe-35cJzkApa3w" entityName="Collecting"/>
-    <label id="_OYWaUO1IEe-35cJzkApa3w" entityName="Storing"/>
-    <label id="_OYWaUe1IEe-35cJzkApa3w" entityName="Usage"/>
-    <label id="_OYWaU-1IEe-35cJzkApa3w" entityName="Transferring"/>
+  <labelTypes id="_Uus04_E9Ee-L2P0tVZBdHA" entityName="ProcessingType">
+    <label id="_Uus1BvE9Ee-L2P0tVZBdHA" entityName="Collecting"/>
+    <label id="_Uus1B_E9Ee-L2P0tVZBdHA" entityName="Storing"/>
+    <label id="_Uus1CvE9Ee-L2P0tVZBdHA" entityName="Usage"/>
+    <label id="_Uus1DfE9Ee-L2P0tVZBdHA" entityName="Transferring"/>
   </labelTypes>
-  <labelTypes id="_OYWaMu1IEe-35cJzkApa3w" entityName="Data">
-    <label id="_OYUk8O1IEe-35cJzkApa3w"/>
-    <label id="_OYUk-O1IEe-35cJzkApa3w"/>
-    <label id="_OYUk--1IEe-35cJzkApa3w"/>
-    <label id="_OYUk8O1IEe-35cJzkApa3w"/>
-    <label id="_OYUk-O1IEe-35cJzkApa3w"/>
-    <label id="_OYUk--1IEe-35cJzkApa3w"/>
+  <labelTypes id="_Uus05PE9Ee-L2P0tVZBdHA" entityName="Data">
+    <label id="_UupxkPE9Ee-L2P0tVZBdHA"/>
+    <label id="_UupxkvE9Ee-L2P0tVZBdHA"/>
+    <label id="_UupxlPE9Ee-L2P0tVZBdHA"/>
+    <label id="_UupxkPE9Ee-L2P0tVZBdHA"/>
+    <label id="_UupxkvE9Ee-L2P0tVZBdHA"/>
+    <label id="_UupxlPE9Ee-L2P0tVZBdHA"/>
   </labelTypes>
-  <labelTypes id="_OYWaNO1IEe-35cJzkApa3w" entityName="PersonalData"/>
-  <labelTypes id="_OYWaOO1IEe-35cJzkApa3w" entityName="Obligation"/>
-  <labelTypes id="_OYWaOe1IEe-35cJzkApa3w" entityName="Consent"/>
-  <labelTypes id="_OYWaO-1IEe-35cJzkApa3w" entityName="Contract"/>
-  <labelTypes id="_OYWaPO1IEe-35cJzkApa3w" entityName="PublicAuthority"/>
-  <labelTypes id="_OYWaPe1IEe-35cJzkApa3w" entityName="NaturalPerson"/>
-  <labelTypes id="_OYWaP-1IEe-35cJzkApa3w" entityName="Controller">
-    <label id="_OYUlEO1IEe-35cJzkApa3w"/>
-    <label id="_OYUlEO1IEe-35cJzkApa3w"/>
+  <labelTypes id="_Uus05fE9Ee-L2P0tVZBdHA" entityName="PersonalData"/>
+  <labelTypes id="_Uus05vE9Ee-L2P0tVZBdHA" entityName="Obligation"/>
+  <labelTypes id="_Uus05_E9Ee-L2P0tVZBdHA" entityName="Consent"/>
+  <labelTypes id="_Uus06fE9Ee-L2P0tVZBdHA" entityName="Contract"/>
+  <labelTypes id="_Uus06_E9Ee-L2P0tVZBdHA" entityName="PublicAuthority"/>
+  <labelTypes id="_Uus07fE9Ee-L2P0tVZBdHA" entityName="NaturalPerson"/>
+  <labelTypes id="_Uus07vE9Ee-L2P0tVZBdHA" entityName="Controller">
+    <label id="_Uupxl_E9Ee-L2P0tVZBdHA"/>
+    <label id="_Uupxl_E9Ee-L2P0tVZBdHA"/>
   </labelTypes>
-  <labelTypes id="_OYWaQO1IEe-35cJzkApa3w" entityName="ThirdParty"/>
-  <labelTypes id="_OYWaQu1IEe-35cJzkApa3w" entityName="Purposes">
-    <label id="_OYUk8e1IEe-35cJzkApa3w"/>
-    <label id="_OYUk-e1IEe-35cJzkApa3w"/>
-    <label id="_OYUk_O1IEe-35cJzkApa3w"/>
-    <label id="_OYUk8e1IEe-35cJzkApa3w"/>
-    <label id="_OYUk-e1IEe-35cJzkApa3w"/>
-    <label id="_OYUk_O1IEe-35cJzkApa3w"/>
+  <labelTypes id="_Uus07_E9Ee-L2P0tVZBdHA" entityName="ThirdParty"/>
+  <labelTypes id="_Uus08fE9Ee-L2P0tVZBdHA" entityName="Purposes">
+    <label id="_UupxkfE9Ee-L2P0tVZBdHA"/>
+    <label id="_Uupxk_E9Ee-L2P0tVZBdHA"/>
+    <label id="_UupxlfE9Ee-L2P0tVZBdHA"/>
+    <label id="_UupxkfE9Ee-L2P0tVZBdHA"/>
+    <label id="_Uupxk_E9Ee-L2P0tVZBdHA"/>
+    <label id="_UupxlfE9Ee-L2P0tVZBdHA"/>
   </labelTypes>
   <behavior id="19">
     <inPin id="118"/>
@@ -383,42 +383,20 @@
       <term xsi:type="datadictionary:TRUE" id="313"/>
     </assignment>
   </behavior>
-  <behavior id="_OYdu_-1IEe-35cJzkApa3w" entityName="user Behavior"/>
-  <behavior id="_OYdvA-1IEe-35cJzkApa3w" entityName="consul Behavior">
-    <inPin id="_OYeV8-1IEe-35cJzkApa3w"/>
-    <outPin id="_OYdvMO1IEe-35cJzkApa3w"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_OYeWAe1IEe-35cJzkApa3w" entityName="Forward aName" outputPin="_OYdvMO1IEe-35cJzkApa3w" inputPins="_OYeV8-1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_OYdvB-1IEe-35cJzkApa3w" entityName="consul2 Behavior">
-    <inPin id="_OYeV9e1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_OYdvCu1IEe-35cJzkApa3w" entityName="consul3 Behavior">
-    <outPin id="_OYeV8u1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_OYdvDe1IEe-35cJzkApa3w" entityName="elasticsearch Behavior"/>
-  <behavior id="_OYdvD-1IEe-35cJzkApa3w" entityName="logstash Behavior"/>
-  <behavior id="_OYdvEe1IEe-35cJzkApa3w" entityName="kibana Behavior"/>
-  <behavior id="_OYdvE-1IEe-35cJzkApa3w" entityName="rabbit Behavior"/>
-  <behavior id="_OYdvFe1IEe-35cJzkApa3w" entityName="service_one Behavior">
-    <inPin id="_OYeV-e1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_OYdvF-1IEe-35cJzkApa3w" entityName="service_two Behavior">
-    <inPin id="_OYeV_u1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_OYdvGe1IEe-35cJzkApa3w" entityName="service_one_db Behavior">
-    <outPin id="_OYeV-O1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_OYdvG-1IEe-35cJzkApa3w" entityName="service_two_db Behavior">
-    <outPin id="_OYeV_e1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_OYdvHe1IEe-35cJzkApa3w" entityName="api_gateway Behavior">
-    <inPin id="_OYdvMe1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_OYdvH-1IEe-35cJzkApa3w" entityName="web_application Behavior"/>
-  <behavior id="_OYdvIe1IEe-35cJzkApa3w" entityName="scope Behavior">
-    <inPin id="_OYeV--1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_OYdvI-1IEe-35cJzkApa3w" entityName="authorization_server Behavior">
-    <inPin id="_OYdvNO1IEe-35cJzkApa3w"/>
-  </behavior>
+  <behavior id="_Uu1XyvE9Ee-L2P0tVZBdHA" entityName="user Behavior"/>
+  <behavior id="_Uu1XzPE9Ee-L2P0tVZBdHA" entityName="consul Behavior"/>
+  <behavior id="_Uu1XzvE9Ee-L2P0tVZBdHA" entityName="consul2 Behavior"/>
+  <behavior id="_Uu1X0PE9Ee-L2P0tVZBdHA" entityName="consul3 Behavior"/>
+  <behavior id="_Uu1X0vE9Ee-L2P0tVZBdHA" entityName="elasticsearch Behavior"/>
+  <behavior id="_Uu1X1PE9Ee-L2P0tVZBdHA" entityName="logstash Behavior"/>
+  <behavior id="_Uu1X1vE9Ee-L2P0tVZBdHA" entityName="kibana Behavior"/>
+  <behavior id="_Uu1X2PE9Ee-L2P0tVZBdHA" entityName="rabbit Behavior"/>
+  <behavior id="_Uu1X2vE9Ee-L2P0tVZBdHA" entityName="service_one Behavior"/>
+  <behavior id="_Uu1X3PE9Ee-L2P0tVZBdHA" entityName="service_two Behavior"/>
+  <behavior id="_Uu1X3vE9Ee-L2P0tVZBdHA" entityName="service_one_db Behavior"/>
+  <behavior id="_Uu1X4PE9Ee-L2P0tVZBdHA" entityName="service_two_db Behavior"/>
+  <behavior id="_Uu1X4vE9Ee-L2P0tVZBdHA" entityName="api_gateway Behavior"/>
+  <behavior id="_Uu1X5PE9Ee-L2P0tVZBdHA" entityName="web_application Behavior"/>
+  <behavior id="_Uu1X5vE9Ee-L2P0tVZBdHA" entityName="scope Behavior"/>
+  <behavior id="_Uu1X6PE9Ee-L2P0tVZBdHA" entityName="authorization_server Behavior"/>
 </datadictionary:DataDictionary>

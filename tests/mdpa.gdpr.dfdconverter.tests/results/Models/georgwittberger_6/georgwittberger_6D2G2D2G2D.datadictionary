@@ -20,30 +20,30 @@
   <labelTypes id="22" entityName="WebServer">
     <label id="23" entityName="Apachehttpd"/>
   </labelTypes>
-  <labelTypes id="_OT3i1-1IEe-35cJzkApa3w" entityName="ProcessingType">
-    <label id="_OT_ekO1IEe-35cJzkApa3w" entityName="Collecting"/>
-    <label id="_OT_elO1IEe-35cJzkApa3w" entityName="Storing"/>
-    <label id="_OT_emO1IEe-35cJzkApa3w" entityName="Usage"/>
-    <label id="_OT_enO1IEe-35cJzkApa3w" entityName="Transferring"/>
+  <labelTypes id="_UbSw0vE9Ee-L2P0tVZBdHA" entityName="ProcessingType">
+    <label id="_UbgMMPE9Ee-L2P0tVZBdHA" entityName="Collecting"/>
+    <label id="_UbgMMvE9Ee-L2P0tVZBdHA" entityName="Storing"/>
+    <label id="_UbgMM_E9Ee-L2P0tVZBdHA" entityName="Usage"/>
+    <label id="_UbgMNPE9Ee-L2P0tVZBdHA" entityName="Transferring"/>
   </labelTypes>
-  <labelTypes id="_OT3i2-1IEe-35cJzkApa3w" entityName="Data">
-    <label id="_OSwvhO1IEe-35cJzkApa3w"/>
-    <label id="_OSwvhO1IEe-35cJzkApa3w"/>
+  <labelTypes id="_UbSw1PE9Ee-L2P0tVZBdHA" entityName="Data">
+    <label id="_UYy2WPE9Ee-L2P0tVZBdHA"/>
+    <label id="_UYy2WPE9Ee-L2P0tVZBdHA"/>
   </labelTypes>
-  <labelTypes id="_OT3i4u1IEe-35cJzkApa3w" entityName="PersonalData"/>
-  <labelTypes id="_OT3i6e1IEe-35cJzkApa3w" entityName="Obligation"/>
-  <labelTypes id="_OT3i7-1IEe-35cJzkApa3w" entityName="Consent"/>
-  <labelTypes id="_OT3i9O1IEe-35cJzkApa3w" entityName="Contract"/>
-  <labelTypes id="_OT3i-O1IEe-35cJzkApa3w" entityName="PublicAuthority"/>
-  <labelTypes id="_OT3i_u1IEe-35cJzkApa3w" entityName="NaturalPerson"/>
-  <labelTypes id="_OT3jBu1IEe-35cJzkApa3w" entityName="Controller">
-    <label id="_OS1oAe1IEe-35cJzkApa3w"/>
-    <label id="_OS1oAe1IEe-35cJzkApa3w"/>
+  <labelTypes id="_UbSw1vE9Ee-L2P0tVZBdHA" entityName="PersonalData"/>
+  <labelTypes id="_UbSw2vE9Ee-L2P0tVZBdHA" entityName="Obligation"/>
+  <labelTypes id="_UbSw2_E9Ee-L2P0tVZBdHA" entityName="Consent"/>
+  <labelTypes id="_UbSw3_E9Ee-L2P0tVZBdHA" entityName="Contract"/>
+  <labelTypes id="_UbSw4_E9Ee-L2P0tVZBdHA" entityName="PublicAuthority"/>
+  <labelTypes id="_UbSw5_E9Ee-L2P0tVZBdHA" entityName="NaturalPerson"/>
+  <labelTypes id="_UbTXxPE9Ee-L2P0tVZBdHA" entityName="Controller">
+    <label id="_UY6LFfE9Ee-L2P0tVZBdHA"/>
+    <label id="_UY6LFfE9Ee-L2P0tVZBdHA"/>
   </labelTypes>
-  <labelTypes id="_OT3jDO1IEe-35cJzkApa3w" entityName="ThirdParty"/>
-  <labelTypes id="_OT3jE-1IEe-35cJzkApa3w" entityName="Purposes">
-    <label id="_OSxWne1IEe-35cJzkApa3w"/>
-    <label id="_OSxWne1IEe-35cJzkApa3w"/>
+  <labelTypes id="_UbTXy_E9Ee-L2P0tVZBdHA" entityName="ThirdParty"/>
+  <labelTypes id="_UbTX0_E9Ee-L2P0tVZBdHA" entityName="Purposes">
+    <label id="_UY0EifE9Ee-L2P0tVZBdHA"/>
+    <label id="_UY0EifE9Ee-L2P0tVZBdHA"/>
   </labelTypes>
   <behavior id="9">
     <inPin id="51"/>
@@ -108,20 +108,10 @@
       <term xsi:type="datadictionary:TRUE" id="81"/>
     </assignment>
   </behavior>
-  <behavior id="_OUhqSu1IEe-35cJzkApa3w" entityName="user Behavior"/>
-  <behavior id="_OUhqU-1IEe-35cJzkApa3w" entityName="apache_server Behavior">
-    <inPin id="_OUjfQu1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_OUhqVe1IEe-35cJzkApa3w" entityName="content_service Behavior">
-    <inPin id="_OUjfRu1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_OUiRIu1IEe-35cJzkApa3w" entityName="product_service Behavior">
-    <inPin id="_OUjfTO1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_OUiRJu1IEe-35cJzkApa3w" entityName="cart_service Behavior">
-    <inPin id="_OUjfUO1IEe-35cJzkApa3w"/>
-  </behavior>
-  <behavior id="_OUiRLu1IEe-35cJzkApa3w" entityName="auth_server Behavior">
-    <outPin id="_OUi4g-1IEe-35cJzkApa3w"/>
-  </behavior>
+  <behavior id="_UcttCfE9Ee-L2P0tVZBdHA" entityName="user Behavior"/>
+  <behavior id="_UcttDPE9Ee-L2P0tVZBdHA" entityName="apache_server Behavior"/>
+  <behavior id="_UcttDvE9Ee-L2P0tVZBdHA" entityName="content_service Behavior"/>
+  <behavior id="_UcttEPE9Ee-L2P0tVZBdHA" entityName="product_service Behavior"/>
+  <behavior id="_UcttEvE9Ee-L2P0tVZBdHA" entityName="cart_service Behavior"/>
+  <behavior id="_UcttFPE9Ee-L2P0tVZBdHA" entityName="auth_server Behavior"/>
 </datadictionary:DataDictionary>

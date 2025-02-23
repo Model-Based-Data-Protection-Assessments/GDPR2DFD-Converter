@@ -425,7 +425,7 @@ public class DFD2GDPR {
 					mapNodeToAnalyzedIncomingFlows.put(destinationNode, mapNodeToAnalyzedIncomingFlows.get(destinationNode) - 1);
 					followingNodes.add(destinationNode);
 				});
-				
+				System.out.println(flows);
 				flows.forEach(flow -> transformFlow(flow));
 				startingNodes = followingNodes.stream().filter(node -> !completedNodes.contains(node)).toList();
 			}
@@ -443,9 +443,7 @@ public class DFD2GDPR {
 		var optFt = flowTraceLookup(flow);
 		if (optFt.isPresent()) {
 			var ft = optFt.get();
-			outTrace.getFlowTraces().add(ft);
-			source = ft.getSource();
-			dest = ft.getDest();
+			outTrace.getFlowTraces().addAll(ft);
 		} else {
 			source = mapNodeToProcessing.get(flow.getSourceNode());
 			dest = mapNodeToProcessing.get(flow.getDestinationNode());
@@ -478,14 +476,14 @@ public class DFD2GDPR {
 		}
 		
 		// this might not be necessary if a trace exists but checking does no harm.
-		if(source.getFollowingProcessing().stream().noneMatch(p -> p.getId().equals(dest.getId())))source.getFollowingProcessing().add(dest);
+		//if(source.getFollowingProcessing().stream().noneMatch(p -> p.getId().equals(dest.getId())))source.getFollowingProcessing().add(dest);
 	}
 	
-	private Optional<FlowTrace> flowTraceLookup(Flow flow) {
+	private Optional<List<FlowTrace>> flowTraceLookup(Flow flow) {
 		if (inTrace == null) {
 			return Optional.empty();
 		}
-		return inTrace.getFlowTraces().stream().filter(ft -> ft.getDataFlow().getId().equals(flow.getId())).findAny();
+		return Optional.of(inTrace.getFlowTraces().stream().filter(ft -> ft.getDataFlow().getId().equals(flow.getId())).toList());
 	}
 	
 	//Cloning because of ECore Containment
