@@ -9,7 +9,6 @@ import org.eclipse.emf.ecore.resource.impl.ResourceImpl;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.xmi.XMLResource;
-import org.eclipse.emf.ecore.xmi.impl.URIHandlerImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMLResourceFactoryImpl;
 
@@ -147,6 +146,7 @@ public class GDPR2DFD {
 			ddResource = createAndAddResource(ddFile, new String[] {"datadictionary"} ,rs);
 			ddResource.getContents().add(dd);
 		}
+		//Allows us to save DD in new File without containment or reference issues
 		if (!ddResource.getURI().toString().equals(URI.createFileURI(ddFile).toFileString())) {			
 
 			ddResource = createAndAddResource(ddFile, new String[] {"datadictionary"} ,rs);			
@@ -154,9 +154,7 @@ public class GDPR2DFD {
 			
 			dd = (DataDictionary) ddResource.getContents().get(0);
 
-			EcoreUtil.resolveAll(ddResource);
-			
-			
+			EcoreUtil.resolveAll(ddResource);			
 			
 			Map<String, Pin> idToPinMap = new HashMap<>();
 			dd.getBehavior().stream().map(it -> {
@@ -204,15 +202,11 @@ public class GDPR2DFD {
 				var newProperties = node.getProperties().stream().map(label -> ifToLabelMap.get(label.getId())).toList();
 				node.getProperties().removeAll(node.getProperties());
 				node.getProperties().addAll(newProperties);
-			});
-			
-			
-			
+			});			
 		}
 		
 		dfdResource.getContents().add(dfd);		
-		outTraceResource.getContents().add(outTrace);
-		
+		outTraceResource.getContents().add(outTrace);		
 
 		saveResource(ddResource);
 		EcoreUtil.resolveAll(outTraceResource);

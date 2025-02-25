@@ -16,7 +16,6 @@ import org.dataflowanalysis.dfd.dataflowdiagram.Flow;
 import org.dataflowanalysis.dfd.dataflowdiagram.dataflowdiagramFactory;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -29,7 +28,6 @@ import mdpa.gdpr.metamodel.GDPR.Consent;
 import mdpa.gdpr.metamodel.GDPR.Controller;
 import mdpa.gdpr.metamodel.GDPR.GDPRFactory;
 import mdpa.gdpr.metamodel.GDPR.LegalAssessmentFacts;
-import mdpa.gdpr.metamodel.GDPR.LegalBasis;
 import mdpa.gdpr.metamodel.GDPR.NaturalPerson;
 import mdpa.gdpr.metamodel.GDPR.PersonalData;
 import mdpa.gdpr.metamodel.GDPR.Processing;
@@ -48,24 +46,83 @@ public class ScalabilityTests {
 	public void runDFDTest() {	
 		try (BufferedWriter writer = new BufferedWriter(new FileWriter(resultFolder + "timing-results-nodes.txt"))) {
         
+	        // We'll record timing for the last 10 iterations.
+	        // The 1st iteration (i=0) will be treated as a warm-up and not recorded.
+	        long[][] recordedDurations = new long[10][7];
+	
+	        // Run the loop 11 times in total
+	        IntStream.range(0, 11).forEach(i -> {
+	        	for (int j = 0; j < max; j ++) {
+		            var dataDictionary = ddFactory.createDataDictionary();
+		            var dataFlowDiagram = dfdFactory.createDataFlowDiagram();
+		
+		            dfdBuilder(dataFlowDiagram, dataDictionary, j);
+		            DFD2GDPR converter = new DFD2GDPR(dataFlowDiagram, dataDictionary);
+		
+		            // Start timing
+		            long startTime = System.nanoTime();
+		
+		            converter.transform();
+		
+		            // End timing
+		            long endTime = System.nanoTime();
+		
+		            // Convert nanoseconds to milliseconds
+		            long durationMs = (endTime - startTime) / 1_000_000;
+		
+		            // We only record (and write) the timing data for i > 0
+		            if (i > 0) {
+		                recordedDurations[i-1][j] = durationMs;
+		
+		                try {
+							writer.write("Iteration " + i + " took " + durationMs + " ms " +
+							             "with " + dataFlowDiagram.getNodes().size() + " nodes.");
+							writer.newLine();
+						} catch (IOException e) {
+							e.printStackTrace();
+						}
+		                
+		            } 
+		            
+		        }
+	        }
+	        );
+	        
+	        // Calculate and write the average of the 10 recorded durations
+	        
+	        for (int j = 0; j < max; j++ ) {
+	        	long sum = 0;
+		        for (int i = 0; i < 10; i++) {
+			        sum += recordedDurations[i][j];
+		        }
+		        double average = sum / ((double) 10);
+		        writer.write("Average of the 10 recorded runs for " + Math.pow(10, j) + " nodes:" + average + " ms.");
+		        writer.newLine();
+	        }
+	        
+	    } catch (IOException e) {
+	        e.printStackTrace();
+	    }    
+	}
+	
+	@Test
+	public void runGDPRProcessingTest() {	
+		try (BufferedWriter writer = new BufferedWriter(new FileWriter(resultFolder + "timing-results-processing.txt"))) {
+        
         // We'll record timing for the last 10 iterations.
         // The 1st iteration (i=0) will be treated as a warm-up and not recorded.
         long[][] recordedDurations = new long[10][7];
-        int recordIndex = 0;
-
+        
         // Run the loop 11 times in total
-        IntStream.range(0, 11).forEach(i -> {
+        for (int i = 0; i < 11; i++) {
         	for (int j = 0; j < max; j ++) {
-	            var dataDictionary = ddFactory.createDataDictionary();
-	            var dataFlowDiagram = dfdFactory.createDataFlowDiagram();
 	
-	            dfdBuilder(dataFlowDiagram, dataDictionary, j);
-	            DFD2GDPR converter = new DFD2GDPR(dataFlowDiagram, dataDictionary);
+	           LegalAssessmentFacts laf = createProcessingLAF(j); 
+	            GDPR2DFD converter = new GDPR2DFD(laf);
 	
 	            // Start timing
 	            long startTime = System.nanoTime();
 	
-	            // The main operation you want to measure
 	            converter.transform();
 	
 	            // End timing
@@ -78,20 +135,13 @@ public class ScalabilityTests {
 	            if (i > 0) {
 	                recordedDurations[i-1][j] = durationMs;
 	
-	                try {
-						writer.write("Iteration " + i + " took " + durationMs + " ms " +
-						             "with " + dataFlowDiagram.getNodes().size() + " nodes.");
-						writer.newLine();
-					} catch (IOException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
-	                
+	                writer.write("Iteration " + i + " took " + durationMs + " ms " +
+	                             "with " + laf.getProcessing().size() + " processing elements.");
+	                writer.newLine();
 	            } 
 	            
 	        }
         }
-        );
      // Calculate and write the average of the 10 recorded durations
         
         for (int j = 0; j < max; j++ ) {
@@ -100,16 +150,127 @@ public class ScalabilityTests {
 		        sum += recordedDurations[i][j];
 	        }
 	        double average = sum / ((double) 10);
-	        writer.write("Average of the 10 recorded runs for " + Math.pow(10, j) + " nodes:" + average + " ms.");
+	        writer.write("Average of the 10 recorded runs for " + Math.pow(10, j) + " processing:" + average + " ms.");
 	        writer.newLine();
-        }
-       
+        }     
 
         
     } catch (IOException e) {
         e.printStackTrace();
     }    
 }
+	
+	@Test
+	public void runGDPRoleTest() {	
+		try (BufferedWriter writer = new BufferedWriter(new FileWriter(resultFolder + "timing-results-roles.txt"))) {
+	        
+	        // We'll record timing for the last 10 iterations.
+	        // The 1st iteration (i=0) will be treated as a warm-up and not recorded.
+	        long[][] recordedDurations = new long[10][7];
+	
+	        // Run the loop 11 times in total
+	        for (int i = 0; i < 11; i++) {
+	        	for (int j = 0; j < max; j ++) {
+		
+		           LegalAssessmentFacts laf = createRoleLaf(j); 
+		            GDPR2DFD converter = new GDPR2DFD(laf);
+		
+		            // Start timing
+		            long startTime = System.nanoTime();
+	
+		            converter.transform();
+		
+		            // End timing
+		            long endTime = System.nanoTime();
+		
+		            // Convert nanoseconds to milliseconds
+		            long durationMs = (endTime - startTime) / 1_000_000;
+		
+		            // We only record (and write) the timing data for i > 0
+		            if (i > 0) {
+		                recordedDurations[i-1][j] = durationMs;
+		
+		                writer.write("Iteration " + i + " took " + durationMs + " ms " +
+		                             "with " + laf.getInvolvedParties().size() + " role elements.");
+		                writer.newLine();
+		            } 
+		            
+		        }
+	        }
+	     // Calculate and write the average of the 10 recorded durations
+	        
+	        for (int j = 0; j < max; j++ ) {
+	        	long sum = 0;
+		        for (int i = 0; i < 10; i++) {
+			        sum += recordedDurations[i][j];
+		        }
+		        double average = sum / ((double) 10);
+		        writer.write("Average of the 10 recorded runs for " + (Math.pow(10, j) - 1) + " roles:" + average + " ms.");
+		        writer.newLine();
+	        }
+	       
+	
+	        
+	    } catch (IOException e) {
+	        e.printStackTrace();
+	    }    
+	}
+	
+	@Test
+	public void runGDPRPurposeTest() {	
+		try (BufferedWriter writer = new BufferedWriter(new FileWriter(resultFolder + "timing-results-purposes.txt"))) {
+	        
+	        // We'll record timing for the last 10 iterations.
+	        // The 1st iteration (i=0) will be treated as a warm-up and not recorded.
+	        long[][] recordedDurations = new long[10][7];
+	
+	        // Run the loop 11 times in total
+	        for (int i = 0; i < 11; i++) {
+	        	for (int j = 0; j < max; j ++) {
+		
+		           LegalAssessmentFacts laf = createPurposeLaf(j);
+		            GDPR2DFD converter = new GDPR2DFD(laf);
+		
+		            // Start timing
+		            long startTime = System.nanoTime();
+
+		            converter.transform();
+		
+		            // End timing
+		            long endTime = System.nanoTime();
+		
+		            // Convert nanoseconds to milliseconds
+		            long durationMs = (endTime - startTime) / 1_000_000;
+		
+		            // We only record (and write) the timing data for i > 0
+		            if (i > 0) {
+		                recordedDurations[i-1][j] = durationMs;
+		
+		                writer.write("Iteration " + i + " took " + durationMs + " ms " +
+		                             "with " + laf.getPurposes().size() + " purpose elements.");
+		                writer.newLine();
+		            } 
+		            
+		        }
+	        }
+	     // Calculate and write the average of the 10 recorded durations
+	        
+	        for (int j = 0; j < max; j++ ) {
+	        	long sum = 0;
+		        for (int i = 0; i < 10; i++) {
+			        sum += recordedDurations[i][j];
+		        }
+		        double average = sum / ((double) 10);
+		        writer.write("Average of the 10 recorded runs for " + Math.pow(10, j) + " purposes:" + average + " ms.");
+		        writer.newLine();
+	        }
+	       
+	
+	        
+	    } catch (IOException e) {
+	        e.printStackTrace();
+	    }    
+	}
 	
 	private static void dfdBuilder(DataFlowDiagram dataFlowDiagram, DataDictionary dataDictionary, int exponent) {
 		Node start = dfdFactory.createExternal();
@@ -269,178 +430,6 @@ public class ScalabilityTests {
 		return laf;
 	}
 	
-	@Test
-	public void runGDPRProcessingTest() {	
-		try (BufferedWriter writer = new BufferedWriter(new FileWriter(resultFolder + "timing-results-processing.txt"))) {
-        
-        // We'll record timing for the last 10 iterations.
-        // The 1st iteration (i=0) will be treated as a warm-up and not recorded.
-        long[][] recordedDurations = new long[10][7];
-        int recordIndex = 0;
-
-        // Run the loop 11 times in total
-        for (int i = 0; i < 11; i++) {
-        	for (int j = 0; j < max; j ++) {
 	
-	           LegalAssessmentFacts laf = createProcessingLAF(j); 
-	            GDPR2DFD converter = new GDPR2DFD(laf);
-	
-	            // Start timing
-	            long startTime = System.nanoTime();
-	
-	            // The main operation you want to measure
-	            converter.transform();
-	
-	            // End timing
-	            long endTime = System.nanoTime();
-	
-	            // Convert nanoseconds to milliseconds
-	            long durationMs = (endTime - startTime) / 1_000_000;
-	
-	            // We only record (and write) the timing data for i > 0
-	            if (i > 0) {
-	                recordedDurations[i-1][j] = durationMs;
-	
-	                writer.write("Iteration " + i + " took " + durationMs + " ms " +
-	                             "with " + laf.getProcessing().size() + " processing elements.");
-	                writer.newLine();
-	            } 
-	            
-	        }
-        }
-     // Calculate and write the average of the 10 recorded durations
-        
-        for (int j = 0; j < max; j++ ) {
-        	long sum = 0;
-	        for (int i = 0; i < 10; i++) {
-		        sum += recordedDurations[i][j];
-	        }
-	        double average = sum / ((double) 10);
-	        writer.write("Average of the 10 recorded runs for " + Math.pow(10, j) + " processing:" + average + " ms.");
-	        writer.newLine();
-        }
-       
-
-        
-    } catch (IOException e) {
-        e.printStackTrace();
-    }    
-}
-	
-	@Test
-	public void runGDPRoleTest() {	
-		try (BufferedWriter writer = new BufferedWriter(new FileWriter(resultFolder + "timing-results-roles.txt"))) {
-        
-        // We'll record timing for the last 10 iterations.
-        // The 1st iteration (i=0) will be treated as a warm-up and not recorded.
-        long[][] recordedDurations = new long[10][7];
-        int recordIndex = 0;
-
-        // Run the loop 11 times in total
-        for (int i = 0; i < 11; i++) {
-        	for (int j = 0; j < max; j ++) {
-	
-	           LegalAssessmentFacts laf = createRoleLaf(j); 
-	            GDPR2DFD converter = new GDPR2DFD(laf);
-	
-	            // Start timing
-	            long startTime = System.nanoTime();
-	
-	            // The main operation you want to measure
-	            converter.transform();
-	
-	            // End timing
-	            long endTime = System.nanoTime();
-	
-	            // Convert nanoseconds to milliseconds
-	            long durationMs = (endTime - startTime) / 1_000_000;
-	
-	            // We only record (and write) the timing data for i > 0
-	            if (i > 0) {
-	                recordedDurations[i-1][j] = durationMs;
-	
-	                writer.write("Iteration " + i + " took " + durationMs + " ms " +
-	                             "with " + laf.getInvolvedParties().size() + " role elements.");
-	                writer.newLine();
-	            } 
-	            
-	        }
-        }
-     // Calculate and write the average of the 10 recorded durations
-        
-        for (int j = 0; j < max; j++ ) {
-        	long sum = 0;
-	        for (int i = 0; i < 10; i++) {
-		        sum += recordedDurations[i][j];
-	        }
-	        double average = sum / ((double) 10);
-	        writer.write("Average of the 10 recorded runs for " + (Math.pow(10, j) - 1) + " roles:" + average + " ms.");
-	        writer.newLine();
-        }
-       
-
-        
-    } catch (IOException e) {
-        e.printStackTrace();
-    }    
-}
-	
-	@Test
-	public void runGDPRPurposeTest() {	
-		try (BufferedWriter writer = new BufferedWriter(new FileWriter(resultFolder + "timing-results-purposes.txt"))) {
-        
-        // We'll record timing for the last 10 iterations.
-        // The 1st iteration (i=0) will be treated as a warm-up and not recorded.
-        long[][] recordedDurations = new long[10][7];
-        int recordIndex = 0;
-
-        // Run the loop 11 times in total
-        for (int i = 0; i < 11; i++) {
-        	for (int j = 0; j < max; j ++) {
-	
-	           LegalAssessmentFacts laf = createPurposeLaf(j);
-	            GDPR2DFD converter = new GDPR2DFD(laf);
-	
-	            // Start timing
-	            long startTime = System.nanoTime();
-	
-	            // The main operation you want to measure
-	            converter.transform();
-	
-	            // End timing
-	            long endTime = System.nanoTime();
-	
-	            // Convert nanoseconds to milliseconds
-	            long durationMs = (endTime - startTime) / 1_000_000;
-	
-	            // We only record (and write) the timing data for i > 0
-	            if (i > 0) {
-	                recordedDurations[i-1][j] = durationMs;
-	
-	                writer.write("Iteration " + i + " took " + durationMs + " ms " +
-	                             "with " + laf.getPurposes().size() + " purpose elements.");
-	                writer.newLine();
-	            } 
-	            
-	        }
-        }
-     // Calculate and write the average of the 10 recorded durations
-        
-        for (int j = 0; j < max; j++ ) {
-        	long sum = 0;
-	        for (int i = 0; i < 10; i++) {
-		        sum += recordedDurations[i][j];
-	        }
-	        double average = sum / ((double) 10);
-	        writer.write("Average of the 10 recorded runs for " + Math.pow(10, j) + " purposes:" + average + " ms.");
-	        writer.newLine();
-        }
-       
-
-        
-    } catch (IOException e) {
-        e.printStackTrace();
-    }    
-}
 	
 }

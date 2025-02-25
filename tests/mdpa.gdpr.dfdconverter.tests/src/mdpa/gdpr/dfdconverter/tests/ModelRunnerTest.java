@@ -31,73 +31,16 @@ import mdpa.gdpr.metamodel.GDPR.LegalAssessmentFacts;
 public class ModelRunnerTest {		
 
     // Set the root directory where all subfolders are located
-    private static final String ROOT_DIR = "C:\\Users\\Huell\\Documents\\Studium\\HIWI\\ExampleModels\\bundles\\org.dataflowanalysis.examplemodels\\casestudies\\TUHH-Models\\";
-    private static final String ROOT_DIR_PCM = "C:\\Users\\Huell\\Documents\\Studium\\HIWI\\ExampleModels\\bundles\\org.dataflowanalysis.examplemodels\\casestudies\\";
-    private static final String resultFolderBase = "C:\\Users\\Huell\\Documents\\Studium\\HIWI\\GDPR2DFD-Converter\\tests\\mdpa.gdpr.dfdconverter.tests\\results\\Models\\";
-    private static final String resultFolderBasePCM = "C:\\Users\\Huell\\Documents\\Studium\\HIWI\\GDPR2DFD-Converter\\tests\\mdpa.gdpr.dfdconverter.tests\\results\\Models\\PCM\\";
+    private static final String ROOT_DIR = "C:\\Users\\Huell\\Documents\\HIWI\\ExampleModels\\bundles\\org.dataflowanalysis.examplemodels\\casestudies\\TUHH-Models\\";
+    private static final String ROOT_DIR_PCM = "C:\\Users\\Huell\\Documents\\HIWI\\ExampleModels\\bundles\\org.dataflowanalysis.examplemodels\\casestudies\\";
+    private static final String resultFolderBase = "C:\\Users\\Huell\\Documents\\HIWI\\GDPR2DFD-Converter\\tests\\mdpa.gdpr.dfdconverter.tests\\results\\Models\\";
+    private static final String resultFolderBasePCM = "C:\\Users\\Huell\\Documents\\HIWI\\GDPR2DFD-Converter\\tests\\mdpa.gdpr.dfdconverter.tests\\results\\Models\\PCM\\";
 
-
-    public static Collection<File[]> data() {
-        List<File[]> testData = new ArrayList<>();
-
-        File root = new File(ROOT_DIR);
-        File[] subFolders = root.listFiles(File::isDirectory);
-        if (subFolders == null) {
-            return testData; // no subfolders found
-        }
-
-        // For each subfolder, find matching .model1/.model2 pairs
-        for (File subFolder : subFolders) {
-            // Map baseName -> File for .model1
-            // Map baseName -> File for .model2
-            // OR we can do simpler logic by scanning once and matching
-            File[] files = subFolder.listFiles();
-            if (files == null) {
-                continue;
-            }
-
-            // Step 1: store .model1 files in a map by their baseName (the part before .model1)
-            // Step 2: check if there's a corresponding .model2 in the same subfolder
-            // A simple approach: read all files into two maps
-
-            // For quick matching, use a dictionary of <baseName, File>
-            java.util.Map<String, File> model1Map = new java.util.HashMap<>();
-            java.util.Map<String, File> model2Map = new java.util.HashMap<>();
-
-            for (File f : files) {
-                String name = f.getName();
-                if (name.endsWith(".dataflowdiagram")) {
-                    String baseName = name.substring(0, name.length() - ".dataflowdiagram".length());
-                    model1Map.put(baseName, f);
-                } else if (name.endsWith(".datadictionary")) {
-                    String baseName = name.substring(0, name.length() - ".datadictionary".length());
-                    model2Map.put(baseName, f);
-                }
-            }
-
-            // Now find all baseNames that exist in both maps
-            for (String baseName : model1Map.keySet()) {
-                if (model2Map.containsKey(baseName)) {
-                    File model1File = model1Map.get(baseName);
-                    File model2File = model2Map.get(baseName);
-
-                    // Add to test data
-                    testData.add(new File[] { model1File, model2File });
-                }
-            }
-        }
-
-        return testData;
-    }
 
     @Test
     public void testModelPair() {
-        // Here is where you do something with model1File and model2File
-        // For example, parse them, compare them, run some logic, etc.
-
         var data = data();
-        data.stream().forEach(file -> {
-        
+        data.stream().forEach(file -> {        
         	File dfdFile = file[0];
         	File ddFile = file[1];
         	String name = dfdFile.getName().substring(0, dfdFile.getName().length() - ".dataflowdiagram".length());
@@ -118,23 +61,19 @@ public class ModelRunnerTest {
         	}
         	else {
 	        	File subFolder = new File(resultFolderBase, name);
-	            // Make sure the subfolder exists
 	            if (!subFolder.exists()) {
 	                subFolder.mkdirs();
 	            }
 	        	
 	            try {
-	                // Copy the DFD file
 	                Files.copy(dfdFile.toPath(),
 	                           Paths.get(subFolder.getAbsolutePath(), dfdFile.getName()),
 	                           StandardCopyOption.REPLACE_EXISTING);
 	
-	                // Copy the DD file
 	                Files.copy(ddFile.toPath(),
 	                           Paths.get(subFolder.getAbsolutePath(), ddFile.getName()),
 	                           StandardCopyOption.REPLACE_EXISTING);
 	            } catch (IOException e) {
-	                // Decide how you want to handle or log the error
 	                e.printStackTrace();
 	            }
         	}
@@ -176,8 +115,50 @@ public class ModelRunnerTest {
         	annotateMetaData(resultFolder + name, resultFolder);
         
         });
-        // ... your actual test logic here ...
     }
+
+    public static Collection<File[]> data() {
+        List<File[]> testData = new ArrayList<>();
+
+        File root = new File(ROOT_DIR);
+        File[] subFolders = root.listFiles(File::isDirectory);
+        if (subFolders == null) {
+            return testData; 
+        }
+
+        for (File subFolder : subFolders) {
+            File[] files = subFolder.listFiles();
+            if (files == null) {
+                continue;
+            }
+
+            java.util.Map<String, File> model1Map = new java.util.HashMap<>();
+            java.util.Map<String, File> model2Map = new java.util.HashMap<>();
+
+            for (File f : files) {
+                String name = f.getName();
+                if (name.endsWith(".dataflowdiagram")) {
+                    String baseName = name.substring(0, name.length() - ".dataflowdiagram".length());
+                    model1Map.put(baseName, f);
+                } else if (name.endsWith(".datadictionary")) {
+                    String baseName = name.substring(0, name.length() - ".datadictionary".length());
+                    model2Map.put(baseName, f);
+                }
+            }
+
+            for (String baseName : model1Map.keySet()) {
+                if (model2Map.containsKey(baseName)) {
+                    File model1File = model1Map.get(baseName);
+                    File model2File = model2Map.get(baseName);
+
+                    testData.add(new File[] { model1File, model2File });
+                }
+            }
+        }
+
+        return testData;
+    }
+
 	
     public static Collection<File[]> dataPCM() {
         List<File[]> testData = new ArrayList<>();
@@ -185,24 +166,16 @@ public class ModelRunnerTest {
         File root = new File(ROOT_DIR_PCM);
         File[] subFolders = root.listFiles(File::isDirectory);
         if (subFolders == null) {
-            return testData; // no subfolders found
+            return testData;
         }
 
-        // For each subfolder, find matching .model1/.model2 pairs
         for (File subFolder : subFolders) {
-            // Map baseName -> File for .model1
-            // Map baseName -> File for .model2
-            // OR we can do simpler logic by scanning once and matching
+
             File[] files = subFolder.listFiles();
             if (files == null) {
                 continue;
             }
 
-            // Step 1: store .model1 files in a map by their baseName (the part before .model1)
-            // Step 2: check if there's a corresponding .model2 in the same subfolder
-            // A simple approach: read all files into two maps
-
-            // For quick matching, use a dictionary of <baseName, File>
             java.util.Map<String, File> model1Map = new java.util.HashMap<>();
             java.util.Map<String, File> model2Map = new java.util.HashMap<>();
             java.util.Map<String, File> model3Map = new java.util.HashMap<>();
@@ -221,14 +194,13 @@ public class ModelRunnerTest {
                 }
             }
 
-            // Now find all baseNames that exist in both maps
+
             for (String baseName : model1Map.keySet()) {
                 if (model2Map.containsKey(baseName) && model3Map.containsKey(baseName)) {
                     File model1File = model1Map.get(baseName);
                     File model2File = model2Map.get(baseName);
                     File model3File = model3Map.get(baseName);
 
-                    // Add to test data
                     testData.add(new File[] { model1File, model2File, model3File});
                 }
             }
@@ -252,10 +224,11 @@ public class ModelRunnerTest {
     		String resultFolder = resultFolderBasePCM + "\\" + name + "\\";
         	
         	File subFolder = new File(resultFolderBasePCM, name);
-            // Make sure the subfolder exists
-	            if (!subFolder.exists()) {
-	                subFolder.mkdirs();
-	            }
+        	
+            if (!subFolder.exists()) {
+                subFolder.mkdirs();
+            }
+            
     		PCMConverter pcmConverter = new PCMConverter();
         	var dfd = pcmConverter.pcmToDFD(modelLocation, usageFile.toString(), allocationFile.toString(), nodeCharFile.toString());
         	pcmConverter.storeDFD(dfd, resultFolder + name);
@@ -328,7 +301,7 @@ public class ModelRunnerTest {
     	try (BufferedWriter writer = new BufferedWriter(new FileWriter(folder + "metadata.txt"))) {
     		writer.write(builder.toString());
     	} catch (Exception e) {
-			// TODO: handle exception
+			e.printStackTrace();
 		}
     } 
 }
