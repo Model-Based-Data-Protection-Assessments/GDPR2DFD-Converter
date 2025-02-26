@@ -95,7 +95,7 @@ public class ModelRunnerTest {
         // Here is where you do something with model1File and model2File
         // For example, parse them, compare them, run some logic, etc.
 
-        var data = data();
+        var data = convertPalladio();
         data.stream().forEach(file -> {
         
         	File dfdFile = file[0];
@@ -242,7 +242,7 @@ public class ModelRunnerTest {
     	List<File[]> testData = new ArrayList<>();
     	var pcmData = dataPCM();
     	System.out.println(pcmData.size());
-    	pcmData.stream().parallel().forEach(file -> {
+    	pcmData.stream().forEach(file -> {
     		String modelLocation = file[0].getParentFile().toString();
     		String name = file[0].getParentFile().getName();
     		File usageFile = file[0];
@@ -257,7 +257,7 @@ public class ModelRunnerTest {
 	                subFolder.mkdirs();
 	            }
     		PCMConverter pcmConverter = new PCMConverter();
-        	var dfd = pcmConverter.pcmToDFD(modelLocation, usageFile.toString(), allocationFile.toString(), nodeCharFile.toString());
+        	var dfd = pcmConverter.pcmToDFD("", usageFile.toString(), allocationFile.toString(), nodeCharFile.toString());
         	pcmConverter.storeDFD(dfd, resultFolder + name);
         	testData.add(new File[] {new File(resultFolder + name + ".dataflowdiagram"), new File(resultFolder + name + ".datadictionary")});
     	});

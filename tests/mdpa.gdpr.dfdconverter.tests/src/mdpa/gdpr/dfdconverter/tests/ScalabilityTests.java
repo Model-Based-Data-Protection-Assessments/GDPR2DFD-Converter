@@ -41,7 +41,7 @@ public class ScalabilityTests {
 	private static GDPRFactory gdprFactory = GDPRFactory.eINSTANCE;
 	private static final String resultFolder = "C:\\Users\\Huell\\Documents\\Studium\\HIWI\\GDPR2DFD-Converter\\tests\\mdpa.gdpr.dfdconverter.tests\\results\\Scalability\\";
 	
-	private static final int max = 5;
+	private static final int max = 6;
 	
 	
 	@Test
