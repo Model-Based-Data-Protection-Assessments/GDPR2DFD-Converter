@@ -17,7 +17,12 @@ Require-Bundle: mdpa.gdpr.metamodel;bundle-version="0.1.0",
  mdpa.gdpr.dfdconverter,
  mdpa.gdpr.dfdconverter.tracemodel;bundle-version="0.1.0",
  org.junit,
- org.dataflowanalysis.converter
+ org.dataflowanalysis.converter,
+ org.dataflowanalysis.pcm.extension.dddsl;bundle-version="5.2.0",
+ org.dataflowanalysis.pcm.extension.dictionary;bundle-version="5.2.0",
+ org.dataflowanalysis.pcm.extension.dictionary.characterized;bundle-version="5.2.0",
+ org.dataflowanalysis.pcm.extension.model;bundle-version="5.2.0",
+ org.dataflowanalysis.pcm.extension.nodecharacteristics;bundle-version="0.1.0"
 Automatic-Module-Name: mdpa.gdpr.dfdconverter.tests
 Export-Package: mdpa.gdpr.dfdconverter.tests
 Bundle-RequiredExecutionEnvironment: JavaSE-17

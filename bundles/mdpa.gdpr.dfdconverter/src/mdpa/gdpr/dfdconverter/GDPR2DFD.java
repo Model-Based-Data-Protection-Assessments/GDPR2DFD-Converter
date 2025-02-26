@@ -599,12 +599,15 @@ public class GDPR2DFD {
 				if (processing.getInputData().contains(data)) {
 					if (!containsAssignment(node.getBehavior(), data.getEntityName(), data)) {
 						// the same data is set as input and output the labels are simply forwarded.
-						var assignment = ddFactory.createForwardingAssignment();
-						assignment.getInputPins().add(node.getBehavior().getInPin().stream().filter(pin -> pin.getEntityName().equals(data.getEntityName())).findAny().orElseThrow());
-						assignment.setOutputPin(node.getBehavior().getOutPin().stream().filter(pin -> pin.getEntityName().equals(data.getEntityName())).findAny().orElseThrow());
+							node.getBehavior().getOutPin().forEach(pin -> {
+								var assignment = ddFactory.createForwardingAssignment();
+							assignment.getInputPins().addAll(node.getBehavior().getInPin());
 						
-						assignment.setEntityName("Forward " + data.getEntityName());
-						node.getBehavior().getAssignment().add(assignment);
+							assignment.setOutputPin(pin);
+							
+							assignment.setEntityName("Forward " + data.getEntityName());
+							node.getBehavior().getAssignment().add(assignment);
+						});						
 					}
 				} else {
 					// if data is not forwarded AND the data is of type PersonalData, the label of the corresponding natural person is set.
@@ -632,7 +635,8 @@ public class GDPR2DFD {
 	
 	private boolean containsAssignment(Behavior behaviour, String inputPinName, Data data) {
 		return behaviour.getAssignment().stream().anyMatch(
-				ass ->  {					
+				ass ->  {			
+					if (ass.getOutputPin() == null) return false;
 					if (!ass.getOutputPin().getEntityName().equals(data.getEntityName())) return false; 
 					if (ass instanceof ForwardingAssignment forwardingAssignment) {
 						if (forwardingAssignment.getInputPins().stream().anyMatch(pin -> pin.getEntityName().equals(inputPinName))) return true;
