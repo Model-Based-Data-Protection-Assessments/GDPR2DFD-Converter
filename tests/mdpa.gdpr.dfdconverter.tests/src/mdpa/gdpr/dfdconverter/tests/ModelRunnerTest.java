@@ -13,7 +13,11 @@ import java.util.Collection;
 import java.util.*;
 import org.dataflowanalysis.converter.PCMConverter;
 import org.dataflowanalysis.dfd.datadictionary.DataDictionary;
+import org.dataflowanalysis.dfd.datadictionary.datadictionaryFactory;
 import org.dataflowanalysis.dfd.dataflowdiagram.DataFlowDiagram;
+import org.dataflowanalysis.dfd.dataflowdiagram.Flow;
+import org.dataflowanalysis.dfd.dataflowdiagram.Node;
+import org.dataflowanalysis.dfd.dataflowdiagram.dataflowdiagramFactory;
 import org.dataflowanalysis.dfd.dataflowdiagram.dataflowdiagramPackage;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.Resource;
@@ -26,15 +30,17 @@ import org.junit.jupiter.api.Test;
 import mdpa.gdpr.dfdconverter.DFD2GDPR;
 import mdpa.gdpr.dfdconverter.GDPR2DFD;
 import mdpa.gdpr.dfdconverter.tracemodel.tracemodel.TraceModel;
+import mdpa.gdpr.dfdconverter.tracemodel.tracemodel.TracemodelFactory;
+import mdpa.gdpr.metamodel.GDPR.GDPRFactory;
 import mdpa.gdpr.metamodel.GDPR.LegalAssessmentFacts;
 
 public class ModelRunnerTest {		
 
     // Set the root directory where all subfolders are located
-    private static final String ROOT_DIR = "C:\\Users\\Huell\\Documents\\Studium\\HIWI\\ExampleModels\\bundles\\org.dataflowanalysis.examplemodels\\casestudies\\TUHH-Models\\";
-    private static final String ROOT_DIR_PCM = "C:\\Users\\Huell\\Documents\\Studium\\HIWI\\ExampleModels\\bundles\\org.dataflowanalysis.examplemodels\\casestudies\\";
-    private static final String resultFolderBase = "C:\\Users\\Huell\\Documents\\Studium\\HIWI\\GDPR2DFD-Converter\\tests\\mdpa.gdpr.dfdconverter.tests\\results\\Models\\";
-    private static final String resultFolderBasePCM = "C:\\Users\\Huell\\Documents\\Studium\\HIWI\\GDPR2DFD-Converter\\tests\\mdpa.gdpr.dfdconverter.tests\\results\\Models\\PCM\\";
+    private static final String ROOT_DIR = "C:\\Users\\Huell\\Documents\\HIWI\\ExampleModels\\bundles\\org.dataflowanalysis.examplemodels\\casestudies\\TUHH-Models\\";
+    private static final String ROOT_DIR_PCM = "C:\\Users\\Huell\\Documents\\HIWI\\ExampleModels\\bundles\\org.dataflowanalysis.examplemodels\\casestudies\\";
+    public static final String resultFolderBase = "C:\\Users\\Huell\\Documents\\HIWI\\GDPR2DFD-Converter\\tests\\mdpa.gdpr.dfdconverter.tests\\results\\Models\\";
+    private static final String resultFolderBasePCM = "C:\\Users\\Huell\\Documents\\HIWI\\GDPR2DFD-Converter\\tests\\mdpa.gdpr.dfdconverter.tests\\results\\Models\\PCM\\";
 
 
     public static Collection<File[]> data() {
@@ -95,7 +101,7 @@ public class ModelRunnerTest {
         // Here is where you do something with model1File and model2File
         // For example, parse them, compare them, run some logic, etc.
 
-        var data = convertPalladio();
+        var data = data();
         data.stream().forEach(file -> {
         
         	File dfdFile = file[0];
@@ -162,7 +168,7 @@ public class ModelRunnerTest {
         	dfd2gdpr2.transform();
         	dfd2gdpr2.save(resultFolder + name + "D2G2D2G.gdpr", resultFolder + name + "D2G2D2G.tracemodel");
         	
-        	LegalAssessmentFacts laf2 = dfd2gdpr.getLegalAssessmentFacts();
+        	LegalAssessmentFacts laf2 = dfd2gdpr2.getLegalAssessmentFacts();
         	trace = dfd2gdpr2.getDFD2GDPRTrace();
 
         	assertEquals(dfd.getNodes().size(), laf2.getProcessing().size());
@@ -178,6 +184,8 @@ public class ModelRunnerTest {
         });
         // ... your actual test logic here ...
     }
+    
+   
 	
     public static Collection<File[]> dataPCM() {
         List<File[]> testData = new ArrayList<>();
@@ -187,7 +195,6 @@ public class ModelRunnerTest {
         if (subFolders == null) {
             return testData; // no subfolders found
         }
-
         // For each subfolder, find matching .model1/.model2 pairs
         for (File subFolder : subFolders) {
             // Map baseName -> File for .model1
@@ -305,7 +312,7 @@ public class ModelRunnerTest {
     		
     		builder.append("TraceModel Cycle " + i + ":").append("\n");
     		builder.append("Number of FlowTraces: ").append(tracemodelD2G.getFlowTraces().size()).append("\n");
-    		builder.append("Number of FlowTraces: ").append(tracemodelD2G.getNodeTraces().size()).append("\n");
+    		builder.append("Number of NodeTraces: ").append(tracemodelD2G.getNodeTraces().size()).append("\n");
     		builder.append("Number of LabelTraces: ").append(tracemodelD2G.getLabelTraces().size()).append("\n");    		
 			  
     	}

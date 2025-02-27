@@ -151,6 +151,7 @@ public class DFD2GDPR {
 		laf.setId(dfd.getId());
 		
 		// If no tracemodel is present External/Collecting nodes act are identified as entry points
+		
 		if (inTrace == null) {
 			collectingNodes = identifyCollectingNodes();
 		}		
@@ -170,6 +171,7 @@ public class DFD2GDPR {
 			laf.getInvolvedParties().add(controller);
 			laf.getProcessing().forEach(processing -> processing.setResponsible(controller));
 		}
+		
 	}
 	/**
 	 * Saves the created Model instances at the provided locations
@@ -487,7 +489,6 @@ public class DFD2GDPR {
 			else {
 				source = cloneProcessing(ft.get(0).getSource());
 				dest = cloneProcessing(ft.get(0).getDest());
-				System.out.println("test");
 			}
 		} else {
 			source = mapNodeToProcessing.get(flow.getSourceNode());
