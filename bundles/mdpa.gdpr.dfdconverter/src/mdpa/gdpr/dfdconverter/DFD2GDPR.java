@@ -4,11 +4,9 @@ import java.io.IOException;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-import java.util.Set;
 
 import org.dataflowanalysis.dfd.datadictionary.DataDictionary;
 import org.dataflowanalysis.dfd.datadictionary.Label;
@@ -152,10 +150,11 @@ public class DFD2GDPR {
 	public void transform() {
 		laf.setId(dfd.getId());
 		
+		// If no tracemodel is present External/Collecting nodes act are identified as entry points
+		
 		if (inTrace == null) {
 			collectingNodes = identifyCollectingNodes();
-		}
-		
+		}		
 				
 		// convert labels
 		parseLabels();
@@ -172,6 +171,7 @@ public class DFD2GDPR {
 			laf.getInvolvedParties().add(controller);
 			laf.getProcessing().forEach(processing -> processing.setResponsible(controller));
 		}
+		
 	}
 	/**
 	 * Saves the created Model instances at the provided locations
@@ -277,7 +277,6 @@ public class DFD2GDPR {
 		if (optNt.isPresent()) {
 			NodeTrace nt = optNt.get();
 			gdprProcessing = cloneProcessing(nt.getGdprProcessing());
-			System.out.println(gdprProcessing.getEntityName() + "    " + gdprProcessing.getInputData().size());
 			addNodeTrace(node, gdprProcessing);
 		} else {
 			gdprProcessing = createNewGDPRProcessing(node);
@@ -385,6 +384,7 @@ public class DFD2GDPR {
 	private void createProcessingReferences(Node node) {
 		var processing = mapNodeToProcessing.get(node);
 		
+		//Old logic for data. Removed since one Pin might have multiple outgoing data
 		/*for (Pin pin : node.getBehavior().getInPin()) {
 			Data data = getDataFromPin(pin);
 			if(processing.getInputData().stream().noneMatch(d -> d.getId().equals(data.getId())) && data != null ) {
@@ -411,6 +411,12 @@ public class DFD2GDPR {
 		return laf.getData().stream().filter(it -> it.getEntityName().equals(pin.getEntityName())).findAny().orElse(null);
 	}
 	
+	/**
+	 * Allows for a proper transformation of DFDs without existing GDPR information.
+	 * Assigns a Data and Purpose element to each External Collecting Node
+	 * Then propagates that data and purpose to all nodes that can be reached from the collecting nodes
+	 * Does that until there are no more changes
+	 */
 	private void transformFlowsInOrder() {
 		if (inTrace != null) dfd.getFlows().forEach(flow -> transformFlow(flow));
 		else {
@@ -483,7 +489,6 @@ public class DFD2GDPR {
 			else {
 				source = cloneProcessing(ft.get(0).getSource());
 				dest = cloneProcessing(ft.get(0).getDest());
-				System.out.println("test");
 			}
 		} else {
 			source = mapNodeToProcessing.get(flow.getSourceNode());
@@ -620,6 +625,11 @@ public class DFD2GDPR {
 		return clone;
 	}
 	
+	/**
+	 * Clones a processing element without the following processing since that leads to a stack overflow
+	 * @param processing to be cloned
+	 * @return Cloned element
+	 */
 	private Processing cloneProcessing(Processing processing) {
 		if (gdprElementClonesMap.containsKey(processing)) return (Processing) gdprElementClonesMap.get(processing);
 	
