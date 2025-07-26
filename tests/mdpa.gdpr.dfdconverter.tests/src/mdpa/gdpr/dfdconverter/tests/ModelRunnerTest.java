@@ -11,7 +11,8 @@ import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.Collection;
 import java.util.*;
-import org.dataflowanalysis.converter.PCMConverter;
+import org.dataflowanalysis.converter.pcm2dfd.PCM2DFDConverter;
+import org.dataflowanalysis.converter.pcm2dfd.PCMConverterModel;
 import org.dataflowanalysis.dfd.datadictionary.DataDictionary;
 import org.dataflowanalysis.dfd.dataflowdiagram.DataFlowDiagram;
 import org.dataflowanalysis.dfd.dataflowdiagram.dataflowdiagramPackage;
@@ -256,9 +257,9 @@ public class ModelRunnerTest {
 	            if (!subFolder.exists()) {
 	                subFolder.mkdirs();
 	            }
-    		PCMConverter pcmConverter = new PCMConverter();
-        	var dfd = pcmConverter.pcmToDFD("", usageFile.toString(), allocationFile.toString(), nodeCharFile.toString());
-        	pcmConverter.storeDFD(dfd, resultFolder + name);
+    		PCM2DFDConverter pcmConverter = new PCM2DFDConverter();
+        	var dfd = pcmConverter.convert(new PCMConverterModel(usageFile.toString(), allocationFile.toString(), nodeCharFile.toString()));
+        	dfd.save(resultFolder, name);
         	testData.add(new File[] {new File(resultFolder + name + ".dataflowdiagram"), new File(resultFolder + name + ".datadictionary")});
     	});
     	return testData;

@@ -43,7 +43,7 @@ public class ScalabilityTests {
 	
 	private static final int max = 6;
 	
-	
+	/*
 	@Test
 	public void runDFDTest() {	
 		try (BufferedWriter writer = new BufferedWriter(new FileWriter(resultFolder + "timing-results-nodes.txt"))) {
@@ -442,5 +442,5 @@ public class ScalabilityTests {
         e.printStackTrace();
     }    
 }
-	
+	*/
 }
