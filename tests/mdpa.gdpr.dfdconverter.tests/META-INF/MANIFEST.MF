@@ -6,7 +6,8 @@ Bundle-Version: 1.0.0.qualifier
 Import-Package: org.junit.jupiter.api;version="5.8.1",
  org.junit.jupiter.api.function;version="5.8.1",
  org.junit.jupiter.params;version="5.8.1",
- org.junit.jupiter.params.provider;version="5.8.1"
+ org.junit.jupiter.params.provider;version="5.8.1",
+ org.junit.runners;version="4.13.2"
 Require-Bundle: mdpa.gdpr.metamodel;bundle-version="0.1.0",
  org.dataflowanalysis.dfd.datadictionary;bundle-version="0.1.0",
  org.dataflowanalysis.dfd.dataflowdiagram;bundle-version="0.1.0",
@@ -14,7 +15,14 @@ Require-Bundle: mdpa.gdpr.metamodel;bundle-version="0.1.0",
  org.eclipse.emf.ecore,
  org.eclipse.emf.ecore.xmi,
  mdpa.gdpr.dfdconverter,
- mdpa.gdpr.dfdconverter.tracemodel;bundle-version="0.1.0"
+ mdpa.gdpr.dfdconverter.tracemodel;bundle-version="0.1.0",
+ org.junit,
+ org.dataflowanalysis.converter,
+ org.dataflowanalysis.pcm.extension.dddsl;bundle-version="5.2.0",
+ org.dataflowanalysis.pcm.extension.dictionary;bundle-version="5.2.0",
+ org.dataflowanalysis.pcm.extension.dictionary.characterized;bundle-version="5.2.0",
+ org.dataflowanalysis.pcm.extension.model;bundle-version="5.2.0",
+ org.dataflowanalysis.pcm.extension.nodecharacteristics;bundle-version="0.1.0"
 Automatic-Module-Name: mdpa.gdpr.dfdconverter.tests
 Export-Package: mdpa.gdpr.dfdconverter.tests
 Bundle-RequiredExecutionEnvironment: JavaSE-17

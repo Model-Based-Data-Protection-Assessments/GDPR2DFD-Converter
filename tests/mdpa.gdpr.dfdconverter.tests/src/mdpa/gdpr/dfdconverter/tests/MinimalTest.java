@@ -7,7 +7,8 @@ import mdpa.gdpr.dfdconverter.tracemodel.tracemodel.TraceModel;
 
 
 import java.nio.file.Paths;
-
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.List;
 
 import org.dataflowanalysis.dfd.datadictionary.DataDictionary;
@@ -105,6 +106,9 @@ public class MinimalTest {
 		equals(traceModel, gdpr2dfd.getGDPR2DFDTrace());
 
 		gdpr2dfd.save(dfdFilePath, ddFilePath, traceFilePath);
+		
+		deleteIfExists(traceFilePath);
+		deleteIfExists(gdprFilePath);
 	}
 	
 	@Test
@@ -172,6 +176,9 @@ public class MinimalTest {
 		equals(traceModel, dfd2gdpr.getDFD2GDPRTrace());
 
 		dfd2gdpr.save(gdprFilePath, traceFilePath);
+		deleteIfExists(traceFilePath);
+        deleteIfExists(dfdFilePath);
+        deleteIfExists(ddFilePath);
 	}
 	
 	@Test
@@ -256,4 +263,14 @@ public class MinimalTest {
 		    
 		    return true;
 		  }
+	 
+	 private void deleteIfExists(String pathStr) {
+	     try {
+	         Path path = Paths.get(pathStr);
+	         Files.deleteIfExists(path);
+	     } catch (Exception e) {
+	         e.printStackTrace();
+	         // optionally: fail the test or log
+	     }
+	 }
 }

@@ -8,6 +8,9 @@
   </labelTypes>
   <labelTypes id="_eQUp-VMtEe-T-uv37riEow" entityName="Data">
     <label id="mnpnio" entityName="Data"/>
+    <label id="_z3hI4GpQEfCpF9jP5f1jhA"/>
+    <label id="_WFrbUGpREfCiiJvda411BA"/>
+    <label id="_XwU_QGpREfCSQLJKzNhw3Q"/>
   </labelTypes>
   <labelTypes id="_eQUp-lMtEe-T-uv37riEow" entityName="PersonalData">
     <label id="fi6k6x" entityName="Personal Data"/>
@@ -35,28 +38,49 @@
   </labelTypes>
   <labelTypes id="_eQVRBlMtEe-T-uv37riEow" entityName="Purposes">
     <label id="8k3v" entityName="Purpose"/>
+    <label id="_z3hI4WpQEfCpF9jP5f1jhA"/>
+    <label id="_WFrbUWpREfCiiJvda411BA"/>
+    <label id="_XwU_QWpREfCSQLJKzNhw3Q"/>
   </labelTypes>
-  <behaviour id="_eQUC4VMtEe-T-uv37riEow" entityName="Anonymization Behaviour">
+  <behavior id="_eQUC4VMtEe-T-uv37riEow" entityName="Anonymization behavior">
     <inPin id="_eQYUWlMtEe-T-uv37riEow" entityName="Personal Data"/>
     <outPin id="_eQYUUFMtEe-T-uv37riEow" entityName="Data"/>
-  </behaviour>
-  <behaviour id="_eQUp8VMtEe-T-uv37riEow" entityName="Transferring Behaviour">
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_z4TzEGpQEfCpF9jP5f1jhA" entityName="Forward aName" outputPin="_eQYUUFMtEe-T-uv37riEow" inputPins="_eQYUWlMtEe-T-uv37riEow"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_z5YKEGpQEfCpF9jP5f1jhA" entityName="Forward aName" outputPin="_eQYUUFMtEe-T-uv37riEow" inputPins="_eQYUWlMtEe-T-uv37riEow"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_WGc3YGpREfCiiJvda411BA" entityName="Forward aName" outputPin="_eQYUUFMtEe-T-uv37riEow" inputPins="_eQYUWlMtEe-T-uv37riEow"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_WHRWwWpREfCiiJvda411BA" entityName="Forward aName" outputPin="_eQYUUFMtEe-T-uv37riEow" inputPins="_eQYUWlMtEe-T-uv37riEow"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_XxQMUGpREfCSQLJKzNhw3Q" entityName="Forward aName" outputPin="_eQYUUFMtEe-T-uv37riEow" inputPins="_eQYUWlMtEe-T-uv37riEow"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_XyMAcGpREfCSQLJKzNhw3Q" entityName="Forward aName" outputPin="_eQYUUFMtEe-T-uv37riEow" inputPins="_eQYUWlMtEe-T-uv37riEow"/>
+  </behavior>
+  <behavior id="_eQUp8VMtEe-T-uv37riEow" entityName="Transferring behavior">
     <inPin id="_eQYUUVMtEe-T-uv37riEow" entityName="Data"/>
     <outPin id="_eQYUU1MtEe-T-uv37riEow" entityName="Data"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_eQZicFMtEe-T-uv37riEow" entityName="Forward Data" inputPins="_eQYUUVMtEe-T-uv37riEow" outputPin="_eQYUU1MtEe-T-uv37riEow"/>
-  </behaviour>
-  <behaviour id="_eQUp81MtEe-T-uv37riEow" entityName="Usage Behaviour">
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_eQZicFMtEe-T-uv37riEow" entityName="Forward Data" outputPin="_eQYUU1MtEe-T-uv37riEow" inputPins="_eQYUUVMtEe-T-uv37riEow"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_z4UaIGpQEfCpF9jP5f1jhA" entityName="Forward aName" outputPin="_eQYUU1MtEe-T-uv37riEow" inputPins="_eQYUUVMtEe-T-uv37riEow"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_z5YKEWpQEfCpF9jP5f1jhA" entityName="Forward aName" outputPin="_eQYUU1MtEe-T-uv37riEow" inputPins="_eQYUUVMtEe-T-uv37riEow"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_WGc3YWpREfCiiJvda411BA" entityName="Forward aName" outputPin="_eQYUU1MtEe-T-uv37riEow" inputPins="_eQYUUVMtEe-T-uv37riEow"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_WHRWwmpREfCiiJvda411BA" entityName="Forward aName" outputPin="_eQYUU1MtEe-T-uv37riEow" inputPins="_eQYUUVMtEe-T-uv37riEow"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_XxQMUWpREfCSQLJKzNhw3Q" entityName="Forward aName" outputPin="_eQYUU1MtEe-T-uv37riEow" inputPins="_eQYUUVMtEe-T-uv37riEow"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_XyMAcWpREfCSQLJKzNhw3Q" entityName="Forward aName" outputPin="_eQYUU1MtEe-T-uv37riEow" inputPins="_eQYUUVMtEe-T-uv37riEow"/>
+  </behavior>
+  <behavior id="_eQUp81MtEe-T-uv37riEow" entityName="Usage behavior">
     <inPin id="_eQYUVFMtEe-T-uv37riEow" entityName="Data"/>
     <outPin id="_eQYUVlMtEe-T-uv37riEow" entityName="Data"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_eQZicVMtEe-T-uv37riEow" entityName="Forward Data" inputPins="_eQYUVFMtEe-T-uv37riEow" outputPin="_eQYUVlMtEe-T-uv37riEow"/>
-  </behaviour>
-  <behaviour id="_eQUp9VMtEe-T-uv37riEow" entityName="Storage Behaviour">
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_eQZicVMtEe-T-uv37riEow" entityName="Forward Data" outputPin="_eQYUVlMtEe-T-uv37riEow" inputPins="_eQYUVFMtEe-T-uv37riEow"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_z4UaIWpQEfCpF9jP5f1jhA" entityName="Forward aName" outputPin="_eQYUVlMtEe-T-uv37riEow" inputPins="_eQYUVFMtEe-T-uv37riEow"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_z5YKEmpQEfCpF9jP5f1jhA" entityName="Forward aName" outputPin="_eQYUVlMtEe-T-uv37riEow" inputPins="_eQYUVFMtEe-T-uv37riEow"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_WGc3YmpREfCiiJvda411BA" entityName="Forward aName" outputPin="_eQYUVlMtEe-T-uv37riEow" inputPins="_eQYUVFMtEe-T-uv37riEow"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_WHRWw2pREfCiiJvda411BA" entityName="Forward aName" outputPin="_eQYUVlMtEe-T-uv37riEow" inputPins="_eQYUVFMtEe-T-uv37riEow"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_XxQMUmpREfCSQLJKzNhw3Q" entityName="Forward aName" outputPin="_eQYUVlMtEe-T-uv37riEow" inputPins="_eQYUVFMtEe-T-uv37riEow"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_XyMAcmpREfCSQLJKzNhw3Q" entityName="Forward aName" outputPin="_eQYUVlMtEe-T-uv37riEow" inputPins="_eQYUVFMtEe-T-uv37riEow"/>
+  </behavior>
+  <behavior id="_eQUp9VMtEe-T-uv37riEow" entityName="Storage behavior">
     <inPin id="_eQYUV1MtEe-T-uv37riEow" entityName="Data"/>
-  </behaviour>
-  <behaviour id="_eQUp91MtEe-T-uv37riEow" entityName="Collecting Behaviour">
+  </behavior>
+  <behavior id="_eQUp91MtEe-T-uv37riEow" entityName="Collecting behavior">
     <outPin id="_eQYUWVMtEe-T-uv37riEow" entityName="Personal Data"/>
     <assignment xsi:type="datadictionary:Assignment" id="_eQZiclMtEe-T-uv37riEow" entityName="Send Personal Data" outputPin="_eQYUWVMtEe-T-uv37riEow" outputLabels="m0b8x">
       <term xsi:type="datadictionary:TRUE" id="_eQaJgFMtEe-T-uv37riEow"/>
     </assignment>
-  </behaviour>
+  </behavior>
 </datadictionary:DataDictionary>

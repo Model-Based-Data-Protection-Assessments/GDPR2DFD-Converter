@@ -66,6 +66,7 @@ public class Main {
 		scanner.close();
 	}
 	
+	
 	/**
 	 * Removes file ending from file
 	 * @param file File whichs ending need to be removed

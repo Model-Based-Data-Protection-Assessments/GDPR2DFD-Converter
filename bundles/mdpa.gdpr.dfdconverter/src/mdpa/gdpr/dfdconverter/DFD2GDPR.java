@@ -69,6 +69,9 @@ public class DFD2GDPR {
 	private Map<Node, Processing> mapNodeToProcessing = new HashMap<>();	
 	private Map<Label, Entity> labelToEntityMap = new HashMap<>();
 	private Map<Entity, Entity> gdprElementClonesMap = new HashMap<>();
+	
+	private List<Node> collectingNodes = new ArrayList<>();
+	private Map<Node, Long> mapNodeToAnalyzedIncomingFlows = new HashMap<>();
 		
 	private ResourceSet rs;	
 	
@@ -128,6 +131,13 @@ public class DFD2GDPR {
 			rs = new ResourceSetImpl();
 			rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put(Resource.Factory.Registry.DEFAULT_EXTENSION, new XMIResourceFactoryImpl());
 		}
+		
+		if (inTrace == null) {
+			dfd.getNodes().stream().forEach(node -> {
+				long count = dfd.getFlows().stream().filter(flow -> flow.getDestinationNode().equals(node)).count();
+				mapNodeToAnalyzedIncomingFlows.put(node, count);
+			});
+		}
 	}
 	
 	private void setup(DataFlowDiagram dfd, DataDictionary dd) {
@@ -139,6 +149,12 @@ public class DFD2GDPR {
 	 */
 	public void transform() {
 		laf.setId(dfd.getId());
+		
+		// If no tracemodel is present External/Collecting nodes act are identified as entry points
+		
+		if (inTrace == null) {
+			collectingNodes = identifyCollectingNodes();
+		}		
 				
 		// convert labels
 		parseLabels();
@@ -148,9 +164,15 @@ public class DFD2GDPR {
 		dfd.getNodes().forEach(this::createProcessingReferences);
 		
 		// convert flows				
-		dfd.getFlows().forEach(this::transformFlow);
+		transformFlowsInOrder();
+		
+		if (laf.getInvolvedParties().stream().noneMatch(Controller.class::isInstance)) {
+			var controller = gdprFactory.createController();
+			laf.getInvolvedParties().add(controller);
+			laf.getProcessing().forEach(processing -> processing.setResponsible(controller));
+		}
+		
 	}
-	
 	/**
 	 * Saves the created Model instances at the provided locations
 	 * @param gdprFile Location where gdpr instance is to be saved
@@ -254,8 +276,8 @@ public class DFD2GDPR {
 		var optNt = nodeTraceLookup(node);
 		if (optNt.isPresent()) {
 			NodeTrace nt = optNt.get();
-			gdprProcessing = nt.getGdprProcessing();
-			outTrace.getNodeTraces().add(nt);
+			gdprProcessing = cloneProcessing(nt.getGdprProcessing());
+			addNodeTrace(node, gdprProcessing);
 		} else {
 			gdprProcessing = createNewGDPRProcessing(node);
 			addNodeTrace(node, gdprProcessing);
@@ -281,24 +303,29 @@ public class DFD2GDPR {
 	
 	private Processing createNewGDPRProcessing(Node node) {
 		Processing processing;
-		Label processingTypeLabel = node.getProperties().stream().filter(label -> getLabelTypeOfLabel(label).getEntityName().equals("ProcessingType")).findFirst().orElseThrow();
+		Label processingTypeLabel = node.getProperties().stream().filter(label -> getLabelTypeOfLabel(label).getEntityName().equals("ProcessingType")).findFirst().orElse(null);
 		
-		switch (processingTypeLabel.getEntityName()) {
-		case "Collecting":
-			processing = gdprFactory.createCollecting();
-			break;
-		case "Storing":
-			processing = gdprFactory.createStoring();
-			break;
-		case "Usage":
-			processing = gdprFactory.createUsage();
-			break;
-		case "Transferring":
-			processing = gdprFactory.createTransferring();
-			break;
-		default: // this should not occur processings without any additional information should be modelled as "Usage"
-			processing = gdprFactory.createProcessing();
-			break;
+		if (processingTypeLabel == null) {
+			if (collectingNodes.contains(node)) processing = gdprFactory.createCollecting();
+			else processing = gdprFactory.createUsage();
+		} else {
+			switch (processingTypeLabel.getEntityName()) {
+			case "Collecting":
+				processing = gdprFactory.createCollecting();
+				break;
+			case "Storing":
+				processing = gdprFactory.createStoring();
+				break;
+			case "Usage":
+				processing = gdprFactory.createUsage();
+				break;
+			case "Transferring":
+				processing = gdprFactory.createTransferring();
+				break;
+			default: // this should not occur processings without any additional information should be modelled as "Usage"
+				processing = gdprFactory.createProcessing();
+				break;
+			}
 		}
 		
 		processing.setEntityName(node.getEntityName());
@@ -357,18 +384,19 @@ public class DFD2GDPR {
 	private void createProcessingReferences(Node node) {
 		var processing = mapNodeToProcessing.get(node);
 		
-		for (Pin pin : node.getBehaviour().getInPin()) {
+		//Old logic for data. Removed since one Pin might have multiple outgoing data
+		/*for (Pin pin : node.getBehavior().getInPin()) {
 			Data data = getDataFromPin(pin);
-			if(processing.getInputData().stream().noneMatch(d -> d.getId().equals(data.getId()))) {
+			if(processing.getInputData().stream().noneMatch(d -> d.getId().equals(data.getId())) && data != null ) {
 				processing.getInputData().add(data);
 			}
 		}
-		for (Pin pin : node.getBehaviour().getOutPin()) {
+		for (Pin pin : node.getBehavior().getOutPin()) {
 			Data data = getDataFromPin(pin);
-			if(processing.getOutputData().stream().noneMatch(d -> d.getId().equals(data.getId()))) {
+			if(processing.getOutputData().stream().noneMatch(d -> d.getId().equals(data.getId())) && data != null) {
 				processing.getOutputData().add(data);
 			}
-		}
+		}*/
 			
 		processing.getOnTheBasisOf().clear();
 		processing.getOnTheBasisOf().addAll(getLegalBasesFromNode(node));
@@ -380,7 +408,69 @@ public class DFD2GDPR {
 	}
 	
 	private Data getDataFromPin(Pin pin) {
-		return laf.getData().stream().filter(it -> it.getEntityName().equals(pin.getEntityName())).findAny().orElseThrow();
+		return laf.getData().stream().filter(it -> it.getEntityName().equals(pin.getEntityName())).findAny().orElse(null);
+	}
+	
+	/**
+	 * Allows for a proper transformation of DFDs without existing GDPR information.
+	 * Assigns a Data and Purpose element to each External Collecting Node
+	 * Then propagates that data and purpose to all nodes that can be reached from the collecting nodes
+	 * Does that until there are no more changes
+	 */
+	private void transformFlowsInOrder() {
+		if (inTrace != null) dfd.getFlows().forEach(flow -> transformFlow(flow));
+		else {
+			var startingNodes = collectingNodes;
+			while (startingNodes != null && startingNodes.size() > 0) {		
+				List<Node> followingNodes = new ArrayList<>();
+				for (Node node : startingNodes) {
+					List<Flow> outgoingFlows = dfd.getFlows().stream().filter(flow -> flow.getSourceNode().equals(node)).toList();
+					var processing = mapNodeToProcessing.get(node);
+					if (!outgoingFlows.isEmpty()) {
+						processing.getOutputData().addAll(processing.getInputData().stream().filter(it -> !processing.getOutputData().contains(it)).toList());
+					}
+					
+					List<Processing> followingProcessing = outgoingFlows.stream().map(it -> mapNodeToProcessing.get(it.getDestinationNode())).toList(); 
+					List<Processing> followingProcessingWithNewInputData = new ArrayList<>();
+					
+					if (collectingNodes.contains(node) && processing.getOutputData().isEmpty()) {
+						var dataCollecting = gdprFactory.createData();
+						var purposeCollecting = gdprFactory.createPurpose();
+						laf.getData().add(dataCollecting);
+						laf.getPurposes().add(purposeCollecting);
+						
+						processing.getOutputData().add(dataCollecting);
+						processing.getPurpose().add(purposeCollecting);
+					}
+					
+					List<Data> outgoingData = processing.getOutputData();
+					outgoingFlows.forEach(flow -> {
+						outgoingData.forEach(data -> {
+							if (outTrace.getFlowTraces().stream().filter(flowTrace -> flowTrace.getDataFlow().equals(flow) && flowTrace.getData().equals(data)).count() == 0) {
+								var ft = TracemodelFactory.eINSTANCE.createFlowTrace();
+								ft.setDataFlow(flow);
+								ft.setDest(mapNodeToProcessing.get(flow.getDestinationNode()));
+								ft.setSource(mapNodeToProcessing.get(flow.getSourceNode()));
+								ft.setData(data);
+								outTrace.getFlowTraces().add(ft);
+							}
+						});
+					});
+					
+					followingProcessing.forEach(it -> {
+						if (!it.getInputData().containsAll(outgoingData)) {
+							followingProcessingWithNewInputData.add(it);
+							it.getInputData().addAll(outgoingData.stream().filter(data -> !it.getInputData().contains(data)).toList());
+							it.getPurpose().addAll(processing.getPurpose().stream().filter(purpose -> !it.getPurpose().contains(purpose)).toList());
+						}
+						
+						if (!processing.getFollowingProcessing().contains(it)) processing.getFollowingProcessing().add(it);
+					});					
+					followingNodes.addAll(outgoingFlows.stream().map(it -> it.getDestinationNode()).filter(it -> followingProcessingWithNewInputData.contains(mapNodeToProcessing.get(it))).toList());
+				}
+				startingNodes = followingNodes;
+			}
+		}
 	}
 	
 	/**
@@ -394,9 +484,12 @@ public class DFD2GDPR {
 		var optFt = flowTraceLookup(flow);
 		if (optFt.isPresent()) {
 			var ft = optFt.get();
-			outTrace.getFlowTraces().add(ft);
-			source = ft.getSource();
-			dest = ft.getDest();
+			outTrace.getFlowTraces().addAll(ft);
+			if (ft.isEmpty()) return;
+			else {
+				source = cloneProcessing(ft.get(0).getSource());
+				dest = cloneProcessing(ft.get(0).getDest());
+			}
 		} else {
 			source = mapNodeToProcessing.get(flow.getSourceNode());
 			dest = mapNodeToProcessing.get(flow.getDestinationNode());
@@ -410,14 +503,14 @@ public class DFD2GDPR {
 		}
 		
 		// this might not be necessary if a trace exists but checking does no harm.
-		if(source.getFollowingProcessing().stream().noneMatch(p -> p.getId().equals(dest.getId())))source.getFollowingProcessing().add(dest);
+		if(!source.getFollowingProcessing().contains(dest)) source.getFollowingProcessing().add(dest);
 	}
 	
-	private Optional<FlowTrace> flowTraceLookup(Flow flow) {
+	private Optional<List<FlowTrace>> flowTraceLookup(Flow flow) {
 		if (inTrace == null) {
 			return Optional.empty();
 		}
-		return inTrace.getFlowTraces().stream().filter(ft -> ft.getDataFlow().getId().equals(flow.getId())).findAny();
+		return Optional.of(inTrace.getFlowTraces().stream().filter(ft -> ft.getDataFlow().getId().equals(flow.getId())).toList());
 	}
 	
 	//Cloning because of ECore Containment
@@ -532,6 +625,11 @@ public class DFD2GDPR {
 		return clone;
 	}
 	
+	/**
+	 * Clones a processing element without the following processing since that leads to a stack overflow
+	 * @param processing to be cloned
+	 * @return Cloned element
+	 */
 	private Processing cloneProcessing(Processing processing) {
 		if (gdprElementClonesMap.containsKey(processing)) return (Processing) gdprElementClonesMap.get(processing);
 	
@@ -545,8 +643,10 @@ public class DFD2GDPR {
 		
 		if(processing.getResponsible() != null) clone.setResponsible((Role)cloneRole(processing.getResponsible()));
 		
+		clone.setEntityName(processing.getEntityName());
+		clone.setId(processing.getId());
 		processing.getInputData().forEach(data -> clone.getInputData().add(cloneData(data)));
-		processing.getOutputData().forEach(data -> clone.getInputData().add(cloneData(data)));
+		processing.getOutputData().forEach(data -> clone.getOutputData().add(cloneData(data)));
 		processing.getOnTheBasisOf().forEach(legalBasis -> clone.getOnTheBasisOf().add(cloneLegalBasis(legalBasis)));
 		processing.getPurpose().forEach(purpose -> clone.getPurpose().add(clonePurpose(purpose)));
 		
@@ -595,5 +695,9 @@ public class DFD2GDPR {
 
 	public TraceModel getDFD2GDPRTrace() {
 		return outTrace;
+	}
+	
+	private List<Node> identifyCollectingNodes() {
+		return dfd.getNodes().stream().filter(node -> dfd.getFlows().stream().noneMatch(flow -> flow.getDestinationNode().equals(node))).toList();
 	}
 }

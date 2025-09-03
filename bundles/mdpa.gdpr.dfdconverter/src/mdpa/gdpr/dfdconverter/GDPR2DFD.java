@@ -108,6 +108,10 @@ public class GDPR2DFD {
 		setup((LegalAssessmentFacts) gdprResource.getContents().get(0), null, null);
 	}
 	
+	public GDPR2DFD(LegalAssessmentFacts laf) {
+		setup(laf, null, null);
+	}
+	
 	private void setup(LegalAssessmentFacts laf, TraceModel inTrace, DataDictionary dd) {
 		this.laf = laf;
 		this.inTrace = inTrace;
@@ -142,13 +146,72 @@ public class GDPR2DFD {
 			ddResource = createAndAddResource(ddFile, new String[] {"datadictionary"} ,rs);
 			ddResource.getContents().add(dd);
 		}
+		//Allows us to save DD in new File without containment or reference issues
+		if (!ddResource.getURI().toString().equals(URI.createFileURI(ddFile).toFileString())) {			
+
+			ddResource = createAndAddResource(ddFile, new String[] {"datadictionary"} ,rs);			
+			ddResource.getContents().add(dd);	
+			
+			dd = (DataDictionary) ddResource.getContents().get(0);
+
+			EcoreUtil.resolveAll(ddResource);			
+			
+			Map<String, Pin> idToPinMap = new HashMap<>();
+			dd.getBehavior().stream().map(it -> {
+				List<Pin> pins = new ArrayList<>();
+				pins.addAll(it.getInPin());
+				pins.addAll(it.getOutPin());
+				return pins;
+			}).flatMap(it -> it.stream()).forEach(pin -> idToPinMap.put(pin.getId(), pin));
+			
+			List<Flow> newFlows = dfd.getFlows().stream().map(flow -> {
+				Flow newFlow = dfdFactory.createFlow();
+				newFlow.setId(flow.getId());
+				newFlow.setEntityName(flow.getEntityName());
+				newFlow.setDestinationNode(flow.getDestinationNode());
+				newFlow.setSourceNode(flow.getSourceNode());
+				
+				newFlow.setDestinationPin(idToPinMap.get(flow.getDestinationPin().getId()));
+				newFlow.setSourcePin(idToPinMap.get(flow.getSourcePin().getId()));
+				return newFlow;
+			}).toList();
+			
+			dfd.getFlows().removeAll(dfd.getFlows());
+			dfd.getFlows().addAll(newFlows);
+			
+			List<FlowTrace> newFlowTraces = outTrace.getFlowTraces().stream().map(trace -> {
+				var ft = TracemodelFactory.eINSTANCE.createFlowTrace();
+				ft.setDataFlow(newFlows.stream().filter(it -> trace.getDataFlow().getId().equals(it.getId())).findAny().orElseThrow());
+				ft.setSource(trace.getSource());
+				ft.setDest(trace.getDest());
+				ft.setData(trace.getData());
+				return ft;
+			}).toList();
+			
+			outTrace.getFlowTraces().clear();
+			outTrace.getFlowTraces().addAll(newFlowTraces);
+			
+			Map<String, Label> ifToLabelMap = new HashMap<>();
+			dd.getLabelTypes().forEach(labelType -> labelType.getLabel().forEach(label -> ifToLabelMap.put(label.getId(), label)));
+			
+			Map<String, Behavior> idToBehaviorMap = new HashMap<>();
+			dd.getBehavior().forEach(behavior -> idToBehaviorMap.put(behavior.getId(), behavior));
+			
+			dfd.getNodes().forEach(node -> {
+				node.setBehavior(idToBehaviorMap.get(node.getBehavior().getId()));
+				var newProperties = node.getProperties().stream().map(label -> ifToLabelMap.get(label.getId())).toList();
+				node.getProperties().removeAll(node.getProperties());
+				node.getProperties().addAll(newProperties);
+			});			
+		}
 		
 		dfdResource.getContents().add(dfd);		
-		outTraceResource.getContents().add(outTrace);
-		
+		outTraceResource.getContents().add(outTrace);		
+
+		saveResource(ddResource);
+		EcoreUtil.resolveAll(outTraceResource);
 		saveResource(outTraceResource);
 		saveResource(dfdResource);
-		saveResource(ddResource);
 	}
 	
 	/**
@@ -180,10 +243,24 @@ public class GDPR2DFD {
 			dfd.getFlows().addAll(createFlows(p));
 		});
 		
+		//Sorry for that but otherwise containment causes issues
+		var newFlowTraces = outTrace.getFlowTraces().stream().map(ft -> {
+			var flowTrace = TracemodelFactory.eINSTANCE.createFlowTrace();
+			flowTrace.setDataFlow(dfd.getFlows().stream().filter(flow -> flow.getId().equals(ft.getDataFlow().getId())).findAny().orElseThrow());
+			flowTrace.setData(ft.getData());
+			flowTrace.setDest(ft.getDest());
+			flowTrace.setSource(ft.getSource());
+			return flowTrace;
+		}).toList();
+		
+		outTrace.getFlowTraces().clear();
+		outTrace.getFlowTraces().addAll(newFlowTraces);
+		
 		// Create/Annotate Behaviors to Nodes
 		laf.getProcessing().stream().forEach(p -> {
 			annotateBehaviour(p);
 		});
+		
 	}
 	
 	/**
@@ -326,7 +403,7 @@ public class GDPR2DFD {
 			if (optNt.isPresent()) {
 				NodeTrace nt = optNt.get();
 				node = nt.getDfdNode();
-				dd.getBehaviour().add(node.getBehaviour());
+				if (dd.getBehavior().stream().noneMatch(behavior -> behavior.getId().equals(node.getBehavior().getId()))) dd.getBehavior().add(node.getBehavior());
 				outTrace.getNodeTraces().add(nt);
 			} else {
 				// Create
@@ -356,10 +433,10 @@ public class GDPR2DFD {
 		node.setId(processing.getId());
 		node.setEntityName(processing.getEntityName());
 		
-		Behaviour behaviour = ddFactory.createBehaviour();
-		behaviour.setEntityName(node.getEntityName() + " Behaviour");
-		node.setBehaviour(behaviour);
-		dd.getBehaviour().add(behaviour);
+		Behavior behavior = ddFactory.createBehavior();
+		behavior.setEntityName(node.getEntityName() + " Behavior");
+		node.setBehavior(behavior);
+		dd.getBehavior().add(behavior);
 		
 		return node;
 	}
@@ -440,51 +517,73 @@ public class GDPR2DFD {
 		for (Processing followingProcessing : processing.getFollowingProcessing()) {
 			Node destinationNode = processingToNodeMap.get(followingProcessing);
 			
-			List<Data> dataSent = intersection(processing.getOutputData(), followingProcessing.getInputData());
+			List<Data> dataSent = intersection(processing.getOutputData(), followingProcessing.getInputData());	
+			if (dataSent.isEmpty()) {
+				Optional<List<FlowTrace>> optFts = flowTraceLookup(processing, followingProcessing);				
+				if(optFts.isPresent()) {
+					for (var ft : optFts.get()) {
+						flows.add(ft.getDataFlow());
+						addFlowTrace(ft.getDataFlow(), followingProcessing, processing, null);
+					}
+				} else {					
+					Pin outPin = sourceNode.getBehavior().getOutPin().stream().findAny().orElse(null);
+					if (outPin == null) {
+						outPin = ddFactory.createPin();
+						sourceNode.getBehavior().getOutPin().add(outPin);
+					}
+					
+					Pin inPin = destinationNode.getBehavior().getInPin().stream().findAny().orElse(null);
+					if (inPin == null) {
+						inPin = ddFactory.createPin();
+						destinationNode.getBehavior().getInPin().add(inPin);
+					}
+					
+					Flow flow = createNewFlow("", sourceNode, outPin, destinationNode, inPin);
+					flows.add(flow);
+				}				
+			}
 			dataSent.forEach(data -> {
-				Optional<FlowTrace> optFt = flowTraceLookup(processing, followingProcessing, data);
-				
-				if(optFt.isPresent()) {
-					FlowTrace ft = optFt.get();
-					flows.add(ft.getDataFlow());
-					outTrace.getFlowTraces().add(ft);
+				Optional<List<FlowTrace>> optFts = flowTraceLookup(processing, followingProcessing);				
+				if(optFts.isPresent()) {
+					for (var ft : optFts.get()) {
+						flows.add(ft.getDataFlow());
+						addFlowTrace(ft.getDataFlow(), followingProcessing, processing, data);
+					}
 				} else {
 					String dataName = data.getEntityName();
 					
-					Pin outPin = sourceNode.getBehaviour().getOutPin().stream().filter(pin -> pin.getEntityName().equals(dataName)).findAny().orElse(null);
+					Pin outPin = sourceNode.getBehavior().getOutPin().stream().filter(pin -> pin.getEntityName().equals(dataName)).findAny().orElse(null);
 					if (outPin == null) {
 						outPin = ddFactory.createPin();
 						outPin.setEntityName(dataName);
-						sourceNode.getBehaviour().getOutPin().add(outPin);
+						sourceNode.getBehavior().getOutPin().add(outPin);
 					}
 					
-					Pin inPin = destinationNode.getBehaviour().getInPin().stream().filter(pin -> pin.getEntityName().equals(dataName)).findAny().orElse(null);
+					Pin inPin = destinationNode.getBehavior().getInPin().stream().filter(pin -> pin.getEntityName().equals(dataName)).findAny().orElse(null);
 					if (inPin == null) {
 						inPin = ddFactory.createPin();
 						inPin.setEntityName(dataName);
-						destinationNode.getBehaviour().getInPin().add(inPin);
+						destinationNode.getBehavior().getInPin().add(inPin);
 					}
 					
 					Flow flow = createNewFlow(dataName, sourceNode, outPin, destinationNode, inPin);
-					addFlowTrace(flow, processing, followingProcessing, data);
 					flows.add(flow);
 				}
-			});
+				});
 		}
 		
 		return flows;
 	}
 	
-	private Optional<FlowTrace> flowTraceLookup(Processing source, Processing dest, Data data) {
+	private Optional<List<FlowTrace>> flowTraceLookup(Processing source, Processing dest) {
 		if (inTrace == null) {
 			return Optional.empty();
 		}
-		return inTrace.getFlowTraces().stream()
+		return Optional.ofNullable(inTrace.getFlowTraces().stream()
 				.filter(
 						ft -> ft.getSource().getId().equals(source.getId()) &&
-							  ft.getDest().getId().equals(dest.getId()) &&
-							  ft.getData().getId().equals(data.getId()))
-				.findAny();
+							  ft.getDest().getId().equals(dest.getId()))
+				.toList());
 	}
 	
 	private Flow createNewFlow(String name, Node source, Pin sourcePin, Node dest, Pin destPin) {
@@ -523,29 +622,33 @@ public class GDPR2DFD {
 //				node.getBehaviour().getAssignment().add(at.getAssignment());
 				outTrace.getAssignmentTraces().add(at);
 			} else {
+				if (processing.getFollowingProcessing().size() == 0) return;
 				if (processing.getInputData().contains(data)) {
-					if (!containsAssignment(node.getBehaviour(), data.getEntityName(), data)) {
+					if (!containsAssignment(node.getBehavior(), data.getEntityName(), data)) {
 						// the same data is set as input and output the labels are simply forwarded.
-						var assignment = ddFactory.createForwardingAssignment();
-						assignment.getInputPins().add(node.getBehaviour().getInPin().stream().filter(pin -> pin.getEntityName().equals(data.getEntityName())).findAny().orElseThrow());
-						assignment.setOutputPin(node.getBehaviour().getOutPin().stream().filter(pin -> pin.getEntityName().equals(data.getEntityName())).findAny().orElseThrow());
+							node.getBehavior().getOutPin().forEach(pin -> {
+								var assignment = ddFactory.createForwardingAssignment();
+							assignment.getInputPins().addAll(node.getBehavior().getInPin());
 						
-						assignment.setEntityName("Forward " + data.getEntityName());
-						node.getBehaviour().getAssignment().add(assignment);
+							assignment.setOutputPin(pin);
+							
+							assignment.setEntityName("Forward " + data.getEntityName());
+							node.getBehavior().getAssignment().add(assignment);
+						});						
 					}
 				} else {
 					// if data is not forwarded AND the data is of type PersonalData, the label of the corresponding natural person is set.
 					if (data instanceof PersonalData personalData) {
-						if (!containsAssignment(node.getBehaviour(), data)) {
+						if (!containsAssignment(node.getBehavior(), data) && processing.getFollowingProcessing().size() > 0) {
 							var assignment = ddFactory.createAssignment();
-							assignment.setOutputPin(node.getBehaviour().getOutPin().stream().filter(pin -> pin.getEntityName().equals(personalData.getEntityName())).findAny().orElseThrow());
+							assignment.setOutputPin(node.getBehavior().getOutPin().stream().filter(pin -> pin.getEntityName().equals(personalData.getEntityName())).findAny().orElseThrow());
 							assignment.setTerm(ddFactory.createTRUE());
 							personalData.getDataReferences().forEach(person -> {
 								assignment.getOutputLabels().add(entityToLabelMap.get(person));
 							});
 							
 							assignment.setEntityName("Send " + personalData.getEntityName());
-							node.getBehaviour().getAssignment().add(assignment);
+							node.getBehavior().getAssignment().add(assignment);
 						}
 					} else {
 						// Special case, here no assignment is set. It is up to the developer in the DFD/DD to decide what happens in this node.
@@ -556,14 +659,22 @@ public class GDPR2DFD {
 		});
 	}
 	
-	private boolean containsAssignment(Behaviour behaviour, String inputPinName, Data data) {
+	
+	private boolean containsAssignment(Behavior behaviour, String inputPinName, Data data) {
 		return behaviour.getAssignment().stream().anyMatch(
-				ass -> ass.getOutputPin().getEntityName().equals(data.getEntityName()) &&
-				ass.getInputPins().stream().anyMatch(pin -> pin.getEntityName().equals(inputPinName))
-				);
+				ass ->  {			
+					if (ass.getOutputPin() == null) return false;
+					if (!ass.getOutputPin().getEntityName().equals(data.getEntityName())) return false; 
+					if (ass instanceof ForwardingAssignment forwardingAssignment) {
+						if (forwardingAssignment.getInputPins().stream().anyMatch(pin -> pin.getEntityName().equals(inputPinName))) return true;
+					} else if (ass instanceof Assignment assignment) {
+						if (assignment.getInputPins().stream().anyMatch(pin -> pin.getEntityName().equals(inputPinName))) return true;
+					}
+					return false;
+				});
 	}
 	
-	private boolean containsAssignment(Behaviour behaviour, Data data) {
+	private boolean containsAssignment(Behavior behaviour, Data data) {
 		return behaviour.getAssignment().stream().anyMatch(ass -> ass.getOutputPin().getEntityName().equals(data.getEntityName()));
 	}
 	
@@ -575,7 +686,7 @@ public class GDPR2DFD {
 				.filter(
 						at -> at.getProcessing().getId().equals(processing.getId()) &&
 							  at.getOutputData().getId().equals(outputData.getId()) && 
-							  node.getBehaviour().getAssignment().stream()
+							  node.getBehavior().getAssignment().stream()
 							  	.anyMatch(
 							  			ass -> ass.getEntityName().equals(at.getAssignment().getEntityName())))
 				.findAny();
